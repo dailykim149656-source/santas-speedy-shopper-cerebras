@@ -15,11 +15,13 @@ import sys
 
 sys.dont_write_bytecode = True
 from validate import MARKDOWN_TOKEN, answer_links, merchant
+from variants import CONTEXT_INJECTION_BY_VARIANT
 
 COMPARISONS = (
     ('판매처 1곳', (('WordPress','wordpress-links'),('AI Synthesis','synth-links'))),
     ('빠른 판매처 최적화', (('상품 8개 · 링크','synth-links'),('상품 6개 · 링크','synth-links-six'),('상품 8개 · 표','synth-table'),('상품 8개 · 주소 직접 표시','synth-autolinks'))),
     ('AI Synthesis 지시 길이', (('기준','synth-links'),('짧은 지시','synth-links-brief'))),
+    ('AI Synthesis 작업공간 파일', (('기본 주입','synth-links'),('작업공간 파일 주입 끔','synth-links-no-workspace'))),
     ('AI Synthesis 상품 선택', (('선택 기준 자유','synth-links'),('카탈로그 앞 5개','synth-first-five'))),
     ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
@@ -49,6 +51,8 @@ def load_runs(repo):
         if plan.get('temperature') != temperature:
             continue
         if variant != 'research-reasoning-max' and plan.get('thinking') != 'low':
+            continue
+        if plan.get('context_injection') != CONTEXT_INJECTION_BY_VARIANT.get(variant):
             continue
         ident = plan_path.parent.name
         if not RUN_ID.fullmatch(ident) or plan.get('id') != ident:
@@ -214,6 +218,7 @@ def comparison_notes(groups):
         ('AI Synthesis · 상품 6개 / 8개', 'synth-links-six', 'synth-links'),
         ('AI Synthesis · 온도 0.0 / 0.2', 'synth-links-temp-zero', 'synth-links'),
         ('AI Synthesis · 짧은 지시 / 기준 지시', 'synth-links-brief', 'synth-links'),
+        ('AI Synthesis · 작업공간 파일 주입 끔 / 기본 주입', 'synth-links-no-workspace', 'synth-links'),
         ('AI Synthesis · 표 / 링크 목록', 'synth-table', 'synth-links'),
         ('AI Synthesis · 주소 직접 표시 / 링크 목록', 'synth-autolinks', 'synth-links'),
         ('AI Synthesis · 카탈로그 앞 5개 / 선택 기준 자유', 'synth-first-five', 'synth-links'),

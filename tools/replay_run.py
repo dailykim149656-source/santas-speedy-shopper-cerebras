@@ -112,6 +112,9 @@ def main():
             print('Recorded top_p:',plan['top_p'],'(set agents.defaults.params.topP in your gateway profile)')
         if plan.get('max_completion_tokens') is not None:
             print('Recorded completion limit:',plan['max_completion_tokens'],'(set agents.defaults.params.maxTokens)')
+        if plan.get('context_injection') is not None:
+            print('Recorded workspace context injection:',plan['context_injection'],
+                  '(set agents.defaults.contextInjection in your gateway profile)')
         if args.dry_run:
             print(prompt)
             return 0

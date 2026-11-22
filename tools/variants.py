@@ -44,6 +44,8 @@ VARIANTS['synth-first-five'] = (*VARIANTS['synth-links'][:-1], VARIANTS['synth-l
 VARIANTS['synth-links-brief'] = (8, False, 'synth', False,
     'Fetch the live catalog with web_fetch. Pick five distinct Christmas gifts for a software club. '
     'Return five numbered links in catalog order with exact product titles and page URLs.')
+CONTEXT_INJECTION_BY_VARIANT = {'synth-links-no-workspace': 'never'}
+VARIANTS['synth-links-no-workspace'] = VARIANTS['synth-links']
 VARIANTS['synth-table'] = (8, False, 'synth', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. '
     'Return a one-column Markdown table named Gift with five [exact product name](exact product page) links, '
@@ -82,7 +84,7 @@ RESEARCH_ARMS = (
     ('synth-links', .2, 'low'), ('wordpress-links', .2, 'low'),
     ('synth-links-six', .2, 'low'), ('synth-links-temp-zero', 0.0, 'low'),
     ('synth-table', .2, 'low'), ('synth-autolinks', .2, 'low'), ('synth-first-five', .2, 'low'),
-    ('synth-links-brief', .2, 'low'),
+    ('synth-links-brief', .2, 'low'), ('synth-links-no-workspace', .2, 'low'),
     ('source-order-synth', .2, 'low'), ('source-order', .2, 'low'),
     ('research-table', .2, 'low'), ('research-prose', .2, 'low'),
     ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
