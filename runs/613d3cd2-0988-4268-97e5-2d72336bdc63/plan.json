@@ -1,0 +1,19 @@
+{
+  "id": "613d3cd2-0988-4268-97e5-2d72336bdc63",
+  "label": "D0037-synth-table",
+  "sessionKey": "agent:main:shop-d0037-synth-table-613d3cd2",
+  "variant": "synth-table",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": null,
+  "video_threshold_tps": 1000,
+  "prompt": "Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return a one-column Markdown table named Gift with five [exact product name](exact product page) links, keeping the items in their catalog order.\nhttps://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=613d3cd2",
+  "experiment": "synth-table|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "9b5304067ba87fc2bd245f89246871cc1857e8ac3d48e05fab19446017763af8",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "source_plan_commit": "f3c46324c3d75640242458d2140a994ebd34beb1",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
