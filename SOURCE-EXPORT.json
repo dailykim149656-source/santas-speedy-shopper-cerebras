@@ -1,8 +1,8 @@
 {
   "source_branch": "test",
-  "source_commit": "91dd7aafdd679dfe4db008518d88302e1676c714",
+  "source_commit": "f10b3048e28b9bf3733c18a25674531302381046",
   "source_tree": "d0be4d05ca959fc67128b8f81fca702e5ab1da84",
-  "exported_at_utc": "2026-11-22T18:01:39.213238+00:00",
+  "exported_at_utc": "2026-11-22T18:01:53.924639+00:00",
   "public_plan_export_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
   "export_chronology": "Public commits are archival exports. Original plan commits are preserved in source_plan_commit. Export dates follow the original runs. The private source history and full private gateway traces remain local.",
   "working_tree_changes": [
