@@ -115,6 +115,10 @@ def main():
         if plan.get('context_injection') is not None:
             print('Recorded workspace context injection:',plan['context_injection'],
                   '(set agents.defaults.contextInjection in your gateway profile)')
+        if plan.get('workspace_agents_md') is not None:
+            print('Recorded workspace AGENTS.md (save exactly this text as AGENTS.md in the agent workspace):')
+            print(plan['workspace_agents_md'].rstrip('\n'))
+            print('--- end of AGENTS.md ---')
         if args.dry_run:
             print(prompt)
             return 0

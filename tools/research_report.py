@@ -15,7 +15,7 @@ import sys
 
 sys.dont_write_bytecode = True
 from validate import MARKDOWN_TOKEN, answer_links, merchant
-from variants import CONTEXT_INJECTION_BY_VARIANT
+from variants import CONTEXT_INJECTION_BY_VARIANT, FIRST_FIVE_VARIANTS, WORKSPACE_AGENTS_BY_VARIANT
 
 COMPARISONS = (
     ('판매처 1곳', (('WordPress','wordpress-links'),('AI Synthesis','synth-links'))),
@@ -25,6 +25,8 @@ COMPARISONS = (
     ('AI Synthesis 상품 선택', (('선택 기준 자유','synth-links'),('카탈로그 앞 5개','synth-first-five'))),
     ('AI Synthesis 후보 개수', (('첫 5개 · 후보 8개','synth-first-five'),('첫 5개 · 후보 6개','synth-first-five-six'))),
     ('AI Synthesis 도구 호출 지시', (('기준','synth-first-five'),('도구 인자 명시','synth-first-five-direct-fetch'))),
+    ('AI Synthesis 추론 억제', (('기준','synth-first-five'),('AGENTS.md 즉시 호출','synth-first-five-agents-direct'),
+                            ('짧은 요청','synth-first-five-short'),('짧은 요청 + AGENTS.md','synth-first-five-short-direct'))),
     ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'),('온도 1.0','synth-links-temp-one'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
     ('답변 형식', (('표','research-table'),('문장','research-prose'))),
@@ -56,6 +58,8 @@ def load_runs(repo):
         if variant != 'research-reasoning-max' and plan.get('thinking') != 'low':
             continue
         if plan.get('context_injection') != CONTEXT_INJECTION_BY_VARIANT.get(variant):
+            continue
+        if plan.get('workspace_agents_md') != WORKSPACE_AGENTS_BY_VARIANT.get(variant):
             continue
         ident = plan_path.parent.name
         if not RUN_ID.fullmatch(ident) or plan.get('id') != ident:
@@ -228,6 +232,9 @@ def comparison_notes(groups):
         ('AI Synthesis · 카탈로그 앞 5개 / 선택 기준 자유', 'synth-first-five', 'synth-links'),
         ('AI Synthesis · 첫 5개 · 후보 6개 / 8개', 'synth-first-five-six', 'synth-first-five'),
         ('AI Synthesis · 도구 인자 명시 / 기준 지시', 'synth-first-five-direct-fetch', 'synth-first-five'),
+        ('AI Synthesis · AGENTS.md 즉시 호출 / 기준', 'synth-first-five-agents-direct', 'synth-first-five'),
+        ('AI Synthesis · 짧은 요청 / 기준', 'synth-first-five-short', 'synth-first-five'),
+        ('AI Synthesis · 짧은 요청 + AGENTS.md / 기준', 'synth-first-five-short-direct', 'synth-first-five'),
         ('답변 형식 · 표 / 문장', 'research-table', 'research-prose'),
         ('가격 계산 · 소계 포함 / 가격만', 'research-price-total', 'research-prose'),
         ('카탈로그 · 판매처별 상품 4개 / 8개', 'paired-links-small', 'paired-links'),
@@ -239,7 +246,7 @@ def comparison_notes(groups):
         results = [record for _,record in groups[variant] if record and record['validation']['valid']]
         if variant in FORMAT_VARIANTS:
             results = [r for r in results if expected_format(r['final_text'],variant)]
-        if variant in ('synth-first-five', 'synth-first-five-six', 'synth-first-five-direct-fetch'):
+        if variant in FIRST_FIVE_VARIANTS:
             results = [r for r in results if first_five_catalog_links(r)]
         if variant == 'research-price-total':
             results = [r for r in results if correct_subtotals(r) == 5]

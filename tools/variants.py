@@ -86,6 +86,32 @@ ARMS += [('paired-links-small',1.0,'low'),('paired-links-small',0.2,'low'),
          ('synth-links',0.2,'low'),('source-order-synth',0.2,'low')]
 ARMS += [(name, 0.2, 'low') for name in TOP_P_BY_VARIANT]
 ARMS += [(name, 0.2, 'low') for name in MAX_TOKENS_BY_VARIANT]
+# These arms test whether shorter instructions or a tool-first workspace instruction
+# change the verified shopping result's official mean. Earlier calls differed in
+# reasoning length and rate, but the cause of that difference is unknown.
+VARIANTS['synth-first-five-short'] = (*VARIANTS['synth-first-five'][:-1],
+    'Christmas gifts: web_fetch this live catalog and return its first five items as numbered '
+    '[exact name](exact product URL) links.')
+VARIANTS['synth-first-five-agents-direct'] = VARIANTS['synth-first-five']
+VARIANTS['synth-first-five-short-direct'] = VARIANTS['synth-first-five-short']
+# Written as the benchmark workspace's AGENTS.md for these arms only and removed before every other arm.
+DIRECT_TOOL_AGENTS_MD = (
+    '# Tool-first replies\n\n'
+    '- If the message gives a URL to fetch, your first output is the web_fetch call for that exact URL. '
+    'Do not think through, plan or restate the request before calling it.\n'
+    '- When the result arrives, write the requested answer straight from the fetched data, '
+    'with no preamble and no deliberation.\n')
+WORKSPACE_AGENTS_BY_VARIANT = {'synth-first-five-agents-direct': DIRECT_TOOL_AGENTS_MD,
+                               'synth-first-five-short-direct': DIRECT_TOOL_AGENTS_MD}
+FIRST_FIVE_VARIANTS = ('synth-first-five', 'synth-first-five-six', 'synth-first-five-direct-fetch',
+                       'synth-first-five-short', 'synth-first-five-agents-direct', 'synth-first-five-short-direct')
+# Identical shopping conditions have produced widely different rates. Alternate
+# controls with these treatments to limit, but not eliminate, time confounding.
+PRIORITY_CONTROL = ('synth-first-five', .2, 'low')
+DIRECT_FETCH_ARM = ('synth-first-five-direct-fetch', .2, 'low')
+PRIORITY_ARMS = (('synth-first-five-agents-direct', .2, 'low'), ('synth-first-five-short', .2, 'low'),
+                 ('synth-first-five-short-direct', .2, 'low'))
+PRIORITY_VALID, PRIORITY_MAX_ATTEMPTS = 5, 8
 RESEARCH_ARMS = (
     ('synth-links', .2, 'low'), ('wordpress-links', .2, 'low'),
     ('synth-links-six', .2, 'low'), ('synth-links-temp-zero', 0.0, 'low'),
@@ -98,7 +124,7 @@ RESEARCH_ARMS = (
     ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
     ('research-reasoning-max', .2, 'max'),
     ('source-order-max-2048', .2, 'low'), ('research-cap-4096', .2, 'low'),
-)
+) + PRIORITY_ARMS
 ARMS += [arm for arm in RESEARCH_ARMS if arm not in ARMS]
 
 def arm_key(arm):
@@ -136,6 +162,12 @@ def under_repeated_peak(results, counts):
         return None
     return next(arm for arm in ARMS if arm_key(arm) == key)
 
+def priority_pending(counts):
+    """Treatments still short of valid paired runs; a stubbornly failing arm stops after a fixed attempt budget."""
+    return [arm for arm in PRIORITY_ARMS
+            if sum(score is not None for score in counts[arm_key(arm)]) < PRIORITY_VALID
+            and len(counts[arm_key(arm)]) < PRIORITY_MAX_ATTEMPTS]
+
 def choose(results):
     index=len(results)
     # Begin with paired hypotheses, rather than sending the same query repeatedly.
@@ -153,6 +185,16 @@ def choose(results):
         if r['arm'] in counts:
             adopted = r.get('valid') and r.get('method_valid') is not False
             counts[r['arm']].append(r.get('score') if adopted else None)
+    # Finish the already-planned single-variable comparison before the newer
+    # treatments. A pre-send failure adds no history row and retries this arm.
+    direct_attempts = counts[arm_key(DIRECT_FETCH_ARM)]
+    if len(direct_attempts) < 3 and not any(score is not None for score in direct_attempts):
+        return DIRECT_FETCH_ARM
+    pending = priority_pending(counts)
+    if pending:
+        if index % 2:
+            return PRIORITY_CONTROL
+        return min(pending, key=lambda arm:(len(counts[arm_key(arm)]), PRIORITY_ARMS.index(arm)))
     # Reserve one slot in three for comparison; spend the others on the measured leader.
     best = preferred_arm(counts)
     # After repeated failed sessions, sample a new treatment before reusing the leader.
