@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "id": "28de323b-7e9c-4827-9ed2-34bea65c92f6",
+  "historical": false,
+  "private_raw_sha256": "78eb939c0bb8193807bf8c337ce8ccdfce7a82ec28da68cf166c09b2933829d3",
+  "private_raw_bytes": 14859,
+  "startedWall": 1795323158263,
+  "video_threshold_tps": 1000,
+  "requires_video": false,
+  "final_text": "### Mercantile\n1. [CTRL Task Pad](https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/)\n2. [Wapuu Stuffed Toy](https://mercantile.wordpress.org/product/wapuu-stuffed-animal/)\n3. [Gone Coding Ceramic Mug](https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/)\n\n### AI Synthesis\n4. [AI012 Eurorack Wave Animator](https://aisynthesis.com/product/ai012-eurorack-wave-animator/)\n5. [Eurorack Modular Patch Cable 4.9ft](https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/)",
+  "evidence_status": "below_threshold_recorded",
+  "ended": {
+    "elapsedMs": 9449.278791,
+    "terminal": "final",
+    "time": 1795323167734
+  },
+  "score": {
+    "mean_exact_tps": 774.9553712398651,
+    "ui_rounded_tps": 775,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-dc61be9c-b37a-4b17-b016-bd864d7914b7",
+      "timestamp": 1795323158912,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "timed_sample": true,
+      "usage": {
+        "input": 651,
+        "output": 277,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 2976
+      },
+      "serverGeneration": {
+        "completionMs": 286.760775,
+        "outputTokens": 277
+      },
+      "tool_inputs": [
+        {
+          "id": "e3b0ce6d0",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=28de323b"
+          },
+          "args": {}
+        },
+        {
+          "id": "b8f1ad133",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=28de323b"
+          },
+          "args": {}
+        }
+      ]
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-c4ccac8a-493b-4d2a-a59f-497b2d24fdee",
+      "timestamp": 1795323164185,
+      "stopReason": "stop",
+      "message_index": 4,
+      "timed_sample": true,
+      "usage": {
+        "input": 2278,
+        "output": 285,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4611
+      },
+      "serverGeneration": {
+        "completionMs": 488.05650099999997,
+        "outputTokens": 285
+      },
+      "tool_inputs": []
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "e3b0ce6d0",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=28de323b",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T04:52:41.694Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+        "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+        "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+        "https://mercantile.wordpress.org/product/wapuu-keychain/",
+        "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/"
+      ]
+    },
+    {
+      "tool_call_id": "b8f1ad133",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=28de323b",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T04:52:44.113Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+        "https://aisynthesis.com/product/eurorack-high-power-supply/",
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+        "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+        "https://aisynthesis.com/product/ai018-eurorack-stereo-matrix-mixer/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "catalog_name": "CTRL Task Pad",
+      "source_tool_call_id": "e3b0ce6d0",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "html_bytes_read": 316431,
+      "html_sha256": "97772e251a2c1d46a5dab3ac1a052309721cfcb7f0f5ecde5f728523cad479dd",
+      "checked_at": "2026-11-22T04:52:52.759635+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "CTRL Task Pad – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "catalog_name": "Wapuu Stuffed Toy",
+      "source_tool_call_id": "e3b0ce6d0",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "html_bytes_read": 410424,
+      "html_sha256": "eb9771d58f082239d6a38341dcce4b05c33b642279859b56ee84b0921c5f9114",
+      "checked_at": "2026-11-22T04:52:52.838871+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Wapuu Stuffed Toy – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "catalog_name": "Gone Coding Ceramic Mug",
+      "source_tool_call_id": "e3b0ce6d0",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "html_bytes_read": 380139,
+      "html_sha256": "0d3eeea941baab09c82fbdf74007b54c1948740512fbdffb28afe083e27709c0",
+      "checked_at": "2026-11-22T04:52:52.744276+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Gone Coding Ceramic Mug – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "catalog_name": "AI012 Eurorack Wave Animator",
+      "source_tool_call_id": "b8f1ad133",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "html_bytes_read": 490877,
+      "html_sha256": "e7aae7e3a7a9d89130c4ad880d3a0965dddc4419b220a5776595faf997be0330",
+      "checked_at": "2026-11-22T04:52:54.618023+00:00",
+      "canonical": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "merchant": "aisynthesis.com",
+      "title": "AI012 Eurorack Wave Animator",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "catalog_name": "Eurorack Modular Patch Cable 4.9ft",
+      "source_tool_call_id": "b8f1ad133",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "html_bytes_read": 358726,
+      "html_sha256": "b0098f23599a294d97a5aec3d58b53770ec96a9cd8e8ef1879eb64a628271a3a",
+      "checked_at": "2026-11-22T04:52:54.405954+00:00",
+      "canonical": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "merchant": "aisynthesis.com",
+      "title": "Eurorack Modular Patch Cable 4.9ft",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "plan_commit": "184fa6d9559557a2466d926f1a01049149e8042d",
+  "source_plan_commit": "9965ce96e663c6267b00e7f78cdd8ac9661a9cf2",
+  "source_result_commit": "10900e3bc9e45ac5476ad096e3e11f77379e689d",
+  "publication_timing": "Public result commit created at export time; use source mappings for original chronology."
+}
