@@ -158,17 +158,31 @@ def verify(repo, ident, plan, raw):
     require(plan.get('video_threshold_tps',video_threshold) == video_threshold,'video threshold differs from the committed plan')
     threshold = ui is not None and ui >= video_threshold
     require(run['requires_video'] is threshold,'video threshold mismatch')
+    state = run['evidence_status']
+    superseded = state == 'video_superseded'
+    if superseded:
+        replacement = run.get('video_superseded_by')
+        require(valid and isinstance(replacement,str) and replacement != ident
+                and re.fullmatch(r'[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}',replacement),
+                'superseded video lacks a valid replacement run ID')
     media = run.get('media',{})
+    checked_media = []
     for asset in MEDIA:
         if asset in media:
+            if asset in MEDIA[:2] and state in ('video_superseded','provisional_video_retained','validation_rejected'):
+                continue
             path = directory/asset
-            committed(repo,path)
+            # Videos are local, with bytes bound to their committed SHA-256 receipt.
+            if asset in MEDIA[:2]:
+                require(path.is_file() and not path.is_symlink(),'missing or symlinked local video: '+asset)
+            else:
+                committed(repo,path)
             require(path.stat().st_size == media[asset]['bytes'] and digest(path) == media[asset]['sha256'], 'media digest mismatch: '+asset)
+            checked_media.append(asset)
     require(set(media).issubset((*MEDIA,'attestation')),'unrecognized archived media')
     if VIEWPORT in media:
         check_viewport(directory,media,ui,{p['url'] for p in run['products'] if p.get('verified')})
-    state = run['evidence_status']
-    allowed = ({'complete','provisional_video_retained','provisional_capture_required','validation_rejected'} if threshold else
+    allowed = ({'complete','video_superseded','provisional_video_retained','provisional_capture_required','validation_rejected'} if threshold else
                {'unscored_failed_run'} if ui is None else {'below_threshold_recorded'} if valid else {'validation_rejected'})
     require(state in allowed,'evidence status inconsistent with result')
     if state == 'validation_rejected':
@@ -193,11 +207,11 @@ def verify(repo, ident, plan, raw):
     require(SHA256.fullmatch(run['private_raw_sha256']), 'malformed raw trace digest')
     if raw is not None:
         require(raw.stat().st_size == run['private_raw_bytes'] and digest(raw) == run['private_raw_sha256'],'private raw trace digest mismatch')
-    result = ('rejected' if not valid else 'pending_video' if threshold and state != 'complete'
+    result = ('rejected' if not valid else 'video_superseded' if superseded else 'pending_video' if threshold and state != 'complete'
               else 'target_verified' if target else 'below_target')
     return dict(result=result,run_id=ident,historical=run['historical'],plan_commit=commit,samples=len(rates),mean=mean,
                 displayed_tps=ui,verified_products=sum(p.get('verified') is True for p in run['products']),
-                evidence_status=state,checked_media=[n for n in MEDIA if n in media],raw_digest_checked=raw is not None)
+                evidence_status=state,checked_media=checked_media,raw_digest_checked=raw is not None)
 
 
 def main():
