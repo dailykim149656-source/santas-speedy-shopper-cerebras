@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "id": "23db4545-9646-4616-8732-7c72b1f3e3bb",
+  "historical": false,
+  "private_raw_sha256": "62640ba3fd2be553f1b9719a8389d3c142f518ad563b138c759c86881f8fa1d2",
+  "private_raw_bytes": 18991,
+  "startedWall": 1795318008733,
+  "requires_video": false,
+  "final_text": "Five distinct products from the retailer’s live **in-stock** catalog:\n\n| Product | Listed price | Who would enjoy it | Practical reason for choosing it |\n|---|---:|---|---|\n| [Officiel Raspberry Pi 500+ Desktop Kit](https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/) | **2.499,00 kr. (DKK)** — sale price, regularly 3.499,00 kr. | A hobbyist wanting a ready-to-use Raspberry Pi desktop computer | The retailer says it contains the essentials needed to get started with the new computer, reducing the need to source basic accessories separately. |\n| [Waveshare CM5 PoE Mini-Computer Kit](https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/) | **399,00 kr. (DKK)** | A maker experimenting with Raspberry Pi Compute Module 5, networking, or embedded projects | Specifically suited to evaluating Raspberry Pi CM5 or integrating it into finished products; PoE support also makes it interesting for compact networked builds. |\n| [Compute Blade Starter Kit](https://raspberrypi.dk/produkt/compute-blade-starter-kit/) | **2.999,00 kr. (DKK)** — sale price, regularly 3.480,00 kr. | An advanced hobbyist interested in clusters, distributed computing, or self-hosted services | The retailer describes it as a practical starting point for a small cluster, with four Compute Blades and other useful accessories included. |\n| [Officiel Raspberry Pi 500 Desktop Kit](https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/) | **1.649,00 kr. (DKK)** | A beginner or tinkerer who wants a compact desktop setup | Includes the essentials for getting started with a Raspberry Pi 500 computer, offering a lower-priced alternative to the 500+ kit. |\n| [Officiel Raspberry Pi 5 Desktop Kit](https://raspberrypi.dk/produkt/officiel-raspberry-pi-5-desktop-kit/) | **From 1.399,00 kr. (DKK)**; configurations up to 3.699,00 kr. | A hobbyist wanting a versatile desktop for coding, electronics projects, or general experimentation | The retailer says it includes everything needed to get started, plus an English book; RAM and language can be selected to suit the recipient. |",
+  "evidence_status": "validation_rejected",
+  "ended": {
+    "elapsedMs": 52643.114665999994,
+    "terminal": "final",
+    "time": 1795318061405
+  },
+  "score": {
+    "mean_exact_tps": 477.7053854095079,
+    "ui_rounded_tps": 478,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "final product absent from same-run fresh successful retail payload: https://raspberrypi.dk/produkt/officiel-raspberry-pi-5-desktop-kit/",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-dbfba2eb-47bc-47f6-8563-ae77843076e5",
+      "timestamp": 1795318048440,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "timed_sample": true,
+      "serverGeneration": {
+        "completionMs": 307.38913499999995,
+        "outputTokens": 174
+      },
+      "tool_inputs": [
+        {
+          "id": "39ec66469",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink,prices,short_description&_run=23db4545"
+          },
+          "args": {}
+        }
+      ]
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-8f0720f1-0f81-4758-8c29-e9d38e5b3b44",
+      "timestamp": 1795318051986,
+      "stopReason": "stop",
+      "message_index": 3,
+      "timed_sample": true,
+      "serverGeneration": {
+        "completionMs": 1931.409149,
+        "outputTokens": 752
+      },
+      "tool_inputs": []
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "39ec66469",
+      "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink,prices,short_description&_run=23db4545",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:27:31.876Z",
+      "cached": false,
+      "products": [
+        "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+        "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+        "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+        "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+        "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+        "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+        "https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/",
+        "https://raspberrypi.dk/produkt/raspberry-pi-5-desktop-kit/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "catalog_name": "Officiel Raspberry Pi 500+ Desktop Kit",
+      "source_tool_call_id": "39ec66469",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "html_bytes_read": 303484,
+      "html_sha256": "765d0f168b9a6941cb155687d075c168ad6d83a9756865e1e35bb7165a628791",
+      "checked_at": "2026-11-22T03:27:46.756347+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Officiel Raspberry Pi 500+ Desktop Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "catalog_name": "Waveshare CM5 PoE Mini-Computer Kit",
+      "source_tool_call_id": "39ec66469",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "html_bytes_read": 312148,
+      "html_sha256": "f16c707a3780500e46aaa71edf3725ecb06bb4adfe8ceba23c3c80e28eb85448",
+      "checked_at": "2026-11-22T03:27:46.734697+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Waveshare CM5 PoE Mini-Computer Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "catalog_name": "Compute Blade Starter Kit",
+      "source_tool_call_id": "39ec66469",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "html_bytes_read": 325460,
+      "html_sha256": "0eb3016e9f38403ab4310df621dfc45cc7fc5ef6e4053a2988022b53074ff306",
+      "checked_at": "2026-11-22T03:27:46.791377+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Compute Blade Starter Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+      "catalog_name": "Officiel Raspberry Pi 500 Desktop Kit",
+      "source_tool_call_id": "39ec66469",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+      "html_bytes_read": 311106,
+      "html_sha256": "0c83b6f8bd9bc0ed9c347762e7c413e2163973ac1cbe7d3e877088a319d20198",
+      "checked_at": "2026-11-22T03:27:46.829345+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Officiel Raspberry Pi 500 Desktop Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    }
+  ],
+  "plan_commit": "25ce12b3d3b3153fa2d66903e96f494391eddaf8",
+  "source_plan_commit": "432c88c7282b6a218f32fc6ffce7a3a3c1e07b62",
+  "source_result_commit": "62c336bb318feb7d6a8af1d696d2776aee161477",
+  "publication_timing": "Public result commit created at export time; use source mappings for original chronology."
+}
