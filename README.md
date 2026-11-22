@@ -1,5 +1,7 @@
 # Santa’s Speedy Shopper
 
+[Shopify 선조회 실험 결과와 최고 회차 영상](results/shopify-single-generation-2026-11-23/README.md) · 32회 전송, 11회 유효, 최고 1,255.33 TPS.
+
 This benchmark asks Cerebras Kimi K3.1 Pro, through OpenClaw, to choose five Christmas gifts from live retail catalogs and link to their product pages. The official OpenClaw patch reports the mean server-side decoding speed in tokens per second. Each row in the [run index](RESULTS.md) links to the request and its evidence.
 
 ## Fastest measured run — 1,355 mean tok/s

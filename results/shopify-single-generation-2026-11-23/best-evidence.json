@@ -1,0 +1,93 @@
+{
+  "run_uuid": "5e042f4a-bac9-4ebb-b49d-52f25026ce16",
+  "segment": 1,
+  "slot": 1,
+  "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+  "native_official_score": {
+    "calls": 1,
+    "outputTokens": 702,
+    "generationMs": 559.21536,
+    "meanTokensPerSecond": 1255.3303256906247,
+    "p90TokensPerSecond": 1255.3303256906247
+  },
+  "provider_measurement": {
+    "http": 200,
+    "usage_completion_tokens": 702,
+    "time_info_completion_time_seconds": 0.55921536,
+    "request_sha256": "50613529a4cddefb375d7e81309f67b07b25b33ecf2bbe8695eb37c4fc3f09b3",
+    "response_sha256": "f89877c8362a36c0dff51420d40c7cc6595c800755260b7585a1550aa9b59ef7"
+  },
+  "catalog_endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "products": [
+    {
+      "query": "collapsible coffee dripper",
+      "name": "Collapsible Coffee Dripper",
+      "seller": "Kikkerland Design Inc",
+      "price_usd": 11.2,
+      "url": "https://kikkerland.com/products/collapsible-coffee-dripper?variant=41753241619",
+      "catalog_http": 200,
+      "lookup_started_at": "2026-11-23T02:22:15.863+09:00",
+      "lookup_finished_at": "2026-11-23T02:22:16.562+09:00",
+      "request_sha256": "932e6a393a07a856f21e6a0866fe354a79c5444ac7546d3e0a22d1f0d7ec74c1",
+      "source_response_sha256": "735b3eabf40ac7acf32a06592ac3098af9b0600cba9f2f10b8dfb9f75ff32978"
+    },
+    {
+      "query": "cast iron skillet",
+      "name": "Classic Cast Iron Skillets",
+      "seller": "Lodge Cast Iron",
+      "price_usd": 29.9,
+      "url": "https://www.lodgecastiron.com/products/round-cast-iron-classic-skillet?variant=51685752242548",
+      "catalog_http": 200,
+      "lookup_started_at": "2026-11-23T02:22:15.891+09:00",
+      "lookup_finished_at": "2026-11-23T02:22:16.749+09:00",
+      "request_sha256": "759bd5965bbfe193c6d0ca18c3a6e584208b62d5dc1296ce995aabb6d39a1077",
+      "source_response_sha256": "76772c7d970eb8291b1549ccb13a780786dd2ffffff31bd95071966f6538c721"
+    },
+    {
+      "query": "enamel camp mug",
+      "name": "Redwood National Park Durable Enamel Camp Mug",
+      "seller": "Parks Apparel",
+      "price_usd": 24.95,
+      "url": "https://parksapparel.com/products/redwood-national-park-durable-enamel-camp-mug?variant=49771175542952",
+      "catalog_http": 200,
+      "lookup_started_at": "2026-11-23T02:22:15.892+09:00",
+      "lookup_finished_at": "2026-11-23T02:22:16.816+09:00",
+      "request_sha256": "9d44be44f86e46ccd2ab1a362a4e928173c47fa50a7d81e833772c760f27e1ef",
+      "source_response_sha256": "190c59fac4261db7c0289fb974220c174faa726c20a7a0e48d3efbdaad3364fe"
+    },
+    {
+      "query": "leather pocket journal",
+      "name": "Refillable Personalized Leather Pocket Journal",
+      "seller": "Ox & Pine",
+      "price_usd": 25,
+      "url": "https://oxandpine.com/products/refillable-personalized-leather-pocket-journal?variant=31858687868979",
+      "catalog_http": 200,
+      "lookup_started_at": "2026-11-23T02:22:15.890+09:00",
+      "lookup_finished_at": "2026-11-23T02:22:16.773+09:00",
+      "request_sha256": "3ad7d92eb4b8bfe68583c929b185731108f726ee5ac3c7ef2170b04f77ccb277",
+      "source_response_sha256": "2a43365073132b6fac03959555ba3d6fafb1267b3ac45e44513eb0119c6a6497"
+    },
+    {
+      "query": "leather keychain",
+      "name": "PLG Keychain",
+      "seller": "Portland Leather",
+      "price_usd": 26,
+      "url": "https://www.portlandleathergoods.com/products/portland-leather-goods-keychain?variant=40366517649490",
+      "catalog_http": 200,
+      "lookup_started_at": "2026-11-23T02:22:15.891+09:00",
+      "lookup_finished_at": "2026-11-23T02:22:16.733+09:00",
+      "request_sha256": "e8435b4f3494fd6f0440d095ea68706fca10a7d5a93f4e2285eb7c0a5d1a5b09",
+      "source_response_sha256": "57fa61c0aee081b987f1dbf7220754ae220c8c46dd31c02744fa4a1c0b54340a"
+    }
+  ],
+  "video": {
+    "file": "best-post-run.mp4",
+    "post_run": true,
+    "full_run": false,
+    "duration_seconds": 5.96,
+    "displayed_mean_tps": 1255,
+    "verified_displayed_product_links": 5,
+    "bytes": 179162,
+    "sha256": "312db174bd650f3617959e038a20a69b779bd1c5958c5564d49f84de0e79c666"
+  }
+}
