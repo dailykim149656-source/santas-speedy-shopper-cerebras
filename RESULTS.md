@@ -4,6 +4,13 @@
 
 | 실행 | 요청 | 공식 평균 (tok/s) | 상품 검증 | 영상 |
 |---|---|---:|---|---|
+| [D5177-synth-five-categories-cap](runs/d2d6ee18-5b01-4619-ac51-4dd8b01bb124/evidence.json) | [요청문](runs/d2d6ee18-5b01-4619-ac51-4dd8b01bb124/plan.json) | 845 | 5/5 | 기준 미만 |
+| [D5176-synth-five-categories-cap](runs/a001d607-3038-4db3-bc1e-f43a5440dfc4/evidence.json) | [요청문](runs/a001d607-3038-4db3-bc1e-f43a5440dfc4/plan.json) | 701 | 5/5 | 기준 미만 |
+| [D5175-synth-five-categories-cap](runs/e59aa818-ca8b-48bf-9f5f-4d5dbf9cc6ef/evidence.json) | [요청문](runs/e59aa818-ca8b-48bf-9f5f-4d5dbf9cc6ef/plan.json) | 810 | 5/5 | 기준 미만 |
+| [D5174-synth-five-categories-cap](runs/9def7035-59d3-4c04-b56d-6162e040f045/evidence.json) | [요청문](runs/9def7035-59d3-4c04-b56d-6162e040f045/plan.json) | 679 | 5/5 | 기준 미만 |
+| [D5173-synth-five-categories-cap](runs/101343aa-f0c0-4b82-9d91-712b0ea9c7a5/evidence.json) | [요청문](runs/101343aa-f0c0-4b82-9d91-712b0ea9c7a5/plan.json) | 760 | 5/5 | 기준 미만 |
+| [D5172-synth-five-categories-cap](runs/2eac2def-fdbd-4ea0-ae0b-7b9622135ae0/evidence.json) | [요청문](runs/2eac2def-fdbd-4ea0-ae0b-7b9622135ae0/plan.json) | 735 | 5/5 | 기준 미만 |
+| [D5171-synth-five-categories-cap](runs/f73c6ca4-dce1-4a05-88e2-d67bf76c5c5c/evidence.json) | [요청문](runs/f73c6ca4-dce1-4a05-88e2-d67bf76c5c5c/plan.json) | 1014 | 5/5 | 해시 보존 · [보관 중인 최고 기록](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json) |
 | [D5170-synth-five-categories-cap](runs/c7280fe0-f540-4797-b865-1e415ea7bc62/evidence.json) | [요청문](runs/c7280fe0-f540-4797-b865-1e415ea7bc62/plan.json) | 1202 | 5/5 | 해시 보존 · [보관 중인 최고 기록](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json) |
 | [D5169-synth-five-categories-cap](runs/05d00f2c-5aa6-4f5b-a916-223ff9beb723/evidence.json) | [요청문](runs/05d00f2c-5aa6-4f5b-a916-223ff9beb723/plan.json) | 785 | 5/5 | 기준 미만 |
 | [D5168-synth-five-categories-cap](runs/fa7bd708-adc3-4742-8e3e-3c33552a1339/evidence.json) | [요청문](runs/fa7bd708-adc3-4742-8e3e-3c33552a1339/plan.json) | 741 | 5/5 | 기준 미만 |
