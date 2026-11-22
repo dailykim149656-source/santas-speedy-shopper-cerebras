@@ -20,7 +20,11 @@ from urllib.parse import urljoin, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 
-MERCHANTS = {"mercantile.wordpress.org": "/product/", "raspberrypi.dk": "/produkt/"}
+MERCHANTS = {
+    "mercantile.wordpress.org": "/product/",
+    "raspberrypi.dk": "/produkt/",
+    "aisynthesis.com": "/product/",
+}
 MODEL = "moonshotai-kimi-k3.1-pro-trial"
 OFFICIAL = Path.home() / "Library/Caches/cerebras-speed-bounty/2026-11-22/official.patch"
 

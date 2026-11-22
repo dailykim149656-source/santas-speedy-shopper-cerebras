@@ -10,7 +10,9 @@ def catalogs(nonce, count, rich=False, shops='both', price=False):
     args = f'per_page={count}&stock_status=instock&_fields={fields}&_run={nonce}'
     wordpress = 'https://mercantile.wordpress.org/wp-json/wc/store/v1/products?' + args
     hardware = 'https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&' + args
-    return {'both':[wordpress,hardware],'wordpress':[wordpress],'hardware':[hardware]}[shops]
+    synth = 'https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&' + args
+    return {'both':[wordpress,hardware],'wordpress':[wordpress],'hardware':[hardware],
+            'synth':[synth],'wordpress-synth':[wordpress,synth]}[shops]
 
 # Each arm describes a useful user-facing shopping result and a real choice between candidates.
 VARIANTS = {
@@ -33,6 +35,8 @@ VARIANTS['source-order-compact'] = (8, False, 'both', False,
     'Fetch both live catalogs. Pick five distinct Christmas gifts for a software club from both stores. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.')
 VARIANTS['wordpress-links'] = (8, False, 'wordpress', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.')
+VARIANTS['synth-links'] = (8, False, 'synth', False, VARIANTS['wordpress-links'][-1])
+VARIANTS['source-order-synth'] = (8, False, 'wordpress-synth', False, VARIANTS['source-order'][-1])
 TOP_P_BY_VARIANT = {'source-order-top-p-080': 0.8, 'source-order-top-p-045': 0.45}
 for name in TOP_P_BY_VARIANT:
     VARIANTS[name] = VARIANTS['source-order']
@@ -42,7 +46,8 @@ for name in MAX_TOKENS_BY_VARIANT:
 ARMS += [('paired-links-small',1.0,'low'),('paired-links-small',0.2,'low'),
          ('kit-comparison',1.0,'high'),('kit-comparison',0.6,'high'),
          ('source-order',0.6,'low'),('hardware-links',0.0,'low'),('recipient-guide',0.6,'low'),
-         ('source-order-compact',0.2,'low'),('wordpress-links',0.2,'low')]
+         ('source-order-compact',0.2,'low'),('wordpress-links',0.2,'low'),
+         ('synth-links',0.2,'low'),('source-order-synth',0.2,'low')]
 ARMS += [(name, 0.2, 'low') for name in TOP_P_BY_VARIANT]
 ARMS += [(name, 0.2, 'low') for name in MAX_TOKENS_BY_VARIANT]
 
@@ -59,7 +64,9 @@ def choose(results):
           ('price-cards',0.2,'low'),('source-order',0.2,'low'),('recipient-guide',0.2,'low'),
           ('source-order',0.2,'low'),('source-order-compact',0.2,'low'),('wordpress-links',0.2,'low'),
           ('source-order-top-p-080',0.2,'low'),('source-order-top-p-045',0.2,'low'),
-          ('source-order-max-2048',0.2,'low'),('source-order',0.2,'low')]
+          ('source-order-max-2048',0.2,'low'),('source-order',0.2,'low'),('source-order',0.2,'low'),
+          ('synth-links',0.2,'low'),('wordpress-links',0.2,'low'),
+          ('source-order-synth',0.2,'low'),('source-order',0.2,'low')]
     if index<len(warm):
         return warm[index]
     counts={arm_key(a):[] for a in ARMS}
