@@ -1,0 +1,14 @@
+{
+  "id": "34bb53b4-bbc6-491d-a039-c801d4671d30",
+  "label": "D0007-visible-receipt",
+  "sessionKey": "agent:main:shop-d0007-visible-receipt-34bb53b4",
+  "variant": "visible-receipt",
+  "thinking": "low",
+  "temperature": 0.2,
+  "prompt": "Make a Christmas shopping receipt for a coding club. Fetch both retail stock catalogs, then select five different in-stock gifts across both shops. On each line put the exact merchant product name followed by its full, unabbreviated product-page URL as a visible clickable link. Show exactly five URLs.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=34bb53b4\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink&_run=34bb53b4",
+  "experiment": "visible-receipt|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "source_plan_commit": "36c53e297475a0b34f33d4e3eb438a750b81d8cf",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
