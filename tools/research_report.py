@@ -19,6 +19,7 @@ from validate import MARKDOWN_TOKEN, answer_links, merchant
 COMPARISONS = (
     ('판매처 1곳', (('WordPress','wordpress-links'),('AI Synthesis','synth-links'))),
     ('빠른 판매처 최적화', (('상품 8개 · 링크','synth-links'),('상품 6개 · 링크','synth-links-six'),('상품 8개 · 표','synth-table'))),
+    ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
     ('답변 형식', (('표','research-table'),('문장','research-prose'))),
     ('가격 계산', (('문장','research-prose'),('가격 합계','research-price-total'))),
@@ -39,7 +40,10 @@ def load_runs(repo):
     for plan_path in sorted((repo/'runs').glob('*/plan.json')):
         plan = json.loads(plan_path.read_bytes())
         variant = plan.get('variant')
-        if variant not in groups or plan.get('temperature') != 0.2:
+        if variant not in groups:
+            continue
+        temperature = 0.0 if variant == 'synth-links-temp-zero' else 0.2
+        if plan.get('temperature') != temperature:
             continue
         if variant != 'research-reasoning-max' and plan.get('thinking') != 'low':
             continue
@@ -194,6 +198,7 @@ def comparison_notes(groups):
         ('판매처 1곳 · AI Synthesis / WordPress', 'synth-links', 'wordpress-links'),
         ('판매처 2곳 · AI Synthesis / RaspberryPi.dk 교체', 'source-order-synth', 'source-order'),
         ('AI Synthesis · 상품 6개 / 8개', 'synth-links-six', 'synth-links'),
+        ('AI Synthesis · 온도 0.0 / 0.2', 'synth-links-temp-zero', 'synth-links'),
         ('AI Synthesis · 표 / 링크 목록', 'synth-table', 'synth-links'),
         ('답변 형식 · 표 / 문장', 'research-table', 'research-prose'),
         ('가격 계산 · 소계 포함 / 가격만', 'research-price-total', 'research-prose'),
@@ -265,7 +270,7 @@ def render(repo):
               '분모는 최종 답변이 남은 해당 형식의 실행 수다. 표는 Gift·Price 두 열과 서로 다른 상품 링크가 하나씩 든 다섯 행, '
               '문장은 목록·표 표식 없이 상품 링크가 하나씩 든 다섯 문장 또는 줄을 확인한다.',
               '', subtotal_report(groups['research-price-total']),
-              '', '온도는 0.2이며 추론 수준 비교군을 제외한 행은 모두 low 설정이다. '
+              '', '온도를 따로 적은 행을 제외하면 0.2이며 추론 수준 비교군을 제외한 행은 모두 low 설정이다. '
               '실행 확인 수는 결과가 남은 요청 수이며 검증 실패도 포함한다. 계획만 남은 요청은 전송 여부를 알 수 없다. '
               '표의 대시는 미측정이고 0은 관측값이다. 반복해서 표시한 기준 행은 같은 실행을 참조한다.', '',
               '공식 평균은 한 실행에서 각 모델 호출의 서버 출력 토큰 수를 생성 시간으로 나눈 값의 산술평균이다. '

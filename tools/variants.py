@@ -36,6 +36,7 @@ VARIANTS['source-order-compact'] = (8, False, 'both', False,
 VARIANTS['wordpress-links'] = (8, False, 'wordpress', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.')
 VARIANTS['synth-links'] = (8, False, 'synth', False, VARIANTS['wordpress-links'][-1])
+VARIANTS['synth-links-temp-zero'] = VARIANTS['synth-links']
 VARIANTS['synth-links-six'] = (6, *VARIANTS['synth-links'][1:])
 VARIANTS['synth-table'] = (8, False, 'synth', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. '
@@ -69,7 +70,7 @@ ARMS += [(name, 0.2, 'low') for name in TOP_P_BY_VARIANT]
 ARMS += [(name, 0.2, 'low') for name in MAX_TOKENS_BY_VARIANT]
 RESEARCH_ARMS = (
     ('synth-links', .2, 'low'), ('wordpress-links', .2, 'low'),
-    ('synth-links-six', .2, 'low'), ('synth-table', .2, 'low'),
+    ('synth-links-six', .2, 'low'), ('synth-links-temp-zero', 0.0, 'low'), ('synth-table', .2, 'low'),
     ('source-order-synth', .2, 'low'), ('source-order', .2, 'low'),
     ('research-table', .2, 'low'), ('research-prose', .2, 'low'),
     ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
