@@ -23,6 +23,7 @@ COMPARISONS = (
     ('AI Synthesis 지시 길이', (('기준','synth-links'),('짧은 지시','synth-links-brief'))),
     ('AI Synthesis 작업공간 파일', (('기본 주입','synth-links'),('작업공간 파일 주입 끔','synth-links-no-workspace'))),
     ('AI Synthesis 상품 선택', (('선택 기준 자유','synth-links'),('카탈로그 앞 5개','synth-first-five'))),
+    ('AI Synthesis 후보 개수', (('첫 5개 · 후보 8개','synth-first-five'),('첫 5개 · 후보 6개','synth-first-five-six'))),
     ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'),('온도 1.0','synth-links-temp-one'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
     ('답변 형식', (('표','research-table'),('문장','research-prose'))),
@@ -224,6 +225,7 @@ def comparison_notes(groups):
         ('AI Synthesis · 표 / 링크 목록', 'synth-table', 'synth-links'),
         ('AI Synthesis · 주소 직접 표시 / 링크 목록', 'synth-autolinks', 'synth-links'),
         ('AI Synthesis · 카탈로그 앞 5개 / 선택 기준 자유', 'synth-first-five', 'synth-links'),
+        ('AI Synthesis · 첫 5개 · 후보 6개 / 8개', 'synth-first-five-six', 'synth-first-five'),
         ('답변 형식 · 표 / 문장', 'research-table', 'research-prose'),
         ('가격 계산 · 소계 포함 / 가격만', 'research-price-total', 'research-prose'),
         ('카탈로그 · 판매처별 상품 4개 / 8개', 'paired-links-small', 'paired-links'),
@@ -235,7 +237,7 @@ def comparison_notes(groups):
         results = [record for _,record in groups[variant] if record and record['validation']['valid']]
         if variant in FORMAT_VARIANTS:
             results = [r for r in results if expected_format(r['final_text'],variant)]
-        if variant == 'synth-first-five':
+        if variant in ('synth-first-five', 'synth-first-five-six'):
             results = [r for r in results if first_five_catalog_links(r)]
         if variant == 'research-price-total':
             results = [r for r in results if correct_subtotals(r) == 5]
