@@ -185,6 +185,39 @@ def subtotal_report(group):
             '공식 쇼핑 검증과 별도로 제출된 선물 순서대로 판매처 가격을 센트 단위로 더하고, 각 링크 다음의 첫 Subtotal USD 금액을 대조한다.')
 
 
+def comparison_notes(groups):
+    checks = (
+        ('판매처 1곳 · AI Synthesis / WordPress', 'synth-links', 'wordpress-links'),
+        ('판매처 2곳 · AI Synthesis / RaspberryPi.dk 교체', 'source-order-synth', 'source-order'),
+        ('답변 형식 · 표 / 문장', 'research-table', 'research-prose'),
+        ('가격 계산 · 소계 포함 / 가격만', 'research-price-total', 'research-prose'),
+        ('카탈로그 · 판매처별 상품 4개 / 8개', 'paired-links-small', 'paired-links'),
+        ('추론 수준 · max / low', 'research-reasoning-max', 'source-order'),
+        ('출력 상한 · 2,048 / 기본', 'source-order-max-2048', 'source-order'),
+        ('출력 상한 · 4,096 / 기본', 'research-cap-4096', 'source-order'),
+    )
+    def observations(variant):
+        results = [record for _,record in groups[variant] if record and record['validation']['valid']]
+        if variant in ('research-table','research-prose'):
+            results = [r for r in results if expected_format(r['final_text'],variant)]
+        if variant == 'research-price-total':
+            results = [r for r in results if correct_subtotals(r) == 5]
+        return [record['score']['mean_exact_tps'] for record in results]
+
+    lines = ['## 조건별 관측 효과', '',
+             '아래 차이는 대조 조건의 공식 평균 중앙값 대비다. 표와 문장 실험은 요청 형식을 지킨 실행을, 소계 실험은 다섯 계산을 맞힌 실행을 사용한다. 두 조건에서 각각 유효 실행 3회가 쌓이면 반복 관측으로 표시한다.', '']
+    for label, treatment, control in checks:
+        lhs, rhs = observations(treatment), observations(control)
+        counts = f'유효 {len(lhs)}/{len(rhs)}회'
+        if not lhs or not rhs or median(rhs) == 0:
+            lines.append(f'- {label} · 비교 대기 ({counts})')
+            continue
+        gain = 100 * (median(lhs) / median(rhs) - 1)
+        state = '반복 관측' if min(len(lhs),len(rhs)) >= 3 else '초기 관측'
+        lines.append(f'- {label} · {gain:+.1f}% ({state}, {counts})')
+    return lines
+
+
 def render(repo):
     groups = load_runs(repo)
     lines = [
@@ -232,7 +265,7 @@ def render(repo):
               '공식 평균은 한 실행에서 각 모델 호출의 서버 출력 토큰 수를 생성 시간으로 나눈 값의 산술평균이다. '
               '도구·최종 열은 각각 도구를 요청한 호출과 최종 답변 호출의 중앙값이다. '
               '미캐시 입력은 사용량의 input, 캐시 읽기·쓰기는 각각 cacheRead·cacheWrite를 합산했다. 출력은 서버 생성 토큰 합계다. 기록 링크는 조건별 최고 유효 실행과 최근 결과를 가리킨다.',
-              '', '## 캐시와 프리필', '']
+              '', *comparison_notes(groups), '', '## 캐시와 프리필', '']
     if cache_known:
         lines.append(f'표의 중복 조건을 한 번씩 집계한 결과, 유효 호출 {measured_calls}개 중 {cache_known}개에 입력·캐시 사용량이 남았다. '
                      f'그중 {cache_hits}개에서 캐시 읽기가 기록됐다.')

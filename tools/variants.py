@@ -77,6 +77,25 @@ def arm_key(arm):
     name,t,effort=arm
     return f'{name}|{t:g}|{effort}'
 
+def preferred_arm(counts):
+    measured = []
+    for arm in ARMS:
+        attempts = counts[arm_key(arm)][-5:]
+        valid = [score for score in attempts if score is not None]
+        if valid:
+            measured.append((arm, attempts, valid))
+    if not measured:
+        return None
+    repeated = [row for row in measured if len(row[2]) >= 3]
+    best = max(repeated or measured, key=lambda row:(
+        statistics.median(row[2]), len(row[2])/len(row[1]), len(row[2])))
+    # First reproduce a new lead before using it as the repeated baseline.
+    challengers = [row for row in measured if len(row[2]) < 3 and len(row[1]) < 4
+                   and statistics.median(row[2]) > statistics.median(best[2])]
+    if challengers:
+        return max(challengers, key=lambda row:statistics.median(row[2]))[0]
+    return best[0]
+
 def choose(results):
     index=len(results)
     # Begin with paired hypotheses, rather than sending the same query repeatedly.
@@ -92,21 +111,19 @@ def choose(results):
     counts={arm_key(a):[] for a in ARMS}
     for r in results:
         if r['arm'] in counts:
-            counts[r['arm']].append(r.get('score') if r.get('valid') else None)
+            adopted = r.get('valid') and r.get('method_valid') is not False
+            counts[r['arm']].append(r.get('score') if adopted else None)
+    # Replicate a new leader once, then reuse the strongest treatment every third trial.
+    best = preferred_arm(counts)
+    if best is not None and (index % 3 == 0 or len(counts[arm_key(best)]) == 1):
+        return best
     # Rotate the treatment order between passes to reduce time-of-day confounding.
     for repetitions in range(5):
         offset = repetitions % len(RESEARCH_ARMS)
         for arm in RESEARCH_ARMS[offset:] + RESEARCH_ARMS[:offset]:
             if len(counts[arm_key(arm)]) <= repetitions:
                 return arm
-    under=min(ARMS,key=lambda a:(len(counts[arm_key(a)]),ARMS.index(a)))
-    if index%3 or not any(counts.values()):
-        return under
-    # Reinforce useful arms by the median of their most recent valid evidence.
-    def recent_valid_median(arm):
-        scores = [score for score in counts[arm_key(arm)] if score is not None]
-        return statistics.median(scores[-5:]) if scores else 0
-    return max(ARMS,key=recent_valid_median)
+    return min(ARMS,key=lambda a:(len(counts[arm_key(a)]),ARMS.index(a)))
 
 def prompt(arm,nonce):
     name=arm[0]

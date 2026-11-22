@@ -46,6 +46,8 @@ The format comparison asks for the same linked product titles and prices as eith
 
 The [Korean comparison report](RESEARCH.md) summarizes recorded runs. Regenerate it from the current checkout with `python3 tools/research_report.py`.
 
+The runner prioritizes a repeat of a promising single result. Once enough evidence is available, every third trial retests the best recent median among repeated valid results. The other trials cover the pending comparisons. A single record remains an observation until it is repeated.
+
 The archive records observed cache reads when OpenClaw reports them. Cached input and total elapsed time are separate from the official server decode speed. A comparison of output formats can demonstrate a performance difference under the tested settings. Identifying the provider’s internal decoding algorithm would require provider-side evidence. [Cerebras prompt caching](https://inference-docs.cerebras.ai/capabilities/prompt-caching)
 
 ## Provenance and event updates
