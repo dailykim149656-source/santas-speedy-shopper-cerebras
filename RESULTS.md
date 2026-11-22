@@ -4,6 +4,9 @@
 
 | 실행 | 요청 | 공식 평균 (tok/s) | 상품 검증 | 영상 |
 |---|---|---:|---|---|
+| [D5162-synth-five-categories-cap](runs/114977b3-56e0-4027-bfa9-face198289c4/evidence.json) | [요청문](runs/114977b3-56e0-4027-bfa9-face198289c4/plan.json) | 986 | 5/5 | 해시 보존 · [보관 중인 최고 기록](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json) |
+| [D5161-synth-five-categories-cap](runs/d47df176-e143-4fa7-b8fa-206bd74a3fcd/evidence.json) | [요청문](runs/d47df176-e143-4fa7-b8fa-206bd74a3fcd/plan.json) | 964 | 5/5 | 해시 보존 · [보관 중인 최고 기록](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json) |
+| [D5160-synth-five-categories-cap](runs/1156061f-7ee2-4317-b522-d1ea99cbaa70/evidence.json) | [요청문](runs/1156061f-7ee2-4317-b522-d1ea99cbaa70/plan.json) | 823 | 5/5 | 기준 미만 |
 | [D5159-synth-five-categories-cap](runs/fc0d975d-a0cf-4322-8b22-443bdc61b520/evidence.json) | [요청문](runs/fc0d975d-a0cf-4322-8b22-443bdc61b520/plan.json) | 793 | 5/5 | 기준 미만 |
 | [D5158-synth-five-categories-cap](runs/08dc8eee-659d-45c9-a880-4e00959267bc/evidence.json) | [요청문](runs/08dc8eee-659d-45c9-a880-4e00959267bc/plan.json) | 862 | 5/5 | 기준 미만 |
 | [D5157-synth-five-categories-cap](runs/11d7948e-193d-4887-86e5-7dcfb2d8caa4/evidence.json) | [요청문](runs/11d7948e-193d-4887-86e5-7dcfb2d8caa4/plan.json) | 891 | 5/5 | 기준 미만 |
