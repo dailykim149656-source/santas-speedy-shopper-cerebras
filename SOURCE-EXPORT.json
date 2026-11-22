@@ -287,6 +287,11 @@
     "tools/run_exp2000.sh": "14bf1d623f1b8e2fe5015dc87e81bfad999f359da3b37e65b0af5c0f63e40fdd",
     "tools/test_exp2000.py": "171e88c8a573658f2518a8a0be32923ced6bd645d0b9f43cdacbc59e8b46999c"
   },
-  "additional_assets": {},
+  "additional_assets": {
+    "runs/2fe4b0df-f98c-474f-9bb9-00ea69c7bab0/original.mp4": {
+      "source_kind": "run recording recovered from artifact cache, byte-matched to the original evidence",
+      "source_sha256": "3acf728fa0ecf16d76c315492f4bf92dfb243518312f1911e43480ed872ba793"
+    }
+  },
   "export_scope": "Source tree and working changes, run evidence, first-level QA reports and scripts per check, and referenced presentation clips. Generated fixtures, runtime state, caches, AppleDouble sidecars, internal bundles and private gateway traces stay local. Portable path substitutions apply to local reports. source_files values are SHA-256 of bytes before path substitution or plan mapping."
 }
