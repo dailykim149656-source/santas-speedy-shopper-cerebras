@@ -19,6 +19,7 @@ from validate import MARKDOWN_TOKEN, answer_links, merchant
 COMPARISONS = (
     ('판매처 1곳', (('WordPress','wordpress-links'),('AI Synthesis','synth-links'))),
     ('빠른 판매처 최적화', (('상품 8개 · 링크','synth-links'),('상품 6개 · 링크','synth-links-six'),('상품 8개 · 표','synth-table'))),
+    ('AI Synthesis 지시 길이', (('기준','synth-links'),('짧은 지시','synth-links-brief'))),
     ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
     ('답변 형식', (('표','research-table'),('문장','research-prose'))),
@@ -199,6 +200,7 @@ def comparison_notes(groups):
         ('판매처 2곳 · AI Synthesis / RaspberryPi.dk 교체', 'source-order-synth', 'source-order'),
         ('AI Synthesis · 상품 6개 / 8개', 'synth-links-six', 'synth-links'),
         ('AI Synthesis · 온도 0.0 / 0.2', 'synth-links-temp-zero', 'synth-links'),
+        ('AI Synthesis · 짧은 지시 / 기준 지시', 'synth-links-brief', 'synth-links'),
         ('AI Synthesis · 표 / 링크 목록', 'synth-table', 'synth-links'),
         ('답변 형식 · 표 / 문장', 'research-table', 'research-prose'),
         ('가격 계산 · 소계 포함 / 가격만', 'research-price-total', 'research-prose'),

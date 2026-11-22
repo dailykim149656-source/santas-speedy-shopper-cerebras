@@ -38,6 +38,9 @@ VARIANTS['wordpress-links'] = (8, False, 'wordpress', False,
 VARIANTS['synth-links'] = (8, False, 'synth', False, VARIANTS['wordpress-links'][-1])
 VARIANTS['synth-links-temp-zero'] = VARIANTS['synth-links']
 VARIANTS['synth-links-six'] = (6, *VARIANTS['synth-links'][1:])
+VARIANTS['synth-links-brief'] = (8, False, 'synth', False,
+    'Fetch the live catalog with web_fetch. Pick five distinct Christmas gifts for a software club. '
+    'Return five numbered links in catalog order with exact product titles and page URLs.')
 VARIANTS['synth-table'] = (8, False, 'synth', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. '
     'Return a one-column Markdown table named Gift with five [exact product name](exact product page) links, '
@@ -70,7 +73,8 @@ ARMS += [(name, 0.2, 'low') for name in TOP_P_BY_VARIANT]
 ARMS += [(name, 0.2, 'low') for name in MAX_TOKENS_BY_VARIANT]
 RESEARCH_ARMS = (
     ('synth-links', .2, 'low'), ('wordpress-links', .2, 'low'),
-    ('synth-links-six', .2, 'low'), ('synth-links-temp-zero', 0.0, 'low'), ('synth-table', .2, 'low'),
+    ('synth-links-six', .2, 'low'), ('synth-links-temp-zero', 0.0, 'low'),
+    ('synth-table', .2, 'low'), ('synth-links-brief', .2, 'low'),
     ('source-order-synth', .2, 'low'), ('source-order', .2, 'low'),
     ('research-table', .2, 'low'), ('research-prose', .2, 'low'),
     ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
@@ -121,7 +125,9 @@ def choose(results):
             counts[r['arm']].append(r.get('score') if adopted else None)
     # Reserve one slot in three for comparison; spend the others on the measured leader.
     best = preferred_arm(counts)
-    if best is not None and (index % 3 != 0 or len(counts[arm_key(best)]) == 1):
+    # After repeated failed sessions, sample a new treatment before reusing the leader.
+    recent_failures = len(results) >= 3 and not any(r.get('valid') for r in results[-3:])
+    if best is not None and not recent_failures and (index % 3 != 0 or len(counts[arm_key(best)]) == 1):
         return best
     # Rotate the treatment order between passes to reduce time-of-day confounding.
     for repetitions in range(5):
