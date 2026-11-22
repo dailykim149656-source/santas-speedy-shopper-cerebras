@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "protocol": "gift8-v1",
+  "id": "0303fe49-cb6b-46b2-bb7e-2304e3effcce",
+  "private_raw_sha256": "3006f669620df5e8df2a7f0baffd36039aa676d9bce23d181affcccea3e638b3",
+  "private_raw_bytes": 5748,
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "ui_display": null,
+    "call_count": 0,
+    "assistant_call_count": 1,
+    "output_tokens": 0,
+    "generation_ms": 0,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+  },
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": null,
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "error",
+      "serverGeneration": {},
+      "timed_sample": false
+    }
+  ],
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "unsuccessful or unidentified assistant call",
+      "assistant call missing valid serverGeneration",
+      "no authentic measured generation",
+      "run has no successful terminal event"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be at least 1700 TPS"
+    ]
+  },
+  "products": [],
+  "evidence_status": "validation_rejected",
+  "actual_generation_count": 1,
+  "expected_generation_count": 2,
+  "structure_expected": false
+}

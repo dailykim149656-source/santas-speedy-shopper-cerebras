@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "d7d72086-ef72-4af7-8a1d-501a223546cc",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "3f0217777deb06b8f9a1b9120162d7f198eb10d94c2936d707b05b150f832c70",
+  "private_raw_bytes": 6934,
+  "startedWall": 1795362749941,
+  "ended": {
+    "elapsedMs": 42363.45875,
+    "terminal": "error",
+    "time": 1795362792331
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795362750536,
+      "stopReason": "error",
+      "message_index": 1,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [],
+  "products": [],
+  "requires_video": false,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "evidence_status": "unscored_failed_run",
+  "source_plan_commit": "79fdb44847c10310e7a6197f43b43566d479ac7a",
+  "source_record_sha256": "bca2e9c9019b38efe608db03c59a8ff0f561f5d9e63fd1164b9533fcfff16032"
+}

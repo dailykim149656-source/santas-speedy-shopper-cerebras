@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "id": "ed6fe6a3-8b0c-4292-82bc-5460326c5c61",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "30a87ff00452b808b6f78b4b502c761907a13e084e958a8e04aceb2d2a39d6c6",
+  "private_raw_bytes": 15038,
+  "startedWall": 1795318716637,
+  "ended": {
+    "elapsedMs": 9467.897834,
+    "terminal": "final",
+    "time": 1795318726143
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-6d86a79b-7fe7-4b37-9bdf-d68961e75396",
+      "timestamp": 1795318717727,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 303.184411,
+        "outputTokens": 305
+      },
+      "usage": {
+        "input": 653,
+        "output": 305,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 3006
+      },
+      "tool_inputs": [
+        {
+          "id": "36e4cd402",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=ed6fe6a3",
+            "extractMode": "text",
+            "maxChars": 20000
+          },
+          "args": {}
+        },
+        {
+          "id": "7b73baec1",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink&_run=ed6fe6a3",
+            "extractMode": "text",
+            "maxChars": 20000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-c67e30db-1779-4597-8d88-e4eaebe429da",
+      "timestamp": 1795318721061,
+      "stopReason": "stop",
+      "message_index": 4,
+      "serverGeneration": {
+        "completionMs": 634.819355,
+        "outputTokens": 306
+      },
+      "usage": {
+        "input": 2303,
+        "output": 306,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4657
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 744.0076446018094,
+    "ui_rounded_tps": 744,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "36e4cd402",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=ed6fe6a3",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:38:40.239Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+        "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+        "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+        "https://mercantile.wordpress.org/product/wapuu-keychain/",
+        "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/"
+      ]
+    },
+    {
+      "tool_call_id": "7b73baec1",
+      "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink&_run=ed6fe6a3",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:38:40.967Z",
+      "cached": false,
+      "products": [
+        "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+        "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+        "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+        "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+        "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+        "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+        "https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/",
+        "https://raspberrypi.dk/produkt/raspberry-pi-5-desktop-kit/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "catalog_name": "CTRL Task Pad",
+      "source_tool_call_id": "36e4cd402",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "html_bytes_read": 316418,
+      "html_sha256": "53cb06d94762f274fcb92a2361e5f53af73905482eb980621fa689ca0cf97c74",
+      "checked_at": "2026-11-22T03:38:50.879981+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "CTRL Task Pad – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "catalog_name": "Gone Coding Ceramic Mug",
+      "source_tool_call_id": "36e4cd402",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "html_bytes_read": 380151,
+      "html_sha256": "16371e2863a321c8c83da211558a5259520e4f33eadbb096a4bdb1d165c26701",
+      "checked_at": "2026-11-22T03:38:50.895650+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Gone Coding Ceramic Mug – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "catalog_name": "Officiel Raspberry Pi 500+ Desktop Kit",
+      "source_tool_call_id": "7b73baec1",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "html_bytes_read": 303595,
+      "html_sha256": "f997c60fb9bfde600a3885385befe4765c84e54c2e77a9434dffbab255198758",
+      "checked_at": "2026-11-22T03:38:52.619033+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Officiel Raspberry Pi 500+ Desktop Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "catalog_name": "Compute Blade Starter Kit",
+      "source_tool_call_id": "7b73baec1",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "html_bytes_read": 326001,
+      "html_sha256": "79b0cfa89ee4fb3308827a3f2af0b140d14fdc614a19b8952d6cc8d1300e7dcf",
+      "checked_at": "2026-11-22T03:38:52.666755+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Compute Blade Starter Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/",
+      "catalog_name": "Raspberry Pi 5 Starter Kit",
+      "source_tool_call_id": "7b73baec1",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/",
+      "html_bytes_read": 847765,
+      "html_sha256": "52dd1af6f20d484c10b6ec6bc541e2ee94c4834494396421bd59677e1509328b",
+      "checked_at": "2026-11-22T03:38:53.318566+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Raspberry Pi 5 Starter Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": false,
+  "final_text": "### Mercantile\n\n1. [CTRL Task Pad](https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/)\n2. [Gone Coding Ceramic Mug](https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/)\n\n### RaspberryPi.dk\n\n3. [Officiel Raspberry Pi 500+ Desktop Kit](https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/)\n4. [Compute Blade Starter Kit](https://raspberrypi.dk/produkt/compute-blade-starter-kit/)\n5. [Raspberry Pi 5 Starter Kit](https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/)",
+  "evidence_status": "below_threshold_recorded",
+  "source_plan_commit": "cd62728079e53fb71a4ec6e433b173e9b333609e",
+  "source_record_sha256": "d5dfaa50c600c1a638ce818d5a7524566f78b1d7609c7e90acfabdddd570ab89"
+}

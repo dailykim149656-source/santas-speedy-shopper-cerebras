@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "7b358226-5b83-4399-9af9-bb39b1db867e",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "e0e793424d04bbe913a92f83d391f44dd91b4822272621d05c836bec6cace66b",
+  "private_raw_bytes": 6356,
+  "startedWall": 1795353057159,
+  "ended": {
+    "elapsedMs": 46128.84445800001,
+    "terminal": "error",
+    "time": 1795353103321
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795353061376,
+      "stopReason": "error",
+      "message_index": 1,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "unsuccessful or unidentified assistant call",
+      "assistant call missing valid serverGeneration",
+      "no authentic measured generation",
+      "No successful final assistant output"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T13:11:00.974000+00:00",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+      ]
+    },
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T13:11:01.008000+00:00",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+      ]
+    },
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T13:11:00.989000+00:00",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+      ]
+    },
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T13:11:01.285000+00:00",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    },
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T13:11:00.960000+00:00",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    }
+  ],
+  "products": [],
+  "requires_video": false,
+  "video_threshold_tps": 1,
+  "final_text": "",
+  "evidence_status": "unscored_failed_run",
+  "source_plan_commit": "88af4e67f78f30d9f643f13c1eb90ae7e284864c",
+  "source_record_sha256": "068709952c089635da3ba7855c07e03e3bf4959a56d7e3ade700bfe52f5dc1d6"
+}

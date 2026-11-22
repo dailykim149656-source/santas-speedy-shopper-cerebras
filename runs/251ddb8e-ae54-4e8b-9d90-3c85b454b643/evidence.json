@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "251ddb8e-ae54-4e8b-9d90-3c85b454b643",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "d4e1ac822c43c872c097ab815adf6b8e42282047ec8d0936a4bff31e26b8f1d4",
+  "private_raw_bytes": 6940,
+  "startedWall": 1795349800706,
+  "ended": {
+    "elapsedMs": 2747.4380410000003,
+    "terminal": "error",
+    "time": 1795349803483
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795349802411,
+      "stopReason": "error",
+      "message_index": 1,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [],
+  "products": [],
+  "requires_video": false,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "evidence_status": "unscored_failed_run",
+  "source_plan_commit": "744055e89c2007ee283a373c2ffa6a4fce5002b9",
+  "source_record_sha256": "2ca634852a034a3df4f2ff13f3565fe2d031f4dc1840b41c385208ce50e26c69"
+}

@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "id": "436c4627-0929-4891-b046-c3c13eadbf28",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "2264de429f861d4f95693114aa6b8c658aae6609ddedf5a2951fb7e30fdc4560",
+  "private_raw_bytes": 14089,
+  "startedWall": 1795336321549,
+  "ended": {
+    "elapsedMs": 165585.092542,
+    "terminal": "final",
+    "time": 1795336508358
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-c3b44d90-fcf2-426e-ad27-370819e28522",
+      "timestamp": 1795336415360,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 426.04055400000004,
+        "outputTokens": 262
+      },
+      "usage": {
+        "input": 2625,
+        "output": 262,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4935
+      },
+      "tool_inputs": [
+        {
+          "id": "4fd01f759",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=3&stock_status=instock&_fields=name,permalink&_run=436c4627&orderby=id&order=asc&offset=0"
+          },
+          "args": {}
+        },
+        {
+          "id": "4bfaafd9e",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=3&stock_status=instock&_fields=name,permalink&_run=436c4627&orderby=id&order=asc&offset=3"
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-e5c03583-27cb-4d80-b13e-063b282137e6",
+      "timestamp": 1795336421993,
+      "stopReason": "stop",
+      "message_index": 4,
+      "serverGeneration": {
+        "completionMs": 135.734582,
+        "outputTokens": 175
+      },
+      "usage": {
+        "input": 3848,
+        "output": 175,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 6071
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 952.1229007349614,
+    "ui_rounded_tps": 952,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "4fd01f759",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=3&stock_status=instock&_fields=name,permalink&_run=436c4627&orderby=id&order=asc&offset=0",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T08:33:40.562Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/eurorack-power-cable/",
+        "https://aisynthesis.com/product/3-5mm-eurorack-jack-thonk-pj301m-12/",
+        "https://aisynthesis.com/product/3-5mm-eurorack-hex-nut/"
+      ]
+    },
+    {
+      "tool_call_id": "4bfaafd9e",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=3&stock_status=instock&_fields=name,permalink&_run=436c4627&orderby=id&order=asc&offset=3",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T08:33:40.580Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-2ft/",
+        "https://aisynthesis.com/product/eurorack-power-supply/",
+        "https://aisynthesis.com/product/ai006-eurorack-stomp-box-adapter/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://aisynthesis.com/product/eurorack-power-cable/",
+      "catalog_name": "Eurorack Ribbon Power Cable",
+      "source_tool_call_id": "4fd01f759",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/eurorack-power-cable/",
+      "html_bytes_read": 370896,
+      "html_sha256": "c2941317de067ef7506d1e8db94ea5e3aae209195ddda6936e34c0f3e8fe6689",
+      "checked_at": "2026-11-22T08:35:17.967581+00:00",
+      "canonical": "https://aisynthesis.com/product/eurorack-power-cable/",
+      "merchant": "aisynthesis.com",
+      "title": "Eurorack Ribbon Power Cable",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/3-5mm-eurorack-jack-thonk-pj301m-12/",
+      "catalog_name": "3.5mm Eurorack Jack “Thonk” PJ301M-12",
+      "source_tool_call_id": "4fd01f759",
+      "verified": false,
+      "reasons": [
+        "no matching Product schema or WooCommerce product commerce evidence"
+      ],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/3-5mm-eurorack-jack-thonk-pj301m-12/",
+      "html_bytes_read": 378143,
+      "html_sha256": "9df2e80d11909a428fe219c747bf152d0101ff7b40ae4207f275b91a78274d75",
+      "checked_at": "2026-11-22T08:35:17.949340+00:00",
+      "canonical": "https://aisynthesis.com/product/3-5mm-eurorack-jack-thonk-pj301m-12/",
+      "merchant": "aisynthesis.com",
+      "title": "3.5mm Eurorack Jack “Thonk” PJ301M-12",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": false,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/3-5mm-eurorack-hex-nut/",
+      "catalog_name": "3.5mm Eurorack Hex Nut",
+      "source_tool_call_id": "4fd01f759",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/3-5mm-eurorack-hex-nut/",
+      "html_bytes_read": 367686,
+      "html_sha256": "ddffc22c5ff8c0b4f01a18af69f83cea82670cbf3ed700f52f05f79c5b0527ac",
+      "checked_at": "2026-11-22T08:35:18.027465+00:00",
+      "canonical": "https://aisynthesis.com/product/3-5mm-eurorack-hex-nut/",
+      "merchant": "aisynthesis.com",
+      "title": "3.5mm Eurorack Hex Nut",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-2ft/",
+      "catalog_name": "Eurorack Modular Patch Cable 2ft",
+      "source_tool_call_id": "4bfaafd9e",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-2ft/",
+      "html_bytes_read": 366055,
+      "html_sha256": "aa85a83bd9a14c91c280dd3dbeaf210541f0c91d392fe370cf2c1ea2d174076d",
+      "checked_at": "2026-11-22T08:35:17.986346+00:00",
+      "canonical": "https://aisynthesis.com/product/eurorack-modular-patch-cable-2ft/",
+      "merchant": "aisynthesis.com",
+      "title": "Eurorack Modular Patch Cable 2ft",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/eurorack-power-supply/",
+      "catalog_name": "Eurorack Power Supply",
+      "source_tool_call_id": "4bfaafd9e",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/eurorack-power-supply/",
+      "html_bytes_read": 426708,
+      "html_sha256": "39d6855023c4c8651a795331b7e55381d9ead9b37dc9b7c0569fb2a58a3f942b",
+      "checked_at": "2026-11-22T08:35:18.208824+00:00",
+      "canonical": "https://aisynthesis.com/product/eurorack-power-supply/",
+      "merchant": "aisynthesis.com",
+      "title": "Eurorack Power Supply",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": true,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "final_text": "1. [Eurorack Ribbon Power Cable](https://aisynthesis.com/product/eurorack-power-cable/)\n2. [3.5mm Eurorack Jack “Thonk” PJ301M-12](https://aisynthesis.com/product/3-5mm-eurorack-jack-thonk-pj301m-12/)\n3. [3.5mm Eurorack Hex Nut](https://aisynthesis.com/product/3-5mm-eurorack-hex-nut/)\n4. [Eurorack Modular Patch Cable 2ft](https://aisynthesis.com/product/eurorack-modular-patch-cable-2ft/)\n5. [Eurorack Power Supply](https://aisynthesis.com/product/eurorack-power-supply/)",
+  "evidence_status": "validation_rejected",
+  "source_plan_commit": "c49bcd6efb7ddfff1b3a58ee744db49446950d6f",
+  "source_record_sha256": "1b973b715612e48d059b6a3c5e33aba1787159fa5f76f3af6f0075162a0d79b6"
+}

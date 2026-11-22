@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "aborted_before_send",
+  "id": "f6db51e0-83e8-4e55-a634-252aff747a3f",
+  "label": "D5001-synth-first-five",
+  "sessionKey": "agent:main:shop-d5001-synth-first-five-f6db51e0",
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "runner_sha256": "e51f79128228180b168fbec91dab6c9b380af97dcfc588065c821760321735b8",
+  "private_sources_sha256": {
+    "run.json": "9778745b9e60ce0b3f1516c177f4bc906dfbcb71c26fbf9edab0d45bef59812f",
+    "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "video.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cause_class": "TimeoutError",
+  "sealed_at": "2026-11-22T07:04:11.335632+00:00",
+  "source_plan_commit": "6467150d849446688dd9d7106610b341001373b8",
+  "source_record_sha256": "6cfb1994f1da1d8a3728437e337805508b1cf7151650be7e639063766124e76a"
+}

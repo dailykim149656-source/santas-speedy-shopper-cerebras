@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "6899cb98-6377-4d35-9e8d-290ccfa4c3a1",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "0c5520593cc76ad1291bb0945dd3d4a439edddc7af7e0254f890b641f4ab8c88",
+  "private_raw_bytes": 9626,
+  "startedWall": 1795321721986,
+  "ended": {
+    "elapsedMs": 153678.235125,
+    "terminal": "error",
+    "time": 1795321875684
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-3da9c0d0-0f04-4612-abf7-0f43275ba07f",
+      "timestamp": 1795321725080,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 155.37226,
+        "outputTokens": 147
+      },
+      "usage": {
+        "input": 591,
+        "output": 147,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 2786
+      },
+      "tool_inputs": [
+        {
+          "id": "7c42d4f19",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=6899cb98",
+            "extractMode": "text",
+            "maxChars": 20000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795321875200,
+      "stopReason": "error",
+      "message_index": 3,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 946.1148341409206,
+    "ui_rounded_tps": 946,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "7c42d4f19",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=6899cb98",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T04:29:00.318Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+        "https://aisynthesis.com/product/eurorack-high-power-supply/",
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+        "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+        "https://aisynthesis.com/product/ai018-eurorack-stereo-matrix-mixer/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    }
+  ],
+  "products": [],
+  "requires_video": false,
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "evidence_status": "validation_rejected",
+  "source_plan_commit": "360afec53a23addcfe6115bf97083e7d23a67ba5",
+  "source_record_sha256": "692368bf0dbd1cc2090096bcfd2ad82786bf33c85174ae10aba215de67203520"
+}

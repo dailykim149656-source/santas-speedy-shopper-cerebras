@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "404b40d9-562a-4aa3-8319-d8352f371c76",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "33a20add4af2d9b18d0cf2de99f8a8fe6c6c33b2b3dcccc51e6d902bcf75a0dc",
+  "private_raw_bytes": 6933,
+  "startedWall": 1795364478560,
+  "ended": {
+    "elapsedMs": 45868.305,
+    "terminal": "error",
+    "time": 1795364524487
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795364481641,
+      "stopReason": "error",
+      "message_index": 1,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [],
+  "products": [],
+  "requires_video": false,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "evidence_status": "unscored_failed_run",
+  "source_plan_commit": "e7a3f9b9d6ac094950e2602065f253b719a23cbd",
+  "source_record_sha256": "18df4a03d5d34c29ce3b5202d3a307d30c6fb58d407454661020dd88c8aa9ec3"
+}

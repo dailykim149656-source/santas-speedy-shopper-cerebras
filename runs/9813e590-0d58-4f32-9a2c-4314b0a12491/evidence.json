@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "9813e590-0d58-4f32-9a2c-4314b0a12491",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "049f840feb6deb5fff75098dd40494ed844c4277a534a09ef491112d8bd6bf2f",
+  "private_raw_bytes": 7002,
+  "startedWall": 1795349728496,
+  "ended": {
+    "elapsedMs": 3897.904166000001,
+    "terminal": "error",
+    "time": 1795349732428
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795349731188,
+      "stopReason": "error",
+      "message_index": 1,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [],
+  "products": [],
+  "requires_video": false,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "final_text": "⚠️ This model was not found. Choose another model in the Control UI or run `openclaw configure`.",
+  "evidence_status": "unscored_failed_run",
+  "source_plan_commit": "957d360818b7993123a8f558488009da7e8f2b16",
+  "source_record_sha256": "cdb83d8508783e0a4e8db1368bd25ba90c59eaf2467f07336a0fded800656cb7"
+}

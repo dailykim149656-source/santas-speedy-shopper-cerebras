@@ -1,0 +1,434 @@
+{
+  "schema_version": 1,
+  "id": "f3927431-d4f3-48d9-a650-4b574e6813e1",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "46457f493bf2f77ef193b826b40992917df1ad49973d88423369532f754d1b6f",
+  "private_raw_bytes": 19806,
+  "startedWall": 1795363026544,
+  "ended": {
+    "elapsedMs": 28650.971958,
+    "terminal": "final",
+    "time": 1795363055249
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-251635d4-c9cb-4cd7-910b-807b95c316c2",
+      "timestamp": 1795363027092,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 363.380425,
+        "outputTokens": 397
+      },
+      "usage": {
+        "input": 808,
+        "output": 397,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 3253
+      },
+      "tool_inputs": [
+        {
+          "id": "dbb927d08",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431"
+          },
+          "args": {}
+        },
+        {
+          "id": "871eb4073",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431"
+          },
+          "args": {}
+        },
+        {
+          "id": "95354483a",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431"
+          },
+          "args": {}
+        },
+        {
+          "id": "99bbb894e",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431"
+          },
+          "args": {}
+        },
+        {
+          "id": "c33352641",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431"
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-3b0b235b-8a0f-4614-abd5-11a1ccebad1a",
+      "timestamp": 1795363051286,
+      "stopReason": "stop",
+      "message_index": 7,
+      "serverGeneration": {
+        "completionMs": 193.828517,
+        "outputTokens": 179
+      },
+      "usage": {
+        "input": 3079,
+        "output": 179,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 5306
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 1008.0078352833627,
+    "ui_rounded_tps": 1008,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "dbb927d08",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:57:30.014Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+      ]
+    },
+    {
+      "tool_call_id": "871eb4073",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:57:29.889Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+      ]
+    },
+    {
+      "tool_call_id": "95354483a",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:57:30.385Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+      ]
+    },
+    {
+      "tool_call_id": "99bbb894e",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:57:29.907Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    },
+    {
+      "tool_call_id": "c33352641",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=f3927431",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:57:30.203Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "catalog_name": "AI024 Eurorack X Filter",
+      "source_tool_call_id": "dbb927d08",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "html_bytes_read": 477282,
+      "html_sha256": "0ec1db5c74c1a635f9fcfc7d30ec08e5d8e19b5a17a5ed735945f799c39df008",
+      "checked_at": "2026-11-22T15:57:42.707489+00:00",
+      "canonical": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "merchant": "aisynthesis.com",
+      "title": "AI024 Eurorack X Filter",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "catalog_name": "AI028 Voltage Controlled Matrix Mixer",
+      "source_tool_call_id": "871eb4073",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "html_bytes_read": 490732,
+      "html_sha256": "2eb544957891e972e6e30365ff53ab14cdd4b41f75831c0236e8b9e3b64e126c",
+      "checked_at": "2026-11-22T15:57:42.858568+00:00",
+      "canonical": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "merchant": "aisynthesis.com",
+      "title": "AI028 Voltage Controlled Matrix Mixer",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "catalog_name": "AI011 Analog Voltage Controlled Oscillator",
+      "source_tool_call_id": "95354483a",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "html_bytes_read": 509184,
+      "html_sha256": "55c8390d87b0e5e3e24102515341e6822afc9ee35bb60a8b00adb06d17245d0d",
+      "checked_at": "2026-11-22T15:57:42.870468+00:00",
+      "canonical": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "merchant": "aisynthesis.com",
+      "title": "AI011 Analog Voltage Controlled Oscillator",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "catalog_name": "AI016 Eurorack Tape Echo Interface",
+      "source_tool_call_id": "99bbb894e",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "html_bytes_read": 515260,
+      "html_sha256": "72065abd56b8da1410a0f317ba8ecfe42a07aa2bccc3d7383f58818502bda877",
+      "checked_at": "2026-11-22T15:57:42.891632+00:00",
+      "canonical": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "merchant": "aisynthesis.com",
+      "title": "AI016 Eurorack Tape Echo Interface",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "catalog_name": "Eurorack Modular Patch Cable 4.9ft",
+      "source_tool_call_id": "c33352641",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "html_bytes_read": 358726,
+      "html_sha256": "b0098f23599a294d97a5aec3d58b53770ec96a9cd8e8ef1879eb64a628271a3a",
+      "checked_at": "2026-11-22T15:57:42.295191+00:00",
+      "canonical": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "merchant": "aisynthesis.com",
+      "title": "Eurorack Modular Patch Cable 4.9ft",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": true,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "final_text": "1. [AI024 Eurorack X Filter](https://aisynthesis.com/product/ai024-eurorack-x-filter/)\n2. [AI028 Voltage Controlled Matrix Mixer](https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/)\n3. [AI011 Analog Voltage Controlled Oscillator](https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/)\n4. [AI016 Eurorack Tape Echo Interface](https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/)\n5. [Eurorack Modular Patch Cable 4.9ft](https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/)",
+  "media": {
+    "original.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "42.600000"
+        }
+      },
+      "sha256": "7729f7399293ac3ea40a3008ffafd02286271109b0665215def10fa7598ea2ed",
+      "bytes": 608768
+    },
+    "demo.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "42.600000"
+        }
+      },
+      "sha256": "8ff8d4648c7cf03065ca2e1cef320094d23e5a6a2d934cc10e73ff957d4d150f",
+      "bytes": 599979
+    },
+    "final.png": {
+      "sha256": "242f86f548aa33b35d7a41fa38a45c969f57b235d0734f803a2cf0254ee6bf48",
+      "bytes": 220505
+    },
+    "attestation": {
+      "run_id": "f3927431-d4f3-48d9-a650-4b574e6813e1",
+      "full_run": true,
+      "authless": true,
+      "rehearsal": false,
+      "qualifying": true,
+      "final_ui_tps": 1008,
+      "readyAt": "2026-11-22T15:57:06.284Z",
+      "capture_ready": {
+        "readyAt": "2026-11-22T15:57:06.284Z",
+        "sessionKey": "agent:main:shop-d5139-synth-five-categories-cap-f3927431",
+        "capture": "owned-local-viewport",
+        "before_send": true,
+        "blank_initial_score": true
+      },
+      "verified_product_urls_seen": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    "viewport-evidence.json": {
+      "sha256": "63b955a1770490dd69243a9ca80111599d7d468962ed0000cf39f2663ce6ccff",
+      "bytes": 2693,
+      "proof": {
+        "schema_version": 1,
+        "verified": true,
+        "finishSeconds": 36.809049417000004,
+        "demoStartSeconds": 0,
+        "score": {
+          "originalFromSeconds": 36.832409084,
+          "originalToSeconds": 42.54591375,
+          "clipFromSeconds": 36.832409084,
+          "clipToSeconds": 42.54591375,
+          "firstFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+          "lastFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+          "mean": 1008
+        },
+        "links": [
+          {
+            "originalFromSeconds": 36.832409084,
+            "originalToSeconds": 42.54591375,
+            "clipFromSeconds": 36.832409084,
+            "clipToSeconds": 42.54591375,
+            "firstFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "lastFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+          },
+          {
+            "originalFromSeconds": 36.832409084,
+            "originalToSeconds": 42.54591375,
+            "clipFromSeconds": 36.832409084,
+            "clipToSeconds": 42.54591375,
+            "firstFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "lastFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+          },
+          {
+            "originalFromSeconds": 36.832409084,
+            "originalToSeconds": 42.54591375,
+            "clipFromSeconds": 36.832409084,
+            "clipToSeconds": 42.54591375,
+            "firstFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "lastFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+          },
+          {
+            "originalFromSeconds": 36.832409084,
+            "originalToSeconds": 42.54591375,
+            "clipFromSeconds": 36.832409084,
+            "clipToSeconds": 42.54591375,
+            "firstFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "lastFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+          },
+          {
+            "originalFromSeconds": 36.832409084,
+            "originalToSeconds": 42.54591375,
+            "clipFromSeconds": 36.832409084,
+            "clipToSeconds": 42.54591375,
+            "firstFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "lastFrameSha256": "0a6a3aeeca017bb347fb020254e80e89d99c8aa38b597056ac8733c5a575b8c2",
+            "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+          }
+        ]
+      }
+    }
+  },
+  "evidence_status": "video_superseded",
+  "video_superseded_by": "a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51",
+  "source_plan_commit": "4ba57960fea54e1150bd042eefbead38255c9118",
+  "source_record_sha256": "abfe194f2764217ea20d92bfcb88b36da8a4adb7db2406608b5e7ca483568030"
+}

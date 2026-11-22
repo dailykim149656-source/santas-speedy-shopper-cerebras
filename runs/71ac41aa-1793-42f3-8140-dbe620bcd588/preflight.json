@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "aborted_before_send",
+  "id": "71ac41aa-1793-42f3-8140-dbe620bcd588",
+  "label": "D5002-synth-first-five",
+  "sessionKey": "agent:main:shop-d5002-synth-first-five-71ac41aa",
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "runner_sha256": "e51f79128228180b168fbec91dab6c9b380af97dcfc588065c821760321735b8",
+  "private_sources_sha256": {
+    "run.json": "72e72c70b6f849c0ac0b26097a8ded7223a47c58945651724281249e6270a0a8",
+    "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "video.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "error.json": "8d320123a125552f91b05fb792d4f6cae7a571083b10484500629329843644cc",
+    "status.json": "09aa7efad63ef67e6dbda9d07785ea8f4a2002193e6cbb78edb99b6674f2db3e"
+  },
+  "cause_class": "RuntimeError",
+  "sealed_at": "2026-11-22T07:12:23.189747+00:00",
+  "source_plan_commit": "5ad935b187c3cb77b7b3737268794030249c1c29",
+  "source_record_sha256": "e329532246d96d14c0d48d0996c02ba17779069aacb575f272912e02d7843565"
+}
