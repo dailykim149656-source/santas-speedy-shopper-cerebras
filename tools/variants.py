@@ -38,6 +38,9 @@ VARIANTS['wordpress-links'] = (8, False, 'wordpress', False,
 VARIANTS['synth-links'] = (8, False, 'synth', False, VARIANTS['wordpress-links'][-1])
 VARIANTS['synth-links-temp-zero'] = VARIANTS['synth-links']
 VARIANTS['synth-links-six'] = (6, *VARIANTS['synth-links'][1:])
+VARIANTS['synth-first-five'] = (*VARIANTS['synth-links'][:-1], VARIANTS['synth-links'][-1].replace(
+    'Pick five distinct Christmas gifts for a software club.',
+    'For a software club, choose the first five distinct gifts in this in-stock Christmas gift catalog.'))
 VARIANTS['synth-links-brief'] = (8, False, 'synth', False,
     'Fetch the live catalog with web_fetch. Pick five distinct Christmas gifts for a software club. '
     'Return five numbered links in catalog order with exact product titles and page URLs.')
@@ -78,7 +81,8 @@ ARMS += [(name, 0.2, 'low') for name in MAX_TOKENS_BY_VARIANT]
 RESEARCH_ARMS = (
     ('synth-links', .2, 'low'), ('wordpress-links', .2, 'low'),
     ('synth-links-six', .2, 'low'), ('synth-links-temp-zero', 0.0, 'low'),
-    ('synth-table', .2, 'low'), ('synth-autolinks', .2, 'low'), ('synth-links-brief', .2, 'low'),
+    ('synth-table', .2, 'low'), ('synth-autolinks', .2, 'low'), ('synth-first-five', .2, 'low'),
+    ('synth-links-brief', .2, 'low'),
     ('source-order-synth', .2, 'low'), ('source-order', .2, 'low'),
     ('research-table', .2, 'low'), ('research-prose', .2, 'low'),
     ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
@@ -110,6 +114,17 @@ def preferred_arm(counts):
         return max(challengers, key=lambda row:statistics.median(row[2]))[0]
     return best[0]
 
+def under_repeated_peak(results, counts):
+    eligible = (row for row in results if row['arm'] in counts and row.get('valid')
+                and row.get('method_valid') is not False and row.get('score') is not None)
+    peak = max(eligible, key=lambda row:row['score'], default=None)
+    if peak is None:
+        return None
+    key = peak['arm']
+    if sum(score is not None for score in counts[key]) >= 3 or any(row['arm'] == key for row in results[-12:]):
+        return None
+    return next(arm for arm in ARMS if arm_key(arm) == key)
+
 def choose(results):
     index=len(results)
     # Begin with paired hypotheses, rather than sending the same query repeatedly.
@@ -133,6 +148,11 @@ def choose(results):
     recent_failures = len(results) >= 3 and not any(r.get('valid') for r in results[-3:])
     if best is not None and not recent_failures and (index % 3 != 0 or len(counts[arm_key(best)]) == 1):
         return best
+    # Give a stale, sparsely reproduced record another comparison slot after a healthy sequence.
+    if all(row.get('valid') for row in results[-3:]):
+        peak = under_repeated_peak(results, counts)
+        if peak is not None:
+            return peak
     # Rotate the treatment order between passes to reduce time-of-day confounding.
     for repetitions in range(5):
         offset = repetitions % len(RESEARCH_ARMS)

@@ -20,6 +20,7 @@ COMPARISONS = (
     ('판매처 1곳', (('WordPress','wordpress-links'),('AI Synthesis','synth-links'))),
     ('빠른 판매처 최적화', (('상품 8개 · 링크','synth-links'),('상품 6개 · 링크','synth-links-six'),('상품 8개 · 표','synth-table'),('상품 8개 · 주소 직접 표시','synth-autolinks'))),
     ('AI Synthesis 지시 길이', (('기준','synth-links'),('짧은 지시','synth-links-brief'))),
+    ('AI Synthesis 상품 선택', (('선택 기준 자유','synth-links'),('카탈로그 앞 5개','synth-first-five'))),
     ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
     ('답변 형식', (('표','research-table'),('문장','research-prose'))),
@@ -138,6 +139,13 @@ def format_count(group, variant):
     texts = [e['final_text'] for _,e in group if e and isinstance(e.get('final_text'),str) and e['final_text'].strip()]
     return f'{sum(expected_format(text,variant) for text in texts)}/{len(texts)}' if texts else '미측정'
 
+def first_five_catalog_links(record):
+    sources = [source for source in record['retail_sources'] if source.get('accepted') is True]
+    if len(sources) != 1:
+        return False
+    expected = list(dict.fromkeys(sources[0]['products']))[:5]
+    return len(expected) == 5 and [product['url'] for product in record['products']] == expected
+
 def correct_subtotals(record):
     """Return the number of correct running USD subtotals, or None when merchant prices are unavailable."""
     prices = {}
@@ -208,6 +216,7 @@ def comparison_notes(groups):
         ('AI Synthesis · 짧은 지시 / 기준 지시', 'synth-links-brief', 'synth-links'),
         ('AI Synthesis · 표 / 링크 목록', 'synth-table', 'synth-links'),
         ('AI Synthesis · 주소 직접 표시 / 링크 목록', 'synth-autolinks', 'synth-links'),
+        ('AI Synthesis · 카탈로그 앞 5개 / 선택 기준 자유', 'synth-first-five', 'synth-links'),
         ('답변 형식 · 표 / 문장', 'research-table', 'research-prose'),
         ('가격 계산 · 소계 포함 / 가격만', 'research-price-total', 'research-prose'),
         ('카탈로그 · 판매처별 상품 4개 / 8개', 'paired-links-small', 'paired-links'),
@@ -219,12 +228,14 @@ def comparison_notes(groups):
         results = [record for _,record in groups[variant] if record and record['validation']['valid']]
         if variant in FORMAT_VARIANTS:
             results = [r for r in results if expected_format(r['final_text'],variant)]
+        if variant == 'synth-first-five':
+            results = [r for r in results if first_five_catalog_links(r)]
         if variant == 'research-price-total':
             results = [r for r in results if correct_subtotals(r) == 5]
         return [record['score']['mean_exact_tps'] for record in results]
 
     lines = ['## 조건별 관측 효과', '',
-             '아래 차이는 대조 조건의 공식 평균 중앙값 대비다. 답변 형식 비교는 요청 형식을 지킨 실행을, 소계 실험은 다섯 계산을 맞힌 실행을 사용한다. 두 조건에서 각각 유효 실행 3회가 쌓이면 반복 관측으로 표시한다.', '']
+             '아래 차이는 대조 조건의 공식 평균 중앙값 대비다. 답변 형식과 상품 선택 비교는 요청한 조건에 맞는 실행을, 소계 실험은 다섯 계산을 맞힌 실행을 사용한다. 두 조건에서 각각 유효 실행 3회가 쌓이면 반복 관측으로 표시한다.', '']
     for label, treatment, control in checks:
         lhs, rhs = observations(treatment), observations(control)
         counts = f'유효 {len(lhs)}/{len(rhs)}회'
