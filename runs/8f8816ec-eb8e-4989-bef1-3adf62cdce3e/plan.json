@@ -1,0 +1,14 @@
+{
+  "id": "8f8816ec-eb8e-4989-bef1-3adf62cdce3e",
+  "label": "D0011-kit-comparison",
+  "sessionKey": "agent:main:shop-d0011-kit-comparison-8f8816ec",
+  "variant": "kit-comparison",
+  "thinking": "high",
+  "temperature": 1.0,
+  "prompt": "A family is shopping for five Christmas gifts for electronics hobbyists. Use web_fetch to read the live kit catalog. Pick five distinct in-stock products. Make a comparison table with product name linked to the exact product page, listed price in its original currency, who would enjoy it, and a practical reason for the choice. Use the retailer descriptions.\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink,prices,short_description&_run=8f8816ec",
+  "experiment": "kit-comparison|1|high",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "source_plan_commit": "81acfbe33306fc13d5c5d5ff4631ef80e9494c58",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
