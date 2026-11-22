@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "id": "d438daf0-8988-47fd-9114-a4d6fb017429",
+  "historical": false,
+  "private_raw_sha256": "3316c4d6b69559a7a5f7ea7ea1e16ef2a0598747abacc4ea737952d6ad7c80ed",
+  "private_raw_bytes": 11614,
+  "startedWall": 1795322588260,
+  "video_threshold_tps": 1000,
+  "requires_video": false,
+  "final_text": "1. [Officiel Raspberry Pi 500+ Desktop Kit](https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/)\n2. [Waveshare CM5 PoE Mini-Computer Kit](https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/)\n3. [Compute Blade Starter Kit](https://raspberrypi.dk/produkt/compute-blade-starter-kit/)\n4. [Home Assistant – Raspberry Pi 5 Starter Kit](https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/)\n5. [Waveshare 7″ Touch Screen All-In-One Kit til Raspberry Pi CM4](https://raspberrypi.dk/produkt/waveshare-7%e2%80%b3-touch-screen-all-in-one-kit-til-raspberry-pi-cm4/)",
+  "evidence_status": "below_threshold_recorded",
+  "ended": {
+    "elapsedMs": 6608.609082999999,
+    "terminal": "final",
+    "time": 1795322594887
+  },
+  "score": {
+    "mean_exact_tps": 516.2363363345007,
+    "ui_rounded_tps": 516,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-37c9025f-281a-4dfa-beae-8c216724ff42",
+      "timestamp": 1795322588871,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "timed_sample": true,
+      "usage": {
+        "input": 590,
+        "output": 179,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 2817
+      },
+      "serverGeneration": {
+        "completionMs": 320.636592,
+        "outputTokens": 179
+      },
+      "tool_inputs": [
+        {
+          "id": "0c9c62859",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=10&stock_status=instock&_fields=name,permalink&_run=d438daf0"
+          },
+          "args": {}
+        }
+      ]
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-e824d4ec-c7b0-4cf4-8402-2ab98e9f7963",
+      "timestamp": 1795322593424,
+      "stopReason": "stop",
+      "message_index": 3,
+      "timed_sample": true,
+      "usage": {
+        "input": 1561,
+        "output": 327,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 3936
+      },
+      "serverGeneration": {
+        "completionMs": 689.5704489999999,
+        "outputTokens": 327
+      },
+      "tool_inputs": []
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "0c9c62859",
+      "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=10&stock_status=instock&_fields=name,permalink&_run=d438daf0",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T04:43:13.363Z",
+      "cached": false,
+      "products": [
+        "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+        "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+        "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+        "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+        "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+        "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+        "https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/",
+        "https://raspberrypi.dk/produkt/raspberry-pi-5-desktop-kit/",
+        "https://raspberrypi.dk/produkt/home-assistant-yellow/",
+        "https://raspberrypi.dk/produkt/waveshare-7%e2%80%b3-touch-screen-all-in-one-kit-til-raspberry-pi-cm4/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "catalog_name": "Officiel Raspberry Pi 500+ Desktop Kit",
+      "source_tool_call_id": "0c9c62859",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "html_bytes_read": 303539,
+      "html_sha256": "877e0a4fa1806c4810f33d66cc4979cc61db38a699c70fb57f3fc13ad30d96b0",
+      "checked_at": "2026-11-22T04:43:19.928576+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Officiel Raspberry Pi 500+ Desktop Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "catalog_name": "Waveshare CM5 PoE Mini-Computer Kit",
+      "source_tool_call_id": "0c9c62859",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "html_bytes_read": 312533,
+      "html_sha256": "693a2792a24002f6ebb8217500e3a1ba77e00c10c89e7d9eb25f9a74b2af59c7",
+      "checked_at": "2026-11-22T04:43:19.919443+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Waveshare CM5 PoE Mini-Computer Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "catalog_name": "Compute Blade Starter Kit",
+      "source_tool_call_id": "0c9c62859",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "html_bytes_read": 325513,
+      "html_sha256": "01c72390b00eeadf8f20073ed0a626683bd632d64209c803ebb9bd74039a2bcd",
+      "checked_at": "2026-11-22T04:43:19.891142+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Compute Blade Starter Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+      "catalog_name": "Home Assistant – Raspberry Pi 5 Starter Kit",
+      "source_tool_call_id": "0c9c62859",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+      "html_bytes_read": 771440,
+      "html_sha256": "9390a7cd4087374d547af6e10ca9f6a74c7a69512437774f419887631e9cfa88",
+      "checked_at": "2026-11-22T04:43:20.674418+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Home Assistant - Raspberry Pi 5 Starter Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": false,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/waveshare-7%e2%80%b3-touch-screen-all-in-one-kit-til-raspberry-pi-cm4/",
+      "catalog_name": "Waveshare 7″ Touch Screen All-In-One Kit til Raspberry Pi CM4",
+      "source_tool_call_id": "0c9c62859",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/waveshare-7%e2%80%b3-touch-screen-all-in-one-kit-til-raspberry-pi-cm4/",
+      "html_bytes_read": 308142,
+      "html_sha256": "397b4f2563488c807a73cf01c0edc2afa4063ca04b7e0a83f1e08ecb779f7b4d",
+      "checked_at": "2026-11-22T04:43:19.909672+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/waveshare-7%e2%80%b3-touch-screen-all-in-one-kit-til-raspberry-pi-cm4/",
+      "merchant": "raspberrypi.dk",
+      "title": "Waveshare 7″ Touch Screen All-In-One Kit til Raspberry Pi CM4 • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    }
+  ],
+  "plan_commit": "91ce5c7b6da90a75073d44f25bc545f2ec13b72a",
+  "source_plan_commit": "f2e7cd58ed17eb4fed96cdac13abfd183fdca4e9",
+  "source_result_commit": "10bd4ea4d75fa21ee112979d7b06bcf2dc1d79d4",
+  "publication_timing": "Public result commit created at export time; use source mappings for original chronology."
+}
