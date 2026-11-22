@@ -1,0 +1,19 @@
+{
+  "id": "9d7eae61-fb03-45b8-b59b-4dda67887c92",
+  "label": "D0049-synth-first-five",
+  "sessionKey": "agent:main:shop-d0049-synth-first-five-9d7eae61",
+  "variant": "synth-first-five",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": null,
+  "video_threshold_tps": 1000,
+  "prompt": "Fetch the live retailer catalog with web_fetch. For a software club, choose the first five distinct gifts in this in-stock Christmas gift catalog. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.\nhttps://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=9d7eae61",
+  "experiment": "synth-first-five|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "9b5304067ba87fc2bd245f89246871cc1857e8ac3d48e05fab19446017763af8",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "source_plan_commit": "05a6935f0b43352948e57cc848fd6f8ecb0a5a75",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
