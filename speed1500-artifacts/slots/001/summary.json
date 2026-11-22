@@ -1,0 +1,37 @@
+{
+  "slot": 1,
+  "campaign": "speed1500-20261122",
+  "arm": "A",
+  "id": "465ba4e8-bfe2-4722-b473-7d0ee418ffb4",
+  "label": "D5080-speed1500-a",
+  "score": 1406.9458523471972,
+  "ui": 1407,
+  "valid": false,
+  "product_valid": false,
+  "method_valid": false,
+  "relay_valid": true,
+  "recorded_video": false,
+  "evidence_status": "validation_rejected",
+  "record": false,
+  "goal": false,
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": "chatcmpl-43fc6475-630f-4378-b025-97224daa295d",
+      "completionMs": 275.77465,
+      "outputTokens": 388,
+      "tokensPerSecond": 1406.9458523471972,
+      "stopReason": "toolUse"
+    }
+  ],
+  "call_count": 1,
+  "first_tps": 1406.9458523471972,
+  "final_tps": null,
+  "terminal_429": true,
+  "started_wall": 1795351823361,
+  "ended_wall": 1795351890677,
+  "raw_sha256": "2602bb132ad594a714f1f6bb90ffb2d659e73bc85b10d83d33b699b364326539",
+  "product_urls": [],
+  "provider_429s": 10,
+  "provider_attempts": 11
+}

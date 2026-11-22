@@ -1,0 +1,24 @@
+{
+  "order": [
+    "AFP",
+    "PFA",
+    "FPA",
+    "APF",
+    "PAF",
+    "FAP"
+  ],
+  "pairs_required": 4,
+  "wins_required": 4,
+  "median_gain_required": 100,
+  "product_success": "at least control count",
+  "goal": 1500,
+  "previous_record": 1354.6625976356386,
+  "confirmation": [
+    "A",
+    "winner",
+    "winner",
+    "A"
+  ],
+  "cooldown_after_terminal_seconds": 60,
+  "confirmation_window": "later KST clock hour, at least 15 min after exploration"
+}

@@ -1053,87 +1053,87 @@
       "source_sha256": "1acecb28a2ae3131cd0cd3004ddab62df0efde3dbc746a43e6af34dd0ab557c4"
     },
     "speed1500-artifacts/slots/001/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "43d71c02b54782e571c722788645a989b2df4c671b91b0ab51b2eeee66879e0f"
     },
     "speed1500-artifacts/slots/002/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "48870d0b95c3839a8aa23b44f56aa1af0d89ae9d3823622f7719deb5b1e5e0b9"
     },
     "speed1500-artifacts/slots/004/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "a379c295d3d4d9857b96bf3e0abc50491d0ba8d16be87d5700adb95fb98e35ad"
     },
     "speed1500-artifacts/slots/005/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "65722005f84b9d8b6d8731bea8df2b0d43dad8c8f012844c9684d4c1b0a3f79a"
     },
     "speed1500-artifacts/slots/006/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "67863e37ebb9ac74eefd80cc1e3a5dfdd4eb7f46c0775163a2e983f058c6ae7d"
     },
     "speed1500-artifacts/slots/007/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "a716bdd8f8a1c7533c533d06834dc998823c44acfea5175f848f8513ce7dab79"
     },
     "speed1500-artifacts/slots/011/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "f00f2a70e39e3e8d9f2ade488d467bb42e88420e521ee3a1a7ea1c9e05b52b22"
     },
     "speed1500-artifacts/slots/015/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "5b6461b37a8c648ff747d8793dc51558da07d60e8d8b6be118722c68a51af532"
     },
     "speed1500-artifacts/slots/017/relay.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "86b0e724c24e3567a32e89e98307cabe46f12121c2d4dca5b32434c650715f2c"
     },
     "speed1500-artifacts/slots/001/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "a45057f88c1fcd265ac931409eead8917196c4c90b514a59883af05a79b47603"
     },
     "speed1500-artifacts/slots/003/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "b6d57cfd874beb8a0eacd80e87ea4fab2b48af36fe9c0eac1f52a48a864dad28"
     },
     "speed1500-artifacts/slots/005/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "80d32cf5146a4e2bdf09768f2c08de727b68c8fe2682e3bb19d6fd11b870bd69"
     },
     "speed1500-artifacts/slots/008/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "35fe2ee67be51915e3bbf717a7b442374895378dd156f8ad3e7c9a3ede55bb91"
     },
     "speed1500-artifacts/slots/009/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "fc9d83fcd6fa7af04471cedaa505e2c1a25767a500a6348f7d5ae7cd36f53c25"
     },
     "speed1500-artifacts/slots/010/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "0dab324fb5f7e385192603d9fc674efcd36dcefa0bf7e07fa983d93a6a4d1d8c"
     },
     "speed1500-artifacts/slots/012/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "b9920480eaf67c2b6bbaa2896ab77862aa53aff5e6bdc67f890827781bc2bf43"
     },
     "speed1500-artifacts/slots/013/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "7e4008ca22616b250dd6585d688c26549cc24850f1253dcf677c6583fde28f2f"
     },
     "speed1500-artifacts/slots/014/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "154c103c0e41f36e6bc27a05f233334a1f2c1895503c50a9a94b8ffbed82f587"
     },
     "speed1500-artifacts/slots/016/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "ca93e158687bbec8f15c95bad6dfafe6913105d68bda237423b7cf6502bbe39a"
     },
     "speed1500-artifacts/slots/018/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "5073362aa9e9b57c0feeed1104fca16d7d58b01d1976aa23b089f882e6f9cdce"
     },
     "speed1500-artifacts/slots/006/validation.json": {
-      "source_kind": "speed1500 campaign slot",
+      "source_kind": "speed1500 campaign slot or fetch receipt",
       "source_sha256": "8e644f0387d6397d0df39039410e3b44425caf4ce0b633c358cffaf30247bc99"
     },
     "runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/demo.mp4": {
@@ -1160,6 +1160,506 @@
     "runs/2fe4b0df-f98c-474f-9bb9-00ea69c7bab0/original.mp4": {
       "source_kind": "run recording recovered from artifact cache, byte-matched to the original evidence",
       "source_sha256": "3acf728fa0ecf16d76c315492f4bf92dfb243518312f1911e43480ed872ba793"
+    },
+    "speed1500-artifacts/protocol.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "4f875264919ecddad24eb70f1a7a878aceb11ceefb90d584b38802533c275286"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/cable.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/cable.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "f7aacc0b81faa17d4f9a2b05e707bcc831943baeac42b32886ea658d439a801f"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/echo.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "bae8cf71700ce36e4267775fa29fa4e23ac09a1da3a00f225b37f6682af1832c"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/echo.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "b52d6f90e5acd06d99a1f0f3949b801abe143f5acfd7e1693214dadaafdda05b"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/events.jsonl": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "1dc489081cbe8e8521198385bb9cb05711b4698db63fcd7be1563cf9410bfb2b"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/filter.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9db4a841f2987bf766f99fd10ce79e49560bd6e9065ebf2ebbd0a3e4c5840346"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/filter.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "cf438be6e4123a75e3e957fdf1c050dbe8820487225df0c9e064f4b244d04495"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/manifest.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "d872cb79d872d368522e54661ec74088c5f745a4a81890f6072f5460eb8ef8ef"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/mixer.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fef2c9bea2d5efa611cbb8820f20d6825fa87242ec2bba033b2b02ef3ce82867"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/mixer.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "6cf739d2fce86584d553568104e0febdd3de0fce80c96abf5eec931471394793"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/oscillator.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "dffeea58fc411b7a4d45ddbd7f838f77b2fc7ce2ac6f70065cb7589a3a6140f6"
+    },
+    "speed1500-artifacts/receipts/058d3a3a-0131-44e8-8367-5bbe14d73bd5/oscillator.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "8f1cb932c5533aa7c746ed1904903838fc45cdb2f0881d824bc85f32c9cb00fd"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/cable.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/cable.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "a4ca88a54a8955952c74da490f8e9f2d18621b2b716db15f8910ffab18a01372"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/echo.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "bae8cf71700ce36e4267775fa29fa4e23ac09a1da3a00f225b37f6682af1832c"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/echo.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "4f06a19e1d820a6ed0dc96fc15ca8bc43ab54292c1c78e5f00630a273edc628b"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/events.jsonl": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9527d60fe4f2561f0b41b1afd8b6666485ed04d3733fa9add013ae0315061e31"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/filter.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9db4a841f2987bf766f99fd10ce79e49560bd6e9065ebf2ebbd0a3e4c5840346"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/filter.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "2d16abc4bb0421b955ed1efd6777db4fb2f35322aa1f3a464239404115848999"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/manifest.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "ab8dd109cb912efd763ca7b0965023c03678a3fdde1229754963bb1866e485aa"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/mixer.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fef2c9bea2d5efa611cbb8820f20d6825fa87242ec2bba033b2b02ef3ce82867"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/mixer.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "0a25dc1e217e0ce170a2830189440e78be2aa3d8ed2282e85dbc864774794586"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/oscillator.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "dffeea58fc411b7a4d45ddbd7f838f77b2fc7ce2ac6f70065cb7589a3a6140f6"
+    },
+    "speed1500-artifacts/receipts/33918883-0ac4-4135-a9dd-ea52eeff7fb8/oscillator.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "77ae8b4cca4d01e361b94987915d68c19ab60b69ebcf22b1cd21525dc7b7fa3d"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/cable.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/cable.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9ac511ff1a4e6d4fb144ba666b44e2855065c45a572c78ce137f6d2eb03f0f46"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/echo.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "bae8cf71700ce36e4267775fa29fa4e23ac09a1da3a00f225b37f6682af1832c"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/echo.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "44a277ad224fa6949cae829db01a8cd24e854dbb2e950d3195b745690ae1b737"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/events.jsonl": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "85ccd6997553679a1ac2698cf2b97e36ab98228fcd9f0a15dae743e805c0e117"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/filter.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9db4a841f2987bf766f99fd10ce79e49560bd6e9065ebf2ebbd0a3e4c5840346"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/filter.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "76fc076f93a6e8c75f4141a70b50fcaef20da8763c1f72cf3b8580f27d620ffe"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/manifest.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "d955338a37ff7e367e19bc25663c8442d9f06b28bbecc7c08d5a626ed96a256a"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/mixer.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fef2c9bea2d5efa611cbb8820f20d6825fa87242ec2bba033b2b02ef3ce82867"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/mixer.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "c80fbe0edc58f610f0a980bf38af51189c017077943baa802ca68f60e5764bb3"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/oscillator.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "dffeea58fc411b7a4d45ddbd7f838f77b2fc7ce2ac6f70065cb7589a3a6140f6"
+    },
+    "speed1500-artifacts/receipts/4743db14-b132-45f7-a6be-38c772882920/oscillator.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "3ce67f782ae98e4d0f06dcc38d0dd3e4345a1cb468a97d65bfe23bf5a88d0c95"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/cable.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/cable.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "abf3f05c0f6b41faeb92d1d0fc1400e83d5afd035808bf38927eaa17e2dc3c9c"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/echo.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "bae8cf71700ce36e4267775fa29fa4e23ac09a1da3a00f225b37f6682af1832c"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/echo.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "4afc684f86288524309e5615528ab55a8e6b63103e0d8ef3fe11e4792a609ed6"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/events.jsonl": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "e8d8a4215fcb48aa3d1a69e6ea69d1ea326a20d7a7046092f573bcba6af458b3"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/filter.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9db4a841f2987bf766f99fd10ce79e49560bd6e9065ebf2ebbd0a3e4c5840346"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/filter.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "f3644eae0311acb25f5eaf92f18a0c53749361059e518c5b49feb5ccb4175d1e"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/manifest.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "685cbde71f2e73ae9193ed704492e0126b40f34a7051af2ae43e1c273d5caac1"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/mixer.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fef2c9bea2d5efa611cbb8820f20d6825fa87242ec2bba033b2b02ef3ce82867"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/mixer.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "4cec49f034215c2853a1a44166a6a6855f2b9a00d126d27ea9fc91f5861c67e0"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/oscillator.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "dffeea58fc411b7a4d45ddbd7f838f77b2fc7ce2ac6f70065cb7589a3a6140f6"
+    },
+    "speed1500-artifacts/receipts/633ed6af-d7b3-4b3b-af47-30c775cf2181/oscillator.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "3f8b20a03fa83a38803e16d3fbe5d085f8fe7ee8ba1c146f96804d68cc493b1e"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/cable.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/cable.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9a7bd06136c48a041197520337a3220525bbbe022ffd2657c1849b155e6e25d7"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/echo.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "bae8cf71700ce36e4267775fa29fa4e23ac09a1da3a00f225b37f6682af1832c"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/echo.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "20da901d9438576c59a9743172513d05a07d18cf0c92bded75b737d903210676"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/events.jsonl": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "d819c8a00cff4bc6cae4f624f1ba68fcea5edf0adb20344f705b676a65ae9bc6"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/filter.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9db4a841f2987bf766f99fd10ce79e49560bd6e9065ebf2ebbd0a3e4c5840346"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/filter.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "f14b981614c950cf4f6f4d530ff07a73a1b911898e2600cce3200a7af05a13b5"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/manifest.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "b05ba4ef16db04e731d7775776992622860dc71f16148c17ecfbbfdfee3e313c"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/mixer.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fef2c9bea2d5efa611cbb8820f20d6825fa87242ec2bba033b2b02ef3ce82867"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/mixer.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "ef352806459c6a58f285b7d51000f958a582a6d43850c79c60847af82550c668"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/oscillator.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "dffeea58fc411b7a4d45ddbd7f838f77b2fc7ce2ac6f70065cb7589a3a6140f6"
+    },
+    "speed1500-artifacts/receipts/7b358226-5b83-4399-9af9-bb39b1db867e/oscillator.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "0413680caca84e5f29560a25e13066e0f7487a1ad9727583fce2bdcb82d808bd"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/cable.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/cable.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "3321ea2258f1a40bb20f69060e4801d61c9677998e4dc5e45f56f4ca4b1b9981"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/echo.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "bae8cf71700ce36e4267775fa29fa4e23ac09a1da3a00f225b37f6682af1832c"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/echo.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "f1d459eb7b11b845ef752ce7e35a9c6d96e11ba930945accb9f1397b817ae49f"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/events.jsonl": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fbf2bd1f2f1b6994d030e3421bddff08b7e2b214b2c2362cb7d4c7580ce84798"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/filter.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "9db4a841f2987bf766f99fd10ce79e49560bd6e9065ebf2ebbd0a3e4c5840346"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/filter.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "302dc2d4ae569aae5900740fb38e513f36b5426d9fe3e210d96042d0eed823af"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/manifest.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "63763a533a3bb0b51168011ca4bfaf46446e2ecdb49a0e047a461a40b0f0d78e"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/mixer.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fef2c9bea2d5efa611cbb8820f20d6825fa87242ec2bba033b2b02ef3ce82867"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/mixer.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "e61a08c67f98b3eb9f68c7aaa6e336ad6568ba3a1b05f20b5002c8f4dbb03f4b"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/oscillator.bin": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "dffeea58fc411b7a4d45ddbd7f838f77b2fc7ce2ac6f70065cb7589a3a6140f6"
+    },
+    "speed1500-artifacts/receipts/bca8114e-28fe-4d07-ae0e-4b863788dacc/oscillator.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fe8af688f5ca0f050950c243779a9176bac0d757221b345d09fd0ea139667af3"
+    },
+    "speed1500-artifacts/report.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "1874ad079aaf7ed3f9f4725a060f64dc60c3618344fbc4fc455e345125226f25"
+    },
+    "speed1500-artifacts/slots/001/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "21f4e1540eb10665c1d7062ab2298d138550fd70e278bb0f7e4669e09edbb378"
+    },
+    "speed1500-artifacts/slots/001/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "cd1c231f989395f3a86ed67d965714135476bdb69ecdf86950ea26eaa257a948"
+    },
+    "speed1500-artifacts/slots/002/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "c1d6c96afdf5840f8d106ef0bf8e037302aed14013907c2913029883d48dc210"
+    },
+    "speed1500-artifacts/slots/002/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "8f47fa45f96a02b985b07c7f751b7d4df03e794478057959e8b68937ab68dec2"
+    },
+    "speed1500-artifacts/slots/002/validation.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "62044356f49b27e57cc6ef26fd7738d7b99c380c445afcc48694666759563f94"
+    },
+    "speed1500-artifacts/slots/003/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "80d1860ce6e98c03731601e023371850c07002335880bc22081541e8e994ad8c"
+    },
+    "speed1500-artifacts/slots/003/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "6b630590ff34ae4ab05f857ae64e4024fae1ae58f7541e8d42904ebb5713e60a"
+    },
+    "speed1500-artifacts/slots/003/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "50783b4e07244d066b1a41daad107983ff80e27ef5d9742f998e17127d2c700a"
+    },
+    "speed1500-artifacts/slots/004/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "66b75cbc3a253780c2fa2f4cd47085f77dbf570d938047d613a5ec0dc3613a5c"
+    },
+    "speed1500-artifacts/slots/004/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "7429840f706e99c01f9c2f09c156446ff2075768c2d449af493694755fa4a6fe"
+    },
+    "speed1500-artifacts/slots/004/validation.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "56684761f63f47f460f292866c69c14f0d2ec529aa0c0be7d114e6006c07fc0d"
+    },
+    "speed1500-artifacts/slots/005/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "6216c84cbfecd70c218618d581ab03980e02332ac342aa37f6b9e11c8cef687d"
+    },
+    "speed1500-artifacts/slots/005/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "af78598fa7cde4d022c0e14f99b7635330874c6a03c77eda3a3ce406e501070f"
+    },
+    "speed1500-artifacts/slots/006/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "8d93f61b4018c20a5ce4e2d291dcc6ebc420e71da5224230e783aa90058133c5"
+    },
+    "speed1500-artifacts/slots/006/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "d7c48f577fc857f78780ffc0d5a07f1904152d09ad32463be5cb31eeaa2a4200"
+    },
+    "speed1500-artifacts/slots/007/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "935b2a57d61b48401ee8a77e82537f3f1e9b874eca1cecd8ce0a79877faafd6d"
+    },
+    "speed1500-artifacts/slots/007/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "28f625f5c85befc4154a7dc42c310b8c1fcb81af57d3e38fca9ac4556838bf57"
+    },
+    "speed1500-artifacts/slots/007/validation.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "14f739c5a8c1e4dbc679d2a393d149b9d07e73fec630967cb490f96a0db0d8d7"
+    },
+    "speed1500-artifacts/slots/008/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "4a78e265a63a7fffb0a8f9f9d5d877a7efdd79f118a32f55ec1e210410a37e62"
+    },
+    "speed1500-artifacts/slots/008/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "5770ebf6c7f77fb6686e390abde5de6d528ace557f38b18be1511cb075575dc6"
+    },
+    "speed1500-artifacts/slots/008/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "454e5679af6c679439dbe163c00e738c8fff9de4913b5444eccf542a67e47609"
+    },
+    "speed1500-artifacts/slots/009/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "6e4824e2d522d4b00112aabee89f2dfd9c8cc26af7b90f75c7b2047e18dabde1"
+    },
+    "speed1500-artifacts/slots/009/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "50e671a1f1b0a98a4050a26411f9b45d9ad07308e675b018d3f69d8cdf00aa49"
+    },
+    "speed1500-artifacts/slots/009/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "c2d4f5b907f16b987a0b51180ed3c32087c5ead48298cff86bdfe2e223bb5ebf"
+    },
+    "speed1500-artifacts/slots/010/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "f2e04fc68ebefdc8f10ee49361a194f92a6b6e7b608278755c78eeede72a26fe"
+    },
+    "speed1500-artifacts/slots/010/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "129860b7f519da9ceb8a222452bdc6a2ce5b9166d1e36f1ec3e806f182bc0d5c"
+    },
+    "speed1500-artifacts/slots/010/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "b6cbd60eb0390fbeac31e8f8164613a950bed17fc15a2ee34c220a5b60d5e056"
+    },
+    "speed1500-artifacts/slots/011/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "82ba27d2a04a5cc8f4679f1c2963b8b3a9c5c1582ebf371ae46fe80e28426ebc"
+    },
+    "speed1500-artifacts/slots/011/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "42f7084977bf2888e0b5afda3fc2cc3602bd15ede1c5f0fbbd3299c3227248e2"
+    },
+    "speed1500-artifacts/slots/011/validation.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "b0c86275030c4eabb43243d91bf0b8a9f8ba3f7983b43d3cc3b2742624ca3260"
+    },
+    "speed1500-artifacts/slots/012/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "0015860648661ead9b6eb39a162c1dd654dfb1642080cb90bdb00cf198de2d16"
+    },
+    "speed1500-artifacts/slots/012/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "6a94d6c30f1e6cebc381c830284c41c792e04fa9e1ace8283c65d5501bbd983d"
+    },
+    "speed1500-artifacts/slots/012/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "d3b451bbb1cbf5396a91ab779e03457575eeecdbb21b4c0f318ad37b3f679c72"
+    },
+    "speed1500-artifacts/slots/013/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "8437a9f41e2c26ea5c6336be980cc5ac6bd98cf72566ee58ca0f7fc0f182e0b2"
+    },
+    "speed1500-artifacts/slots/013/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "894939d54ee51f50dc884218dafaafec6a264be4f63e1de008c7656e50daebd5"
+    },
+    "speed1500-artifacts/slots/013/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "a8d0cd5f85ecb4dad1859575a52d6bed9a7ee730602684222ce9cf47ba8bdeec"
+    },
+    "speed1500-artifacts/slots/014/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "dd7ffe8a8ed62105311717bf65fc15eda56a1db276fa71c9680fb59dfeb1c36d"
+    },
+    "speed1500-artifacts/slots/014/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "785cdd25016e54409275aa88353cc07074c51d03983d41af52bf84e027c9436a"
+    },
+    "speed1500-artifacts/slots/014/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "7a2af6ad92b56edadffe63f95dc44b37ce69f97aee0ef51712d61075861bad4f"
+    },
+    "speed1500-artifacts/slots/015/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "c5364ce6383a9bb1949acad8fd0e8f015d3c04f65373a842efaedc74d88dbade"
+    },
+    "speed1500-artifacts/slots/015/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "fc8eb476dcd094b7c7aee02d6a05fa03f8ed91854faf79778664a5fb462f2fb3"
+    },
+    "speed1500-artifacts/slots/015/validation.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "20e07cd5214b3600814ea38dd4df6dbd1004a683aa820da3f6d664ba497c6089"
+    },
+    "speed1500-artifacts/slots/016/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "b31f1d8ca9ef29051b2a05b521bf573a18ec7ded8e9b13098613194177772b1d"
+    },
+    "speed1500-artifacts/slots/016/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "3dd7b0aa7f3571f1ffc359f95ece1ad8f77dd32aedf1841f502fd640a762fd79"
+    },
+    "speed1500-artifacts/slots/016/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "83771aca8150882825e048fda3305f6b4b14bff72fb410c0a2b28e11c5969dee"
+    },
+    "speed1500-artifacts/slots/017/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "7b3eadf59672122270dc09c22648ccb7342853afb78b46ed398cbc10c04a7416"
+    },
+    "speed1500-artifacts/slots/017/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "5916ca6b538f8dfe689132ee50488d19c27a12605b4a072c01cf6c77588b58f8"
+    },
+    "speed1500-artifacts/slots/017/validation.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "39a341d0623d85476524b6284ee75fd081dadfd142a37a8ffef7d770f55e666c"
+    },
+    "speed1500-artifacts/slots/018/plan.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "29a53988c0c330998c6640b0ee0e5eb6559c7660351780fbf3734f8d4017b213"
+    },
+    "speed1500-artifacts/slots/018/relay.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "14e1e5480b41b78f73d5f0541a59c29251a555aabb3c5745e83c733060759d14"
+    },
+    "speed1500-artifacts/slots/018/summary.json": {
+      "source_kind": "speed1500 campaign slot or fetch receipt",
+      "source_sha256": "c83f9c9fab57d410c892c57073e7dc7b495d28e2982c9a8e4b97bc9b97f444cc"
     }
   },
   "export_scope": "Source tree and working changes, run evidence, first-level QA reports and scripts per check, and referenced presentation clips. Generated fixtures, runtime state, caches, AppleDouble sidecars, internal bundles and private gateway traces stay local. Portable path substitutions apply to local reports. source_files values are SHA-256 of bytes before path substitution or plan mapping."

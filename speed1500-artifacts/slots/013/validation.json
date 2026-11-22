@@ -1,6 +1,5 @@
 {
   "run_id": "7b358226-5b83-4399-9af9-bb39b1db867e",
-  "input_path": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/speed1500-20261122/slots/013/raw.json",
   "input_sha256": "e0e793424d04bbe913a92f83d391f44dd91b4822272621d05c836bec6cace66b",
   "valid": false,
   "product_valid": false,

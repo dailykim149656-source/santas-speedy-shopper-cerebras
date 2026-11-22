@@ -1,0 +1,59 @@
+{
+  "completed": 18,
+  "groups": {
+    "A": {
+      "sent": 6,
+      "valid": 2,
+      "median": 1072.5749746883225,
+      "best": 1154.8201455088795,
+      "products": 2
+    },
+    "P": {
+      "sent": 6,
+      "valid": 2,
+      "median": 661.2280729758613,
+      "best": 728.4170650540804,
+      "products": 2
+    },
+    "F": {
+      "sent": 6,
+      "valid": 3,
+      "median": 903.7162985527198,
+      "best": 1033.8950019345796,
+      "products": 3
+    }
+  },
+  "candidates": {
+    "P": {
+      "paired_differences": [
+        -560.7810646112372
+      ],
+      "pairs": 1,
+      "wins": 0,
+      "median_gain": -560.7810646112372,
+      "product_successes": 2,
+      "promoted": false
+    },
+    "F": {
+      "paired_differences": [],
+      "pairs": 0,
+      "wins": 0,
+      "median_gain": null,
+      "product_successes": 3,
+      "promoted": false
+    }
+  },
+  "winner": null,
+  "confirmation_differences": [],
+  "confirmation_pass": false,
+  "best": {
+    "label": "D5085-speed1500-a",
+    "arm": "A",
+    "score": 1154.8201455088795,
+    "ui": 1155,
+    "id": "1d100e81-3b0f-4d5e-8d26-fd930a340d78"
+  },
+  "records": [],
+  "targets": [],
+  "targets_pending_ui": []
+}
