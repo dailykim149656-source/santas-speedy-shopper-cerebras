@@ -1,0 +1,14 @@
+{
+  "id": "cb55e751-bcc1-4e22-85d8-7f24004aee56",
+  "label": "D0009-paired-links",
+  "sessionKey": "agent:main:shop-d0009-paired-links-cb55e751",
+  "variant": "paired-links",
+  "thinking": "low",
+  "temperature": 0.2,
+  "prompt": "Find five different Christmas gifts for people who enjoy making things. Use web_fetch on both in-stock retail catalogs in parallel. Include both shops. Return a numbered Markdown list with the exact product titles linked to their exact product pages.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=cb55e751\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink&_run=cb55e751",
+  "experiment": "paired-links|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "source_plan_commit": "fb8b2447090f5539eaa70881bdacaa1d51f043fa",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
