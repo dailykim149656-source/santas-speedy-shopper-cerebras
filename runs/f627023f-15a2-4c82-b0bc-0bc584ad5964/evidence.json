@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "id": "f627023f-15a2-4c82-b0bc-0bc584ad5964",
+  "historical": false,
+  "private_raw_sha256": "b3cecd11de632e7b9200812a299b39edd07c465930a93b33dec1874cacfea01f",
+  "private_raw_bytes": 10627,
+  "startedWall": 1795319762126,
+  "requires_video": false,
+  "final_text": "1. [AI250 Eurorack BXR](https://aisynthesis.com/product/ai250-eurorack-bxr/)\n2. [Eurorack High Power Supply](https://aisynthesis.com/product/eurorack-high-power-supply/)\n3. [AI024 Eurorack X Filter](https://aisynthesis.com/product/ai024-eurorack-x-filter/)\n4. [AI012 Eurorack Wave Animator](https://aisynthesis.com/product/ai012-eurorack-wave-animator/)\n5. [AI106 West Coast Eurorack Mixer](https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/)",
+  "evidence_status": "below_threshold_recorded",
+  "ended": {
+    "elapsedMs": 11968.498375000001,
+    "terminal": "final",
+    "time": 1795319774122
+  },
+  "score": {
+    "mean_exact_tps": 826.6819041608076,
+    "ui_rounded_tps": 827,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-916787e7-062e-4890-b688-0f526343f744",
+      "timestamp": 1795319762971,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "timed_sample": true,
+      "usage": {
+        "input": 589,
+        "output": 191,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 2828
+      },
+      "serverGeneration": {
+        "completionMs": 225.877741,
+        "outputTokens": 191
+      },
+      "tool_inputs": [
+        {
+          "id": "052490dcf",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=f627023f"
+          },
+          "args": {}
+        }
+      ]
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-4ebc6518-b19c-4eee-a270-c4facd579d12",
+      "timestamp": 1795319768729,
+      "stopReason": "stop",
+      "message_index": 3,
+      "timed_sample": true,
+      "usage": {
+        "input": 1438,
+        "output": 214,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 3700
+      },
+      "serverGeneration": {
+        "completionMs": 264.925708,
+        "outputTokens": 214
+      },
+      "tool_inputs": []
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "052490dcf",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=f627023f",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:56:08.651Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+        "https://aisynthesis.com/product/eurorack-high-power-supply/",
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+        "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+        "https://aisynthesis.com/product/ai018-eurorack-stereo-matrix-mixer/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+      "catalog_name": "AI250 Eurorack BXR",
+      "source_tool_call_id": "052490dcf",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+      "html_bytes_read": 424154,
+      "html_sha256": "15f894ee9b620c1648d34cffd39b465939a673a6ca7bba6254698224cc3575a4",
+      "checked_at": "2026-11-22T03:56:18.208157+00:00",
+      "canonical": "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+      "merchant": "aisynthesis.com",
+      "title": "AI250 Eurorack BXR Test Equipment",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/eurorack-high-power-supply/",
+      "catalog_name": "Eurorack High Power Supply",
+      "source_tool_call_id": "052490dcf",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/eurorack-high-power-supply/",
+      "html_bytes_read": 419560,
+      "html_sha256": "565fe0b0fde6098db9c7500299a9aaa85b97d421b8abe8a0564c8a476edc5c9f",
+      "checked_at": "2026-11-22T03:56:18.248543+00:00",
+      "canonical": "https://aisynthesis.com/product/eurorack-high-power-supply/",
+      "merchant": "aisynthesis.com",
+      "title": "Eurorack High Power Supply",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "catalog_name": "AI024 Eurorack X Filter",
+      "source_tool_call_id": "052490dcf",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "html_bytes_read": 477282,
+      "html_sha256": "0ec1db5c74c1a635f9fcfc7d30ec08e5d8e19b5a17a5ed735945f799c39df008",
+      "checked_at": "2026-11-22T03:56:18.328518+00:00",
+      "canonical": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "merchant": "aisynthesis.com",
+      "title": "AI024 Eurorack X Filter",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "catalog_name": "AI012 Eurorack Wave Animator",
+      "source_tool_call_id": "052490dcf",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "html_bytes_read": 490877,
+      "html_sha256": "e7aae7e3a7a9d89130c4ad880d3a0965dddc4419b220a5776595faf997be0330",
+      "checked_at": "2026-11-22T03:56:18.357466+00:00",
+      "canonical": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "merchant": "aisynthesis.com",
+      "title": "AI012 Eurorack Wave Animator",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+      "catalog_name": "AI106 West Coast Eurorack Mixer",
+      "source_tool_call_id": "052490dcf",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+      "html_bytes_read": 486549,
+      "html_sha256": "3f8b961f63facfb52ae92cb881102480d189b693624b92d53e927991e429d9a6",
+      "checked_at": "2026-11-22T03:56:18.400074+00:00",
+      "canonical": "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+      "merchant": "aisynthesis.com",
+      "title": "AI106 West Coast Eurorack Mixer",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "plan_commit": "6bc408c2001df28887c04f686e5af1cd45cd1d45",
+  "source_plan_commit": "1c5e6f077ac37ae76ba28e946bd02f9afc0e5a81",
+  "source_result_commit": "5f95019b72482d08cbbfdc98c425693751f1dcb8",
+  "publication_timing": "Public result commit created at export time; use source mappings for original chronology."
+}
