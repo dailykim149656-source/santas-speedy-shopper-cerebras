@@ -1,0 +1,18 @@
+{
+  "id": "35756174-c151-4957-a1b0-a23ac3b19c0e",
+  "label": "D0023-hardware-links",
+  "sessionKey": "agent:main:shop-d0023-hardware-links-35756174",
+  "variant": "hardware-links",
+  "thinking": "low",
+  "temperature": 1.0,
+  "top_p": null,
+  "max_completion_tokens": null,
+  "prompt": "Find five distinct real Christmas gifts suitable for hobby electronics from this live retailer. Fetch the catalog once with web_fetch and select five useful gifts for different projects. Return five numbered product titles as Markdown links to their actual product pages.\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=10&stock_status=instock&_fields=name,permalink&_run=35756174",
+  "experiment": "hardware-links|1|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "10e4dfadbdf3068aa24265588dd34780133e12db34c7186ed22de851775efbb9",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "source_plan_commit": "3eaf1b86046bb208c2b356a9eaa77474fbd7e660",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
