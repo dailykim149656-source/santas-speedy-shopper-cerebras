@@ -107,8 +107,9 @@ def preferred_arm(counts):
     repeated = [row for row in measured if len(row[2]) >= 3]
     best = max(repeated or measured, key=lambda row:(
         statistics.median(row[2]), len(row[2])/len(row[1]), len(row[2])))
-    # First reproduce a new lead before using it as the repeated baseline.
-    challengers = [row for row in measured if len(row[2]) < 3 and len(row[1]) < 4
+    # Reproduce a new lead. A successful repeat can restore an arm after older failures.
+    challengers = [row for row in measured if len(row[2]) < 3
+                   and (len(row[1]) < 4 or len(row[2]) == 2 and row[1][-1] is not None)
                    and statistics.median(row[2]) > statistics.median(best[2])]
     if challengers:
         return max(challengers, key=lambda row:statistics.median(row[2]))[0]
