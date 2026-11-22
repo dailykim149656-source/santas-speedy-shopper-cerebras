@@ -1,0 +1,77 @@
+{
+  "id": "e7c9e231-6cdc-42d4-aa8f-f8fb809834f2",
+  "run_id": "e7c9e231-6cdc-42d4-aa8f-f8fb809834f2",
+  "capturedAt": "2026-11-22T05:27:56.176Z",
+  "finishedAt": "2026-11-22T05:28:06.437Z",
+  "sha256": "e22e3835b87cf8db0538e4cffbe700abe90920502ffbda6669bcb7fd8920ec7b",
+  "bytes": 56680,
+  "displayed_mean_tps": 857,
+  "score": "857 tok/s mean · 1,186 p90 (server)",
+  "links": [
+    {
+      "text": "AI250 Eurorack BXR",
+      "href": "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+      "box": {
+        "x": 330,
+        "y": 344,
+        "w": 129,
+        "h": 18
+      }
+    },
+    {
+      "text": "Eurorack High Power Supply",
+      "href": "https://aisynthesis.com/product/eurorack-high-power-supply/",
+      "box": {
+        "x": 330,
+        "y": 371,
+        "w": 182,
+        "h": 18
+      }
+    },
+    {
+      "text": "AI024 Eurorack X Filter",
+      "href": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "box": {
+        "x": 330,
+        "y": 398,
+        "w": 148,
+        "h": 18
+      }
+    },
+    {
+      "text": "AI012 Eurorack Wave Animator",
+      "href": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "box": {
+        "x": 330,
+        "y": 424,
+        "w": 200,
+        "h": 18
+      }
+    },
+    {
+      "text": "AI106 West Coast Eurorack Mixer",
+      "href": "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+      "box": {
+        "x": 330,
+        "y": 451,
+        "w": 215,
+        "h": 18
+      }
+    }
+  ],
+  "duration_seconds": 10.2,
+  "source_frame_count": 82,
+  "viewport": {
+    "width": 1280,
+    "height": 850
+  },
+  "clip": {
+    "x": 195,
+    "y": 341,
+    "width": 872,
+    "height": 494,
+    "scale": 1
+  },
+  "provenance": "Continuous native Chromium viewport recording of the completed OpenClaw session. The browser used native scrolling; the video was encoded from actual timestamped viewport captures.",
+  "during_original_generation": false
+}

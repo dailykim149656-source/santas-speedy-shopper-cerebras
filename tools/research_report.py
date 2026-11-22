@@ -165,6 +165,13 @@ def first_five_catalog_links(record):
     expected = list(dict.fromkeys(sources[0]['products']))[:5]
     return len(expected) == 5 and [product['url'] for product in record['products']] == expected
 
+def one_per_source_links(record):
+    """Five accepted category fetches, and the answer links exactly the first product of each."""
+    sources = [source for source in record['retail_sources'] if source.get('accepted') is True]
+    expected = {source['products'][0] for source in sources if source.get('products')}
+    answer = [product['url'] for product in record['products']]
+    return len(sources) == 5 and len(expected) == 5 and len(answer) == 5 and set(answer) == expected
+
 def correct_subtotals(record):
     """Return the number of correct running USD subtotals, or None when merchant prices are unavailable."""
     prices = {}

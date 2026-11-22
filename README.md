@@ -1,80 +1,23 @@
-# Santa’s Speedy Shopper
+# Santa’s Speedy Shopper 실험 증거
 
-This benchmark asks Cerebras Kimi K3.1 Pro, through OpenClaw, to choose five Christmas gifts from live retail catalogs and link to their product pages. The official OpenClaw patch reports the mean server-side decoding speed in tokens per second. Each row in the [run index](RESULTS.md) links to the request and its evidence.
+같은 Cerebras Kimi K3.1 Pro 모델이 실시간 판매처 카탈로그에서 서로 다른 크리스마스 선물 다섯 개를 골랐을 때, 공식 OpenClaw 패치가 표시하는 **평균 2,000 tok/s 초과**가 목표다. 모든 실행을 요청 전부터 녹화한다. 상품 검증을 통과한 실행은 표시 평균이 **900 tok/s 이상**이거나 실제 평균이 기존 최고 기록을 넘으면 영상을 검증한다. 로컬에는 최고 기록의 원본과 짧은 영상을 보관한다. 이전 영상은 새 최고 영상이 검증된 뒤 삭제하고, 점수와 SHA-256은 Git에 남긴다. [주최 측 공식 패치](https://github.com/wkasekende/openclaw-speed-patch/tree/e40e9f7b7ec41ad3fa68181ad297db119e755171)
 
-## Fastest measured run — 1,355 mean tok/s
+각 실행은 새 대화에서 시작한다. 먼저 실행 ID, 요청문, 판매처의 카탈로그 주소와 설정을 Git에 커밋한다. 다음 커밋은 같은 ID의 서버 생성 시간, 출력 토큰 수, 실행 상태와 상품 확인 결과를 담는다. 상품 링크는 도구가 이번 실행에 받아온 목록과 대조하고 각 판매처의 상세 페이지를 다시 조회한다. 서버 속도에는 모든 유효한 모델 호출이 반영된다. 상품을 검증했고 보관 기준에 도달한 실행의 화면 확인이 필요할 때는 복구용 녹화를 임시로 보관한다. 검증을 마친 영상의 기록에는 녹화 준비 시각, 세션 ID와 화면에서 확인한 상품 링크 다섯 개가 담긴다.
 
-D5027 completed five live AI Synthesis catalog searches through Cerebras Kimi K3.1 Pro. The official patch displayed **1,355 mean tok/s**. Its two calls averaged 1,354.662598 tok/s. The **9.52-second video** shows the five linked products and the speed in the completed session. Recording began 29 minutes 17.851 seconds after generation ended. [D5027 video](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/demo.mp4) · [Timings and five product links](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/evidence.json) · [Exact prompt and settings](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/plan.json)
+이전 기준 때문에 원본이 남지 않은 최고 기록은 완료된 세션을 다시 열어 사후 영상으로 기록할 수 있다. 영상과 Git 기록에 촬영 시점을 표시한다.
 
-D5009 is the fastest run recorded from before sending the prompt through the final answer. Its **22.64-second video** shows the shopping task and **1,301 mean tok/s** (1,301.275478 exact). [D5009 video](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/demo.mp4) · [D5009 timings and media checks](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json)
+이 저장소가 만들어지기 전에 측정한 결과는 소급 수록으로 명시한다. Git 커밋과 SHA-256은 수록 시점 이후의 변경을 확인하는 수단이다. 외부 공인 타임스탬프나 주최 측의 점수 인증은 별도로 받지 않았다.
 
-Verify the record from a full Git clone with Python 3.10+ and Git. The first command checks D5027’s two calls, five product pages as recorded, and the clip’s digest. Its `pending_video` status refers to the missing start-to-finish capture. The last command checks D5009’s complete recording.
+각 기록은 `git log --reverse --oneline`으로 확인할 수 있다. 사용한 측정 패치의 버전과 해시는 [benchmark.json](benchmark.json)에 있다.
 
-```sh
-run_id=cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77
-python3 tools/verify_run.py "$run_id"
-python3 tools/replay_run.py "$run_id" --dry-run
-python3 tools/verify_run.py a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51
-```
+원본 서버 응답은 이 Mac의 `~/Library/Application Support/Cerebras Speed Bounty/2026-11-22/raw/<실행 ID>.json`에도 보관한다. 소유자만 읽을 수 있으며, 파일의 SHA-256을 각 실행의 `evidence.json` 속 `private_raw_sha256`과 대조할 수 있다. 휴대용 Git 번들에는 검증에 필요한 호출별 수치, 판매처 조회 결과와 판정이 들어 있다.
 
-For a live replay, start the officially patched gateway with access to `cerebras/moonshotai-kimi-k3.1-pro-trial`. Use temperature 0.2, low thinking, a 1,024-token completion limit, the plan’s exact workspace `AGENTS.md`, and direct access to `web_fetch` with tool search disabled. Then run `python3 tools/replay_run.py "$run_id"` in the same shell. The prompt fixes five search terms (filter, mixer, oscillator, echo and cable). Each product name and URL comes from the current retailer response. [Gateway setup](https://github.com/wkasekende/openclaw-speed-patch/blob/e40e9f7b7ec41ad3fa68181ad297db119e755171/README.md#setup)
+## 다른 컴퓨터에서 기록 확인
 
-## Verify earlier recorded runs offline
-
-Clone this repository and run the following from its root with Python 3.10 or newer and Git. The example is run C1, which displayed **717 tok/s**. It contains three timed model calls and five independently checked product pages.
-
-Run D0013 displayed **746 tok/s** with five verified product links. Its two timed calls ran at 1,063 and 429 tok/s, respectively. The dashboard screenshot was captured after the run by reopening that session. The capture record includes the timestamp, region, full link destinations and SHA-256. [D0013 dashboard](review-assets/d0013-dashboard.png) · [Capture details](review-assets/d0013-dashboard.json)
-
-Run D0024 used the AI Synthesis catalog and displayed **827 tok/s** with five verified product links. The post-run screenshot was captured from the same OpenClaw session. [D0024 dashboard](review-assets/d0024-dashboard.png) · [Capture details](review-assets/d0024-dashboard.json)
-
-The historical C1 session was also reopened after it finished. Its dashboard shows its five product links, 717 mean, 1,278 p90 and the Kimi model. [C1 dashboard](review-assets/c1-dashboard.png) · [Capture details](review-assets/c1-dashboard.json)
+외장 디스크에는 전체 커밋 이력을 담은 `evidence.bundle`이 있다. 이 컴퓨터의 Git 객체 저장소는 macOS 내부 디스크에 있고, 외장 디스크의 번들은 매 실행의 계획과 결과를 커밋할 때 갱신된다. 다른 컴퓨터에서는 아래 명령으로 독립적인 복제본을 만들 수 있다.
 
 ```sh
-python3 tools/verify_run.py 694ee975-2931-4496-af62-38fc6650d6a6
+git clone -b main evidence.bundle bounty-review
+git -C bounty-review fsck --full
+git -C bounty-review log --oneline
 ```
-
-The verifier reads the committed request, recalculates each call’s rate from the provider’s output token count and generation time, and takes the arithmetic mean. It also checks the recorded relationships between the five returned links, that run’s merchant catalog fetches, and the independent product-page checks. The output includes the exact and displayed means, number of calls, verified product count, and run status. The `result` field distinguishes a successful shopping result from an incomplete run. A zero exit code means that the archive is internally consistent. The evidence contains timestamps and digests for the original responses. An independent reviewer can also pass a privately supplied original file with `--raw FILE` to check its digest.
-
-## Repeat the shopping task
-
-With your officially patched gateway running, the following repeats C1 once in a fresh session. It prints the session identifier, the final five links and the server-reported mean. Add `--dry-run` to preview the request without contacting the gateway. Pass `--cli PATH` if your patched OpenClaw checkout uses a different CLI entry point.
-
-```sh
-python3 tools/replay_run.py 694ee975-2931-4496-af62-38fc6650d6a6
-```
-
-1. Use an account with current access to `cerebras/moonshotai-kimi-k3.1-pro-trial`. Build OpenClaw at `8b18b5578f66eab1501cba4cef2310d88bfb9a41` with the organizer’s patch from commit `e40e9f7b7ec41ad3fa68181ad297db119e755171`. Follow its build and provider setup with your own credentials. This checkout uses Node 24.22.1 or later in the 24.x series, or Node 26.12.1 or later, and pnpm 12.15.0. The patch digest and model are in [benchmark.json](benchmark.json). [Pinned setup instructions](https://github.com/wkasekende/openclaw-speed-patch/blob/e40e9f7b7ec41ad3fa68181ad297db119e755171/README.md#setup)
-2. Open a fresh session in the patched web chat. Enable `web_fetch`. The numbered D runs use `tools.allow = ["web_fetch"]` and direct tool exposure via `tools.toolSearch.enabled = false`. Historical C1 used tool discovery. Use the temperature and thinking level recorded in the chosen plan when present. For a plan with a numeric `top_p`, set `agents.defaults.params.topP` to that value. An omitted or null value uses the service default. A plan with `workspace_agents_md` ran with exactly that text as `AGENTS.md` in the agent workspace, and every other plan ran without that file. `replay_run.py` prints the text. C1 has no archived sampling settings in its plan. The organizer’s suggested starting settings are temperature 1.0 and low reasoning effort. [Organizer’s parameter guide](https://github.com/wkasekende/openclaw-speed-patch/blob/e40e9f7b7ec41ad3fa68181ad297db119e755171/README.md#suggested-parameters) · [Cerebras sampling parameters](https://inference-docs.cerebras.ai/api-reference/chat-completions#param-top-p)
-3. Generate the same shopping request with a fresh catalog query ID, then paste it into the new chat. Replace the example ID below with any run ID listed in the index. The command prints the request and makes no network calls.
-
-```sh
-python3 tools/verify_run.py 694ee975-2931-4496-af62-38fc6650d6a6 --prompt
-```
-
-4. Wait for the final answer. Open each of its five product links, compare each with the fetched catalog, and record the official **mean tok/s** beside the message box. For a video, show the speed, the five products and their links within 60 seconds. Stocks, responses and service load can change between runs. [Official submission and scoring instructions](https://github.com/wkasekende/openclaw-speed-patch/blob/e40e9f7b7ec41ad3fa68181ad297db119e755171/README.md#entering-the-speed-bounty)
-
-Recording starts before every request. For a verified result, a displayed mean of **900 tok/s** or a new exact verified record qualifies the video for review. A higher verified recording replaces the prior local clip, with older scores, product checks and recording digests preserved in Git. A replay of a completed session is labeled as post-run evidence. Earlier records use their own recorded retention policy. The target remains a verified mean above 2,000 tok/s.
-
-A plan with numeric `max_completion_tokens` uses `agents.defaults.params.maxTokens` in OpenClaw. The capped comparison uses 2,048 tokens per call and the same shopping prompt, temperature and reasoning as the control. Cerebras uses the request’s completion limit when estimating quota consumption. The score still comes from server-reported generation time and output tokens for every model call, including both the catalog lookup and the final answer. [Cerebras token rate limits](https://inference-docs.cerebras.ai/support/rate-limits#token-rate-limiting)
-
-## Controlled performance comparisons
-
-Each trial chooses five Christmas gifts and checks the selected links against the live catalog and the merchant’s product pages. Retailer comparisons keep the request text, inventory filter and result count fixed. The single-store comparison uses WordPress Mercantile and AI Synthesis. The two-store comparison keeps WordPress Mercantile and swaps RaspberryPi.dk for AI Synthesis. [AI Synthesis shop](https://aisynthesis.com/diy-synthesizer-module-shop/)
-
-The format comparison asks for the same linked product titles and prices as either a five-row table or five short sentences. The arithmetic comparison also requests a running subtotal. Other pairs vary catalog size, reasoning level, completion budget or sampling. The planned repetitions rotate the order of these settings and use one active request at a time. The index keeps the official score and product checks for each trial, including unsuccessful trials. Compare the median and sample count alongside the best record.
-
-The [Korean comparison report](RESEARCH.md) summarizes recorded runs. Regenerate it from the current checkout with `python3 tools/research_report.py`.
-
-The runner prioritizes a repeat of a promising single result. Two of every three trials retest the best recent median among repeated valid results. The third trial covers a pending comparison, including catalog size and output format on the fastest observed retailer. A single record remains an observation until it is repeated.
-
-The archive records observed cache reads when OpenClaw reports them. Cached input and total elapsed time are separate from the official server decode speed. A comparison of output formats can demonstrate a performance difference under the tested settings. Identifying the provider’s internal decoding algorithm would require provider-side evidence. [Cerebras prompt caching](https://inference-docs.cerebras.ai/capabilities/prompt-caching)
-
-## Provenance and event updates
-
-The public Git history records when the evidence was exported. Each public result references its public plan commit and the corresponding source-history commits. A historical flag identifies runs first archived after they took place. The private source ledger also retains the original traces and locally recorded dashboard images. The public index identifies the evidence available for each run. No organization has certified these scores.
-
-The organizers announced limits of 50,000 uncached tokens and 500,000 total tokens per minute. This benchmark runs one shopping request at a time. On November 22 at 12:04 KST an organizer said the team intended to verify results after the event under more stable service conditions and requested reproducible GitHub repositories. The archived measurements use the published patch’s mean. [Rate-limit announcement](https://discord.com/channels/1085960591052644463/1572277577429549216/1573846340054814861) · [Organizer’s verification update](https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414) · [Pinned forum rules](https://discord.com/channels/1085960591052644463/1573839018964029450/1573839018964029450)
-
-
----
-Public export provenance: this repository contains a sanitized export, not the original private Git history. Public plan/result commit dates are export dates; use source plan mappings for original chronology. Original source commit mappings and private trace digests are retained in JSON. Unreviewed media is withheld pending review.

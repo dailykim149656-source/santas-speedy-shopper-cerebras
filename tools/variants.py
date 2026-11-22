@@ -1,5 +1,12 @@
 """Real shopping variants. Values are catalog endpoints, never product-page answers."""
+import json
 import statistics
+
+# One live in-stock search per gift category. Each query is fetched during the run; nothing is cached.
+SYNTH_CATEGORIES = ('filter', 'mixer', 'oscillator', 'echo', 'cable')
+SYNTH_RICH_CATEGORIES = ('filter', 'mixer', 'oscillator', 'echo', 'vca')
+SYNTH_RICH_FIELDS = 'id,name,slug,type,permalink,prices,stock_availability,variations'
+SYNTH_DISCOVERY_FIELDS = 'id,name,permalink'
 
 def catalogs(nonce, count, rich=False, shops='both', price=False):
     fields = 'name,permalink'
@@ -8,6 +15,22 @@ def catalogs(nonce, count, rich=False, shops='both', price=False):
     if rich:
         fields += ',short_description'
     args = f'per_page={count}&stock_status=instock&_fields={fields}&_run={nonce}'
+    if shops == 'synth-categories':
+        return [f'https://aisynthesis.com/wp-json/wc/store/v1/products?search={query}&' + args
+                for query in SYNTH_CATEGORIES]
+    if shops in ('synth-rich-categories-min', 'synth-rich-categories', 'synth-rich-discovery'):
+        rich_fields = {
+            'synth-rich-categories-min': fields,
+            'synth-rich-categories': SYNTH_RICH_FIELDS,
+            'synth-rich-discovery': SYNTH_DISCOVERY_FIELDS,
+        }[shops]
+        rich_args = f'per_page={count}&stock_status=instock&_fields={rich_fields}&_run={nonce}'
+        return [f'https://aisynthesis.com/wp-json/wc/store/v1/products?search={query}&' + rich_args
+                for query in SYNTH_RICH_CATEGORIES]
+    if shops in ('synth-sorted', 'synth-sorted-pages'):
+        url = ('https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&' + args
+               + '&orderby=id&order=asc')
+        return [url + f'&offset={offset}' for offset in (0, 3)] if shops == 'synth-sorted-pages' else [url]
     wordpress = 'https://mercantile.wordpress.org/wp-json/wc/store/v1/products?' + args
     hardware = 'https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&' + args
     synth = 'https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&' + args
@@ -113,6 +136,47 @@ DIRECT_FETCH_VALID, DIRECT_FETCH_MAX_ATTEMPTS = 3, 5
 PRIORITY_ARMS = (('synth-first-five-agents-direct', .2, 'low'), ('synth-first-five-short', .2, 'low'),
                  ('synth-first-five-short-direct', .2, 'low'))
 PRIORITY_VALID, PRIORITY_MAX_ATTEMPTS = 5, 8
+# Test-branch arms adapted from a published competing setup, without its transport patch or cached results:
+# a numeric reasoning cap in the workspace instructions, temperature 0, and five parallel live fetches whose
+# exact arguments appear in the request. Each step up the ladder adds one change to the previous arm.
+DIRECT_TOOL_CAP_AGENTS_MD = (
+    '# Tool-first replies\n\n'
+    '- Think in at most 5 words.\n'
+    '- If the message gives URLs to fetch, your first output is the web_fetch calls for those exact URLs. '
+    'Do not plan or restate the request.\n'
+    '- When the results arrive, write the requested answer straight from the fetched data, with no preamble.\n')
+VARIANTS['synth-first-five-short-cap'] = VARIANTS['synth-first-five-short']
+VARIANTS['synth-first-five-short-cap-args'] = (*VARIANTS['synth-first-five-short-cap'][:-1],
+    VARIANTS['synth-first-five-short-cap'][-1].replace(
+        'web_fetch this live catalog', 'call web_fetch with the exact argument object below'))
+VARIANTS['synth-five-categories-cap'] = (1, False, 'synth-categories', False,
+    'Christmas gifts: call web_fetch 5 times in parallel, once with each exact argument object below. '
+    'Then return the one product from each result as numbered [exact name](exact product URL) links, '
+    'in the order listed.')
+VARIANTS['synth-five-categories-cap-4000'] = VARIANTS['synth-five-categories-cap']
+SORTED_SIX_INSTRUCTION = (
+    'Christmas gifts: call web_fetch once with each exact argument object below, in parallel when there '
+    'is more than one. Then return the first five distinct products from the live ordered catalog '
+    'candidates as numbered [exact name](exact product URL) links, preserving catalog order and '
+    'processing pages in the order listed.')
+VARIANTS['synth-six-sorted'] = (6, False, 'synth-sorted', False, SORTED_SIX_INSTRUCTION)
+VARIANTS['synth-six-sorted-pages'] = (3, False, 'synth-sorted-pages', False, SORTED_SIX_INSTRUCTION)
+EXPERIMENT_1700_VARIANTS = ('synth-five-categories-cap-4000', 'synth-six-sorted', 'synth-six-sorted-pages')
+EXACT_ARGS_VARIANTS = ('synth-five-categories-cap',) + EXPERIMENT_1700_VARIANTS
+CATEGORY_VARIANTS = ('synth-five-categories-cap', 'synth-five-categories-cap-4000')
+WORKSPACE_AGENTS_BY_VARIANT.update({'synth-first-five-short-cap': DIRECT_TOOL_CAP_AGENTS_MD,
+                                    'synth-first-five-short-cap-args': DIRECT_TOOL_CAP_AGENTS_MD,
+                                    'synth-five-categories-cap': DIRECT_TOOL_CAP_AGENTS_MD})
+WORKSPACE_AGENTS_BY_VARIANT.update({name: DIRECT_TOOL_CAP_AGENTS_MD for name in EXPERIMENT_1700_VARIANTS})
+FIRST_FIVE_VARIANTS += ('synth-first-five-short-cap', 'synth-first-five-short-cap-args',
+                        'synth-six-sorted', 'synth-six-sorted-pages')
+TEST_CONTROL = PRIORITY_CONTROL
+TEST_ARMS = (TEST_CONTROL, ('synth-first-five-short-cap', .2, 'low'), ('synth-first-five-short-cap', 0.0, 'low'),
+             ('synth-five-categories-cap', 0.0, 'low'))
+TARGET_ARMS = (('synth-five-categories-cap', .2, 'low'), ('synth-five-categories-cap', 0.0, 'low'),
+               ('synth-first-five-short-cap-args', .2, 'low'), ('synth-first-five-short-cap', .2, 'low'))
+# Applied to every test-branch trial, control included, to shrink the quota Cerebras reserves per request.
+TEST_MAX_TOKENS = 1024
 RESEARCH_ARMS = (
     ('synth-links', .2, 'low'), ('wordpress-links', .2, 'low'),
     ('synth-links-six', .2, 'low'), ('synth-links-temp-zero', 0.0, 'low'),
@@ -127,6 +191,112 @@ RESEARCH_ARMS = (
     ('source-order-max-2048', .2, 'low'), ('research-cap-4096', .2, 'low'),
 ) + PRIORITY_ARMS
 ARMS += [arm for arm in RESEARCH_ARMS if arm not in ARMS]
+ARMS += [arm for arm in TEST_ARMS if arm not in ARMS]
+ARMS += [(name, .2, 'low') for name in EXPERIMENT_1700_VARIANTS]
+
+# Isolated TPS-2000 experimental branch arms (Strategies 1-4):
+# - Think in at most 5 words (proven in test D5025/D5028) + two-state / three-step templates.
+# - Verbatim product cards amortize fixed wafer-pipeline latency with high-copy, URL-free fields.
+# - Three-call verify discovers 5 IDs first, then fetches 5 ?include=<ID> detail records in parallel.
+TWO_STATE_ZERO_THINK_AGENTS_MD = (
+    '# Tool-first replies\n\n'
+    '- Think in at most 5 words.\n'
+    '- State 1 (no tool results yet): immediately emit ONLY the exact parallel web_fetch tool calls '
+    'listed in the user message, copying every JSON argument object verbatim. Do not plan or restate '
+    'the request.\n'
+    '- State 2 (all requested tool results received): output ONLY the requested answer straight from '
+    'the fetched data in exact listed order, with no preamble, no commentary, and no extra URLs.\n'
+)
+THREE_CALL_ZERO_THINK_AGENTS_MD = (
+    '# Three-step tool-first replies\n\n'
+    '- Think in at most 5 words.\n'
+    '- Step 1 (no tool results yet): immediately emit ONLY the 5 parallel discovery web_fetch calls '
+    'listed in the user message, copying every JSON argument object verbatim.\n'
+    '- Step 2 (5 discovery results received): immediately emit ONLY the 5 parallel detail web_fetch '
+    'calls using the exact URL template from the user message with each returned product id substituted.\n'
+    '- Step 3 (5 detail results received): output ONLY the requested verbatim product list in exact '
+    'listed order, with no preamble, no commentary, and no extra URLs.\n'
+)
+LEGACY_WORKSPACE_AGENTS_MD = (
+    (
+        '# Tool-first zero-thinking execution\n\n'
+        '- Emit zero reasoning tokens before calling tools and before writing the final answer.\n'
+        '- State 1 (no tool results yet): immediately emit ONLY the exact parallel web_fetch tool calls '
+        'listed in the user message, copying every JSON argument object verbatim. Do not plan or mention '
+        'the final answer.\n'
+        '- State 2 (all requested tool results received): output ONLY the requested answer directly from '
+        'the fetched JSON in exact listed order, copying values verbatim with no preamble, no commentary, '
+        'and no extra URLs.\n'
+    ),
+    (
+        '# Three-step tool-first execution\n\n'
+        '- Emit zero reasoning tokens before every tool call and before the final answer.\n'
+        '- Step 1 (no tool results yet): emit ONLY the 5 parallel discovery web_fetch calls listed in the '
+        'user message, copying each JSON argument object verbatim.\n'
+        '- Step 2 (5 discovery results received): immediately emit ONLY 5 parallel detail web_fetch calls '
+        'using the exact URL template from the user message with each returned product id substituted.\n'
+        '- Step 3 (5 detail results received): output ONLY the requested verbatim product list in exact '
+        'listed order, with no preamble, no commentary, and no extra URLs.\n'
+    ),
+)
+VERBATIM_CARDS_FORMAT = (
+    'N. [exact name](exact permalink)\n'
+    '- ID: <id> | Slug: <slug> | Type: <type> | Price: <prices.price> <prices.currency_code> | '
+    'Stock: <stock_availability.text or stock_availability.class>\n'
+    '- Variations: <comma-separated id:attribute_value for every item in variations in exact JSON order>'
+)
+VARIANTS['exp2k-call0-zero-think'] = (
+    1, False, 'synth-rich-categories-min', False,
+    'Christmas gifts: call web_fetch 5 times in parallel with each exact argument object below. '
+    'Return the 5 products in order as numbered [exact name](exact permalink) links only.'
+)
+VARIANTS['exp2k-verbatim-cards'] = (
+    1, False, 'synth-rich-categories', False,
+    'Christmas gifts: call web_fetch 5 times in parallel with each exact argument object below.\n'
+    'Then for each of the 5 products in listed order, output one block in this exact format with no prose, '
+    'no calculations, and no extra URLs:\n' + VERBATIM_CARDS_FORMAT
+)
+VARIANTS['exp2k-verbatim-cards-topp03'] = VARIANTS['exp2k-verbatim-cards']
+VARIANTS['exp2k-three-call-verify'] = (
+    1, False, 'synth-rich-discovery', False,
+    'Christmas gifts (3-step live verification):\n'
+    'Step 1: call web_fetch 5 times in parallel with each exact discovery argument object below.\n'
+    'Step 2: using the 5 product ids returned in Step 1, call web_fetch 5 times in parallel with '
+    'extractMode="text" and maxChars=4000, substituting each id for <ID> in exact order:\n'
+    '{"url":"https://aisynthesis.com/wp-json/wc/store/v1/products?include=<ID>'
+    '&_fields=' + SYNTH_RICH_FIELDS + '&_run=__NONCE__","extractMode":"text","maxChars":4000}\n'
+    'Step 3: output the 5 verified products in listed order using this exact format with no prose '
+    'and no extra URLs:\n' + VERBATIM_CARDS_FORMAT + '\n'
+    'Step 1 discovery arguments:'
+)
+EXP2000_VARIANTS = (
+    'exp2k-call0-zero-think',
+    'exp2k-verbatim-cards',
+    'exp2k-verbatim-cards-topp03',
+    'exp2k-three-call-verify',
+)
+TOP_P_BY_VARIANT['exp2k-verbatim-cards-topp03'] = 0.30
+EXACT_ARGS_VARIANTS = EXACT_ARGS_VARIANTS + EXP2000_VARIANTS
+CATEGORY_VARIANTS = CATEGORY_VARIANTS + (
+    'exp2k-call0-zero-think',
+    'exp2k-verbatim-cards',
+    'exp2k-verbatim-cards-topp03',
+)
+WORKSPACE_AGENTS_BY_VARIANT.update({
+    'exp2k-call0-zero-think': TWO_STATE_ZERO_THINK_AGENTS_MD,
+    'exp2k-verbatim-cards': TWO_STATE_ZERO_THINK_AGENTS_MD,
+    'exp2k-verbatim-cards-topp03': TWO_STATE_ZERO_THINK_AGENTS_MD,
+    'exp2k-three-call-verify': THREE_CALL_ZERO_THINK_AGENTS_MD,
+})
+EXP2000_ARMS = (
+    ('exp2k-call0-zero-think', .2, 'low'),
+    ('exp2k-call0-zero-think', 0.0, 'low'),
+    ('exp2k-verbatim-cards', .2, 'low'),
+    ('exp2k-verbatim-cards', 0.0, 'low'),
+    ('exp2k-verbatim-cards-topp03', 0.15, 'low'),
+    ('exp2k-three-call-verify', .2, 'low'),
+)
+ARMS += [arm for arm in EXP2000_ARMS if arm not in ARMS]
 
 def arm_key(arm):
     name,t,effort=arm
@@ -168,6 +338,22 @@ def priority_pending(counts):
     return [arm for arm in PRIORITY_ARMS
             if sum(score is not None for score in counts[arm_key(arm)]) < PRIORITY_VALID
             and len(counts[arm_key(arm)]) < PRIORITY_MAX_ATTEMPTS]
+
+def choose_test(results):
+    """Round-robin over the test ladder; a pre-send failure adds no history row, so that arm is retried."""
+    attempts = {arm_key(arm): 0 for arm in TEST_ARMS}
+    for row in results:
+        if row['arm'] in attempts:
+            attempts[row['arm']] += 1
+    return min(TEST_ARMS, key=lambda arm:(attempts[arm_key(arm)], TEST_ARMS.index(arm)))
+
+def choose_target(results):
+    """Balance focused arms by completed attempts, prioritizing category fetches when tied."""
+    attempts = {arm_key(arm): 0 for arm in TARGET_ARMS}
+    for row in results:
+        if row['arm'] in attempts:
+            attempts[row['arm']] += 1
+    return min(TARGET_ARMS, key=lambda arm:(attempts[arm_key(arm)], TARGET_ARMS.index(arm)))
 
 def choose(results):
     index=len(results)
@@ -219,4 +405,19 @@ def choose(results):
 def prompt(arm,nonce):
     name=arm[0]
     count,rich,shops,price,instructions=VARIANTS[name]
-    return instructions+'\n'+'\n'.join(catalogs(nonce,count,rich,shops,price))
+    urls = catalogs(nonce,count,rich,shops,price)
+    if name == 'synth-first-five-short-cap-args':
+        urls = [json.dumps({'url': url, 'extractMode': 'text', 'maxChars': 20000},
+                           separators=(',', ':')) for url in urls]
+    elif name in ('synth-five-categories-cap-4000', 'exp2k-call0-zero-think',
+                  'exp2k-verbatim-cards', 'exp2k-verbatim-cards-topp03'):
+        urls = [json.dumps({'url': url, 'extractMode': 'text', 'maxChars': 4000},
+                           separators=(',', ':')) for url in urls]
+    elif name == 'exp2k-three-call-verify':
+        instructions = instructions.replace('__NONCE__', nonce)
+        urls = [json.dumps({'url': url, 'extractMode': 'text', 'maxChars': 2000},
+                           separators=(',', ':')) for url in urls]
+    elif name in EXACT_ARGS_VARIANTS:
+        # Spell out each web_fetch argument object so the tool call can be copied from the request.
+        urls = [json.dumps({'url': url}, separators=(',', ':')) for url in urls]
+    return instructions+'\n'+'\n'.join(urls)
