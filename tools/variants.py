@@ -37,10 +37,21 @@ VARIANTS['wordpress-links'] = (8, False, 'wordpress', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.')
 VARIANTS['synth-links'] = (8, False, 'synth', False, VARIANTS['wordpress-links'][-1])
 VARIANTS['source-order-synth'] = (8, False, 'wordpress-synth', False, VARIANTS['source-order'][-1])
+PRICE_TASK = ('Use web_fetch to open the live catalog. Choose five distinct in-stock Christmas gifts for a software '
+              'club in catalog order. Give the exact product title linked to its exact product page and the listed price '
+              'with its currency for every gift. ')
+VARIANTS['research-table'] = (8, False, 'wordpress', True, PRICE_TASK +
+    'Use only a Markdown table with the two columns Gift and Price and five product rows.')
+VARIANTS['research-prose'] = (8, False, 'wordpress', True, PRICE_TASK +
+    'Use five short sentences, one per gift, with no table or list.')
+VARIANTS['research-price-total'] = (8, False, 'wordpress', True, PRICE_TASK +
+    'Use five short sentences, one per gift, with no table or list. After each price state the running subtotal '
+    'for one unit of each gift listed so far, excluding shipping and tax.')
+VARIANTS['research-reasoning-max'] = VARIANTS['source-order']
 TOP_P_BY_VARIANT = {'source-order-top-p-080': 0.8, 'source-order-top-p-045': 0.45}
 for name in TOP_P_BY_VARIANT:
     VARIANTS[name] = VARIANTS['source-order']
-MAX_TOKENS_BY_VARIANT = {'source-order-max-2048': 2048}
+MAX_TOKENS_BY_VARIANT = {'source-order-max-2048': 2048, 'research-cap-4096': 4096}
 for name in MAX_TOKENS_BY_VARIANT:
     VARIANTS[name] = VARIANTS['source-order']
 ARMS += [('paired-links-small',1.0,'low'),('paired-links-small',0.2,'low'),
@@ -50,6 +61,16 @@ ARMS += [('paired-links-small',1.0,'low'),('paired-links-small',0.2,'low'),
          ('synth-links',0.2,'low'),('source-order-synth',0.2,'low')]
 ARMS += [(name, 0.2, 'low') for name in TOP_P_BY_VARIANT]
 ARMS += [(name, 0.2, 'low') for name in MAX_TOKENS_BY_VARIANT]
+RESEARCH_ARMS = (
+    ('synth-links', .2, 'low'), ('wordpress-links', .2, 'low'),
+    ('source-order-synth', .2, 'low'), ('source-order', .2, 'low'),
+    ('research-table', .2, 'low'), ('research-prose', .2, 'low'),
+    ('research-price-total', .2, 'low'),
+    ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
+    ('research-reasoning-max', .2, 'max'),
+    ('source-order-max-2048', .2, 'low'), ('research-cap-4096', .2, 'low'),
+)
+ARMS += [arm for arm in RESEARCH_ARMS if arm not in ARMS]
 
 def arm_key(arm):
     name,t,effort=arm
@@ -64,15 +85,19 @@ def choose(results):
           ('price-cards',0.2,'low'),('source-order',0.2,'low'),('recipient-guide',0.2,'low'),
           ('source-order',0.2,'low'),('source-order-compact',0.2,'low'),('wordpress-links',0.2,'low'),
           ('source-order-top-p-080',0.2,'low'),('source-order-top-p-045',0.2,'low'),
-          ('source-order-max-2048',0.2,'low'),('source-order',0.2,'low'),('source-order',0.2,'low'),
-          ('synth-links',0.2,'low'),('wordpress-links',0.2,'low'),
-          ('source-order-synth',0.2,'low'),('source-order',0.2,'low')]
+          ('source-order-max-2048',0.2,'low'),('source-order',0.2,'low'),('source-order',0.2,'low')]
     if index<len(warm):
         return warm[index]
     counts={arm_key(a):[] for a in ARMS}
     for r in results:
         if r['arm'] in counts:
             counts[r['arm']].append(r.get('score') if r.get('valid') else None)
+    # Rotate the treatment order between passes to reduce time-of-day confounding.
+    for repetitions in range(5):
+        offset = repetitions % len(RESEARCH_ARMS)
+        for arm in RESEARCH_ARMS[offset:] + RESEARCH_ARMS[:offset]:
+            if len(counts[arm_key(arm)]) <= repetitions:
+                return arm
     under=min(ARMS,key=lambda a:(len(counts[arm_key(a)]),ARMS.index(a)))
     if index%3 or not any(counts.values()):
         return under
