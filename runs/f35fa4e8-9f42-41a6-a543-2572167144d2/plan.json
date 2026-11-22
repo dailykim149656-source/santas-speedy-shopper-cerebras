@@ -1,0 +1,8 @@
+{
+  "id": "f35fa4e8-9f42-41a6-a543-2572167144d2",
+  "label": "B2",
+  "sessionKey": "agent:main:shop-b2-e1da28cb",
+  "prompt": "Find 5 real Christmas tech gifts across both shops. Fetch these two live catalogs in parallel. Only output 5 numbered [product name](exact product URL) links from the fetched items.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=6&stock_status=instock&_fields=name,permalink&_run=f35fa4e8\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=6&stock_status=instock&_fields=name,permalink&_run=f35fa4e8",
+  "source_plan_commit": "a17783440caadfb77a8f3122acde288cbe243d58",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
