@@ -1,0 +1,20 @@
+{
+  "id": "0b200914-fc24-4535-a570-e3ace6593ac4",
+  "label": "D0069-synth-first-five-direct-fetch",
+  "sessionKey": "agent:main:shop-d0069-synth-first-five-direct-fetch-0b200914",
+  "variant": "synth-first-five-direct-fetch",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": null,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1049.4387840573918,
+  "prompt": "First call web_fetch once with the catalog URL below, extractMode \"text\", and maxChars 20000. For a software club, choose the first five distinct gifts in this in-stock Christmas gift catalog. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.\nhttps://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=0b200914",
+  "experiment": "synth-first-five-direct-fetch|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "49af8c6b5074edbcad0a8c0c069c4ece1938b46fc68c5ec394bfbdc4b8922339",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "source_plan_commit": "aec4c620d5a50741352c90b7faae28157baa5dc4",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
