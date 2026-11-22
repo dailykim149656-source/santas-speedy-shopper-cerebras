@@ -14,7 +14,5 @@
   "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
   "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
   "benchmark_sha256": "49af8c6b5074edbcad0a8c0c069c4ece1938b46fc68c5ec394bfbdc4b8922339",
-  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
-  "source_plan_commit": "7be1f6fb61db37c4f1f98561c468858708212222",
-  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414"
 }
