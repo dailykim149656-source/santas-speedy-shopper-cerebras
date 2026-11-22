@@ -36,6 +36,16 @@ python3 tools/verify_run.py 694ee975-2931-4496-af62-38fc6650d6a6 --prompt
 
 A plan with numeric `max_completion_tokens` uses `agents.defaults.params.maxTokens` in OpenClaw. The capped comparison uses 2,048 tokens per call and the same shopping prompt, temperature and reasoning as the control. Cerebras uses the request’s completion limit when estimating quota consumption. The score still comes from server-reported generation time and output tokens for every model call, including both the catalog lookup and the final answer. [Cerebras token rate limits](https://inference-docs.cerebras.ai/support/rate-limits#token-rate-limiting)
 
+## Controlled performance comparisons
+
+Each trial chooses five Christmas gifts and checks the selected links against the live catalog and the merchant’s product pages. Retailer comparisons keep the request text, inventory filter and result count fixed. The single-store comparison uses WordPress Mercantile and AI Synthesis. The two-store comparison keeps WordPress Mercantile and swaps RaspberryPi.dk for AI Synthesis. [AI Synthesis shop](https://aisynthesis.com/diy-synthesizer-module-shop/)
+
+The format comparison asks for the same linked product titles and prices as either a five-row table or five short sentences. The arithmetic comparison also requests a running subtotal. Other pairs vary catalog size, reasoning level, completion budget or sampling. The planned repetitions rotate the order of these settings and use one active request at a time. The index keeps the official score and product checks for each trial, including unsuccessful trials. Compare the median and sample count alongside the best record.
+
+The [Korean comparison report](RESEARCH.md) summarizes recorded runs. Regenerate it from the current checkout with `python3 tools/research_report.py`.
+
+The archive records observed cache reads when OpenClaw reports them. Cached input and total elapsed time are separate from the official server decode speed. A comparison of output formats can demonstrate a performance difference under the tested settings. Identifying the provider’s internal decoding algorithm would require provider-side evidence. [Cerebras prompt caching](https://inference-docs.cerebras.ai/capabilities/prompt-caching)
+
 ## Provenance and event updates
 
 The public Git history records when the evidence was exported. Each public result references its public plan commit and the corresponding source-history commits. A historical flag identifies runs first archived after they took place. The private source ledger also retains the original traces and locally recorded dashboard images. The public index identifies the evidence available for each run. No organization has certified these scores.
