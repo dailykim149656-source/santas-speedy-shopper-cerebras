@@ -202,6 +202,20 @@ def verify_product(item):
     return result
 
 
+def catalog_price(product):
+    prices = product.get('prices')
+    if not isinstance(prices, dict):
+        return None
+    amount = prices.get('price')
+    currency = prices.get('currency_code')
+    decimals = prices.get('currency_minor_unit')
+    if (type(amount) in (str,int) and re.fullmatch(r'[0-9]{1,12}',str(amount))
+            and isinstance(currency,str) and re.fullmatch(r'[A-Z]{3}',currency)
+            and type(decimals) is int and 0 <= decimals <= 4):
+        return {'minor_units':int(amount),'currency':currency,'decimals':decimals}
+    return None
+
+
 def validate(data):
     run_id = data["id"]
     messages = data["history"]["messages"]
@@ -280,6 +294,9 @@ def validate(data):
                         and urlsplit(product["permalink"]).hostname == urlsplit(requested_url).hostname):
                     catalog[product["permalink"]] = {"catalog_name": html.unescape(product["name"]),
                                                       "source_tool_call_id": message["toolCallId"]}
+                    price = catalog_price(product)
+                    if price is not None:
+                        catalog[product["permalink"]]["catalog_price"] = price
                     accepted.append(product["permalink"])
             if not accepted:
                 raise ValueError("no real merchant product records in retail payload")

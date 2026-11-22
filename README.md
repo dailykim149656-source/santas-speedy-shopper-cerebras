@@ -8,6 +8,8 @@ Clone this repository and run the following from its root with Python 3.10 or ne
 
 Run D0013 displayed **746 tok/s** with five verified product links. Its two timed calls ran at 1,063 and 429 tok/s, respectively. The dashboard screenshot was captured after the run by reopening that session. The capture record includes the timestamp, region, full link destinations and SHA-256. [D0013 dashboard](review-assets/d0013-dashboard.png) · [Capture details](review-assets/d0013-dashboard.json)
 
+Run D0024 used the AI Synthesis catalog and displayed **827 tok/s** with five verified product links. The post-run screenshot was captured from the same OpenClaw session. [D0024 dashboard](review-assets/d0024-dashboard.png) · [Capture details](review-assets/d0024-dashboard.json)
+
 The historical C1 session was also reopened after it finished. Its dashboard shows its five product links, 717 mean, 1,278 p90 and the Kimi model. [C1 dashboard](review-assets/c1-dashboard.png) · [Capture details](review-assets/c1-dashboard.json)
 
 ```sh

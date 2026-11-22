@@ -46,7 +46,8 @@ VARIANTS['research-prose'] = (8, False, 'wordpress', True, PRICE_TASK +
     'Use five short sentences, one per gift, with no table or list.')
 VARIANTS['research-price-total'] = (8, False, 'wordpress', True, PRICE_TASK +
     'Use five short sentences, one per gift, with no table or list. After each price state the running subtotal '
-    'for one unit of each gift listed so far, excluding shipping and tax.')
+    'for one unit of each gift listed so far, excluding shipping and tax. Put the subtotal on the same line '
+    'as its gift link, using the words Subtotal USD followed by the amount to two decimal places.')
 VARIANTS['research-reasoning-max'] = VARIANTS['source-order']
 TOP_P_BY_VARIANT = {'source-order-top-p-080': 0.8, 'source-order-top-p-045': 0.45}
 for name in TOP_P_BY_VARIANT:
