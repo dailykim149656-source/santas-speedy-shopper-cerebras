@@ -65,6 +65,14 @@ def load_runs(repo):
         if not RUN_ID.fullmatch(ident) or plan.get('id') != ident:
             raise ValueError('plan identity differs from run folder')
         evidence_path = plan_path.with_name('evidence.json')
+        preflight_path = plan_path.with_name('preflight.json')
+        if preflight_path.exists():
+            receipt = json.loads(preflight_path.read_bytes())
+            if (evidence_path.exists() or receipt.get('id') != ident
+                    or receipt.get('label') != plan.get('label')
+                    or receipt.get('status') != 'aborted_before_send'):
+                raise ValueError('preflight receipt conflicts with plan or scored evidence')
+            continue
         evidence = json.loads(evidence_path.read_bytes()) if evidence_path.exists() else None
         if evidence is not None and evidence.get('id') != ident:
             raise ValueError('evidence identity differs from plan')
@@ -307,6 +315,7 @@ def render(repo):
               '분모는 최종 답변이 남은 해당 형식의 실행 수다. 표는 Gift·Price 두 열과 서로 다른 상품 링크가 하나씩 든 다섯 행, '
               '문장은 목록·표 표식 없이 상품 링크가 하나씩 든 다섯 문장 또는 줄을 확인한다.',
               '', subtotal_report(groups['research-price-total']),
+              '', '요청이 전송되기 전에 녹화 준비가 실패해 봉인된 계획은 실행 확인 수와 계획만 남은 수에서 제외했다.',
               '', '온도를 따로 적은 행을 제외하면 0.2이며 추론 수준 비교군을 제외한 행은 모두 low 설정이다. '
               '실행 확인 수는 결과가 남은 요청 수이며 검증 실패도 포함한다. 계획만 남은 요청은 전송 여부를 알 수 없다. '
               '표의 대시는 미측정이고 0은 관측값이다. 반복해서 표시한 기준 행은 같은 실행을 참조한다.', '',
