@@ -6,6 +6,8 @@ This benchmark asks Cerebras Kimi K3.1 Pro, through OpenClaw, to choose five Chr
 
 Clone this repository and run the following from its root with Python 3.10 or newer and Git. The example is run C1, which displayed **717 tok/s**. It contains three timed model calls and five independently checked product pages.
 
+The historical C1 session was reopened at 12:32 KST on November 22 to capture the actual dashboard for publication. The screenshot shows its five product links, 717 mean, 1,278 p90 and the Kimi model. Its capture timestamp, region, full link destinations and SHA-256 are available in the accompanying record. [Dashboard screenshot](review-assets/c1-dashboard.png) · [Capture details](review-assets/c1-dashboard.json)
+
 ```sh
 python3 tools/verify_run.py 694ee975-2931-4496-af62-38fc6650d6a6
 ```
@@ -13,6 +15,12 @@ python3 tools/verify_run.py 694ee975-2931-4496-af62-38fc6650d6a6
 The verifier reads the committed request, recalculates each call’s rate from the provider’s output token count and generation time, and takes the arithmetic mean. It also checks the recorded relationships between the five returned links, that run’s merchant catalog fetches, and the independent product-page checks. The output includes the exact and displayed means, number of calls, verified product count, and run status. The `result` field distinguishes a successful shopping result from an incomplete run. A zero exit code means that the archive is internally consistent. The evidence contains timestamps and digests for the original responses. An independent reviewer can also pass a privately supplied original file with `--raw FILE` to check its digest.
 
 ## Repeat the shopping task
+
+With your officially patched gateway running, the following repeats C1 once in a fresh session. It prints the session identifier, the final five links and the server-reported mean. Add `--dry-run` to preview the request without contacting the gateway. Pass `--cli PATH` if your patched OpenClaw checkout uses a different CLI entry point.
+
+```sh
+python3 tools/replay_run.py 694ee975-2931-4496-af62-38fc6650d6a6
+```
 
 1. Use an account with current access to `cerebras/moonshotai-kimi-k3.1-pro-trial`. Build OpenClaw at `8b18b5578f66eab1501cba4cef2310d88bfb9a41` with the organizer’s patch from commit `e40e9f7b7ec41ad3fa68181ad297db119e755171`. Follow its build and provider setup with your own credentials. This checkout uses Node 24.22.1 or later in the 24.x series, or Node 26.12.1 or later, and pnpm 12.15.0. The patch digest and model are in [benchmark.json](benchmark.json). [Pinned setup instructions](https://github.com/wkasekende/openclaw-speed-patch/blob/e40e9f7b7ec41ad3fa68181ad297db119e755171/README.md#setup)
 2. Open a fresh session in the patched web chat. Enable `web_fetch`. The numbered D runs use `tools.allow = ["web_fetch"]` and direct tool exposure via `tools.toolSearch.enabled = false`. Historical C1 used tool discovery. Use the temperature and thinking level recorded in the chosen plan when present. C1 has no archived sampling settings in its plan. The organizer’s suggested starting settings are temperature 1.0 and low reasoning effort. [Organizer’s parameter guide](https://github.com/wkasekende/openclaw-speed-patch/blob/e40e9f7b7ec41ad3fa68181ad297db119e755171/README.md#suggested-parameters)
