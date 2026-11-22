@@ -110,6 +110,8 @@ def main():
             print('Recorded temperature:',plan['temperature'],'(set in your gateway profile before running)')
         if plan.get('top_p') is not None:
             print('Recorded top_p:',plan['top_p'],'(set agents.defaults.params.topP in your gateway profile)')
+        if plan.get('max_completion_tokens') is not None:
+            print('Recorded completion limit:',plan['max_completion_tokens'],'(set agents.defaults.params.maxTokens)')
         if args.dry_run:
             print(prompt)
             return 0

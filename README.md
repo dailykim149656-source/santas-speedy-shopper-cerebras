@@ -34,6 +34,8 @@ python3 tools/verify_run.py 694ee975-2931-4496-af62-38fc6650d6a6 --prompt
 
 4. Wait for the final answer. Open each of its five product links, compare each with the fetched catalog, and record the official **mean tok/s** beside the message box. For a video, show the speed, the five products and their links within 60 seconds. Stocks, responses and service load can change between runs. [Official submission and scoring instructions](https://github.com/wkasekende/openclaw-speed-patch/blob/e40e9f7b7ec41ad3fa68181ad297db119e755171/README.md#entering-the-speed-bounty)
 
+A plan with numeric `max_completion_tokens` uses `agents.defaults.params.maxTokens` in OpenClaw. The capped comparison uses 2,048 tokens per call and the same shopping prompt, temperature and reasoning as the control. Cerebras uses the request’s completion limit when estimating quota consumption. The score still comes from server-reported generation time and output tokens for every model call, including both the catalog lookup and the final answer. [Cerebras token rate limits](https://inference-docs.cerebras.ai/support/rate-limits#token-rate-limiting)
+
 ## Provenance and event updates
 
 The public Git history records when the evidence was exported. Each public result references its public plan commit and the corresponding source-history commits. A historical flag identifies runs first archived after they took place. The private source ledger also retains the original traces and locally recorded dashboard images. The public index identifies the evidence available for each run. No organization has certified these scores.
