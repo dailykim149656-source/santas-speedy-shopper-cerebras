@@ -1,0 +1,71 @@
+{
+  "id": "fc63223b-d2dd-4945-a67e-3a6c194b51b4",
+  "capturedAt": "2026-11-22T03:37:12.078Z",
+  "sha256": "63ebd2830f2e38ab926a0c407785552ff64e31a14db4ed9a2aabba8c2d6c2516",
+  "score": "746 tok/s mean · 1,063 p90 (server)",
+  "links": [
+    {
+      "text": "CTRL Task Pad",
+      "href": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "box": {
+        "x": 330,
+        "y": 419,
+        "w": 114,
+        "h": 18
+      }
+    },
+    {
+      "text": "Gone Coding Ceramic Mug",
+      "href": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "box": {
+        "x": 330,
+        "y": 446,
+        "w": 193,
+        "h": 18
+      }
+    },
+    {
+      "text": "Officiel Raspberry Pi 500+ Desktop Kit",
+      "href": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "box": {
+        "x": 330,
+        "y": 526,
+        "w": 245,
+        "h": 18
+      }
+    },
+    {
+      "text": "Compute Blade Starter Kit",
+      "href": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "box": {
+        "x": 330,
+        "y": 553,
+        "w": 169,
+        "h": 18
+      }
+    },
+    {
+      "text": "Raspberry Pi 5 Starter Kit",
+      "href": "https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/",
+      "box": {
+        "x": 330,
+        "y": 579,
+        "w": 161,
+        "h": 18
+      }
+    }
+  ],
+  "viewport": {
+    "width": 1280,
+    "height": 850
+  },
+  "clip": {
+    "x": 195,
+    "y": 416,
+    "width": 873,
+    "height": 419,
+    "scale": 1
+  },
+  "provenance": "Post-run unedited Chromium capture of the genuine existing local OpenClaw chat, using native sidebar toggle, scroll, and native screenshot capture region.",
+  "during_original_generation": false
+}

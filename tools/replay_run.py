@@ -108,6 +108,8 @@ def main():
         print('Model:',model,'| Thinking:',thinking)
         if plan.get('temperature') is not None:
             print('Recorded temperature:',plan['temperature'],'(set in your gateway profile before running)')
+        if plan.get('top_p') is not None:
+            print('Recorded top_p:',plan['top_p'],'(set agents.defaults.params.topP in your gateway profile)')
         if args.dry_run:
             print(prompt)
             return 0

@@ -33,10 +33,14 @@ VARIANTS['source-order-compact'] = (8, False, 'both', False,
     'Fetch both live catalogs. Pick five distinct Christmas gifts for a software club from both stores. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.')
 VARIANTS['wordpress-links'] = (8, False, 'wordpress', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.')
+TOP_P_BY_VARIANT = {'source-order-top-p-080': 0.8, 'source-order-top-p-045': 0.45}
+for name in TOP_P_BY_VARIANT:
+    VARIANTS[name] = VARIANTS['source-order']
 ARMS += [('paired-links-small',1.0,'low'),('paired-links-small',0.2,'low'),
          ('kit-comparison',1.0,'high'),('kit-comparison',0.6,'high'),
          ('source-order',0.6,'low'),('hardware-links',0.0,'low'),('recipient-guide',0.6,'low'),
          ('source-order-compact',0.2,'low'),('wordpress-links',0.2,'low')]
+ARMS += [(name, 0.2, 'low') for name in TOP_P_BY_VARIANT]
 
 def arm_key(arm):
     name,t,effort=arm
@@ -49,7 +53,8 @@ def choose(results):
           ('visible-receipt',0.2,'low'),('paired-links-small',0.2,'low'),
           ('paired-links',0.2,'low'),('kit-comparison',1.0,'low'),('kit-comparison',1.0,'high'),
           ('price-cards',0.2,'low'),('source-order',0.2,'low'),('recipient-guide',0.2,'low'),
-          ('source-order',0.2,'low'),('source-order-compact',0.2,'low'),('wordpress-links',0.2,'low')]
+          ('source-order',0.2,'low'),('source-order-compact',0.2,'low'),('wordpress-links',0.2,'low'),
+          ('source-order-top-p-080',0.2,'low'),('source-order-top-p-045',0.2,'low')]
     if index<len(warm):
         return warm[index]
     counts={arm_key(a):[] for a in ARMS}
