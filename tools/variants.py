@@ -43,6 +43,10 @@ VARIANTS['synth-first-five'] = (*VARIANTS['synth-links'][:-1], VARIANTS['synth-l
     'Pick five distinct Christmas gifts for a software club.',
     'For a software club, choose the first five distinct gifts in this in-stock Christmas gift catalog.'))
 VARIANTS['synth-first-five-six'] = (6, *VARIANTS['synth-first-five'][1:])
+VARIANTS['synth-first-five-direct-fetch'] = (*VARIANTS['synth-first-five'][:-1],
+    VARIANTS['synth-first-five'][-1].replace(
+        'Fetch the live retailer catalog with web_fetch.',
+        'First call web_fetch once with the catalog URL below, extractMode "text", and maxChars 20000.'))
 VARIANTS['synth-links-brief'] = (8, False, 'synth', False,
     'Fetch the live catalog with web_fetch. Pick five distinct Christmas gifts for a software club. '
     'Return five numbered links in catalog order with exact product titles and page URLs.')
@@ -88,6 +92,7 @@ RESEARCH_ARMS = (
     ('synth-table', .2, 'low'), ('synth-autolinks', .2, 'low'), ('synth-first-five', .2, 'low'),
     ('synth-links-brief', .2, 'low'), ('synth-links-no-workspace', .2, 'low'),
     ('synth-links-temp-one', 1.0, 'low'), ('synth-first-five-six', .2, 'low'),
+    ('synth-first-five-direct-fetch', .2, 'low'),
     ('source-order-synth', .2, 'low'), ('source-order', .2, 'low'),
     ('research-table', .2, 'low'), ('research-prose', .2, 'low'),
     ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
