@@ -1,0 +1,183 @@
+{
+  "invocation": "python3 .omo/evidence/first5027-preflight-observer/verify.py",
+  "binary_observable": "exit 0; every checks[].passed true",
+  "checks": [
+    {
+      "scenario": "exact independent observer permits proven score-first preflight",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "scenario": "no observer permits proven score-first preflight",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "scenario": "sender always blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "different recorder checkout blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "different node path blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "wrong session blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "wrong film root blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "wrong UUID directory blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "unrecognized attempt directory blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "extra arguments block",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "shell wrapper blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "unknown child blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "legacy readiness recorder blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "observer plus sender still blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "observer plus unknown child still blocks",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "score-first config with readyPath blocks observer exemption",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "send marker blocks despite observer: ready.json",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "send marker blocks despite observer: finish.json",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "send marker blocks despite observer: evidence.json",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "send marker blocks despite observer: D5037-first5027-extract-text.send-intent.json",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "send marker blocks despite observer: D5037-first5027-extract-text.pending.json",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "send marker blocks despite observer: D5037-first5027-extract-text.ack.json",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "send marker blocks despite observer: D5037-first5027-extract-text.terminal.json",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "send marker blocks despite observer: D5037-first5027-extract-text.json",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "uncommitted plan blocks despite observer",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "mismatching private config blocks despite observer",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "missing committed presend guard blocks despite observer",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "legacy readiness-gated run cannot exempt observer",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "scenario": "legacy run without observer still passes",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "passed": 29,
+  "failed": 0,
+  "scope": "Offline temporary fixtures; no live process changes or provider calls."
+}

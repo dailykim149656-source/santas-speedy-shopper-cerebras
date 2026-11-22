@@ -1,0 +1,25 @@
+{
+  "scenario": "read-only controller/validator compatibility review before live sends",
+  "invocation": "cat tools/run_gift8.py; sed -n 78,105p tools/run.mjs; inspect gift8_evidence contract",
+  "files": {
+    "tools/run_gift8.py": "47121b7ad7228871d4b460b5ec073b0f655b3f1a00fbec3b597529f8efae1dd1",
+    "tools/gift8_evidence.py": "39d674214d1572e0c423ab108756877688ebeadf93d2e0de09747b8669feb541",
+    "tools/run.mjs": "ff79caad8fa991b61b4ffea1c99b5cfca2c672660547ebcbbfe5e3febee2e260"
+  },
+  "compatible": [
+    "plan fields scalar",
+    "manifest written before network send",
+    "private and committed manifest serialized identically",
+    "plugin digest algorithm",
+    "validate and finish positional arguments",
+    "prompt includes run marker"
+  ],
+  "blockers": [
+    "finish_trial indexes tokensPerSecond on retained malformed/invalid calls; use .get to avoid KeyError and retain failed trial",
+    "run.mjs must propagate planned official metadata fields for gift8 variants; root already implementing"
+  ],
+  "notes": [
+    "experiment contains manifest hash but validator binds exact committed manifest bytes rather than parsing experiment marker",
+    "No model sends or network requests. No source edits."
+  ]
+}

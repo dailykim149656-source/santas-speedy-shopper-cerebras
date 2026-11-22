@@ -1,0 +1,6 @@
+{
+  "invocation": "independent_first5027_observer(command,repo,cache,committed_D5037_plan)",
+  "command": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/bin/node $SHOPPER_WORKSPACE/speed-bounty-evidence-test/tools/record.mjs --session-key agent:main:shop-d5037-first5027-extract-text-e668c558 --dir ~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/film-first5027-5037/e668c558-7718-4125-ac0d-5a6cd93788dd/attempt-01",
+  "recognized": true,
+  "scope": "Read-only command predicate; no sealing or process changes"
+}

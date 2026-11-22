@@ -1,0 +1,30 @@
+{
+  "mode": "read-only source review; no source or movie edits",
+  "source": "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/tools/gift8_report.py",
+  "source_sha256": "1514a14ec9bb10198c8fa61b22c86a7bcf29fc0ec391a24c52608972d943500f",
+  "findings": [
+    {
+      "lines": [
+        205,
+        206
+      ],
+      "observable": "Valid prefetch rows reject any native tool calls/results"
+    },
+    {
+      "lines": [
+        237,
+        238
+      ],
+      "observable": "Valid prefetch receipt tool_call_id must be None"
+    },
+    {
+      "function": "independent_score",
+      "observable": "All same-run assistant generations already counted without one-generation cap"
+    },
+    {
+      "function": "audit_trial",
+      "observable": "Method restrictions only run when saved_valid; terminal429 invalid rows stay reportable"
+    }
+  ],
+  "coordination": "Parent and gift_validation notified; pending new source-binding schema and edit scope"
+}

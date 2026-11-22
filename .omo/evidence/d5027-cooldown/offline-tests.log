@@ -1,0 +1,23 @@
+test_campaign_keeps_default (test_focus_d5027.D5027CooldownTests.test_campaign_keeps_default) ... ok
+test_cli_rejects_unbounded_values (test_focus_d5027.D5027CooldownTests.test_cli_rejects_unbounded_values) ... ok
+test_d5102_retry_only_passthrough_allows_opt_in (test_focus_d5027.D5027CooldownTests.test_d5102_retry_only_passthrough_allows_opt_in) ... ok
+test_failures_keep_backoff_after_older_success (test_focus_d5027.D5027CooldownTests.test_failures_keep_backoff_after_older_success) ... ok
+test_ineligible_prior_results_keep_default (test_focus_d5027.D5027CooldownTests.test_ineligible_prior_results_keep_default) ... ok
+test_main_and_other_selectors_keep_default (test_focus_d5027.D5027CooldownTests.test_main_and_other_selectors_keep_default) ... ok
+test_manual_stop_precedes_override (test_focus_d5027.D5027CooldownTests.test_manual_stop_precedes_override) ... {"phase": "user_stop", "time": "2026-11-22T14:18:57.821564+00:00"}
+ok
+test_opt_in_dispatches_only_after_full_30_seconds (test_focus_d5027.D5027CooldownTests.test_opt_in_dispatches_only_after_full_30_seconds) ... ok
+test_valid_prior_default_and_opt_in (test_focus_d5027.D5027CooldownTests.test_valid_prior_default_and_opt_in) ... ok
+test_zero_token_429_keeps_existing_windows (test_focus_d5027.D5027CooldownTests.test_zero_token_429_keeps_existing_windows) ... ok
+test_focus_bypasses_target_stop_without_other_focus_markers (test_focus_d5027.D5027FocusTests.test_focus_bypasses_target_stop_without_other_focus_markers) ... ok
+test_focus_repeats_d5027_ahead_of_other_selectors (test_focus_d5027.D5027FocusTests.test_focus_repeats_d5027_ahead_of_other_selectors) ... ok
+test_main_schedule_ignores_test_focus (test_focus_d5027.D5027FocusTests.test_main_schedule_ignores_test_focus) ... ok
+test_stop_request_still_stops_with_focus (test_focus_d5027.D5027FocusTests.test_stop_request_still_stops_with_focus) ... {"phase": "user_stop", "time": "2026-11-22T14:18:57.849168+00:00"}
+ok
+test_target_alone_still_stops (test_focus_d5027.D5027FocusTests.test_target_alone_still_stops) ... {"phase": "target_1200_met", "time": "2026-11-22T14:18:57.852596+00:00"}
+ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.076s
+
+OK

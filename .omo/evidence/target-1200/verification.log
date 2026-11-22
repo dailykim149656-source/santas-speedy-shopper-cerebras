@@ -1,0 +1,5 @@
+PASS: all existing prompts, arms, exact-args shapes, and 100 scheduling turns unchanged
+PASS: single-catalog prompt is the only experimental difference; old five-category objects remain url-only
+PASS: four-arm balanced cycle prioritizes category temperatures, includes failed attempts, preserves method separation
+PASS: both inclusive thresholds and all three explicit true flags required
+PASS: real main path selects/stops only for opted-in test schedule; no trial starts after qualifying history

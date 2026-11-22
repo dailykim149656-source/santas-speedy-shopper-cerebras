@@ -1,0 +1,89 @@
+[
+  {
+    "at_ms": 1795351825894,
+    "method": "POST",
+    "path": "/v1/chat/completions",
+    "relay_sha256": "1d6a3b1daf82f386b62ad0207854b741f8596408a4ec6033397c75ec51f98c14",
+    "received_sha256": "b52ebbc21ad7efebd2fe2205a4c420a590f0f4e0b5dae00c02053da4ad55ce74",
+    "nonce": "465ba4e8",
+    "run_id": "465ba4e8-bfe2-4722-b473-7d0ee418ffb4",
+    "phase": "passthrough",
+    "changes": [],
+    "forwarded_sha256": "b52ebbc21ad7efebd2fe2205a4c420a590f0f4e0b5dae00c02053da4ad55ce74",
+    "attempts": [],
+    "status": 200,
+    "upstream_ms": 19900.608084,
+    "response_sha256": "a5f78d41cfdcdbd94f3fe6109a5506be32e3e69f28ab19d1be72f8601f64f387",
+    "response_bytes": 5421,
+    "timing": {
+      "completion_time": 0.27577465,
+      "completion_tokens": 388,
+      "prompt_tokens": 2866
+    }
+  },
+  {
+    "at_ms": 1795351848922,
+    "method": "POST",
+    "path": "/v1/chat/completions",
+    "relay_sha256": "1d6a3b1daf82f386b62ad0207854b741f8596408a4ec6033397c75ec51f98c14",
+    "received_sha256": "0a042bf9ac675adb59d9bac693c053f3bf3a68fbaf33c0f8a91bd537c1c56bfe",
+    "nonce": "465ba4e8",
+    "run_id": "465ba4e8-bfe2-4722-b473-7d0ee418ffb4",
+    "phase": "passthrough",
+    "changes": [],
+    "forwarded_sha256": "0a042bf9ac675adb59d9bac693c053f3bf3a68fbaf33c0f8a91bd537c1c56bfe",
+    "attempts": [
+      {
+        "status": 429,
+        "at_ms": 1795351849146,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795351850925,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795351853184,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795351855916,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795351859151,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795351863361,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795351868593,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795351874855,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795351882117,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      }
+    ],
+    "status": 429,
+    "upstream_ms": 41456.589916,
+    "response_sha256": "8510d73ba7d3855b35a1ed7c2a57c574615e02b8f27d855145f12611a6b298f1",
+    "response_bytes": 152,
+    "timing": null,
+    "error_body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "invocation": "git diff --check -- tools/loop.py",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

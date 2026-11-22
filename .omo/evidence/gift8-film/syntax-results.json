@@ -1,0 +1,38 @@
+[
+  {
+    "invocation": [
+      "python3",
+      "-m",
+      "py_compile",
+      "tools/first5027_film.py",
+      "tools/gift8_film.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "invocation": [
+      "node",
+      "--check",
+      "tools/record.mjs"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "invocation": [
+      "git",
+      "diff",
+      "--check",
+      "--",
+      "tools/first5027_film.py",
+      "tools/gift8_film.py",
+      "tools/record.mjs"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

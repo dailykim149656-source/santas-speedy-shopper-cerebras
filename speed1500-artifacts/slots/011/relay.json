@@ -1,0 +1,55 @@
+[
+  {
+    "at_ms": 1795352861740,
+    "method": "POST",
+    "path": "/v1/chat/completions",
+    "relay_sha256": "1d6a3b1daf82f386b62ad0207854b741f8596408a4ec6033397c75ec51f98c14",
+    "received_sha256": "190977a181350e4b3c602221033c3118b0f23bbbd44fa3f6e099a913662eaaaa",
+    "nonce": "bca8114e",
+    "run_id": "bca8114e-28fe-4d07-ae0e-4b863788dacc",
+    "phase": "passthrough",
+    "changes": [],
+    "forwarded_sha256": "190977a181350e4b3c602221033c3118b0f23bbbd44fa3f6e099a913662eaaaa",
+    "attempts": [
+      {
+        "status": 429,
+        "at_ms": 1795352862035,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795352863760,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795352865994,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795352868763,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795352872005,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795352876240,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      }
+    ],
+    "status": 200,
+    "upstream_ms": 20601.883667000104,
+    "response_sha256": "c7732a2f7f5b313c1bb740a2c9977971aab443ba616f126926dd77a356a1667c",
+    "response_bytes": 14619,
+    "timing": {
+      "completion_time": 0.251229699,
+      "completion_tokens": 183,
+      "prompt_tokens": 2803
+    }
+  }
+]

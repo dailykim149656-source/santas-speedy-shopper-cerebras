@@ -1,0 +1,216 @@
+{
+  "mode": "pure unit predicate inputs; no media/UI evidence and no actual target achievement claimed",
+  "pass_": true,
+  "checks": [
+    {
+      "scenario": "partial during-run1700 clip accepted independently of full-run flag",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": true,
+        "full_run_verified": false,
+        "timing": "first_frame_during_run"
+      }
+    },
+    {
+      "scenario": "inherited old-study full-run target flag is not a gift8 blocker",
+      "passed": true,
+      "observable": {
+        "gift8_target": true,
+        "inherited_full_run_target": false
+      }
+    },
+    {
+      "scenario": "wrong UI score rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "wrong URLs rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "wrong session rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "wrong rawid rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "unverified viewport rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "retimed clip rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "unplayable clip rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "rawmean below1700 rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "official UI below1700 rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "invalid trial rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "failed rawaudit rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "duplicate verified URLs rejected",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "clip duration 60",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": true
+      }
+    },
+    {
+      "scenario": "clip duration 60.001",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "clip duration 0",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "clip duration NaN",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "clip duration Infinity",
+      "passed": true,
+      "observable": {
+        "target_clip_verified": false
+      }
+    },
+    {
+      "scenario": "verified early target completes goal before eight sends",
+      "passed": true,
+      "observable": {
+        "comparison_complete": false,
+        "goal_complete": true,
+        "complete": true,
+        "passed": true,
+        "status": "goal_complete"
+      }
+    },
+    {
+      "scenario": "raw target with missing clip stays attention",
+      "passed": true,
+      "observable": {
+        "comparison_complete": false,
+        "goal_complete": false,
+        "complete": false,
+        "passed": false,
+        "status": "target_needs_attention"
+      }
+    },
+    {
+      "scenario": "eight sends cannot bypass a missing target clip",
+      "passed": true,
+      "observable": {
+        "comparison_complete": true,
+        "goal_complete": false,
+        "complete": false,
+        "passed": false,
+        "status": "target_needs_attention"
+      }
+    },
+    {
+      "scenario": "verified clip does not erase unrelated audit failure",
+      "passed": true,
+      "observable": {
+        "comparison_complete": false,
+        "goal_complete": false,
+        "complete": false,
+        "passed": false,
+        "status": "target_needs_attention"
+      }
+    },
+    {
+      "scenario": "eight-send below-target study completes comparison only",
+      "passed": true,
+      "observable": {
+        "comparison_complete": true,
+        "goal_complete": false,
+        "complete": true,
+        "passed": true,
+        "status": "passed"
+      }
+    },
+    {
+      "scenario": "below-target partial study remains incomplete",
+      "passed": true,
+      "observable": {
+        "comparison_complete": false,
+        "goal_complete": false,
+        "complete": false,
+        "passed": false,
+        "status": "incomplete_or_blocked"
+      }
+    },
+    {
+      "scenario": "strict full-run diagnostic remains unchanged",
+      "passed": true,
+      "observable": {
+        "full_run_verified": false,
+        "timing": "first_frame_during_run"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+PASS eight complete fixtures and exact ABBABAAB pass independent audit
+PASS four pairs yield B-A first400 and mean300
+PASS allcall mean1100 differs from first1000 and final1200
+PASS all local raw spans compared
+PASS closed samePID reservation covers each send
+PASS forged row metric rejected
+PASS archive bytes mismatch rejected
+PASS reordered products exclude pair
+PASS exact15minute pair accepted
+PASS over15minute pair excluded
+PASS invalid run excludes paired delta
+PASS wrongPID release rejected
+PASS open reservation rejected
+PASS actual overlapping foreign span blocksaudit
+PASS incomplete foreign send blocksaudit
+PASS additional actual call included in arithmetic
+PASS unmeasured assistant remains counted and invalidates method
+PASS Korean report includes denominator failures and honest scope
+PASS 1700target without genuine same-run UI fiveURLs movie cannot pass
+PASS failed send retained in successrate denominator
+PASS old same-root test excluded with explicit provenance
+PASS unresolved current gift8 blocks even before iteration row
+PASS reservation with incorrect profile lock set fails
+PASS terminal429 failure retained in count and denominator
+PASS validB extra-generation uses actual allcalls1200mean
+PASS validB extra-generation succeeds but one-generation hypothesis fails
+PASS allfive native extra-call receipts independently hashed
+PASS B extra call without source binding receipt rejected
+PASS B followup before first native model input rejected despite matching hashes
+PASS Korean report separates three single-generation successes from one extra-generation success
+PASS B native followup card mutation rejected despite consistent raw hashes

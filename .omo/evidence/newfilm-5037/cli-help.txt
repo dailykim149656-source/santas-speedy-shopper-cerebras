@@ -1,0 +1,17 @@
+usage: first5027_film.py [-h] [--start START] [--inspect INSPECT |
+                         --retry RETRY]
+
+Independent private film watcher for the test first5027 campaign; never sends
+requests.
+
+options:
+  -h, --help         show this help message and exit
+  --start START
+  --inspect INSPECT
+  --retry RETRY
+
+Run before the test controller. Waits through idle periods until
+~/Library/Caches/cerebras-speed-
+bounty/2026-11-22-test/mean-2000/recording-complete-5037 exists. Videos remain
+private; no score-controller dependency. --retry is a post-run capture when
+the original run has ended.

@@ -1,0 +1,38 @@
+[
+  {
+    "invocation": [
+      "python3",
+      "-m",
+      "py_compile",
+      "tools/gift8_report.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "invocation": [
+      "git",
+      "diff",
+      "--check",
+      "--",
+      "tools/gift8_report.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "invocation": [
+      "python3",
+      "tools/gift8_report.py",
+      "--output",
+      "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/current.md",
+      "--copy-demos",
+      "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/demos"
+    ],
+    "exit_code": 2,
+    "stdout": "{\"status\": \"incomplete_or_blocked\", \"report\": \"$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/current.md\", \"audit\": \"$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/current.audit.json\", \"checksums\": \"$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/current.sha256.json\", \"copied_demos\": 3}\n",
+    "stderr": ""
+  }
+]

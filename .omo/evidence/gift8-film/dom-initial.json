@@ -1,0 +1,62 @@
+{
+  "text": "LOCAL QA FIXTURE — NOT CAMPAIGN PROOF\nExisting anchor\n{\"gifts\":[{\"url\":\"https://fixture.invalid/visible-json\"}]}\nhttps://fixture.invalid/transparent\nhttps://fixture.invalid/clipped-url\nhttps://fixture.invalid/occluded\nExpand actual native details\n\"https://fixture.invalid/scrollable\"\nmean 1700 tokens/s",
+  "connected": false,
+  "composer": false,
+  "summary": "mean 1700 tokens/s",
+  "summaryVisible": true,
+  "links": [
+    {
+      "href": "https://fixture.invalid/anchor",
+      "text": "Existing anchor",
+      "visible": true
+    },
+    {
+      "href": "https://fixture.invalid/visible-json",
+      "text": "https://fixture.invalid/visible-json",
+      "visible": true,
+      "source": "rendered-url-text"
+    },
+    {
+      "href": "https://fixture.invalid/hidden",
+      "text": "https://fixture.invalid/hidden",
+      "visible": false,
+      "source": "rendered-url-text"
+    },
+    {
+      "href": "https://fixture.invalid/invisible",
+      "text": "https://fixture.invalid/invisible",
+      "visible": false,
+      "source": "rendered-url-text"
+    },
+    {
+      "href": "https://fixture.invalid/transparent",
+      "text": "https://fixture.invalid/transparent",
+      "visible": false,
+      "source": "rendered-url-text"
+    },
+    {
+      "href": "https://fixture.invalid/clipped-url",
+      "text": "https://fixture.invalid/clipped-url",
+      "visible": false,
+      "source": "rendered-url-text"
+    },
+    {
+      "href": "https://fixture.invalid/occluded",
+      "text": "https://fixture.invalid/occluded",
+      "visible": false,
+      "source": "rendered-url-text"
+    },
+    {
+      "href": "https://fixture.invalid/collapsed",
+      "text": "https://fixture.invalid/collapsed",
+      "visible": false,
+      "source": "rendered-url-text"
+    },
+    {
+      "href": "https://fixture.invalid/scrollable",
+      "text": "https://fixture.invalid/scrollable",
+      "visible": false,
+      "source": "rendered-url-text"
+    }
+  ]
+}

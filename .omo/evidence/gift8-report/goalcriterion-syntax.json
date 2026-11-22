@@ -1,0 +1,43 @@
+[
+  {
+    "invocation": [
+      "python3",
+      "-m",
+      "py_compile",
+      "tools/gift8_report.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "invocation": [
+      "git",
+      "diff",
+      "--check",
+      "--",
+      "tools/gift8_report.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "scenario": "old recorder/adapter unchanged",
+    "path": "tools/first5027_film.py",
+    "sha256": "c152c47489208d9323bcc5f4124faf9593d20e574875b72e255ffac081e9899a",
+    "matches_committed": true
+  },
+  {
+    "scenario": "old recorder/adapter unchanged",
+    "path": "tools/gift8_film.py",
+    "sha256": "7acc323143c7fc039298bf3708c7156d99214683f5ecccaacce4eaa122424b5a",
+    "matches_committed": true
+  },
+  {
+    "scenario": "old recorder/adapter unchanged",
+    "path": "tools/record.mjs",
+    "sha256": "7cb1bbaaf8e97b7442cae7a24e6fcc04657872a099c9b82fb526ef5229c87899",
+    "matches_committed": true
+  }
+]

@@ -1,0 +1,1 @@
+{"completed": 3, "sent": 3, "expected_in_progress_issues": [], "completed_row_integrity_passed": true, "no_overlap": true, "incomplete_sends": [], "reservation_closed": false, "copied_demos": 3, "all_demo_source_and_copy_hashes_match": true, "checksum_manifest_readback_matches": true, "complete": false, "status": "incomplete_or_blocked", "partial_snapshot_qa_passed": true}

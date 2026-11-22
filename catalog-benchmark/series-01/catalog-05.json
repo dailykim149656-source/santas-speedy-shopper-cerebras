@@ -1,0 +1,357 @@
+{
+  "id": "df678ccd-a24b-48e3-97f0-11369e15077b",
+  "label": "catalog-05",
+  "sessionKey": "agent:main:shop-catalog-df678ccd-a24b-48e3-97f0-11369e15077b",
+  "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+  "thinking": "low",
+  "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs.",
+  "startedWall": 1795358795579,
+  "sentAt": 1795358795716,
+  "waitStatus": "ok",
+  "endedAt": 1795358845318,
+  "history": {
+    "sessionKey": "agent:main:shop-catalog-df678ccd-a24b-48e3-97f0-11369e15077b",
+    "sessionId": "6acc159c-0d39-414f-aede-6b013d7b719d",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs.",
+        "timestamp": 1795358795730,
+        "idempotencyKey": "df678ccd-a24b-48e3-97f0-11369e15077b:user",
+        "__openclaw": {
+          "senderIsOwner": true,
+          "transport": {
+            "clients": [
+              {
+                "id": "cli",
+                "mode": "cli"
+              }
+            ]
+          },
+          "id": "9b99421b-d9b2-4fb0-9002-b350a67d008f",
+          "idempotencyKey": "df678ccd-a24b-48e3-97f0-11369e15077b:user",
+          "recordTimestampMs": 1795358796087,
+          "transcriptPosition": {
+            "source": "Io7-Tq4dykn1Jlnl6PLCzd-7fcbjQDz-pm7waCgNAg0",
+            "rawSeq": 1
+          },
+          "seq": 1
+        }
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "I need respond to user request. Should use search_catalog once for Christmas gifts. Should have five Markdown links exact product titles and URLs. I have tool. Should call once query \"Christmas gifts\" likely. Then output five links. Should have no extra perhaps concise. I'll call."
+          },
+          {
+            "type": "toolCall",
+            "id": "5c00c9a15",
+            "name": "search_catalog",
+            "arguments": {
+              "query": "Christmas gifts"
+            }
+          }
+        ],
+        "api": "openai-completions",
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "usage": {
+          "input": 2569,
+          "output": 106,
+          "totalTokens": 2675,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "total": 0
+          }
+        },
+        "stopReason": "toolUse",
+        "timestamp": 1795358796289,
+        "responseId": "chatcmpl-0bc60caf-a627-488a-b3f5-7506ce37ae5f",
+        "openclawDelivery": {
+          "textPhaseRequiresTerminal": true
+        },
+        "serverGeneration": {
+          "completionMs": 171.513949,
+          "outputTokens": 106
+        },
+        "__openclaw": {
+          "runId": "df678ccd-a24b-48e3-97f0-11369e15077b",
+          "id": "112b8f49-9537-4acc-ac14-e8d126d95411",
+          "recordTimestampMs": 1795358800335,
+          "transcriptPosition": {
+            "source": "Io7-Tq4dykn1Jlnl6PLCzd-7fcbjQDz-pm7waCgNAg0",
+            "rawSeq": 4
+          },
+          "seq": 2
+        }
+      },
+      {
+        "role": "toolResult",
+        "toolCallId": "5c00c9a15",
+        "toolName": "search_catalog",
+        "content": [
+          {
+            "type": "text",
+            "text": "Snowflake Cocoa Christmas Gift Basket for Women — Cozy Blanket & Holiday Socks\nhttps://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914\n\nChristmas Cheer Gift Box with Cozy Seasonal Treats\nhttps://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961\n\nCozy Christmas Gift Box with a Festive Mug & Sweet Treats\nhttps://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711\n\nLuxury Christmas Spa Gift Basket | Handmade Lavender Holiday Set\nhttps://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825\n\nThe Very Merry Hamper\nhttps://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172"
+          }
+        ],
+        "isError": false,
+        "timestamp": 1795358802223,
+        "__openclaw": {
+          "runId": "df678ccd-a24b-48e3-97f0-11369e15077b",
+          "id": "7bdeda28-d093-42d6-9512-201aa172d726",
+          "recordTimestampMs": 1795358802225,
+          "transcriptPosition": {
+            "source": "Io7-Tq4dykn1Jlnl6PLCzd-7fcbjQDz-pm7waCgNAg0",
+            "rawSeq": 5
+          },
+          "seq": 3
+        }
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "I need respond exactly five Markdown links exact titles URLs. No extra. Ensure exact punctuation."
+          },
+          {
+            "type": "text",
+            "text": "- [Snowflake Cocoa Christmas Gift Basket for Women — Cozy Blanket & Holiday Socks](https://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914)\n- [Christmas Cheer Gift Box with Cozy Seasonal Treats](https://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961)\n- [Cozy Christmas Gift Box with a Festive Mug & Sweet Treats](https://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711)\n- [Luxury Christmas Spa Gift Basket | Handmade Lavender Holiday Set](https://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825)\n- [The Very Merry Hamper](https://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172)"
+          }
+        ],
+        "api": "openai-completions",
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "usage": {
+          "input": 847,
+          "output": 288,
+          "totalTokens": 3183,
+          "cacheRead": 2048,
+          "cacheWrite": 0,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "total": 0
+          }
+        },
+        "stopReason": "stop",
+        "timestamp": 1795358802256,
+        "responseId": "chatcmpl-996c6bff-bb6e-4bcf-9b30-cba4c2a165eb",
+        "openclawDelivery": {
+          "textPhaseRequiresTerminal": true
+        },
+        "serverGeneration": {
+          "completionMs": 229.461325,
+          "outputTokens": 288
+        },
+        "__openclaw": {
+          "runId": "df678ccd-a24b-48e3-97f0-11369e15077b",
+          "id": "f382692a-50b1-479d-995f-49de323bc01a",
+          "recordTimestampMs": 1795358845014,
+          "transcriptPosition": {
+            "source": "Io7-Tq4dykn1Jlnl6PLCzd-7fcbjQDz-pm7waCgNAg0",
+            "rawSeq": 7
+          },
+          "seq": 4
+        }
+      }
+    ],
+    "activity": [
+      {
+        "messageId": "112b8f49-9537-4acc-ac14-e8d126d95411",
+        "items": [
+          {
+            "itemId": "tool:5c00c9a15",
+            "toolCallId": "5c00c9a15",
+            "name": "search_catalog",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Search Catalog",
+            "status": "completed",
+            "commandBearing": false
+          }
+        ]
+      },
+      {
+        "messageId": "7bdeda28-d093-42d6-9512-201aa172d726",
+        "items": [
+          {
+            "itemId": "tool:5c00c9a15",
+            "toolCallId": "5c00c9a15",
+            "name": "search_catalog",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Search Catalog",
+            "status": "completed",
+            "commandBearing": false
+          }
+        ]
+      }
+    ],
+    "hasMore": false,
+    "totalMessages": 4,
+    "pendingInputs": {
+      "items": [],
+      "total": 0,
+      "queuedCount": 0
+    },
+    "deltaCursor": "eyJhZ2VudElkIjoibWFpbiIsImdlbmVyYXRpb24iOiJmYjQxNzc3NmMwZmE0MDE4YTk5ODZiMzRiYzYwODQ1NiIsImxhc3RTZXEiOjcsInNlc3Npb25JZCI6IjZhY2MxNTljLTBkMzktNDE0Zi1hZWRlLTZiMDEzZDdiNzE5ZCIsInZlcnNpb24iOjF9",
+    "defaults": {
+      "modelProvider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "contextTokens": null,
+      "agentRuntime": {
+        "id": "auto",
+        "cloudPlacementSupported": false,
+        "devicePlacementSupported": false,
+        "source": "implicit"
+      },
+      "thinkingDefault": "low",
+      "modelSelectionTarget": "session"
+    },
+    "sessionInfo": {
+      "key": "agent:main:shop-catalog-df678ccd-a24b-48e3-97f0-11369e15077b",
+      "sessionModelRevision": "t3mrjMU6gEYf64zn79JAGZOs6W6_b5pGpKpbKlv1BCM",
+      "visibility": "shared",
+      "permissionModePending": false,
+      "spawnDepth": 0,
+      "createdVia": "operator",
+      "participants": [
+        {
+          "identity": {
+            "type": "observation",
+            "pluginId": null,
+            "accountId": null,
+            "senderKind": "unknown",
+            "id": "cli"
+          }
+        }
+      ],
+      "expandedParticipants": [
+        {
+          "identity": {
+            "type": "observation",
+            "pluginId": null,
+            "accountId": null,
+            "senderKind": "unknown",
+            "id": "cli"
+          }
+        }
+      ],
+      "participantCount": 1,
+      "createdAt": 1795358795638,
+      "kind": "direct",
+      "classification": "direct",
+      "agentId": "main",
+      "isMain": false,
+      "isDock": false,
+      "isBackground": false,
+      "chatType": "direct",
+      "updatedAt": 1795358845310,
+      "archived": false,
+      "pinned": false,
+      "unread": true,
+      "lastInteractionAt": 1795358795853,
+      "lastActivityAt": 1795358845204,
+      "sessionId": "6acc159c-0d39-414f-aede-6b013d7b719d",
+      "lifecycleRevision": "ed37b735-d6aa-4e11-8a23-32f12a8fe060",
+      "systemSent": true,
+      "abortedLastRun": false,
+      "thinkingLevel": "low",
+      "thinkingDefault": "low",
+      "effectiveFastMode": false,
+      "effectiveFastModeSource": "default",
+      "fastAutoOnSeconds": 60,
+      "inputTokens": 3416,
+      "outputTokens": 394,
+      "totalTokens": 2895,
+      "totalTokensFresh": true,
+      "estimatedCostUsd": 0,
+      "status": "done",
+      "startedAt": 1795358796284,
+      "endedAt": 1795358845204,
+      "runtimeMs": 48920,
+      "lastRunId": "df678ccd-a24b-48e3-97f0-11369e15077b",
+      "parentSessionKey": "agent:main:main",
+      "effectiveResponseUsage": "off",
+      "effectiveQueueMode": "steer",
+      "modelProvider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "modelOverrideSource": "user",
+      "runtimeSelectionLocked": false,
+      "agentRuntime": {
+        "id": "openclaw",
+        "cloudPlacementSupported": true,
+        "cloudPlacementExecutionMode": "worker-turn",
+        "devicePlacement": {
+          "requiredNodeCommands": [],
+          "consumesWorkerSlot": true
+        },
+        "devicePlacementSupported": true,
+        "source": "implicit"
+      },
+      "contextTokens": 128000,
+      "contextBudgetStatus": {
+        "schemaVersion": 1,
+        "source": "pre-prompt-estimate",
+        "updatedAt": 1795358796275,
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "route": "fits",
+        "shouldCompact": false,
+        "estimatedPromptTokens": 3212,
+        "contextTokenBudget": 128000,
+        "promptBudgetBeforeReserve": 108000,
+        "reserveTokens": 20000,
+        "effectiveReserveTokens": 20000,
+        "remainingPromptBudgetTokens": 104788,
+        "overflowTokens": 0,
+        "toolResultReducibleChars": 0,
+        "messageCount": 0,
+        "unwindowedMessageCount": 0,
+        "sessionId": "6acc159c-0d39-414f-aede-6b013d7b719d"
+      },
+      "snapshotAt": 1795358845342,
+      "placement": {
+        "state": "local",
+        "generation": 0,
+        "createdAtMs": 1795358796140,
+        "updatedAtMs": 1795358845187,
+        "stateChangedAtMs": 1795358796140
+      },
+      "activitySummary": {
+        "state": "unavailable",
+        "canEnsure": true
+      },
+      "hasBoard": false,
+      "childOwnerSessionKeys": [
+        "agent:main:main"
+      ],
+      "sharingRole": "admin",
+      "sendDisabledReason": null,
+      "hasActiveRun": false,
+      "activeRunIds": [],
+      "activeLeafEntryId": "f382692a-50b1-479d-995f-49de323bc01a"
+    },
+    "thinkingLevel": "low"
+  },
+  "wallSeconds": 49.602,
+  "official": {
+    "meanTokensPerSecond": 936.5695025591058,
+    "p90TokensPerSecond": 1255.1134706469597,
+    "outputTokens": 394,
+    "generationMs": 400.975274,
+    "calls": 2
+  },
+  "officialDisplay": "937"
+}

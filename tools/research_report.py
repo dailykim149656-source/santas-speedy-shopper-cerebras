@@ -15,7 +15,8 @@ import sys
 
 sys.dont_write_bytecode = True
 from validate import MARKDOWN_TOKEN, answer_links, merchant
-from variants import CONTEXT_INJECTION_BY_VARIANT, FIRST_FIVE_VARIANTS, WORKSPACE_AGENTS_BY_VARIANT
+from variants import (CONTEXT_INJECTION_BY_VARIANT, FIRST_FIVE_VARIANTS, FOCUS_D5027, MERCANTILE_VARIANT,
+                      WORKSPACE_AGENTS_BY_VARIANT)
 
 COMPARISONS = (
     ('판매처 1곳', (('WordPress','wordpress-links'),('AI Synthesis','synth-links'))),
@@ -164,6 +165,36 @@ def first_five_catalog_links(record):
         return False
     expected = list(dict.fromkeys(sources[0]['products']))[:5]
     return len(expected) == 5 and [product['url'] for product in record['products']] == expected
+
+def one_per_source_links(record):
+    """Five accepted category fetches, and the answer links exactly the first product of each."""
+    sources = [source for source in record['retail_sources'] if source.get('accepted') is True]
+    expected = {source['products'][0] for source in sources if source.get('products')}
+    answer = [product['url'] for product in record['products']]
+    return len(sources) == 5 and len(expected) == 5 and len(answer) == 5 and set(answer) == expected
+
+def category_links_for_plan(record, run):
+    """Check the five planned searches in one model turn and link each result in prompt order."""
+    if not one_per_source_links(record):
+        return False
+    if run.get('variant') not in (FOCUS_D5027[0], MERCANTILE_VARIANT):
+        return True
+    try:
+        urls = [json.loads(line)['url'] for line in run['prompt'].splitlines()[1:]]
+    except (KeyError, TypeError, ValueError):
+        return False
+    if len(urls) != 5 or not all(isinstance(url, str) for url in urls) or len(set(urls)) != 5:
+        return False
+    first = next((m for m in run['history']['messages'] if m.get('role') == 'assistant'
+                  and m.get('__openclaw', {}).get('runId') == run['id'] and m.get('serverGeneration')), {})
+    calls = [p for p in first.get('content', []) if isinstance(p, dict) and p.get('type') == 'toolCall']
+    if len(calls) != 5 or not all(p.get('name') == 'web_fetch' for p in calls):
+        return False
+    arguments = [p.get('arguments') for p in calls]
+    if not all({'url': url} in arguments for url in urls):
+        return False
+    sources = {s['url']: s['products'] for s in record['retail_sources'] if s.get('accepted') is True}
+    return all(sources.get(url) == [product['url']] for url, product in zip(urls, record['products']))
 
 def correct_subtotals(record):
     """Return the number of correct running USD subtotals, or None when merchant prices are unavailable."""

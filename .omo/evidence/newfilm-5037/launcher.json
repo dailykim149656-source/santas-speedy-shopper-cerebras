@@ -1,0 +1,13 @@
+{
+  "command": [
+    "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/bin/node",
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/newfilm-5037/fixtures/repo/tools/record.mjs",
+    "--session-key",
+    "agent:main:shop-d5037-synth-five-categories-cap-12345678",
+    "--dir",
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/newfilm-5037/fixtures/cache/film-first5027-5037/12345678-abcd-1234-abcd-123456789012/launcher-fixture"
+  ],
+  "BOUNTY_ROOT": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test",
+  "gateway": "19863",
+  "wrapper": "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/newfilm-5037/fixtures/cache/profile.mjs"
+}

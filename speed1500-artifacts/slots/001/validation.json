@@ -1,0 +1,105 @@
+{
+  "run_id": "465ba4e8-bfe2-4722-b473-7d0ee418ffb4",
+  "valid": false,
+  "status": "rejected",
+  "target_met": false,
+  "reject_reasons": [
+    "run has no successful final terminal event",
+    "run has no successful final assistant text",
+    "assistant call missing response identity or has unsuccessful stop",
+    "assistant call missing valid serverGeneration",
+    "final must contain exactly five distinct product links",
+    "five independent merchant product GET verifications did not pass"
+  ],
+  "target_reasons": [
+    "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+  ],
+  "score": {
+    "mean_exact_tps": 1406.9458523471972,
+    "ui_rounded_tps": 1407,
+    "ui_display": "1,407",
+    "p90_tps": 1406.9458523471972,
+    "output_tokens": 388,
+    "generation_ms": 275.77465,
+    "call_count": 1,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)",
+    "official_patch": "~/Library/Caches/cerebras-speed-bounty/2026-11-22/official.patch",
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": "chatcmpl-43fc6475-630f-4378-b025-97224daa295d",
+      "completionMs": 275.77465,
+      "outputTokens": 388,
+      "tokensPerSecond": 1406.9458523471972,
+      "stopReason": "toolUse"
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "ea193e3ab",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:48.258Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+      ]
+    },
+    {
+      "tool_call_id": "22f17e683",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:48.834Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+      ]
+    },
+    {
+      "tool_call_id": "8397b7320",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:47.894Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+      ]
+    },
+    {
+      "tool_call_id": "e78e57b57",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:48.239Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    },
+    {
+      "tool_call_id": "df5a9641c",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:48.652Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    }
+  ],
+  "products": [],
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "input_path": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/speed1500-20261122/slots/001/raw.json",
+  "input_sha256": "2602bb132ad594a714f1f6bb90ffb2d659e73bc85b10d83d33b699b364326539"
+}

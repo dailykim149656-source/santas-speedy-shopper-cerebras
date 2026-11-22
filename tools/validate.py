@@ -103,7 +103,8 @@ def identity(url):
 
 
 def normalized(value):
-    return " ".join(html.unescape(value).casefold().split())
+    text = html.unescape(value).translate(str.maketrans({"“": '"', "”": '"'}))
+    return " ".join(text.casefold().split())
 
 
 def objects(value):
@@ -126,7 +127,8 @@ class Page(HTMLParser):
         self.password_protected = False
 
     def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
+        # HTMLParser represents an attribute without a value (e.g. <div class>) as None.
+        attrs = {key: value if value is not None else "" for key, value in attrs}
         classes = attrs.get("class", "").split()
         self.sticky_title |= "storefront-sticky-add-to-cart__content-title" in classes
         self.sticky_price |= "storefront-sticky-add-to-cart__content-price" in classes
@@ -195,8 +197,9 @@ def product_retry_delay(error):
     return None
 
 
-def read_product_page(request):
-    opener = build_opener(RetailRedirect())
+def read_product_page(request, opener=None):
+    if opener is None:
+        opener = build_opener(RetailRedirect())
     for attempt in range(2):
         try:
             with opener.open(request, timeout=25) as response:
@@ -211,13 +214,13 @@ def read_product_page(request):
             sleep(delay)
 
 
-def verify_product(item):
+def verify_product(item, opener=None):
     result = dict(item, verified=False, reasons=[])
     url, name = item["url"], item["catalog_name"]
     try:
         request = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "text/html",
                                         "Cache-Control": "no-cache"}, method="GET")
-        body, status, final_url, charset = read_product_page(request)
+        body, status, final_url, charset = read_product_page(request) if opener is None else read_product_page(request, opener)
         result.update(http=status, final_url=final_url,
                       html_bytes_read=len(body), html_sha256=hashlib.sha256(body).hexdigest(),
                       checked_at=datetime.now(timezone.utc).isoformat())
@@ -265,7 +268,7 @@ def catalog_price(product):
     return None
 
 
-def validate(data):
+def validate(data, *, verify_many=None):
     run_id = data["id"]
     messages = data["history"]["messages"]
     started, ended = data.get("startedWall"), data.get("ended", {})
@@ -366,8 +369,11 @@ def validate(data):
             reasons.append("final product absent from same-run fresh successful retail payload: " + url)
         else:
             candidates.append(dict(url=url, **catalog[url]))
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        products = list(pool.map(verify_product, candidates))
+    if verify_many is None:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
+            products = list(pool.map(verify_product, candidates))
+    else:
+        products = list(verify_many(candidates))
     if len(products) != 5 or not all(p["verified"] for p in products):
         reasons.append("five independent merchant product GET verifications did not pass")
     rates = [c["tokensPerSecond"] for c in calls]

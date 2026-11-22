@@ -1,0 +1,48 @@
+--- a/tools/variants.py
++++ b/tools/variants.py
+@@ -142,6 +142,16 @@
+     'Then return the one product from each result as numbered [exact name](exact product URL) links, '
+     'in the order listed.')
+ VARIANTS['synth-five-categories-cap-4000'] = VARIANTS['synth-five-categories-cap']
++FIRST5027_VARIANTS = ('synth-five-categories-cap', 'first5027-extract-text', 'first5027-defer-answer')
++for name in FIRST5027_VARIANTS[1:]:
++    VARIANTS[name] = VARIANTS[FIRST5027_VARIANTS[0]]
++FIRST5027_DEFER_LINE = (
++    'Before any tool results arrive, copy the five supplied argument objects directly into the five '
++    'web_fetch calls in order. Defer planning the final answer until the results arrive.')
++WORKSPACE_AGENTS_BY_VARIANT.update({
++    'first5027-extract-text': DIRECT_TOOL_CAP_AGENTS_MD,
++    'first5027-defer-answer': DIRECT_TOOL_CAP_AGENTS_MD + FIRST5027_DEFER_LINE + '\n',
++})
+ SORTED_SIX_INSTRUCTION = (
+     'Christmas gifts: call web_fetch once with each exact argument object below, in parallel when there '
+     'is more than one. Then return the first five distinct products from the live ordered catalog '
+@@ -150,8 +160,8 @@
+ VARIANTS['synth-six-sorted'] = (6, False, 'synth-sorted', False, SORTED_SIX_INSTRUCTION)
+ VARIANTS['synth-six-sorted-pages'] = (3, False, 'synth-sorted-pages', False, SORTED_SIX_INSTRUCTION)
+ EXPERIMENT_1700_VARIANTS = ('synth-five-categories-cap-4000', 'synth-six-sorted', 'synth-six-sorted-pages')
+-EXACT_ARGS_VARIANTS = ('synth-five-categories-cap',) + EXPERIMENT_1700_VARIANTS
+-CATEGORY_VARIANTS = ('synth-five-categories-cap', 'synth-five-categories-cap-4000')
++EXACT_ARGS_VARIANTS = FIRST5027_VARIANTS + EXPERIMENT_1700_VARIANTS
++CATEGORY_VARIANTS = FIRST5027_VARIANTS + ('synth-five-categories-cap-4000',)
+ WORKSPACE_AGENTS_BY_VARIANT.update({'synth-first-five-short-cap': DIRECT_TOOL_CAP_AGENTS_MD,
+                                     'synth-first-five-short-cap-args': DIRECT_TOOL_CAP_AGENTS_MD,
+                                     'synth-five-categories-cap': DIRECT_TOOL_CAP_AGENTS_MD})
+@@ -181,6 +191,7 @@
+ ARMS += [arm for arm in RESEARCH_ARMS if arm not in ARMS]
+ ARMS += [arm for arm in TEST_ARMS if arm not in ARMS]
+ ARMS += [(name, .2, 'low') for name in EXPERIMENT_1700_VARIANTS]
++ARMS += [(name, .2, 'low') for name in FIRST5027_VARIANTS if (name, .2, 'low') not in ARMS]
+ 
+ def arm_key(arm):
+     name,t,effort=arm
+@@ -296,6 +307,9 @@
+     elif name == 'synth-five-categories-cap-4000':
+         urls = [json.dumps({'url': url, 'extractMode': 'text', 'maxChars': 4000},
+                            separators=(',', ':')) for url in urls]
++    elif name == 'first5027-extract-text':
++        urls = [json.dumps({'url': url, 'extractMode': 'text'},
++                           separators=(',', ':')) for url in urls]
+     elif name in EXACT_ARGS_VARIANTS:
+         # Spell out each web_fetch argument object so the tool call can be copied from the request.
+         urls = [json.dumps({'url': url}, separators=(',', ':')) for url in urls]

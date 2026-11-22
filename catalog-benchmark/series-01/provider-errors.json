@@ -1,0 +1,140 @@
+{
+  "count": 9,
+  "count429": 9,
+  "trials": [
+    {
+      "label": "catalog-01",
+      "sessionKey": "agent:main:shop-catalog-2dfc08f3-1114-4312-a544-f314b0944aed",
+      "sessionObserved": true,
+      "errorCount": 1
+    },
+    {
+      "label": "catalog-02",
+      "sessionKey": "agent:main:shop-catalog-e2d378d0-d5f7-4213-b9dd-3c6213a65550",
+      "sessionObserved": true,
+      "errorCount": 1
+    },
+    {
+      "label": "catalog-03",
+      "sessionKey": "agent:main:shop-catalog-bb7d014f-8098-4f82-af8e-c0be61727286",
+      "sessionObserved": true,
+      "errorCount": 1
+    },
+    {
+      "label": "catalog-04",
+      "sessionKey": "agent:main:shop-catalog-6447b8e8-e47e-4399-ae19-edc89c8abd14",
+      "sessionObserved": true,
+      "errorCount": 1
+    },
+    {
+      "label": "catalog-05",
+      "sessionKey": "agent:main:shop-catalog-df678ccd-a24b-48e3-97f0-11369e15077b",
+      "sessionObserved": true,
+      "errorCount": 0
+    },
+    {
+      "label": "catalog-06",
+      "sessionKey": "agent:main:shop-catalog-d38b695b-c12a-4f24-bf01-375fc2e33ffb",
+      "sessionObserved": true,
+      "errorCount": 1
+    },
+    {
+      "label": "catalog-07",
+      "sessionKey": "agent:main:shop-catalog-574ceb21-f9b7-43ac-9b41-4f242ecc26b7",
+      "sessionObserved": true,
+      "errorCount": 1
+    },
+    {
+      "label": "catalog-08",
+      "sessionKey": "agent:main:shop-catalog-caabaf17-7b79-4fc1-a0d9-6b051446c871",
+      "sessionObserved": true,
+      "errorCount": 1
+    },
+    {
+      "label": "catalog-09",
+      "sessionKey": "agent:main:shop-catalog-4bc16864-0561-407b-b021-0c8eda00540d",
+      "sessionObserved": true,
+      "errorCount": 1
+    },
+    {
+      "label": "catalog-10",
+      "sessionKey": "agent:main:shop-catalog-312de48f-6362-444d-87dd-6fbc1fe483f4",
+      "sessionObserved": true,
+      "errorCount": 1
+    }
+  ],
+  "errors": [
+    {
+      "label": "catalog-01",
+      "sessionKey": "agent:main:shop-catalog-2dfc08f3-1114-4312-a544-f314b0944aed",
+      "timestamp": "2026-11-22T14:45:41.383+00:00",
+      "call": 1,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    },
+    {
+      "label": "catalog-02",
+      "sessionKey": "agent:main:shop-catalog-e2d378d0-d5f7-4213-b9dd-3c6213a65550",
+      "timestamp": "2026-11-22T14:45:55.201+00:00",
+      "call": 1,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    },
+    {
+      "label": "catalog-03",
+      "sessionKey": "agent:main:shop-catalog-bb7d014f-8098-4f82-af8e-c0be61727286",
+      "timestamp": "2026-11-22T14:46:09.642+00:00",
+      "call": 1,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    },
+    {
+      "label": "catalog-04",
+      "sessionKey": "agent:main:shop-catalog-6447b8e8-e47e-4399-ae19-edc89c8abd14",
+      "timestamp": "2026-11-22T14:46:23.507+00:00",
+      "call": 1,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    },
+    {
+      "label": "catalog-06",
+      "sessionKey": "agent:main:shop-catalog-d38b695b-c12a-4f24-bf01-375fc2e33ffb",
+      "timestamp": "2026-11-22T14:47:39.877+00:00",
+      "call": 1,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    },
+    {
+      "label": "catalog-07",
+      "sessionKey": "agent:main:shop-catalog-574ceb21-f9b7-43ac-9b41-4f242ecc26b7",
+      "timestamp": "2026-11-22T14:47:53.073+00:00",
+      "call": 1,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    },
+    {
+      "label": "catalog-08",
+      "sessionKey": "agent:main:shop-catalog-caabaf17-7b79-4fc1-a0d9-6b051446c871",
+      "timestamp": "2026-11-22T14:48:06.088+00:00",
+      "call": 1,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    },
+    {
+      "label": "catalog-09",
+      "sessionKey": "agent:main:shop-catalog-4bc16864-0561-407b-b021-0c8eda00540d",
+      "timestamp": "2026-11-22T14:48:43.145+00:00",
+      "call": 2,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    },
+    {
+      "label": "catalog-10",
+      "sessionKey": "agent:main:shop-catalog-312de48f-6362-444d-87dd-6fbc1fe483f4",
+      "timestamp": "2026-11-22T14:48:56.431+00:00",
+      "call": 1,
+      "status": 429,
+      "reason": "High traffic (provider queue exceeded)"
+    }
+  ]
+}

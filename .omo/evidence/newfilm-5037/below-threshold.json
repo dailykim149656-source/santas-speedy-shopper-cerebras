@@ -1,0 +1,115 @@
+{
+  "id": "12345678-abcd-1234-abcd-123456789012",
+  "label": "D5037-synth-five-categories-cap",
+  "sessionKey": "agent:main:shop-d5037-synth-five-categories-cap-12345678",
+  "inspected_at": "2026-11-22T09:29:49.933340+00:00",
+  "readyAfterFirstScreenshot": "2023-11-14T22:13:20+00:00",
+  "sendIntentMs": 1700000000100,
+  "terminalReceiptMs": 1700000005000,
+  "timing": "first_frame_before_send",
+  "full_run_verified": true,
+  "directory": "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/newfilm-5037/fixtures/cache/film-first5027-5037/12345678-abcd-1234-abcd-123456789012/attempt-01",
+  "firstFrameMinusSendMs": -100,
+  "firstFrameMinusTerminalMs": -5000,
+  "media": {
+    "original.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 16,
+            "height": 16
+          }
+        ],
+        "format": {
+          "duration": "6.000000"
+        }
+      },
+      "sha256": "a9e1193b98427c85feca13e2af6dcea5f4e1ca99224926e9565482322ff08d08",
+      "bytes": 5464
+    },
+    "demo.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 16,
+            "height": 16
+          }
+        ],
+        "format": {
+          "duration": "6.000000"
+        }
+      },
+      "sha256": "a9e1193b98427c85feca13e2af6dcea5f4e1ca99224926e9565482322ff08d08",
+      "bytes": 5464
+    }
+  },
+  "playable": true,
+  "viewportVerified": true,
+  "viewportProofSha256": "c95966899c34148671f95d7eb4404b42d70a84fee80675aa18c5ea51dd5f9274",
+  "displayedMean": 1699,
+  "verifiedProductURLs": [
+    "https://example.com/product/0",
+    "https://example.com/product/1",
+    "https://example.com/product/2",
+    "https://example.com/product/3",
+    "https://example.com/product/4"
+  ],
+  "real_time_verified": true,
+  "target_1700_verified": false,
+  "classification": "full_run",
+  "source_provenance": {
+    ".session.json": {
+      "sha256": "951a5726853560af4f1b6bd0174ac0daa63f2823bd8c0eb365ae7dbd32059b80",
+      "bytes": 127,
+      "modified_ns": 1795339789900000000
+    },
+    ".send-intent.json": {
+      "sha256": "b4001916657582b94767ad5b730c0b63fac38d3e219bde3f3e8c597d74c99814",
+      "bytes": 159,
+      "modified_ns": 1795339786230000000
+    },
+    ".terminal.json": {
+      "sha256": "fa2fa8bf0dd023deae20fc26395a3b342714d8e5d94ad4bda9e1fd5e1603db51",
+      "bytes": 171,
+      "modified_ns": 1795339786250000000
+    },
+    ".json": {
+      "sha256": "45c1090166064c742afb5536141277f701df00672939b2e670ff575f21167e16",
+      "bytes": 203,
+      "modified_ns": 1795339789890000000
+    },
+    "ready.json": {
+      "sha256": "75b00a507005ddafb316c588de5d2f068e2c102e7fbbb7e79390eae508c2382d",
+      "bytes": 221,
+      "modified_ns": 1795339789230000000
+    },
+    "recording.json": {
+      "sha256": "0bff4b41efd4d2829b61790383099171280365d95f739a455a2f4337a2a0c7bc",
+      "bytes": 506,
+      "modified_ns": 1795339789910000000
+    },
+    "capture-timeline.json": {
+      "sha256": "03ec0d34713f7981ed4b69cb02d2e57975ce2b141f3ced27b620cfa88ad453f8",
+      "bytes": 411,
+      "modified_ns": 1795339789720000000
+    },
+    "viewport-evidence.json": {
+      "sha256": "c95966899c34148671f95d7eb4404b42d70a84fee80675aa18c5ea51dd5f9274",
+      "bytes": 2267,
+      "modified_ns": 1795339789920000000
+    },
+    "validation.json": {
+      "sha256": "ffdbfb63619a83225c4fe35a6af3e16ec80852ee9fb48bb4deab79f5789e1131",
+      "bytes": 547,
+      "modified_ns": 1795339789910000000
+    }
+  }
+}

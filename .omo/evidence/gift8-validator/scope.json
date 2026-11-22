@@ -1,0 +1,18 @@
+{
+  "tools/validate.py": {
+    "unchanged_from_HEAD": true,
+    "sha256": "06364ed1790776a8bb13c80501b5a09ccf47660910e4316caab07610add2259a"
+  },
+  "tools/ledger.py": {
+    "unchanged_from_HEAD": true,
+    "sha256": "18113c910d020464740ad18508b2619f734b16adebcab6251546971fe22c72ab"
+  },
+  "tools/scoring.py": {
+    "unchanged_from_HEAD": true,
+    "sha256": "b74f24db5338c55421e16e76ecf309b09c76eadc041e1b53e831b51606fe73c6"
+  },
+  "tools/run.mjs": {
+    "unchanged_from_HEAD": true,
+    "sha256": "9bdb433e4cb90b5c3ca98007b606a5b565500f80854afb9782dcecdea7ede5ca"
+  }
+}

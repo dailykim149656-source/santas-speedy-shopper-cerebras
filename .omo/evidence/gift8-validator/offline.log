@@ -1,0 +1,43 @@
+PASS tool happy path with explicitly mocked independent HTTP
+PASS tool exact arithmetic and threshold
+PASS tool absent first-input rejected
+PASS tool native normalized prefix and runtime context accepted
+PASS tool prior assistant in first input rejected
+PASS tool repeated dispatch hooks do not create generations
+PASS tool foreign later input runId rejected
+PASS tool foreign later input provider rejected
+PASS tool foreign later input sessionId rejected
+PASS tool foreign first system suffix rejected
+PASS tool foreign rejected with score retained
+PASS tool stale rejected with score retained
+PASS tool spoofed hash rejected with score retained
+PASS tool reordered final rejected
+PASS native display projection without private details accepted
+PASS spoofed native result toolName rejected
+PASS spoofed native result details rejected
+PASS spoofed native result content rejected
+PASS reordered native result rejected
+PASS all three actual calls included
+PASS invalid generation rejects but retains available authentic score
+PASS tool finish stores exact private original and committed evidence
+PASS prefetch happy path with explicitly mocked independent HTTP
+PASS prefetch exact arithmetic and threshold
+PASS prefetch absent first-input rejected
+PASS prefetch native normalized prefix and runtime context accepted
+PASS prefetch prior assistant in first input rejected
+PASS prefetch repeated dispatch hooks do not create generations
+PASS prefetch foreign later input runId rejected
+PASS prefetch foreign later input provider rejected
+PASS prefetch foreign later input sessionId rejected
+PASS prefetch foreign first system suffix rejected
+PASS prefetch foreign rejected with score retained
+PASS prefetch stale rejected with score retained
+PASS prefetch spoofed hash rejected with score retained
+PASS prefetch reordered final rejected
+PASS prefetch genuine extra five calls valid with both generations scored
+PASS prefetch extra call spoofed sessionKey rejected
+PASS prefetch extra call spoofed card_sha256 rejected
+PASS prefetch extra call spoofed tool_call_id rejected
+PASS prefetch extra call receipts committed exact
+PASS prefetch without injection rejected
+PASS prefetch finish stores exact private original and committed evidence

@@ -1,0 +1,23 @@
+usage: gift8_film.py [-h] [--start START] [--inspect INSPECT | --retry RETRY]
+
+Private gift8 film watcher, independent of the score-first sender. Start
+before the campaign: python3 tools/gift8_film.py --start 5051 Inspect saved
+clips: python3 tools/gift8_film.py --inspect 5051 Capture an additional
+attempt: python3 tools/gift8_film.py --retry 5051 The controller writes
+CACHE/recording-complete-gift8-5051 only after all sends have stopped. Clips
+remain in CACHE/film-gift8-5051, including partial and below-threshold
+recordings. A retry after completion is a post-run clip; it cannot establish
+full-run coverage. This watcher never sends model requests or delays the
+sender. A matching .session.json is required before recording.
+
+options:
+  -h, --help         show this help message and exit
+  --start START
+  --inspect INSPECT
+  --retry RETRY
+
+Run before the test controller. Waits through idle periods until
+~/Library/Caches/cerebras-speed-
+bounty/2026-11-22-test/mean-2000/recording-complete-gift8-5051 exists. Videos
+remain private; no score-controller dependency. --retry is a post-run capture
+when the original run has ended.

@@ -1,0 +1,158 @@
+{
+  "run_id": "7b358226-5b83-4399-9af9-bb39b1db867e",
+  "input_path": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/speed1500-20261122/slots/013/raw.json",
+  "input_sha256": "e0e793424d04bbe913a92f83d391f44dd91b4822272621d05c836bec6cace66b",
+  "valid": false,
+  "product_valid": false,
+  "method_valid": false,
+  "status": "rejected",
+  "target_met": false,
+  "target_reasons": [
+    "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+  ],
+  "reject_reasons": [
+    "unsuccessful or unidentified assistant call",
+    "assistant call missing valid serverGeneration",
+    "no authentic measured generation",
+    "No successful final assistant output"
+  ],
+  "calls": [],
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "ui_display": null,
+    "call_count": 0,
+    "assistant_call_count": 1,
+    "output_tokens": 0,
+    "generation_ms": 0,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)",
+    "p90_tps": null,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "retail_sources": [
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "status": 200,
+      "reasons": [],
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+      ],
+      "fetched_at": "2026-11-22T13:11:00.974000+00:00"
+    },
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "status": 200,
+      "reasons": [],
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+      ],
+      "fetched_at": "2026-11-22T13:11:01.008000+00:00"
+    },
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "status": 200,
+      "reasons": [],
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+      ],
+      "fetched_at": "2026-11-22T13:11:00.989000+00:00"
+    },
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "status": 200,
+      "reasons": [],
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ],
+      "fetched_at": "2026-11-22T13:11:01.285000+00:00"
+    },
+    {
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+      "accepted": true,
+      "status": 200,
+      "reasons": [],
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ],
+      "fetched_at": "2026-11-22T13:11:00.960000+00:00"
+    }
+  ],
+  "products": [],
+  "final_text": "",
+  "native_prefetch": {
+    "protocol": "speed1500-native-v1",
+    "manifest_sha256": "b05ba4ef16db04e731d7775776992622860dc71f16148c17ecfbbfdfee3e313c",
+    "plugin_sha256": "755a24a7887d04358b6c64c3ab79155e32c1190a1a4a5cfff2da03575424d768",
+    "receipts": [
+      {
+        "id": "7b358226-5b83-4399-9af9-bb39b1db867e",
+        "sessionKey": "agent:main:shop-d5092-speed1500-p-7b358226",
+        "manifest_sha256": "b05ba4ef16db04e731d7775776992622860dc71f16148c17ecfbbfdfee3e313c",
+        "category": "filter",
+        "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "status": 200,
+        "started": 1795353058581,
+        "ended": 1795353060974,
+        "body_sha256": "9db4a841f2987bf766f99fd10ce79e49560bd6e9065ebf2ebbd0a3e4c5840346"
+      },
+      {
+        "id": "7b358226-5b83-4399-9af9-bb39b1db867e",
+        "sessionKey": "agent:main:shop-d5092-speed1500-p-7b358226",
+        "manifest_sha256": "b05ba4ef16db04e731d7775776992622860dc71f16148c17ecfbbfdfee3e313c",
+        "category": "mixer",
+        "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "status": 200,
+        "started": 1795353058582,
+        "ended": 1795353061008,
+        "body_sha256": "fef2c9bea2d5efa611cbb8820f20d6825fa87242ec2bba033b2b02ef3ce82867"
+      },
+      {
+        "id": "7b358226-5b83-4399-9af9-bb39b1db867e",
+        "sessionKey": "agent:main:shop-d5092-speed1500-p-7b358226",
+        "manifest_sha256": "b05ba4ef16db04e731d7775776992622860dc71f16148c17ecfbbfdfee3e313c",
+        "category": "oscillator",
+        "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "status": 200,
+        "started": 1795353058583,
+        "ended": 1795353060989,
+        "body_sha256": "dffeea58fc411b7a4d45ddbd7f838f77b2fc7ce2ac6f70065cb7589a3a6140f6"
+      },
+      {
+        "id": "7b358226-5b83-4399-9af9-bb39b1db867e",
+        "sessionKey": "agent:main:shop-d5092-speed1500-p-7b358226",
+        "manifest_sha256": "b05ba4ef16db04e731d7775776992622860dc71f16148c17ecfbbfdfee3e313c",
+        "category": "echo",
+        "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "status": 200,
+        "started": 1795353058583,
+        "ended": 1795353061285,
+        "body_sha256": "bae8cf71700ce36e4267775fa29fa4e23ac09a1da3a00f225b37f6682af1832c"
+      },
+      {
+        "id": "7b358226-5b83-4399-9af9-bb39b1db867e",
+        "sessionKey": "agent:main:shop-d5092-speed1500-p-7b358226",
+        "manifest_sha256": "b05ba4ef16db04e731d7775776992622860dc71f16148c17ecfbbfdfee3e313c",
+        "category": "cable",
+        "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+        "status": 200,
+        "started": 1795353058584,
+        "ended": 1795353060960,
+        "body_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+      }
+    ]
+  }
+}

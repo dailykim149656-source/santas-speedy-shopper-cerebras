@@ -1,0 +1,1954 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-22T11:38:40.521860+00:00",
+  "pinned_commit": "9fa5bfd690765b0fa0184a3725d8bade51859c23",
+  "comparison_complete": true,
+  "goal_complete": false,
+  "complete": true,
+  "passed": true,
+  "status": "passed",
+  "expected_order": "ABBABAAB",
+  "sent_count": 8,
+  "completed_count": 8,
+  "rows": [
+    {
+      "id": "92270f02-5b3c-5885-8e44-2d67ef7b4cc2",
+      "label": "D5051-gift8-tool",
+      "arm": "A",
+      "variant": "gift8-tool",
+      "valid": false,
+      "method_valid": false,
+      "score": 2100.0,
+      "ui": 2100,
+      "first_tps": 2000.0,
+      "final_tps": 2200.0,
+      "call_count": 2,
+      "started_wall": 1700000000000,
+      "ended_wall": 1700000010000,
+      "terminal_429": true,
+      "product_urls": [
+        "https://aisynthesis.com/product/fixture-21951/",
+        "https://aisynthesis.com/product/fixture-23345/",
+        "https://aisynthesis.com/product/fixture-11125/",
+        "https://aisynthesis.com/product/fixture-11141/",
+        "https://aisynthesis.com/product/fixture-20209/"
+      ],
+      "rejection": [
+        "offline fixture shopping rejection"
+      ],
+      "audit_errors": [],
+      "reported_valid": false,
+      "sessionKey": "agent:main:shop-d5051-gift8-tool-92270f02",
+      "calls": [
+        {
+          "message_index": 0,
+          "response_id": "response-0",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "toolUse",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 2000
+          },
+          "timed_sample": true,
+          "outputTokens": 2000,
+          "completionMs": 1000,
+          "tokensPerSecond": 2000.0
+        },
+        {
+          "message_index": 6,
+          "response_id": "response-6",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "error",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 2200
+          },
+          "timed_sample": true,
+          "outputTokens": 2200,
+          "completionMs": 1000,
+          "tokensPerSecond": 2200.0
+        }
+      ],
+      "score_details": {
+        "mean_exact_tps": 2100.0,
+        "ui_rounded_tps": 2100,
+        "ui_display": "2,100",
+        "call_count": 2,
+        "assistant_call_count": 2,
+        "output_tokens": 4200,
+        "generation_ms": 2000,
+        "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+      },
+      "method_reasons": [
+        "unsuccessful or unidentified assistant call"
+      ],
+      "actual_generation_count": 2,
+      "expected_generation_count": 2,
+      "native_tool_call_count": 5,
+      "structure_expected": true,
+      "audit_passed": true,
+      "single_generation_success": false
+    },
+    {
+      "id": "45673565-026b-555a-a4f3-772a7caf382f",
+      "label": "D5052-gift8-prefetch",
+      "arm": "B",
+      "variant": "gift8-prefetch",
+      "valid": true,
+      "method_valid": true,
+      "score": 1200.0,
+      "ui": 1200,
+      "first_tps": 1000.0,
+      "final_tps": 1400.0,
+      "call_count": 2,
+      "started_wall": 1700000060000,
+      "ended_wall": 1700000070000,
+      "terminal_429": false,
+      "product_urls": [
+        "https://aisynthesis.com/product/fixture-21951/",
+        "https://aisynthesis.com/product/fixture-23345/",
+        "https://aisynthesis.com/product/fixture-11125/",
+        "https://aisynthesis.com/product/fixture-11141/",
+        "https://aisynthesis.com/product/fixture-20209/"
+      ],
+      "rejection": [],
+      "audit_errors": [],
+      "reported_valid": true,
+      "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+      "calls": [
+        {
+          "message_index": 0,
+          "response_id": "fixture-B-extra",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "toolUse",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1000
+          },
+          "timed_sample": true,
+          "outputTokens": 1000,
+          "completionMs": 1000,
+          "tokensPerSecond": 1000.0
+        },
+        {
+          "message_index": 6,
+          "response_id": "response-0",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "stop",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1400
+          },
+          "timed_sample": true,
+          "outputTokens": 1400,
+          "completionMs": 1000,
+          "tokensPerSecond": 1400.0
+        }
+      ],
+      "score_details": {
+        "mean_exact_tps": 1200.0,
+        "ui_rounded_tps": 1200,
+        "ui_display": "1,200",
+        "call_count": 2,
+        "assistant_call_count": 2,
+        "output_tokens": 2400,
+        "generation_ms": 2000,
+        "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+      },
+      "method_reasons": [],
+      "actual_generation_count": 2,
+      "expected_generation_count": 1,
+      "native_tool_call_count": 5,
+      "structure_expected": false,
+      "followup_call_receipts": [
+        {
+          "file": "0d24708c05293882525456e634d46cb32bd6420f76567932882ae1a0bbab151c.json",
+          "sha256": "a79aa8ab8ee0397f5ee495c30c159671f3db5bc1e8df1680b82531c8e7e632e1",
+          "id": "45673565-026b-555a-a4f3-772a7caf382f",
+          "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+          "arm": "prefetch",
+          "product_id": 21951,
+          "tool_call_id": "extra-21951",
+          "receipt_file": "fetch-21951.json",
+          "card_sha256": "e97cd86a61f58ce20098e086d5b12c9029e0ebc34a75de0f4bb74afe8b2c61e4",
+          "timestamp_ms": 1700000060300
+        },
+        {
+          "file": "e34c55c91f696e71fa31bda1e722874cc70be77ab41f85383ef84c13ea0a3e8f.json",
+          "sha256": "27dc3669ef9fba43c40ec64286775b8d80d321b7dd0ada1217b78f4e8105d2e0",
+          "id": "45673565-026b-555a-a4f3-772a7caf382f",
+          "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+          "arm": "prefetch",
+          "product_id": 23345,
+          "tool_call_id": "extra-23345",
+          "receipt_file": "fetch-23345.json",
+          "card_sha256": "9730e4137cb20e17c2437340568e291db9bd1966190ad9021245f9bf365d1ad1",
+          "timestamp_ms": 1700000060300
+        },
+        {
+          "file": "67547e2fe6799ce285c101265f0d66cc1dcd3e965c1e38cb741f430b4da27b0b.json",
+          "sha256": "aaa9e8ba8c8fd2aad70c1e4108b3522555b650dd071ba4d83311fbe4dd7d4593",
+          "id": "45673565-026b-555a-a4f3-772a7caf382f",
+          "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+          "arm": "prefetch",
+          "product_id": 11125,
+          "tool_call_id": "extra-11125",
+          "receipt_file": "fetch-11125.json",
+          "card_sha256": "c4fa3de08c07b9681990e806a3e03cd9d5afffeee41017c492e03f77d26dbfd5",
+          "timestamp_ms": 1700000060300
+        },
+        {
+          "file": "728c064ea3a55f7210c33142085f11a50f24453911a61b1602dde5ed31a2849b.json",
+          "sha256": "d371a1a2e8903b1afde945dd72f08d77b870405a8064b92250e73b1d9f69705a",
+          "id": "45673565-026b-555a-a4f3-772a7caf382f",
+          "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+          "arm": "prefetch",
+          "product_id": 11141,
+          "tool_call_id": "extra-11141",
+          "receipt_file": "fetch-11141.json",
+          "card_sha256": "deae5907fd46982525c83f7a6e1f24aeacf078d2bf4d737ad0e5143a74acffb5",
+          "timestamp_ms": 1700000060300
+        },
+        {
+          "file": "9b3762a661d4c655db2b60fb556ab20427ad394d1eeaf5d63097e3986d9b7b85.json",
+          "sha256": "4c2476187c8755610b020556a3227745c3ec44645f5cbfe3502abe40e2eb50e4",
+          "id": "45673565-026b-555a-a4f3-772a7caf382f",
+          "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+          "arm": "prefetch",
+          "product_id": 20209,
+          "tool_call_id": "extra-20209",
+          "receipt_file": "fetch-20209.json",
+          "card_sha256": "d452e8761a99457bb9fb54d6e90700122afc7df0726f2d71f413e808811a7f80",
+          "timestamp_ms": 1700000060300
+        }
+      ],
+      "audit_passed": true,
+      "single_generation_success": false
+    },
+    {
+      "id": "c65b63c4-fa8b-56c2-8f99-30e99bf5ede9",
+      "label": "D5053-gift8-prefetch",
+      "arm": "B",
+      "variant": "gift8-prefetch",
+      "valid": true,
+      "method_valid": true,
+      "score": 1400.0,
+      "ui": 1400,
+      "first_tps": 1400.0,
+      "final_tps": 1400.0,
+      "call_count": 1,
+      "started_wall": 1700000120000,
+      "ended_wall": 1700000130000,
+      "terminal_429": false,
+      "product_urls": [
+        "https://aisynthesis.com/product/fixture-21951/",
+        "https://aisynthesis.com/product/fixture-23345/",
+        "https://aisynthesis.com/product/fixture-11125/",
+        "https://aisynthesis.com/product/fixture-11141/",
+        "https://aisynthesis.com/product/fixture-20209/"
+      ],
+      "rejection": [],
+      "audit_errors": [],
+      "reported_valid": true,
+      "sessionKey": "agent:main:shop-d5053-gift8-prefetch-c65b63c4",
+      "calls": [
+        {
+          "message_index": 0,
+          "response_id": "response-0",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "stop",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1400
+          },
+          "timed_sample": true,
+          "outputTokens": 1400,
+          "completionMs": 1000,
+          "tokensPerSecond": 1400.0
+        }
+      ],
+      "score_details": {
+        "mean_exact_tps": 1400.0,
+        "ui_rounded_tps": 1400,
+        "ui_display": "1,400",
+        "call_count": 1,
+        "assistant_call_count": 1,
+        "output_tokens": 1400,
+        "generation_ms": 1000,
+        "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+      },
+      "method_reasons": [],
+      "actual_generation_count": 1,
+      "expected_generation_count": 1,
+      "native_tool_call_count": 0,
+      "structure_expected": true,
+      "followup_call_receipts": [],
+      "audit_passed": true,
+      "single_generation_success": true
+    },
+    {
+      "id": "1244b621-612d-59bf-b86d-9581bf3163fa",
+      "label": "D5054-gift8-tool",
+      "arm": "A",
+      "variant": "gift8-tool",
+      "valid": true,
+      "method_valid": true,
+      "score": 1100.0,
+      "ui": 1100,
+      "first_tps": 1000.0,
+      "final_tps": 1200.0,
+      "call_count": 2,
+      "started_wall": 1700000180000,
+      "ended_wall": 1700000190000,
+      "terminal_429": false,
+      "product_urls": [
+        "https://aisynthesis.com/product/fixture-21951/",
+        "https://aisynthesis.com/product/fixture-23345/",
+        "https://aisynthesis.com/product/fixture-11125/",
+        "https://aisynthesis.com/product/fixture-11141/",
+        "https://aisynthesis.com/product/fixture-20209/"
+      ],
+      "rejection": [],
+      "audit_errors": [],
+      "reported_valid": true,
+      "sessionKey": "agent:main:shop-d5054-gift8-tool-1244b621",
+      "calls": [
+        {
+          "message_index": 0,
+          "response_id": "response-0",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "toolUse",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1000
+          },
+          "timed_sample": true,
+          "outputTokens": 1000,
+          "completionMs": 1000,
+          "tokensPerSecond": 1000.0
+        },
+        {
+          "message_index": 6,
+          "response_id": "response-6",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "stop",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1200
+          },
+          "timed_sample": true,
+          "outputTokens": 1200,
+          "completionMs": 1000,
+          "tokensPerSecond": 1200.0
+        }
+      ],
+      "score_details": {
+        "mean_exact_tps": 1100.0,
+        "ui_rounded_tps": 1100,
+        "ui_display": "1,100",
+        "call_count": 2,
+        "assistant_call_count": 2,
+        "output_tokens": 2200,
+        "generation_ms": 2000,
+        "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+      },
+      "method_reasons": [],
+      "actual_generation_count": 2,
+      "expected_generation_count": 2,
+      "native_tool_call_count": 5,
+      "structure_expected": true,
+      "audit_passed": true,
+      "single_generation_success": false
+    },
+    {
+      "id": "ef4eeb32-f56a-5f58-9d4a-cf892c4435bd",
+      "label": "D5055-gift8-prefetch",
+      "arm": "B",
+      "variant": "gift8-prefetch",
+      "valid": true,
+      "method_valid": true,
+      "score": 1400.0,
+      "ui": 1400,
+      "first_tps": 1400.0,
+      "final_tps": 1400.0,
+      "call_count": 1,
+      "started_wall": 1700000240000,
+      "ended_wall": 1700000250000,
+      "terminal_429": false,
+      "product_urls": [
+        "https://aisynthesis.com/product/fixture-21951/",
+        "https://aisynthesis.com/product/fixture-23345/",
+        "https://aisynthesis.com/product/fixture-11125/",
+        "https://aisynthesis.com/product/fixture-11141/",
+        "https://aisynthesis.com/product/fixture-20209/"
+      ],
+      "rejection": [],
+      "audit_errors": [],
+      "reported_valid": true,
+      "sessionKey": "agent:main:shop-d5055-gift8-prefetch-ef4eeb32",
+      "calls": [
+        {
+          "message_index": 0,
+          "response_id": "response-0",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "stop",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1400
+          },
+          "timed_sample": true,
+          "outputTokens": 1400,
+          "completionMs": 1000,
+          "tokensPerSecond": 1400.0
+        }
+      ],
+      "score_details": {
+        "mean_exact_tps": 1400.0,
+        "ui_rounded_tps": 1400,
+        "ui_display": "1,400",
+        "call_count": 1,
+        "assistant_call_count": 1,
+        "output_tokens": 1400,
+        "generation_ms": 1000,
+        "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+      },
+      "method_reasons": [],
+      "actual_generation_count": 1,
+      "expected_generation_count": 1,
+      "native_tool_call_count": 0,
+      "structure_expected": true,
+      "followup_call_receipts": [],
+      "audit_passed": true,
+      "single_generation_success": true
+    },
+    {
+      "id": "655da21b-dfa8-56c4-9a20-713f5fb01d04",
+      "label": "D5056-gift8-tool",
+      "arm": "A",
+      "variant": "gift8-tool",
+      "valid": true,
+      "method_valid": true,
+      "score": 1100.0,
+      "ui": 1100,
+      "first_tps": 1000.0,
+      "final_tps": 1200.0,
+      "call_count": 2,
+      "started_wall": 1700000300000,
+      "ended_wall": 1700000310000,
+      "terminal_429": false,
+      "product_urls": [
+        "https://aisynthesis.com/product/fixture-21951/",
+        "https://aisynthesis.com/product/fixture-23345/",
+        "https://aisynthesis.com/product/fixture-11125/",
+        "https://aisynthesis.com/product/fixture-11141/",
+        "https://aisynthesis.com/product/fixture-20209/"
+      ],
+      "rejection": [],
+      "audit_errors": [],
+      "reported_valid": true,
+      "sessionKey": "agent:main:shop-d5056-gift8-tool-655da21b",
+      "calls": [
+        {
+          "message_index": 0,
+          "response_id": "response-0",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "toolUse",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1000
+          },
+          "timed_sample": true,
+          "outputTokens": 1000,
+          "completionMs": 1000,
+          "tokensPerSecond": 1000.0
+        },
+        {
+          "message_index": 6,
+          "response_id": "response-6",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "stop",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1200
+          },
+          "timed_sample": true,
+          "outputTokens": 1200,
+          "completionMs": 1000,
+          "tokensPerSecond": 1200.0
+        }
+      ],
+      "score_details": {
+        "mean_exact_tps": 1100.0,
+        "ui_rounded_tps": 1100,
+        "ui_display": "1,100",
+        "call_count": 2,
+        "assistant_call_count": 2,
+        "output_tokens": 2200,
+        "generation_ms": 2000,
+        "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+      },
+      "method_reasons": [],
+      "actual_generation_count": 2,
+      "expected_generation_count": 2,
+      "native_tool_call_count": 5,
+      "structure_expected": true,
+      "audit_passed": true,
+      "single_generation_success": false
+    },
+    {
+      "id": "4bfed4a8-915d-5775-8a08-1c6a93603c25",
+      "label": "D5057-gift8-tool",
+      "arm": "A",
+      "variant": "gift8-tool",
+      "valid": true,
+      "method_valid": true,
+      "score": 1100.0,
+      "ui": 1100,
+      "first_tps": 1000.0,
+      "final_tps": 1200.0,
+      "call_count": 2,
+      "started_wall": 1700000360000,
+      "ended_wall": 1700000370000,
+      "terminal_429": false,
+      "product_urls": [
+        "https://aisynthesis.com/product/fixture-21951/",
+        "https://aisynthesis.com/product/fixture-23345/",
+        "https://aisynthesis.com/product/fixture-11125/",
+        "https://aisynthesis.com/product/fixture-11141/",
+        "https://aisynthesis.com/product/fixture-20209/"
+      ],
+      "rejection": [],
+      "audit_errors": [],
+      "reported_valid": true,
+      "sessionKey": "agent:main:shop-d5057-gift8-tool-4bfed4a8",
+      "calls": [
+        {
+          "message_index": 0,
+          "response_id": "response-0",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "toolUse",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1000
+          },
+          "timed_sample": true,
+          "outputTokens": 1000,
+          "completionMs": 1000,
+          "tokensPerSecond": 1000.0
+        },
+        {
+          "message_index": 6,
+          "response_id": "response-6",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "stop",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1200
+          },
+          "timed_sample": true,
+          "outputTokens": 1200,
+          "completionMs": 1000,
+          "tokensPerSecond": 1200.0
+        }
+      ],
+      "score_details": {
+        "mean_exact_tps": 1100.0,
+        "ui_rounded_tps": 1100,
+        "ui_display": "1,100",
+        "call_count": 2,
+        "assistant_call_count": 2,
+        "output_tokens": 2200,
+        "generation_ms": 2000,
+        "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+      },
+      "method_reasons": [],
+      "actual_generation_count": 2,
+      "expected_generation_count": 2,
+      "native_tool_call_count": 5,
+      "structure_expected": true,
+      "audit_passed": true,
+      "single_generation_success": false
+    },
+    {
+      "id": "fbe7a11a-fbac-583f-a7f0-963e69437f39",
+      "label": "D5058-gift8-prefetch",
+      "arm": "B",
+      "variant": "gift8-prefetch",
+      "valid": true,
+      "method_valid": true,
+      "score": 1400.0,
+      "ui": 1400,
+      "first_tps": 1400.0,
+      "final_tps": 1400.0,
+      "call_count": 1,
+      "started_wall": 1700000420000,
+      "ended_wall": 1700000430000,
+      "terminal_429": false,
+      "product_urls": [
+        "https://aisynthesis.com/product/fixture-21951/",
+        "https://aisynthesis.com/product/fixture-23345/",
+        "https://aisynthesis.com/product/fixture-11125/",
+        "https://aisynthesis.com/product/fixture-11141/",
+        "https://aisynthesis.com/product/fixture-20209/"
+      ],
+      "rejection": [],
+      "audit_errors": [],
+      "reported_valid": true,
+      "sessionKey": "agent:main:shop-d5058-gift8-prefetch-fbe7a11a",
+      "calls": [
+        {
+          "message_index": 0,
+          "response_id": "response-0",
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "stopReason": "stop",
+          "serverGeneration": {
+            "completionMs": 1000,
+            "outputTokens": 1400
+          },
+          "timed_sample": true,
+          "outputTokens": 1400,
+          "completionMs": 1000,
+          "tokensPerSecond": 1400.0
+        }
+      ],
+      "score_details": {
+        "mean_exact_tps": 1400.0,
+        "ui_rounded_tps": 1400,
+        "ui_display": "1,400",
+        "call_count": 1,
+        "assistant_call_count": 1,
+        "output_tokens": 1400,
+        "generation_ms": 1000,
+        "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+      },
+      "method_reasons": [],
+      "actual_generation_count": 1,
+      "expected_generation_count": 1,
+      "native_tool_call_count": 0,
+      "structure_expected": true,
+      "followup_call_receipts": [],
+      "audit_passed": true,
+      "single_generation_success": true
+    }
+  ],
+  "conditions": {
+    "A": {
+      "sent": 4,
+      "valid": 3,
+      "failed": 1,
+      "terminal_429": 1,
+      "success_rate": 0.75,
+      "single_generation_successes": 0,
+      "single_generation_success_rate": 0.0,
+      "extra_generation_successes": 3
+    },
+    "B": {
+      "sent": 4,
+      "valid": 4,
+      "failed": 0,
+      "terminal_429": 0,
+      "success_rate": 1.0,
+      "single_generation_successes": 3,
+      "single_generation_success_rate": 0.75,
+      "extra_generation_successes": 1
+    }
+  },
+  "pairs": [
+    {
+      "pair": 1,
+      "a": "D5051-gift8-tool",
+      "b": "D5052-gift8-prefetch",
+      "valid": false,
+      "reasons": [
+        "A missing or invalid"
+      ],
+      "delta_first_tps": null,
+      "delta_official_mean_tps": null
+    },
+    {
+      "pair": 2,
+      "a": "D5054-gift8-tool",
+      "b": "D5053-gift8-prefetch",
+      "valid": true,
+      "reasons": [],
+      "delta_first_tps": 400.0,
+      "delta_official_mean_tps": 300.0
+    },
+    {
+      "pair": 3,
+      "a": "D5056-gift8-tool",
+      "b": "D5055-gift8-prefetch",
+      "valid": true,
+      "reasons": [],
+      "delta_first_tps": 400.0,
+      "delta_official_mean_tps": 300.0
+    },
+    {
+      "pair": 4,
+      "a": "D5057-gift8-tool",
+      "b": "D5058-gift8-prefetch",
+      "valid": true,
+      "reasons": [],
+      "delta_first_tps": 400.0,
+      "delta_official_mean_tps": 300.0
+    }
+  ],
+  "comparison": {
+    "valid_pairs": 3,
+    "first_tps_wins": 3,
+    "mean_wins": 3,
+    "mean_delta_first_tps": 400.0,
+    "median_delta_first_tps": 400.0,
+    "mean_delta_official_mean_tps": 300.0,
+    "median_delta_official_mean_tps": 300.0
+  },
+  "no_overlap": {
+    "passed": true,
+    "spans": [
+      {
+        "scope": "test",
+        "label": "D5051-gift8-tool",
+        "id": "92270f02-5b3c-5885-8e44-2d67ef7b4cc2",
+        "start": 1700000000000,
+        "end": 1700000010000
+      },
+      {
+        "scope": "test",
+        "label": "D5052-gift8-prefetch",
+        "id": "45673565-026b-555a-a4f3-772a7caf382f",
+        "start": 1700000060000,
+        "end": 1700000070000
+      },
+      {
+        "scope": "test",
+        "label": "D5053-gift8-prefetch",
+        "id": "c65b63c4-fa8b-56c2-8f99-30e99bf5ede9",
+        "start": 1700000120000,
+        "end": 1700000130000
+      },
+      {
+        "scope": "test",
+        "label": "D5054-gift8-tool",
+        "id": "1244b621-612d-59bf-b86d-9581bf3163fa",
+        "start": 1700000180000,
+        "end": 1700000190000
+      },
+      {
+        "scope": "test",
+        "label": "D5055-gift8-prefetch",
+        "id": "ef4eeb32-f56a-5f58-9d4a-cf892c4435bd",
+        "start": 1700000240000,
+        "end": 1700000250000
+      },
+      {
+        "scope": "test",
+        "label": "D5056-gift8-tool",
+        "id": "655da21b-dfa8-56c4-9a20-713f5fb01d04",
+        "start": 1700000300000,
+        "end": 1700000310000
+      },
+      {
+        "scope": "test",
+        "label": "D5057-gift8-tool",
+        "id": "4bfed4a8-915d-5775-8a08-1c6a93603c25",
+        "start": 1700000360000,
+        "end": 1700000370000
+      },
+      {
+        "scope": "test",
+        "label": "D5058-gift8-prefetch",
+        "id": "fbe7a11a-fbac-583f-a7f0-963e69437f39",
+        "start": 1700000420000,
+        "end": 1700000430000
+      }
+    ],
+    "incomplete_sends": [],
+    "errors": [],
+    "comparisons": 28,
+    "campaign_comparisons": 28,
+    "all_historical_overlaps": [],
+    "campaign_overlaps": [],
+    "historical_test_exclusions": [
+      {
+        "scope": "test",
+        "label": "D5003-legacy",
+        "id": "legacy",
+        "start": 1,
+        "end": null,
+        "reason": "historical same-root test outside gift8 versus main/exp audit"
+      }
+    ],
+    "scope": "all local main/exp spans plus current gift8 test sends; older same-root test sends explicitly excluded"
+  },
+  "reservation": {
+    "passed": true,
+    "intervals": [
+      {
+        "pid": 123,
+        "start": 1699999999999,
+        "end": 1700000430001,
+        "locks": [
+          "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+          "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+          "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+        ]
+      }
+    ],
+    "still_open": [],
+    "errors": [],
+    "coverage": [
+      {
+        "id": "92270f02-5b3c-5885-8e44-2d67ef7b4cc2",
+        "label": "D5051-gift8-tool",
+        "passed": true,
+        "intervals": [
+          {
+            "pid": 123,
+            "start": 1699999999999,
+            "end": 1700000430001,
+            "locks": [
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "45673565-026b-555a-a4f3-772a7caf382f",
+        "label": "D5052-gift8-prefetch",
+        "passed": true,
+        "intervals": [
+          {
+            "pid": 123,
+            "start": 1699999999999,
+            "end": 1700000430001,
+            "locks": [
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "c65b63c4-fa8b-56c2-8f99-30e99bf5ede9",
+        "label": "D5053-gift8-prefetch",
+        "passed": true,
+        "intervals": [
+          {
+            "pid": 123,
+            "start": 1699999999999,
+            "end": 1700000430001,
+            "locks": [
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1244b621-612d-59bf-b86d-9581bf3163fa",
+        "label": "D5054-gift8-tool",
+        "passed": true,
+        "intervals": [
+          {
+            "pid": 123,
+            "start": 1699999999999,
+            "end": 1700000430001,
+            "locks": [
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ef4eeb32-f56a-5f58-9d4a-cf892c4435bd",
+        "label": "D5055-gift8-prefetch",
+        "passed": true,
+        "intervals": [
+          {
+            "pid": 123,
+            "start": 1699999999999,
+            "end": 1700000430001,
+            "locks": [
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "655da21b-dfa8-56c4-9a20-713f5fb01d04",
+        "label": "D5056-gift8-tool",
+        "passed": true,
+        "intervals": [
+          {
+            "pid": 123,
+            "start": 1699999999999,
+            "end": 1700000430001,
+            "locks": [
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "4bfed4a8-915d-5775-8a08-1c6a93603c25",
+        "label": "D5057-gift8-tool",
+        "passed": true,
+        "intervals": [
+          {
+            "pid": 123,
+            "start": 1699999999999,
+            "end": 1700000430001,
+            "locks": [
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fbe7a11a-fbac-583f-a7f0-963e69437f39",
+        "label": "D5058-gift8-prefetch",
+        "passed": true,
+        "intervals": [
+          {
+            "pid": 123,
+            "start": 1699999999999,
+            "end": 1700000430001,
+            "locks": [
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/main/loop.lock",
+              "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/exp/loop.lock"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "movies": [],
+  "copied_demos": [],
+  "target_runs": [],
+  "verified_target_runs": [],
+  "errors": [],
+  "warnings": [],
+  "target_clip_criterion": {
+    "raw_mean_min_tps": 1700,
+    "displayed_ui_min_tps": 1700,
+    "verified_products": 5,
+    "max_demo_seconds": 60,
+    "requires_full_run": false
+  },
+  "sources": {
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/iterations.jsonl": {
+      "sha256": "583a7fd43c2c74efee2b99b8cd7fc0d9da575fc99343555486ad7d271875419e",
+      "bytes": 4913
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/92270f02-5b3c-5885-8e44-2d67ef7b4cc2/plan.json": {
+      "sha256": "1ceefe4468bf750043768e67f8d4126107dc6bb7f7f0f6aea21e02ea67851d07",
+      "bytes": 367
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/92270f02-5b3c-5885-8e44-2d67ef7b4cc2/evidence.json": {
+      "sha256": "5a6c7a5e9322c8de4224bf4a661481c4e74b179df976158b99a5edd51a757e60",
+      "bytes": 2510
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/92270f02-5b3c-5885-8e44-2d67ef7b4cc2/gift-manifest.json": {
+      "sha256": "e012f81e313d406bee03b6dae75635b0f5796fa9232c5621d27ba4cb9c0ca7bf",
+      "bytes": 429
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5051-gift8-tool.json": {
+      "sha256": "1f05693fa2b9d95ba050a0475239adf63590cbe2f8fdafbc7c6b460313cf0782",
+      "bytes": 5556
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/capture/92270f02-5b3c-5885-8e44-2d67ef7b4cc2/validation.json": {
+      "sha256": "1bbde8f0282b6913ec57e93085e46b257cc92f30873fa327a52e57fc114c4af3",
+      "bytes": 1762
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/raw-test/92270f02-5b3c-5885-8e44-2d67ef7b4cc2.json": {
+      "sha256": "1f05693fa2b9d95ba050a0475239adf63590cbe2f8fdafbc7c6b460313cf0782",
+      "bytes": 5556
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/92270f02-5b3c-5885-8e44-2d67ef7b4cc2/private-raw.json": {
+      "sha256": "1f05693fa2b9d95ba050a0475239adf63590cbe2f8fdafbc7c6b460313cf0782",
+      "bytes": 5556
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/manifests/92270f02-5b3c-5885-8e44-2d67ef7b4cc2.json": {
+      "sha256": "e012f81e313d406bee03b6dae75635b0f5796fa9232c5621d27ba4cb9c0ca7bf",
+      "bytes": 429
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/plan.json": {
+      "sha256": "268554d183208a95d66c06c515cf5e7aa2e76f76d4a944f0549fe5d6e9d83adb",
+      "bytes": 379
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/evidence.json": {
+      "sha256": "2df0c8cfa7e46c55f9f6c871972e6c23ba4b693ef17d172a7d5aafb0f4781601",
+      "bytes": 5694
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-manifest.json": {
+      "sha256": "eee5bf96d34efd5b5dbda6de8cd1e9bb283deb9c824e3cfccc7f56c0d5e2768b",
+      "bytes": 437
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5052-gift8-prefetch.json": {
+      "sha256": "06b781434d0538112b0489ee158e26bcb8acf982b90248e56fc73855e53c3d89",
+      "bytes": 4388
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/capture/45673565-026b-555a-a4f3-772a7caf382f/validation.json": {
+      "sha256": "ddc976f5aa803a4755bed83ef72039e351531fa0d772b35087c51e0979fb6c37",
+      "bytes": 4732
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/raw-test/45673565-026b-555a-a4f3-772a7caf382f.json": {
+      "sha256": "06b781434d0538112b0489ee158e26bcb8acf982b90248e56fc73855e53c3d89",
+      "bytes": 4388
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/private-raw.json": {
+      "sha256": "06b781434d0538112b0489ee158e26bcb8acf982b90248e56fc73855e53c3d89",
+      "bytes": 4388
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/manifests/45673565-026b-555a-a4f3-772a7caf382f.json": {
+      "sha256": "eee5bf96d34efd5b5dbda6de8cd1e9bb283deb9c824e3cfccc7f56c0d5e2768b",
+      "bytes": 437
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/tools/gift8-plugin/index.cjs": {
+      "sha256": "369a429330eaf5776eb7638bd90cc2dc3ad1832fe2e8868f23e5fc74c7e05747",
+      "bytes": 9923
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/tools/gift8-plugin/openclaw.plugin.json": {
+      "sha256": "98d4bdbb11133bb70761d7f40e8364b00a64478d19f0b6885cba99e53222adb1",
+      "bytes": 315
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/tools/gift8-plugin/package.json": {
+      "sha256": "b66c7735a74672cd484e22ff5c930626814436ff2359fa8533fc430abbdd477c",
+      "bytes": 118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/fetch-21951.json": {
+      "sha256": "9090fcf6730b28b0a49ed8b8cc515c4dbb5f786e246b63474ac7d75b4f7536f5",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/fetch-21951.json": {
+      "sha256": "9090fcf6730b28b0a49ed8b8cc515c4dbb5f786e246b63474ac7d75b4f7536f5",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/fetch-23345.json": {
+      "sha256": "64ac586958d7b58ce76573bc75ddc843c1d0014c8db67f70a90294660070cfaf",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/fetch-23345.json": {
+      "sha256": "64ac586958d7b58ce76573bc75ddc843c1d0014c8db67f70a90294660070cfaf",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/fetch-11125.json": {
+      "sha256": "55a017c61488a0ad56932efa26e0f30d526ce820d89547cfe00cec251a6e11f4",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/fetch-11125.json": {
+      "sha256": "55a017c61488a0ad56932efa26e0f30d526ce820d89547cfe00cec251a6e11f4",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/fetch-11141.json": {
+      "sha256": "f0c7df5bba9c627213d1aa265bdaa6e17fa2647acdd177b47790eb7f7dea135b",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/fetch-11141.json": {
+      "sha256": "f0c7df5bba9c627213d1aa265bdaa6e17fa2647acdd177b47790eb7f7dea135b",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/fetch-20209.json": {
+      "sha256": "32b2fd21975bb70dee64a02a4ffc21fbb4c5d87f4e938f72ab333844da04024a",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/fetch-20209.json": {
+      "sha256": "32b2fd21975bb70dee64a02a4ffc21fbb4c5d87f4e938f72ab333844da04024a",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/calls/0d24708c05293882525456e634d46cb32bd6420f76567932882ae1a0bbab151c.json": {
+      "sha256": "a79aa8ab8ee0397f5ee495c30c159671f3db5bc1e8df1680b82531c8e7e632e1",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/calls/0d24708c05293882525456e634d46cb32bd6420f76567932882ae1a0bbab151c.json": {
+      "sha256": "a79aa8ab8ee0397f5ee495c30c159671f3db5bc1e8df1680b82531c8e7e632e1",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/calls/e34c55c91f696e71fa31bda1e722874cc70be77ab41f85383ef84c13ea0a3e8f.json": {
+      "sha256": "27dc3669ef9fba43c40ec64286775b8d80d321b7dd0ada1217b78f4e8105d2e0",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/calls/e34c55c91f696e71fa31bda1e722874cc70be77ab41f85383ef84c13ea0a3e8f.json": {
+      "sha256": "27dc3669ef9fba43c40ec64286775b8d80d321b7dd0ada1217b78f4e8105d2e0",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/calls/67547e2fe6799ce285c101265f0d66cc1dcd3e965c1e38cb741f430b4da27b0b.json": {
+      "sha256": "aaa9e8ba8c8fd2aad70c1e4108b3522555b650dd071ba4d83311fbe4dd7d4593",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/calls/67547e2fe6799ce285c101265f0d66cc1dcd3e965c1e38cb741f430b4da27b0b.json": {
+      "sha256": "aaa9e8ba8c8fd2aad70c1e4108b3522555b650dd071ba4d83311fbe4dd7d4593",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/calls/728c064ea3a55f7210c33142085f11a50f24453911a61b1602dde5ed31a2849b.json": {
+      "sha256": "d371a1a2e8903b1afde945dd72f08d77b870405a8064b92250e73b1d9f69705a",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/calls/728c064ea3a55f7210c33142085f11a50f24453911a61b1602dde5ed31a2849b.json": {
+      "sha256": "d371a1a2e8903b1afde945dd72f08d77b870405a8064b92250e73b1d9f69705a",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/calls/9b3762a661d4c655db2b60fb556ab20427ad394d1eeaf5d63097e3986d9b7b85.json": {
+      "sha256": "4c2476187c8755610b020556a3227745c3ec44645f5cbfe3502abe40e2eb50e4",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/45673565-026b-555a-a4f3-772a7caf382f/gift-receipts/calls/9b3762a661d4c655db2b60fb556ab20427ad394d1eeaf5d63097e3986d9b7b85.json": {
+      "sha256": "4c2476187c8755610b020556a3227745c3ec44645f5cbfe3502abe40e2eb50e4",
+      "bytes": 348
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/events/1-prompt_binding.json": {
+      "sha256": "f209e0c0ee33ba260a2b0d9cd1ba39a7ea242011f7b5c59a615026cfc8373662",
+      "bytes": 468
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/events/175-prefetch_injection.json": {
+      "sha256": "06ad372488555df419412b3f4026adfa04d6db40838839a68cbb37dddd1dfa70",
+      "bytes": 1499
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/events/200-llm_input.json": {
+      "sha256": "accd6220f1db7af22acbe703c9fb2e8467ffb2108aab3c3b9bed3263266d59d4",
+      "bytes": 1763
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/plan.json": {
+      "sha256": "273670bcc41dab89df206356b6f7b4e2fbc9f8677e15eb43fe98ad2d1166b314",
+      "bytes": 379
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/evidence.json": {
+      "sha256": "5626ff6c13ff48f5488e0b43829a853ca37cc94f97e3d49dc1fe61a9ebf8ecf3",
+      "bytes": 2326
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-manifest.json": {
+      "sha256": "d97fadcc645b9c1edda5fb5e347bf7af5fa8599df0ff559fa0d55678a43b7373",
+      "bytes": 437
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5053-gift8-prefetch.json": {
+      "sha256": "8d2180f3bb288ce24059210a82948dc3e6a851c6228b67724407effd7ce069d4",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/capture/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/validation.json": {
+      "sha256": "87db2abde0ea8cd439621dbac4ff798beeae52df6135382dc33c74e735474b3c",
+      "bytes": 1364
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/raw-test/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9.json": {
+      "sha256": "8d2180f3bb288ce24059210a82948dc3e6a851c6228b67724407effd7ce069d4",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/private-raw.json": {
+      "sha256": "8d2180f3bb288ce24059210a82948dc3e6a851c6228b67724407effd7ce069d4",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/manifests/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9.json": {
+      "sha256": "d97fadcc645b9c1edda5fb5e347bf7af5fa8599df0ff559fa0d55678a43b7373",
+      "bytes": 437
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/fetch-21951.json": {
+      "sha256": "6473b3b85364cb0055eb03b8242d102ee844429392b199abb393dec35bcb51c9",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/fetch-21951.json": {
+      "sha256": "6473b3b85364cb0055eb03b8242d102ee844429392b199abb393dec35bcb51c9",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/fetch-23345.json": {
+      "sha256": "b58028ff6d6d89b0ee158e7fb0006642ef65c3f537d9734ebe120b26ceec610a",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/fetch-23345.json": {
+      "sha256": "b58028ff6d6d89b0ee158e7fb0006642ef65c3f537d9734ebe120b26ceec610a",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/fetch-11125.json": {
+      "sha256": "38245b9f0979e558e6fb63130ab2c254b37f5fba3105a42a4984aa5173ca6817",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/fetch-11125.json": {
+      "sha256": "38245b9f0979e558e6fb63130ab2c254b37f5fba3105a42a4984aa5173ca6817",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/fetch-11141.json": {
+      "sha256": "881cf49b6e46f64d282f2ae24220b2c5af1111337c45fba2fc1e9a6025e6b5e5",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/fetch-11141.json": {
+      "sha256": "881cf49b6e46f64d282f2ae24220b2c5af1111337c45fba2fc1e9a6025e6b5e5",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/fetch-20209.json": {
+      "sha256": "901d40de4996be356cd9fd65054e6f5c1c8c66602697a16e229481e43ec47742",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/fetch-20209.json": {
+      "sha256": "901d40de4996be356cd9fd65054e6f5c1c8c66602697a16e229481e43ec47742",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/gift-receipts/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/events/1-prompt_binding.json": {
+      "sha256": "e220ff635e1c48307b61e530a7f0aa2831cf1aa3d7236d57d6b5736527444b30",
+      "bytes": 468
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/events/175-prefetch_injection.json": {
+      "sha256": "c2bf4ecf8a01c92a764c0858ec70088f64832e1c1974ef7bde8c6f663b494852",
+      "bytes": 1499
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/c65b63c4-fa8b-56c2-8f99-30e99bf5ede9/events/200-llm_input.json": {
+      "sha256": "83976e555d717a523362681c2967273e30053137ec715b0b0790ed8bacc4958e",
+      "bytes": 1763
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/plan.json": {
+      "sha256": "323a50d54199ad6ed0794ba7b36360e93b504b2492f32b76f0248190f1210e34",
+      "bytes": 367
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/evidence.json": {
+      "sha256": "59abef3595b47548bee5923910b0ed8b370d4498e0e63261edd2d3288582bb12",
+      "bytes": 2508
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-manifest.json": {
+      "sha256": "17cfe5e5d03fad6224e70f77847f276d6055e83166e81ebed0a4a863fe663517",
+      "bytes": 429
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5054-gift8-tool.json": {
+      "sha256": "06dae955603a46006f061f34f32dc8d9c10297707260614efcadc7aaf539f88e",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/capture/1244b621-612d-59bf-b86d-9581bf3163fa/validation.json": {
+      "sha256": "7b5ed17a4d3804d2b9b3158bdb293cf1fde9ea6ed459df09e66f2d7c695c7665",
+      "bytes": 1760
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/raw-test/1244b621-612d-59bf-b86d-9581bf3163fa.json": {
+      "sha256": "06dae955603a46006f061f34f32dc8d9c10297707260614efcadc7aaf539f88e",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/private-raw.json": {
+      "sha256": "06dae955603a46006f061f34f32dc8d9c10297707260614efcadc7aaf539f88e",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/manifests/1244b621-612d-59bf-b86d-9581bf3163fa.json": {
+      "sha256": "17cfe5e5d03fad6224e70f77847f276d6055e83166e81ebed0a4a863fe663517",
+      "bytes": 429
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/fetch-21951.json": {
+      "sha256": "c75ee67e8b0e1be1476d2038fb7938c2b1789e2de916990ff3e3de2e0f9de45f",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/fetch-21951.json": {
+      "sha256": "c75ee67e8b0e1be1476d2038fb7938c2b1789e2de916990ff3e3de2e0f9de45f",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/fetch-23345.json": {
+      "sha256": "f3dc80fbd331cca5d008216086cf2f9b21003e88ea79c8625266c11b78fc9dbf",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/fetch-23345.json": {
+      "sha256": "f3dc80fbd331cca5d008216086cf2f9b21003e88ea79c8625266c11b78fc9dbf",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/fetch-11125.json": {
+      "sha256": "0a32a1825b76c139c7c683113bb9bf82e1146e3ef46a517e2dc9276366bdcb07",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/fetch-11125.json": {
+      "sha256": "0a32a1825b76c139c7c683113bb9bf82e1146e3ef46a517e2dc9276366bdcb07",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/fetch-11141.json": {
+      "sha256": "07167ac0662398ece444cd4fff909de2c7b446d54dd126c4be90bb414a884a1d",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/fetch-11141.json": {
+      "sha256": "07167ac0662398ece444cd4fff909de2c7b446d54dd126c4be90bb414a884a1d",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/fetch-20209.json": {
+      "sha256": "8920751585472836cceab7b7db51eb7b013e53f3b570f5574e55787634957567",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/fetch-20209.json": {
+      "sha256": "8920751585472836cceab7b7db51eb7b013e53f3b570f5574e55787634957567",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/1244b621-612d-59bf-b86d-9581bf3163fa/gift-receipts/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/events/1-prompt_binding.json": {
+      "sha256": "a9054f3b205e70a3f9bbe63025240213381a13cafd804af4949de1c7893b37ea",
+      "bytes": 460
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/1244b621-612d-59bf-b86d-9581bf3163fa/events/200-llm_input.json": {
+      "sha256": "0ffba94927eca752575ca871d07df94397a8a2b60407acd4a3baab051a7e66bb",
+      "bytes": 720
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/plan.json": {
+      "sha256": "ddc3cb2d2dc58d325dc8cc8cbfb58d93db81ba550ee9f3e75c30e39c00867de9",
+      "bytes": 379
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/evidence.json": {
+      "sha256": "71708c75cb618a371ad8a11043aae3cd56dfdc3f70b1edae5bdcd940ee0aae34",
+      "bytes": 2326
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-manifest.json": {
+      "sha256": "1438d28e2ea92a3c7b184f568db33a658223335d5fd85c74b6a11355c5f0816b",
+      "bytes": 437
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5055-gift8-prefetch.json": {
+      "sha256": "1bf586fbb4f1255d76021a415b75ebcbc868e6a20598b1b50d38d0706fddd11d",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/capture/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/validation.json": {
+      "sha256": "dd71221400b5903b92723bb2cfc630828438a2a1dca1aee4f1f9ed54db519688",
+      "bytes": 1364
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/raw-test/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd.json": {
+      "sha256": "1bf586fbb4f1255d76021a415b75ebcbc868e6a20598b1b50d38d0706fddd11d",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/private-raw.json": {
+      "sha256": "1bf586fbb4f1255d76021a415b75ebcbc868e6a20598b1b50d38d0706fddd11d",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/manifests/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd.json": {
+      "sha256": "1438d28e2ea92a3c7b184f568db33a658223335d5fd85c74b6a11355c5f0816b",
+      "bytes": 437
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/fetch-21951.json": {
+      "sha256": "811b9f5de81a8565a3e516d238c01875f63fa044ab7d7eb0283bf783849c8798",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/fetch-21951.json": {
+      "sha256": "811b9f5de81a8565a3e516d238c01875f63fa044ab7d7eb0283bf783849c8798",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/fetch-23345.json": {
+      "sha256": "f8773cfee3d10201c582f8bbe8b4c5f98598d7acd92b76e393f87f00ed13d63f",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/fetch-23345.json": {
+      "sha256": "f8773cfee3d10201c582f8bbe8b4c5f98598d7acd92b76e393f87f00ed13d63f",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/fetch-11125.json": {
+      "sha256": "f376b79faa50f5823d096c62d52e8e17fcd5962bdb03740573f240e3655b4a28",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/fetch-11125.json": {
+      "sha256": "f376b79faa50f5823d096c62d52e8e17fcd5962bdb03740573f240e3655b4a28",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/fetch-11141.json": {
+      "sha256": "d5ef8d0a14b762310e9448ba7c756243d23d27ccf15b25fd1eb8ca6e621301c2",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/fetch-11141.json": {
+      "sha256": "d5ef8d0a14b762310e9448ba7c756243d23d27ccf15b25fd1eb8ca6e621301c2",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/fetch-20209.json": {
+      "sha256": "91b166c8983c8b0c1195d19f5eabac0fb18c88e535e64c349133492c0621d439",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/fetch-20209.json": {
+      "sha256": "91b166c8983c8b0c1195d19f5eabac0fb18c88e535e64c349133492c0621d439",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/gift-receipts/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/events/1-prompt_binding.json": {
+      "sha256": "d58de1b00df91b376ad3b25d8807911f5cf16751ec7a8f5e448ea86db12de4ad",
+      "bytes": 468
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/events/175-prefetch_injection.json": {
+      "sha256": "740aded7521fe28599c8d6c8c893af4204958579d6cabd9cddca2f2ae541d870",
+      "bytes": 1499
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/ef4eeb32-f56a-5f58-9d4a-cf892c4435bd/events/200-llm_input.json": {
+      "sha256": "2ea0bd10ef9615fe9f27d794cbaff96fcff9cf55d0f6f52724d4347b2b981bd3",
+      "bytes": 1763
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/plan.json": {
+      "sha256": "3740b123e0d58fe7d6b0c3d7aad5bf855dca319f58103143e8b876e3900ba2fb",
+      "bytes": 367
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/evidence.json": {
+      "sha256": "7d46afdc1cd0204bf06c5d5b8d8048a61a477ff118d1d82ce111aa64978a69bf",
+      "bytes": 2508
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-manifest.json": {
+      "sha256": "c75f02537d148be5d2a2627a2790c42ec76904660c40a1ab38965730153a1cd3",
+      "bytes": 429
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5056-gift8-tool.json": {
+      "sha256": "76a7d794c2be3faffd0d1e06fd31bbee359b74e8ec60bc39936c869fa488cb16",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/capture/655da21b-dfa8-56c4-9a20-713f5fb01d04/validation.json": {
+      "sha256": "d1ee74fd3092468bb75ea82d774c85ef36f794241e9209b6c6264a269a4bc329",
+      "bytes": 1760
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/raw-test/655da21b-dfa8-56c4-9a20-713f5fb01d04.json": {
+      "sha256": "76a7d794c2be3faffd0d1e06fd31bbee359b74e8ec60bc39936c869fa488cb16",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/private-raw.json": {
+      "sha256": "76a7d794c2be3faffd0d1e06fd31bbee359b74e8ec60bc39936c869fa488cb16",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/manifests/655da21b-dfa8-56c4-9a20-713f5fb01d04.json": {
+      "sha256": "c75f02537d148be5d2a2627a2790c42ec76904660c40a1ab38965730153a1cd3",
+      "bytes": 429
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/fetch-21951.json": {
+      "sha256": "477507ef0559ff161e834ae6aa1f0ded55bc8b2961d2a387f1b425ab6104ec81",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/fetch-21951.json": {
+      "sha256": "477507ef0559ff161e834ae6aa1f0ded55bc8b2961d2a387f1b425ab6104ec81",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/fetch-23345.json": {
+      "sha256": "d62a23d174fcf9172e7f370bd3e5550874414ce07d22134ff3cc6296091e454c",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/fetch-23345.json": {
+      "sha256": "d62a23d174fcf9172e7f370bd3e5550874414ce07d22134ff3cc6296091e454c",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/fetch-11125.json": {
+      "sha256": "51539e3b5848fec8e1101462a028aec0c4c329101967018ab310cd83dc84718b",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/fetch-11125.json": {
+      "sha256": "51539e3b5848fec8e1101462a028aec0c4c329101967018ab310cd83dc84718b",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/fetch-11141.json": {
+      "sha256": "dbfb4dbf242c61ada25912e8ba91ae477bf35add3b2620a24a6ee6676c6ee0d7",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/fetch-11141.json": {
+      "sha256": "dbfb4dbf242c61ada25912e8ba91ae477bf35add3b2620a24a6ee6676c6ee0d7",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/fetch-20209.json": {
+      "sha256": "8ca9c2d746b47374b2ec8af1852785a3063178ffd6677a3c75fd8472917accd9",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/fetch-20209.json": {
+      "sha256": "8ca9c2d746b47374b2ec8af1852785a3063178ffd6677a3c75fd8472917accd9",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/655da21b-dfa8-56c4-9a20-713f5fb01d04/gift-receipts/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/events/1-prompt_binding.json": {
+      "sha256": "cd8f20340bcf72f43517cdaa86a83d9262e1b5d1d1b1e5bdb845a91e90b8a53f",
+      "bytes": 460
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/655da21b-dfa8-56c4-9a20-713f5fb01d04/events/200-llm_input.json": {
+      "sha256": "d108459f5e80a0864c34034825ced3641a54c19b17130a8df1bf45c295d533da",
+      "bytes": 720
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/plan.json": {
+      "sha256": "651fcb3700035855bf08eb58a2c16634eea6539977ec3f8a7a96d8b0730e6080",
+      "bytes": 367
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/evidence.json": {
+      "sha256": "8b7b5b8c17344a2444d9741df35254bc251914efbae3fdfebd1e6a46abfc7685",
+      "bytes": 2508
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-manifest.json": {
+      "sha256": "116dc33f9bdf41d1b4f96d9f46019128d24bca4efacbb7ad2d7bed1b10c48640",
+      "bytes": 429
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5057-gift8-tool.json": {
+      "sha256": "0a36a6fc467d1993dba4051826c7c609b33eaf20f7af9560a32cea61775dcd9f",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/capture/4bfed4a8-915d-5775-8a08-1c6a93603c25/validation.json": {
+      "sha256": "cc14d831eb1b4aef1ba445d7528d42e419dc0d217541d86a1c4cbc9f80dffcbd",
+      "bytes": 1760
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/raw-test/4bfed4a8-915d-5775-8a08-1c6a93603c25.json": {
+      "sha256": "0a36a6fc467d1993dba4051826c7c609b33eaf20f7af9560a32cea61775dcd9f",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/private-raw.json": {
+      "sha256": "0a36a6fc467d1993dba4051826c7c609b33eaf20f7af9560a32cea61775dcd9f",
+      "bytes": 5516
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/manifests/4bfed4a8-915d-5775-8a08-1c6a93603c25.json": {
+      "sha256": "116dc33f9bdf41d1b4f96d9f46019128d24bca4efacbb7ad2d7bed1b10c48640",
+      "bytes": 429
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/fetch-21951.json": {
+      "sha256": "ddadabb0fa9f416cb262ca2ed1b320cc729570cf157af1c9f43fbb0ae44edb51",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/fetch-21951.json": {
+      "sha256": "ddadabb0fa9f416cb262ca2ed1b320cc729570cf157af1c9f43fbb0ae44edb51",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/fetch-23345.json": {
+      "sha256": "ba74b54c7b7bbbbaa7985009040bcabdc52091861398bc45b750f28cfdc07c95",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/fetch-23345.json": {
+      "sha256": "ba74b54c7b7bbbbaa7985009040bcabdc52091861398bc45b750f28cfdc07c95",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/fetch-11125.json": {
+      "sha256": "56701aa190765d8c7bd405ce68863fd1abf4f6391009ca6f1a6f686c0750ee44",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/fetch-11125.json": {
+      "sha256": "56701aa190765d8c7bd405ce68863fd1abf4f6391009ca6f1a6f686c0750ee44",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/fetch-11141.json": {
+      "sha256": "595951414d0798dedf4cefc138aee51c8b865014eaf4ffa5902e272c0cf2c4d4",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/fetch-11141.json": {
+      "sha256": "595951414d0798dedf4cefc138aee51c8b865014eaf4ffa5902e272c0cf2c4d4",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/fetch-20209.json": {
+      "sha256": "8000831618c976e33664e3fdf1232bb4359f52f384672271f6a1ccb8432a7aba",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/fetch-20209.json": {
+      "sha256": "8000831618c976e33664e3fdf1232bb4359f52f384672271f6a1ccb8432a7aba",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/4bfed4a8-915d-5775-8a08-1c6a93603c25/gift-receipts/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/events/1-prompt_binding.json": {
+      "sha256": "3e6c5ec9a886872fcd438c864c3f03c89bfbee42090a1782454e898e67328ce1",
+      "bytes": 460
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/4bfed4a8-915d-5775-8a08-1c6a93603c25/events/200-llm_input.json": {
+      "sha256": "10cadc042c9a46f61435fdf44facb91e60b39944f003908c149f9d91eb9dde76",
+      "bytes": 720
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/plan.json": {
+      "sha256": "1c9e12ccbfe1c1e1718b4cca532c66a54820949728567a7c7845705d92446452",
+      "bytes": 379
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/evidence.json": {
+      "sha256": "ee9f6f69a29e1e29fd371d920010260493fe55a343badea41e606cfad0998a07",
+      "bytes": 2326
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-manifest.json": {
+      "sha256": "7dd45fad589c62f6132cd895f0e6e39ad8ec228cfbb8e01841032e4da55ee8ad",
+      "bytes": 437
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5058-gift8-prefetch.json": {
+      "sha256": "3765a8526d7cee975cddbc8b5952704851790479d4d3dfef329b6192d6fb7ef4",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/capture/fbe7a11a-fbac-583f-a7f0-963e69437f39/validation.json": {
+      "sha256": "446202658736b143dbea83e2899e0cd16921995d178fa5cc463ae0bb77200242",
+      "bytes": 1364
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/raw-test/fbe7a11a-fbac-583f-a7f0-963e69437f39.json": {
+      "sha256": "3765a8526d7cee975cddbc8b5952704851790479d4d3dfef329b6192d6fb7ef4",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/private-raw.json": {
+      "sha256": "3765a8526d7cee975cddbc8b5952704851790479d4d3dfef329b6192d6fb7ef4",
+      "bytes": 1745
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/manifests/fbe7a11a-fbac-583f-a7f0-963e69437f39.json": {
+      "sha256": "7dd45fad589c62f6132cd895f0e6e39ad8ec228cfbb8e01841032e4da55ee8ad",
+      "bytes": 437
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/fetch-21951.json": {
+      "sha256": "5d573ca3a61908fdb4f856e642ecac2d7c5fced55425f86c5e5698375e29c091",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/fetch-21951.json": {
+      "sha256": "5d573ca3a61908fdb4f856e642ecac2d7c5fced55425f86c5e5698375e29c091",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/body-21951.bin": {
+      "sha256": "c35823484419600aab6d712fd1353facc1841068f5283e1fbafaa083167022fe",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/fetch-23345.json": {
+      "sha256": "9bfe5fe7f4d3e9f0937e2f4319f1dba5b9531818fc6667e9d1f5ac3e340859a3",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/fetch-23345.json": {
+      "sha256": "9bfe5fe7f4d3e9f0937e2f4319f1dba5b9531818fc6667e9d1f5ac3e340859a3",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/body-23345.bin": {
+      "sha256": "d89e506087205eab2bd5e87b5fc685b231b478a4abcd7bf4cc4af09a8dec91fb",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/fetch-11125.json": {
+      "sha256": "3c0fe5762eb374add2852030c6be299c63af80d14198e9cd3ca1c60ddd9ea049",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/fetch-11125.json": {
+      "sha256": "3c0fe5762eb374add2852030c6be299c63af80d14198e9cd3ca1c60ddd9ea049",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/body-11125.bin": {
+      "sha256": "bb923acda865e024602a07a6d8533fb126a48a1ebe8c39c5a39f4e16e6b1e2ff",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/fetch-11141.json": {
+      "sha256": "8d110484d3496f290d327c8c5e3c75f8f9d3a2462899b59584d3f07f73e9c7ce",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/fetch-11141.json": {
+      "sha256": "8d110484d3496f290d327c8c5e3c75f8f9d3a2462899b59584d3f07f73e9c7ce",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/body-11141.bin": {
+      "sha256": "9a332244c7046e687529d57e02c9ad9b962eb6d31f237ee68c9a3d423f688254",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/fetch-20209.json": {
+      "sha256": "eed286cc16d75df4259a1fbd0558ad4296c5948d6f0de7da5036faccd65a94b0",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/fetch-20209.json": {
+      "sha256": "eed286cc16d75df4259a1fbd0558ad4296c5948d6f0de7da5036faccd65a94b0",
+      "bytes": 1118
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/repo/runs/fbe7a11a-fbac-583f-a7f0-963e69437f39/gift-receipts/body-20209.bin": {
+      "sha256": "35826d8cd3d1f46df63726cc62b36a35b40ccdfd722724918b6e70c30a1ad838",
+      "bytes": 198
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/events/1-prompt_binding.json": {
+      "sha256": "0dfa23da7dabaf70f1ba358a1306aed3291feb115a9b0c8ecef4af0299e6d427",
+      "bytes": 468
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/events/175-prefetch_injection.json": {
+      "sha256": "16df14f1a11b33847b36589267f8050e8a5bb81ee480ac3e0563957444612983",
+      "bytes": 1499
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/fbe7a11a-fbac-583f-a7f0-963e69437f39/events/200-llm_input.json": {
+      "sha256": "611cf27ece61f8de391d8538b7eac2c1587e02b25502185538d9a2b106b64461",
+      "bytes": 1763
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5003-legacy.send-intent.json": {
+      "sha256": "f56f4adbee8a524423d27221b30fea2b55e769e618d9585eee205cd2ea81ffe1",
+      "bytes": 40
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5051-gift8-tool.send-intent.json": {
+      "sha256": "8835a615eff299e73d02b17a9427603fdd623e48b4f5005ba5e380006f9072de",
+      "bytes": 143
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5052-gift8-prefetch.send-intent.json": {
+      "sha256": "6cbac40d44f4894a56c7a1ffc3663dee0161d55065c7ddcbae4468fe7680bc26",
+      "bytes": 147
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5053-gift8-prefetch.send-intent.json": {
+      "sha256": "7a24368f444b423014ad705c9e52d893962de9f7d4921fe4053e1d05536915ed",
+      "bytes": 147
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5054-gift8-tool.send-intent.json": {
+      "sha256": "6d4d078c9fd10449b212c9d87d052f565cd761fe38d929600831c337e8ee5280",
+      "bytes": 143
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5055-gift8-prefetch.send-intent.json": {
+      "sha256": "a5c19a41c2003f2bec771992c9a135765c694c493a47e1d435ea0854567a5770",
+      "bytes": 147
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5056-gift8-tool.send-intent.json": {
+      "sha256": "fa9dc49bcd2d8ae3edb54788b30e373b936f25f5d0c5dd074202aade67693a6c",
+      "bytes": 143
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5057-gift8-tool.send-intent.json": {
+      "sha256": "84cc17ab40dc21da0b004b8f66f72aed919855c805f8d84861b007c0f979c9b6",
+      "bytes": 143
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/runs/D5058-gift8-prefetch.send-intent.json": {
+      "sha256": "7e471fe3ac4ad68b9de3c96496907c9a15ba5d16692798cdc5d41e312ab05725",
+      "bytes": 147
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/reservation.jsonl": {
+      "sha256": "0453d8c81dab57e4ef96ef35929b482c6c99dbb4bde918862d505ecdecc63de4",
+      "bytes": 496
+    }
+  },
+  "limitations": [
+    "Local persisted evidence only; no fresh merchant validation or provider query.",
+    "Four within-study pairs do not establish hardware performance or legal/compliance conclusions."
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "fixture_only": true,
+  "pass_": true,
+  "checks": [
+    {
+      "scenario": "eight complete fixtures and exact ABBABAAB pass independent audit",
+      "passed": true
+    },
+    {
+      "scenario": "four pairs yield B-A first400 and mean300",
+      "passed": true
+    },
+    {
+      "scenario": "allcall mean1100 differs from first1000 and final1200",
+      "passed": true
+    },
+    {
+      "scenario": "all local raw spans compared",
+      "passed": true
+    },
+    {
+      "scenario": "closed samePID reservation covers each send",
+      "passed": true
+    },
+    {
+      "scenario": "forged row metric rejected",
+      "passed": true
+    },
+    {
+      "scenario": "archive bytes mismatch rejected",
+      "passed": true
+    },
+    {
+      "scenario": "reordered products exclude pair",
+      "passed": true
+    },
+    {
+      "scenario": "exact15minute pair accepted",
+      "passed": true
+    },
+    {
+      "scenario": "over15minute pair excluded",
+      "passed": true
+    },
+    {
+      "scenario": "invalid run excludes paired delta",
+      "passed": true
+    },
+    {
+      "scenario": "wrongPID release rejected",
+      "passed": true
+    },
+    {
+      "scenario": "open reservation rejected",
+      "passed": true
+    },
+    {
+      "scenario": "actual overlapping foreign span blocksaudit",
+      "passed": true
+    },
+    {
+      "scenario": "incomplete foreign send blocksaudit",
+      "passed": true
+    },
+    {
+      "scenario": "additional actual call included in arithmetic",
+      "passed": true
+    },
+    {
+      "scenario": "unmeasured assistant remains counted and invalidates method",
+      "passed": true
+    },
+    {
+      "scenario": "Korean report includes denominator failures and honest scope",
+      "passed": true
+    },
+    {
+      "scenario": "1700target without genuine same-run UI fiveURLs movie cannot pass",
+      "passed": true
+    },
+    {
+      "scenario": "failed send retained in successrate denominator",
+      "passed": true
+    },
+    {
+      "scenario": "old same-root test excluded with explicit provenance",
+      "passed": true
+    },
+    {
+      "scenario": "unresolved current gift8 blocks even before iteration row",
+      "passed": true
+    },
+    {
+      "scenario": "reservation with incorrect profile lock set fails",
+      "passed": true
+    },
+    {
+      "scenario": "terminal429 failure retained in count and denominator",
+      "passed": true
+    },
+    {
+      "scenario": "validB extra-generation uses actual allcalls1200mean",
+      "passed": true
+    },
+    {
+      "scenario": "validB extra-generation succeeds but one-generation hypothesis fails",
+      "passed": true
+    },
+    {
+      "scenario": "allfive native extra-call receipts independently hashed",
+      "passed": true
+    },
+    {
+      "scenario": "B extra call without source binding receipt rejected",
+      "passed": true
+    },
+    {
+      "scenario": "B followup before first native model input rejected despite matching hashes",
+      "passed": true
+    },
+    {
+      "scenario": "Korean report separates three single-generation successes from one extra-generation success",
+      "passed": true
+    },
+    {
+      "scenario": "B native followup card mutation rejected despite consistent raw hashes",
+      "passed": true
+    }
+  ]
+}

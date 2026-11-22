@@ -1,0 +1,104 @@
+diff --git a/tools/loop.py b/tools/loop.py
+index 3f1564e..50dc20e 100644
+--- a/tools/loop.py
++++ b/tools/loop.py
+@@ -19,7 +19,7 @@ from research_report import (FORMAT_VARIANTS, correct_subtotals, expected_format
+                              one_per_source_links)
+ from scoring import recording_required
+ from variants import (CATEGORY_VARIANTS, CONTEXT_INJECTION_BY_VARIANT, FIRST_FIVE_VARIANTS, MAX_TOKENS_BY_VARIANT,
+-                      TEST_MAX_TOKENS, TOP_P_BY_VARIANT, WORKSPACE_AGENTS_BY_VARIANT, arm_key, choose, choose_test,
++                      TEST_MAX_TOKENS, TOP_P_BY_VARIANT, WORKSPACE_AGENTS_BY_VARIANT, arm_key, choose, choose_target, choose_test,
+                       prompt)
+ from export_bundle import publish
+ 
+@@ -292,6 +292,13 @@ def run_trial(idx,arm):
+         finally:
+             stop_child(agent);stop_child(recorder)
+ 
++def target_met(results):
++    """The private trial target requires both measured rates and complete, method-valid evidence."""
++    return any(row.get('valid') is True and row.get('method_valid') is True
++               and row.get('recorded_video') is True
++               and row.get('score') is not None and row['score'] >= 1200
++               and row.get('ui') is not None and row['ui'] >= 1200 for row in results)
++
+ def main():
+     args=argparse.ArgumentParser()
+     args.add_argument('--once',action='store_true'); opts=args.parse_args()
+@@ -302,6 +309,9 @@ def main():
+         while True:
+             results=past()
+             if any(r['goal'] and r['recorded_video'] for r in results): return
++            focused = TEST_SCHEDULE and (CACHE/'target-1200').exists()
++            if focused and target_met(results):
++                status('target_1200_met');return
+             if (CACHE/'stop-requested').exists():
+                 status('user_stop');return
+             reload_marker = CACHE/'reload-after-trial'
+@@ -329,7 +339,8 @@ def main():
+                     continue
+             # Use a unique label even if an earlier preflight ended before a model call.
+             n=next_trial_number()
+-            if run_trial(n,(choose_test if TEST_SCHEDULE else choose)(results)) or opts.once: return
++            selector = choose_target if focused else choose_test if TEST_SCHEDULE else choose
++            if run_trial(n,selector(results)) or opts.once: return
+ 
+ if __name__=='__main__':
+     try: main()
+diff --git a/tools/variants.py b/tools/variants.py
+index db28e5d..28fbb9f 100644
+--- a/tools/variants.py
++++ b/tools/variants.py
+@@ -130,6 +130,9 @@ DIRECT_TOOL_CAP_AGENTS_MD = (
+     'Do not plan or restate the request.\n'
+     '- When the results arrive, write the requested answer straight from the fetched data, with no preamble.\n')
+ VARIANTS['synth-first-five-short-cap'] = VARIANTS['synth-first-five-short']
++VARIANTS['synth-first-five-short-cap-args'] = (*VARIANTS['synth-first-five-short-cap'][:-1],
++    VARIANTS['synth-first-five-short-cap'][-1].replace(
++        'web_fetch this live catalog', 'call web_fetch with the exact argument object below'))
+ VARIANTS['synth-five-categories-cap'] = (1, False, 'synth-categories', False,
+     'Christmas gifts: call web_fetch 5 times in parallel, once with each exact argument object below. '
+     'Then return the one product from each result as numbered [exact name](exact product URL) links, '
+@@ -137,11 +140,14 @@ VARIANTS['synth-five-categories-cap'] = (1, False, 'synth-categories', False,
+ EXACT_ARGS_VARIANTS = ('synth-five-categories-cap',)
+ CATEGORY_VARIANTS = ('synth-five-categories-cap',)
+ WORKSPACE_AGENTS_BY_VARIANT.update({'synth-first-five-short-cap': DIRECT_TOOL_CAP_AGENTS_MD,
++                                    'synth-first-five-short-cap-args': DIRECT_TOOL_CAP_AGENTS_MD,
+                                     'synth-five-categories-cap': DIRECT_TOOL_CAP_AGENTS_MD})
+-FIRST_FIVE_VARIANTS += ('synth-first-five-short-cap',)
++FIRST_FIVE_VARIANTS += ('synth-first-five-short-cap', 'synth-first-five-short-cap-args')
+ TEST_CONTROL = PRIORITY_CONTROL
+ TEST_ARMS = (TEST_CONTROL, ('synth-first-five-short-cap', .2, 'low'), ('synth-first-five-short-cap', 0.0, 'low'),
+              ('synth-five-categories-cap', 0.0, 'low'))
++TARGET_ARMS = (('synth-five-categories-cap', .2, 'low'), ('synth-five-categories-cap', 0.0, 'low'),
++               ('synth-first-five-short-cap-args', .2, 'low'), ('synth-first-five-short-cap', .2, 'low'))
+ # Applied to every test-branch trial, control included, to shrink the quota Cerebras reserves per request.
+ TEST_MAX_TOKENS = 1024
+ RESEARCH_ARMS = (
+@@ -209,6 +215,14 @@ def choose_test(results):
+             attempts[row['arm']] += 1
+     return min(TEST_ARMS, key=lambda arm:(attempts[arm_key(arm)], TEST_ARMS.index(arm)))
+ 
++def choose_target(results):
++    """Balance focused arms by completed attempts, prioritizing category fetches when tied."""
++    attempts = {arm_key(arm): 0 for arm in TARGET_ARMS}
++    for row in results:
++        if row['arm'] in attempts:
++            attempts[row['arm']] += 1
++    return min(TARGET_ARMS, key=lambda arm:(attempts[arm_key(arm)], TARGET_ARMS.index(arm)))
++
+ def choose(results):
+     index=len(results)
+     # Begin with paired hypotheses, rather than sending the same query repeatedly.
+@@ -260,7 +274,10 @@ def prompt(arm,nonce):
+     name=arm[0]
+     count,rich,shops,price,instructions=VARIANTS[name]
+     urls = catalogs(nonce,count,rich,shops,price)
+-    if name in EXACT_ARGS_VARIANTS:
++    if name == 'synth-first-five-short-cap-args':
++        urls = [json.dumps({'url': url, 'extractMode': 'text', 'maxChars': 20000},
++                           separators=(',', ':')) for url in urls]
++    elif name in EXACT_ARGS_VARIANTS:
+         # Spell out each web_fetch argument object so the tool call can be copied from the request.
+         urls = [json.dumps({'url': url}, separators=(',', ':')) for url in urls]
+     return instructions+'\n'+'\n'.join(urls)

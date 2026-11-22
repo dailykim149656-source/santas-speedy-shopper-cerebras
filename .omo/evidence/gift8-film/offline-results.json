@@ -1,0 +1,26 @@
+{
+  "fixtureOnly": true,
+  "pass_": true,
+  "checks": [
+    "gift8 eligible canonical D5051",
+    "gift8 variant gift8-tool",
+    "gift8 variant gift8-prefetch",
+    "reject trial before start",
+    "reject capture gate policy",
+    "reject wrong session",
+    "old campaign unchanged in same interpreter",
+    "old campaign excluded from gift8",
+    "committed private plan accepted",
+    "no marker means no queue",
+    "session marker queues without sender gate",
+    "wrong marker excluded",
+    "sentinel excludes unsent session",
+    "sentinel preserves begun session",
+    "preflight aborted excluded",
+    "existing receipt prevents repeated recording",
+    "canonical 1700 score and five verified products",
+    "duplicate URL rejected",
+    "CLI documents exact sentinel and retry",
+    "CLI rejects old start"
+  ]
+}

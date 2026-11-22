@@ -1,0 +1,14 @@
+{
+  "id": "category-query",
+  "name": "D5027 category lookup",
+  "contracts": { "tools": ["search_category"] },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["openclawRoot", "receiptDir"],
+    "properties": {
+      "openclawRoot": { "type": "string", "minLength": 1 },
+      "receiptDir": { "type": "string", "minLength": 1 }
+    }
+  }
+}

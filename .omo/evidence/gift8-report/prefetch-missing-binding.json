@@ -1,0 +1,78 @@
+{
+  "id": "45673565-026b-555a-a4f3-772a7caf382f",
+  "label": "D5052-gift8-prefetch",
+  "arm": "B",
+  "variant": "gift8-prefetch",
+  "valid": false,
+  "method_valid": true,
+  "score": 1200.0,
+  "ui": 1200,
+  "first_tps": 1000.0,
+  "final_tps": 1400.0,
+  "call_count": 2,
+  "started_wall": 1700000060000,
+  "ended_wall": 1700000070000,
+  "terminal_429": false,
+  "product_urls": [
+    "https://aisynthesis.com/product/fixture-21951/",
+    "https://aisynthesis.com/product/fixture-23345/",
+    "https://aisynthesis.com/product/fixture-11125/",
+    "https://aisynthesis.com/product/fixture-11141/",
+    "https://aisynthesis.com/product/fixture-20209/"
+  ],
+  "rejection": [],
+  "audit_errors": [
+    "missing or non-regular source: $SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-report/fixtures/test/gift8-5051/receipts/45673565-026b-555a-a4f3-772a7caf382f/calls/0d24708c05293882525456e634d46cb32bd6420f76567932882ae1a0bbab151c.json"
+  ],
+  "reported_valid": true,
+  "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+  "calls": [
+    {
+      "message_index": 0,
+      "response_id": "fixture-B-extra",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "completionMs": 1000,
+        "outputTokens": 1000
+      },
+      "timed_sample": true,
+      "outputTokens": 1000,
+      "completionMs": 1000,
+      "tokensPerSecond": 1000.0
+    },
+    {
+      "message_index": 6,
+      "response_id": "response-0",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "stop",
+      "serverGeneration": {
+        "completionMs": 1000,
+        "outputTokens": 1400
+      },
+      "timed_sample": true,
+      "outputTokens": 1400,
+      "completionMs": 1000,
+      "tokensPerSecond": 1400.0
+    }
+  ],
+  "score_details": {
+    "mean_exact_tps": 1200.0,
+    "ui_rounded_tps": 1200,
+    "ui_display": "1,200",
+    "call_count": 2,
+    "assistant_call_count": 2,
+    "output_tokens": 2400,
+    "generation_ms": 2000,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+  },
+  "method_reasons": [],
+  "actual_generation_count": 2,
+  "expected_generation_count": 1,
+  "native_tool_call_count": 5,
+  "structure_expected": false,
+  "audit_passed": false,
+  "single_generation_success": false
+}

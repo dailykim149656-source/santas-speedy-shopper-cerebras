@@ -1,0 +1,77 @@
+{
+  "passed": false,
+  "spans": [
+    {
+      "scope": "test",
+      "label": "D5051-gift8-tool",
+      "id": "92270f02-5b3c-5885-8e44-2d67ef7b4cc2",
+      "start": 1700000000000,
+      "end": 1700000010000
+    },
+    {
+      "scope": "test",
+      "label": "D5052-gift8-prefetch",
+      "id": "45673565-026b-555a-a4f3-772a7caf382f",
+      "start": 1700000060000,
+      "end": 1700000070000
+    },
+    {
+      "scope": "test",
+      "label": "D5053-gift8-prefetch",
+      "id": "c65b63c4-fa8b-56c2-8f99-30e99bf5ede9",
+      "start": 1700000120000,
+      "end": 1700000130000
+    },
+    {
+      "scope": "test",
+      "label": "D5054-gift8-tool",
+      "id": "1244b621-612d-59bf-b86d-9581bf3163fa",
+      "start": 1700000180000,
+      "end": 1700000190000
+    },
+    {
+      "scope": "test",
+      "label": "D5055-gift8-prefetch",
+      "id": "ef4eeb32-f56a-5f58-9d4a-cf892c4435bd",
+      "start": 1700000240000,
+      "end": 1700000250000
+    },
+    {
+      "scope": "test",
+      "label": "D5056-gift8-tool",
+      "id": "655da21b-dfa8-56c4-9a20-713f5fb01d04",
+      "start": 1700000300000,
+      "end": 1700000310000
+    },
+    {
+      "scope": "test",
+      "label": "D5057-gift8-tool",
+      "id": "4bfed4a8-915d-5775-8a08-1c6a93603c25",
+      "start": 1700000360000,
+      "end": 1700000370000
+    },
+    {
+      "scope": "test",
+      "label": "D5058-gift8-prefetch",
+      "id": "fbe7a11a-fbac-583f-a7f0-963e69437f39",
+      "start": 1700000420000,
+      "end": 1700000430000
+    }
+  ],
+  "incomplete_sends": [
+    {
+      "scope": "exp",
+      "label": "unfinished",
+      "id": "unfinished",
+      "started": 1,
+      "ended": null
+    }
+  ],
+  "errors": [],
+  "comparisons": 28,
+  "campaign_comparisons": 28,
+  "all_historical_overlaps": [],
+  "campaign_overlaps": [],
+  "historical_test_exclusions": [],
+  "scope": "all local main/exp spans plus current gift8 test sends; older same-root test sends explicitly excluded"
+}

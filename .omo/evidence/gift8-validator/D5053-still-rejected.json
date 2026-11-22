@@ -1,0 +1,58 @@
+{
+  "protocol": "gift8-v1",
+  "run_id": "766237bd-75b8-4ba7-8dae-a07cd79d9f22",
+  "input_sha256": "ee4b6f3c083f970418fc325278a59c71be50b9866996022b4da9678827617783",
+  "input_bytes": 15946,
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": "chatcmpl-0d8260f2-0c69-4307-94fb-953fa6ee621d",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "completionMs": 326.85661300000004,
+        "outputTokens": 245
+      },
+      "timed_sample": true,
+      "completionMs": 326.85661300000004,
+      "outputTokens": 245,
+      "tokensPerSecond": 749.5641521562239
+    },
+    {
+      "message_index": 7,
+      "response_id": null,
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "error",
+      "serverGeneration": {},
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 749.5641521562239,
+    "ui_rounded_tps": 750,
+    "ui_display": "750",
+    "call_count": 1,
+    "assistant_call_count": 2,
+    "output_tokens": 245,
+    "generation_ms": 326.85661300000004,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+  },
+  "products": [],
+  "retail_sources": [],
+  "actual_generation_count": 2,
+  "expected_generation_count": 1,
+  "structure_expected": false,
+  "valid": false,
+  "status": "rejected",
+  "target_met": false,
+  "reject_reasons": [
+    "unsuccessful or unidentified assistant call",
+    "assistant call missing valid serverGeneration",
+    "run has no successful terminal event"
+  ],
+  "target_reasons": [
+    "exact mean and rounded UI must both be at least 1700 TPS"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "provider_sends": 0,
+  "native_version": "2026.10.9",
+  "prompt_sha256": "8b7bd5f024f3937e18f071194c4a6fc72de6983ba90b6d8c558ccfaf28696fa8",
+  "plugin_sha256": "ef5d6e58c1f45e5d290e1af4608742b0f01336122e91b5a92b65adf58a388edd",
+  "prompt_preserved": true,
+  "registered_native_hook_result": {
+    "systemPrompt": "Use current merchant cards only. When cards are absent, call gift_lookup once for each requested id in parallel. Return only JSON {\"gifts\":[cards]} in requested id order, copying all card fields exactly. Prices are minor currency units; options are actual variation values, not all finished products.",
+    "toolsAllow": [
+      "gift_lookup"
+    ]
+  },
+  "root": "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-plugin/native-szW5eN"
+}

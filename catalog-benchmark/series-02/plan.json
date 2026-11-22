@@ -1,0 +1,71 @@
+{
+  "startedAt": "2026-11-22T14:49:10.035Z",
+  "pauseSeconds": 60,
+  "threshold": 1673,
+  "trials": [
+    {
+      "id": "0f7888d8-4638-48fc-8472-a3c30b14161f",
+      "label": "catalog-01",
+      "sessionKey": "agent:main:shop-catalog-0f7888d8-4638-48fc-8472-a3c30b14161f",
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs."
+    },
+    {
+      "id": "457ec619-22c8-47f8-98a1-b94f44727972",
+      "label": "catalog-02",
+      "sessionKey": "agent:main:shop-catalog-457ec619-22c8-47f8-98a1-b94f44727972",
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs."
+    },
+    {
+      "id": "99a7e323-7221-4f00-a765-9c0abdf7a958",
+      "label": "catalog-03",
+      "sessionKey": "agent:main:shop-catalog-99a7e323-7221-4f00-a765-9c0abdf7a958",
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs."
+    },
+    {
+      "id": "328df6f8-ba17-475f-8a5b-fde9234d3dbc",
+      "label": "catalog-04",
+      "sessionKey": "agent:main:shop-catalog-328df6f8-ba17-475f-8a5b-fde9234d3dbc",
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs."
+    },
+    {
+      "id": "158fb796-6700-43a1-8936-05f82bd7cfca",
+      "label": "catalog-05",
+      "sessionKey": "agent:main:shop-catalog-158fb796-6700-43a1-8936-05f82bd7cfca",
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs."
+    },
+    {
+      "id": "59379c0e-5109-40ca-abd9-965672d1a759",
+      "label": "catalog-06",
+      "sessionKey": "agent:main:shop-catalog-59379c0e-5109-40ca-abd9-965672d1a759",
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs."
+    },
+    {
+      "id": "c27d982f-5747-4dcb-bcff-6f776be26edc",
+      "label": "catalog-07",
+      "sessionKey": "agent:main:shop-catalog-c27d982f-5747-4dcb-bcff-6f776be26edc",
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs."
+    },
+    {
+      "id": "247e9ee4-012d-4535-8421-581ebd3aac09",
+      "label": "catalog-08",
+      "sessionKey": "agent:main:shop-catalog-247e9ee4-012d-4535-8421-581ebd3aac09",
+      "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+      "thinking": "low",
+      "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs."
+    }
+  ]
+}

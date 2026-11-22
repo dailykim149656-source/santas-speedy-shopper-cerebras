@@ -1,0 +1,40 @@
+[
+  {
+    "at_ms": 1795352170338,
+    "method": "POST",
+    "path": "/v1/chat/completions",
+    "relay_sha256": "1d6a3b1daf82f386b62ad0207854b741f8596408a4ec6033397c75ec51f98c14",
+    "received_sha256": "8940220b20de613a288f361e6edba9c720e0f4d2d020107e04dcf0e73b02724d",
+    "nonce": "4743db14",
+    "run_id": "4743db14-b132-45f7-a6be-38c772882920",
+    "phase": "passthrough",
+    "changes": [],
+    "forwarded_sha256": "8940220b20de613a288f361e6edba9c720e0f4d2d020107e04dcf0e73b02724d",
+    "attempts": [
+      {
+        "status": 429,
+        "at_ms": 1795352170637,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795352172362,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      },
+      {
+        "status": 429,
+        "at_ms": 1795352174579,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      }
+    ],
+    "status": 200,
+    "upstream_ms": 8837.920500000007,
+    "response_sha256": "f319ce00b748cb0239093c19057ebd592c20912b6a4dcc8acee470dc2adba589",
+    "response_bytes": 17635,
+    "timing": {
+      "completion_time": 0.306377149,
+      "completion_tokens": 182,
+      "prompt_tokens": 2803
+    }
+  }
+]

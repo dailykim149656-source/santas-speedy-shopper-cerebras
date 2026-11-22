@@ -1,0 +1,208 @@
+{
+  "id": "6447b8e8-e47e-4399-ae19-edc89c8abd14",
+  "label": "catalog-04",
+  "sessionKey": "agent:main:shop-catalog-6447b8e8-e47e-4399-ae19-edc89c8abd14",
+  "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+  "thinking": "low",
+  "prompt": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs.",
+  "startedWall": 1795358781766,
+  "sentAt": 1795358782502,
+  "waitStatus": "error",
+  "endedAt": 1795358783554,
+  "history": {
+    "sessionKey": "agent:main:shop-catalog-6447b8e8-e47e-4399-ae19-edc89c8abd14",
+    "sessionId": "7df66cf2-564a-4985-b0cb-63ac45e5257a",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Find five Christmas gifts that ship to the US. Search the live catalog once for Christmas gifts. Give five Markdown links using the exact product titles and URLs.",
+        "timestamp": 1795358782521,
+        "idempotencyKey": "6447b8e8-e47e-4399-ae19-edc89c8abd14:user",
+        "__openclaw": {
+          "senderIsOwner": true,
+          "transport": {
+            "clients": [
+              {
+                "id": "cli",
+                "mode": "cli"
+              }
+            ]
+          },
+          "id": "156e8ad5-b6b2-4a47-a5ac-77258b45e62d",
+          "idempotencyKey": "6447b8e8-e47e-4399-ae19-edc89c8abd14:user",
+          "recordTimestampMs": 1795358782807,
+          "transcriptPosition": {
+            "source": "L9L57DQuMc2Dnt0UaqRvhXgFiWP2TMOgStxecUuLOW0",
+            "rawSeq": 1
+          },
+          "seq": 1
+        }
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+          }
+        ],
+        "api": "openai-completions",
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "usage": {
+          "input": 0,
+          "output": 0,
+          "totalTokens": 0,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "total": 0
+          }
+        },
+        "stopReason": "error",
+        "timestamp": 1795358783093,
+        "idempotencyKey": "6447b8e8-e47e-4399-ae19-edc89c8abd14:terminal-error",
+        "__openclaw": {
+          "runId": "6447b8e8-e47e-4399-ae19-edc89c8abd14",
+          "id": "d7e53254-ef28-4846-9207-491e3d0d0ae7",
+          "idempotencyKey": "6447b8e8-e47e-4399-ae19-edc89c8abd14:terminal-error",
+          "recordTimestampMs": 1795358783507,
+          "transcriptPosition": {
+            "source": "L9L57DQuMc2Dnt0UaqRvhXgFiWP2TMOgStxecUuLOW0",
+            "rawSeq": 4
+          },
+          "seq": 2
+        }
+      }
+    ],
+    "hasMore": false,
+    "totalMessages": 2,
+    "pendingInputs": {
+      "items": [],
+      "total": 0,
+      "queuedCount": 0
+    },
+    "defaults": {
+      "modelProvider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "contextTokens": null,
+      "agentRuntime": {
+        "id": "auto",
+        "cloudPlacementSupported": false,
+        "devicePlacementSupported": false,
+        "source": "implicit"
+      },
+      "thinkingDefault": "low",
+      "modelSelectionTarget": "session"
+    },
+    "sessionInfo": {
+      "key": "agent:main:shop-catalog-6447b8e8-e47e-4399-ae19-edc89c8abd14",
+      "sessionModelRevision": "a-i4dxVGxe6EvigHWwlW7u8wGgwZGdGhBrrVk1VWjMw",
+      "visibility": "shared",
+      "permissionModePending": false,
+      "spawnDepth": 0,
+      "createdVia": "operator",
+      "participants": [
+        {
+          "identity": {
+            "type": "observation",
+            "pluginId": null,
+            "accountId": null,
+            "senderKind": "unknown",
+            "id": "cli"
+          }
+        }
+      ],
+      "expandedParticipants": [
+        {
+          "identity": {
+            "type": "observation",
+            "pluginId": null,
+            "accountId": null,
+            "senderKind": "unknown",
+            "id": "cli"
+          }
+        }
+      ],
+      "participantCount": 1,
+      "createdAt": 1795358781826,
+      "kind": "direct",
+      "classification": "direct",
+      "agentId": "main",
+      "isMain": false,
+      "isDock": false,
+      "isBackground": false,
+      "chatType": "direct",
+      "updatedAt": 1795358783532,
+      "archived": false,
+      "pinned": false,
+      "unread": true,
+      "lastInteractionAt": 1795358782614,
+      "lastActivityAt": 1795358783517,
+      "sessionId": "7df66cf2-564a-4985-b0cb-63ac45e5257a",
+      "lifecycleRevision": "a83f4e72-a2dd-46d7-b5c7-97d33eb79fad",
+      "systemSent": true,
+      "abortedLastRun": false,
+      "thinkingLevel": "low",
+      "thinkingDefault": "low",
+      "effectiveFastMode": false,
+      "effectiveFastModeSource": "default",
+      "fastAutoOnSeconds": 60,
+      "totalTokensFresh": false,
+      "status": "failed",
+      "startedAt": 1795358783089,
+      "endedAt": 1795358783517,
+      "runtimeMs": 428,
+      "lastRunError": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+      "lastRunId": "6447b8e8-e47e-4399-ae19-edc89c8abd14",
+      "parentSessionKey": "agent:main:main",
+      "effectiveResponseUsage": "off",
+      "effectiveQueueMode": "steer",
+      "modelProvider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "modelOverrideSource": "user",
+      "runtimeSelectionLocked": false,
+      "agentRuntime": {
+        "id": "openclaw",
+        "cloudPlacementSupported": true,
+        "cloudPlacementExecutionMode": "worker-turn",
+        "devicePlacement": {
+          "requiredNodeCommands": [],
+          "consumesWorkerSlot": true
+        },
+        "devicePlacementSupported": true,
+        "source": "implicit"
+      },
+      "contextTokens": 128000,
+      "snapshotAt": 1795358783564,
+      "placement": {
+        "state": "local",
+        "generation": 0,
+        "createdAtMs": 1795358782851,
+        "updatedAtMs": 1795358783479,
+        "stateChangedAtMs": 1795358782851
+      },
+      "activitySummary": {
+        "state": "unavailable",
+        "canEnsure": true
+      },
+      "hasBoard": false,
+      "childOwnerSessionKeys": [
+        "agent:main:main"
+      ],
+      "sharingRole": "admin",
+      "sendDisabledReason": null,
+      "hasActiveRun": false,
+      "activeRunIds": [],
+      "activeLeafEntryId": "d7e53254-ef28-4846-9207-491e3d0d0ae7"
+    },
+    "thinkingLevel": "low"
+  },
+  "wallSeconds": 1.052,
+  "official": null,
+  "officialDisplay": null
+}

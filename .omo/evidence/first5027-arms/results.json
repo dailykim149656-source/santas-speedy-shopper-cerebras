@@ -1,0 +1,227 @@
+{
+  "invocation": "python3 .omo/evidence/first5027-arms/verify.py",
+  "binary_observable": "exit 0 and every checks[].passed true",
+  "raw_path": "~/Library/Application Support/Cerebras Speed Bounty/2026-11-22/raw-test/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77.json",
+  "raw_sha256": "8cdf2286dfa1328dfa5f1107964694f188b27e21a3c0c4a706a0468441399265",
+  "scope": "Offline method/config verification. Historical independent product GET records are fixtures; source validity, arguments, raw binding and all server metrics are recomputed. No current product availability or provider performance claim.",
+  "checks": [
+    {
+      "scenario": "original raw SHA256 matches committed evidence and validation",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "original raw size matches committed evidence",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "original raw source checks and full score recomputed offline",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "actual D5027 passes first5027 method",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "original baseline prompt byte parity",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "original baseline workspace byte parity",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "synth-five-categories-cap: method positive and full validation unmodified",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "synth-five-categories-cap: exact settings and arm registration",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "synth-five-categories-cap: exact URL/category order and argument keys",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "first5027-extract-text: method positive and full validation unmodified",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "first5027-extract-text: exact settings and arm registration",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "first5027-extract-text: exact URL/category order and argument keys",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "first5027-defer-answer: method positive and full validation unmodified",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "first5027-defer-answer: exact settings and arm registration",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "first5027-defer-answer: exact URL/category order and argument keys",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "C changes only the specified conditional workspace line and preserves A prompt",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "B changes only the five argument objects",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "B rejects actual maxChars option",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "B rejects planned maxChars option",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "C rejects vca final category",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "C rejects missing conditional instruction",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject wrong run binding",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject measured response mismatch",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject measured tokens mismatch",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject reordered tool calls",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject invalid source",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject cached source",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject invalid product verification",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject product binding mismatch",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "reject final answer mismatch",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "earlier measured assistant before five-call batch: full validator and legacy method pass",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "earlier measured assistant before five-call batch: first-response check",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "scenario": "earlier measured assistant before five-call batch: all three measurements remain in mean",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "additional measured assistant after tool results: full validator and legacy method pass",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "additional measured assistant after tool results: first-response check",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "scenario": "additional measured assistant after tool results: all three measurements remain in mean",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "passed": 36,
+  "failed": 0
+}

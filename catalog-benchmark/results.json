@@ -1,0 +1,871 @@
+{
+  "trials": [
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-01.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358739043,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "2dfc08f3-1114-4312-a544-f314b0944aed",
+      "label": "catalog-01",
+      "sessionKey": "agent:main:shop-catalog-2dfc08f3-1114-4312-a544-f314b0944aed",
+      "sha256": "7fbf8c9fd59d896363d4f49daf828f19a823c6de813ba91aab7cccf9a063a2cf",
+      "wall_seconds": 7.823,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-02.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358754729,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "e2d378d0-d5f7-4213-b9dd-3c6213a65550",
+      "label": "catalog-02",
+      "sessionKey": "agent:main:shop-catalog-e2d378d0-d5f7-4213-b9dd-3c6213a65550",
+      "sha256": "7493ef53bfa15c5122a987e1f79701dbe62b9c1149c6c3e177a57a2a390eee3f",
+      "wall_seconds": 1.386,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-03.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358769106,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "bb7d014f-8098-4f82-af8e-c0be61727286",
+      "label": "catalog-03",
+      "sessionKey": "agent:main:shop-catalog-bb7d014f-8098-4f82-af8e-c0be61727286",
+      "sha256": "703c294340f74d3666564a4757f734b9a78e8f16d3ab81fa57836fb52a814f83",
+      "wall_seconds": 1.51,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-04.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358783093,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "6447b8e8-e47e-4399-ae19-edc89c8abd14",
+      "label": "catalog-04",
+      "sessionKey": "agent:main:shop-catalog-6447b8e8-e47e-4399-ae19-edc89c8abd14",
+      "sha256": "66c4b74963726f03222c38cc7ff6530f35a38501d112f5d4f2ead6894cf1a0fb",
+      "wall_seconds": 1.052,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-05.json",
+      "errors": [],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": "chatcmpl-0bc60caf-a627-488a-b3f5-7506ce37ae5f",
+          "stopReason": "toolUse",
+          "timestamp": 1795358796289,
+          "outputTokens": 106,
+          "completionMs": 171.513949,
+          "tps": 618.0255344712517
+        },
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": "chatcmpl-996c6bff-bb6e-4bcf-9b30-cba4c2a165eb",
+          "stopReason": "stop",
+          "timestamp": 1795358802256,
+          "outputTokens": 288,
+          "completionMs": 229.461325,
+          "tps": 1255.1134706469597
+        }
+      ],
+      "products": [
+        {
+          "title": "Snowflake Cocoa Christmas Gift Basket for Women — Cozy Blanket & Holiday Socks",
+          "url": "https://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914"
+        },
+        {
+          "title": "Christmas Cheer Gift Box with Cozy Seasonal Treats",
+          "url": "https://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961"
+        },
+        {
+          "title": "Cozy Christmas Gift Box with a Festive Mug & Sweet Treats",
+          "url": "https://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711"
+        },
+        {
+          "title": "Luxury Christmas Spa Gift Basket | Handmade Lavender Holiday Set",
+          "url": "https://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825"
+        },
+        {
+          "title": "The Very Merry Hamper",
+          "url": "https://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172"
+        }
+      ],
+      "final_links": [
+        "https://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914",
+        "https://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961",
+        "https://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711",
+        "https://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825",
+        "https://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172"
+      ],
+      "id": "df678ccd-a24b-48e3-97f0-11369e15077b",
+      "label": "catalog-05",
+      "sessionKey": "agent:main:shop-catalog-df678ccd-a24b-48e3-97f0-11369e15077b",
+      "sha256": "470b1ac10bba55256afb43d92e3714dbca266d4edaa6098e5fbd1216426c7ba5",
+      "wall_seconds": 49.602,
+      "wait_status": "ok",
+      "official": {
+        "meanTokensPerSecond": 936.5695025591058,
+        "p90TokensPerSecond": 1255.1134706469597,
+        "outputTokens": 394,
+        "generationMs": 400.975274,
+        "calls": 2
+      },
+      "official_display": "937",
+      "mean_tps": 936.5695025591058,
+      "ui_tps": 937,
+      "p90_tps": 1255.1134706469597,
+      "tool": {
+        "id": "5c00c9a15",
+        "name": "search_catalog",
+        "arguments": {
+          "query": "Christmas gifts"
+        }
+      },
+      "receipt_source": "toolResult.content + plugin receipt",
+      "catalog_receipt": {
+        "httpStatus": 200,
+        "requestCount": 1,
+        "callId": "5c00c9a15",
+        "startedMs": 1795358800375,
+        "completedMs": 1795358802188,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "query": "Christmas gifts",
+        "returnedProductCount": 20,
+        "responseSha256": "f764588001aed51bac722e540862238726ec2e23cda0334f55f9b74980783bc5"
+      },
+      "structure_valid": true,
+      "pages": [
+        {
+          "url": "https://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.605951+00:00",
+          "http": 200,
+          "final_url": "https://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914",
+          "title": "Christmas Gift Basket for Woman | Basketful Gifts",
+          "og_type": "product",
+          "product_schema": true
+        },
+        {
+          "url": "https://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.607530+00:00",
+          "http": 200,
+          "final_url": "https://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961",
+          "title": "Christmas Cheer Gift Box with Cozy Seasonal Treats",
+          "og_type": "product",
+          "product_schema": true
+        },
+        {
+          "url": "https://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.607098+00:00",
+          "http": 200,
+          "final_url": "https://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711",
+          "title": "Cozy Christmas Gift Box with Treats | Christmas Gift Basket",
+          "og_type": "product",
+          "product_schema": true
+        },
+        {
+          "url": "https://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.607858+00:00",
+          "http": 200,
+          "final_url": "https://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825",
+          "title": "Luxury Christmas Spa Gift Basket | Handmade Lavender Holiday Set",
+          "og_type": "product",
+          "product_schema": true
+        },
+        {
+          "url": "https://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.607319+00:00",
+          "http": 200,
+          "final_url": "https://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172",
+          "title": "The Very Merry Hamper",
+          "og_type": "product",
+          "product_schema": true
+        }
+      ],
+      "valid": true,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-06.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358859107,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "d38b695b-c12a-4f24-bf01-375fc2e33ffb",
+      "label": "catalog-06",
+      "sessionKey": "agent:main:shop-catalog-d38b695b-c12a-4f24-bf01-375fc2e33ffb",
+      "sha256": "698b8d60ff1e48147990b38306f89f5a7ce0638a777593ef2888701af6cfdba9",
+      "wall_seconds": 2.458,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-07.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358872616,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "574ceb21-f9b7-43ac-9b41-4f242ecc26b7",
+      "label": "catalog-07",
+      "sessionKey": "agent:main:shop-catalog-574ceb21-f9b7-43ac-9b41-4f242ecc26b7",
+      "sha256": "4c27cd5567c0b3ff84f7ba2816bca5b840b626158dae75701f9b80dceefefd0d",
+      "wall_seconds": 1.015,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-08.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358885674,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "caabaf17-7b79-4fc1-a0d9-6b051446c871",
+      "label": "catalog-08",
+      "sessionKey": "agent:main:shop-catalog-caabaf17-7b79-4fc1-a0d9-6b051446c871",
+      "sha256": "282c3825ebf96c4066cad3aaccfe9454413c57cdf5d38839aaa643824ecd611b",
+      "wall_seconds": 0.89,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-09.json",
+      "errors": [
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "unexpected assistant call IDs or stop reasons",
+        "five displayed links did not match catalog products"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": "chatcmpl-fb7480aa-5def-41d7-b4ac-7aa59a1b84f6",
+          "stopReason": "toolUse",
+          "timestamp": 1795358898863,
+          "outputTokens": 101,
+          "completionMs": 272.035324,
+          "tps": 371.27531276048546
+        },
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358922781,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [
+        {
+          "title": "Snowflake Cocoa Christmas Gift Basket for Women — Cozy Blanket & Holiday Socks",
+          "url": "https://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914"
+        },
+        {
+          "title": "Christmas Cheer Gift Box with Cozy Seasonal Treats",
+          "url": "https://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961"
+        },
+        {
+          "title": "Cozy Christmas Gift Box with a Festive Mug & Sweet Treats",
+          "url": "https://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711"
+        },
+        {
+          "title": "Luxury Christmas Spa Gift Basket | Handmade Lavender Holiday Set",
+          "url": "https://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825"
+        },
+        {
+          "title": "The Very Merry Hamper",
+          "url": "https://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172"
+        }
+      ],
+      "final_links": [],
+      "id": "4bc16864-0561-407b-b021-0c8eda00540d",
+      "label": "catalog-09",
+      "sessionKey": "agent:main:shop-catalog-4bc16864-0561-407b-b021-0c8eda00540d",
+      "sha256": "af517814ead7247eb8db2eebf7c57d2aec0511de4de89ce3d9bf64cbd718da69",
+      "wall_seconds": 24.954,
+      "wait_status": "error",
+      "official": {
+        "meanTokensPerSecond": 371.27531276048546,
+        "p90TokensPerSecond": 371.27531276048546,
+        "outputTokens": 101,
+        "generationMs": 272.035324,
+        "calls": 1
+      },
+      "official_display": "371",
+      "mean_tps": 371.27531276048546,
+      "ui_tps": 371,
+      "p90_tps": 371.27531276048546,
+      "tool": {
+        "id": "57c6e3cb1",
+        "name": "search_catalog",
+        "arguments": {
+          "query": "Christmas gifts"
+        }
+      },
+      "receipt_source": "toolResult.content + plugin receipt",
+      "catalog_receipt": {
+        "httpStatus": 200,
+        "requestCount": 1,
+        "callId": "57c6e3cb1",
+        "startedMs": 1795358921208,
+        "completedMs": 1795358922740,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "query": "Christmas gifts",
+        "returnedProductCount": 20,
+        "responseSha256": "c348f4bdecac40dd64ec8e5d60acbe8e450ff7e7f7da729e7cf36f6ac09f6df5"
+      },
+      "structure_valid": false,
+      "pages": [
+        {
+          "url": "https://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.605951+00:00",
+          "http": 200,
+          "final_url": "https://basketfulgifts.com/products/christmas-gift-basket-for-woman?variant=43644435791914",
+          "title": "Christmas Gift Basket for Woman | Basketful Gifts",
+          "og_type": "product",
+          "product_schema": true
+        },
+        {
+          "url": "https://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.607530+00:00",
+          "http": 200,
+          "final_url": "https://happyhyggegifts.com/products/christmas-cheer-gift-box-cozy-ivory-blanket-nordic-socks-peppermint-chocolate-seasonal-decor?variant=45713731059961",
+          "title": "Christmas Cheer Gift Box with Cozy Seasonal Treats",
+          "og_type": "product",
+          "product_schema": true
+        },
+        {
+          "url": "https://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.607098+00:00",
+          "http": 200,
+          "final_url": "https://gifterria.us/products/holiday-gift-box-christmas-mug-set-with-chocolates-towel-and-festive-decor?variant=62540705431711",
+          "title": "Cozy Christmas Gift Box with Treats | Christmas Gift Basket",
+          "og_type": "product",
+          "product_schema": true
+        },
+        {
+          "url": "https://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.607858+00:00",
+          "http": 200,
+          "final_url": "https://sandandseabyashley.com/products/luxury-merry-christmas-spa-gift-baskets-for-holidays?variant=41291048943825",
+          "title": "Luxury Christmas Spa Gift Basket | Handmade Lavender Holiday Set",
+          "og_type": "product",
+          "product_schema": true
+        },
+        {
+          "url": "https://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172",
+          "verified": true,
+          "checked_at": "2026-11-22T14:49:07.607319+00:00",
+          "http": 200,
+          "final_url": "https://hampersandco.com/products/the-very-merry-christmas-hamper?variant=54810935886172",
+          "title": "The Very Merry Hamper",
+          "og_type": "product",
+          "product_schema": true
+        }
+      ],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-01/catalog-10.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358936004,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "312de48f-6362-444d-87dd-6fbc1fe483f4",
+      "label": "catalog-10",
+      "sessionKey": "agent:main:shop-catalog-312de48f-6362-444d-87dd-6fbc1fe483f4",
+      "sha256": "17fc1ffc7107ca29e3eb82075c1430ce93e895c5e313b3d999878663d8279e2a",
+      "wall_seconds": 1.011,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-02/catalog-01.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795358951796,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "0f7888d8-4638-48fc-8472-a3c30b14161f",
+      "label": "catalog-01",
+      "sessionKey": "agent:main:shop-catalog-0f7888d8-4638-48fc-8472-a3c30b14161f",
+      "sha256": "beda9804b741fae8bda1b667b2d98ce49487d06e8cd869697b3d4a7fdd72ffd1",
+      "wall_seconds": 0.956,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-02/catalog-02.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795359013415,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "457ec619-22c8-47f8-98a1-b94f44727972",
+      "label": "catalog-02",
+      "sessionKey": "agent:main:shop-catalog-457ec619-22c8-47f8-98a1-b94f44727972",
+      "sha256": "175a2d2285ac5a7bdb87e25368257d1389163bb766dc5bce5e1bb6f13510d917",
+      "wall_seconds": 2.149,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-02/catalog-03.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795359075185,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "99a7e323-7221-4f00-a765-9c0abdf7a958",
+      "label": "catalog-03",
+      "sessionKey": "agent:main:shop-catalog-99a7e323-7221-4f00-a765-9c0abdf7a958",
+      "sha256": "e8f95f914438748f28f9da9985fdf1c3d7a082b850f146548315cc86635e7a1b",
+      "wall_seconds": 0.813,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-02/catalog-04.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795359137432,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "328df6f8-ba17-475f-8a5b-fde9234d3dbc",
+      "label": "catalog-04",
+      "sessionKey": "agent:main:shop-catalog-328df6f8-ba17-475f-8a5b-fde9234d3dbc",
+      "sha256": "39f6c3d5de9fc27b8d43139f6d0425e895ffbbb09dae2d3845719ecba7c3a63d",
+      "wall_seconds": 1.882,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-02/catalog-05.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795359198505,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "158fb796-6700-43a1-8936-05f82bd7cfca",
+      "label": "catalog-05",
+      "sessionKey": "agent:main:shop-catalog-158fb796-6700-43a1-8936-05f82bd7cfca",
+      "sha256": "a2e36a36f9511e0dbb52f0e6e750f53a854b5d41698d84877d4191003863652c",
+      "wall_seconds": 0.935,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-02/catalog-06.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795359259436,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "59379c0e-5109-40ca-abd9-965672d1a759",
+      "label": "catalog-06",
+      "sessionKey": "agent:main:shop-catalog-59379c0e-5109-40ca-abd9-965672d1a759",
+      "sha256": "82c32d9d71292e1c230ecafb7dc63e075e61bfaeb7fac8b765adb820dd0e49c9",
+      "wall_seconds": 0.711,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    },
+    {
+      "path": "speed-bounty-evidence-test/catalog-benchmark/series-02/catalog-07.json",
+      "errors": [
+        "unexpected session roles ['user', 'assistant']",
+        "missing valid serverGeneration metrics",
+        "missing Cerebras Kimi identity or response ID",
+        "expected exactly two assistant calls"
+      ],
+      "calls": [
+        {
+          "provider": "cerebras",
+          "model": "moonshotai-kimi-k3.1-pro-trial",
+          "responseId": null,
+          "stopReason": "error",
+          "timestamp": 1795359320452,
+          "outputTokens": null,
+          "completionMs": null,
+          "tps": null,
+          "error": "⚠️ The AI service needs a short break. Please try again in a few minutes."
+        }
+      ],
+      "products": [],
+      "final_links": [],
+      "id": "c27d982f-5747-4dcb-bcff-6f776be26edc",
+      "label": "catalog-07",
+      "sessionKey": "agent:main:shop-catalog-c27d982f-5747-4dcb-bcff-6f776be26edc",
+      "sha256": "57d6c3472e2a62ebba623e3651c789be6f565748fa137ae54eab79a70b837f69",
+      "wall_seconds": 0.9,
+      "wait_status": "error",
+      "official": null,
+      "official_display": null,
+      "structure_valid": false,
+      "pages": [],
+      "valid": false,
+      "exceeds_raw_target": false,
+      "exceeds_ui_target": false
+    }
+  ],
+  "summary": {
+    "attempts": 17,
+    "planned": 18,
+    "unsent": [
+      "series-02/catalog-08"
+    ],
+    "structure_valid": 1,
+    "valid": 1,
+    "best_mean_tps": 936.5695025591058,
+    "mean_of_run_means": 936.5695025591058,
+    "median_of_run_means": 936.5695025591058,
+    "target": 1673,
+    "above_raw": 0,
+    "above_ui": 0,
+    "upstream_429_first_call": 15,
+    "upstream_429_final_call": 1,
+    "stop_reason": "Paused at user request while another experiment was using the inference service."
+  }
+}

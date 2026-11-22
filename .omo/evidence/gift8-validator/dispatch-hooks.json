@@ -1,0 +1,36 @@
+{
+  "scenario": "D5056 retry dispatch hooks separate from authentic recorded generations",
+  "invocations": [
+    "python3 .omo/evidence/gift8-validator/offline_check.py",
+    "gift8_evidence.validate(repo, original_D5056_raw, receipt_dir, manifest_path)",
+    "python3 -m py_compile tools/gift8_evidence.py"
+  ],
+  "binary_observables": {
+    "offline_passed": 43,
+    "live_valid": true,
+    "verified_products": 5,
+    "input_hooks": 8,
+    "recorded_generations": 2,
+    "mean_exact_tps": 719.1543693844054,
+    "original_raw_unchanged": true
+  },
+  "raw_sha256": "cc9ecaa5e42ca083176874aa704353e5fdafed1d46c8bf5c4ab9e08b408d7190",
+  "artifacts": [
+    "offline.log",
+    "results.json",
+    "D5056-live-validation.json",
+    "syntax.json"
+  ],
+  "native_source_evidence": [
+    "src/agents/embedded-agent-runner/run/attempt-prompt-support.ts:356-386 emits llm_input before submission without response identity",
+    "src/agents/embedded-agent-runner/run/attempt-normalization.ts:257-268 reconstructs mid-turn retry from current transcript"
+  ],
+  "negative_cases": [
+    "later foreign runId",
+    "later foreign provider",
+    "later foreign sessionId",
+    "first injected system suffix",
+    "first prior assistant history"
+  ],
+  "no_provider_retry_sent": true
+}
