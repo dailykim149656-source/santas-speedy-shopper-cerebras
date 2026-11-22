@@ -1,0 +1,16 @@
+{
+  "id": "167aaf78-f0ae-46cc-81e8-f03533c1229f",
+  "label": "D0014-recipient-guide",
+  "sessionKey": "agent:main:shop-d0014-recipient-guide-167aaf78",
+  "variant": "recipient-guide",
+  "thinking": "low",
+  "temperature": 0.2,
+  "prompt": "Build a Christmas gift guide for a hybrid team of bloggers and hardware hobbyists. Use web_fetch in parallel on both live merchant stock lists. Choose five different items across the shops. For each give a Markdown link with the exact merchant title, its listed price in the original currency, and one concrete recipient or use case supported by the item. Keep the guide easy to scan.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=6&stock_status=instock&_fields=name,permalink,prices,short_description&_run=167aaf78\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=6&stock_status=instock&_fields=name,permalink,prices,short_description&_run=167aaf78",
+  "experiment": "recipient-guide|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "10e4dfadbdf3068aa24265588dd34780133e12db34c7186ed22de851775efbb9",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "source_plan_commit": "c3877d0b51b7a78e1f3b5a68f7c60b010f4834ec",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
