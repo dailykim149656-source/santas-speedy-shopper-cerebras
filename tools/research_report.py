@@ -18,7 +18,7 @@ from validate import MARKDOWN_TOKEN, answer_links, merchant
 
 COMPARISONS = (
     ('판매처 1곳', (('WordPress','wordpress-links'),('AI Synthesis','synth-links'))),
-    ('빠른 판매처 최적화', (('상품 8개 · 링크','synth-links'),('상품 6개 · 링크','synth-links-six'),('상품 8개 · 표','synth-table'))),
+    ('빠른 판매처 최적화', (('상품 8개 · 링크','synth-links'),('상품 6개 · 링크','synth-links-six'),('상품 8개 · 표','synth-table'),('상품 8개 · 주소 직접 표시','synth-autolinks'))),
     ('AI Synthesis 지시 길이', (('기준','synth-links'),('짧은 지시','synth-links-brief'))),
     ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
@@ -30,6 +30,7 @@ COMPARISONS = (
     ('샘플링 top_p', (('0.80','source-order-top-p-080'),('0.45','source-order-top-p-045'))),
 )
 RUN_ID = re.compile(r'[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}')
+FORMAT_VARIANTS = ('research-table','research-prose','synth-table','synth-autolinks')
 
 
 def number(value):
@@ -109,6 +110,10 @@ def expected_format(text, variant):
     if misleading or len(set(urls)) != 5 or len(urls) != 5 or not all(merchant(url,product=True) for url in urls):
         return False
     lines = [line.strip() for line in text.splitlines() if line.strip()]
+    if variant == 'synth-autolinks':
+        return len(lines) == 5 and all(
+            re.fullmatch(rf'{number}\.\s+[^<>]+?\s+<{re.escape(url)}>',line)
+            for number,(line,url) in enumerate(zip(lines,urls),1))
     if variant in ('research-table','synth-table'):
         if len(lines) != 7:
             return False
@@ -202,6 +207,7 @@ def comparison_notes(groups):
         ('AI Synthesis · 온도 0.0 / 0.2', 'synth-links-temp-zero', 'synth-links'),
         ('AI Synthesis · 짧은 지시 / 기준 지시', 'synth-links-brief', 'synth-links'),
         ('AI Synthesis · 표 / 링크 목록', 'synth-table', 'synth-links'),
+        ('AI Synthesis · 주소 직접 표시 / 링크 목록', 'synth-autolinks', 'synth-links'),
         ('답변 형식 · 표 / 문장', 'research-table', 'research-prose'),
         ('가격 계산 · 소계 포함 / 가격만', 'research-price-total', 'research-prose'),
         ('카탈로그 · 판매처별 상품 4개 / 8개', 'paired-links-small', 'paired-links'),
@@ -211,14 +217,14 @@ def comparison_notes(groups):
     )
     def observations(variant):
         results = [record for _,record in groups[variant] if record and record['validation']['valid']]
-        if variant in ('research-table','research-prose','synth-table'):
+        if variant in FORMAT_VARIANTS:
             results = [r for r in results if expected_format(r['final_text'],variant)]
         if variant == 'research-price-total':
             results = [r for r in results if correct_subtotals(r) == 5]
         return [record['score']['mean_exact_tps'] for record in results]
 
     lines = ['## 조건별 관측 효과', '',
-             '아래 차이는 대조 조건의 공식 평균 중앙값 대비다. 표와 문장 실험은 요청 형식을 지킨 실행을, 소계 실험은 다섯 계산을 맞힌 실행을 사용한다. 두 조건에서 각각 유효 실행 3회가 쌓이면 반복 관측으로 표시한다.', '']
+             '아래 차이는 대조 조건의 공식 평균 중앙값 대비다. 답변 형식 비교는 요청 형식을 지킨 실행을, 소계 실험은 다섯 계산을 맞힌 실행을 사용한다. 두 조건에서 각각 유효 실행 3회가 쌓이면 반복 관측으로 표시한다.', '']
     for label, treatment, control in checks:
         lhs, rhs = observations(treatment), observations(control)
         counts = f'유효 {len(lhs)}/{len(rhs)}회'
