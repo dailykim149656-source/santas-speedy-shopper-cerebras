@@ -1,0 +1,18 @@
+{
+  "id": "42c3367c-5a08-4426-9f01-6e00796c9876",
+  "label": "D0020-source-order-max-2048",
+  "sessionKey": "agent:main:shop-d0020-source-order-max-2048-42c3367c",
+  "variant": "source-order-max-2048",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": 2048,
+  "prompt": "Prepare a five-item Christmas shopping list for a software club. Fetch both current retail catalogs with web_fetch. Choose five suitable gifts across both retailers. Group the five numbered Markdown links by retailer; within each group use the ordering shown in the catalog. Preserve each linked product title and destination exactly as listed.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=42c3367c\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink&_run=42c3367c",
+  "experiment": "source-order-max-2048|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "10e4dfadbdf3068aa24265588dd34780133e12db34c7186ed22de851775efbb9",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "source_plan_commit": "26d44997d1eddb4b38a0b6dc8393ccc05a8e004e",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
