@@ -4,9 +4,10 @@ Public commits are created at export time; use source plan mappings for original
 
 | Run | Displayed TPS | Verification | Media |
 | --- | ---: | --- | --- |
+| [D0016-source-order-compact](runs/6c9f5832-3022-472e-b5d6-78c22af41b84/evidence.json) | 541 | below_target | — |
 | [D0015-source-order](runs/ed6fe6a3-8b0c-4292-82bc-5460326c5c61/evidence.json) | 744 | below_target | — |
 | [D0014-recipient-guide](runs/167aaf78-f0ae-46cc-81e8-f03533c1229f/evidence.json) | 555 | below_target | — |
-| [D0013-source-order](runs/fc63223b-d2dd-4945-a67e-3a6c194b51b4/evidence.json) | 746 | below_target | — |
+| [D0013-source-order](runs/fc63223b-d2dd-4945-a67e-3a6c194b51b4/evidence.json) | 746 | below_target | [Post-run dashboard](review-assets/d0013-dashboard.png) |
 | [D0012-price-cards](runs/64348773-2f18-4418-bd83-24b67f6c5e49/evidence.json) | 571 | below_target | — |
 | [D0011-kit-comparison](runs/8f8816ec-eb8e-4989-bef1-3adf62cdce3e/evidence.json) | 502 | below_target | — |
 | [D0010-kit-comparison](runs/23db4545-9646-4616-8732-7c72b1f3e3bb/evidence.json) | 478 | rejected | — |
