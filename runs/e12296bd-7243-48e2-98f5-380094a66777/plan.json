@@ -1,0 +1,8 @@
+{
+  "id": "e12296bd-7243-48e2-98f5-380094a66777",
+  "label": "A1",
+  "sessionKey": "agent:main:shop-a1-d3c3c35c",
+  "prompt": "Santa's Speedy Shopper: find five distinct real Christmas gifts for people who enjoy technology. Use web_fetch on both of these live retail catalogs now. The responses contain current product names and links:\n\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=6&stock_status=instock&_fields=name,permalink&_run=e12296bd\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=6&stock_status=instock&_fields=name,permalink&_run=e12296bd\n\nPick gifts from both retailers. Return exactly five numbered Markdown links, each using the actual product name and its product-page URL from the tool response, followed by one short reason it makes a good gift. Use only items retrieved in this run.",
+  "source_plan_commit": "7c01d7847f31a1e459a0dfc2e580d2f0dfa10ddd",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
