@@ -1,0 +1,48 @@
+{
+  "observed": {
+    "D5029-synth-six-sorted": true,
+    "D5032-synth-six-sorted": true,
+    "D5035-synth-six-sorted": true
+  },
+  "fixtures": [
+    {
+      "id": "f4d93feb-36f0-41be-b33f-aa589a91f3ed",
+      "label": "D5029-synth-six-sorted",
+      "ended": {
+        "elapsedMs": 206759.379833,
+        "time": 1795336232788,
+        "terminal": "error",
+        "from": "chat event"
+      },
+      "provider_events": [
+        "2026-11-22T17:29:34.011+09:00 [agent/embedded] embedded run agent end: runId=f4d93feb-36f0-41be-b33f-aa589a91f3ed isError=true model=moonshotai-kimi-k3.1-pro-trial provider=cerebras error=\u26a0\ufe0f The AI service needs a short break. Please try again in a few minutes. rawError=429 We're experiencing high traffic right now! Please try again soon."
+      ]
+    },
+    {
+      "id": "3bab61ee-6ffc-45c8-81da-cf287c602d8c",
+      "label": "D5032-synth-six-sorted",
+      "ended": {
+        "elapsedMs": 197328.70120799998,
+        "time": 1795337541858,
+        "terminal": "error",
+        "from": "chat event"
+      },
+      "provider_events": [
+        "2026-11-22T17:52:17.934+09:00 [agent/embedded] embedded run agent end: runId=3bab61ee-6ffc-45c8-81da-cf287c602d8c isError=true model=moonshotai-kimi-k3.1-pro-trial provider=cerebras error=\u26a0\ufe0f The AI service needs a short break. Please try again in a few minutes. rawError=429 We're experiencing high traffic right now! Please try again soon."
+      ]
+    },
+    {
+      "id": "5b6df3be-fc37-4502-903a-e3aad322331e",
+      "label": "D5035-synth-six-sorted",
+      "ended": {
+        "elapsedMs": 150725.834041,
+        "time": 1795338458216,
+        "terminal": "error",
+        "from": "chat event"
+      },
+      "provider_events": [
+        "2026-11-22T18:07:37.962+09:00 [agent/embedded] embedded run agent end: runId=5b6df3be-fc37-4502-903a-e3aad322331e isError=true model=moonshotai-kimi-k3.1-pro-trial provider=cerebras error=\u26a0\ufe0f The AI service needs a short break. Please try again in a few minutes. rawError=429 We're experiencing high traffic right now! Please try again soon."
+      ]
+    }
+  ]
+}

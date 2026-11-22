@@ -1,0 +1,280 @@
+[
+  {
+    "argv": [
+      "git",
+      "init",
+      "${TMPDIR}/ledger-qa-8pbp7tf4"
+    ],
+    "returncode": 0,
+    "stdout": "Initialized empty Git repository in ${TMPDIR}/ledger-qa-8pbp7tf4/.git/\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "config",
+      "user.name",
+      "Ledger QA"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "config",
+      "user.email",
+      "ledger-qa@example.invalid"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "experiments/baseline/tools/ledger.py",
+      "plan",
+      "--repo",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "--plan",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/input-plan.json"
+    ],
+    "returncode": 0,
+    "stdout": "{\"commit\": \"5ecc9e303774729b1b0c2a10a32c798f4bf811f1\", \"status\": \"plan_committed\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "add",
+      "unrelated.txt"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "experiments/baseline/tools/ledger.py",
+      "finish",
+      "--repo",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "--raw",
+      "~/Library/Caches/cerebras-speed-bounty/2026-11-22/mean-2000/runs/D0001-native-links.json",
+      "--validation",
+      "/tmp/cerebras-2k-goal/initial-check.json",
+      "--historical"
+    ],
+    "returncode": 0,
+    "stdout": "{\"commit\": \"ffe9374d4b942dfd29f05a43c0ca626664b1f54e\", \"run_id\": \"1c80bfa3-26ab-4b14-a000-dce76ef510c5\", \"evidence_status\": \"below_threshold_recorded\", \"path\": \"${TMPDIR}/ledger-qa-8pbp7tf4/runs/1c80bfa3-26ab-4b14-a000-dce76ef510c5/evidence.json\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "experiments/baseline/tools/ledger.py",
+      "finish",
+      "--repo",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "--raw",
+      "~/Library/Caches/cerebras-speed-bounty/2026-11-22/mean-2000/runs/D0001-native-links.json",
+      "--validation",
+      "/tmp/cerebras-2k-goal/initial-check.json",
+      "--historical"
+    ],
+    "returncode": 0,
+    "stdout": "{\"commit\": \"ffe9374d4b942dfd29f05a43c0ca626664b1f54e\", \"run_id\": \"1c80bfa3-26ab-4b14-a000-dce76ef510c5\", \"evidence_status\": \"below_threshold_recorded\", \"path\": \"${TMPDIR}/ledger-qa-8pbp7tf4/runs/1c80bfa3-26ab-4b14-a000-dce76ef510c5/evidence.json\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "diff",
+      "--cached",
+      "--name-only"
+    ],
+    "returncode": 0,
+    "stdout": "unrelated.txt\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "experiments/baseline/tools/ledger.py",
+      "finish",
+      "--repo",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "--raw",
+      "~/Library/Caches/cerebras-speed-bounty/2026-11-22/mean-2000/runs/D0001-native-links.json",
+      "--validation",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/bad.json",
+      "--historical"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "{\"error\": \"ValueError\", \"message\": \"validation run identity or exact private raw SHA mismatch\"}\n"
+  },
+  {
+    "argv": [
+      "python3",
+      "experiments/baseline/tools/ledger.py",
+      "finish",
+      "--repo",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "--raw",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/high.json",
+      "--validation",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/high-validation.json",
+      "--historical"
+    ],
+    "returncode": 0,
+    "stdout": "{\"commit\": \"3cd582f3746fba732b6b2b8738581354f20779c7\", \"run_id\": \"synthetic-high\", \"evidence_status\": \"provisional_capture_required\", \"path\": \"${TMPDIR}/ledger-qa-8pbp7tf4/runs/synthetic-high/evidence.json\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-f",
+      "lavfi",
+      "-i",
+      "color=c=black:s=16x16:r=1",
+      "-t",
+      "1",
+      "-pix_fmt",
+      "yuv420p",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/media/original.mp4"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-i",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/media/original.mp4",
+      "-frames:v",
+      "1",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/media/final.png"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-y",
+      "-f",
+      "lavfi",
+      "-i",
+      "color=c=black:s=16x16:r=1",
+      "-t",
+      "61",
+      "-pix_fmt",
+      "yuv420p",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/media/demo.mp4"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "experiments/baseline/tools/ledger.py",
+      "finish",
+      "--repo",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "--raw",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/high.json",
+      "--validation",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/high-validation.json",
+      "--historical",
+      "--media-dir",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/media"
+    ],
+    "returncode": 0,
+    "stdout": "{\"commit\": \"d08392899d7e50ada4b2bb7afd7c90ba961e42fb\", \"run_id\": \"synthetic-high\", \"evidence_status\": \"provisional_capture_required\", \"path\": \"${TMPDIR}/ledger-qa-8pbp7tf4/runs/synthetic-high/evidence.json\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "experiments/baseline/tools/ledger.py",
+      "finish",
+      "--repo",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "--raw",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/high.json",
+      "--validation",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/high-validation.json",
+      "--historical",
+      "--media-dir",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/media"
+    ],
+    "returncode": 0,
+    "stdout": "{\"commit\": \"57021b80e3052e98031623a1fe1616d7535dfa61\", \"run_id\": \"synthetic-high\", \"evidence_status\": \"complete\", \"path\": \"${TMPDIR}/ledger-qa-8pbp7tf4/runs/synthetic-high/evidence.json\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "python3",
+      "experiments/baseline/tools/ledger.py",
+      "finish",
+      "--repo",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "--raw",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/failed.json",
+      "--validation",
+      "${TMPDIR}/ledger-qa-8pbp7tf4/failed-validation.json",
+      "--historical"
+    ],
+    "returncode": 0,
+    "stdout": "{\"commit\": \"695536da66161f43699c0bb736c76b83143d1510\", \"run_id\": \"synthetic-failed\", \"evidence_status\": \"unscored_failed_run\", \"path\": \"${TMPDIR}/ledger-qa-8pbp7tf4/runs/synthetic-failed/evidence.json\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "fsck",
+      "--full"
+    ],
+    "returncode": 0,
+    "stdout": "dangling tree 007f22e451bb399957ba76cf7da3562277f7782a\ndangling tree 030d26f328d5d073db019a4d2b0acc058ecedf98\ndangling tree 19c22c3353725c17cc1ed825b93bd9b0e9bdbfd9\ndangling tree 22dd660b51314c7102d5808d2a3b3dfb4ff018d4\ndangling tree 27b9e1e628e19c948a630d9b282ccc82c73e08a9\ndangling tree 5b9ce1172685d9d41526d5b7573770998bed1d49\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "git",
+      "-C",
+      "${TMPDIR}/ledger-qa-8pbp7tf4",
+      "ls-tree",
+      "-r",
+      "--name-only",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "runs/1c80bfa3-26ab-4b14-a000-dce76ef510c5/evidence.json\nruns/1c80bfa3-26ab-4b14-a000-dce76ef510c5/plan.json\nruns/synthetic-failed/evidence.json\nruns/synthetic-failed/plan.json\nruns/synthetic-high/demo.mp4\nruns/synthetic-high/evidence.json\nruns/synthetic-high/final.png\nruns/synthetic-high/original.mp4\nruns/synthetic-high/plan.json\n",
+    "stderr": ""
+  }
+]

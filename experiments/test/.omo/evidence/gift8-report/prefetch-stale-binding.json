@@ -1,0 +1,140 @@
+{
+  "id": "45673565-026b-555a-a4f3-772a7caf382f",
+  "label": "D5052-gift8-prefetch",
+  "arm": "B",
+  "variant": "gift8-prefetch",
+  "valid": false,
+  "method_valid": true,
+  "score": 1200.0,
+  "ui": 1200,
+  "first_tps": 1000.0,
+  "final_tps": 1400.0,
+  "call_count": 2,
+  "started_wall": 1700000060000,
+  "ended_wall": 1700000070000,
+  "terminal_429": false,
+  "product_urls": [
+    "https://aisynthesis.com/product/fixture-21951/",
+    "https://aisynthesis.com/product/fixture-23345/",
+    "https://aisynthesis.com/product/fixture-11125/",
+    "https://aisynthesis.com/product/fixture-11141/",
+    "https://aisynthesis.com/product/fixture-20209/"
+  ],
+  "rejection": [],
+  "audit_errors": [
+    "prefetch follow-up call preceded first model input"
+  ],
+  "reported_valid": true,
+  "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+  "calls": [
+    {
+      "message_index": 0,
+      "response_id": "fixture-B-extra",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "completionMs": 1000,
+        "outputTokens": 1000
+      },
+      "timed_sample": true,
+      "outputTokens": 1000,
+      "completionMs": 1000,
+      "tokensPerSecond": 1000.0
+    },
+    {
+      "message_index": 6,
+      "response_id": "response-0",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "stop",
+      "serverGeneration": {
+        "completionMs": 1000,
+        "outputTokens": 1400
+      },
+      "timed_sample": true,
+      "outputTokens": 1400,
+      "completionMs": 1000,
+      "tokensPerSecond": 1400.0
+    }
+  ],
+  "score_details": {
+    "mean_exact_tps": 1200.0,
+    "ui_rounded_tps": 1200,
+    "ui_display": "1,200",
+    "call_count": 2,
+    "assistant_call_count": 2,
+    "output_tokens": 2400,
+    "generation_ms": 2000,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+  },
+  "method_reasons": [],
+  "actual_generation_count": 2,
+  "expected_generation_count": 1,
+  "native_tool_call_count": 5,
+  "structure_expected": false,
+  "followup_call_receipts": [
+    {
+      "file": "0d24708c05293882525456e634d46cb32bd6420f76567932882ae1a0bbab151c.json",
+      "sha256": "e6fa3a0820374d35dbe46b1f994e7185e9484fe875678ba248f46aa6f418312c",
+      "id": "45673565-026b-555a-a4f3-772a7caf382f",
+      "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+      "arm": "prefetch",
+      "product_id": 21951,
+      "tool_call_id": "extra-21951",
+      "receipt_file": "fetch-21951.json",
+      "card_sha256": "e97cd86a61f58ce20098e086d5b12c9029e0ebc34a75de0f4bb74afe8b2c61e4",
+      "timestamp_ms": 1700000060175
+    },
+    {
+      "file": "e34c55c91f696e71fa31bda1e722874cc70be77ab41f85383ef84c13ea0a3e8f.json",
+      "sha256": "27dc3669ef9fba43c40ec64286775b8d80d321b7dd0ada1217b78f4e8105d2e0",
+      "id": "45673565-026b-555a-a4f3-772a7caf382f",
+      "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+      "arm": "prefetch",
+      "product_id": 23345,
+      "tool_call_id": "extra-23345",
+      "receipt_file": "fetch-23345.json",
+      "card_sha256": "9730e4137cb20e17c2437340568e291db9bd1966190ad9021245f9bf365d1ad1",
+      "timestamp_ms": 1700000060300
+    },
+    {
+      "file": "67547e2fe6799ce285c101265f0d66cc1dcd3e965c1e38cb741f430b4da27b0b.json",
+      "sha256": "aaa9e8ba8c8fd2aad70c1e4108b3522555b650dd071ba4d83311fbe4dd7d4593",
+      "id": "45673565-026b-555a-a4f3-772a7caf382f",
+      "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+      "arm": "prefetch",
+      "product_id": 11125,
+      "tool_call_id": "extra-11125",
+      "receipt_file": "fetch-11125.json",
+      "card_sha256": "c4fa3de08c07b9681990e806a3e03cd9d5afffeee41017c492e03f77d26dbfd5",
+      "timestamp_ms": 1700000060300
+    },
+    {
+      "file": "728c064ea3a55f7210c33142085f11a50f24453911a61b1602dde5ed31a2849b.json",
+      "sha256": "d371a1a2e8903b1afde945dd72f08d77b870405a8064b92250e73b1d9f69705a",
+      "id": "45673565-026b-555a-a4f3-772a7caf382f",
+      "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+      "arm": "prefetch",
+      "product_id": 11141,
+      "tool_call_id": "extra-11141",
+      "receipt_file": "fetch-11141.json",
+      "card_sha256": "deae5907fd46982525c83f7a6e1f24aeacf078d2bf4d737ad0e5143a74acffb5",
+      "timestamp_ms": 1700000060300
+    },
+    {
+      "file": "9b3762a661d4c655db2b60fb556ab20427ad394d1eeaf5d63097e3986d9b7b85.json",
+      "sha256": "4c2476187c8755610b020556a3227745c3ec44645f5cbfe3502abe40e2eb50e4",
+      "id": "45673565-026b-555a-a4f3-772a7caf382f",
+      "sessionKey": "agent:main:shop-d5052-gift8-prefetch-45673565",
+      "arm": "prefetch",
+      "product_id": 20209,
+      "tool_call_id": "extra-20209",
+      "receipt_file": "fetch-20209.json",
+      "card_sha256": "d452e8761a99457bb9fb54d6e90700122afc7df0726f2d71f413e808811a7f80",
+      "timestamp_ms": 1700000060300
+    }
+  ],
+  "audit_passed": false,
+  "single_generation_success": false
+}

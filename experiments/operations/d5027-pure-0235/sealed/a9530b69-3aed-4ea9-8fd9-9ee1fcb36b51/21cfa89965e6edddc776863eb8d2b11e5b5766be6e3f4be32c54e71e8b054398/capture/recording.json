@@ -1,0 +1,23 @@
+{
+  "run_id": "a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51",
+  "sessionKey": "agent:main:shop-d5009-synth-five-categories-cap-a9530b69",
+  "qualifying": true,
+  "rehearsal": false,
+  "full_run": true,
+  "final_ui_tps": 1301,
+  "authless": true,
+  "readyAt": "2026-11-22T07:27:50.859Z",
+  "durationSeconds": 22.624077665999998,
+  "frameCount": 89,
+  "sampling": "timestamped real-time viewport screenshots; no speed changes",
+  "finalHoldSeconds": 4.5,
+  "viewportEvidence": "viewport-evidence.json",
+  "demoStartSeconds": 0,
+  "urls": [
+    "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+  ]
+}

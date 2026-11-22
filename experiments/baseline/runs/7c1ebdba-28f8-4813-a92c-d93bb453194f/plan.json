@@ -1,0 +1,16 @@
+{
+  "id": "7c1ebdba-28f8-4813-a92c-d93bb453194f",
+  "label": "D0027-research-prose",
+  "sessionKey": "agent:main:shop-d0027-research-prose-7c1ebdba",
+  "variant": "research-prose",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": null,
+  "prompt": "Use web_fetch to open the live catalog. Choose five distinct in-stock Christmas gifts for a software club in catalog order. Give the exact product title linked to its exact product page and the listed price with its currency for every gift. Use five short sentences, one per gift, with no table or list.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=7c1ebdba",
+  "experiment": "research-prose|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "10e4dfadbdf3068aa24265588dd34780133e12db34c7186ed22de851775efbb9",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414"
+}

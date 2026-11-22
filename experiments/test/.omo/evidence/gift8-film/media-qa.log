@@ -1,0 +1,1 @@
+{"pass_": true, "checks": ["actual old clip ffprobe playable", "media SHA matches source bytes", "actual official score and five product URL proof match canonical validation", "real duration agrees with capture timeline", "actual during-run first frame remains partial; no full-run claim", "actual score below1700 never qualifies target", "corrupt demo rejected by actual ffprobe"]}

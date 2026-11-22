@@ -1,0 +1,29 @@
+test_429_hard_early_stop_in_all_slots (test_longgap.Allocation.test_429_hard_early_stop_in_all_slots) ... ok
+test_failure_counts_when_product_invalid_without_429 (test_longgap.Allocation.test_failure_counts_when_product_invalid_without_429) ... ok
+test_four_and_no_more_across_restarts (test_longgap.Allocation.test_four_and_no_more_across_restarts) ... ok
+test_hash_cutoff_predeclared_four_and_immutable_order (test_longgap.Allocation.test_hash_cutoff_predeclared_four_and_immutable_order) ... ok
+test_only_after_ab_all_stages_and_eligible_anchor (test_longgap.Allocation.test_only_after_ab_all_stages_and_eligible_anchor) ... ok
+test_outcome_timing_and_existing_backoff (test_longgap.Allocation.test_outcome_timing_and_existing_backoff) ... ok
+test_pending_mismatched_digest_or_sha_never_written (test_longgap.Allocation.test_pending_mismatched_digest_or_sha_never_written) ... ok
+test_pending_only_after_amended_outcomes_and_valid_a_and_duplicate_safe (test_longgap.Allocation.test_pending_only_after_amended_outcomes_and_valid_a_and_duplicate_safe) ... ok
+test_proven_presend_only_preserves_slot_and_ambiguous_halts (test_longgap.Allocation.test_proven_presend_only_preserves_slot_and_ambiguous_halts) ... ok
+test_real_supervisor_command_and_fallback_mocked (test_longgap.Allocation.test_real_supervisor_command_and_fallback_mocked) ... {"time": "2026-11-22T14:48:09.483225+00:00", "supervisor": "started", "owner": "d5027-supervisor-44b851aa-af96-44b9-a760-232a7b2a626d", "deadline": "2100-01-01T00:07:00+00:00", "cutoff": "2100-01-01T00:00:00+00:00"}
+{"time": "2026-11-22T14:48:09.484896+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "60"]}
+{"time": "2026-11-22T14:48:09.485241+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:48:09.488201+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "90"]}
+{"time": "2026-11-22T14:48:09.488735+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:48:09.490997+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "90"]}
+{"time": "2026-11-22T14:48:09.491326+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:48:09.493110+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "60"]}
+{"time": "2026-11-22T14:48:09.493398+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:48:09.494476+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once"]}
+{"time": "2026-11-22T14:48:09.494630+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:48:09.494812+00:00", "supervisor": "stopped", "reason": "done"}
+ok
+test_reduced_ab_refuses_missing_or_inconsistent_terminal_proof (test_longgap.Allocation.test_reduced_ab_refuses_missing_or_inconsistent_terminal_proof) ... ok
+test_reduced_ab_three_invalid_b_and_four_complete (test_longgap.Allocation.test_reduced_ab_three_invalid_b_and_four_complete) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.072s
+
+OK

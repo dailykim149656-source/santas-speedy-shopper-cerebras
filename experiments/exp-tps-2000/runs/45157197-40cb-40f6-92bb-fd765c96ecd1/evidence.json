@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "id": "45157197-40cb-40f6-92bb-fd765c96ecd1",
+  "historical": false,
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "private_raw_sha256": "bcefa0117eeb0c46fc47832c97144659fad518a7d451e66a831ab3b58970506e",
+  "private_raw_bytes": 14842,
+  "startedWall": 1795323079941,
+  "ended": {
+    "elapsedMs": 8842.8275,
+    "terminal": "final",
+    "time": 1795323088800
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-0a0dc1e4-d42b-40b4-8cb0-b56d17e06881",
+      "timestamp": 1795323081751,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 280.034441,
+        "outputTokens": 264
+      },
+      "usage": {
+        "input": 648,
+        "output": 264,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 2960
+      },
+      "tool_inputs": [
+        {
+          "id": "70180611a",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=45157197",
+            "extractMode": "text",
+            "maxChars": 20000
+          },
+          "args": {}
+        },
+        {
+          "id": "bb6e54934",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=45157197",
+            "extractMode": "text",
+            "maxChars": 20000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-37f86c2c-7f5b-45a9-9d1c-2b2ac24d503f",
+      "timestamp": 1795323086894,
+      "stopReason": "stop",
+      "message_index": 4,
+      "serverGeneration": {
+        "completionMs": 648.19836,
+        "outputTokens": 306
+      },
+      "usage": {
+        "input": 2275,
+        "output": 306,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4629
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 707.4094481567232,
+    "ui_rounded_tps": 707,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "70180611a",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=45157197",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T04:51:24.141Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+        "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+        "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+        "https://mercantile.wordpress.org/product/wapuu-keychain/",
+        "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/"
+      ]
+    },
+    {
+      "tool_call_id": "bb6e54934",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=45157197",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T04:51:26.767Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+        "https://aisynthesis.com/product/eurorack-high-power-supply/",
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+        "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+        "https://aisynthesis.com/product/ai018-eurorack-stereo-matrix-mixer/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "catalog_name": "CTRL Task Pad",
+      "source_tool_call_id": "70180611a",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "html_bytes_read": 316424,
+      "html_sha256": "80c3e3056ab5833e2ed58a62bd503a7308ac44cc33908118cfeb893bf20deeb7",
+      "checked_at": "2026-11-22T04:51:29.652573+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "CTRL Task Pad – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "catalog_name": "Wapuu Stuffed Toy",
+      "source_tool_call_id": "70180611a",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "html_bytes_read": 410424,
+      "html_sha256": "eb9771d58f082239d6a38341dcce4b05c33b642279859b56ee84b0921c5f9114",
+      "checked_at": "2026-11-22T04:51:29.674776+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Wapuu Stuffed Toy – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "catalog_name": "Gone Coding Ceramic Mug",
+      "source_tool_call_id": "70180611a",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "html_bytes_read": 380137,
+      "html_sha256": "a014d11b576e7d6ea03fa7473882b69754272996258eb803341ebec3e541f830",
+      "checked_at": "2026-11-22T04:51:29.692652+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Gone Coding Ceramic Mug – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+      "catalog_name": "AI250 Eurorack BXR",
+      "source_tool_call_id": "bb6e54934",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+      "html_bytes_read": 424154,
+      "html_sha256": "15f894ee9b620c1648d34cffd39b465939a673a6ca7bba6254698224cc3575a4",
+      "checked_at": "2026-11-22T04:51:31.282874+00:00",
+      "canonical": "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+      "merchant": "aisynthesis.com",
+      "title": "AI250 Eurorack BXR Test Equipment",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "catalog_name": "AI012 Eurorack Wave Animator",
+      "source_tool_call_id": "bb6e54934",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "html_bytes_read": 490877,
+      "html_sha256": "e7aae7e3a7a9d89130c4ad880d3a0965dddc4419b220a5776595faf997be0330",
+      "checked_at": "2026-11-22T04:51:31.702411+00:00",
+      "canonical": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "merchant": "aisynthesis.com",
+      "title": "AI012 Eurorack Wave Animator",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": false,
+  "video_threshold_tps": 1000,
+  "final_text": "### Mercantile\n\n1. [CTRL Task Pad](https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/)\n2. [Wapuu Stuffed Toy](https://mercantile.wordpress.org/product/wapuu-stuffed-animal/)\n3. [Gone Coding Ceramic Mug](https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/)\n\n### AI Synthesis\n\n4. [AI250 Eurorack BXR](https://aisynthesis.com/product/ai250-eurorack-bxr/)\n5. [AI012 Eurorack Wave Animator](https://aisynthesis.com/product/ai012-eurorack-wave-animator/)",
+  "evidence_status": "below_threshold_recorded",
+  "source_plan_commit": "601bb61510161cf7501b5b11c99249b7e220795f",
+  "source_record_sha256": "1fd8267a627a5de8650ac1ec7e2f98764113a43f4feea5fda656c1fcb8854cf2"
+}

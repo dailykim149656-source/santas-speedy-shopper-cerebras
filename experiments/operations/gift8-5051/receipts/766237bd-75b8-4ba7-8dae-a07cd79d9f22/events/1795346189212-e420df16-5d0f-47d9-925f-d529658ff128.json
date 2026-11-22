@@ -1,0 +1,10 @@
+{
+  "type": "prompt_binding",
+  "runId": "766237bd-75b8-4ba7-8dae-a07cd79d9f22",
+  "sessionKey": "agent:main:shop-d5053-gift8-prefetch-766237bd",
+  "timestamp_ms": 1795346189212,
+  "plugin_sha256": "ef5d6e58c1f45e5d290e1af4608742b0f01336122e91b5a92b65adf58a388edd",
+  "prompt_sha256": "993bbe84906295a26f50b54f327f6123e24b72074b947c6828fb96a7dd8c156a",
+  "arm": "prefetch",
+  "system_prompt_sha256": "308de5424a3a2b064c233696b70053e73eed4bf03fc366ac624b4265782cfe7c"
+}

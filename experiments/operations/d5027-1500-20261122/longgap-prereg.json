@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "created": "2026-11-22T23:43:45.938966+09:00",
+  "order_seconds": [
+    60,
+    90,
+    90,
+    60
+  ],
+  "pairs": [
+    [
+      60,
+      90
+    ],
+    [
+      90,
+      60
+    ]
+  ],
+  "primary": "All four transmitted outcomes count. Two valid pairs with concordant session TPS direction constitute a descriptive signal only; otherwise inconclusive.",
+  "population": "Next sent baseline A outcome after a completed, valid canonical two-call A with passthrough relay. Retain failures.",
+  "required_ab": "after bounded first-required screening/confirmation",
+  "max_assignments": 4,
+  "supersedes": "longgap-prereg-12-superseded.json",
+  "early_stop": "Stop this comparison at the first invalid assigned session; two complete pairs cannot then be observed within the cap. No replacement or recovery launches for this comparison."
+}

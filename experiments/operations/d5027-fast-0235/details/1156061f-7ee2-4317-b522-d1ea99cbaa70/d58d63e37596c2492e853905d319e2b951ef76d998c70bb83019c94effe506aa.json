@@ -1,0 +1,31 @@
+{
+  "raw_sha256": "fc9c39bc0ad337809b24b29656f21a315af4715208d63ba0dfae97080f91abd0",
+  "candidate": {
+    "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+    "catalog_name": "Eurorack Modular Patch Cable 4.9ft",
+    "source_tool_call_id": "df27efea7"
+  },
+  "product": {
+    "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+    "catalog_name": "Eurorack Modular Patch Cable 4.9ft",
+    "source_tool_call_id": "df27efea7",
+    "verified": true,
+    "reasons": [],
+    "http": 200,
+    "final_url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+    "html_bytes_read": 358726,
+    "html_sha256": "b0098f23599a294d97a5aec3d58b53770ec96a9cd8e8ef1879eb64a628271a3a",
+    "checked_at": "2026-11-22T17:54:26.792810+00:00",
+    "canonical": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+    "merchant": "aisynthesis.com",
+    "title": "Eurorack Modular Patch Cable 4.9ft",
+    "title_matches_catalog": true,
+    "product_evidence": {
+      "matching_schema_product": true,
+      "woocommerce_product_heading": false,
+      "woocommerce_sticky_product_price_and_cart": false
+    },
+    "password_protected": false
+  },
+  "finished_at": "2026-11-22T17:54:26.797+00:00"
+}

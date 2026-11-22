@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "49c30bf1-3221-4309-94e5-6c7f191629f5",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "a6a61f75e3fc624f3badc2f30b684f28305cf201e50799a015398de9403d12a9",
+  "private_raw_bytes": 10285,
+  "startedWall": 1795334939550,
+  "ended": {
+    "elapsedMs": 423333.38587500004,
+    "terminal": "aborted",
+    "time": 1795335363555
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-c0b18532-dc7b-4b2c-b655-649c97df2361",
+      "timestamp": 1795335342939,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 609.507984,
+        "outputTokens": 618
+      },
+      "usage": {
+        "input": 1367,
+        "output": 618,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4033
+      },
+      "tool_inputs": [
+        {
+          "id": "832c6f4d1",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=49c30bf1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "bd7e9e05d",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=49c30bf1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "e23f9623c",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=49c30bf1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "41104a547",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=49c30bf1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "3b2c57d1c",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=49c30bf1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 1013.932575491907,
+    "ui_rounded_tps": 1014,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [],
+  "products": [],
+  "requires_video": true,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1301.275477944986,
+  "final_text": "",
+  "evidence_status": "validation_rejected",
+  "source_plan_commit": "943e3d1437cc6b35e7335d2ad83e09bffef22cd6",
+  "source_record_sha256": "f48b36d2c3935d2bd56854ce6c4e2845f0670ad4b102385d7048d2d1c049bbf4"
+}

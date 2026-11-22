@@ -1,0 +1,206 @@
+{
+  "kind": "synthetic offline tests; no live recorder/model executed",
+  "passed": 38,
+  "scenarios": [
+    {
+      "scenario": "same-run pre-send complete fixture",
+      "passed": true,
+      "observable": "full_run"
+    },
+    {
+      "scenario": "all timing and evidence sources have hashes and ages",
+      "passed": true,
+      "observable": [
+        ".session.json",
+        ".send-intent.json",
+        ".terminal.json",
+        ".json",
+        "ready.json",
+        "recording.json",
+        "capture-timeline.json",
+        "viewport-evidence.json",
+        "validation.json"
+      ]
+    },
+    {
+      "scenario": "late cannot claim full run",
+      "passed": true,
+      "observable": "partial_or_post_run"
+    },
+    {
+      "scenario": "post-run cannot claim full run",
+      "passed": true,
+      "observable": "partial_or_post_run"
+    },
+    {
+      "scenario": "rehearsal rejected as full-run",
+      "passed": true,
+      "observable": "partial_or_post_run"
+    },
+    {
+      "scenario": "stale-ui rejected as full-run",
+      "passed": true,
+      "observable": "partial_or_post_run"
+    },
+    {
+      "scenario": "stale-ready rejected as full-run",
+      "passed": true,
+      "observable": "partial_or_post_run"
+    },
+    {
+      "scenario": "retimed rejected as full-run",
+      "passed": true,
+      "observable": "partial_or_post_run"
+    },
+    {
+      "scenario": "raw/send disagreement rejected",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "cross-session timing identity rejected",
+      "passed": true,
+      "observable": "ValueError"
+    },
+    {
+      "scenario": "1699 retained without target qualification",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "valid result missing run identity rejected",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "wrong-score viewport rejected",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "duplicate-url viewport rejected",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "invalid shopping does not verify viewport/target",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "demo over 60 seconds rejected",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "corrupt media rejected",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "allowed arm synth-five-categories-cap",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "allowed arm first5027-defer-answer",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "allowed arm first5027-extract-text",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "reject old label",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "reject other arm",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "reject uncommitted policy",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "reject session mismatch",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "prior controller stopped status does not block plan discovery",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "pre-send plan discovered before session file exists",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "uncommitted altered plan excluded",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "preflight-only plan excluded",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "already inspected session excluded before git subprocess",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "watcher waits while controller has not started",
+      "passed": true,
+      "observable": "idle sleep reached"
+    },
+    {
+      "scenario": "sentinel ends empty watcher",
+      "passed": true,
+      "observable": "main returned"
+    },
+    {
+      "scenario": "launcher has real non-rehearsal session and isolated gateway",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "retention independent from official score threshold",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "private inspection permissions on local filesystem",
+      "passed": true,
+      "observable": "0o600"
+    },
+    {
+      "scenario": "inspect CLI recomputes receipt",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "retry CLI selects same session explicitly",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "reject unsafe runtime mainTrue",
+      "passed": true,
+      "observable": null
+    },
+    {
+      "scenario": "reject unsafe runtime testFalse",
+      "passed": true,
+      "observable": null
+    }
+  ]
+}

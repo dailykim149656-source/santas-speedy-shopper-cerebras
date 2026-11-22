@@ -1,0 +1,16 @@
+{
+  "result": "pending_validation",
+  "id": "1156061f-7ee2-4317-b522-d1ea99cbaa70",
+  "label": "D5160-synth-five-categories-cap",
+  "arm": "synth-five-categories-cap",
+  "score": 823.4182024890117,
+  "ui": 823,
+  "call_count": 2,
+  "p90": 1106.748144719796,
+  "valid": null,
+  "method_valid": null,
+  "ended": 1795365491784,
+  "raw_sha256": "fc9c39bc0ad337809b24b29656f21a315af4715208d63ba0dfae97080f91abd0",
+  "capture_complete": true,
+  "recorder_exit": 0
+}

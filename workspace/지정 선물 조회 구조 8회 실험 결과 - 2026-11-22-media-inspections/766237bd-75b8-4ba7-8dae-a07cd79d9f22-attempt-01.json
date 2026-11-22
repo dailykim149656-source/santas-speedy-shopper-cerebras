@@ -1,0 +1,112 @@
+{
+  "id": "766237bd-75b8-4ba7-8dae-a07cd79d9f22",
+  "label": "D5053-gift8-prefetch",
+  "sessionKey": "agent:main:shop-d5053-gift8-prefetch-766237bd",
+  "inspected_at": "2026-11-22T11:41:30.649292+00:00",
+  "readyAfterFirstScreenshot": "2026-11-22T11:16:31.726Z",
+  "sendIntentMs": 1795346188615,
+  "terminalReceiptMs": 1795346310135,
+  "timing": "first_frame_during_run",
+  "full_run_verified": false,
+  "directory": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/film-gift8-5051/766237bd-75b8-4ba7-8dae-a07cd79d9f22/attempt-01",
+  "firstFrameMinusSendMs": 3111,
+  "firstFrameMinusTerminalMs": -118409,
+  "media": {
+    "original.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "119.800000"
+        }
+      },
+      "sha256": "5819983d4ab3b7379d3d04da4bd18cad2dd85268d991f8472fa2df6cf6e2fa88",
+      "bytes": 827273
+    },
+    "demo.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "55.000000"
+        }
+      },
+      "sha256": "f4e4d2dd6d66c43929367f13374aec2bedf57e9f8d74d59a01b22e7c96d0ea4c",
+      "bytes": 420225
+    }
+  },
+  "playable": true,
+  "viewportVerified": false,
+  "real_time_verified": true,
+  "target_1700_verified": false,
+  "classification": "partial_or_post_run",
+  "source_provenance": {
+    ".session.json": {
+      "sha256": "5313672dc6331577ba2276646effaebda3eda21b81739292944c8bc568411a32",
+      "bytes": 106,
+      "modified_ns": 1795346188615117290
+    },
+    ".send-intent.json": {
+      "sha256": "95895e08900b852d8f4cf6fc626a68de826d81c13008451f5416b2f236552245",
+      "bytes": 165,
+      "modified_ns": 1795346188615909083
+    },
+    ".terminal.json": {
+      "sha256": "bbbaf8eb12475cb598813f023084e68b1b60a7a8dda0076846013d50a12058e4",
+      "bytes": 233,
+      "modified_ns": 1795346310136599720
+    },
+    ".json": {
+      "sha256": "ee4b6f3c083f970418fc325278a59c71be50b9866996022b4da9678827617783",
+      "bytes": 15946,
+      "modified_ns": 1795346310164657228
+    },
+    "ready.json": {
+      "sha256": "fde71ac8616ce572e943b0bb7c40a93fe1fb00cd5b19b4134acc01d3293700d6",
+      "bytes": 265,
+      "modified_ns": 1795346191730999819
+    },
+    "recording.json": {
+      "sha256": "f26d51400068e317f2b8f601f3978d62923c74e5c6d98c0a6a31a1aca8d81158",
+      "bytes": 671,
+      "modified_ns": 1795346320766838958
+    },
+    "capture-timeline.json": {
+      "sha256": "5c4379f10eb3dd8fc9d85cfd589d54b761b033d4d3ec42c287bb5f344ae63e23",
+      "bytes": 35964,
+      "modified_ns": 1795346311465559453
+    },
+    "validation.json": {
+      "sha256": "8ab1e0df694ba41a4b7ea23efcb48a08f0eed586025e5f48f04629f4839a86ba",
+      "bytes": 1679,
+      "modified_ns": 1795347487516017894
+    },
+    "evidence.json": {
+      "sha256": "7105191f1da6a84f6b9aa366b8aa4bd103db47945110f609cfc57713d08f1ffe",
+      "bytes": 1774,
+      "modified_ns": 1795347487620000000
+    }
+  }
+}

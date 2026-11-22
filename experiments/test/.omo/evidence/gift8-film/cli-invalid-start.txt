@@ -1,0 +1,2 @@
+usage: gift8_film.py [-h] [--start START] [--inspect INSPECT | --retry RETRY]
+gift8_film.py: error: start must be 5051 or later

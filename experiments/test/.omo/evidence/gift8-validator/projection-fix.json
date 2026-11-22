@@ -1,0 +1,15 @@
+{
+  "scenario": "D5051 native chat.history projection accepted without rewriting original; five actual independent HTTP verifications",
+  "invocation": "gift8_evidence.validate(repo, original_D5051_raw, receipt_dir, manifest_path)",
+  "valid": true,
+  "verified_product_count": 5,
+  "original_sha256": "80bcb409c89ad319d5b6d846a32425edba531c144eabbebc5cb9b02f1b324b7f",
+  "unchanged_from_previous_ledger": true,
+  "source": "OpenClaw src/gateway/chat-display-projection.sanitize.ts:446-466 removes non-display details; direct content and tool identity remain",
+  "negative_tests": [
+    "foreign toolName",
+    "spoofed details",
+    "arbitrary wrapped content"
+  ],
+  "offline_scenarios": 28
+}

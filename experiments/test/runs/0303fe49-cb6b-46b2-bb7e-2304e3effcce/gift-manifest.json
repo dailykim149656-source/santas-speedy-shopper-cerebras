@@ -1,0 +1,16 @@
+{
+  "id": "0303fe49-cb6b-46b2-bb7e-2304e3effcce",
+  "sessionKey": "agent:main:shop-d5054-gift8-tool-0303fe49",
+  "arm": "tool",
+  "prompt_sha256": "20a2ab44ae1e6c7c40d90695648b5be54f3024151a5c355a99a1a705b9bc5d3d",
+  "created_ms": 1795346370228,
+  "ids": [
+    21951,
+    23345,
+    11125,
+    11141,
+    20209
+  ],
+  "protocol": "gift8-v1",
+  "plugin_sha256": "ef5d6e58c1f45e5d290e1af4608742b0f01336122e91b5a92b65adf58a388edd"
+}

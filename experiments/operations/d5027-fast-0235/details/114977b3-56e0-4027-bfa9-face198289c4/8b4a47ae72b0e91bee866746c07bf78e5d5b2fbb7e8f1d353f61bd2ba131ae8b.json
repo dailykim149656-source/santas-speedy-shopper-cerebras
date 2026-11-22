@@ -1,0 +1,31 @@
+{
+  "raw_sha256": "c4a54f4fd3e6993e9297e5f028587dffb794a06c2bbbb8335bea9069689ffcae",
+  "candidate": {
+    "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "catalog_name": "AI016 Eurorack Tape Echo Interface",
+    "source_tool_call_id": "3ce54c282"
+  },
+  "product": {
+    "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "catalog_name": "AI016 Eurorack Tape Echo Interface",
+    "source_tool_call_id": "3ce54c282",
+    "verified": true,
+    "reasons": [],
+    "http": 200,
+    "final_url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "html_bytes_read": 515260,
+    "html_sha256": "72065abd56b8da1410a0f317ba8ecfe42a07aa2bccc3d7383f58818502bda877",
+    "checked_at": "2026-11-22T17:55:11.286787+00:00",
+    "canonical": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "merchant": "aisynthesis.com",
+    "title": "AI016 Eurorack Tape Echo Interface",
+    "title_matches_catalog": true,
+    "product_evidence": {
+      "matching_schema_product": true,
+      "woocommerce_product_heading": false,
+      "woocommerce_sticky_product_price_and_cart": false
+    },
+    "password_protected": false
+  },
+  "finished_at": "2026-11-22T17:55:11.308+00:00"
+}

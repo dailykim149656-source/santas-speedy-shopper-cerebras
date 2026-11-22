@@ -1,0 +1,30 @@
+[
+  {
+    "scenario": "prompt_only",
+    "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/prompt_only-fixture.json",
+    "exit_code": 1,
+    "valid": false,
+    "artifact": "workspace/.omo/evidence/loop-validator/prompt_only-result.json"
+  },
+  {
+    "scenario": "cached_payloads",
+    "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/cached_payloads-fixture.json",
+    "exit_code": 1,
+    "valid": false,
+    "artifact": "workspace/.omo/evidence/loop-validator/cached_payloads-result.json"
+  },
+  {
+    "scenario": "foreign_run",
+    "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/foreign_run-fixture.json",
+    "exit_code": 1,
+    "valid": false,
+    "artifact": "workspace/.omo/evidence/loop-validator/foreign_run-result.json"
+  },
+  {
+    "scenario": "no_successful_final",
+    "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/no_successful_final-fixture.json",
+    "exit_code": 1,
+    "valid": false,
+    "artifact": "workspace/.omo/evidence/loop-validator/no_successful_final-result.json"
+  }
+]

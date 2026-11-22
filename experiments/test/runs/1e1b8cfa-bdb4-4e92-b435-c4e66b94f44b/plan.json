@@ -1,0 +1,18 @@
+{
+  "id": "1e1b8cfa-bdb4-4e92-b435-c4e66b94f44b",
+  "label": "D5051-gift8-tool",
+  "sessionKey": "agent:main:shop-d5051-gift8-tool-1e1b8cfa",
+  "capturePolicy": "score-first",
+  "variant": "gift8-tool",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": 1024,
+  "video_threshold_tps": 1700,
+  "prompt": "Christmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=1e1b8cfa",
+  "experiment": "gift8-v1 tool; manifest-sha256=dc2e3e451fa416ceb26851da27ca2a9892f70f5a7a2311417165ae566e082406",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "49af8c6b5074edbcad0a8c0c069c4ece1938b46fc68c5ec394bfbdc4b8922339",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414"
+}

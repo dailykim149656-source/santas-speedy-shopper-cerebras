@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "requests": 10,
+  "provider_sends": 0,
+  "plugin_sha256": "ef5d6e58c1f45e5d290e1af4608742b0f01336122e91b5a92b65adf58a388edd",
+  "root": "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-plugin/fixture-lCevkR",
+  "scenarios": [
+    "parallel five actual HTTP tool fetches",
+    "prefetch identical canonical cards",
+    "denied authority zero fetch",
+    "foreign session and prompt rejection",
+    "repeat hook zero refetch",
+    "duplicate tool call linked receipt",
+    "changed receipt rejection",
+    "runtime restart same-run reuse",
+    "plugin digest mismatch rejection",
+    "foreign redirect rejection",
+    "llm input captured without reasoning"
+  ]
+}

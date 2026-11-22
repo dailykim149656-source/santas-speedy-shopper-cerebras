@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "aborted_before_send",
+  "id": "e668c558-7718-4125-ac0d-5a6cd93788dd",
+  "label": "D5037-first5027-extract-text",
+  "sessionKey": "agent:main:shop-d5037-first5027-extract-text-e668c558",
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "runner_sha256": "9bdb433e4cb90b5c3ca98007b606a5b565500f80854afb9782dcecdea7ede5ca",
+  "private_sources_sha256": {
+    "run.json": "0bb7fd4ab6a13f900c7f152093cbb716a02202fba96aa870b9cb7dcb354050cc",
+    "run.log": "15de245ec14d587e01d1284a0384a80236ecadd685d60eaaeb09349f4a62e242",
+    "video.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cause_class": "sessions_create_timeout_before_chat_send",
+  "sealed_at": "2026-11-22T10:01:29.371922+00:00",
+  "source_plan_commit": "69a793c85e081b46d332ff31ae611fd1b902718e",
+  "source_record_sha256": "335f298611f42902b4595ac322cf17ce13fc34ca8848e4ffd46e35313b94c024"
+}

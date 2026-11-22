@@ -1,0 +1,15 @@
+test_429_terminal_only (__main__.Schedule.test_429_terminal_only) ... ok
+test_actual_partial_terminal_preserves_first (__main__.Schedule.test_actual_partial_terminal_preserves_first) ... ok
+test_all_slots_and_gap_labels (__main__.Schedule.test_all_slots_and_gap_labels) ... ok
+test_failures_count_and_resume_advisory (__main__.Schedule.test_failures_count_and_resume_advisory) ... ok
+test_invalid_sequences_and_duplicates (__main__.Schedule.test_invalid_sequences_and_duplicates) ... ok
+test_pair_rejections_and_boundary (__main__.Schedule.test_pair_rejections_and_boundary) ... ok
+test_qualification_failure (__main__.Schedule.test_qualification_failure) ... ok
+test_raw_target_stops_without_video (__main__.Schedule.test_raw_target_stops_without_video) ... ok
+test_real_d5027_metrics_and_identity_mutation (__main__.Schedule.test_real_d5027_metrics_and_identity_mutation) ... ok
+test_selection_tiebreak_and_confirmation_failure (__main__.Schedule.test_selection_tiebreak_and_confirmation_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.012s
+
+OK

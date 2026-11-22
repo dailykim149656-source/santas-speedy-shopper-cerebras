@@ -1,0 +1,12 @@
+usage: loop.py [-h] [--once] [--d5027-post-success-seconds {30,60}]
+               [--campaign-1700-start D_NUMBER]
+
+options:
+  -h, --help            show this help message and exit
+  --once
+  --d5027-post-success-seconds {30,60}
+                        cooldown after a successful normal test focus-d5027
+                        trial (default: 60)
+  --campaign-1700-start D_NUMBER
+                        start or resume the bounded test campaign from this
+                        trial number

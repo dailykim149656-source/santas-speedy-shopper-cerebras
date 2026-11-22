@@ -1,0 +1,12 @@
+{
+  "id": "24a7ab2a-edd0-4deb-80d2-863b115f5647",
+  "label": "D0004-paired-links",
+  "sessionKey": "agent:main:shop-d0004-paired-links-24a7ab2a",
+  "variant": "paired-links",
+  "thinking": "low",
+  "temperature": 1.0,
+  "prompt": "Find five different Christmas gifts for people who enjoy making things. Use web_fetch on both in-stock retail catalogs in parallel. Include both shops. Return a numbered Markdown list with the exact product titles linked to their exact product pages.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=24a7ab2a\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink&_run=24a7ab2a",
+  "experiment": "paired-links|1|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+}

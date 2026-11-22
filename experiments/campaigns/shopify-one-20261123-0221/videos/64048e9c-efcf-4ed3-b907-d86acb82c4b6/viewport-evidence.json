@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "verified": true,
+  "finishSeconds": 3.1041165,
+  "demoStartSeconds": 0,
+  "score": {
+    "mean": 965,
+    "originalFromSeconds": 3.119011125,
+    "originalToSeconds": 8.709921834000001,
+    "clipFromSeconds": 3.119011125,
+    "clipToSeconds": 8.709921834000001,
+    "firstFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e",
+    "lastFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e"
+  },
+  "links": [
+    {
+      "url": "https://kikkerland.com/products/collapsible-coffee-dripper?variant=41753241619",
+      "originalFromSeconds": 3.119011125,
+      "originalToSeconds": 8.709921834000001,
+      "clipFromSeconds": 3.119011125,
+      "clipToSeconds": 8.709921834000001,
+      "firstFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e",
+      "lastFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e"
+    },
+    {
+      "url": "https://www.lodgecastiron.com/products/round-cast-iron-classic-skillet?variant=51685752242548",
+      "originalFromSeconds": 3.119011125,
+      "originalToSeconds": 8.709921834000001,
+      "clipFromSeconds": 3.119011125,
+      "clipToSeconds": 8.709921834000001,
+      "firstFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e",
+      "lastFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e"
+    },
+    {
+      "url": "https://parksapparel.com/products/redwood-national-park-durable-enamel-camp-mug?variant=49771175542952",
+      "originalFromSeconds": 3.119011125,
+      "originalToSeconds": 8.709921834000001,
+      "clipFromSeconds": 3.119011125,
+      "clipToSeconds": 8.709921834000001,
+      "firstFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e",
+      "lastFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e"
+    },
+    {
+      "url": "https://oxandpine.com/products/refillable-personalized-leather-pocket-journal?variant=31858687868979",
+      "originalFromSeconds": 3.119011125,
+      "originalToSeconds": 8.709921834000001,
+      "clipFromSeconds": 3.119011125,
+      "clipToSeconds": 8.709921834000001,
+      "firstFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e",
+      "lastFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e"
+    },
+    {
+      "url": "https://www.portlandleathergoods.com/products/portland-leather-goods-keychain?variant=40366517649490",
+      "originalFromSeconds": 3.119011125,
+      "originalToSeconds": 8.709921834000001,
+      "clipFromSeconds": 3.119011125,
+      "clipToSeconds": 8.709921834000001,
+      "firstFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e",
+      "lastFrameSha256": "90a5e7b5b2853969d4e2f76f0ac2d2e5c743f5c1b03a266022ee28d47e49a53e"
+    }
+  ]
+}

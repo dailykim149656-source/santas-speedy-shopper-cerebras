@@ -1,0 +1,20 @@
+{
+  "slot": 4,
+  "arm": "auto",
+  "started": "2026-11-22T15:41:46.489Z",
+  "sent_sha256": "ffdbc2a65b8b41e546faedd700d3e5e6b2520a345d42518aee18ec0e7d592556",
+  "http": 429,
+  "error_code": "queue_exceeded",
+  "stream_complete": false,
+  "finish_reason": null,
+  "output_tokens": null,
+  "reasoning_tokens": null,
+  "reasoning_chars": null,
+  "prompt_tokens": null,
+  "cache_read": null,
+  "server_generation_ms": null,
+  "tps": null,
+  "tool_count": null,
+  "tool_args_match": null,
+  "ended": "2026-11-22T15:41:46.728Z"
+}

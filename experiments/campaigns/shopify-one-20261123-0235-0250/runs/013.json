@@ -1,0 +1,187 @@
+{
+  "slot": 13,
+  "id": "5be0ae0c-44d2-4b91-ad73-e029780d69f7",
+  "label": "slot-013-shopify",
+  "stage": "유효",
+  "valid": true,
+  "model_sent": true,
+  "model_429": false,
+  "shopify_429": false,
+  "catalog_5of5": true,
+  "native_calls": 1,
+  "model_status": 200,
+  "native_reported_tps": 1096.8064213071043,
+  "terminal_by_cutoff": true,
+  "exact_copy": true,
+  "startedWall": 1795369689606,
+  "sentAt": 1795369691399,
+  "endedAt": 1795369694925,
+  "wallSeconds": 3.526,
+  "official": {
+    "meanTokensPerSecond": 1096.8064213071043,
+    "p90TokensPerSecond": 1096.8064213071043,
+    "outputTokens": 708,
+    "generationMs": 645.510444,
+    "calls": 1
+  },
+  "officialDisplay": "1,097",
+  "session_sha256": "876a300ad003d17bbbd6a46d61b7faefa10bd80ff1ac8d3e2cb203bbe3c95c56",
+  "selected_products": [
+    {
+      "query": "collapsible coffee dripper",
+      "name": "Collapsible Coffee Dripper",
+      "seller": "Kikkerland Design Inc",
+      "price": 11.2,
+      "currency": "USD",
+      "url": "https://kikkerland.com/products/collapsible-coffee-dripper?variant=41753241619",
+      "description": "Aromatic pour over with no fuss. Easy to fold and store, fits any paper filter. Great for storage and on the go.",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 0,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369690295,
+        "completedMs": 1795369691327,
+        "status": 200,
+        "requestSha256": "932e6a393a07a856f21e6a0866fe354a79c5444ac7546d3e0a22d1f0d7ec74c1",
+        "bodySha256": "3c074dce7e879c46578616bdd4f6ba1c5fd5b85eeb3d72146cea7c8191cf73ba",
+        "candidateCount": 8
+      }
+    },
+    {
+      "query": "cast iron skillet",
+      "name": "Classic Cast Iron Skillets",
+      "seller": "Lodge Cast Iron",
+      "price": 29.9,
+      "currency": "USD",
+      "url": "https://www.lodgecastiron.com/products/round-cast-iron-classic-skillet?variant=51685752242548",
+      "description": "A time-tested skillet that’s loved for its great heat retention, incredible durability, and ability to make almost any recipe you dream up. The naturally seasoned cooking surface is ready to go, straight from the foundry. Slidey eggs and perfectly seared steaks are coming your way. Just like all Lodge Cast Iron, this skillet is nontoxic, naturally seasoned, and made without PFAS .",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 1,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369690296,
+        "completedMs": 1795369691378,
+        "status": 200,
+        "requestSha256": "759bd5965bbfe193c6d0ca18c3a6e584208b62d5dc1296ce995aabb6d39a1077",
+        "bodySha256": "1b3e08d30ed936e9d1ceddc99ce37aa8b4ee7471518d52f5aeaf06c770ab3db8",
+        "candidateCount": 5
+      }
+    },
+    {
+      "query": "enamel camp mug",
+      "name": "Redwood National Park Durable Enamel Camp Mug",
+      "seller": "Parks Apparel",
+      "price": 24.95,
+      "currency": "USD",
+      "url": "https://parksapparel.com/products/redwood-national-park-durable-enamel-camp-mug?variant=49771175542952",
+      "description": "Walk among ancient redwoods with this California-inspired enamel camp mug. Under the tallest trees on Earth, this 12oz durable classic is your companion for exploring old-growth forests and coastal trails. From Newton B. Drury Grove to Prairie Creek, whether you're camping beneath canopy giants or backpacking the Lost Coast Trail, the chip-resistant enamel coating handles humid coastal conditions and dense forest adventures. Built tough for serious wilderness exploration. Lightweight and packable—an essential piece of gear for anyone humbled by the majesty of thousand-year-old trees. Perfect for sipping hot coffee while marveling at nature's titans.",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 2,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369690297,
+        "completedMs": 1795369691311,
+        "status": 200,
+        "requestSha256": "9d44be44f86e46ccd2ab1a362a4e928173c47fa50a7d81e833772c760f27e1ef",
+        "bodySha256": "aa3bde227022e4cc44644c3442657063c49384d46a34ca5ed7a970db75ec341d",
+        "candidateCount": 10
+      }
+    },
+    {
+      "query": "leather pocket journal",
+      "name": "Refillable Personalized Leather Pocket Journal",
+      "seller": "Ox & Pine",
+      "price": 25,
+      "currency": "USD",
+      "url": "https://oxandpine.com/products/refillable-personalized-leather-pocket-journal?variant=31858687868979",
+      "description": "Refillable Personalized Leather Pocket Notebook This is our Classic Leather Pocket Journal in the Refillable version! Made from premium, full-grain leather, this notebook is perfectly sized to carry with you in a pocket, purse, or bag. Customizable and ready to accompany you on any adventure. This leather pocket notebook is handmade in the USA • Thick, oil-tanned leather! • 2 Kraft paper notebooks with 48 pages/each of 80 lb text weight, acid free paper • Approx. 5\"x3.5\" • High quality, thick elastics hold the notebooks inside SHIPPING We carefully handcraft your order in 1-3 days and ship according to the speed chosen at checkout.",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 3,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369690269,
+        "completedMs": 1795369691290,
+        "status": 200,
+        "requestSha256": "3ad7d92eb4b8bfe68583c929b185731108f726ee5ac3c7ef2170b04f77ccb277",
+        "bodySha256": "24f0a31b2539165ec9f1ceb22108c29582018d9b0a198ef769e67771cd93dfac",
+        "candidateCount": 6
+      }
+    },
+    {
+      "query": "leather keychain",
+      "name": "PLG Keychain",
+      "seller": "Portland Leather",
+      "price": 26,
+      "currency": "USD",
+      "url": "https://www.portlandleathergoods.com/products/portland-leather-goods-keychain?variant=40366517649490",
+      "description": "Keep your keys neat and organized, and rep PLG at the same time Ultra-sturdy and secure Antiqued Brass keyring & rifle clip Fire-branded PLG and/or tree logo Available in two sizes",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 4,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369690297,
+        "completedMs": 1795369690975,
+        "status": 200,
+        "requestSha256": "e8435b4f3494fd6f0440d095ea68706fca10a7d5a93f4e2285eb7c0a5d1a5b09",
+        "bodySha256": "d751c2485e62e547503569db491ef1f7ccf6cdd6e05b84ba8edbc9ff64f44d64",
+        "candidateCount": 6
+      }
+    }
+  ],
+  "transport": {
+    "source_request_sha256": "50613529a4cddefb375d7e81309f67b07b25b33ecf2bbe8695eb37c4fc3f09b3",
+    "source_response_sha256": "d2c611bc2e64225add3ae49f205862b2486128312d65ff850358f691091d0133",
+    "input_bytes": 3106,
+    "output_bytes": 37051,
+    "received_ms": 1795369691920,
+    "sent_ms": 1795369691954,
+    "headers_ms": 1795369692206,
+    "finished_ms": 1795369694694,
+    "complete": true,
+    "status": 200,
+    "responseId": "chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a",
+    "usage": {
+      "total_tokens": 1520,
+      "completion_tokens": 708,
+      "completion_tokens_details": {
+        "reasoning_tokens": 35
+      },
+      "prompt_tokens": 812,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 0
+      }
+    },
+    "time_info": {
+      "created": 1795369692.0899734,
+      "queue_time": 1.7901716679999997,
+      "prompt_time": 0.05313803,
+      "completion_time": 0.645510444,
+      "total_time": 2.4929823875427246
+    },
+    "rate_limited": false,
+    "request_settings": {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "temperature": 0.1,
+      "reasoning_effort": "low",
+      "max_completion_tokens": 2400,
+      "stream": true
+    },
+    "system_message": "Zero prose.",
+    "final_instruction": "Repeat the list above in full.",
+    "visible_answer": "1. **Collapsible Coffee Dripper** — Kikkerland Design Inc — $11.20\n   https://kikkerland.com/products/collapsible-coffee-dripper?variant=41753241619\n   Aromatic pour over with no fuss. Easy to fold and store, fits any paper filter. Great for storage and on the go.\n2. **Classic Cast Iron Skillets** — Lodge Cast Iron — $29.90\n   https://www.lodgecastiron.com/products/round-cast-iron-classic-skillet?variant=51685752242548\n   A time-tested skillet that’s loved for its great heat retention, incredible durability, and ability to make almost any recipe you dream up. The naturally seasoned cooking surface is ready to go, straight from the foundry. Slidey eggs and perfectly seared steaks are coming your way. Just like all Lodge Cast Iron, this skillet is nontoxic, naturally seasoned, and made without PFAS .\n3. **Redwood National Park Durable Enamel Camp Mug** — Parks Apparel — $24.95\n   https://parksapparel.com/products/redwood-national-park-durable-enamel-camp-mug?variant=49771175542952\n   Walk among ancient redwoods with this California-inspired enamel camp mug. Under the tallest trees on Earth, this 12oz durable classic is your companion for exploring old-growth forests and coastal trails. From Newton B. Drury Grove to Prairie Creek, whether you're camping beneath canopy giants or backpacking the Lost Coast Trail, the chip-resistant enamel coating handles humid coastal conditions and dense forest adventures. Built tough for serious wilderness exploration. Lightweight and packable—an essential piece of gear for anyone humbled by the majesty of thousand-year-old trees. Perfect for sipping hot coffee while marveling at nature's titans.\n4. **Refillable Personalized Leather Pocket Journal** — Ox & Pine — $25.00\n   https://oxandpine.com/products/refillable-personalized-leather-pocket-journal?variant=31858687868979\n   Refillable Personalized Leather Pocket Notebook This is our Classic Leather Pocket Journal in the Refillable version! Made from premium, full-grain leather, this notebook is perfectly sized to carry with you in a pocket, purse, or bag. Customizable and ready to accompany you on any adventure. This leather pocket notebook is handmade in the USA • Thick, oil-tanned leather! • 2 Kraft paper notebooks with 48 pages/each of 80 lb text weight, acid free paper • Approx. 5\"x3.5\" • High quality, thick elastics hold the notebooks inside SHIPPING We carefully handcraft your order in 1-3 days and ship according to the speed chosen at checkout.\n5. **PLG Keychain** — Portland Leather — $26.00\n   https://www.portlandleathergoods.com/products/portland-leather-goods-keychain?variant=40366517649490\n   Keep your keys neat and organized, and rep PLG at the same time Ultra-sturdy and secure Antiqued Brass keyring & rifle clip Fire-branded PLG and/or tree logo Available in two sizes"
+  },
+  "video": {
+    "status": "녹화 증빙 없음"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "985017fb-afc8-40c7-887a-480ba6c25206",
+  "label": "D5056-gift8-tool",
+  "sessionKey": "agent:main:shop-d5056-gift8-tool-985017fb",
+  "inspected_at": "2026-11-22T11:41:31.155842+00:00",
+  "readyAfterFirstScreenshot": "2026-11-22T11:39:04.747Z",
+  "sendIntentMs": 1795347185003,
+  "terminalReceiptMs": 1795347291678,
+  "timing": "first_frame_after_terminal",
+  "full_run_verified": false,
+  "directory": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/film-gift8-5051/985017fb-afc8-40c7-887a-480ba6c25206/attempt-02",
+  "firstFrameMinusSendMs": 359744,
+  "firstFrameMinusTerminalMs": 253069,
+  "media": {
+    "original.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "11.960000"
+        }
+      },
+      "sha256": "d53d40b23556e7815d2ea29199b3d47a3d523ce33ea60d8316c92b7884d0b2dc",
+      "bytes": 201753
+    },
+    "demo.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "11.960000"
+        }
+      },
+      "sha256": "2ce93be8af54eb9b190ce6263a0d1dea757dccb4ffdf49e977174b86e1e2c01c",
+      "bytes": 193647
+    }
+  },
+  "playable": true,
+  "viewportVerified": true,
+  "viewportProofSha256": "4d286b9e2588839e90c1935e011c37f2307965572ac01bedb0984ace7ebb1fff",
+  "displayedMean": 719,
+  "verifiedProductURLs": [
+    "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+  ],
+  "real_time_verified": true,
+  "target_1700_verified": false,
+  "classification": "partial_or_post_run",
+  "source_provenance": {
+    ".session.json": {
+      "sha256": "f58a7abaa0c03910fda6d80fd6703aabedb3baae450dd4487edbbe0e49104a1d",
+      "bytes": 102,
+      "modified_ns": 1795347185003876576
+    },
+    ".send-intent.json": {
+      "sha256": "cd11b5bece24369bd0d10781dcba0698562ddf604e416925e7d991469b25f90f",
+      "bytes": 157,
+      "modified_ns": 1795347185004225826
+    },
+    ".terminal.json": {
+      "sha256": "f65599524e01e971f4d5db3c336850e1c7b4fb80a4a6a9034dc946409638ddce",
+      "bytes": 225,
+      "modified_ns": 1795347291678815428
+    },
+    ".json": {
+      "sha256": "cc9ecaa5e42ca083176874aa704353e5fdafed1d46c8bf5c4ab9e08b408d7190",
+      "bytes": 15411,
+      "modified_ns": 1795347291691359732
+    },
+    "ready.json": {
+      "sha256": "ec49f328812871dba1b27d18978b1080df2a5a1fa6ff86a3e89a1889e5730a7a",
+      "bytes": 295,
+      "modified_ns": 1795347544752043671
+    },
+    "recording.json": {
+      "sha256": "349bfa8dc06d25133b4047bf9b8095ea572498940c9a286d3b003c76031dd3a2",
+      "bytes": 882,
+      "modified_ns": 1795347558568213686
+    },
+    "capture-timeline.json": {
+      "sha256": "88fbfe16098652530014bf384f4fe5b81812df1ec1ffb677fa762c426e378287",
+      "bytes": 3555,
+      "modified_ns": 1795347556919539191
+    },
+    "viewport-evidence.json": {
+      "sha256": "bbc52ffe17982685501cae0f39ccb1073b0888aa3eaacbd234bc970fd4c97669",
+      "bytes": 2771,
+      "modified_ns": 1795347558568079727
+    },
+    "validation.json": {
+      "sha256": "0aedac08970e99dbc1176a75c53b97d9f07eba52d5c3dfc0a7f47ecbc356dcee",
+      "bytes": 19391,
+      "modified_ns": 1795347501730336539
+    },
+    "evidence.json": {
+      "sha256": "4c14861029073b1535cec5f25bbf38b552bb7796bbbd8c1826269a20b56bb163",
+      "bytes": 18559,
+      "modified_ns": 1795347506260000000
+    }
+  }
+}

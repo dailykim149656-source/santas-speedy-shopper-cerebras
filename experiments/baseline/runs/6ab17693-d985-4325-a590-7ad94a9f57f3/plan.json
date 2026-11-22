@@ -1,0 +1,6 @@
+{
+  "id": "6ab17693-d985-4325-a590-7ad94a9f57f3",
+  "label": "B1",
+  "sessionKey": "agent:main:shop-b1-97fc945e",
+  "prompt": "Find 5 real Christmas tech gifts across both shops. Fetch these two live catalogs in parallel. Only output 5 numbered [product name](exact product URL) links from the fetched items.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=6&stock_status=instock&_fields=name,permalink&_run=6ab17693\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=6&stock_status=instock&_fields=name,permalink&_run=6ab17693"
+}

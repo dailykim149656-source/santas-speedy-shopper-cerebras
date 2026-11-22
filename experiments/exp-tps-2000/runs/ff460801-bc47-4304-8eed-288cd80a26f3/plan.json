@@ -1,0 +1,19 @@
+{
+  "id": "ff460801-bc47-4304-8eed-288cd80a26f3",
+  "label": "D6005-exp2k-call0-zero-think",
+  "sessionKey": "agent:main:shop-d6005-exp2k-call0-zero-think-ff460801",
+  "variant": "exp2k-call0-zero-think",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": 1024,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1301.275477944986,
+  "workspace_agents_md": "# Tool-first zero-thinking execution\n\n- Emit zero reasoning tokens before calling tools and before writing the final answer.\n- State 1 (no tool results yet): immediately emit ONLY the exact parallel web_fetch tool calls listed in the user message, copying every JSON argument object verbatim. Do not plan or mention the final answer.\n- State 2 (all requested tool results received): output ONLY the requested answer directly from the fetched JSON in exact listed order, copying values verbatim with no preamble, no commentary, and no extra URLs.\n",
+  "prompt": "Christmas gifts: call web_fetch 5 times in parallel with each exact argument object below. Return the 5 products in order as numbered [exact name](exact permalink) links only.\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801\",\"extractMode\":\"text\",\"maxChars\":4000}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801\",\"extractMode\":\"text\",\"maxChars\":4000}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801\",\"extractMode\":\"text\",\"maxChars\":4000}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801\",\"extractMode\":\"text\",\"maxChars\":4000}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=vca&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801\",\"extractMode\":\"text\",\"maxChars\":4000}",
+  "experiment": "exp2k-call0-zero-think|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "49af8c6b5074edbcad0a8c0c069c4ece1938b46fc68c5ec394bfbdc4b8922339",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414"
+}

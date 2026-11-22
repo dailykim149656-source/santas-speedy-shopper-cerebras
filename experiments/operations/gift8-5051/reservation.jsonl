@@ -1,0 +1,6 @@
+{"event": "reserved", "at_ms": 1795345929555, "pid": 21243, "locks": ["$BOUNTY_CACHE/2026-11-22-exp2000/mean-2000/loop.lock", "$BOUNTY_CACHE/2026-11-22/mean-2000/loop.lock", "$OPERATIONS_ROOT/loop.lock"]}
+{"event": "releasing", "at_ms": 1795346134364, "pid": 21243}
+{"event": "reserved", "at_ms": 1795346185858, "pid": 22746, "locks": ["$BOUNTY_CACHE/2026-11-22-exp2000/mean-2000/loop.lock", "$BOUNTY_CACHE/2026-11-22/mean-2000/loop.lock", "$OPERATIONS_ROOT/loop.lock"]}
+{"event": "releasing", "at_ms": 1795346512507, "pid": 22746}
+{"event": "reserved", "at_ms": 1795346578538, "pid": 26781, "locks": ["$BOUNTY_CACHE/2026-11-22-exp2000/mean-2000/loop.lock", "$BOUNTY_CACHE/2026-11-22/mean-2000/loop.lock", "$OPERATIONS_ROOT/loop.lock"]}
+{"event": "releasing", "at_ms": 1795347436710, "pid": 26781}

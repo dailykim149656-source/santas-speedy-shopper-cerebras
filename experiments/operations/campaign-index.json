@@ -1,0 +1,82 @@
+[
+  {
+    "campaign": "d5027-1500-20261122",
+    "published_files": 77,
+    "phase": null,
+    "started": "2026-11-22T22:59:20.056048+09:00",
+    "stopped": null,
+    "dispatch_records": null
+  },
+  {
+    "campaign": "d5027-fast-0235",
+    "published_files": 228,
+    "phase": "external_stop",
+    "started": "2026-11-23T01:22:10.553+09:00",
+    "stopped": "2026-11-23T01:24:47.041+09:00",
+    "dispatch_records": 1
+  },
+  {
+    "campaign": "d5027-fast2-0235",
+    "published_files": 8,
+    "phase": "external_stop",
+    "started": "2026-11-23T01:30:05.755+09:00",
+    "stopped": "2026-11-23T01:53:38.121+09:00",
+    "dispatch_records": 26
+  },
+  {
+    "campaign": "d5027-original-0235",
+    "published_files": 6,
+    "phase": "external_stop",
+    "started": "2026-11-23T01:24:47.600+09:00",
+    "stopped": "2026-11-23T01:30:05.299+09:00",
+    "dispatch_records": 2
+  },
+  {
+    "campaign": "d5027-pure-0235",
+    "published_files": 17,
+    "phase": "external_stop",
+    "started": "2026-11-23T00:45:02.063+09:00",
+    "stopped": "2026-11-23T01:22:10.151+09:00",
+    "dispatch_records": 19
+  },
+  {
+    "campaign": "gift8-5051",
+    "published_files": 129,
+    "phase": null,
+    "started": null,
+    "stopped": null,
+    "dispatch_records": null
+  },
+  {
+    "campaign": "mercantile-abba-d5124",
+    "published_files": 2,
+    "phase": "completed",
+    "started": "2026-11-22T15:26:39.965132+00:00",
+    "stopped": "2026-11-22T15:32:19.737387+00:00",
+    "dispatch_records": 4
+  },
+  {
+    "campaign": "merchant45-20261123",
+    "published_files": 18,
+    "phase": "external_stop",
+    "started": "2026-11-23T00:40:28.778+09:00",
+    "stopped": "2026-11-23T00:42:39.560+09:00",
+    "dispatch_records": 2
+  },
+  {
+    "campaign": "report-first5027-5037",
+    "published_files": 4,
+    "phase": null,
+    "started": null,
+    "stopped": null,
+    "dispatch_records": null
+  },
+  {
+    "campaign": "speed1500-20261122",
+    "published_files": 80,
+    "phase": null,
+    "started": null,
+    "stopped": null,
+    "dispatch_records": null
+  }
+]

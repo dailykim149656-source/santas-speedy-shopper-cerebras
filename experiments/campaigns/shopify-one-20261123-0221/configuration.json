@@ -1,0 +1,26 @@
+{
+  "protocol": "simethan-shopify-v1",
+  "runtime": {
+    "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+    "officialPatch": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+    "patchSha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+    "tree": "aec08de95dc279d3c2a5ef46c641ae31b7a0e219",
+    "runnerSha256": "c9aa492cb9659ec279e10ff9398f39ed7d5a608874200d4ab0dd7dacd48d702e",
+    "clientSha256": "daf3c81c1571ac7052b35e428b2f711fdd8762b5cea6f02f3240d3bd66f1e119",
+    "pluginSha256": "9fff04ee1eb7a1cfe3d38af5e273c7a4405238b568eef1bdf357598a6bffd9e8"
+  },
+  "source": "121842981f3214db7066de4f12540d51195bcc36",
+  "deadline": "2026-11-23T02:35:00+09:00",
+  "pauseSeconds": 15,
+  "planned_slots": 60,
+  "trial_defaults": {
+    "arm": "shopify-prefetch",
+    "variant": "shopify-one-generation",
+    "prompt": "Find 5 real Christmas gifts for my husband under $50:\n- collapsible coffee dripper\n- cast iron skillet\n- enamel camp mug\n- leather pocket journal\n- leather keychain",
+    "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+    "thinking": "low",
+    "temperature": 0.1,
+    "max_completion_tokens": 2400
+  },
+  "source_plan_sha256": "b3a1073bde8b4d542d9013372203e8c4f4351928bd0bbdf1bab6243d8544b874"
+}

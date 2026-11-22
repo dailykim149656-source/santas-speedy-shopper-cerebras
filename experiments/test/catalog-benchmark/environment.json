@@ -1,0 +1,21 @@
+{
+  "benchmark_model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+  "model_profile": {
+    "temperature": 0.2,
+    "maxTokens": 1024
+  },
+  "thinking": "low",
+  "provider_endpoint": "https://api.cerebras.ai/v1",
+  "provider_retries": 0,
+  "tools_allowed": [
+    "search_catalog"
+  ],
+  "patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "patch_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "openclaw_base": "8b18b5578f66eab1501cba4cef2310d88bfb9a41",
+  "executed_openclaw_head": "9077e4bd674b88422e6f6a1229da676eabc9b134",
+  "plugin_sha256": "d493b5ef798cc61d0bc57e46c49dd6c8fc481ec78c5957bf55dcb852854620aa",
+  "ui_score_source_sha256": "05354264292d2c1d55a7bc7f44ceb021c6a563aff5aa83cb49fed13947e463fa",
+  "source_catalog": "https://catalog.shopify.com/api/ucp/mcp",
+  "checked_at": "2026-11-22T14:49:29.603836+00:00"
+}

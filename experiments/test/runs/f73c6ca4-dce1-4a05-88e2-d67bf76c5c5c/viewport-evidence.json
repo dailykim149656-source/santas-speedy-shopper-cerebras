@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "verified": true,
+  "finishSeconds": 9.553738417,
+  "demoStartSeconds": 0,
+  "score": {
+    "originalFromSeconds": 9.570854417,
+    "originalToSeconds": 15.520000000000001,
+    "clipFromSeconds": 9.570854417,
+    "clipToSeconds": 15.520000000000001,
+    "firstFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+    "lastFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+    "mean": 1014
+  },
+  "links": [
+    {
+      "originalFromSeconds": 9.570854417,
+      "originalToSeconds": 15.520000000000001,
+      "clipFromSeconds": 9.570854417,
+      "clipToSeconds": 15.520000000000001,
+      "firstFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "lastFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+    },
+    {
+      "originalFromSeconds": 9.570854417,
+      "originalToSeconds": 15.520000000000001,
+      "clipFromSeconds": 9.570854417,
+      "clipToSeconds": 15.520000000000001,
+      "firstFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "lastFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+    },
+    {
+      "originalFromSeconds": 9.570854417,
+      "originalToSeconds": 15.520000000000001,
+      "clipFromSeconds": 9.570854417,
+      "clipToSeconds": 15.520000000000001,
+      "firstFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "lastFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+    },
+    {
+      "originalFromSeconds": 9.570854417,
+      "originalToSeconds": 15.520000000000001,
+      "clipFromSeconds": 9.570854417,
+      "clipToSeconds": 15.520000000000001,
+      "firstFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "lastFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+    },
+    {
+      "originalFromSeconds": 9.570854417,
+      "originalToSeconds": 15.520000000000001,
+      "clipFromSeconds": 9.570854417,
+      "clipToSeconds": 15.520000000000001,
+      "firstFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "lastFrameSha256": "d11b21d695eb0c0077a60100269592d79713bf0deb22a87d314b56d552a534cb",
+      "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+    }
+  ]
+}

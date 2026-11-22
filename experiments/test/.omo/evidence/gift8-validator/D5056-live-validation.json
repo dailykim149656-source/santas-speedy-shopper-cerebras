@@ -1,0 +1,431 @@
+{
+  "protocol": "gift8-v1",
+  "run_id": "985017fb-afc8-40c7-887a-480ba6c25206",
+  "input_sha256": "cc9ecaa5e42ca083176874aa704353e5fdafed1d46c8bf5c4ab9e08b408d7190",
+  "input_bytes": 15411,
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": "chatcmpl-009cda6f-210c-4a3a-8413-22f972ebad00",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "completionMs": 402.33361099999996,
+        "outputTokens": 211
+      },
+      "timed_sample": true,
+      "completionMs": 402.33361099999996,
+      "outputTokens": 211,
+      "tokensPerSecond": 524.4404002826401
+    },
+    {
+      "message_index": 7,
+      "response_id": "chatcmpl-14d75af7-fbff-401a-ad2d-8e1c4b015a23",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "stop",
+      "serverGeneration": {
+        "completionMs": 617.156735,
+        "outputTokens": 564
+      },
+      "timed_sample": true,
+      "completionMs": 617.156735,
+      "outputTokens": 564,
+      "tokensPerSecond": 913.8683384861707
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 719.1543693844054,
+    "ui_rounded_tps": 719,
+    "ui_display": "719",
+    "call_count": 2,
+    "assistant_call_count": 2,
+    "output_tokens": 775,
+    "generation_ms": 1019.490346,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+  },
+  "products": [
+    {
+      "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "catalog_name": "AI024 Eurorack X Filter",
+      "source_tool_call_id": "e6998f12f",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "html_bytes_read": 477282,
+      "html_sha256": "0ec1db5c74c1a635f9fcfc7d30ec08e5d8e19b5a17a5ed735945f799c39df008",
+      "checked_at": "2026-11-22T11:37:04.459010+00:00",
+      "canonical": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "merchant": "aisynthesis.com",
+      "title": "AI024 Eurorack X Filter",
+      "title_matches_catalog": true,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      },
+      "password_protected": false
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "catalog_name": "AI028 Voltage Controlled Matrix Mixer",
+      "source_tool_call_id": "d372dc035",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "html_bytes_read": 490732,
+      "html_sha256": "2eb544957891e972e6e30365ff53ab14cdd4b41f75831c0236e8b9e3b64e126c",
+      "checked_at": "2026-11-22T11:37:04.672842+00:00",
+      "canonical": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "merchant": "aisynthesis.com",
+      "title": "AI028 Voltage Controlled Matrix Mixer",
+      "title_matches_catalog": true,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      },
+      "password_protected": false
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "catalog_name": "AI011 Analog Voltage Controlled Oscillator",
+      "source_tool_call_id": "38012f1cb",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "html_bytes_read": 509184,
+      "html_sha256": "55c8390d87b0e5e3e24102515341e6822afc9ee35bb60a8b00adb06d17245d0d",
+      "checked_at": "2026-11-22T11:37:04.447283+00:00",
+      "canonical": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "merchant": "aisynthesis.com",
+      "title": "AI011 Analog Voltage Controlled Oscillator",
+      "title_matches_catalog": true,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      },
+      "password_protected": false
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "catalog_name": "AI016 Eurorack Tape Echo Interface",
+      "source_tool_call_id": "49ce89e13",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "html_bytes_read": 515260,
+      "html_sha256": "72065abd56b8da1410a0f317ba8ecfe42a07aa2bccc3d7383f58818502bda877",
+      "checked_at": "2026-11-22T11:37:04.485203+00:00",
+      "canonical": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "merchant": "aisynthesis.com",
+      "title": "AI016 Eurorack Tape Echo Interface",
+      "title_matches_catalog": true,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      },
+      "password_protected": false
+    },
+    {
+      "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "catalog_name": "Eurorack Modular Patch Cable 4.9ft",
+      "source_tool_call_id": "b434d47ce",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "html_bytes_read": 358726,
+      "html_sha256": "b0098f23599a294d97a5aec3d58b53770ec96a9cd8e8ef1879eb64a628271a3a",
+      "checked_at": "2026-11-22T11:37:03.755102+00:00",
+      "canonical": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "merchant": "aisynthesis.com",
+      "title": "Eurorack Modular Patch Cable 4.9ft",
+      "title_matches_catalog": true,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      },
+      "password_protected": false
+    }
+  ],
+  "retail_sources": [],
+  "actual_generation_count": 2,
+  "expected_generation_count": 2,
+  "structure_expected": true,
+  "plugin_sha256": "ef5d6e58c1f45e5d290e1af4608742b0f01336122e91b5a92b65adf58a388edd",
+  "arm": "tool",
+  "manifest_sha256": "716cacc5adf0a3b69c77423bb21e2d7a89ac706bb56d2d3eaaae0f1b39a61adb",
+  "plugin_files_sha256": {
+    "README.md": "30f0686f2deda23e87cf23aff6d1870ccfe4e6b1d9b9e3f4ab871ada0f3aeac1",
+    "fixture-test.cjs": "49cd318f8dd0751cfe889dca0ae1df50d8dd9ada382c37b3526993b130294212",
+    "index.cjs": "369a429330eaf5776eb7638bd90cc2dc3ad1832fe2e8868f23e5fc74c7e05747",
+    "native-fixture.mts": "096cb14444d154cba05b338b260fdd0444dae034da3e618fb88a7d72210dc719",
+    "openclaw.plugin.json": "98d4bdbb11133bb70761d7f40e8364b00a64478d19f0b6885cba99e53222adb1",
+    "package.json": "b66c7735a74672cd484e22ff5c930626814436ff2359fa8533fc430abbdd477c"
+  },
+  "native_tool_call_count": 5,
+  "final_text": "{\"gifts\":[{\"id\":21951,\"name\":\"AI024 Eurorack X Filter\",\"url\":\"https://aisynthesis.com/product/ai024-eurorack-x-filter/\",\"price_minor\":1500,\"price_range_minor\":[1500,14000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":23345,\"name\":\"AI028 Voltage Controlled Matrix Mixer\",\"url\":\"https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/\",\"price_minor\":2000,\"price_range_minor\":[2000,32900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"presoldered-pcb\",\"smd-pre-soldered-pcb-and-black-panel\",\"smd-pre-soldered-pcb-and-silver-panel\",\"smd-presoldered-kit-black\",\"smd-presoldered-kit-silver\"]},{\"id\":11125,\"name\":\"AI011 Analog Voltage Controlled Oscillator\",\"url\":\"https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/\",\"price_minor\":1500,\"price_range_minor\":[1500,15000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":11141,\"name\":\"AI016 Eurorack Tape Echo Interface\",\"url\":\"https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/\",\"price_minor\":1500,\"price_range_minor\":[1500,9900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":20209,\"name\":\"Eurorack Modular Patch Cable 4.9ft\",\"url\":\"https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/\",\"price_minor\":450,\"price_range_minor\":null,\"currency\":\"USD\",\"stock\":true,\"options\":[]}]}",
+  "receipts": [
+    {
+      "protocol": "gift8-v1",
+      "id": "985017fb-afc8-40c7-887a-480ba6c25206",
+      "sessionKey": "agent:main:shop-d5056-gift8-tool-985017fb",
+      "arm": "tool",
+      "prompt_sha256": "be067abf4e62dc46da707221b23dec123004fbba5faffd7dc5e86ff43d011419",
+      "product_id": 21951,
+      "tool_call_id": "e6998f12f",
+      "started_ms": 1795347192030,
+      "completed_ms": 1795347194560,
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products/21951?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products/21951?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "status": 200,
+      "body_sha256": "c1653123c2434d85d043f682272bbb78f7dbb7e6bb6a7ee1f32d6f45a4fb1e5e",
+      "body_file": "body-21951.bin",
+      "card": {
+        "id": 21951,
+        "name": "AI024 Eurorack X Filter",
+        "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "price_minor": 1500,
+        "price_range_minor": [
+          1500,
+          14000
+        ],
+        "currency": "USD",
+        "stock": true,
+        "options": [
+          "aluminum-panel",
+          "black-panel",
+          "built-and-tested-aluminum",
+          "built-and-tested-black",
+          "full-kit-aluminum",
+          "full-kit-black",
+          "pcb",
+          "pcb-and-black-panel",
+          "pcb-and-panel-aluminum"
+        ]
+      },
+      "card_sha256": "b49c37633020a8c2f43904e9ef1a5a2295a482bbb6546918002e81d9e8b5d92a"
+    },
+    {
+      "protocol": "gift8-v1",
+      "id": "985017fb-afc8-40c7-887a-480ba6c25206",
+      "sessionKey": "agent:main:shop-d5056-gift8-tool-985017fb",
+      "arm": "tool",
+      "prompt_sha256": "be067abf4e62dc46da707221b23dec123004fbba5faffd7dc5e86ff43d011419",
+      "product_id": 23345,
+      "tool_call_id": "d372dc035",
+      "started_ms": 1795347192032,
+      "completed_ms": 1795347194378,
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products/23345?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products/23345?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "status": 200,
+      "body_sha256": "e4cefa4bb69396aebdab54db143e366245c959f759e38010e75fdc3b6426e086",
+      "body_file": "body-23345.bin",
+      "card": {
+        "id": 23345,
+        "name": "AI028 Voltage Controlled Matrix Mixer",
+        "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "price_minor": 2000,
+        "price_range_minor": [
+          2000,
+          32900
+        ],
+        "currency": "USD",
+        "stock": true,
+        "options": [
+          "aluminum-panel",
+          "black-panel",
+          "built-and-tested-aluminum",
+          "built-and-tested-black",
+          "presoldered-pcb",
+          "smd-pre-soldered-pcb-and-black-panel",
+          "smd-pre-soldered-pcb-and-silver-panel",
+          "smd-presoldered-kit-black",
+          "smd-presoldered-kit-silver"
+        ]
+      },
+      "card_sha256": "6a38bb606526f4fb12254e3db8dd12fb8f1954b341a9b57997a2a5c2fac4eb82"
+    },
+    {
+      "protocol": "gift8-v1",
+      "id": "985017fb-afc8-40c7-887a-480ba6c25206",
+      "sessionKey": "agent:main:shop-d5056-gift8-tool-985017fb",
+      "arm": "tool",
+      "prompt_sha256": "be067abf4e62dc46da707221b23dec123004fbba5faffd7dc5e86ff43d011419",
+      "product_id": 11125,
+      "tool_call_id": "38012f1cb",
+      "started_ms": 1795347192036,
+      "completed_ms": 1795347194414,
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products/11125?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products/11125?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "status": 200,
+      "body_sha256": "36fac895795233ac050829c0390cfd49ba8d07dc1ad924b53790432b8a7974d0",
+      "body_file": "body-11125.bin",
+      "card": {
+        "id": 11125,
+        "name": "AI011 Analog Voltage Controlled Oscillator",
+        "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "price_minor": 1500,
+        "price_range_minor": [
+          1500,
+          15000
+        ],
+        "currency": "USD",
+        "stock": true,
+        "options": [
+          "aluminum-panel",
+          "black-panel",
+          "built-and-tested-aluminum",
+          "built-and-tested-black",
+          "full-kit-aluminum",
+          "full-kit-black",
+          "pcb",
+          "pcb-and-black-panel",
+          "pcb-and-panel-aluminum"
+        ]
+      },
+      "card_sha256": "1b43d12ccac7754fb5c733122ab603b7af4eec970afd4f12fcc2c438a84adf80"
+    },
+    {
+      "protocol": "gift8-v1",
+      "id": "985017fb-afc8-40c7-887a-480ba6c25206",
+      "sessionKey": "agent:main:shop-d5056-gift8-tool-985017fb",
+      "arm": "tool",
+      "prompt_sha256": "be067abf4e62dc46da707221b23dec123004fbba5faffd7dc5e86ff43d011419",
+      "product_id": 11141,
+      "tool_call_id": "49ce89e13",
+      "started_ms": 1795347192038,
+      "completed_ms": 1795347194691,
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products/11141?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products/11141?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "status": 200,
+      "body_sha256": "f72be278527ff12d0b1d6bb59ef0bc8b7f76d02ea1d79b341c1026b7d687f674",
+      "body_file": "body-11141.bin",
+      "card": {
+        "id": 11141,
+        "name": "AI016 Eurorack Tape Echo Interface",
+        "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "price_minor": 1500,
+        "price_range_minor": [
+          1500,
+          9900
+        ],
+        "currency": "USD",
+        "stock": true,
+        "options": [
+          "aluminum-panel",
+          "black-panel",
+          "built-and-tested-aluminum",
+          "built-and-tested-black",
+          "full-kit-aluminum",
+          "full-kit-black",
+          "pcb",
+          "pcb-and-black-panel",
+          "pcb-and-panel-aluminum"
+        ]
+      },
+      "card_sha256": "fc8852185755439d41afa1c10c02acfa7e9a68bd49c806828a9a30d44dbd9dc3"
+    },
+    {
+      "protocol": "gift8-v1",
+      "id": "985017fb-afc8-40c7-887a-480ba6c25206",
+      "sessionKey": "agent:main:shop-d5056-gift8-tool-985017fb",
+      "arm": "tool",
+      "prompt_sha256": "be067abf4e62dc46da707221b23dec123004fbba5faffd7dc5e86ff43d011419",
+      "product_id": 20209,
+      "tool_call_id": "b434d47ce",
+      "started_ms": 1795347192040,
+      "completed_ms": 1795347194682,
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products/20209?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products/20209?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+      "status": 200,
+      "body_sha256": "b2ea7bb98485a609f4cb5bd6d74eb0c022f39f727e6d1add7783607489976acd",
+      "body_file": "body-20209.bin",
+      "card": {
+        "id": 20209,
+        "name": "Eurorack Modular Patch Cable 4.9ft",
+        "url": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "price_minor": 450,
+        "price_range_minor": null,
+        "currency": "USD",
+        "stock": true,
+        "options": []
+      },
+      "card_sha256": "273e542d3f32c7cf947be8ce381f933f4a0a6d066a47295a5bf2a31d35ce5f9f"
+    }
+  ],
+  "llm_input_event_count": 8,
+  "hook_evidence": [
+    {
+      "file": "1795347186610-3b1d560a-6a1c-4bd4-8bbb-c972254a9a3d.json",
+      "sha256": "2e18102583c51b3179690c8a64520550b5678c309e9361ea24c7b2e1afbdd625",
+      "type": "prompt_binding",
+      "timestamp_ms": 1795347186609
+    },
+    {
+      "file": "1795347186614-462945b8-424e-4f03-a925-c81c47092a6d.json",
+      "sha256": "359461fbf49f9f515c1d5fd8d74ed62f4a905654d1980e5ec12eb8f16a9ac8ce",
+      "type": "llm_input",
+      "timestamp_ms": 1795347186614
+    },
+    {
+      "file": "1795347195654-67cea529-ca73-405f-9ecd-d299008d65b9.json",
+      "sha256": "7a95f25d0e451d1e13f17c3b783d466410cd7edd77fb685283571a8adb374bde",
+      "type": "llm_input",
+      "timestamp_ms": 1795347195653
+    },
+    {
+      "file": "1795347197646-5573d5fa-1f4f-465d-b218-b7cf43080096.json",
+      "sha256": "47376b26c06dee8b2c097fb1950b449dc7fb8a91186770423da658f6f1075e89",
+      "type": "llm_input",
+      "timestamp_ms": 1795347197646
+    },
+    {
+      "file": "1795347201396-c79c22a0-a21b-4b51-ad22-374cf7885f22.json",
+      "sha256": "c2e7b66e26e52601a187a99992d53b93a9342c97128c7f93095f3f27918c0891",
+      "type": "llm_input",
+      "timestamp_ms": 1795347201396
+    },
+    {
+      "file": "1795347207753-b2aa3ab5-6cd6-43c5-a58c-26c67e7fcda0.json",
+      "sha256": "3c88a032ce03e57442c56a0f26430e9a3002e5d3908118f3b463082b3fa8de84",
+      "type": "llm_input",
+      "timestamp_ms": 1795347207753
+    },
+    {
+      "file": "1795347229940-6a21d57e-728e-40ec-992f-42190b18ad5a.json",
+      "sha256": "6081ec13e6bc045380dcd4478246e22df8917b67d09659bc8e1acc893bb6833c",
+      "type": "llm_input",
+      "timestamp_ms": 1795347229940
+    },
+    {
+      "file": "1795347260727-5edda9af-1c44-4340-841f-630695537611.json",
+      "sha256": "a2f2610dd80bc8ab243a06d23a505d26170f0f668959d225eadf5233023ebb4e",
+      "type": "llm_input",
+      "timestamp_ms": 1795347260727
+    },
+    {
+      "file": "1795347290369-c3ee4eea-e408-43e6-a57c-b3361f96345a.json",
+      "sha256": "12a8799eab2b123d993a99830a02b88701c572d3c03f8791bc3b5b184dcbaba9",
+      "type": "llm_input",
+      "timestamp_ms": 1795347290369
+    }
+  ],
+  "first_input_sha256": "359461fbf49f9f515c1d5fd8d74ed62f4a905654d1980e5ec12eb8f16a9ac8ce",
+  "valid": true,
+  "status": "valid_below_target",
+  "target_met": false,
+  "reject_reasons": [],
+  "target_reasons": [
+    "exact mean and rounded UI must both be at least 1700 TPS"
+  ]
+}

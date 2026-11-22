@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "enabled": true,
+  "registered_at": "2026-11-22T23:43:45.938966+09:00",
+  "cutoff": "2026-11-22T17:53:00+00:00",
+  "history_start": 83,
+  "anchor_id": "2f279e62-c518-4a79-ad14-d9e4eacbb0d8",
+  "order_seconds": [
+    60,
+    90,
+    90,
+    60
+  ],
+  "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd"
+}

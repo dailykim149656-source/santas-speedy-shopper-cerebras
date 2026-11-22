@@ -1,0 +1,7 @@
+{
+  "id": "shopper-catalog-search",
+  "name": "Shopper catalog search",
+  "version": "1.0.0",
+  "contracts": { "tools": ["search_catalog"] },
+  "configSchema": { "type": "object", "properties": {}, "additionalProperties": false }
+}

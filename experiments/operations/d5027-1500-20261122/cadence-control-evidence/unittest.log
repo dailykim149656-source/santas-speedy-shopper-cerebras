@@ -1,0 +1,20 @@
+test_allocated_restart_is_same_intent (__main__.CadenceTests.test_allocated_restart_is_same_intent) ... ok
+test_ambiguous_dispatch_never_retries (__main__.CadenceTests.test_ambiguous_dispatch_never_retries) ... ok
+test_balanced_eight_failure_counted_then_default (__main__.CadenceTests.test_balanced_eight_failure_counted_then_default) ... ok
+test_cutoff_cancels_unsent_intent (__main__.CadenceTests.test_cutoff_cancels_unsent_intent) ... ok
+test_cutoff_dispatch_rejected_and_config_immutable (__main__.CadenceTests.test_cutoff_dispatch_rejected_and_config_immutable) ... ok
+test_disabled_has_no_ledger_or_override (__main__.CadenceTests.test_disabled_has_no_ledger_or_override) ... ok
+test_external_cooldown_and_failed_backoff_unchanged (__main__.CadenceTests.test_external_cooldown_and_failed_backoff_unchanged) ... ok
+test_ineligible_prior_results_cannot_allocate (__main__.CadenceTests.test_ineligible_prior_results_cannot_allocate) ... ok
+test_presend_does_not_consume_assignment (__main__.CadenceTests.test_presend_does_not_consume_assignment) ... ok
+test_supervisor_dispatches_flag_and_records_before_report (__main__.CadenceTests.test_supervisor_dispatches_flag_and_records_before_report) ... {"time": "2026-11-22T14:20:42.377048+00:00", "supervisor": "started", "owner": "d5027-supervisor-3f6cb7cc-c41d-4dc5-abc0-400b291b200f", "deadline": "2100-01-01T00:07:00+00:00", "cutoff": "2100-01-01T00:00:00+00:00"}
+{"time": "2026-11-22T14:20:42.378520+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "30"]}
+{"time": "2026-11-22T14:20:42.378711+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:20:42.379524+00:00", "supervisor": "stopped", "reason": "fixture complete"}
+ok
+test_terminal_method_failure_counted_before_campaign_checks (__main__.CadenceTests.test_terminal_method_failure_counted_before_campaign_checks) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.037s
+
+OK

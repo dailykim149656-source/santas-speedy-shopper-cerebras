@@ -1,0 +1,929 @@
+[
+  {
+    "id": "7ccce7d3-a456-4586-9d4a-65808cbb3986",
+    "label": "D5098",
+    "end": 1795356055841,
+    "first": 733.5412302121817,
+    "final": 1530.3657791885405,
+    "score": 1131.953504700361,
+    "display": 1132,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        7
+      ],
+      "final": [
+        7
+      ],
+      "unknown": []
+    },
+    "http429": 14,
+    "clean_wire": true,
+    "control": true,
+    "media": "video_superseded",
+    "products": 5,
+    "commit": "8573ba2db0328d2e8301ed42f70d388845851063",
+    "first_cached_input": 2048,
+    "first_output_tokens": 420,
+    "final_cached_input": 2048,
+    "final_output_tokens": 161,
+    "relay_mode": "retry-only",
+    "first_ms": 572.564953,
+    "final_ms": 105.203607,
+    "first_reasoning": 38,
+    "final_reasoning": 3
+  },
+  {
+    "id": "ee5b4d02-dd27-4542-958a-92b1f03097ee",
+    "label": "D5099",
+    "end": 1795356266756,
+    "first": 756.1878983892634,
+    "final": 815.3650509865491,
+    "score": 785.7764746879063,
+    "display": 786,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        6
+      ],
+      "final": [
+        12
+      ],
+      "unknown": []
+    },
+    "http429": 18,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "cae035a0ad237369b88fa3bc26e4d7f1fbdf4907",
+    "first_cached_input": 2048,
+    "first_output_tokens": 413,
+    "final_cached_input": 2048,
+    "final_output_tokens": 161,
+    "relay_mode": "retry-only",
+    "first_ms": 546.160552,
+    "final_ms": 197.457568,
+    "first_reasoning": 31,
+    "final_reasoning": 3
+  },
+  {
+    "id": "877c6d73-926f-4f61-82d2-259b2798b920",
+    "label": "D5100",
+    "end": 1795356376832,
+    "first": null,
+    "final": null,
+    "score": null,
+    "display": null,
+    "valid": false,
+    "clean": null,
+    "rate_limited": true,
+    "attempts": {
+      "first": [
+        9
+      ],
+      "final": [],
+      "unknown": []
+    },
+    "http429": 10,
+    "clean_wire": true,
+    "control": true,
+    "media": "unscored_failed_run",
+    "products": 0,
+    "commit": "bed7c62f4ec14c3c15b5d1d95d725318cfa21ea0",
+    "first_cached_input": null,
+    "first_output_tokens": null,
+    "final_cached_input": null,
+    "final_output_tokens": null,
+    "relay_mode": "retry-only",
+    "first_ms": null,
+    "final_ms": null,
+    "first_reasoning": null,
+    "final_reasoning": null
+  },
+  {
+    "id": "bca2576c-8e82-4612-8992-5771bde0b208",
+    "label": "D5101",
+    "end": 1795356489114,
+    "first": null,
+    "final": null,
+    "score": null,
+    "display": null,
+    "valid": false,
+    "clean": null,
+    "rate_limited": true,
+    "attempts": {
+      "first": [
+        9
+      ],
+      "final": [],
+      "unknown": []
+    },
+    "http429": 10,
+    "clean_wire": true,
+    "control": true,
+    "media": "unscored_failed_run",
+    "products": 0,
+    "commit": "98055e62e4cb6e61a613078e9e6b911327e5817c",
+    "first_cached_input": null,
+    "first_output_tokens": null,
+    "final_cached_input": null,
+    "final_output_tokens": null,
+    "relay_mode": "retry-only",
+    "first_ms": null,
+    "final_ms": null,
+    "first_reasoning": null,
+    "final_reasoning": null
+  },
+  {
+    "id": "8cc80670-9e66-4a59-9e74-fd3bfeadcf7e",
+    "label": "D5102",
+    "end": 1795356765059,
+    "first": 696.9487428321411,
+    "final": 1410.4936557835138,
+    "score": 1053.7211993078274,
+    "display": 1054,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        0
+      ],
+      "final": [
+        8
+      ],
+      "unknown": []
+    },
+    "http429": 8,
+    "clean_wire": true,
+    "control": true,
+    "media": "video_superseded",
+    "products": 5,
+    "commit": "f2daf6cf4fb2bfa6eba6a4a0182bd2fb8e0873d1",
+    "first_cached_input": 2048,
+    "first_output_tokens": 461,
+    "final_cached_input": 2048,
+    "final_output_tokens": 161,
+    "relay_mode": "retry-only",
+    "first_ms": 661.4546690000001,
+    "final_ms": 114.144434,
+    "first_reasoning": 89,
+    "final_reasoning": 3
+  },
+  {
+    "id": "2f1efef7-1246-40ae-bec0-d98f0be4116e",
+    "label": "D5103",
+    "end": 1795357013280,
+    "first": 996.970139078479,
+    "final": 692.1308951434722,
+    "score": 844.5505171109755,
+    "display": 845,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        0
+      ],
+      "final": [
+        14
+      ],
+      "unknown": []
+    },
+    "http429": 14,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "1372f986930d6fbaa9337ddf7834256cd7244b09",
+    "first_cached_input": 2048,
+    "first_output_tokens": 392,
+    "final_cached_input": 2048,
+    "final_output_tokens": 238,
+    "relay_mode": "retry-only",
+    "first_ms": 393.191315,
+    "final_ms": 343.865592,
+    "first_reasoning": 10,
+    "final_reasoning": 80
+  },
+  {
+    "id": "fba57960-801e-4cab-bfcf-20c059769d03",
+    "label": "D5104",
+    "end": 1795357122406,
+    "first": null,
+    "final": null,
+    "score": null,
+    "display": null,
+    "valid": false,
+    "clean": null,
+    "rate_limited": true,
+    "attempts": {
+      "first": [
+        9
+      ],
+      "final": [],
+      "unknown": []
+    },
+    "http429": 10,
+    "clean_wire": true,
+    "control": true,
+    "media": "unscored_failed_run",
+    "products": 0,
+    "commit": "9ab74d69b23560c82270ab6089883b810be4ec1a",
+    "first_cached_input": null,
+    "first_output_tokens": null,
+    "final_cached_input": null,
+    "final_output_tokens": null,
+    "relay_mode": "retry-only",
+    "first_ms": null,
+    "final_ms": null,
+    "first_reasoning": null,
+    "final_reasoning": null
+  },
+  {
+    "id": "7d036cae-1deb-40fa-b83e-e11564bb54af",
+    "label": "D5105",
+    "end": 1795357231628,
+    "first": null,
+    "final": null,
+    "score": null,
+    "display": null,
+    "valid": false,
+    "clean": null,
+    "rate_limited": true,
+    "attempts": {
+      "first": [
+        9
+      ],
+      "final": [],
+      "unknown": []
+    },
+    "http429": 10,
+    "clean_wire": true,
+    "control": true,
+    "media": "unscored_failed_run",
+    "products": 0,
+    "commit": "e9f1c0d550aaa7056029e5de3a69c41104df399d",
+    "first_cached_input": null,
+    "first_output_tokens": null,
+    "final_cached_input": null,
+    "final_output_tokens": null,
+    "relay_mode": "retry-only",
+    "first_ms": null,
+    "final_ms": null,
+    "first_reasoning": null,
+    "final_reasoning": null
+  },
+  {
+    "id": "e32b612d-a4bf-417e-9566-a254dd56b924",
+    "label": "D5106",
+    "end": 1795357518304,
+    "first": 765.7734049799764,
+    "final": null,
+    "score": 765.7734049799764,
+    "display": 766,
+    "valid": false,
+    "clean": true,
+    "rate_limited": true,
+    "attempts": {
+      "first": [
+        5
+      ],
+      "final": [
+        16
+      ],
+      "unknown": []
+    },
+    "http429": 22,
+    "clean_wire": true,
+    "control": true,
+    "media": "validation_rejected",
+    "products": 0,
+    "commit": "572e8fd7a7d5248295b8b7674aabebbb5a35737b",
+    "first_cached_input": 2048,
+    "first_output_tokens": 393,
+    "final_cached_input": null,
+    "final_output_tokens": null,
+    "relay_mode": "retry-only",
+    "first_ms": 513.206645,
+    "final_ms": null,
+    "first_reasoning": 21,
+    "final_reasoning": null
+  },
+  {
+    "id": "7757e7c5-96d3-4a37-8ee0-e2e08767e3b0",
+    "label": "D5107",
+    "end": 1795357711137,
+    "first": 1016.2774364167379,
+    "final": 686.2537442992959,
+    "score": 851.2655903580169,
+    "display": 851,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        6
+      ],
+      "final": [
+        6
+      ],
+      "unknown": []
+    },
+    "http429": 12,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "ef1f6672202c39cff89a2fb14f291fe0cd734c6f",
+    "first_cached_input": 2048,
+    "first_output_tokens": 393,
+    "final_cached_input": 2048,
+    "final_output_tokens": 177,
+    "relay_mode": "retry-only",
+    "first_ms": 386.705427,
+    "final_ms": 257.92208999999997,
+    "first_reasoning": 11,
+    "final_reasoning": 19
+  },
+  {
+    "id": "f039d055-caa3-4ed7-bcc8-e571d4dea5fb",
+    "label": "D5108",
+    "end": 1795357753820,
+    "first": 1100.6952674403954,
+    "final": 1027.101978335742,
+    "score": 1063.8986228880685,
+    "display": 1064,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        0
+      ],
+      "final": [
+        0
+      ],
+      "unknown": []
+    },
+    "http429": 0,
+    "clean_wire": true,
+    "control": true,
+    "media": "video_superseded",
+    "products": 5,
+    "commit": "8b9328d8ee57d3fb5d37d049d41bc51f2a8c7eeb",
+    "first_cached_input": 2048,
+    "first_output_tokens": 398,
+    "final_cached_input": 2048,
+    "final_output_tokens": 178,
+    "relay_mode": "retry-only",
+    "first_ms": 361.58963500000004,
+    "final_ms": 173.30314199999998,
+    "first_reasoning": 31,
+    "final_reasoning": 20
+  },
+  {
+    "id": "2c3c5f06-c296-4e4f-94c0-9fbc3f121855",
+    "label": "D5109",
+    "end": 1795357833211,
+    "first": 1258.528928629331,
+    "final": 1148.8892764268774,
+    "score": 1203.7091025281043,
+    "display": 1204,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        0
+      ],
+      "final": [
+        0
+      ],
+      "unknown": []
+    },
+    "http429": 0,
+    "clean_wire": true,
+    "control": true,
+    "media": "video_superseded",
+    "products": 5,
+    "commit": "a16a4516d59e0ef7697a7925d372de4978650b56",
+    "first_cached_input": 2048,
+    "first_output_tokens": 400,
+    "final_cached_input": 2048,
+    "final_output_tokens": 173,
+    "relay_mode": "retry-only",
+    "first_ms": 317.831391,
+    "final_ms": 150.58022,
+    "first_reasoning": 13,
+    "final_reasoning": 15
+  },
+  {
+    "id": "ca2abd04-4d26-4981-a745-93ad9e378e70",
+    "label": "D5110",
+    "end": 1795357919554,
+    "first": 658.1928621904553,
+    "final": 1113.066397749825,
+    "score": 885.6296299701402,
+    "display": 886,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        4
+      ],
+      "final": [
+        0
+      ],
+      "unknown": []
+    },
+    "http429": 4,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "824bfc4d96128dd4eabad79eb56f2d08ac59233b",
+    "first_cached_input": 2048,
+    "first_output_tokens": 453,
+    "final_cached_input": 2048,
+    "final_output_tokens": 171,
+    "relay_mode": "retry-only",
+    "first_ms": 688.24812,
+    "final_ms": 153.629649,
+    "first_reasoning": 81,
+    "final_reasoning": 13
+  },
+  {
+    "id": "e0b4904a-4043-43aa-9f3e-8632c591801a",
+    "label": "D5111",
+    "end": 1795357996868,
+    "first": 864.6338717118807,
+    "final": 753.0568483749149,
+    "score": 808.8453600433978,
+    "display": 809,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        8
+      ],
+      "final": [
+        0
+      ],
+      "unknown": []
+    },
+    "http429": 8,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "2022584d896df46f2bfabcf73e8694cadf3b0f07",
+    "first_cached_input": 2048,
+    "first_output_tokens": 402,
+    "final_cached_input": 2048,
+    "final_output_tokens": 239,
+    "relay_mode": "retry-only",
+    "first_ms": 464.936678,
+    "final_ms": 317.37311800000003,
+    "first_reasoning": 25,
+    "final_reasoning": 81
+  },
+  {
+    "id": "4b9ea9e9-b006-40e2-9d8d-7fecfb54f957",
+    "label": "D5112",
+    "end": 1795358100398,
+    "first": 975.2124852014568,
+    "final": 1463.7459982116297,
+    "score": 1219.4792417065432,
+    "display": 1219,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        7
+      ],
+      "final": [
+        0
+      ],
+      "unknown": []
+    },
+    "http429": 7,
+    "clean_wire": true,
+    "control": true,
+    "media": "video_superseded",
+    "products": 5,
+    "commit": "17045a18643c33b88a8f90582aec0e4539b54494",
+    "first_cached_input": 2048,
+    "first_output_tokens": 398,
+    "final_cached_input": 2048,
+    "final_output_tokens": 161,
+    "relay_mode": "retry-only",
+    "first_ms": 408.11618599999997,
+    "final_ms": 109.991761,
+    "first_reasoning": 11,
+    "final_reasoning": 3
+  },
+  {
+    "id": "e86b52f5-5f72-41df-acc8-ecfbbe7eedbc",
+    "label": "D5113",
+    "end": 1795358150943,
+    "first": 655.2731158703414,
+    "final": 656.083036638625,
+    "score": 655.6780762544831,
+    "display": 656,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        3
+      ],
+      "final": [
+        0
+      ],
+      "unknown": []
+    },
+    "http429": 3,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "79230b3595cabae2180249329988f8e58dd63b8e",
+    "first_cached_input": 2048,
+    "first_output_tokens": 447,
+    "final_cached_input": 2048,
+    "final_output_tokens": 235,
+    "relay_mode": "retry-only",
+    "first_ms": 682.158308,
+    "final_ms": 358.18636799999996,
+    "first_reasoning": 70,
+    "final_reasoning": 77
+  },
+  {
+    "id": "ce1753ca-0ccf-4701-8aa8-c903c3c815a9",
+    "label": "D5114",
+    "end": 1795358197379,
+    "first": 768.6097750485418,
+    "final": 843.660781100002,
+    "score": 806.1352780742719,
+    "display": 806,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        0
+      ],
+      "final": [
+        0
+      ],
+      "unknown": []
+    },
+    "http429": 0,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "855307b55bab2051f790e65e3535e4944aba0621",
+    "first_cached_input": 2048,
+    "first_output_tokens": 445,
+    "final_cached_input": 2048,
+    "final_output_tokens": 238,
+    "relay_mode": "retry-only",
+    "first_ms": 578.967396,
+    "final_ms": 282.103904,
+    "first_reasoning": 73,
+    "final_reasoning": 80
+  },
+  {
+    "id": "fa0f817e-ee39-4e86-868e-96edc1830832",
+    "label": "D5115",
+    "end": 1795358300499,
+    "first": 1043.6630282967865,
+    "final": 644.3719770359651,
+    "score": 844.0175026663758,
+    "display": 844,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        6
+      ],
+      "final": [
+        0
+      ],
+      "unknown": []
+    },
+    "http429": 6,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "487e9b5d2cd8e14a81cb84b19aada1d9166750a7",
+    "first_cached_input": 2048,
+    "first_output_tokens": 403,
+    "final_cached_input": 2048,
+    "final_output_tokens": 179,
+    "relay_mode": "retry-only",
+    "first_ms": 386.13996000000003,
+    "final_ms": 277.789858,
+    "first_reasoning": 26,
+    "final_reasoning": 21
+  },
+  {
+    "id": "72b09262-8d05-4ef6-ac46-267cb82a068a",
+    "label": "D5116",
+    "end": 1795358543067,
+    "first": 948.7783213679302,
+    "final": 1135.613088784257,
+    "score": 1042.1957050760934,
+    "display": 1042,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        8
+      ],
+      "final": [
+        11
+      ],
+      "unknown": []
+    },
+    "http429": 19,
+    "clean_wire": true,
+    "control": true,
+    "media": "video_superseded",
+    "products": 5,
+    "commit": "1ce57379aab7c8c88a94b8114677acc802f086fa",
+    "first_cached_input": 2048,
+    "first_output_tokens": 400,
+    "final_cached_input": 2048,
+    "final_output_tokens": 171,
+    "relay_mode": "retry-only",
+    "first_ms": 421.59479300000004,
+    "final_ms": 150.579455,
+    "first_reasoning": 28,
+    "final_reasoning": 13
+  },
+  {
+    "id": "c3a4b1ee-ce02-49c5-a9cb-3a00045bc6fd",
+    "label": "D5117",
+    "end": 1795358652642,
+    "first": null,
+    "final": null,
+    "score": null,
+    "display": null,
+    "valid": false,
+    "clean": null,
+    "rate_limited": true,
+    "attempts": {
+      "first": [
+        9
+      ],
+      "final": [],
+      "unknown": []
+    },
+    "http429": 10,
+    "clean_wire": false,
+    "control": false,
+    "media": "unscored_failed_run",
+    "products": 0,
+    "commit": "53f9f8957703f07d43e6213d6b7da4c1536b92a0",
+    "first_cached_input": null,
+    "first_output_tokens": null,
+    "final_cached_input": null,
+    "final_output_tokens": null,
+    "relay_mode": "first-required",
+    "first_ms": null,
+    "final_ms": null,
+    "first_reasoning": null,
+    "final_reasoning": null
+  },
+  {
+    "id": "efa70c89-1449-42c2-b87c-ab59b62f8472",
+    "label": "D5118",
+    "end": 1795358764428,
+    "first": null,
+    "final": null,
+    "score": null,
+    "display": null,
+    "valid": false,
+    "clean": null,
+    "rate_limited": true,
+    "attempts": {
+      "first": [
+        9
+      ],
+      "final": [],
+      "unknown": []
+    },
+    "http429": 10,
+    "clean_wire": false,
+    "control": false,
+    "media": "unscored_failed_run",
+    "products": 0,
+    "commit": "8872842632644f15807b757f6c4307dbec6fe45b",
+    "first_cached_input": null,
+    "first_output_tokens": null,
+    "final_cached_input": null,
+    "final_output_tokens": null,
+    "relay_mode": "first-required",
+    "first_ms": null,
+    "final_ms": null,
+    "first_reasoning": null,
+    "final_reasoning": null
+  },
+  {
+    "id": "2f279e62-c518-4a79-ad14-d9e4eacbb0d8",
+    "label": "D5119",
+    "end": 1795359203041,
+    "first": 973.125584497662,
+    "final": 623.8801314148307,
+    "score": 798.5028579562463,
+    "display": 799,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        7
+      ],
+      "final": [
+        10
+      ],
+      "unknown": []
+    },
+    "http429": 17,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "d45b8ed2c88399ce98e0b291ff82eb87c4a16013",
+    "first_cached_input": 2048,
+    "first_output_tokens": 388,
+    "final_cached_input": 2048,
+    "final_output_tokens": 208,
+    "relay_mode": "retry-only",
+    "first_ms": 398.715239,
+    "final_ms": 333.397378,
+    "first_reasoning": 11,
+    "final_reasoning": 50
+  },
+  {
+    "id": "782707fe-df76-4118-9ef8-155ada22b08b",
+    "label": "D5120",
+    "end": 1795359312551,
+    "first": null,
+    "final": null,
+    "score": null,
+    "display": null,
+    "valid": false,
+    "clean": null,
+    "rate_limited": true,
+    "attempts": {
+      "first": [
+        9
+      ],
+      "final": [],
+      "unknown": []
+    },
+    "http429": 10,
+    "clean_wire": true,
+    "control": true,
+    "media": "unscored_failed_run",
+    "products": 0,
+    "commit": "94ad40705a9425b232f314cd81e9964d7ec96651",
+    "first_cached_input": null,
+    "first_output_tokens": null,
+    "final_cached_input": null,
+    "final_output_tokens": null,
+    "relay_mode": "retry-only",
+    "first_ms": null,
+    "final_ms": null,
+    "first_reasoning": null,
+    "final_reasoning": null
+  },
+  {
+    "id": "414f5f33-6b58-421d-ac10-bbdb49ae7e24",
+    "label": "D5121",
+    "end": 1795359434682,
+    "first": 721.1711475758899,
+    "final": 866.6175776770358,
+    "score": 793.8943626264629,
+    "display": 794,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        0
+      ],
+      "final": [
+        6
+      ],
+      "unknown": []
+    },
+    "http429": 6,
+    "clean_wire": true,
+    "control": true,
+    "media": "below_threshold_recorded",
+    "products": 5,
+    "commit": "f4a8e76d7075ca2f09b9922ffee2be92f2f1e342",
+    "first_cached_input": 2048,
+    "first_output_tokens": 418,
+    "final_cached_input": 2048,
+    "final_output_tokens": 236,
+    "relay_mode": "retry-only",
+    "first_ms": 579.612761,
+    "final_ms": 272.323117,
+    "first_reasoning": 41,
+    "final_reasoning": 78
+  },
+  {
+    "id": "b3759dad-8c2e-49ac-98dd-5c74c96288fc",
+    "label": "D5122",
+    "end": 1795359639213,
+    "first": 1239.9684604165934,
+    "final": 1013.735685710409,
+    "score": 1126.8520730635012,
+    "display": 1127,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        8
+      ],
+      "final": [
+        8
+      ],
+      "unknown": []
+    },
+    "http429": 16,
+    "clean_wire": true,
+    "control": true,
+    "media": "video_superseded",
+    "products": 5,
+    "commit": "a6485024606aaae17e72844b0cabe7e51a5e8c4a",
+    "first_cached_input": 2048,
+    "first_output_tokens": 390,
+    "final_cached_input": 2048,
+    "final_output_tokens": 178,
+    "relay_mode": "retry-only",
+    "first_ms": 314.52412899999996,
+    "final_ms": 175.588176,
+    "first_reasoning": 23,
+    "final_reasoning": 20
+  },
+  {
+    "id": "bad09ae1-d2f5-41f9-9d29-ec70075519dc",
+    "label": "D5123",
+    "end": 1795359974492,
+    "first": 846.1907901178905,
+    "final": 476.5593748684744,
+    "score": 998.094290641934,
+    "display": 998,
+    "valid": true,
+    "clean": true,
+    "rate_limited": false,
+    "attempts": {
+      "first": [
+        4
+      ],
+      "final": [
+        0,
+        7,
+        8,
+        0,
+        0,
+        11
+      ],
+      "unknown": []
+    },
+    "http429": 30,
+    "clean_wire": true,
+    "control": true,
+    "media": "video_superseded",
+    "products": 5,
+    "commit": "b90bffac9efaa22e276430173c6dae2db144a184",
+    "first_cached_input": 0,
+    "first_output_tokens": 443,
+    "final_cached_input": 6144,
+    "final_output_tokens": 161,
+    "relay_mode": "retry-only",
+    "first_ms": 523.522597,
+    "final_ms": 337.838281,
+    "first_reasoning": null,
+    "final_reasoning": 3
+  }
+]

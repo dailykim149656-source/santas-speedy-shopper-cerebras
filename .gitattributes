@@ -1,0 +1,3 @@
+# Preserve exact bytes for run evidence and checksum verification.
+experiments/campaigns/** -text
+*.bin binary

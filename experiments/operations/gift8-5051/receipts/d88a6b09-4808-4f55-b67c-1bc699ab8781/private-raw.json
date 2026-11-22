@@ -1,0 +1,230 @@
+{
+  "id": "d88a6b09-4808-4f55-b67c-1bc699ab8781",
+  "sessionKey": "agent:main:shop-d5052-gift8-prefetch-d88a6b09",
+  "label": "D5052-gift8-prefetch",
+  "prompt": "Christmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=d88a6b09",
+  "capturePolicy": "score-first",
+  "variant": "gift8-prefetch",
+  "thinking": "low",
+  "experiment": "gift8-v1 prefetch; manifest-sha256=5c69976b312ddfe353c494dcf452f1b5a469e3ce6e6a6304b7687ac270c1a383",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": 1024,
+  "video_threshold_tps": 1700,
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "49af8c6b5074edbcad0a8c0c069c4ece1938b46fc68c5ec394bfbdc4b8922339",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "startedWall": 1795346007622,
+  "ackMs": 42.826082999999926,
+  "ended": {
+    "elapsedMs": 83869.72820799999,
+    "time": 1795346091514,
+    "terminal": "final",
+    "from": "chat event"
+  },
+  "history": {
+    "sessionKey": "agent:main:shop-d5052-gift8-prefetch-d88a6b09",
+    "sessionId": "9f9bacc4-e49d-4d80-b742-545315149496",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Christmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=d88a6b09",
+        "timestamp": 1795346007633,
+        "idempotencyKey": "d88a6b09-4808-4f55-b67c-1bc699ab8781:user",
+        "__openclaw": {
+          "senderIsOwner": true,
+          "transport": {
+            "clients": [
+              {
+                "id": "cli",
+                "mode": "cli"
+              }
+            ]
+          },
+          "modelPromptProjection": {
+            "version": 1,
+            "text": "Current merchant cards: {\"gifts\":[{\"id\":21951,\"name\":\"AI024 Eurorack X Filter\",\"url\":\"https://aisynthesis.com/product/ai024-eurorack-x-filter/\",\"price_minor\":1500,\"price_range_minor\":[1500,14000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":23345,\"name\":\"AI028 Voltage Controlled Matrix Mixer\",\"url\":\"https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/\",\"price_minor\":2000,\"price_range_minor\":[2000,32900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"presoldered-pcb\",\"smd-pre-soldered-pcb-and-black-panel\",\"smd-pre-soldered-pcb-and-silver-panel\",\"smd-presoldered-kit-black\",\"smd-presoldered-kit-silver\"]},{\"id\":11125,\"name\":\"AI011 Analog Voltage Controlled Oscillator\",\"url\":\"https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/\",\"price_minor\":1500,\"price_range_minor\":[1500,15000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":11141,\"name\":\"AI016 Eurorack Tape Echo Interface\",\"url\":\"https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/\",\"price_minor\":1500,\"price_range_minor\":[1500,9900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":20209,\"name\":\"Eurorack Modular Patch Cable 4.9ft\",\"url\":\"https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/\",\"price_minor\":450,\"price_range_minor\":null,\"currency\":\"USD\",\"stock\":true,\"options\":[]}]}\n\nChristmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=d88a6b09"
+          },
+          "id": "4ac51d8f-cd7b-432a-9e6f-ff8ee3c3f70d",
+          "idempotencyKey": "d88a6b09-4808-4f55-b67c-1bc699ab8781:user",
+          "recordTimestampMs": 1795346008725,
+          "transcriptPosition": {
+            "source": "QUrpEaAVVHqDMtC20hGEUkB0WeCJ5IUdsWopxdIn8nM",
+            "rawSeq": 1
+          },
+          "seq": 1
+        }
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "I need respond only JSON object gifts five complete cards exactly current provided. Should have no tools. Ensure exact fields values order. I can output compact or formatted JSON. Should copy all. I'll carefully transcribe."
+          },
+          {
+            "type": "text",
+            "text": "{\"gifts\":[{\"id\":21951,\"name\":\"AI024 Eurorack X Filter\",\"url\":\"https://aisynthesis.com/product/ai024-eurorack-x-filter/\",\"price_minor\":1500,\"price_range_minor\":[1500,14000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":23345,\"name\":\"AI028 Voltage Controlled Matrix Mixer\",\"url\":\"https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/\",\"price_minor\":2000,\"price_range_minor\":[2000,32900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"presoldered-pcb\",\"smd-pre-soldered-pcb-and-black-panel\",\"smd-pre-soldered-pcb-and-silver-panel\",\"smd-presoldered-kit-black\",\"smd-presoldered-kit-silver\"]},{\"id\":11125,\"name\":\"AI011 Analog Voltage Controlled Oscillator\",\"url\":\"https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/\",\"price_minor\":1500,\"price_range_minor\":[1500,15000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":11141,\"name\":\"AI016 Eurorack Tape Echo Interface\",\"url\":\"https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/\",\"price_minor\":1500,\"price_range_minor\":[1500,9900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":20209,\"name\":\"Eurorack Modular Patch Cable 4.9ft\",\"url\":\"https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/\",\"price_minor\":450,\"price_range_minor\":null,\"currency\":\"USD\",\"stock\":true,\"options\":[]}]}"
+          }
+        ],
+        "api": "openai-completions",
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "usage": {
+          "input": 934,
+          "output": 573,
+          "totalTokens": 1507,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "total": 0
+          }
+        },
+        "stopReason": "stop",
+        "timestamp": 1795346011633,
+        "responseId": "chatcmpl-6c5dc202-f0da-450f-9d9b-8f34f7896411",
+        "openclawDelivery": {
+          "textPhaseRequiresTerminal": true
+        },
+        "serverGeneration": {
+          "completionMs": 540.762306,
+          "outputTokens": 573
+        },
+        "__openclaw": {
+          "runId": "d88a6b09-4808-4f55-b67c-1bc699ab8781",
+          "id": "8a8dc495-177e-42d3-860e-f2c95170a867",
+          "recordTimestampMs": 1795346091243,
+          "transcriptPosition": {
+            "source": "QUrpEaAVVHqDMtC20hGEUkB0WeCJ5IUdsWopxdIn8nM",
+            "rawSeq": 4
+          },
+          "seq": 2
+        }
+      }
+    ],
+    "hasMore": false,
+    "totalMessages": 2,
+    "pendingInputs": {
+      "items": [],
+      "total": 0,
+      "queuedCount": 0
+    },
+    "deltaCursor": "eyJhZ2VudElkIjoibWFpbiIsImdlbmVyYXRpb24iOiI1Yzc4YzE3MDQ4NTc0ZWVkYWI3ZWNiZjM3MDI5MjMwMyIsImxhc3RTZXEiOjQsInNlc3Npb25JZCI6IjlmOWJhY2M0LWU0OWQtNGQ4MC1iNzQyLTU0NTMxNTE0OTQ5NiIsInZlcnNpb24iOjF9",
+    "defaults": {
+      "modelProvider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "contextTokens": null,
+      "agentRuntime": {
+        "id": "auto",
+        "cloudPlacementSupported": false,
+        "devicePlacementSupported": false,
+        "source": "implicit"
+      },
+      "thinkingDefault": "low",
+      "modelSelectionTarget": "session"
+    },
+    "sessionInfo": {
+      "key": "agent:main:shop-d5052-gift8-prefetch-d88a6b09",
+      "sessionModelRevision": "_WqGUxdjdJWBYpNI-eiBOlAOaPqS9ItBt5wDEFwK2v4",
+      "visibility": "shared",
+      "permissionModePending": false,
+      "spawnDepth": 0,
+      "createdVia": "operator",
+      "participants": [
+        {
+          "identity": {
+            "type": "observation",
+            "pluginId": null,
+            "accountId": null,
+            "senderKind": "unknown",
+            "id": "cli"
+          }
+        }
+      ],
+      "expandedParticipants": [
+        {
+          "identity": {
+            "type": "observation",
+            "pluginId": null,
+            "accountId": null,
+            "senderKind": "unknown",
+            "id": "cli"
+          }
+        }
+      ],
+      "participantCount": 1,
+      "createdAt": 1795346007572,
+      "kind": "direct",
+      "label": "Santa D5052-gift8-prefetch",
+      "classification": "direct",
+      "agentId": "main",
+      "isMain": false,
+      "isDock": false,
+      "isBackground": false,
+      "displayName": "Santa D5052-gift8-prefetch",
+      "chatType": "direct",
+      "updatedAt": 1795346011661,
+      "archived": false,
+      "pinned": false,
+      "unread": false,
+      "lastReadAt": 1795346009516,
+      "lastInteractionAt": 1795346007707,
+      "sessionId": "9f9bacc4-e49d-4d80-b742-545315149496",
+      "lifecycleRevision": "8003c7cf-fe10-4eb6-b694-e3aa82b50cbf",
+      "systemSent": true,
+      "abortedLastRun": false,
+      "thinkingDefault": "low",
+      "effectiveFastMode": false,
+      "effectiveFastModeSource": "default",
+      "fastAutoOnSeconds": 60,
+      "totalTokensFresh": false,
+      "status": "running",
+      "startedAt": 1795346011557,
+      "parentSessionKey": "agent:main:main",
+      "effectiveResponseUsage": "off",
+      "effectiveQueueMode": "steer",
+      "modelProvider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "modelOverrideSource": null,
+      "runtimeSelectionLocked": false,
+      "agentRuntime": {
+        "id": "openclaw",
+        "cloudPlacementSupported": true,
+        "cloudPlacementExecutionMode": "worker-turn",
+        "devicePlacement": {
+          "requiredNodeCommands": [],
+          "consumesWorkerSlot": true
+        },
+        "devicePlacementSupported": true,
+        "source": "implicit"
+      },
+      "contextTokens": 128000,
+      "snapshotAt": 1795346091511,
+      "placement": {
+        "state": "local",
+        "generation": 0,
+        "createdAtMs": 1795346008791,
+        "updatedAtMs": 1795346091448,
+        "stateChangedAtMs": 1795346008791
+      },
+      "activitySummary": {
+        "state": "unavailable",
+        "canEnsure": true
+      },
+      "hasBoard": false,
+      "childOwnerSessionKeys": [
+        "agent:main:main"
+      ],
+      "sharingRole": "admin",
+      "sendDisabledReason": null,
+      "hasActiveRun": true,
+      "activeLeafEntryId": "8a8dc495-177e-42d3-860e-f2c95170a867"
+    },
+    "thinkingLevel": "low"
+  }
+}

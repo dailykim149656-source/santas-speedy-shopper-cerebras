@@ -1,0 +1,10 @@
+usage: campaign_1700.py [-h] [--repo REPO] --start START --rows ROWS
+
+Offline, resumable AB/BA campaign scheduling; never sends requests or writes
+markers.
+
+options:
+  -h, --help     show this help message and exit
+  --repo REPO
+  --start START
+  --rows ROWS    completed iterations JSONL

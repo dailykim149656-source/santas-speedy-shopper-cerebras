@@ -1,0 +1,126 @@
+{
+  "id": "1236be0d-9fd2-4d3b-ab83-067ad950aeea",
+  "label": "D5047-first5027-defer-answer",
+  "sessionKey": "agent:main:shop-d5047-first5027-defer-answer-1236be0d",
+  "inspected_at": "2026-11-22T11:09:06.425642+00:00",
+  "readyAfterFirstScreenshot": "2026-11-22T10:43:39.756Z",
+  "sendIntentMs": 1795344216982,
+  "terminalReceiptMs": 1795344387287,
+  "timing": "first_frame_during_run",
+  "full_run_verified": false,
+  "directory": "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/.omo/evidence/gift8-film/existing-real-clip",
+  "firstFrameMinusSendMs": 2774,
+  "firstFrameMinusTerminalMs": -167531,
+  "media": {
+    "original.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "180.080000"
+        }
+      },
+      "sha256": "35febd9ab6b53e3b321f14c6750f058e9789a506b0ffe6d7cf57ae8bcf3aa475",
+      "bytes": 2212485
+    },
+    "demo.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "55.000000"
+        }
+      },
+      "sha256": "8bcc00e6c4c40118614a35fd94a88c897b12a99243ef398e9eae921c22685e4b",
+      "bytes": 749334
+    }
+  },
+  "playable": true,
+  "viewportVerified": true,
+  "viewportProofSha256": "50dfab3c92db19dcad8644de566f626e507e51649e9ae2c29bf782b703d6d503",
+  "displayedMean": 795,
+  "verifiedProductURLs": [
+    "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+  ],
+  "real_time_verified": true,
+  "target_1700_verified": false,
+  "classification": "partial_or_post_run",
+  "source_provenance": {
+    ".session.json": {
+      "sha256": "8ef83c86efa14ab91b2e0caed870eabce134be77208c15c1d7a42c50470a0bb4",
+      "bytes": 114,
+      "modified_ns": 1795344216982698805
+    },
+    ".send-intent.json": {
+      "sha256": "70d95f3102d7c8da80a925292da19431ad81f4e8cb407486bd27a8b95ea3dc00",
+      "bytes": 181,
+      "modified_ns": 1795344216983168967
+    },
+    ".terminal.json": {
+      "sha256": "9d9257bf11bd1b8ef1ec8ad0f28e20bb71cf704adb8ca4e45a1674ee6b7b1ff2",
+      "bytes": 249,
+      "modified_ns": 1795344387292081080
+    },
+    ".json": {
+      "sha256": "f42b725d44a918604bf11b85e09624d5b4e375583ad49370932b3e90876d6ad8",
+      "bytes": 20240,
+      "modified_ns": 1795344387321351591
+    },
+    "ready.json": {
+      "sha256": "9eccbfa21fc65890ed4a4428162484b7aef771a613d89e8785786e5aeba5757a",
+      "bytes": 273,
+      "modified_ns": 1795345746410000000
+    },
+    "recording.json": {
+      "sha256": "2bdaed9960cdb2d5ce276a6d6aba55ee2c79c7d4528f59462d592e80ea54cbc1",
+      "bytes": 917,
+      "modified_ns": 1795345746410000000
+    },
+    "capture-timeline.json": {
+      "sha256": "a31bd208e7af3a127ebed3200ee9afc041e8a31b091b0467e41bbea08dc8cfb5",
+      "bytes": 54244,
+      "modified_ns": 1795345746410000000
+    },
+    "viewport-evidence.json": {
+      "sha256": "1bf2b67f7b0d64f12db3fda133b8840643d9223d44a8f4fefea4296374933a3d",
+      "bytes": 2752,
+      "modified_ns": 1795345746420000000
+    },
+    "validation.json": {
+      "sha256": "dfb2f32f48f7074990b8a4b8ba749a8d8f4b5f3701169bda9273f80fc06dab68",
+      "bytes": 9103,
+      "modified_ns": 1795344393467772204
+    },
+    "evidence.json": {
+      "sha256": "8d40461bce67afa089cd77e218745ec169749ebf13527ed33987805c3c39b0fd",
+      "bytes": 11225,
+      "modified_ns": 1795344394140000000
+    }
+  }
+}

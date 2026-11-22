@@ -1,0 +1,5 @@
+{
+  "invocation": "python3 -m py_compile tools/first5027_film.py",
+  "exit_code": 0,
+  "source_sha256": "6a93cf45428acc3a44798f4997ccad3cd6fd5b4a20c9b5adf93e12d9387604f0"
+}

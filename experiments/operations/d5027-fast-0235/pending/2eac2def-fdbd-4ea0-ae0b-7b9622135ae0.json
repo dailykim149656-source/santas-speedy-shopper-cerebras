@@ -1,0 +1,16 @@
+{
+  "result": "pending_validation",
+  "id": "2eac2def-fdbd-4ea0-ae0b-7b9622135ae0",
+  "label": "D5172-synth-five-categories-cap",
+  "arm": "synth-five-categories-cap",
+  "score": 735.2259516217935,
+  "ui": 735,
+  "call_count": 2,
+  "p90": 827.5104413737641,
+  "valid": null,
+  "method_valid": null,
+  "ended": 1795366114083,
+  "raw_sha256": "c0abbff01f513c7762473c78d94d76bf8958018a145fd6518cb7c64274dde200",
+  "capture_complete": true,
+  "recorder_exit": 0
+}

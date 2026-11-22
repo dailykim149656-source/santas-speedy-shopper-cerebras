@@ -1,0 +1,14 @@
+{
+  "id": "fc63223b-d2dd-4945-a67e-3a6c194b51b4",
+  "label": "D0013-source-order",
+  "sessionKey": "agent:main:shop-d0013-source-order-fc63223b",
+  "variant": "source-order",
+  "thinking": "low",
+  "temperature": 0.2,
+  "prompt": "Prepare a five-item Christmas shopping list for a software club. Fetch both current retail catalogs with web_fetch. Choose five suitable gifts across both retailers. Group the five numbered Markdown links by retailer; within each group use the ordering shown in the catalog. Preserve each linked product title and destination exactly as listed.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=fc63223b\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink&_run=fc63223b",
+  "experiment": "source-order|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "10e4dfadbdf3068aa24265588dd34780133e12db34c7186ed22de851775efbb9",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414"
+}

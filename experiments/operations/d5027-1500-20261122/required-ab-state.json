@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "config_sha256": "0d4bc3819e0082e4ff5d7616c6625ef81172f30d72913e4ace04843f38f3cf63",
+  "config": {
+    "version": 1,
+    "enabled": true,
+    "history_start": 79,
+    "anchor_id": "fa0f817e-ee39-4e86-868e-96edc1830832",
+    "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+    "previous_relay_sha256": "788fe1f6f9b8dd32322202fa63510d97e5400a940098b9e502ff715d3a69c5fd",
+    "cutoff": "2026-11-23T02:53:00+09:00"
+  },
+  "assignments": [
+    {
+      "index": 1,
+      "pair": 1,
+      "stage": "screening",
+      "arm": "A",
+      "mode": "retry-only",
+      "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+      "history_cursor": 79,
+      "previous_uuid": "fa0f817e-ee39-4e86-868e-96edc1830832",
+      "phase": "complete",
+      "allocated_at": "2026-11-22T14:38:49.591351+00:00",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:39:21.959915+00:00",
+          "history_cursor": 79,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once"
+          ],
+          "run_id": "72b09262-8d05-4ef6-ac46-267cb82a068a"
+        }
+      ],
+      "outcome": {
+        "valid": true,
+        "product_valid": true,
+        "method_valid": true,
+        "verified_products": 5,
+        "first_tps": 948.7783213679301,
+        "final_tps": 1135.613088784257,
+        "mean_tps": 1042.1957050760934,
+        "terminal": "final",
+        "mode": "retry-only",
+        "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+        "wire": [
+          {
+            "received": "c03a5e5b73f386e8441808576c843940ccf4a1bb984a3d28feafe2880b553284",
+            "forwarded": "c03a5e5b73f386e8441808576c843940ccf4a1bb984a3d28feafe2880b553284",
+            "phase": "passthrough",
+            "at_ms": 1795358369192
+          },
+          {
+            "received": "244361a44a8a6267ae2606030186ce495155bf3d72163bcf6d19ae00b843a6f9",
+            "forwarded": "244361a44a8a6267ae2606030186ce495155bf3d72163bcf6d19ae00b843a6f9",
+            "phase": "passthrough",
+            "at_ms": 1795358431467
+          }
+        ],
+        "rate_limited": false,
+        "call_count": 2,
+        "run_id": "72b09262-8d05-4ef6-ac46-267cb82a068a",
+        "sent": true,
+        "history_index": 79,
+        "commit": "1ce57379aab7c8c88a94b8114677acc802f086fa",
+        "evidence": "runs/72b09262-8d05-4ef6-ac46-267cb82a068a/evidence.json",
+        "recorded_at": "2026-11-22T14:42:59.480936+00:00"
+      }
+    },
+    {
+      "index": 2,
+      "pair": 1,
+      "stage": "screening",
+      "arm": "B",
+      "mode": "first-required",
+      "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+      "history_cursor": 80,
+      "previous_uuid": "72b09262-8d05-4ef6-ac46-267cb82a068a",
+      "phase": "complete",
+      "allocated_at": "2026-11-22T14:43:00.163660+00:00",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:43:23.320231+00:00",
+          "history_cursor": 80,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-first-required"
+          ],
+          "run_id": "c3a4b1ee-ce02-49c5-a9cb-3a00045bc6fd"
+        }
+      ],
+      "outcome": {
+        "valid": false,
+        "product_valid": false,
+        "method_valid": null,
+        "verified_products": 0,
+        "first_tps": null,
+        "final_tps": null,
+        "mean_tps": null,
+        "terminal": "error",
+        "mode": "first-required",
+        "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+        "wire": [],
+        "rate_limited": true,
+        "call_count": 0,
+        "run_id": "c3a4b1ee-ce02-49c5-a9cb-3a00045bc6fd",
+        "sent": true,
+        "history_index": 80,
+        "commit": "53f9f8957703f07d43e6213d6b7da4c1536b92a0",
+        "evidence": "runs/c3a4b1ee-ce02-49c5-a9cb-3a00045bc6fd/evidence.json",
+        "recorded_at": "2026-11-22T14:44:19.952983+00:00"
+      }
+    },
+    {
+      "index": 3,
+      "pair": 2,
+      "stage": "screening",
+      "arm": "B",
+      "mode": "first-required",
+      "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+      "history_cursor": 81,
+      "previous_uuid": "c3a4b1ee-ce02-49c5-a9cb-3a00045bc6fd",
+      "phase": "complete",
+      "allocated_at": "2026-11-22T14:44:20.665648+00:00",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:45:12.961134+00:00",
+          "history_cursor": 81,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-first-required"
+          ],
+          "run_id": "efa70c89-1449-42c2-b87c-ab59b62f8472"
+        }
+      ],
+      "outcome": {
+        "valid": false,
+        "product_valid": false,
+        "method_valid": null,
+        "verified_products": 0,
+        "first_tps": null,
+        "final_tps": null,
+        "mean_tps": null,
+        "terminal": "error",
+        "mode": "first-required",
+        "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+        "wire": [],
+        "rate_limited": true,
+        "call_count": 0,
+        "run_id": "efa70c89-1449-42c2-b87c-ab59b62f8472",
+        "sent": true,
+        "history_index": 81,
+        "commit": "8872842632644f15807b757f6c4307dbec6fe45b",
+        "evidence": "runs/efa70c89-1449-42c2-b87c-ab59b62f8472/evidence.json",
+        "recorded_at": "2026-11-22T14:46:12.070526+00:00"
+      }
+    }
+  ],
+  "screening": {
+    "n_sent": 3,
+    "valid_counts": {
+      "A": 1,
+      "B": 0
+    },
+    "valid_pairs": 0,
+    "session_wins_B": 0,
+    "first_wins_B": 0,
+    "paired_session_deltas": [],
+    "paired_first_deltas": [],
+    "median_paired_session_gain": null,
+    "pass": false,
+    "reduced_cap": 4,
+    "end_reason": "no_valid_B_after_three",
+    "confirmation_allowed": false
+  },
+  "confirmation": null,
+  "status": "baseline_after_screening",
+  "reduced_cap": 4,
+  "cap_amendment": {
+    "version": 1,
+    "max_transmissions": 4,
+    "allow_confirmation": false,
+    "registered_at": "2026-11-22T14:46:10.732495+00:00",
+    "reason": "user_requested_minimum"
+  }
+}

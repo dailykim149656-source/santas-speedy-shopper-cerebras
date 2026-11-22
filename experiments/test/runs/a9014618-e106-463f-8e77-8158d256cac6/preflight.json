@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "aborted_before_send",
+  "id": "a9014618-e106-463f-8e77-8158d256cac6",
+  "label": "D5038-first5027-extract-text",
+  "sessionKey": "agent:main:shop-d5038-first5027-extract-text-a9014618",
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "runner_sha256": "9bdb433e4cb90b5c3ca98007b606a5b565500f80854afb9782dcecdea7ede5ca",
+  "private_sources_sha256": {
+    "run.json": "1c634d8da10bebed377eca74aaaa206f47ddf40e1520331243d0146bff45b5f3",
+    "run.log": "c1003fd4a7adfde079d3fa2c43a04ad48c2fddb758253499a0ee7f1c15ff0329",
+    "video.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cause_class": "RuntimeError",
+  "sealed_at": "2026-11-22T10:04:27.744225+00:00",
+  "source_plan_commit": "1181d7c4145f84452f934a344da73cb7f9b623d4",
+  "source_record_sha256": "03f203dbcea7baec23b01abfe2ec2217e226d782897a13e7aac7b94041e2bb3b"
+}

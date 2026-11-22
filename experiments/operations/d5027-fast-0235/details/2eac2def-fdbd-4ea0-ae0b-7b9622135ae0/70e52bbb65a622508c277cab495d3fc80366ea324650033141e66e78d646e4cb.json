@@ -1,0 +1,31 @@
+{
+  "raw_sha256": "c0abbff01f513c7762473c78d94d76bf8958018a145fd6518cb7c64274dde200",
+  "candidate": {
+    "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "catalog_name": "AI011 Analog Voltage Controlled Oscillator",
+    "source_tool_call_id": "3b1cb4a67"
+  },
+  "product": {
+    "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "catalog_name": "AI011 Analog Voltage Controlled Oscillator",
+    "source_tool_call_id": "3b1cb4a67",
+    "verified": true,
+    "reasons": [],
+    "http": 200,
+    "final_url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "html_bytes_read": 509184,
+    "html_sha256": "55c8390d87b0e5e3e24102515341e6822afc9ee35bb60a8b00adb06d17245d0d",
+    "checked_at": "2026-11-22T17:59:08.992885+00:00",
+    "canonical": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "merchant": "aisynthesis.com",
+    "title": "AI011 Analog Voltage Controlled Oscillator",
+    "title_matches_catalog": true,
+    "product_evidence": {
+      "matching_schema_product": true,
+      "woocommerce_product_heading": false,
+      "woocommerce_sticky_product_price_and_cart": false
+    },
+    "password_protected": false
+  },
+  "finished_at": "2026-11-22T17:59:09.016+00:00"
+}

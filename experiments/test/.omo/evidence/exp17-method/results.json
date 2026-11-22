@@ -1,0 +1,425 @@
+{
+  "invocation": "python3 -B .omo/evidence/exp17-method/check.py",
+  "offline_only": true,
+  "network_product_gets": "stubbed; no independent live product verification claimed",
+  "raw_path": "~/Library/Application Support/Cerebras Speed Bounty/2026-11-22/raw-test/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51.json",
+  "raw_sha256": "92ac6b8ee860292ea3756700b4c5d0bbe55007e288a78945d21cb061f8895735",
+  "source_file_sha256": "9a8b069d76120abdb2a0f9a12ae80d5adc2808a26a355410746614e7201abcac",
+  "scenario_count": 29,
+  "passed": true,
+  "scenarios": [
+    {
+      "scenario": "real D5009 raw and exact baseline score",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "positive synth-five-categories-cap",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "out of order results synth-five-categories-cap",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "positive synth-five-categories-cap-4000",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "out of order results synth-five-categories-cap-4000",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "positive synth-six-sorted",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "out of order results synth-six-sorted",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "positive synth-six-sorted-pages",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "out of order results synth-six-sorted-pages",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "native optional fetch arguments synth-six-sorted",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "native optional fetch arguments synth-six-sorted-pages",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "batch may include explanatory text",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "extra non-tool timed turn retained in official mean",
+      "expected": true,
+      "observed": true,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 3,
+      "mean_exact_tps": 900.8503186299907,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "wrong category arguments synth-five-categories-cap",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "wrong category arguments synth-five-categories-cap-4000",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "split timed fetch batches",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 3,
+      "mean_exact_tps": 1137.4845401074704,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    },
+    {
+      "scenario": "missing page result",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": false,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "duplicate page result",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "duplicate sixth product across pages",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "truncated",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": false,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "cached",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": false,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "missing sixth product",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "invalid extra catalog record",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "wrong final order",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "cross-run batch",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": false,
+      "call_count": 1,
+      "mean_exact_tps": 1792.648291457533,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "rejected source",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "missing measured call",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+        "https://aisynthesis.com/product/synthetic-sixth-fixture/"
+      ]
+    },
+    {
+      "scenario": "wrong tool URL",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": false,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    },
+    {
+      "scenario": "missing sort query",
+      "expected": false,
+      "observed": false,
+      "passed": true,
+      "validator_valid": true,
+      "call_count": 2,
+      "mean_exact_tps": 1301.275477944986,
+      "ordered_candidates": null
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "scope": "retrospective diagnosis; task scores unchanged; input-invariance subset is post-hoc",
+  "runs": [
+    {
+      "id": "1e1b8cfa-bdb4-4e92-b435-c4e66b94f44b",
+      "label": "D5051-gift8-tool",
+      "arm": "A",
+      "task_valid": true,
+      "original_mean": 954.8250045940329,
+      "generation_count": 2,
+      "dispatch_count": 1,
+      "events": [
+        {
+          "at": 1795345936570,
+          "system_chars": 472,
+          "system_sha256": "1914481dd0e5ad01d1084cc4f149bd1c79fb8f96dedd43eb162b6112ad5a48b1",
+          "prompt_chars": 404,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/1e1b8cfa-bdb4-4e92-b435-c4e66b94f44b/events/1795345936571-078c1465-da6c-43eb-a32b-253b56a07353.json",
+          "source_sha256": "6b7c71a371e19c37cd52d3f9b8f20d9d78520c6ee53ec65a2875ffff60c8d469"
+        }
+      ],
+      "raw_sha256": "80bcb409c89ad319d5b6d846a32425edba531c144eabbebc5cb9b02f1b324b7f",
+      "system_prompt_retained": true
+    },
+    {
+      "id": "d88a6b09-4808-4f55-b67c-1bc699ab8781",
+      "label": "D5052-gift8-prefetch",
+      "arm": "B",
+      "task_valid": true,
+      "original_mean": 1059.6152757733082,
+      "generation_count": 1,
+      "dispatch_count": 1,
+      "events": [
+        {
+          "at": 1795346011546,
+          "system_chars": 472,
+          "system_sha256": "1914481dd0e5ad01d1084cc4f149bd1c79fb8f96dedd43eb162b6112ad5a48b1",
+          "prompt_chars": 2320,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/d88a6b09-4808-4f55-b67c-1bc699ab8781/events/1795346011547-efdf4f4d-2ccf-484c-87e5-6903318ba34a.json",
+          "source_sha256": "09d89894db91a3503c9fbebe7da373bc0d834646c9741d0154247334f68903c4"
+        }
+      ],
+      "raw_sha256": "5f89a8ff3322be93220d0e4986e67855644979d992d462d5bcbbf1dc8db129d8",
+      "system_prompt_retained": true
+    },
+    {
+      "id": "766237bd-75b8-4ba7-8dae-a07cd79d9f22",
+      "label": "D5053-gift8-prefetch",
+      "arm": "B",
+      "task_valid": false,
+      "original_mean": 749.5641521562239,
+      "generation_count": 2,
+      "dispatch_count": 10,
+      "events": [
+        {
+          "at": 1795346192698,
+          "system_chars": 472,
+          "system_sha256": "1914481dd0e5ad01d1084cc4f149bd1c79fb8f96dedd43eb162b6112ad5a48b1",
+          "prompt_chars": 2320,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346192699-6c9202ae-4cd3-4efc-811d-bdd5960264e8.json",
+          "source_sha256": "975065614ddd7b952d284b4197ca0fd69aefe6c98446bb6873f43f420ea97fa7"
+        },
+        {
+          "at": 1795346194668,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 764,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346194668-57d3fe3b-39fb-4c9a-ba23-9a0e9f6ac337.json",
+          "source_sha256": "f3ec5e6ee0357b4db96f19d664412bb13f1b0865e5f64008463370d7bbcc247d"
+        },
+        {
+          "at": 1795346197901,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 1103,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346197901-4b69b936-2bac-472d-ad92-08945cc6cf16.json",
+          "source_sha256": "8c14328f0bca1c4caae70b6a78b7a1f542895027be5fd2281a702a4023f085d1"
+        },
+        {
+          "at": 1795346202004,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 1442,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346202005-af0f113a-074d-4b51-8179-95941393ba68.json",
+          "source_sha256": "990597505d30d4dcc9fa2cc19355cb02966192c7fc05558ef0020de17809b942"
+        },
+        {
+          "at": 1795346212510,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 1781,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346212510-6b3e3937-4376-4e00-a546-c551f770851e.json",
+          "source_sha256": "bd7bc498300c7319f9f7ffc0b9e2cfac01dbec83662eb84fb90f062b0bd70ada"
+        },
+        {
+          "at": 1795346220959,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 2120,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346220959-b1a7efcd-bc23-44de-9b88-6c2ea8122413.json",
+          "source_sha256": "1f6627deb315d030113c51d59ad1fdff8dde17adeb1f1317c405b47d93be007d"
+        },
+        {
+          "at": 1795346238692,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 2459,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346238693-318c5a54-2ef1-4775-902d-f56460037a74.json",
+          "source_sha256": "40603934415edc712edb82325b6946ed4758e7759978d23465df0842592b7a67"
+        },
+        {
+          "at": 1795346265463,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 2798,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346265463-b4a55368-c4de-4f8f-a5b9-6155d1eb7d83.json",
+          "source_sha256": "f84f0f42f9177873ab9e52c64c9f618a145a1558410214a27cd41042522fa1e1"
+        },
+        {
+          "at": 1795346285254,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 3137,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346285255-c16f3a41-55db-4e74-aaf8-f6450d84734f.json",
+          "source_sha256": "6d6f7defa82d873caef5bdf541a734da6d04bd16b2ebae9ad2ae9381d43072fc"
+        },
+        {
+          "at": 1795346309677,
+          "system_chars": 10083,
+          "system_sha256": "8e702b40b4425fae1699ac8d23bb1ad04085f698ff62d401ffb84ee473362b3e",
+          "prompt_chars": 249,
+          "history_messages": 7,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/events/1795346309678-404126c6-baa8-424f-964c-f266c5f0f919.json",
+          "source_sha256": "ee753475bfebbf1283d6a9bdab93b0e305f6b74076aa766b7f154b78a292c503"
+        }
+      ],
+      "raw_sha256": "ee4b6f3c083f970418fc325278a59c71be50b9866996022b4da9678827617783",
+      "system_prompt_retained": false
+    },
+    {
+      "id": "0303fe49-cb6b-46b2-bb7e-2304e3effcce",
+      "label": "D5054-gift8-tool",
+      "arm": "A",
+      "task_valid": false,
+      "original_mean": null,
+      "generation_count": 1,
+      "dispatch_count": 10,
+      "events": [
+        {
+          "at": 1795346372365,
+          "system_chars": 472,
+          "system_sha256": "1914481dd0e5ad01d1084cc4f149bd1c79fb8f96dedd43eb162b6112ad5a48b1",
+          "prompt_chars": 404,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346372366-bb698c38-40c4-4717-bc35-97810305daf4.json",
+          "source_sha256": "04aca4c8d9b9533cb96f0df74364393b384c9d2914298e8299f0fb68741ba07d"
+        },
+        {
+          "at": 1795346374244,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 764,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346374244-4a828caf-b056-4f5e-a4b6-87991e967cb4.json",
+          "source_sha256": "5ed7c01662bebf823480f9b85b1b54192b8df38bedc25a1642be062c5fc0a518"
+        },
+        {
+          "at": 1795346376240,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 1103,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346376240-4dd8f6a4-db2b-4e10-934f-f10ed75d431b.json",
+          "source_sha256": "e9b2df95ae4a136b57b28e22ae2c5a3acb7ebff5ee46ad911812ce7595e4e41e"
+        },
+        {
+          "at": 1795346379069,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 1442,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346379069-ef7dbfd9-bf25-4c76-a20d-eaed627835ad.json",
+          "source_sha256": "edfa631c97af377f0fafe27a5801886c077d966439de30201e9da335fcd1b81b"
+        },
+        {
+          "at": 1795346388938,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 1781,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346388939-3b0b7a2b-01bd-4cde-af21-79bf71b41604.json",
+          "source_sha256": "87df5001a9c7e73ca39b5fb009c937152adc39c2f2bcf76d02447d12cf4e72db"
+        },
+        {
+          "at": 1795346412153,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 2120,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346412153-554c7c15-f683-4790-952b-9cd22e9bcdec.json",
+          "source_sha256": "de2ae0de5485d0734ece83a177e969aca9296b7268a5af18513488ec85c0a3de"
+        },
+        {
+          "at": 1795346442745,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 2459,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346442745-5d0c7865-810e-4692-9857-2bc71da4a18c.json",
+          "source_sha256": "9c0ec80070dde2927f06ecfeb326072b7fd690b0eee4f04b659272647c474f78"
+        },
+        {
+          "at": 1795346473305,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 2798,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346473305-4a6b0051-401b-4bed-8cff-658dee860bca.json",
+          "source_sha256": "39cfdbc496af58a6949ff571d60bf0c463220767d60d4b2fedf6299b0de85866"
+        },
+        {
+          "at": 1795346491162,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 3137,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346491162-2765a48b-edbf-4e90-b4fd-eb306abdd9b9.json",
+          "source_sha256": "78408afe85cb7087f6e6c2043d52506db52836c069b03ec9dd14992ada4016ed"
+        },
+        {
+          "at": 1795346509331,
+          "system_chars": 10079,
+          "system_sha256": "0311d1267e405d9e5f2a26304ca8a3a757f7587b9deff307e1b403646ae4a17a",
+          "prompt_chars": 3476,
+          "history_messages": 1,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/0303fe49-cb6b-46b2-bb7e-2304e3effcce/events/1795346509331-d3e21304-3d2d-443a-88db-f7d32b01b2e5.json",
+          "source_sha256": "5f993c7f5d263662dc3c3ddf0764ced142a8d435763c1c5f6b7340d9b422fa4d"
+        }
+      ],
+      "raw_sha256": "3006f669620df5e8df2a7f0baffd36039aa676d9bce23d181affcccea3e638b3",
+      "system_prompt_retained": false
+    },
+    {
+      "id": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+      "label": "D5055-gift8-prefetch",
+      "arm": "B",
+      "task_valid": true,
+      "original_mean": 779.6020391227585,
+      "generation_count": 2,
+      "dispatch_count": 2,
+      "events": [
+        {
+          "at": 1795347117575,
+          "system_chars": 472,
+          "system_sha256": "1914481dd0e5ad01d1084cc4f149bd1c79fb8f96dedd43eb162b6112ad5a48b1",
+          "prompt_chars": 2320,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/b9cd8be4-4968-4db3-a11c-b5d5520d1251/events/1795347117576-fdb0bebc-9098-4def-9095-5f1454bcb5cc.json",
+          "source_sha256": "1e020cc1013ac8dc7fe64f272ec56bc8f3309bfc102e2ed4fdac4050bec76397"
+        },
+        {
+          "at": 1795347120286,
+          "system_chars": 10083,
+          "system_sha256": "d5bcf06c65c7ea37a5910a8e5cf3cb387fbc6fe3880e17412baba639b2dd1392",
+          "prompt_chars": 764,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/b9cd8be4-4968-4db3-a11c-b5d5520d1251/events/1795347120287-f7305b33-c162-4563-b357-ba8ee2657422.json",
+          "source_sha256": "ed3deef12655cb5fcab45399b915ef3ee0e29c7fd356b842b220892e8ff72a58"
+        }
+      ],
+      "raw_sha256": "5583257d9449f1345e89ab1ff82a2ad861e125a0121c3486e3db0c536ac190af",
+      "system_prompt_retained": false
+    },
+    {
+      "id": "985017fb-afc8-40c7-887a-480ba6c25206",
+      "label": "D5056-gift8-tool",
+      "arm": "A",
+      "task_valid": true,
+      "original_mean": 719.1543693844054,
+      "generation_count": 2,
+      "dispatch_count": 8,
+      "events": [
+        {
+          "at": 1795347186614,
+          "system_chars": 472,
+          "system_sha256": "1914481dd0e5ad01d1084cc4f149bd1c79fb8f96dedd43eb162b6112ad5a48b1",
+          "prompt_chars": 404,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/985017fb-afc8-40c7-887a-480ba6c25206/events/1795347186614-462945b8-424e-4f03-a925-c81c47092a6d.json",
+          "source_sha256": "359461fbf49f9f515c1d5fd8d74ed62f4a905654d1980e5ec12eb8f16a9ac8ce"
+        },
+        {
+          "at": 1795347195653,
+          "system_chars": 10079,
+          "system_sha256": "92b6fc7f6df809e631514c1b96f776d6a91a73d06df0d2760884b347f37d4719",
+          "prompt_chars": 249,
+          "history_messages": 7,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/985017fb-afc8-40c7-887a-480ba6c25206/events/1795347195654-67cea529-ca73-405f-9ecd-d299008d65b9.json",
+          "source_sha256": "7a95f25d0e451d1e13f17c3b783d466410cd7edd77fb685283571a8adb374bde"
+        },
+        {
+          "at": 1795347197646,
+          "system_chars": 10079,
+          "system_sha256": "92b6fc7f6df809e631514c1b96f776d6a91a73d06df0d2760884b347f37d4719",
+          "prompt_chars": 249,
+          "history_messages": 7,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/985017fb-afc8-40c7-887a-480ba6c25206/events/1795347197646-5573d5fa-1f4f-465d-b218-b7cf43080096.json",
+          "source_sha256": "47376b26c06dee8b2c097fb1950b449dc7fb8a91186770423da658f6f1075e89"
+        },
+        {
+          "at": 1795347201396,
+          "system_chars": 10079,
+          "system_sha256": "92b6fc7f6df809e631514c1b96f776d6a91a73d06df0d2760884b347f37d4719",
+          "prompt_chars": 249,
+          "history_messages": 8,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/985017fb-afc8-40c7-887a-480ba6c25206/events/1795347201396-c79c22a0-a21b-4b51-ad22-374cf7885f22.json",
+          "source_sha256": "c2e7b66e26e52601a187a99992d53b93a9342c97128c7f93095f3f27918c0891"
+        },
+        {
+          "at": 1795347207753,
+          "system_chars": 10079,
+          "system_sha256": "92b6fc7f6df809e631514c1b96f776d6a91a73d06df0d2760884b347f37d4719",
+          "prompt_chars": 249,
+          "history_messages": 8,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/985017fb-afc8-40c7-887a-480ba6c25206/events/1795347207753-b2aa3ab5-6cd6-43c5-a58c-26c67e7fcda0.json",
+          "source_sha256": "3c88a032ce03e57442c56a0f26430e9a3002e5d3908118f3b463082b3fa8de84"
+        },
+        {
+          "at": 1795347229940,
+          "system_chars": 10079,
+          "system_sha256": "92b6fc7f6df809e631514c1b96f776d6a91a73d06df0d2760884b347f37d4719",
+          "prompt_chars": 249,
+          "history_messages": 8,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/985017fb-afc8-40c7-887a-480ba6c25206/events/1795347229940-6a21d57e-728e-40ec-992f-42190b18ad5a.json",
+          "source_sha256": "6081ec13e6bc045380dcd4478246e22df8917b67d09659bc8e1acc893bb6833c"
+        },
+        {
+          "at": 1795347260727,
+          "system_chars": 10079,
+          "system_sha256": "92b6fc7f6df809e631514c1b96f776d6a91a73d06df0d2760884b347f37d4719",
+          "prompt_chars": 249,
+          "history_messages": 8,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/985017fb-afc8-40c7-887a-480ba6c25206/events/1795347260727-5edda9af-1c44-4340-841f-630695537611.json",
+          "source_sha256": "a2f2610dd80bc8ab243a06d23a505d26170f0f668959d225eadf5233023ebb4e"
+        },
+        {
+          "at": 1795347290369,
+          "system_chars": 10079,
+          "system_sha256": "92b6fc7f6df809e631514c1b96f776d6a91a73d06df0d2760884b347f37d4719",
+          "prompt_chars": 249,
+          "history_messages": 8,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/985017fb-afc8-40c7-887a-480ba6c25206/events/1795347290369-c3ee4eea-e408-43e6-a57c-b3361f96345a.json",
+          "source_sha256": "12a8799eab2b123d993a99830a02b88701c572d3c03f8791bc3b5b184dcbaba9"
+        }
+      ],
+      "raw_sha256": "cc9ecaa5e42ca083176874aa704353e5fdafed1d46c8bf5c4ab9e08b408d7190",
+      "system_prompt_retained": false
+    },
+    {
+      "id": "19d752e4-25b1-4424-a931-1a1071eb9dd0",
+      "label": "D5057-gift8-tool",
+      "arm": "A",
+      "task_valid": true,
+      "original_mean": 1065.22502171425,
+      "generation_count": 2,
+      "dispatch_count": 1,
+      "events": [
+        {
+          "at": 1795347354502,
+          "system_chars": 472,
+          "system_sha256": "1914481dd0e5ad01d1084cc4f149bd1c79fb8f96dedd43eb162b6112ad5a48b1",
+          "prompt_chars": 404,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/19d752e4-25b1-4424-a931-1a1071eb9dd0/events/1795347354502-eeb058c6-cd21-48a8-b9b9-40fc0bad97d4.json",
+          "source_sha256": "f9d180a998ed2058daf34446553940a7dd4a876faafe8bd5b461de34d81905e4"
+        }
+      ],
+      "raw_sha256": "aaa78ca90826940f2ceee6e1c35d760be55fd09e8953b1c87bfa6386b7e527b8",
+      "system_prompt_retained": true
+    },
+    {
+      "id": "ce9f8705-b34b-4eb7-9497-ce883f58fc01",
+      "label": "D5058-gift8-prefetch",
+      "arm": "B",
+      "task_valid": true,
+      "original_mean": 1049.7084394365356,
+      "generation_count": 1,
+      "dispatch_count": 1,
+      "events": [
+        {
+          "at": 1795347425942,
+          "system_chars": 472,
+          "system_sha256": "1914481dd0e5ad01d1084cc4f149bd1c79fb8f96dedd43eb162b6112ad5a48b1",
+          "prompt_chars": 2320,
+          "history_messages": 0,
+          "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/ce9f8705-b34b-4eb7-9497-ce883f58fc01/events/1795347425942-2e64c570-778f-4727-b785-b729e231e6e3.json",
+          "source_sha256": "818c7555fdf18899a41c65b7bb32f3ddaaccb2a1e01d5f2052516bea8b9bef37"
+        }
+      ],
+      "raw_sha256": "d815002eef41fd8e850d5856515e45b2095493c7082de677c35810e2554c4070",
+      "system_prompt_retained": true
+    }
+  ],
+  "pairs": [
+    {
+      "pair": 1,
+      "A": "D5051-gift8-tool",
+      "B": "D5052-gift8-prefetch",
+      "B_minus_A": 104.79027117927535,
+      "system_retained_and_task_valid": true
+    },
+    {
+      "pair": 2,
+      "A": "D5054-gift8-tool",
+      "B": "D5053-gift8-prefetch",
+      "B_minus_A": null,
+      "system_retained_and_task_valid": false
+    },
+    {
+      "pair": 3,
+      "A": "D5056-gift8-tool",
+      "B": "D5055-gift8-prefetch",
+      "B_minus_A": null,
+      "system_retained_and_task_valid": false
+    },
+    {
+      "pair": 4,
+      "A": "D5057-gift8-tool",
+      "B": "D5058-gift8-prefetch",
+      "B_minus_A": -15.516582277714406,
+      "system_retained_and_task_valid": true
+    }
+  ],
+  "settings_retained_pair_summary": {
+    "pairs": 2,
+    "wins": 1,
+    "median_delta": 44.63684445078047
+  },
+  "original_task_summary": {
+    "sends": 8,
+    "valid": 6,
+    "pairs": 3,
+    "wins": 2,
+    "median_delta": 60.447669738353056
+  },
+  "sources": {
+    "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/iterations.jsonl": "0d4d713dce7e44d103838c2d2b68b40d3259695f4b7f0f1a21ba0a5b6ece43d5"
+  }
+}

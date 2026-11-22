@@ -4,9 +4,11 @@
 
 This benchmark asks Cerebras Kimi K3.1 Pro, through OpenClaw, to choose five Christmas gifts from live retail catalogs and link to their product pages. The official OpenClaw patch reports the mean server-side decoding speed in tokens per second. Each row in the [run index](RESULTS.md) links to the request and its evidence.
 
-## Fastest measured run — 1,355 mean tok/s
+The [experiment archive](experiments/README.md) includes the final Shopify and category-query trials, source code, verification records, and project reports.
 
-D5027 completed five live AI Synthesis catalog searches through Cerebras Kimi K3.1 Pro. The official patch displayed **1,355 mean tok/s**. Its two calls averaged 1,354.662598 tok/s. The **9.52-second video** shows the five linked products and the speed in the completed session. Recording began 29 minutes 17.851 seconds after generation ended. [D5027 video](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/demo.mp4) · [Timings and five product links](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/evidence.json) · [Exact prompt and settings](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/plan.json)
+## Fastest measured run — 1,355 mean tok/s · 1,674 p90
+
+D5027 completed five live AI Synthesis catalog searches through Cerebras Kimi K3.1 Pro. The official patch displayed **1,355 mean tok/s · 1,674 p90**. Its two calls averaged 1,354.662598 tok/s. The **9.52-second video** shows the five linked products and the speed in the completed session. Recording began 29 minutes 17.851 seconds after generation ended. [D5027 video](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/demo.mp4) · [Timings and five product links](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/evidence.json) · [Exact prompt and settings](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/plan.json)
 
 D5009 is the fastest run recorded from before sending the prompt through the final answer. Its **22.64-second video** shows the shopping task and **1,301 mean tok/s** (1,301.275478 exact). [D5009 video](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/demo.mp4) · [D5009 timings and media checks](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json)
 

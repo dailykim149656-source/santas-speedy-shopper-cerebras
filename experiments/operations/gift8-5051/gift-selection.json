@@ -1,0 +1,482 @@
+[
+  {
+    "category": "filter",
+    "query_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=id%2Cname%2Cpermalink%2Cprices%2Cstock_availability%2Cvariations%2Cis_in_stock",
+    "product": {
+      "id": 21951,
+      "name": "AI024 Eurorack X Filter",
+      "permalink": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "prices": {
+        "price": "1500",
+        "regular_price": "1500",
+        "sale_price": "1500",
+        "price_range": {
+          "min_amount": "1500",
+          "max_amount": "14000"
+        },
+        "currency_code": "USD",
+        "currency_symbol": "$",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ".",
+        "currency_thousand_separator": ",",
+        "currency_prefix": "$",
+        "currency_suffix": ""
+      },
+      "variations": [
+        {
+          "id": 21952,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "aluminum-panel"
+            }
+          ]
+        },
+        {
+          "id": 21953,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "built-and-tested-black"
+            }
+          ]
+        },
+        {
+          "id": 21954,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "full-kit-black"
+            }
+          ]
+        },
+        {
+          "id": 21955,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "black-panel"
+            }
+          ]
+        },
+        {
+          "id": 21956,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb-and-black-panel"
+            }
+          ]
+        },
+        {
+          "id": 21957,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb"
+            }
+          ]
+        },
+        {
+          "id": 21958,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "built-and-tested-aluminum"
+            }
+          ]
+        },
+        {
+          "id": 21959,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "full-kit-aluminum"
+            }
+          ]
+        },
+        {
+          "id": 21960,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb-and-panel-aluminum"
+            }
+          ]
+        }
+      ],
+      "is_in_stock": true,
+      "stock_availability": {
+        "text": "50 in stock (can be backordered)",
+        "class": "in-stock"
+      }
+    }
+  },
+  {
+    "category": "mixer",
+    "query_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=id%2Cname%2Cpermalink%2Cprices%2Cstock_availability%2Cvariations%2Cis_in_stock",
+    "product": {
+      "id": 23345,
+      "name": "AI028 Voltage Controlled Matrix Mixer",
+      "permalink": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "prices": {
+        "price": "2000",
+        "regular_price": "2000",
+        "sale_price": "2000",
+        "price_range": {
+          "min_amount": "2000",
+          "max_amount": "32900"
+        },
+        "currency_code": "USD",
+        "currency_symbol": "$",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ".",
+        "currency_thousand_separator": ",",
+        "currency_prefix": "$",
+        "currency_suffix": ""
+      },
+      "variations": [
+        {
+          "id": 23819,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "presoldered-pcb"
+            }
+          ]
+        },
+        {
+          "id": 23773,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "smd-pre-soldered-pcb-and-black-panel"
+            }
+          ]
+        },
+        {
+          "id": 23774,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "smd-pre-soldered-pcb-and-silver-panel"
+            }
+          ]
+        },
+        {
+          "id": 23775,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "smd-presoldered-kit-black"
+            }
+          ]
+        },
+        {
+          "id": 23776,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "smd-presoldered-kit-silver"
+            }
+          ]
+        },
+        {
+          "id": 23384,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "aluminum-panel"
+            }
+          ]
+        },
+        {
+          "id": 23385,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "black-panel"
+            }
+          ]
+        },
+        {
+          "id": 23347,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "built-and-tested-black"
+            }
+          ]
+        },
+        {
+          "id": 23352,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "built-and-tested-aluminum"
+            }
+          ]
+        }
+      ],
+      "is_in_stock": true,
+      "stock_availability": {
+        "text": "",
+        "class": "in-stock"
+      }
+    }
+  },
+  {
+    "category": "oscillator",
+    "query_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=id%2Cname%2Cpermalink%2Cprices%2Cstock_availability%2Cvariations%2Cis_in_stock",
+    "product": {
+      "id": 11125,
+      "name": "AI011 Analog Voltage Controlled Oscillator",
+      "permalink": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "prices": {
+        "price": "1500",
+        "regular_price": "1500",
+        "sale_price": "1500",
+        "price_range": {
+          "min_amount": "1500",
+          "max_amount": "15000"
+        },
+        "currency_code": "USD",
+        "currency_symbol": "$",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ".",
+        "currency_thousand_separator": ",",
+        "currency_prefix": "$",
+        "currency_suffix": ""
+      },
+      "variations": [
+        {
+          "id": 18686,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "built-and-tested-black"
+            }
+          ]
+        },
+        {
+          "id": 18687,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "full-kit-black"
+            }
+          ]
+        },
+        {
+          "id": 18688,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "black-panel"
+            }
+          ]
+        },
+        {
+          "id": 18689,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb-and-black-panel"
+            }
+          ]
+        },
+        {
+          "id": 17029,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "aluminum-panel"
+            }
+          ]
+        },
+        {
+          "id": 14587,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb"
+            }
+          ]
+        },
+        {
+          "id": 11127,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "built-and-tested-aluminum"
+            }
+          ]
+        },
+        {
+          "id": 11128,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "full-kit-aluminum"
+            }
+          ]
+        },
+        {
+          "id": 11129,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb-and-panel-aluminum"
+            }
+          ]
+        }
+      ],
+      "is_in_stock": true,
+      "stock_availability": {
+        "text": "50 in stock (can be backordered)",
+        "class": "in-stock"
+      }
+    }
+  },
+  {
+    "category": "echo",
+    "query_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=id%2Cname%2Cpermalink%2Cprices%2Cstock_availability%2Cvariations%2Cis_in_stock",
+    "product": {
+      "id": 11141,
+      "name": "AI016 Eurorack Tape Echo Interface",
+      "permalink": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "prices": {
+        "price": "1500",
+        "regular_price": "1500",
+        "sale_price": "1500",
+        "price_range": {
+          "min_amount": "1500",
+          "max_amount": "9900"
+        },
+        "currency_code": "USD",
+        "currency_symbol": "$",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ".",
+        "currency_thousand_separator": ",",
+        "currency_prefix": "$",
+        "currency_suffix": ""
+      },
+      "variations": [
+        {
+          "id": 19897,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "aluminum-panel"
+            }
+          ]
+        },
+        {
+          "id": 18857,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "built-and-tested-black"
+            }
+          ]
+        },
+        {
+          "id": 18858,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "full-kit-black"
+            }
+          ]
+        },
+        {
+          "id": 18859,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "black-panel"
+            }
+          ]
+        },
+        {
+          "id": 18860,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb-and-black-panel"
+            }
+          ]
+        },
+        {
+          "id": 11142,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb"
+            }
+          ]
+        },
+        {
+          "id": 11143,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "built-and-tested-aluminum"
+            }
+          ]
+        },
+        {
+          "id": 11144,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "full-kit-aluminum"
+            }
+          ]
+        },
+        {
+          "id": 11145,
+          "attributes": [
+            {
+              "name": "Product Type",
+              "value": "pcb-and-panel-aluminum"
+            }
+          ]
+        }
+      ],
+      "is_in_stock": true,
+      "stock_availability": {
+        "text": "50 in stock (can be backordered)",
+        "class": "in-stock"
+      }
+    }
+  },
+  {
+    "category": "cable",
+    "query_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=id%2Cname%2Cpermalink%2Cprices%2Cstock_availability%2Cvariations%2Cis_in_stock",
+    "product": {
+      "id": 20209,
+      "name": "Eurorack Modular Patch Cable 4.9ft",
+      "permalink": "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/",
+      "prices": {
+        "price": "450",
+        "regular_price": "450",
+        "sale_price": "450",
+        "price_range": null,
+        "currency_code": "USD",
+        "currency_symbol": "$",
+        "currency_minor_unit": 2,
+        "currency_decimal_separator": ".",
+        "currency_thousand_separator": ",",
+        "currency_prefix": "$",
+        "currency_suffix": ""
+      },
+      "variations": [],
+      "is_in_stock": true,
+      "stock_availability": {
+        "text": "4 in stock",
+        "class": "in-stock"
+      }
+    }
+  }
+]

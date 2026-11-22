@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "8a8072ce-fd4e-4359-b287-dc46d3bac178",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "27495172460e235ecac035c2f763a969ce15776c9e9c743f83dc26bc01bc0ca5",
+  "private_raw_bytes": 5610,
+  "startedWall": 1795336702032,
+  "ended": {
+    "elapsedMs": 379156.37154100003,
+    "terminal": "aborted",
+    "time": 1795337092158
+  },
+  "calls": [],
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [],
+  "products": [],
+  "requires_video": false,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "final_text": "",
+  "evidence_status": "unscored_failed_run",
+  "source_plan_commit": "8a761487684a5bf1acc828ebbc17a91482523688",
+  "source_record_sha256": "e02de3b733637c15d76eda98110bb21f453719331f0f946249a9114b2cb382d7"
+}

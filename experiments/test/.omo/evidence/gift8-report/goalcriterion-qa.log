@@ -1,0 +1,26 @@
+PASS partial during-run1700 clip accepted independently of full-run flag
+PASS inherited old-study full-run target flag is not a gift8 blocker
+PASS wrong UI score rejected
+PASS wrong URLs rejected
+PASS wrong session rejected
+PASS wrong rawid rejected
+PASS unverified viewport rejected
+PASS retimed clip rejected
+PASS unplayable clip rejected
+PASS rawmean below1700 rejected
+PASS official UI below1700 rejected
+PASS invalid trial rejected
+PASS failed rawaudit rejected
+PASS duplicate verified URLs rejected
+PASS clip duration 60
+PASS clip duration 60.001
+PASS clip duration 0
+PASS clip duration NaN
+PASS clip duration Infinity
+PASS verified early target completes goal before eight sends
+PASS raw target with missing clip stays attention
+PASS eight sends cannot bypass a missing target clip
+PASS verified clip does not erase unrelated audit failure
+PASS eight-send below-target study completes comparison only
+PASS below-target partial study remains incomplete
+PASS strict full-run diagnostic remains unchanged

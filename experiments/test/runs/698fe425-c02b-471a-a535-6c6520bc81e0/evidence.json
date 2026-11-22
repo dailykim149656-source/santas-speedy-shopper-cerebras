@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "id": "698fe425-c02b-471a-a535-6c6520bc81e0",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "06a49217df87abc14d0a55dacf178a0a26aff59962b81c311eabb9bde041d27e",
+  "private_raw_bytes": 13684,
+  "startedWall": 1795317582663,
+  "ended": {
+    "elapsedMs": 145011.432125,
+    "terminal": "final",
+    "time": 1795317727707
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-95b9fcb1-b5ee-48e3-b3ec-a556855ad467",
+      "timestamp": 1795317615800,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 396.901534,
+        "outputTokens": 293
+      },
+      "tool_inputs": [
+        {
+          "id": "abf9fa02a",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=4&stock_status=instock&_fields=name,permalink&_run=698fe425",
+            "extractMode": "text",
+            "maxChars": 20000
+          },
+          "args": {}
+        },
+        {
+          "id": "5f7d0e037",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=4&stock_status=instock&_fields=name,permalink&_run=698fe425",
+            "extractMode": "text",
+            "maxChars": 20000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-d03d168b-183a-4040-a49b-d1d3a9b20a72",
+      "timestamp": 1795317725742,
+      "stopReason": "stop",
+      "message_index": 4,
+      "serverGeneration": {
+        "completionMs": 871.1430220000001,
+        "outputTokens": 348
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 568.8467617086925,
+    "ui_rounded_tps": 569,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "abf9fa02a",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=4&stock_status=instock&_fields=name,permalink&_run=698fe425",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:20:52.701Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/"
+      ]
+    },
+    {
+      "tool_call_id": "5f7d0e037",
+      "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=4&stock_status=instock&_fields=name,permalink&_run=698fe425",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:20:52.824Z",
+      "cached": false,
+      "products": [
+        "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+        "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+        "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+        "https://raspberrypi.dk/produkt/compute-blade-starter-kit/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "catalog_name": "Officiel Raspberry Pi 500+ Desktop Kit",
+      "source_tool_call_id": "5f7d0e037",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "html_bytes_read": 303646,
+      "html_sha256": "e41cb9509999369d7dc30d70aaf08eca7eedf6d917124d6cb858bd8bc6dc0c12",
+      "checked_at": "2026-11-22T03:22:13.001591+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Officiel Raspberry Pi 500+ Desktop Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+      "catalog_name": "Axel Health Player Kit",
+      "source_tool_call_id": "5f7d0e037",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+      "html_bytes_read": 248950,
+      "html_sha256": "cea0a6bb6ef215429d2692682339d045402a3f56af79b0c52ebcda281b1bcc97",
+      "checked_at": "2026-11-22T03:22:12.773477+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Axel Health Player Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": true,
+      "product_evidence": {
+        "matching_schema_product": false,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "catalog_name": "Waveshare CM5 PoE Mini-Computer Kit",
+      "source_tool_call_id": "5f7d0e037",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "html_bytes_read": 312363,
+      "html_sha256": "b92e6cc701ead338652a82720d5b9d0e7ea5a3301a432c4dbbc16679b769d0d3",
+      "checked_at": "2026-11-22T03:22:13.095857+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Waveshare CM5 PoE Mini-Computer Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "catalog_name": "Compute Blade Starter Kit",
+      "source_tool_call_id": "5f7d0e037",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "html_bytes_read": 325141,
+      "html_sha256": "7b539f518da8c2a373c32b3364f0072d61838fb73ef41edc364c79c21bac27ec",
+      "checked_at": "2026-11-22T03:22:13.045655+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Compute Blade Starter Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+      "catalog_name": "Wabuu Halloween Tote Bag",
+      "source_tool_call_id": "abf9fa02a",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+      "html_bytes_read": 411573,
+      "html_sha256": "31ddeb081fa756eaeff2b1954bd551fa937d8057a11209e5c47ffd225a6be1d6",
+      "checked_at": "2026-11-22T03:22:10.835100+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Wabuu Halloween Tote Bag – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": false,
+  "final_text": "1. [Officiel Raspberry Pi 500+ Desktop Kit](https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/) — RaspberryPi.dk\n2. [Axel Health Player Kit](https://raspberrypi.dk/produkt/axel-health-player-kit/) — RaspberryPi.dk\n3. [Waveshare CM5 PoE Mini-Computer Kit](https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/) — RaspberryPi.dk\n4. [Compute Blade Starter Kit](https://raspberrypi.dk/produkt/compute-blade-starter-kit/) — RaspberryPi.dk\n5. [Wabuu Halloween Tote Bag](https://mercantile.wordpress.org/product/wabuu-halloween-tote/) — Mercantile, for carrying creative project supplies",
+  "evidence_status": "below_threshold_recorded",
+  "source_plan_commit": "b0bbc4d8a9bb38a3a84e6e00fafbc42a5b917d70",
+  "source_record_sha256": "f4895101e46c415ca7bc74d01c9632bf57d96eb2c578c93929ffae471812a006"
+}

@@ -1,0 +1,1 @@
+{"id":"gift8","name":"Gift8 merchant lookup","version":"1.0.0","contracts":{"tools":["gift_lookup"]},"configSchema":{"type":"object","additionalProperties":false,"required":["campaignRoot"],"properties":{"campaignRoot":{"type":"string","minLength":1},"timeoutMs":{"type":"integer","minimum":100,"maximum":30000}}}}

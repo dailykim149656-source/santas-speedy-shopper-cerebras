@@ -1,0 +1,100 @@
+--- supervisor.before.py
++++ supervisor.py
+@@ -24,6 +24,8 @@
+ import uuid
+ 
+ sys.dont_write_bytecode = True
++from cadence import Cadence
++
+ REPO = Path('$BOUNTY_TEST_REPO')
+ CAMPAIGN_DIR = Path(__file__).resolve().parent
+ CACHE = CAMPAIGN_DIR.parent
+@@ -84,7 +86,7 @@
+     return [json.loads(line) for line in (CACHE / 'iterations.jsonl').read_text().splitlines() if line.strip()]
+ 
+ 
+-def cooldown_until(rows, status):
++def cooldown_until(rows, status, post_success_seconds=None):
+     until = 0
+     if status.get('phase') == 'preflight_aborted':
+         until = datetime.fromisoformat(status['time']).timestamp() + 45
+@@ -100,9 +102,31 @@
+         cooldown = max(60, 30 * 2 ** min(failed, 4))
+         if rows[-1].get('rate_limited'):
+             cooldown = max(60 if limited < 3 else 120, 30 * 2 ** min(failed, 4) if failed else 0)
++        if post_success_seconds is not None:
++            if post_success_seconds not in (30, 60) or not cadence_eligible(rows[-1]):
++                raise RuntimeError('ineligible post-success cadence override')
++            cooldown = post_success_seconds
+         last = read(REPO / 'runs' / rows[-1]['id'] / 'evidence.json')
+         until = max(until, last['ended']['time'] / 1000 + cooldown)
+     return until
++
++
++def cadence_eligible(row):
++    if not (row.get('arm') == 'synth-five-categories-cap|0.2|low'
++            and row.get('valid') is True and row.get('method_valid') is True
++            and row.get('rate_limited') is False
++            and type(row.get('call_count')) is int and row['call_count'] == 2
++            and row.get('relay_phases') == ['passthrough', 'passthrough']):
++        return False
++    plan = read(REPO / 'runs' / row['id'] / 'plan.json')
++    record = committed_record(row['id'])
++    return (plan.get('variant') == 'synth-five-categories-cap'
++            and plan.get('experiment') == 'synth-five-categories-cap|0.2|low'
++            and plan.get('capturePolicy') is None
++            and plan.get('request_relay') == 'relay-v1:' + hashlib.sha256(
++                (REPO / 'tools/request_relay.mjs').read_bytes()).hexdigest() + ':retry-only'
++            and record['ended']['terminal'] == 'final' and record['validation']['valid'] is True
++            and len(record['calls']) == 2 and all(call.get('timed_sample') is True for call in record['calls']))
+ 
+ 
+ def strict_candidate(row, record, threshold):
+@@ -279,11 +303,15 @@
+         watcher.start()
+         event('started', owner=owner, deadline=deadline.isoformat(), cutoff=datetime.fromtimestamp(cutoff, timezone.utc).isoformat())
+         try:
++            cadence = Cadence(CAMPAIGN_DIR, cutoff, committed_record)
+             while True:
+                 if not lock_free(CACHE / 'loop.lock'):
+                     event('return_control', reason='test loop lock is held; no automatic takeover')
+                     return 2
++                if cadence.state is not None:
++                    cadence.reconcile_terminal(history())
+                 rows, success, sealed = reconcile(campaign, baseline)
++                cadence.reconcile(rows, sealed)
+                 if success:
+                     owned_stop(CACHE / 'stop-requested', owner, 'verified mean >1500')
+                     report()
+@@ -301,7 +329,8 @@
+                     raise RuntimeError('latest preflight receipt not verified')
+                 if state['phase'] == 'result' and (not rows or state.get('id') != rows[-1]['id']):
+                     raise RuntimeError('latest result/history mismatch')
+-                remaining = cooldown_until(rows, state) - time.time()
++                assignment = cadence.select(rows, sealed, cadence_eligible, time.time())
++                remaining = cooldown_until(rows, state, assignment['requested_seconds'] if assignment else None) - time.time()
+                 if remaining > 0:
+                     stopped.wait(max(0, min(remaining, cutoff - time.time())))
+                     continue
+@@ -321,14 +350,20 @@
+                             continue
+                         before = (len(rows), frozenset(sealed))
+                         command = [sys.executable, '-B', '-u', str(REPO / 'tools/loop.py'), '--once']
++                        if assignment:
++                            command += ['--d5027-post-success-seconds', str(assignment['requested_seconds'])]
++                            cadence.dispatch(assignment, rows, sealed, command, time.time())
+                         event('dispatch', command=command)
+                         child = subprocess.Popen(command, cwd=REPO, env=env, stdout=log, stderr=subprocess.STDOUT,
+                                                  pass_fds=tuple(fds))
+                         # Never kill/restart a child whose send may have happened.
+                         code = child.wait()
+                         event('child_exit', returncode=code)
++                        if cadence.state is not None:
++                            cadence.reconcile_terminal(history())
++                        after, success, sealed_after = reconcile(campaign, baseline)
++                        cadence.reconcile(after, sealed_after)
+                         report()
+-                        after, success, sealed_after = reconcile(campaign, baseline)
+                         if success:
+                             owned_stop(CACHE / 'stop-requested', owner, 'verified mean >1500')
+                             return 0

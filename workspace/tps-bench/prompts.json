@@ -1,0 +1,33 @@
+{
+  "_note": "프롬프트를 고치면 version을 올린다. 기록에는 version과 본문 해시가 함께 남는다. 본문은 '해커톤 수상 전략 - 대화 전문.md'의 최종 4종을 그대로 옮겼다.",
+  "prompts": [
+    {
+      "id": "P1",
+      "version": "v1",
+      "label": "regular arithmetic identities",
+      "validator": {"type": "arith_pairs", "n": 200},
+      "text": "Generate 200 arithmetic identities in order,\nfor n = 1 through 200.\n\nUse exactly this format:\nn + n = result\nn × 2 = result\n\nWrite every line explicitly.\nDo not summarize or use ellipses."
+    },
+    {
+      "id": "P2",
+      "version": "v1",
+      "label": "repetitive python functions",
+      "validator": {"type": "py_calc_funcs", "n": 100},
+      "text": "Write 100 Python functions named calc_001\nthrough calc_100.\n\nEach function accepts x and returns\n(x + n) * 2, where n is the function number.\n\nWrite full function definitions.\nNo explanations or abbreviations."
+    },
+    {
+      "id": "P3",
+      "version": "v1",
+      "label": "structured jsonl",
+      "validator": {"type": "jsonl_records", "n": 200},
+      "text": "Generate 200 JSONL records.\n\nEach record follows exactly this structure:\n{\"id\":1,\"status\":\"ok\",\"value\":100}\n\nIncrement id by 1 each row.\nKeep all other fields unchanged.\nOutput JSONL only."
+    },
+    {
+      "id": "P4",
+      "version": "v1",
+      "label": "low-entropy repetition (control)",
+      "validator": {"type": "repeat_seq", "n": 300, "seq": "ALPHA BETA GAMMA DELTA"},
+      "text": "Repeat the exact sequence below 300 times:\n\nALPHA BETA GAMMA DELTA\n\nWrite the full sequence each time.\nDo not abbreviate, count, or summarize."
+    }
+  ]
+}

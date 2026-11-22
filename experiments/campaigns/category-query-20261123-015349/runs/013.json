@@ -1,0 +1,49 @@
+{
+  "slot": 13,
+  "id": "6ea9f31d-ca73-4e65-b888-cc4c0b007e1e",
+  "valid": false,
+  "status": "provider_429",
+  "reason": "session did not terminate successfully",
+  "provider_429_observed": true,
+  "startedWall": 1795367504771,
+  "sentAt": 1795367505718,
+  "endedAt": 1795367520412,
+  "waitStatus": "error",
+  "wallSeconds": 14.694,
+  "official": {
+    "meanTokensPerSecond": 520.7384658143919,
+    "p90TokensPerSecond": 520.7384658143919,
+    "outputTokens": 240,
+    "generationMs": 460.883948,
+    "calls": 1
+  },
+  "officialDisplay": "521",
+  "provider_failures": [
+    {
+      "status": 429,
+      "stage": "final"
+    }
+  ],
+  "calls": [
+    {
+      "responseId": "chatcmpl-2c9cb5cd-ac6a-4e33-bd4e-6debb030c0c6",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "completionMs": 460.883948,
+        "outputTokens": 240
+      },
+      "recalculated_tps": 520.7384658143919
+    },
+    {
+      "stopReason": "error"
+    }
+  ],
+  "source_session_sha256": "b5d5934439e1e4f0c75e763915198c7654bf237e5a4e540ba02812ea9c6d786b",
+  "verified_query_receipts": [
+    "cable",
+    "echo",
+    "filter",
+    "mixer",
+    "oscillator"
+  ]
+}

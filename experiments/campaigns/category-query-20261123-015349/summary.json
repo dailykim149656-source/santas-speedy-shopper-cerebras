@@ -1,0 +1,135 @@
+{
+  "audit": {
+    "planned": 60,
+    "sent_at_records": 17,
+    "confirmed_sent": 17,
+    "rpc_only_unconfirmed": [],
+    "pending": 0,
+    "terminal": {
+      "error": 17
+    },
+    "provider_429_sessions": 17,
+    "provider_diagnostics_available": 17,
+    "provider_429_transcript_events": 17,
+    "merchant_429_sessions": 0,
+    "merchant_lookup_429_events": 0,
+    "merchant_detail_429_events": 0,
+    "both_429_sessions": 0,
+    "any_429_sessions": 17,
+    "merchant_unknown_error_slots": [],
+    "respective_5_lookup_products": 2,
+    "five_detail_pages_observed": 0,
+    "five_detail_pages_verified": 0,
+    "valid": 0,
+    "mean": null,
+    "median": null,
+    "avg_first": null,
+    "avg_final": null,
+    "above_d5027": 0,
+    "above_1500": 0,
+    "above_1673_exact": 0,
+    "above_1673_displayed": 0,
+    "best": null,
+    "best_report": null,
+    "nonvalid": [
+      {
+        "slot": 1,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 2,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 3,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 4,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 5,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 6,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 7,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 8,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 9,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 10,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 11,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 12,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 13,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 14,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 15,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 16,
+        "reason": "session did not terminate successfully"
+      },
+      {
+        "slot": 17,
+        "reason": "session did not terminate successfully"
+      }
+    ]
+  },
+  "from_report": {
+    "planned": 60,
+    "sent": 17,
+    "valid": 0,
+    "valid_fraction": 0.0,
+    "status_counts": {
+      "provider_429": 17,
+      "missing_record": 43
+    },
+    "observed_provider_429_sessions": 17,
+    "provider_diagnostics_available_sessions": 17,
+    "transcript_429_by_stage": {
+      "first": 15,
+      "final": 2
+    },
+    "average_valid_session_tps": null,
+    "median_valid_session_tps": null,
+    "average_first_tps": null,
+    "average_final_tps": null,
+    "best_valid_session_tps": null,
+    "best_slot": null,
+    "historical_D5027_mean": 1354.6625976356386,
+    "best_minus_historical": null,
+    "average_minus_historical": null,
+    "above_historical": 0,
+    "target": 1673,
+    "above_raw_target": 0,
+    "above_display_target": 0
+  },
+  "source_report_sha256": "4bab7be43a038941e5c564697c25ef7c696fab8ebaca502fba249542190dcab8"
+}

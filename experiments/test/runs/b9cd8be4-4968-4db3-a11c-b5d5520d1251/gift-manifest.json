@@ -1,0 +1,16 @@
+{
+  "id": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+  "sessionKey": "agent:main:shop-d5055-gift8-prefetch-b9cd8be4",
+  "arm": "prefetch",
+  "prompt_sha256": "114c78cd5c5c9e1e73b6a95187b65582e732559407f77a6ccfea210f4c997e69",
+  "created_ms": 1795347109887,
+  "ids": [
+    21951,
+    23345,
+    11125,
+    11141,
+    20209
+  ],
+  "protocol": "gift8-v1",
+  "plugin_sha256": "ef5d6e58c1f45e5d290e1af4608742b0f01336122e91b5a92b65adf58a388edd"
+}

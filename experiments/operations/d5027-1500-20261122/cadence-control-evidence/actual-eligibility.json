@@ -1,0 +1,11 @@
+{
+  "scenario": "actual D5102 committed canonical prior success",
+  "run_id": "8cc80670-9e66-4a59-9e74-fd3bfeadcf7e",
+  "eligible": true,
+  "flag": "--d5027-post-success-seconds",
+  "exact_call_count": 2,
+  "relay_phases": [
+    "passthrough",
+    "passthrough"
+  ]
+}

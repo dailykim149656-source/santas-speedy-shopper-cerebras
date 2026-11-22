@@ -1,0 +1,21 @@
+import { spawn } from 'node:child_process';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { pathToFileURL } from 'node:url';
+
+const userDir = os.homedir();
+const root = path.join(userDir, 'Library/Caches/cerebras-speed-bounty/2026-11-22-test');
+const repo = path.join(root, 'openclaw');
+const state = path.join(root, 'shopper-test');
+const cli = fs.realpathSync(process.execPath);
+const installed = path.resolve(path.dirname(cli), '../lib/node_modules/openclaw');
+const { resolveApiKeyForProvider } = await import(pathToFileURL(path.join(installed, 'dist/plugin-sdk/provider-auth-runtime.js')));
+const cfg = JSON.parse(fs.readFileSync(path.join(userDir, '.openclaw/openclaw.json'), 'utf8'));
+const auth = await resolveApiKeyForProvider({provider:'cerebras',cfg,agentDir:path.join(userDir,'.openclaw/agents/main/agent'),modelId:'moonshotai-kimi-k3.1-pro-trial'});
+if (typeof auth.apiKey !== 'string' || !auth.apiKey) throw new Error('Cerebras profile unavailable');
+const env = { ...process.env, PATH:path.join(root,'bin')+':'+process.env.PATH,CEREBRAS_API_KEY:auth.apiKey,OPENCLAW_GATEWAY_TOKEN:fs.readFileSync(path.join(state,'gateway-token'),'utf8').trim(),OPENCLAW_STATE_DIR:state,OPENCLAW_CONFIG_PATH:path.join(state,'openclaw.json'),OPENCLAW_GATEWAY_PORT:'19863',OPENCLAW_SKIP_CHANNELS:'1',OPENCLAW_SKIP_CRON:'1' };
+const child=spawn(path.join(root,'bin/node'),[path.join(repo,'openclaw.mjs'),...process.argv.slice(2)],{cwd:repo,env,stdio:'inherit'});
+process.on('SIGTERM',()=>child.kill('SIGTERM'));
+process.on('SIGINT',()=>child.kill('SIGINT'));
+child.on('exit',(code)=>process.exit(code??1));

@@ -1,0 +1,8 @@
+{
+  "reduced_ab_count": 3,
+  "reduced_ab_end": "no_valid_B_after_three",
+  "last_actual_label": "D5118-synth-five-categories-cap",
+  "actual_last_b_skipped": true,
+  "synthetic_next_eligible_a_allocated": 60,
+  "config_anchor_matches_synthetic_a": true
+}

@@ -1,0 +1,6 @@
+[
+  {
+    "name": "AI028 Voltage Controlled Matrix Mixer",
+    "permalink": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+  }
+]

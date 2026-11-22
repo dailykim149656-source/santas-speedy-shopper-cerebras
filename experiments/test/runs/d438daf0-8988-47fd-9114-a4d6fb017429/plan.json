@@ -1,0 +1,17 @@
+{
+  "id": "d438daf0-8988-47fd-9114-a4d6fb017429",
+  "label": "D0035-hardware-links",
+  "sessionKey": "agent:main:shop-d0035-hardware-links-d438daf0",
+  "variant": "hardware-links",
+  "thinking": "low",
+  "temperature": 1.0,
+  "top_p": null,
+  "max_completion_tokens": null,
+  "video_threshold_tps": 1000,
+  "prompt": "Find five distinct real Christmas gifts suitable for hobby electronics from this live retailer. Fetch the catalog once with web_fetch and select five useful gifts for different projects. Return five numbered product titles as Markdown links to their actual product pages.\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=10&stock_status=instock&_fields=name,permalink&_run=d438daf0",
+  "experiment": "hardware-links|1|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "9b5304067ba87fc2bd245f89246871cc1857e8ac3d48e05fab19446017763af8",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414"
+}

@@ -1,0 +1,61 @@
+{
+  "invocation": "python3 -B /tmp/test_report_first5027.py",
+  "results": [
+    {
+      "scenario": "genuine D5027 baseline",
+      "passed": true,
+      "observable": "genuine D5027 SHA, committed identity, 2 calls, 5 products, first TPS and mean exact match"
+    },
+    {
+      "scenario": "failed trial first diagnostic retained",
+      "passed": true,
+      "observable": "measured first 447 tokens/304 reasoning chars retained; no final TPS; failed run not valid"
+    },
+    {
+      "scenario": "all measured calls contribute to official mean",
+      "passed": true,
+      "observable": "all 3 calls included in arithmetic mean=1069.7750650904256"
+    },
+    {
+      "scenario": "tampered identity metrics means rejected",
+      "passed": true,
+      "observable": "response identity, server metric and wrong mean each rejected"
+    },
+    {
+      "scenario": "SHA256 tamper rejection",
+      "passed": true,
+      "observable": "one-byte altered raw rejected before use"
+    },
+    {
+      "scenario": "independent overlap and incomplete interval audit",
+      "passed": true,
+      "observable": "all 2 cross intervals checked; overlap found; corrected clear; unresolved send fails closed"
+    },
+    {
+      "scenario": "film receipt ffprobe reinspection and absent UI",
+      "passed": true,
+      "observable": "real ffprobe playable fixture, no invented UI; tampered receipt rejected; inspector wrote nothing"
+    },
+    {
+      "scenario": "public argument redaction",
+      "passed": true,
+      "observable": "unexpected URL and argument values redacted"
+    },
+    {
+      "scenario": "real current campaign partial CLI",
+      "passed": true,
+      "observable": "CLI exit 0; Korean report and audit JSON nonempty; 6 actual sends"
+    },
+    {
+      "scenario": "selection confirmation and temporal exclusion",
+      "passed": true,
+      "observable": "16 planned slots: B selected and both confirmation pairs pass; >15-minute pair excluded"
+    },
+    {
+      "scenario": "optional project-local verified demo copy",
+      "passed": true,
+      "observable": "verified fixture demo copied with matching checksum manifest; outside-project destination rejected"
+    }
+  ],
+  "passed": true
+}

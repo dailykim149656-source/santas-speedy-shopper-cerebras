@@ -1,0 +1,52 @@
+{
+  "slot": 7,
+  "campaign": "speed1500-20261122",
+  "arm": "F",
+  "id": "76d7f298-699e-4068-a082-319a95db477f",
+  "label": "D5086-speed1500-f",
+  "score": 711.919774760629,
+  "ui": 712,
+  "valid": true,
+  "product_valid": true,
+  "method_valid": true,
+  "relay_valid": true,
+  "format_valid": true,
+  "recorded_video": true,
+  "evidence_status": "video_superseded",
+  "record": false,
+  "goal": false,
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": "chatcmpl-f1811ff0-0c7d-4dc6-9525-41f8a2d169c3",
+      "completionMs": 534.4391360000001,
+      "outputTokens": 407,
+      "tokensPerSecond": 761.5460257012315,
+      "stopReason": "toolUse"
+    },
+    {
+      "message_index": 7,
+      "response_id": "chatcmpl-db5f1378-3682-413e-83dc-4adc05019e49",
+      "completionMs": 356.337472,
+      "outputTokens": 236,
+      "tokensPerSecond": 662.2935238200264,
+      "stopReason": "stop"
+    }
+  ],
+  "call_count": 2,
+  "first_tps": 761.5460257012315,
+  "final_tps": 662.2935238200264,
+  "terminal_429": false,
+  "started_wall": 1795352456475,
+  "ended_wall": 1795352466783,
+  "raw_sha256": "8eed1545d0ef18354bc39359a5020dc8c1530166c835ff98969dd52f6bb9754b",
+  "product_urls": [
+    "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+  ],
+  "provider_attempts": 2,
+  "provider_429s": 0
+}

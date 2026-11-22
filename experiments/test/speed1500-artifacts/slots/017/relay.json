@@ -1,0 +1,46 @@
+[
+  {
+    "at_ms": 1795353466746,
+    "method": "POST",
+    "path": "/v1/chat/completions",
+    "relay_sha256": "1d6a3b1daf82f386b62ad0207854b741f8596408a4ec6033397c75ec51f98c14",
+    "received_sha256": "d4e1d10a0caa5b98a17ec354ca50402b84c5d95dba113aab3bdb14952cd79a14",
+    "nonce": "aee0624e",
+    "run_id": "aee0624e-ec5b-4b15-8266-a48d0f586cb9",
+    "phase": "passthrough",
+    "changes": [],
+    "forwarded_sha256": "d4e1d10a0caa5b98a17ec354ca50402b84c5d95dba113aab3bdb14952cd79a14",
+    "attempts": [],
+    "status": 200,
+    "upstream_ms": 1371.9785000002012,
+    "response_sha256": "861446c221e6fc2d5273544667b026151acf90bbdb28633c3dc7bb76b5060ffe",
+    "response_bytes": 4401,
+    "timing": {
+      "completion_time": 0.328120214,
+      "completion_tokens": 383,
+      "prompt_tokens": 2860
+    }
+  },
+  {
+    "at_ms": 1795353471892,
+    "method": "POST",
+    "path": "/v1/chat/completions",
+    "relay_sha256": "1d6a3b1daf82f386b62ad0207854b741f8596408a4ec6033397c75ec51f98c14",
+    "received_sha256": "f447cdb91151cabb8ab95c8094761b28ada83e00bef5c63e5a2df3cbeb4e4d45",
+    "nonce": "aee0624e",
+    "run_id": "aee0624e-ec5b-4b15-8266-a48d0f586cb9",
+    "phase": "passthrough",
+    "changes": [],
+    "forwarded_sha256": "f447cdb91151cabb8ab95c8094761b28ada83e00bef5c63e5a2df3cbeb4e4d45",
+    "attempts": [],
+    "status": 200,
+    "upstream_ms": 8246.136834000004,
+    "response_sha256": "bebd0293efaab654283cbd48254e0be41cb20ed00faa5190038d48b728a45e8b",
+    "response_bytes": 17066,
+    "timing": {
+      "completion_time": 0.28645035,
+      "completion_tokens": 233,
+      "prompt_tokens": 5154
+    }
+  }
+]

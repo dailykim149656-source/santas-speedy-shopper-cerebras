@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "best_live_model_video_slot": 8,
+    "best_live_model_video_tps": 977.5989722140812,
+    "valid_with_live_model_video": 4,
+    "planned": 60,
+    "attempts": 17,
+    "model_sent": 17,
+    "provider_429_sessions": 10,
+    "shopify_429_sessions": 0,
+    "catalog_5of5": 17,
+    "valid": 7,
+    "average_tps": 990.2322195814105,
+    "median_tps": 962.1167913353404,
+    "best_tps": 1255.3303256906247,
+    "best_slot": 1,
+    "d5027_tps": 1354.6625976356386,
+    "above_d5027": 0,
+    "above_1500": 0,
+    "above_1673": 0,
+    "stages": {
+      "유효": 7,
+      "Cerebras 429": 10
+    }
+  },
+  "source_report_sha256": "fdf0465fa5bc015cdca45dd314717cb9fdc717618b2a3f3377abd05517da4bd2"
+}

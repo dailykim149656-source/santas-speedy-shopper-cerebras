@@ -1,0 +1,94 @@
+{
+  "run_id": "4a2e1d7b-8bdd-44a6-8f25-840ff062c70b",
+  "valid": false,
+  "status": "rejected",
+  "target_met": false,
+  "reject_reasons": [
+    "run has no successful final terminal event",
+    "run has no successful final assistant text",
+    "assistant call missing response identity or has unsuccessful stop",
+    "final must contain exactly five distinct product links",
+    "five independent merchant product GET verifications did not pass"
+  ],
+  "target_reasons": [
+    "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+  ],
+  "score": {
+    "mean_exact_tps": 577.6191039339055,
+    "ui_rounded_tps": 578,
+    "ui_display": "578",
+    "p90_tps": 912.1857888735144,
+    "output_tokens": 698,
+    "generation_ms": 1450.316629,
+    "call_count": 3,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)",
+    "official_patch": "~/Library/Caches/cerebras-speed-bounty/2026-11-22/official.patch",
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": "chatcmpl-7ffcb6f6-60b7-41f6-891d-a47aa0b6198b",
+      "completionMs": 292.33469,
+      "outputTokens": 129,
+      "tokensPerSecond": 441.27503307937894,
+      "stopReason": "toolUse"
+    },
+    {
+      "message_index": 3,
+      "response_id": "chatcmpl-d331aa48-6d23-40e9-9599-40d113da8ec7",
+      "completionMs": 243.371474,
+      "outputTokens": 222,
+      "tokensPerSecond": 912.1857888735144,
+      "stopReason": "toolUse"
+    },
+    {
+      "message_index": 8,
+      "response_id": "chatcmpl-a60dd3c5-2f35-463d-9ed7-65f53417ef85",
+      "completionMs": 914.610465,
+      "outputTokens": 347,
+      "tokensPerSecond": 379.39648984882325,
+      "stopReason": "error"
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "c9b2cfb3f",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=6&stock_status=instock&_fields=name,permalink&_run=4a2e1d7b",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T02:44:29.879Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+        "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+        "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/"
+      ]
+    },
+    {
+      "tool_call_id": "8456ae0ea",
+      "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=6&stock_status=instock&_fields=name,permalink&_run=4a2e1d7b",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T02:44:30.615Z",
+      "cached": false,
+      "products": [
+        "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+        "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+        "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+        "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+        "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+        "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/"
+      ]
+    }
+  ],
+  "products": [],
+  "final_text": "",
+  "input_path": "workspace/.omo/evidence/loop-validator/no_successful_final-fixture.json",
+  "input_sha256": "b5e619be94e8490bfbaaa3e2610572071d0bee61a4c876b35aa227e44ba9b1ef"
+}

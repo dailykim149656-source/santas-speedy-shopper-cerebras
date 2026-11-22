@@ -1,0 +1,8 @@
+{
+  "id": "1c80bfa3-26ab-4b14-a000-dce76ef510c5",
+  "label": "D0001-native-links",
+  "sessionKey": "agent:main:shop-d0001-native-links-1c80bfa3",
+  "variant": "native-links",
+  "thinking": "low",
+  "prompt": "Find five real Christmas gifts for makers across both shops. Use web_fetch on the two current stock lists below together, then return five different items as numbered Markdown product links. Use the seller's exact product titles and URLs.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink&_run=1c80bfa3\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink&_run=1c80bfa3"
+}

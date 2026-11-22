@@ -1,0 +1,177 @@
+{
+  "mode": "offline fixtures; independent HTTP explicitly mocked, no real run claimed",
+  "checks": [
+    {
+      "scenario": "tool happy path with explicitly mocked independent HTTP",
+      "passed": true
+    },
+    {
+      "scenario": "tool exact arithmetic and threshold",
+      "passed": true
+    },
+    {
+      "scenario": "tool absent first-input rejected",
+      "passed": true
+    },
+    {
+      "scenario": "tool native normalized prefix and runtime context accepted",
+      "passed": true
+    },
+    {
+      "scenario": "tool prior assistant in first input rejected",
+      "passed": true
+    },
+    {
+      "scenario": "tool repeated dispatch hooks do not create generations",
+      "passed": true
+    },
+    {
+      "scenario": "tool foreign later input runId rejected",
+      "passed": true
+    },
+    {
+      "scenario": "tool foreign later input provider rejected",
+      "passed": true
+    },
+    {
+      "scenario": "tool foreign later input sessionId rejected",
+      "passed": true
+    },
+    {
+      "scenario": "tool foreign first system suffix rejected",
+      "passed": true
+    },
+    {
+      "scenario": "tool foreign rejected with score retained",
+      "passed": true
+    },
+    {
+      "scenario": "tool stale rejected with score retained",
+      "passed": true
+    },
+    {
+      "scenario": "tool spoofed hash rejected with score retained",
+      "passed": true
+    },
+    {
+      "scenario": "tool reordered final rejected",
+      "passed": true
+    },
+    {
+      "scenario": "native display projection without private details accepted",
+      "passed": true
+    },
+    {
+      "scenario": "spoofed native result toolName rejected",
+      "passed": true
+    },
+    {
+      "scenario": "spoofed native result details rejected",
+      "passed": true
+    },
+    {
+      "scenario": "spoofed native result content rejected",
+      "passed": true
+    },
+    {
+      "scenario": "reordered native result rejected",
+      "passed": true
+    },
+    {
+      "scenario": "all three actual calls included",
+      "passed": true
+    },
+    {
+      "scenario": "invalid generation rejects but retains available authentic score",
+      "passed": true
+    },
+    {
+      "scenario": "tool finish stores exact private original and committed evidence",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch happy path with explicitly mocked independent HTTP",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch exact arithmetic and threshold",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch absent first-input rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch native normalized prefix and runtime context accepted",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch prior assistant in first input rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch repeated dispatch hooks do not create generations",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch foreign later input runId rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch foreign later input provider rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch foreign later input sessionId rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch foreign first system suffix rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch foreign rejected with score retained",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch stale rejected with score retained",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch spoofed hash rejected with score retained",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch reordered final rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch genuine extra five calls valid with both generations scored",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch extra call spoofed sessionKey rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch extra call spoofed card_sha256 rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch extra call spoofed tool_call_id rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch extra call receipts committed exact",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch without injection rejected",
+      "passed": true
+    },
+    {
+      "scenario": "prefetch finish stores exact private original and committed evidence",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "raw_sha256": "9859ee718e68894fe10e56a0d964c01070250bfa12ee5acf4a3f9cd86564362b",
+  "candidate": {
+    "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "catalog_name": "AI024 Eurorack X Filter",
+    "source_tool_call_id": "d171ab2b1"
+  },
+  "product": {
+    "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "catalog_name": "AI024 Eurorack X Filter",
+    "source_tool_call_id": "d171ab2b1",
+    "verified": true,
+    "reasons": [],
+    "http": 200,
+    "final_url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "html_bytes_read": 477282,
+    "html_sha256": "0ec1db5c74c1a635f9fcfc7d30ec08e5d8e19b5a17a5ed735945f799c39df008",
+    "checked_at": "2026-11-22T17:52:35.602711+00:00",
+    "canonical": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "merchant": "aisynthesis.com",
+    "title": "AI024 Eurorack X Filter",
+    "title_matches_catalog": true,
+    "product_evidence": {
+      "matching_schema_product": true,
+      "woocommerce_product_heading": false,
+      "woocommerce_sticky_product_price_and_cart": false
+    },
+    "password_protected": false
+  },
+  "finished_at": "2026-11-22T17:52:35.611+00:00"
+}

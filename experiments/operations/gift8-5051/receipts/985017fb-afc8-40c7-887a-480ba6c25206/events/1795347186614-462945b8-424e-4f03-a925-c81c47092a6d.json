@@ -1,0 +1,45 @@
+{
+  "type": "llm_input",
+  "runId": "985017fb-afc8-40c7-887a-480ba6c25206",
+  "sessionKey": "agent:main:shop-d5056-gift8-tool-985017fb",
+  "timestamp_ms": 1795347186614,
+  "plugin_sha256": "ef5d6e58c1f45e5d290e1af4608742b0f01336122e91b5a92b65adf58a388edd",
+  "event": {
+    "runId": "985017fb-afc8-40c7-887a-480ba6c25206",
+    "sessionId": "f801f515-7480-44e7-b2aa-616248abb679",
+    "provider": "cerebras",
+    "model": "moonshotai-kimi-k3.1-pro-trial",
+    "systemPrompt": "Use current merchant cards only. When cards are absent, call gift_lookup once for each requested id in parallel. Return only JSON {\"gifts\":[cards]} in requested id order, copying all card fields exactly. Prices are minor currency units; options are actual variation values, not all finished products.\n<!-- OPENCLAW_CACHE_BOUNDARY -->\n\nCurrent model identity: cerebras/moonshotai-kimi-k3.1-pro-trial. If asked what model you are, answer with this value for the current run.",
+    "prompt": "[Sun 2026-11-22 20:33 GMT+9] Christmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=985017fb",
+    "historyMessages": [],
+    "imagesCount": 0,
+    "tools": [
+      {
+        "name": "gift_lookup",
+        "label": "Gift lookup",
+        "description": "Fetch one current AI Synthesis product by numeric id.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "enum": [
+                21951,
+                23345,
+                11125,
+                11141,
+                20209
+              ]
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false
+        }
+      }
+    ]
+  },
+  "prompt_sha256": "63336e4ed257dce995c59cd29c89a98003d0b4429ce09a287a38ad4ecfdcdab2",
+  "bound_prompt_sha256": "be067abf4e62dc46da707221b23dec123004fbba5faffd7dc5e86ff43d011419"
+}

@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-22T14:35:15.408Z",
+  "base_relay_sha256": "788fe1f6f9b8dd32322202fa63510d97e5400a940098b9e502ff715d3a69c5fd",
+  "staged_relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+  "staged_test_sha256": "85acc38784085bec0d2425ef638da72291f285be462ea80012f2e506db152ea0",
+  "offline_test_log": "relay-offline-tests.txt",
+  "sample": [
+    {
+      "label": "D5098",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "f6c1285477032bdd9f43361bdf578a25c099be9af17035693ff282e0274aeb3f",
+      "projected_wire_sha256": "6fb63dc4709177272d00a45bc46b6fc5e16dd96e1a216ddb67a3247aa1d7f42a"
+    },
+    {
+      "label": "D5098",
+      "stage": "final",
+      "semantic_edits": [],
+      "received_sha256": "c0d10a82221e2e2ea94acd6e01ec2e394c90665db78e54f5be9344f180c0f9de",
+      "projected_wire_sha256": "c0d10a82221e2e2ea94acd6e01ec2e394c90665db78e54f5be9344f180c0f9de"
+    },
+    {
+      "label": "D5099",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "06174c24862b03828850b081a4977a8f70f90b8fbef7acd7f2ac167b1869ae15",
+      "projected_wire_sha256": "ddb0619a6aef20044a9a9f0aa4474a6c700e0ccc10afcf5d20aa90b778f12fe3"
+    },
+    {
+      "label": "D5099",
+      "stage": "final",
+      "semantic_edits": [],
+      "received_sha256": "27adc7229b8b2c0d299656fa1fb2bb6835bcdc8f5eb5700f91af03d63db3e110",
+      "projected_wire_sha256": "27adc7229b8b2c0d299656fa1fb2bb6835bcdc8f5eb5700f91af03d63db3e110"
+    },
+    {
+      "label": "D5100",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "30f85d9a42edc15beb54a68cdf8aaab683247232b2876cb63fdbced6997e4147",
+      "projected_wire_sha256": "982714061212c2762209269285da0d2b60f8ba59cb647006da3a96f810f1cb24"
+    },
+    {
+      "label": "D5101",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "fb8c5978f7c2cc08a1d24d2e04fa3f36fdf8c4bb5fa7e6d9146d60cd98d5e2d2",
+      "projected_wire_sha256": "5794a064cb7cfde751fa671a70e00a0b5ef6245132cd7667ecfb11a10642e9e9"
+    },
+    {
+      "label": "D5102",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "5762de58642b2eea5920412953def65196d23702751e4ef971056395e726f645",
+      "projected_wire_sha256": "53be87b6a00409f4a007e340489e95f63960637887770e50437505f7eebe5f7e"
+    },
+    {
+      "label": "D5102",
+      "stage": "final",
+      "semantic_edits": [],
+      "received_sha256": "c5be370e0cc82dc35610930d35163668a925156c08c6999d0f30d518fa3df460",
+      "projected_wire_sha256": "c5be370e0cc82dc35610930d35163668a925156c08c6999d0f30d518fa3df460"
+    },
+    {
+      "label": "D5103",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "b478cf520ec01986c6eb90469512f968b875d18769f4ea8a7de10272225192af",
+      "projected_wire_sha256": "65ab603c8131711358a41c4ad6bb71f72dc49b18be8e781d5d1ab2d59805fc64"
+    },
+    {
+      "label": "D5103",
+      "stage": "final",
+      "semantic_edits": [],
+      "received_sha256": "96dde5ea345b9ff274e84469f591438facb11710f5711190122838a8ebeaac89",
+      "projected_wire_sha256": "96dde5ea345b9ff274e84469f591438facb11710f5711190122838a8ebeaac89"
+    },
+    {
+      "label": "D5104",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "c21c326d584dd2a8cf4b12597fac3ec25101fd0b3cd58bdfdca400a0855790c3",
+      "projected_wire_sha256": "59f93455e1298c378a90e124f8a665a7143324e577855745cb72a4da864be83c"
+    },
+    {
+      "label": "D5105",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "d6cd8c1bb9e1dc8f2808a781eb10da7f79c738484b700e295658fb2daa6bf995",
+      "projected_wire_sha256": "3c97e5547d8db87a0ba43acb30ca1d11291f2adac3440690f876a10069f50ba3"
+    },
+    {
+      "label": "D5106",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "824ef91f87689cc7fa692bb8a2e3834c10bb7f9bccf85cbc9f5c6437b9068ddd",
+      "projected_wire_sha256": "65c21eed88f66aebf9ccdde8e9b7648835db6e577c28e9105a96d6512287b227"
+    },
+    {
+      "label": "D5106",
+      "stage": "final",
+      "semantic_edits": [],
+      "received_sha256": "c4cf636b372615e2e2e11f322a6a4da0539a5a90a1a2f99085503fe1e9322be1",
+      "projected_wire_sha256": "c4cf636b372615e2e2e11f322a6a4da0539a5a90a1a2f99085503fe1e9322be1"
+    },
+    {
+      "label": "D5107",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "8ee9ef522d5f3a6f6eb1056aa4b364e49c0a4038ca25e08cbf5e547eb2ef113a",
+      "projected_wire_sha256": "f47e9de059d1d3de5ffce654aa42c09b668ceb2060018e34bbf7b922b7658a3e"
+    },
+    {
+      "label": "D5107",
+      "stage": "final",
+      "semantic_edits": [],
+      "received_sha256": "db9a98606d527c2e29658a2eddecc5452c0eddf2d132cf68163ae7027a3f2120",
+      "projected_wire_sha256": "db9a98606d527c2e29658a2eddecc5452c0eddf2d132cf68163ae7027a3f2120"
+    },
+    {
+      "label": "D5108",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "ffdbc2a65b8b41e546faedd700d3e5e6b2520a345d42518aee18ec0e7d592556",
+      "projected_wire_sha256": "17a5416c4aab12f08daf3dab4f8afae3636195153212129f766832a079a04a04"
+    },
+    {
+      "label": "D5108",
+      "stage": "final",
+      "semantic_edits": [],
+      "received_sha256": "e5fde421a58ad2946b92b0530a37cf5e444b8cea2bb4379dfc036523d2d86415",
+      "projected_wire_sha256": "e5fde421a58ad2946b92b0530a37cf5e444b8cea2bb4379dfc036523d2d86415"
+    },
+    {
+      "label": "D5109",
+      "stage": "first",
+      "semantic_edits": [
+        "tool_choice"
+      ],
+      "received_sha256": "adba4a4e9c29be0fd9359b79aba5cfd9815e601cc4d678304fd58979165de62e",
+      "projected_wire_sha256": "e3007a0386eeac023348fc2e50b81bc092f834b40d0731548d593c93ac06cc7e"
+    },
+    {
+      "label": "D5109",
+      "stage": "final",
+      "semantic_edits": [],
+      "received_sha256": "233d06f74214d5bbe8a8b78ac52dffb0306b3ed7df7b142741fc54b8a9fc852d",
+      "projected_wire_sha256": "233d06f74214d5bbe8a8b78ac52dffb0306b3ed7df7b142741fc54b8a9fc852d"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51",
+  "label": "D5009-synth-five-categories-cap",
+  "mean_exact_tps": 1301.275477944986,
+  "method_valid": true,
+  "beats_D5027": false,
+  "complete_full_run": true,
+  "official_iteration_commit": "9ad47ace6552ceec5c45296491765b7c01ff56e4",
+  "verification": {
+    "result": "below_target",
+    "run_id": "a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51",
+    "historical": false,
+    "plan_commit": "5ad7bb1dedbf9a817800e4dd1170a7cf3589fb2d",
+    "samples": 2,
+    "mean": 1301.275477944986,
+    "displayed_tps": 1301,
+    "verified_products": 5,
+    "evidence_status": "complete",
+    "checked_media": [
+      "original.mp4",
+      "demo.mp4",
+      "final.png",
+      "viewport-evidence.json"
+    ],
+    "raw_digest_checked": true
+  },
+  "audited_HEAD": "706e819c090dd67e03cf5d8988214cc37091c7e3",
+  "private_raw_path": "$BOUNTY_ARCHIVE/raw-test/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51.json",
+  "private_raw_sha256": "92ac6b8ee860292ea3756700b4c5d0bbe55007e288a78945d21cb061f8895735",
+  "files": {
+    "plan.json": {
+      "bytes": 2124,
+      "sha256": "314123986cb50f1023aa232bb67b7161295e657780e6fd20345962163bb67408"
+    },
+    "evidence.json": {
+      "bytes": 16729,
+      "sha256": "21cfa89965e6edddc776863eb8d2b11e5b5766be6e3f4be32c54e71e8b054398"
+    },
+    "original.mp4": {
+      "bytes": 381532,
+      "sha256": "e9f87d0077ad23c0b377b1046a68e852c3b1d2253edd9aeebdbe5c3e802d3f5e"
+    },
+    "demo.mp4": {
+      "bytes": 375107,
+      "sha256": "6354ad9124b9c6b6a53ebb3b5fe02d04c63ec20a85b139471f477a464aee37ba"
+    },
+    "final.png": {
+      "bytes": 222052,
+      "sha256": "9555fe469f761897a8a4a6f9e6808c4cca0db898c6e069e6ac03e07d85fe8ace"
+    },
+    "viewport-evidence.json": {
+      "bytes": 2843,
+      "sha256": "d8c613eb0925f1958adee3b2fffdf77b36cf90b8308834cbcdbfa1107f8c3478"
+    },
+    "capture/recording.json": {
+      "bytes": 903,
+      "sha256": "561dfb51d259f5d5a14ec81ed45dee924bd6a9bb8fc099385befba7aa11fd6d0"
+    },
+    "capture/ready.json": {
+      "bytes": 276,
+      "sha256": "63322a220650b4b26e01faf16355e067c6fdca2e30c0e9c178cae52a6c7496d7"
+    },
+    "capture/finish.json": {
+      "bytes": 573,
+      "sha256": "ff2e4d706fb2fca57f730406e503654778721ea3fda0cd006f59e47d76001f80"
+    },
+    "capture/capture-timeline.json": {
+      "bytes": 7096,
+      "sha256": "5eff8dff55b86398c1f399248d188fc33e6db039658ecda35ec0b943471146c4"
+    },
+    "capture/viewport-observations.json": {
+      "bytes": 13646,
+      "sha256": "d830baf100499811dbd0653c1a2aff0db199e2773470a4f03282e6cc804a7b04"
+    }
+  }
+}

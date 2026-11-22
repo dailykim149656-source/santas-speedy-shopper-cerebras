@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "aborted_before_send",
+  "id": "8d7ad640-549a-452c-abbb-f3b0d04ccece",
+  "label": "D5020-synth-five-categories-cap-4000",
+  "sessionKey": "agent:main:shop-d5020-synth-five-categories-cap-4000-8d7ad640",
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "runner_sha256": "9db37218c1929aa564a4b23f68684dc033169e8281a64c091dfea3e666c645f7",
+  "private_sources_sha256": {
+    "run.json": "6bd5ac06b6c134e6c31a725664bdbf10ca6d3966a877ba3e4b76d6d3b08ace46",
+    "run.log": "cc543568594040853165b0e240c225ce199f110be4a40d28625358d56c35df4e",
+    "video.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "error.json": "8041cabb535d21175a5fe720f19b84d08129c6b48be62988ebd4a746099658e1"
+  },
+  "cause_class": "TimeoutError",
+  "sealed_at": "2026-11-22T07:57:40.551455+00:00",
+  "source_plan_commit": "9b05e407742ef3e40af7e25768ef2439503a7b4b",
+  "source_record_sha256": "8bcf97917833fdd822bacc7f375cda86fd4ce09c5616a01065342d5a3bf8a1d0"
+}

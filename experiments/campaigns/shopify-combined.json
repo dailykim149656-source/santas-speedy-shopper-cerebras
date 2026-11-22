@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "best_live_model_video_slot": 8,
+    "best_live_model_video_id": "60f9c53d-95a1-4cbd-9f2f-731c2eaf225b",
+    "best_id": "5e042f4a-bac9-4ebb-b49d-52f25026ce16",
+    "best_display_slot": "02:35 마감 #1",
+    "best_live_model_video_display_slot": "02:35 마감 #8",
+    "best_live_model_video_tps": 977.5989722140812,
+    "valid_with_live_model_video": 4,
+    "planned": 120,
+    "attempts": 32,
+    "model_sent": 32,
+    "provider_429_sessions": 21,
+    "shopify_429_sessions": 0,
+    "catalog_5of5": 32,
+    "valid": 11,
+    "average_tps": 966.9808524869998,
+    "median_tps": 962.1167913353404,
+    "best_tps": 1255.3303256906247,
+    "best_slot": 1,
+    "d5027_tps": 1354.6625976356386,
+    "above_d5027": 0,
+    "above_1500": 0,
+    "above_1673": 0,
+    "stages": {
+      "유효": 11,
+      "Cerebras 429": 21
+    }
+  },
+  "source_combined_sha256": "0a34af974ffdd9fab6b3fc5a41e38816bce45bd4f789b7bbf0cd49df09a66aa7"
+}

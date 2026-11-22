@@ -1,0 +1,145 @@
+{
+  "commit": "b07112b43b5200e023bceab0316e07899c2a13b4",
+  "artifacts": [
+    {
+      "path": ".omo/evidence/gift8-report/REPORT.md",
+      "bytes": 3712,
+      "sha256": "75d1b246e0b8f1d784c64f980af60b38544344d2305c4db632637e863ed72d74"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/ALIGNMENT.md",
+      "bytes": 2805,
+      "sha256": "148ac862d26450ed6f769918779f035006cd860d4f468c714d1f4ebe9aed100b"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/offline-results.json",
+      "bytes": 3279,
+      "sha256": "70b844925b33baf0a23ba8c23eac1f686237d116410e7a5a5e7868b731f06b09"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/offline-qa.log",
+      "bytes": 1668,
+      "sha256": "986f9ffa026d547b7e648136816e3849e410bba6066f482b7c237414575cb328"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/eight-fixture.audit.json",
+      "bytes": 104749,
+      "sha256": "98d12839ed7a305443923f31ca8f906793d41bb1c50734f030965456e3f11e2e"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/failed-run-denominator.json",
+      "bytes": 98175,
+      "sha256": "78905100e3460e774581f8e5551b10978ae95c2fe32e617fdf2cbc849299a85c"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/terminal-429.json",
+      "bytes": 98725,
+      "sha256": "1ccb0c2f8fc9585496e3e3dc1fbd1307cdbbf83980a6e234b0bb932e38572d67"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/overlap.json",
+      "bytes": 2754,
+      "sha256": "c7c325e74c3241b892028add2b8f5f986e9ac15db151c4db149ed2e493a6616d"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/incomplete-send.json",
+      "bytes": 1932,
+      "sha256": "c49a24004b7fd08685b36165de27f7568a83d8d8eb87dd70043c91e885d43033"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/legacy-scope.json",
+      "bytes": 2007,
+      "sha256": "c64791bc0a6dc7420cc63eb925a7b1540753d8f988b3d57da3103e90ba96b9fd"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/target-without-video.json",
+      "bytes": 104923,
+      "sha256": "583f87caa39f5566ab9086f2729b183f8dc75bf418fef8533cd55c9001dc1787"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/current-results.json",
+      "bytes": 403,
+      "sha256": "1270b1c672c7404fae2eae9a21f63868eefc8d0d75c56af7619fb6fa1d887aa0"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/current-qa.log",
+      "bytes": 376,
+      "sha256": "2d312834211dbc0d96c55c213daf28f01b0a248501a6728a853f10cf1d4bdb94"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/current.md",
+      "bytes": 4535,
+      "sha256": "ed687205f2f0d5d3f980ca1c2f1ce38eb20ef103ce08f657d48bb2dc85383a68"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/current.audit.json",
+      "bytes": 123647,
+      "sha256": "912b7450ecf81f96155fe09652c8b70630ef862a08bd75e5715bc12cbaceff23"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/current.sha256.json",
+      "bytes": 68626,
+      "sha256": "83be9ffe8d8e7e2b32b01ec635a0ea5f86807aadb5bfce188eb4d5e6f11a45eb"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/validation-commands.json",
+      "bytes": 1207,
+      "sha256": "32705a4ce9ed3f68a1e3985a758175f641aee7b0ef672acc737c23fa6c38d777"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/prefetch-extra-generation.json",
+      "bytes": 105855,
+      "sha256": "fa8a8f66253b9866bd34f76d7b8e65dad15ff88a68455740a0294066f2f5ab85"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/prefetch-extra-generation.md",
+      "bytes": 4535,
+      "sha256": "f8a7cf41f6336c0610ffc875407278b0202d9f1b0a0863e12c9d894019a170cf"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/prefetch-missing-binding.json",
+      "bytes": 2384,
+      "sha256": "86f40f732df87c0ea28a315476230197ceea40aee4dd51f2489ed2f0388e4d99"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/prefetch-stale-binding.json",
+      "bytes": 5000,
+      "sha256": "b8b36822b58e6120e88f7e399c66341b1788015f6b27b7688708fe0cbfed51b8"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/prefetch-wrong-native-card.json",
+      "bytes": 5015,
+      "sha256": "df4becd76a1aafc55c8c937ca15965af13435dace84b485bb198b406da5635ee"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/d5053-alignment-audit.json",
+      "bytes": 4470,
+      "sha256": "af4d1588e14a8b6430e6a5542139e33be929941c394a93c7d7670ebef41590aa"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/alignment-syntax.json",
+      "bytes": 349,
+      "sha256": "3c0fd6452cedda006ec2d67f35c6f79b07b3e9cbbf8e5112e39ec1c212f1089b"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/GOAL-CRITERION.md",
+      "bytes": 2929,
+      "sha256": "05a8672cf148eefed7f258f6048e84b66a0db6840076bc8840582cce2412bcd3"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/goalcriterion-results.json",
+      "bytes": 5126,
+      "sha256": "4f32545cccb96fdbd650d59e4a5b2c0d10a23d32450fa4eee99803dc34ba8b6b"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/goalcriterion-qa.log",
+      "bytes": 1009,
+      "sha256": "aed5295f115510a81d8993c0e3dcf3109d5558e34e8c3323c901976e5cbd1648"
+    },
+    {
+      "path": ".omo/evidence/gift8-report/goalcriterion-syntax.json",
+      "bytes": 968,
+      "sha256": "1cd00421362afc1d2cf8e6f87dbac2c10075ad0fa29da50224b1e78f0c9f922e"
+    }
+  ]
+}

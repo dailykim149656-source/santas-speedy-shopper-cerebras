@@ -1,0 +1,18 @@
+{
+  "result": "below_target",
+  "run_id": "a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51",
+  "historical": false,
+  "plan_commit": "5ad7bb1dedbf9a817800e4dd1170a7cf3589fb2d",
+  "samples": 2,
+  "mean": 1301.275477944986,
+  "displayed_tps": 1301,
+  "verified_products": 5,
+  "evidence_status": "complete",
+  "checked_media": [
+    "original.mp4",
+    "demo.mp4",
+    "final.png",
+    "viewport-evidence.json"
+  ],
+  "raw_digest_checked": true
+}

@@ -1,0 +1,16 @@
+{
+  "protocol": "speed1500-native-v1",
+  "id": "4743db14-b132-45f7-a6be-38c772882920",
+  "sessionKey": "agent:main:shop-d5083-speed1500-p-4743db14",
+  "prompt": "Christmas gifts. Use the current live merchant results for filter, mixer, oscillator, echo, and cable, in that order. Return only five numbered [exact name](exact product URL) links, one per line.\n_run=4743db14",
+  "prompt_sha256": "de053c88ae53c1e4838f26e0642882eb189dd71f0370bbf9b4217c33e510bcc7",
+  "plugin_sha256": "755a24a7887d04358b6c64c3ab79155e32c1190a1a4a5cfff2da03575424d768",
+  "urls": [
+    "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=4743db14",
+    "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=4743db14",
+    "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=4743db14",
+    "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=4743db14",
+    "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=4743db14"
+  ],
+  "created_ms": 1795352162704
+}

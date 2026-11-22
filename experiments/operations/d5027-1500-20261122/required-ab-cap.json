@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "max_transmissions": 4,
+  "allow_confirmation": false,
+  "registered_at": "2026-11-22T14:46:10.732495+00:00",
+  "reason": "user_requested_minimum"
+}

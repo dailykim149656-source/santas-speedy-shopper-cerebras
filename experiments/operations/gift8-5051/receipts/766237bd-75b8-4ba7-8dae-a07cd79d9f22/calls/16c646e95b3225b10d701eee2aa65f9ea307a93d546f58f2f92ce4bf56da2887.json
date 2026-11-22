@@ -1,0 +1,10 @@
+{
+  "id": "766237bd-75b8-4ba7-8dae-a07cd79d9f22",
+  "sessionKey": "agent:main:shop-d5053-gift8-prefetch-766237bd",
+  "arm": "prefetch",
+  "product_id": 11125,
+  "tool_call_id": "d16a58bd3",
+  "receipt_file": "fetch-11125.json",
+  "card_sha256": "1b43d12ccac7754fb5c733122ab603b7af4eec970afd4f12fcc2c438a84adf80",
+  "timestamp_ms": 1795346291402
+}

@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "id": "465ba4e8-bfe2-4722-b473-7d0ee418ffb4",
+  "historical": false,
+  "plan_commit": "9aced5e3f9ac604349654b5c7090b37e0fdde845",
+  "private_raw_sha256": "2602bb132ad594a714f1f6bb90ffb2d659e73bc85b10d83d33b699b364326539",
+  "private_raw_bytes": 18961,
+  "startedWall": 1795351823361,
+  "ended": {
+    "elapsedMs": 67291.019833,
+    "terminal": "error",
+    "time": 1795351890677
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-43fc6475-630f-4378-b025-97224daa295d",
+      "timestamp": 1795351825823,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 275.77465,
+        "outputTokens": 388
+      },
+      "usage": {
+        "input": 818,
+        "output": 388,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 3254
+      },
+      "tool_inputs": [
+        {
+          "id": "ea193e3ab",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8"
+          },
+          "args": {}
+        },
+        {
+          "id": "22f17e683",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8"
+          },
+          "args": {}
+        },
+        {
+          "id": "8397b7320",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8"
+          },
+          "args": {}
+        },
+        {
+          "id": "e78e57b57",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8"
+          },
+          "args": {}
+        },
+        {
+          "id": "df5a9641c",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8"
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795351848914,
+      "stopReason": "error",
+      "message_index": 7,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 1406.9458523471972,
+    "ui_rounded_tps": 1407,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "ea193e3ab",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:48.258Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+      ]
+    },
+    {
+      "tool_call_id": "22f17e683",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:48.834Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+      ]
+    },
+    {
+      "tool_call_id": "8397b7320",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:47.894Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+      ]
+    },
+    {
+      "tool_call_id": "e78e57b57",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:48.239Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    },
+    {
+      "tool_call_id": "df5a9641c",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=465ba4e8",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T12:50:48.652Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+      ]
+    }
+  ],
+  "products": [],
+  "requires_video": true,
+  "video_threshold_tps": 1,
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "media": {
+    "original.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "68.800000"
+        }
+      },
+      "sha256": "0cb58974236d7f2d42055298222e223cb058999af171da129dde9c8aeb685dae",
+      "bytes": 842135
+    },
+    "demo.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "55.000000"
+        }
+      },
+      "sha256": "efa15ec8becadfb97fe83fe0ab8cb9a231a61b3ad586db18cd70cf24c1b3cdeb",
+      "bytes": 717712
+    },
+    "final.png": {
+      "sha256": "2f8b48ab20618af5d2ea2b8bb4bc5ed78de72b630666c53ba458a825474d140d",
+      "bytes": 208894
+    },
+    "attestation": {
+      "run_id": "465ba4e8-bfe2-4722-b473-7d0ee418ffb4",
+      "full_run": false,
+      "authless": true,
+      "rehearsal": false,
+      "qualifying": false,
+      "provisional": true,
+      "reportedMean": 1407,
+      "readyAt": "2026-11-22T12:50:23.323Z",
+      "capture_ready": {
+        "readyAt": "2026-11-22T12:50:23.323Z",
+        "sessionKey": "agent:main:shop-d5080-speed1500-a-465ba4e8",
+        "capture": "owned-local-viewport",
+        "before_send": true,
+        "blank_initial_score": true
+      }
+    }
+  },
+  "evidence_status": "validation_rejected",
+  "media_issues": [
+    "recorder marked capture as partial or unverified",
+    "final UI score unconfirmed",
+    "five verified product links not confirmed on screen"
+  ]
+}

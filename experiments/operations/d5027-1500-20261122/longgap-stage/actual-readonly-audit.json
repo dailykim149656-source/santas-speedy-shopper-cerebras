@@ -1,0 +1,15 @@
+{
+  "scenario": "offline read-only completed A as interval timing fixture; this is not a long-gap observation",
+  "label": "D5116-synth-five-categories-cap",
+  "previous_label": "D5115-synth-five-categories-cap",
+  "uuid": "72b09262-8d05-4ef6-ac46-267cb82a068a",
+  "confirmed_fields": {
+    "valid": true,
+    "rate_limited": false,
+    "call_count": 2,
+    "actual_wait_seconds": 67.592,
+    "start_to_start_seconds": 103.547,
+    "cycle_seconds": 242.568
+  },
+  "wire_count": 2
+}

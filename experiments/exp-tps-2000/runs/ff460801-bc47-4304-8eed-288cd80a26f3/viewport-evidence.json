@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "verified": true,
+  "finishSeconds": 195.012498,
+  "demoStartSeconds": 145.794825583,
+  "score": {
+    "originalFromSeconds": 195.048707708,
+    "originalToSeconds": 200.754825583,
+    "clipFromSeconds": 49.253882125000004,
+    "clipToSeconds": 54.96,
+    "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+    "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+    "mean": 912
+  },
+  "links": [
+    {
+      "originalFromSeconds": 195.048707708,
+      "originalToSeconds": 200.754825583,
+      "clipFromSeconds": 49.253882125000004,
+      "clipToSeconds": 54.96,
+      "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+    },
+    {
+      "originalFromSeconds": 195.048707708,
+      "originalToSeconds": 200.754825583,
+      "clipFromSeconds": 49.253882125000004,
+      "clipToSeconds": 54.96,
+      "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+    },
+    {
+      "originalFromSeconds": 195.048707708,
+      "originalToSeconds": 200.754825583,
+      "clipFromSeconds": 49.253882125000004,
+      "clipToSeconds": 54.96,
+      "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+    },
+    {
+      "originalFromSeconds": 195.048707708,
+      "originalToSeconds": 200.754825583,
+      "clipFromSeconds": 49.253882125000004,
+      "clipToSeconds": 54.96,
+      "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+    },
+    {
+      "originalFromSeconds": 195.048707708,
+      "originalToSeconds": 200.754825583,
+      "clipFromSeconds": 49.253882125000004,
+      "clipToSeconds": 54.96,
+      "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+      "url": "https://aisynthesis.com/product/ai007-quad-vca-mixer/"
+    }
+  ]
+}

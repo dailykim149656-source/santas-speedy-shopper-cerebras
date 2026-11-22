@@ -1,0 +1,90 @@
+{
+  "invocation": "python3 -B .omo/evidence/exp17-arms/verify.py",
+  "scope": "Offline rendered prompts and configuration only; no provider calls or live catalog claims.",
+  "checks": [
+    {
+      "scenario": "Every preexisting rendered prompt is unchanged",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 1 A reproduces stored D5009 request exactly",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 1 B instruction is identical to A",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 1 B changes only extractMode and maxChars",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 1 preserves five category order and one in-stock item per category",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 2 instruction is exactly identical",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 2 explicitly chooses ordered first five distinct live products and parallel multiple fetches",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 2 uses URL-only JSON arguments",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 2 queries preserve search, order, fields, freshness and stock",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 2 control fetches six candidates once",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 2 treatment fetches three candidates at explicit offsets 0 and 3",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 2 query difference is limited to page size and offset",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Phase 2 logical candidate positions match",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Every new arm carries caller-provided fresh nonce",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "New arms inherit D5009 workspace instructions",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "New arms registered at temperature .2 and low with runner token cap 1024",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Category and first-five validation families include new arms",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "All existing scheduling and selection functions are unchanged",
+      "observable": "PASS"
+    },
+    {
+      "scenario": "Focus scheduler configuration unchanged",
+      "observable": "PASS"
+    }
+  ],
+  "result": "PASS",
+  "artifacts": [
+    "rendered-prompts.json",
+    "verification.json",
+    "validation.log",
+    "variants.before.py",
+    "preexisting.diff"
+  ]
+}

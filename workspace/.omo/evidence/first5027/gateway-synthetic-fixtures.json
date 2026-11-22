@@ -1,0 +1,30 @@
+{
+  "later_generic_error": [
+    "[agent/embedded] embedded run agent end: runId=fixture-run isError=true provider=cerebras rawError=429 high traffic\nlane task error: runId=fixture-run error=generic\n",
+    true
+  ],
+  "recovered_provider": [
+    "[agent/embedded] embedded run agent end: runId=fixture-run isError=true provider=cerebras rawError=429 high traffic\n[agent/embedded] embedded run agent end: runId=fixture-run isError=false provider=cerebras\n",
+    false
+  ],
+  "different_final_failure": [
+    "[agent/embedded] embedded run agent end: runId=fixture-run isError=true provider=cerebras rawError=429 high traffic\n[agent/embedded] embedded run agent end: runId=fixture-run isError=true provider=cerebras rawError=401 invalid key\n",
+    false
+  ],
+  "actual_abort": [
+    "[agent/embedded] embedded run agent end: runId=fixture-run isError=true provider=cerebras rawError=429 high traffic\nembedded run done: runId=fixture-run aborted=true\n",
+    false
+  ],
+  "not_aborted": [
+    "[agent/embedded] embedded run agent end: runId=fixture-run isError=true provider=cerebras rawError=429 high traffic\nembedded run done: runId=fixture-run aborted=false\n",
+    true
+  ],
+  "wrong_run_suffix": [
+    "[agent/embedded] embedded run agent end: runId=fixture-run-other isError=true provider=cerebras rawError=429 high traffic\n",
+    false
+  ],
+  "wrong_provider": [
+    "[agent/embedded] embedded run agent end: runId=fixture-run isError=true provider=other rawError=429 high traffic\n",
+    false
+  ]
+}

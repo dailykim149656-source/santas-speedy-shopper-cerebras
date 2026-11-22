@@ -1,0 +1,20 @@
+{
+  "invocation": "python3 .omo/evidence/gift8-validator/offline_check.py",
+  "passed_scenarios": 33,
+  "scenario": "B genuine extra five lookups+successful final valid, official mean includes both generations; structure_expected false",
+  "observable": {
+    "fixture_mean": 1500,
+    "fixture_generations": 2,
+    "spoofed_session_cardhash_callid_rejected": true,
+    "exact_call_receipts_committed": true,
+    "D5053_remains_invalid": true,
+    "D5053_original_sha256": "ee4b6f3c083f970418fc325278a59c71be50b9866996022b4da9678827617783"
+  },
+  "artifacts": [
+    "results.json",
+    "offline.log",
+    "D5053-still-rejected.json",
+    "syntax.json"
+  ],
+  "runtime_plugin_changed": false
+}

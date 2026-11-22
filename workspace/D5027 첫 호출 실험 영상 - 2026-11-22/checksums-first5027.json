@@ -1,0 +1,110 @@
+[
+  {
+    "id": "3f6746b2-610f-45b5-8d39-38d7bbba32f3",
+    "file": "D5039.mp4",
+    "sha256": "d99ad14b0df8bfb1c668e75320584ba908955931683ff70829e3fe526ee66f33",
+    "bytes": 396484,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  },
+  {
+    "id": "21ac433c-2fe3-4193-9343-5ccaa31b38c5",
+    "file": "D5040.mp4",
+    "sha256": "2a864a8a8a370b1660d94bb3a7c39e313626f518174dfa2d41a4ad1b49466141",
+    "bytes": 736647,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  },
+  {
+    "id": "ae405a59-fb82-4e7f-afa0-5eec10f2fad1",
+    "file": "D5041.mp4",
+    "sha256": "2c6df4b031231490ba50e32268032e0cb16a4d2570aab34afd843c9165940782",
+    "bytes": 695461,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  },
+  {
+    "id": "c5e24f06-af95-4120-9067-0a3a15cd2a65",
+    "file": "D5042.mp4",
+    "sha256": "40fcc96caf6b1885c1ddabb5a42bd06a23b6959f07b93166e1bce186e15fa56a",
+    "bytes": 698578,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  },
+  {
+    "id": "68da0b94-98ea-4c39-b596-1743f243d8ba",
+    "file": "D5043.mp4",
+    "sha256": "8618642ab28bff0aa2c65b1788f72396d39deb44ab9801f2e6b16daefb596a82",
+    "bytes": 738743,
+    "timing": "first_frame_during_run",
+    "viewport_verified": false,
+    "full_run_verified": false
+  },
+  {
+    "id": "3fc351d6-cfad-4023-a881-e2e8a663cf03",
+    "file": "D5044.mp4",
+    "sha256": "79e9c7e5d73ffd110a3a6f43f5e9df64926ba50978866ad1448a1e67f03f0090",
+    "bytes": 781961,
+    "timing": "first_frame_during_run",
+    "viewport_verified": false,
+    "full_run_verified": false
+  },
+  {
+    "id": "4c3d61dd-154e-4a8b-94d5-e3e2141068f6",
+    "file": "D5045.mp4",
+    "sha256": "9cec051e09c6b55dea32386428bfc3ba9fde8e615e255e8fac4821ce02363af7",
+    "bytes": 710433,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  },
+  {
+    "id": "197b3be1-e7b5-4c6c-a61d-c1f0fca509ac",
+    "file": "D5046.mp4",
+    "sha256": "da91cbdf4f33375900cf5f5c343adee4245eed06cec5c1b7e36ccd463d095a6c",
+    "bytes": 786162,
+    "timing": "first_frame_during_run",
+    "viewport_verified": false,
+    "full_run_verified": false
+  },
+  {
+    "id": "1236be0d-9fd2-4d3b-ab83-067ad950aeea",
+    "file": "D5047.mp4",
+    "sha256": "8bcc00e6c4c40118614a35fd94a88c897b12a99243ef398e9eae921c22685e4b",
+    "bytes": 749334,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  },
+  {
+    "id": "b9444c6a-4789-4958-a382-8f1a6076a304",
+    "file": "D5048.mp4",
+    "sha256": "308cdffecbc2a0074761e1507d175e3344855db22704811695e2e19ebb818517",
+    "bytes": 746482,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  },
+  {
+    "id": "1c90ee25-c17e-4386-a0b4-d940814982bb",
+    "file": "D5049.mp4",
+    "sha256": "503eeec3e4496a4f0e2cb21fcacb5cb2245bec015dc2333480b640297f3c28b7",
+    "bytes": 746843,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  },
+  {
+    "id": "1a14a3c4-24de-448e-b729-244976e05948",
+    "file": "D5050.mp4",
+    "sha256": "e71b06ecd2fbd4c7bec2e782665c74a09934b0cbe22a30bd62d26140a0c46178",
+    "bytes": 357255,
+    "timing": "first_frame_during_run",
+    "viewport_verified": true,
+    "full_run_verified": false
+  }
+]

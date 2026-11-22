@@ -1,0 +1,13 @@
+{
+  "source": "D5108",
+  "original_sha256": "ffdbc2a65b8b41e546faedd700d3e5e6b2520a345d42518aee18ec0e7d592556",
+  "arms": [
+    "auto",
+    "required",
+    "required",
+    "auto",
+    "required"
+  ],
+  "start": "2026-11-22T15:41:42.595Z",
+  "deadline": "2026-11-22T15:46:42.595Z"
+}

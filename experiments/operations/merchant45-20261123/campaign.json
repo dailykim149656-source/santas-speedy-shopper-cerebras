@@ -1,0 +1,41 @@
+{
+  "owner": "merchant45-20261123",
+  "phase": "external_stop",
+  "started": "2026-11-23T00:40:28.778+09:00",
+  "deadline": "2026-11-23T03:00:00+09:00",
+  "arms": [
+    "synth-five-categories-cap",
+    "mercantile-five-categories-cap"
+  ],
+  "cadence_seconds": 45,
+  "max_probe_sends": 5,
+  "probe_status": "finished",
+  "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+  "slots": [
+    {
+      "slot": 1,
+      "number": 5128,
+      "arm": "synth-five-categories-cap",
+      "dispatch": "2026-11-23T00:40:28.795+09:00",
+      "id": "f72a9b26-892a-447e-bfce-278c48d9dcac",
+      "result": "terminal",
+      "valid": true,
+      "method_valid": true,
+      "ended": 1795362090788,
+      "score": 742.5383661084578
+    },
+    {
+      "slot": 2,
+      "number": 5129,
+      "arm": "mercantile-five-categories-cap",
+      "dispatch": "2026-11-23T00:42:15.870+09:00",
+      "id": "8b83c3ba-33e3-47a5-81f4-db4e84dea126",
+      "result": "terminal",
+      "valid": true,
+      "method_valid": true,
+      "ended": 1795362150648,
+      "score": 739.265510717581
+    }
+  ],
+  "stopped": "2026-11-23T00:42:39.560+09:00"
+}

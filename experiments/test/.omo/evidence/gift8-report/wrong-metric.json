@@ -1,0 +1,78 @@
+{
+  "id": "92270f02-5b3c-5885-8e44-2d67ef7b4cc2",
+  "label": "D5051-gift8-tool",
+  "arm": "A",
+  "variant": "gift8-tool",
+  "valid": false,
+  "method_valid": true,
+  "score": 1100.0,
+  "ui": 1100,
+  "first_tps": 1000.0,
+  "final_tps": 1200.0,
+  "call_count": 2,
+  "started_wall": 1700000000000,
+  "ended_wall": 1700000010000,
+  "terminal_429": false,
+  "product_urls": [
+    "https://aisynthesis.com/product/fixture-21951/",
+    "https://aisynthesis.com/product/fixture-23345/",
+    "https://aisynthesis.com/product/fixture-11125/",
+    "https://aisynthesis.com/product/fixture-11141/",
+    "https://aisynthesis.com/product/fixture-20209/"
+  ],
+  "rejection": [],
+  "audit_errors": [
+    "iteration differs from raw: first_tps"
+  ],
+  "reported_valid": true,
+  "sessionKey": "agent:main:shop-d5051-gift8-tool-92270f02",
+  "calls": [
+    {
+      "message_index": 0,
+      "response_id": "response-0",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "toolUse",
+      "serverGeneration": {
+        "completionMs": 1000,
+        "outputTokens": 1000
+      },
+      "timed_sample": true,
+      "outputTokens": 1000,
+      "completionMs": 1000,
+      "tokensPerSecond": 1000.0
+    },
+    {
+      "message_index": 6,
+      "response_id": "response-6",
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "stopReason": "stop",
+      "serverGeneration": {
+        "completionMs": 1000,
+        "outputTokens": 1200
+      },
+      "timed_sample": true,
+      "outputTokens": 1200,
+      "completionMs": 1000,
+      "tokensPerSecond": 1200.0
+    }
+  ],
+  "score_details": {
+    "mean_exact_tps": 1100.0,
+    "ui_rounded_tps": 1100,
+    "ui_display": "1,100",
+    "call_count": 2,
+    "assistant_call_count": 2,
+    "output_tokens": 2200,
+    "generation_ms": 2000,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+  },
+  "method_reasons": [],
+  "actual_generation_count": 2,
+  "expected_generation_count": 2,
+  "native_tool_call_count": 5,
+  "structure_expected": true,
+  "audit_passed": false,
+  "single_generation_success": false
+}

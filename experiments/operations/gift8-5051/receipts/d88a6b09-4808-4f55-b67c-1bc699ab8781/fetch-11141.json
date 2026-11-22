@@ -1,0 +1,40 @@
+{
+  "protocol": "gift8-v1",
+  "id": "d88a6b09-4808-4f55-b67c-1bc699ab8781",
+  "sessionKey": "agent:main:shop-d5052-gift8-prefetch-d88a6b09",
+  "arm": "prefetch",
+  "prompt_sha256": "af63372f40068f3069a1505acd4df9970fd87345c805487c547fe95e1307fa55",
+  "product_id": 11141,
+  "tool_call_id": null,
+  "started_ms": 1795346009001,
+  "completed_ms": 1795346011536,
+  "url": "https://aisynthesis.com/wp-json/wc/store/v1/products/11141?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+  "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products/11141?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+  "status": 200,
+  "body_sha256": "f72be278527ff12d0b1d6bb59ef0bc8b7f76d02ea1d79b341c1026b7d687f674",
+  "body_file": "body-11141.bin",
+  "card": {
+    "id": 11141,
+    "name": "AI016 Eurorack Tape Echo Interface",
+    "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "price_minor": 1500,
+    "price_range_minor": [
+      1500,
+      9900
+    ],
+    "currency": "USD",
+    "stock": true,
+    "options": [
+      "aluminum-panel",
+      "black-panel",
+      "built-and-tested-aluminum",
+      "built-and-tested-black",
+      "full-kit-aluminum",
+      "full-kit-black",
+      "pcb",
+      "pcb-and-black-panel",
+      "pcb-and-panel-aluminum"
+    ]
+  },
+  "card_sha256": "fc8852185755439d41afa1c10c02acfa7e9a68bd49c806828a9a30d44dbd9dc3"
+}

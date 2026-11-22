@@ -1,0 +1,40 @@
+{
+  "protocol": "gift8-v1",
+  "id": "1e1b8cfa-bdb4-4e92-b435-c4e66b94f44b",
+  "sessionKey": "agent:main:shop-d5051-gift8-tool-1e1b8cfa",
+  "arm": "tool",
+  "prompt_sha256": "33ee41112d589700c2abdc5523b91e33f45327f3558e3cdd3635e2747284a319",
+  "product_id": 21951,
+  "tool_call_id": "3fdf49597",
+  "started_ms": 1795345937691,
+  "completed_ms": 1795345940416,
+  "url": "https://aisynthesis.com/wp-json/wc/store/v1/products/21951?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+  "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products/21951?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+  "status": 200,
+  "body_sha256": "c1653123c2434d85d043f682272bbb78f7dbb7e6bb6a7ee1f32d6f45a4fb1e5e",
+  "body_file": "body-21951.bin",
+  "card": {
+    "id": 21951,
+    "name": "AI024 Eurorack X Filter",
+    "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "price_minor": 1500,
+    "price_range_minor": [
+      1500,
+      14000
+    ],
+    "currency": "USD",
+    "stock": true,
+    "options": [
+      "aluminum-panel",
+      "black-panel",
+      "built-and-tested-aluminum",
+      "built-and-tested-black",
+      "full-kit-aluminum",
+      "full-kit-black",
+      "pcb",
+      "pcb-and-black-panel",
+      "pcb-and-panel-aluminum"
+    ]
+  },
+  "card_sha256": "b49c37633020a8c2f43904e9ef1a5a2295a482bbb6546918002e81d9e8b5d92a"
+}

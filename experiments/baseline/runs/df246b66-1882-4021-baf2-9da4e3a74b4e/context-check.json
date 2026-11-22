@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "source": "Native OpenClaw systemPromptReport for each completed run",
+  "control": {
+    "run_id": "7d4ff600-5be0-43be-a78a-d2ffdd36370d",
+    "workspace_context_injection": null,
+    "native_prompt_report_sha256": "3d9e4e3b877a805175a084404d0f31432f74f3f0db938745a17288b6d9aa9369",
+    "system_prompt_chars": 9898,
+    "workspace_file_entries": 4,
+    "workspace_entry_chars": 363,
+    "tools": [
+      {
+        "name": "web_fetch",
+        "schema_chars": 317
+      }
+    ],
+    "verified_products": 5,
+    "official_displayed_mean_tps": 846
+  },
+  "treatment": {
+    "run_id": "df246b66-1882-4021-baf2-9da4e3a74b4e",
+    "workspace_context_injection": "never",
+    "native_prompt_report_sha256": "2cadaa589bce0ff679045b7ee474e129248ccca84bc8aa1e9b0e8cdc0d4a4c37",
+    "system_prompt_chars": 9118,
+    "workspace_file_entries": 0,
+    "workspace_entry_chars": 0,
+    "tools": [
+      {
+        "name": "web_fetch",
+        "schema_chars": 317
+      }
+    ],
+    "verified_products": 5,
+    "official_displayed_mean_tps": 612
+  },
+  "system_prompt_chars_reduction": 780
+}

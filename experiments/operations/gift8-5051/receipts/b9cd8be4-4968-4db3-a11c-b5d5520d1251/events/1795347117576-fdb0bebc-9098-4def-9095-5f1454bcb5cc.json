@@ -1,0 +1,45 @@
+{
+  "type": "llm_input",
+  "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+  "sessionKey": "agent:main:shop-d5055-gift8-prefetch-b9cd8be4",
+  "timestamp_ms": 1795347117575,
+  "plugin_sha256": "ef5d6e58c1f45e5d290e1af4608742b0f01336122e91b5a92b65adf58a388edd",
+  "event": {
+    "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+    "sessionId": "49e39f1f-653b-42cf-982f-26f6752361ef",
+    "provider": "cerebras",
+    "model": "moonshotai-kimi-k3.1-pro-trial",
+    "systemPrompt": "Use current merchant cards only. When cards are absent, call gift_lookup once for each requested id in parallel. Return only JSON {\"gifts\":[cards]} in requested id order, copying all card fields exactly. Prices are minor currency units; options are actual variation values, not all finished products.\n<!-- OPENCLAW_CACHE_BOUNDARY -->\n\nCurrent model identity: cerebras/moonshotai-kimi-k3.1-pro-trial. If asked what model you are, answer with this value for the current run.",
+    "prompt": "[Sun 2026-11-22 20:31 GMT+9] Current merchant cards: {\"gifts\":[{\"id\":21951,\"name\":\"AI024 Eurorack X Filter\",\"url\":\"https://aisynthesis.com/product/ai024-eurorack-x-filter/\",\"price_minor\":1500,\"price_range_minor\":[1500,14000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":23345,\"name\":\"AI028 Voltage Controlled Matrix Mixer\",\"url\":\"https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/\",\"price_minor\":2000,\"price_range_minor\":[2000,32900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"presoldered-pcb\",\"smd-pre-soldered-pcb-and-black-panel\",\"smd-pre-soldered-pcb-and-silver-panel\",\"smd-presoldered-kit-black\",\"smd-presoldered-kit-silver\"]},{\"id\":11125,\"name\":\"AI011 Analog Voltage Controlled Oscillator\",\"url\":\"https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/\",\"price_minor\":1500,\"price_range_minor\":[1500,15000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":11141,\"name\":\"AI016 Eurorack Tape Echo Interface\",\"url\":\"https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/\",\"price_minor\":1500,\"price_range_minor\":[1500,9900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":20209,\"name\":\"Eurorack Modular Patch Cable 4.9ft\",\"url\":\"https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/\",\"price_minor\":450,\"price_range_minor\":null,\"currency\":\"USD\",\"stock\":true,\"options\":[]}]}\n\nChristmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=b9cd8be4",
+    "historyMessages": [],
+    "imagesCount": 0,
+    "tools": [
+      {
+        "name": "gift_lookup",
+        "label": "Gift lookup",
+        "description": "Fetch one current AI Synthesis product by numeric id.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "enum": [
+                21951,
+                23345,
+                11125,
+                11141,
+                20209
+              ]
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false
+        }
+      }
+    ]
+  },
+  "prompt_sha256": "b05fce49e9c75cd973ba5a08da75510b0e9236af6b59f051c3dd2355f186504e",
+  "bound_prompt_sha256": "114c78cd5c5c9e1e73b6a95187b65582e732559407f77a6ccfea210f4c997e69"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "d2d6ee18-5b01-4619-ac51-4dd8b01bb124",
+  "label": "D5177-synth-five-categories-cap",
+  "sessionKey": "agent:main:shop-d5177-synth-five-categories-cap-d2d6ee18",
+  "variant": "synth-five-categories-cap",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": 1024,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "workspace_agents_md": "# Tool-first replies\n\n- Think in at most 5 words.\n- If the message gives URLs to fetch, your first output is the web_fetch calls for those exact URLs. Do not plan or restate the request.\n- When the results arrive, write the requested answer straight from the fetched data, with no preamble.\n",
+  "prompt": "Christmas gifts: call web_fetch 5 times in parallel, once with each exact argument object below. Then return the one product from each result as numbered [exact name](exact product URL) links, in the order listed.\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=d2d6ee18\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=d2d6ee18\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=d2d6ee18\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=d2d6ee18\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=d2d6ee18\"}",
+  "experiment": "synth-five-categories-cap|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "49af8c6b5074edbcad0a8c0c069c4ece1938b46fc68c5ec394bfbdc4b8922339",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "provider_max_retries": 0,
+  "request_relay": "relay-v1:a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd:retry-only"
+}

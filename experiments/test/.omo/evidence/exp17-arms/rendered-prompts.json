@@ -1,0 +1,30 @@
+{
+  "synth-five-categories-cap": {
+    "prompt": "Christmas gifts: call web_fetch 5 times in parallel, once with each exact argument object below. Then return the one product from each result as numbered [exact name](exact product URL) links, in the order listed.\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\"}",
+    "temperature": 0.2,
+    "thinking": "low",
+    "max_completion_tokens": 1024,
+    "workspace_agents_md": "# Tool-first replies\n\n- Think in at most 5 words.\n- If the message gives URLs to fetch, your first output is the web_fetch calls for those exact URLs. Do not plan or restate the request.\n- When the results arrive, write the requested answer straight from the fetched data, with no preamble.\n"
+  },
+  "synth-five-categories-cap-4000": {
+    "prompt": "Christmas gifts: call web_fetch 5 times in parallel, once with each exact argument object below. Then return the one product from each result as numbered [exact name](exact product URL) links, in the order listed.\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\",\"extractMode\":\"text\",\"maxChars\":4000}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\",\"extractMode\":\"text\",\"maxChars\":4000}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\",\"extractMode\":\"text\",\"maxChars\":4000}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\",\"extractMode\":\"text\",\"maxChars\":4000}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=exp17-local-a\",\"extractMode\":\"text\",\"maxChars\":4000}",
+    "temperature": 0.2,
+    "thinking": "low",
+    "max_completion_tokens": 1024,
+    "workspace_agents_md": "# Tool-first replies\n\n- Think in at most 5 words.\n- If the message gives URLs to fetch, your first output is the web_fetch calls for those exact URLs. Do not plan or restate the request.\n- When the results arrive, write the requested answer straight from the fetched data, with no preamble.\n"
+  },
+  "synth-six-sorted": {
+    "prompt": "Christmas gifts: call web_fetch once with each exact argument object below, in parallel when there is more than one. Then return the first five distinct products from the live ordered catalog candidates as numbered [exact name](exact product URL) links, preserving catalog order and processing pages in the order listed.\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=6&stock_status=instock&_fields=name,permalink&_run=exp17-local-a&orderby=id&order=asc\"}",
+    "temperature": 0.2,
+    "thinking": "low",
+    "max_completion_tokens": 1024,
+    "workspace_agents_md": "# Tool-first replies\n\n- Think in at most 5 words.\n- If the message gives URLs to fetch, your first output is the web_fetch calls for those exact URLs. Do not plan or restate the request.\n- When the results arrive, write the requested answer straight from the fetched data, with no preamble.\n"
+  },
+  "synth-six-sorted-pages": {
+    "prompt": "Christmas gifts: call web_fetch once with each exact argument object below, in parallel when there is more than one. Then return the first five distinct products from the live ordered catalog candidates as numbered [exact name](exact product URL) links, preserving catalog order and processing pages in the order listed.\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=3&stock_status=instock&_fields=name,permalink&_run=exp17-local-a&orderby=id&order=asc&offset=0\"}\n{\"url\":\"https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=3&stock_status=instock&_fields=name,permalink&_run=exp17-local-a&orderby=id&order=asc&offset=3\"}",
+    "temperature": 0.2,
+    "thinking": "low",
+    "max_completion_tokens": 1024,
+    "workspace_agents_md": "# Tool-first replies\n\n- Think in at most 5 words.\n- If the message gives URLs to fetch, your first output is the web_fetch calls for those exact URLs. Do not plan or restate the request.\n- When the results arrive, write the requested answer straight from the fetched data, with no preamble.\n"
+  }
+}

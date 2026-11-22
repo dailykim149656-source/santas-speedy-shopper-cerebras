@@ -1,0 +1,17 @@
+{
+  "filmed_baseline": 1301.275477944986,
+  "filmed_id": "a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51",
+  "record_baseline": 1354.6625976356386,
+  "record_id": "cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77",
+  "goal_strict_greater_than": 1500,
+  "review_at": "2026-11-23T01:30:00+09:00",
+  "deadline": "2026-11-23T03:00:00+09:00",
+  "evidence": [
+    "pre_send_recording",
+    "full_run_original",
+    "demo_at_most_60_seconds",
+    "five_verified_product_links",
+    "raw_digest",
+    "provider_mean_all_calls"
+  ]
+}

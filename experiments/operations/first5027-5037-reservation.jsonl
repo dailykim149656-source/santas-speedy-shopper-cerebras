@@ -1,0 +1,22 @@
+{"event": "waiting", "at_ms": 1795339998433, "pid": 14041, "owner": "exp campaign completion"}
+{"event": "reserved", "at_ms": 1795340850818, "pid": 14041, "locks": ["$BOUNTY_CACHE/2026-11-22-exp2000/mean-2000/loop.lock", "$BOUNTY_CACHE/2026-11-22/mean-2000/loop.lock", "$OPERATIONS_ROOT/loop.lock"]}
+{"event": "trial_reserved", "at_ms": 1795340853734, "pid": 14041, "number": 5037, "slot": 1, "arm": "first5027-extract-text"}
+{"event": "releasing", "at_ms": 1795340992455, "pid": 14041}
+{"event": "needs_attention", "at_ms": 1795340999076, "pid": 14041, "reason": "Runner or recorder remains live; send state needs review"}
+{"event": "reserved", "at_ms": 1795341713918, "pid": 24968, "locks": ["$BOUNTY_CACHE/2026-11-22-exp2000/mean-2000/loop.lock", "$BOUNTY_CACHE/2026-11-22/mean-2000/loop.lock", "$OPERATIONS_ROOT/loop.lock"]}
+{"event": "trial_reserved", "at_ms": 1795341735877, "pid": 24968, "number": 5038, "slot": 1, "arm": "first5027-extract-text"}
+{"event": "reserved", "at_ms": 1795342352351, "pid": 4719, "locks": ["$BOUNTY_CACHE/2026-11-22-exp2000/mean-2000/loop.lock", "$BOUNTY_CACHE/2026-11-22/mean-2000/loop.lock", "$OPERATIONS_ROOT/loop.lock"]}
+{"event": "trial_reserved", "at_ms": 1795342352468, "pid": 4719, "number": 5039, "slot": 1, "arm": "first5027-extract-text"}
+{"event": "trial_reserved", "at_ms": 1795342435307, "pid": 4719, "number": 5040, "slot": 2, "arm": "synth-five-categories-cap"}
+{"event": "trial_reserved", "at_ms": 1795342597995, "pid": 4719, "number": 5041, "slot": 3, "arm": "first5027-defer-answer"}
+{"event": "trial_reserved", "at_ms": 1795342762760, "pid": 4719, "number": 5042, "slot": 4, "arm": "first5027-defer-answer"}
+{"event": "trial_reserved", "at_ms": 1795342894102, "pid": 4719, "number": 5043, "slot": 5, "arm": "synth-five-categories-cap"}
+{"event": "trial_reserved", "at_ms": 1795343120193, "pid": 4719, "number": 5044, "slot": 6, "arm": "first5027-extract-text"}
+{"event": "terminal_429_pause", "at_ms": 1795343282383, "pid": 4719, "after_slot": 6, "last_id": "3fc351d6-cfad-4023-a881-e2e8a663cf03", "until": 1795343875.966}
+{"event": "trial_reserved", "at_ms": 1795343876026, "pid": 4719, "number": 5045, "slot": 7, "arm": "synth-five-categories-cap"}
+{"event": "trial_reserved", "at_ms": 1795343990918, "pid": 4719, "number": 5046, "slot": 8, "arm": "first5027-extract-text"}
+{"event": "trial_reserved", "at_ms": 1795344215112, "pid": 4719, "number": 5047, "slot": 9, "arm": "first5027-defer-answer"}
+{"event": "trial_reserved", "at_ms": 1795344447379, "pid": 4719, "number": 5048, "slot": 10, "arm": "first5027-defer-answer"}
+{"event": "trial_reserved", "at_ms": 1795344620617, "pid": 4719, "number": 5049, "slot": 11, "arm": "first5027-extract-text"}
+{"event": "trial_reserved", "at_ms": 1795344822219, "pid": 4719, "number": 5050, "slot": 12, "arm": "synth-five-categories-cap"}
+{"event": "releasing", "at_ms": 1795344844337, "pid": 4719}

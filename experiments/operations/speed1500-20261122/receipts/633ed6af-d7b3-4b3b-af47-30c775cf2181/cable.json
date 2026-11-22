@@ -1,0 +1,12 @@
+{
+  "id": "633ed6af-d7b3-4b3b-af47-30c775cf2181",
+  "sessionKey": "agent:main:shop-d5097-speed1500-p-633ed6af",
+  "manifest_sha256": "685cbde71f2e73ae9193ed704492e0126b40f34a7051af2ae43e1c273d5caac1",
+  "category": "cable",
+  "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=633ed6af",
+  "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=633ed6af",
+  "status": 200,
+  "started": 1795353545877,
+  "ended": 1795353548443,
+  "body_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "temporary_repo": "${TMPDIR}/ledger-qa-8pbp7tf4",
+  "real_run": {
+    "commit": "ffe9374d4b942dfd29f05a43c0ca626664b1f54e",
+    "run_id": "1c80bfa3-26ab-4b14-a000-dce76ef510c5",
+    "evidence_status": "below_threshold_recorded",
+    "path": "${TMPDIR}/ledger-qa-8pbp7tf4/runs/1c80bfa3-26ab-4b14-a000-dce76ef510c5/evidence.json"
+  },
+  "synthetic_provisional": {
+    "commit": "3cd582f3746fba732b6b2b8738581354f20779c7",
+    "run_id": "synthetic-high",
+    "evidence_status": "provisional_capture_required",
+    "path": "${TMPDIR}/ledger-qa-8pbp7tf4/runs/synthetic-high/evidence.json"
+  },
+  "scenarios": [
+    "real D0001 plan and historical finish",
+    "exact raw SHA binding",
+    "idempotent finish unchanged commit",
+    "unrelated staged file preserved",
+    "privacy excluded history/profile/reasoning keys",
+    "tampered validation SHA rejected",
+    "synthetic 1800 TPS missing media provisional",
+    "61-second demo rejected then recovered",
+    "synthetic playable media completion and hashes",
+    "unscored rejected run traceability",
+    "git fsck and only runs paths committed"
+  ]
+}

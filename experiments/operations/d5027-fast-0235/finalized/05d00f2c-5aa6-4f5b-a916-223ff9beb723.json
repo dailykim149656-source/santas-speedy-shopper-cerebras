@@ -1,0 +1,47 @@
+{
+  "id": "05d00f2c-5aa6-4f5b-a916-223ff9beb723",
+  "label": "D5169-synth-five-categories-cap",
+  "arm": "synth-five-categories-cap|0.2|low",
+  "score": 784.6884503892079,
+  "ui": 785,
+  "valid": true,
+  "method_valid": true,
+  "call_count": 2,
+  "p90": 825.890300294973,
+  "goal": false,
+  "recorded_video": false,
+  "evidence_status": "below_threshold_recorded",
+  "commit": "1932c7f9f4a014c267c7758863a87cdd0fc36d2c",
+  "relay_phases": [
+    "passthrough",
+    "passthrough"
+  ],
+  "validation_mode": "deferred_detail",
+  "first_prompt_tokens": 2874,
+  "errors_before_first_call": 0,
+  "context_clean": true,
+  "rate_limited": false,
+  "result": "terminal",
+  "ended": 1795365963596,
+  "raw_sha256": "c3f050c609752d2ffbc8a66474f557a2e71c1d5d2c03c6960ba0a08e173b79c1",
+  "receipt": {
+    "zero_token_429": false,
+    "merchant_429": false,
+    "merchant_429_hosts": [],
+    "lookup_429_count": 0,
+    "detail_429_count": 0,
+    "upstream_requests": 2,
+    "cerebras_429_count": 7,
+    "retry_after_until": null
+  },
+  "finalized_at": "2026-11-23T02:58:07.462+09:00",
+  "finalized_before_submission_deadline": true,
+  "verified_products": 5,
+  "detail_checked_at": [
+    "2026-11-22T17:57:47.604825+00:00",
+    "2026-11-22T17:57:51.735869+00:00",
+    "2026-11-22T17:57:56.103273+00:00",
+    "2026-11-22T17:58:00.767641+00:00",
+    "2026-11-22T17:58:04.339660+00:00"
+  ]
+}

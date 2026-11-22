@@ -1,0 +1,11 @@
+✔ final-only keeps original system and permits another fetch after an incomplete or stale result (3.025125ms)
+✔ first-required changes only the first tool choice and keeps later turns unchanged (0.407875ms)
+✔ bound requests and upstream responses survive a 429 for retry-only, final-only and first-required (254.943583ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 447.119167

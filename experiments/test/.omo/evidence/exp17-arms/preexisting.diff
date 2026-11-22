@@ -1,0 +1,36 @@
+diff --git a/tools/variants.py b/tools/variants.py
+index 28fbb9f..0c037e1 100644
+--- a/tools/variants.py
++++ b/tools/variants.py
+@@ -148,6 +148,10 @@ TEST_ARMS = (TEST_CONTROL, ('synth-first-five-short-cap', .2, 'low'), ('synth-fi
+              ('synth-five-categories-cap', 0.0, 'low'))
+ TARGET_ARMS = (('synth-five-categories-cap', .2, 'low'), ('synth-five-categories-cap', 0.0, 'low'),
+                ('synth-first-five-short-cap-args', .2, 'low'), ('synth-first-five-short-cap', .2, 'low'))
++# Five-category focus: three category trials (temperature 0.2, 0, 0.2) per adjacent control trial, with no
++# score-based stop. Enabled by a focus-categories marker in the test cache.
++FOCUS_CATEGORY_CYCLE = (('synth-five-categories-cap', .2, 'low'), ('synth-five-categories-cap', 0.0, 'low'),
++                        ('synth-five-categories-cap', .2, 'low'), TEST_CONTROL)
+ # Applied to every test-branch trial, control included, to shrink the quota Cerebras reserves per request.
+ TEST_MAX_TOKENS = 1024
+ RESEARCH_ARMS = (
+@@ -165,6 +169,7 @@ RESEARCH_ARMS = (
+ ) + PRIORITY_ARMS
+ ARMS += [arm for arm in RESEARCH_ARMS if arm not in ARMS]
+ ARMS += [arm for arm in TEST_ARMS if arm not in ARMS]
++ARMS += [arm for arm in FOCUS_CATEGORY_CYCLE if arm not in ARMS]
+ 
+ def arm_key(arm):
+     name,t,effort=arm
+@@ -215,6 +220,12 @@ def choose_test(results):
+             attempts[row['arm']] += 1
+     return min(TEST_ARMS, key=lambda arm:(attempts[arm_key(arm)], TEST_ARMS.index(arm)))
+ 
++def choose_category_focus(results):
++    """Walk the focus cycle by completed trials of its arms; a pre-send failure adds no row and retries the slot."""
++    cycle = {arm_key(arm) for arm in FOCUS_CATEGORY_CYCLE}
++    done = sum(1 for row in results if row['arm'] in cycle)
++    return FOCUS_CATEGORY_CYCLE[done % len(FOCUS_CATEGORY_CYCLE)]
++
+ def choose_target(results):
+     """Balance focused arms by completed attempts, prioritizing category fetches when tied."""
+     attempts = {arm_key(arm): 0 for arm in TARGET_ARMS}

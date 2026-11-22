@@ -1,0 +1,19 @@
+test_actual_supervisor_wires_ab_after_cadence_without_changing_cooldown (__main__.Allocation.test_actual_supervisor_wires_ab_after_cadence_without_changing_cooldown) ... {"time": "2026-11-22T14:47:42.938416+00:00", "supervisor": "started", "owner": "d5027-supervisor-70eda12b-48b4-41ca-9ea6-74b14f25bdc8", "deadline": "2100-01-01T00:07:00+00:00", "cutoff": "2100-01-01T00:00:00+00:00"}
+{"time": "2026-11-22T14:47:42.939996+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once"]}
+{"time": "2026-11-22T14:47:42.940270+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:47:42.942073+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-first-required"]}
+{"time": "2026-11-22T14:47:42.942294+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:47:42.943040+00:00", "supervisor": "stopped", "reason": "fixture done"}
+ok
+test_config_anchor_cadence_hash_cutoff_and_nonoptin (__main__.Allocation.test_config_anchor_cadence_hash_cutoff_and_nonoptin) ... ok
+test_confirm_and_return_to_baseline (__main__.Allocation.test_confirm_and_return_to_baseline) ... ok
+test_insufficient_and_detrimental_do_not_expand (__main__.Allocation.test_insufficient_and_detrimental_do_not_expand) ... ok
+test_losses_count_and_first_gain_majority_is_strict (__main__.Allocation.test_losses_count_and_first_gain_majority_is_strict) ... ok
+test_mixed_source_hash_on_historical_candidate_and_baseline (__main__.Allocation.test_mixed_source_hash_on_historical_candidate_and_baseline) ... ok
+test_presend_reuse_ambiguous_dispatch_no_retry_and_cli_guard (__main__.Allocation.test_presend_reuse_ambiguous_dispatch_no_retry_and_cli_guard) ... ok
+test_valid_b_and_a_and_extra_changes (__main__.Wire.test_valid_b_and_a_and_extra_changes) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.123s
+
+OK

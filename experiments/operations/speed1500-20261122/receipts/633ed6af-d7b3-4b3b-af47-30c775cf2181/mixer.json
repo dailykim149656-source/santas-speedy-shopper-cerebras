@@ -1,0 +1,12 @@
+{
+  "id": "633ed6af-d7b3-4b3b-af47-30c775cf2181",
+  "sessionKey": "agent:main:shop-d5097-speed1500-p-633ed6af",
+  "manifest_sha256": "685cbde71f2e73ae9193ed704492e0126b40f34a7051af2ae43e1c273d5caac1",
+  "category": "mixer",
+  "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=633ed6af",
+  "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=633ed6af",
+  "status": 200,
+  "started": 1795353545876,
+  "ended": 1795353548320,
+  "body_sha256": "fef2c9bea2d5efa611cbb8820f20d6825fa87242ec2bba033b2b02ef3ce82867"
+}

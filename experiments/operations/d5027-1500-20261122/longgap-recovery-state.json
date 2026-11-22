@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "config_sha256": "e305800382c507c4ab7676de3171d9149c38f196d8c85b515c82257f83b0f353",
+  "config": {
+    "version": 1,
+    "max_total_transmissions": 4,
+    "anchor_id": "2f279e62-c518-4a79-ad14-d9e4eacbb0d8",
+    "first_id": "782707fe-df76-4118-9ef8-155ada22b08b",
+    "registered_at": "2026-11-22T14:56:33.247794+00:00",
+    "history_start": 83,
+    "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd"
+  },
+  "status": "complete",
+  "assignments": [
+    {
+      "index": 1,
+      "pair": 1,
+      "slot": 1,
+      "requested_seconds": 60,
+      "history_cursor": 83,
+      "previous_uuid": "2f279e62-c518-4a79-ad14-d9e4eacbb0d8",
+      "mode": "retry-only",
+      "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+      "phase": "complete",
+      "allocated_at": "2026-11-22T14:53:33.236080+00:00",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:54:23.402440+00:00",
+          "history_cursor": 83,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "60"
+          ],
+          "run_id": "782707fe-df76-4118-9ef8-155ada22b08b"
+        }
+      ],
+      "outcome": {
+        "valid": false,
+        "product_valid": false,
+        "method_valid": null,
+        "verified_products": 0,
+        "first_tps": null,
+        "final_tps": null,
+        "mean_tps": null,
+        "terminal": "error",
+        "mode": "retry-only",
+        "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+        "wire": [],
+        "rate_limited": true,
+        "call_count": 0,
+        "actual_wait_seconds": 66.032,
+        "start_to_start_seconds": 324.332,
+        "cycle_seconds": 109.51,
+        "run_id": "782707fe-df76-4118-9ef8-155ada22b08b",
+        "sent": true,
+        "history_index": 83,
+        "commit": "94ad40705a9425b232f314cd81e9964d7ec96651",
+        "evidence": "runs/782707fe-df76-4118-9ef8-155ada22b08b/evidence.json",
+        "recorded_at": "2026-11-22T14:55:19.533055+00:00"
+      },
+      "kind": "interval",
+      "origin": "original_ledger"
+    },
+    {
+      "index": 2,
+      "kind": "recovery",
+      "origin": "existing_default_recovery",
+      "requested_seconds": null,
+      "history_cursor": 84,
+      "previous_uuid": "782707fe-df76-4118-9ef8-155ada22b08b",
+      "mode": "retry-only",
+      "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+      "phase": "complete",
+      "allocated_at": "2026-11-22T14:58:23.600752+00:00",
+      "attempts": [],
+      "outcome": {
+        "valid": true,
+        "product_valid": true,
+        "method_valid": true,
+        "verified_products": 5,
+        "first_tps": 721.1711475758899,
+        "final_tps": 866.6175776770357,
+        "mean_tps": 793.8943626264629,
+        "terminal": "final",
+        "mode": "retry-only",
+        "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+        "wire": [
+          {
+            "received": "c1ea91975d9075dca4aa595004ec64ede116b0736a0db18a2416cddfd9530f9f",
+            "forwarded": "c1ea91975d9075dca4aa595004ec64ede116b0736a0db18a2416cddfd9530f9f",
+            "phase": "passthrough",
+            "at_ms": 1795359378804
+          },
+          {
+            "received": "d729e78c2bee5e5f2f961168004e368dc3ee09b3a325d3a6c211c9ec531e2ac6",
+            "forwarded": "d729e78c2bee5e5f2f961168004e368dc3ee09b3a325d3a6c211c9ec531e2ac6",
+            "phase": "passthrough",
+            "at_ms": 1795359396727
+          }
+        ],
+        "rate_limited": false,
+        "call_count": 2,
+        "actual_wait_seconds": 65.602,
+        "start_to_start_seconds": 109.08,
+        "cycle_seconds": 122.131,
+        "run_id": "414f5f33-6b58-421d-ac10-bbdb49ae7e24",
+        "sent": true,
+        "history_index": 84,
+        "commit": "f4a8e76d7075ca2f09b9922ffee2be92f2f1e342",
+        "evidence": "runs/414f5f33-6b58-421d-ac10-bbdb49ae7e24/evidence.json",
+        "recorded_at": "2026-11-22T14:58:23.667629+00:00"
+      }
+    },
+    {
+      "index": 3,
+      "kind": "interval",
+      "origin": "prospective",
+      "requested_seconds": 90,
+      "history_cursor": 85,
+      "previous_uuid": "414f5f33-6b58-421d-ac10-bbdb49ae7e24",
+      "mode": "retry-only",
+      "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+      "phase": "complete",
+      "allocated_at": "2026-11-22T14:58:23.681376+00:00",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:58:45.016555+00:00",
+          "history_cursor": 85,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "90"
+          ],
+          "run_id": "b3759dad-8c2e-49ac-98dd-5c74c96288fc"
+        }
+      ],
+      "outcome": {
+        "valid": true,
+        "product_valid": true,
+        "method_valid": true,
+        "verified_products": 5,
+        "first_tps": 1239.9684604165934,
+        "final_tps": 1013.7356857104091,
+        "mean_tps": 1126.8520730635012,
+        "terminal": "final",
+        "mode": "retry-only",
+        "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+        "wire": [
+          {
+            "received": "d51f8520f824471c01dc4d182975ab2f449bad6b5c7719f1096df8c0cd4d1f29",
+            "forwarded": "d51f8520f824471c01dc4d182975ab2f449bad6b5c7719f1096df8c0cd4d1f29",
+            "phase": "passthrough",
+            "at_ms": 1795359532756
+          },
+          {
+            "received": "fb52c424e0d5770d7a61e752eb8357fd80a1ab6efb8ba9a72261484ebbcd4ec3",
+            "forwarded": "fb52c424e0d5770d7a61e752eb8357fd80a1ab6efb8ba9a72261484ebbcd4ec3",
+            "phase": "passthrough",
+            "at_ms": 1795359577060
+          }
+        ],
+        "rate_limited": false,
+        "call_count": 2,
+        "actual_wait_seconds": 96.263,
+        "start_to_start_seconds": 152.792,
+        "cycle_seconds": 204.531,
+        "run_id": "b3759dad-8c2e-49ac-98dd-5c74c96288fc",
+        "sent": true,
+        "history_index": 85,
+        "commit": "a6485024606aaae17e72844b0cabe7e51a5e8c4a",
+        "evidence": "runs/b3759dad-8c2e-49ac-98dd-5c74c96288fc/evidence.json",
+        "recorded_at": "2026-11-22T15:01:05.748863+00:00"
+      }
+    },
+    {
+      "index": 4,
+      "kind": "interval",
+      "origin": "prospective",
+      "requested_seconds": 60,
+      "history_cursor": 86,
+      "previous_uuid": "b3759dad-8c2e-49ac-98dd-5c74c96288fc",
+      "mode": "retry-only",
+      "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+      "phase": "complete",
+      "allocated_at": "2026-11-22T15:01:06.470647+00:00",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T15:01:39.577106+00:00",
+          "history_cursor": 86,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "60"
+          ],
+          "run_id": "bad09ae1-d2f5-41f9-9d29-ec70075519dc"
+        }
+      ],
+      "outcome": {
+        "valid": true,
+        "product_valid": true,
+        "method_valid": true,
+        "verified_products": 5,
+        "first_tps": 846.1907901178905,
+        "final_tps": 476.55937486847444,
+        "mean_tps": 998.094290641934,
+        "terminal": "final",
+        "mode": "retry-only",
+        "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+        "wire": [
+          {
+            "received": "57f6305cb2cd8444bf630b820f1a94d19126ddbba0a9082214b5b8ea71d8c9a4",
+            "forwarded": "57f6305cb2cd8444bf630b820f1a94d19126ddbba0a9082214b5b8ea71d8c9a4",
+            "phase": "passthrough",
+            "at_ms": 1795359705191
+          },
+          {
+            "received": "ce4f7cae892c61d4d3f3a11c74998a853e9e4b6f2cfca44895599068a5f59271",
+            "forwarded": "ce4f7cae892c61d4d3f3a11c74998a853e9e4b6f2cfca44895599068a5f59271",
+            "phase": "passthrough",
+            "at_ms": 1795359719826
+          },
+          {
+            "received": "d3e4cb89522bb96d10f4fcd3c39daab9717a2a11645922fbb0b51c8ef92ecb47",
+            "forwarded": "d3e4cb89522bb96d10f4fcd3c39daab9717a2a11645922fbb0b51c8ef92ecb47",
+            "phase": "passthrough",
+            "at_ms": 1795359729921
+          },
+          {
+            "received": "8b589228319e0fffbf593bc3de9ca5362c8b17afb733039c4bbbee6b161afb6a",
+            "forwarded": "8b589228319e0fffbf593bc3de9ca5362c8b17afb733039c4bbbee6b161afb6a",
+            "phase": "passthrough",
+            "at_ms": 1795359784982
+          },
+          {
+            "received": "e7c3ed58fae098bb2a7a4489e22a492cc80e6f07a57b2a713bd0fc9d9782d151",
+            "forwarded": "e7c3ed58fae098bb2a7a4489e22a492cc80e6f07a57b2a713bd0fc9d9782d151",
+            "phase": "passthrough",
+            "at_ms": 1795359839846
+          },
+          {
+            "received": "fc9954c1fbc273cbb72b339344694f14bc045d675aa37b40d0592c9d52120fa6",
+            "forwarded": "fc9954c1fbc273cbb72b339344694f14bc045d675aa37b40d0592c9d52120fa6",
+            "phase": "passthrough",
+            "at_ms": 1795359848740
+          },
+          {
+            "received": "8ccbb7a3af547b096457df75619dfb6e2fef0d3d059b081dc5896cabe72b825e",
+            "forwarded": "8ccbb7a3af547b096457df75619dfb6e2fef0d3d059b081dc5896cabe72b825e",
+            "phase": "passthrough",
+            "at_ms": 1795359859384
+          }
+        ],
+        "rate_limited": false,
+        "call_count": 7,
+        "actual_wait_seconds": 65.403,
+        "start_to_start_seconds": 173.671,
+        "cycle_seconds": 335.279,
+        "run_id": "bad09ae1-d2f5-41f9-9d29-ec70075519dc",
+        "sent": true,
+        "history_index": 86,
+        "commit": "b90bffac9efaa22e276430173c6dae2db144a184",
+        "evidence": "runs/bad09ae1-d2f5-41f9-9d29-ec70075519dc/evidence.json",
+        "recorded_at": "2026-11-22T15:06:51.760717+00:00"
+      }
+    }
+  ],
+  "reason": "four physical transmissions reached"
+}

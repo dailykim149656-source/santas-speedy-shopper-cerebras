@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "aborted_before_send",
+  "id": "07672f18-fe37-4972-8cf6-99a58c265d6c",
+  "label": "D0067-synth-first-five-direct-fetch",
+  "sessionKey": "agent:main:shop-d0067-synth-first-five-direct-fetch-07672f18",
+  "plan_commit": "280e140d71c72b8854fd8b589681cdd84b00b8a8",
+  "runner_sha256": "62c206b33b8a6a630a0167b05af124f8e6d2e2815e310aa1d84730eb1be22b13",
+  "private_sources_sha256": {
+    "run.json": "9144458fc95ad336f2542da437919901071d5acc581f257e9b1065c0844c016a",
+    "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "video.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "error.json": "ee0949ae52bf4919e9432b5d22792574a32d9a06b7c49354fefa2cd72cc61dfe"
+  },
+  "cause_class": "recorder_preflight_error",
+  "sealed_at": "2026-11-22T06:16:27.975395+00:00",
+  "source_plan_commit": "da1e30bb650411b4375284bd6622a364be2d180a",
+  "source_record_sha256": "afec3d2790d1c1514aaad12fbaeaf20590368336b4214a75dc78836417d7e2ee"
+}

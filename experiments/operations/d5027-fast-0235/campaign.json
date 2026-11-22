@@ -1,0 +1,42 @@
+{
+  "owner": "d5027-fast-0235",
+  "phase": "external_stop",
+  "started": "2026-11-23T01:22:10.553+09:00",
+  "deadline": "2026-11-23T02:35:00+09:00",
+  "start_number": 5149,
+  "rolled_back": false,
+  "merchant_hits": [],
+  "record_tps": 1354.6625976356386,
+  "filmed_record_tps": 1301.275477944986,
+  "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+  "fallback_from": null,
+  "slots": [
+    {
+      "slot": 1,
+      "number": 5149,
+      "arm": "synth-five-categories-cap",
+      "dispatch": "2026-11-23T01:22:10.597+09:00",
+      "id": "87ec2c0d-bf77-40b4-8790-848e97c09996",
+      "result": "pending_validation",
+      "validation_deferred": true,
+      "valid": null,
+      "method_valid": null,
+      "ended": 1795364660341,
+      "score": 1066.6791988088426,
+      "context_clean": true,
+      "rate_limited": false,
+      "receipt": {
+        "zero_token_429": false,
+        "merchant_429": false,
+        "merchant_429_hosts": [],
+        "lookup_429_count": 0,
+        "detail_429_count": null,
+        "upstream_requests": 2,
+        "cerebras_429_count": 16,
+        "retry_after_until": null
+      },
+      "cooldown": 15
+    }
+  ],
+  "stopped": "2026-11-23T01:24:47.041+09:00"
+}

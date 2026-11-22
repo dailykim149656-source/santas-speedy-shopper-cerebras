@@ -1,0 +1,40 @@
+{
+  "protocol": "gift8-v1",
+  "id": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+  "sessionKey": "agent:main:shop-d5055-gift8-prefetch-b9cd8be4",
+  "arm": "prefetch",
+  "prompt_sha256": "114c78cd5c5c9e1e73b6a95187b65582e732559407f77a6ccfea210f4c997e69",
+  "product_id": 11125,
+  "tool_call_id": null,
+  "started_ms": 1795347114483,
+  "completed_ms": 1795347117066,
+  "url": "https://aisynthesis.com/wp-json/wc/store/v1/products/11125?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+  "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products/11125?_fields=id,name,permalink,prices,stock_availability,variations,is_in_stock",
+  "status": 200,
+  "body_sha256": "36fac895795233ac050829c0390cfd49ba8d07dc1ad924b53790432b8a7974d0",
+  "body_file": "body-11125.bin",
+  "card": {
+    "id": 11125,
+    "name": "AI011 Analog Voltage Controlled Oscillator",
+    "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "price_minor": 1500,
+    "price_range_minor": [
+      1500,
+      15000
+    ],
+    "currency": "USD",
+    "stock": true,
+    "options": [
+      "aluminum-panel",
+      "black-panel",
+      "built-and-tested-aluminum",
+      "built-and-tested-black",
+      "full-kit-aluminum",
+      "full-kit-black",
+      "pcb",
+      "pcb-and-black-panel",
+      "pcb-and-panel-aluminum"
+    ]
+  },
+  "card_sha256": "1b43d12ccac7754fb5c733122ab603b7af4eec970afd4f12fcc2c438a84adf80"
+}

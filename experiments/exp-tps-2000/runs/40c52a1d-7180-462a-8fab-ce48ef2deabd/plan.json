@@ -1,0 +1,16 @@
+{
+  "id": "40c52a1d-7180-462a-8fab-ce48ef2deabd",
+  "label": "D0029-synth-links",
+  "sessionKey": "agent:main:shop-d0029-synth-links-40c52a1d",
+  "variant": "synth-links",
+  "thinking": "low",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": null,
+  "prompt": "Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.\nhttps://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=40c52a1d",
+  "experiment": "synth-links|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "10e4dfadbdf3068aa24265588dd34780133e12db34c7186ed22de851775efbb9",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414"
+}

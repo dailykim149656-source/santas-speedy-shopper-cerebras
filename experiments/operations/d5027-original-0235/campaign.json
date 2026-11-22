@@ -1,0 +1,64 @@
+{
+  "owner": "d5027-original-0235",
+  "phase": "external_stop",
+  "started": "2026-11-23T01:24:47.600+09:00",
+  "deadline": "2026-11-23T02:35:00+09:00",
+  "start_number": 5150,
+  "record_tps": 1354.6625976356386,
+  "filmed_record_tps": 1301.275477944986,
+  "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+  "fallback_from": null,
+  "slots": [
+    {
+      "slot": 1,
+      "number": 5150,
+      "arm": "synth-five-categories-cap",
+      "dispatch": "2026-11-23T01:25:05.418+09:00",
+      "id": "562a20e7-247a-4a59-ade2-ce512016658c",
+      "result": "terminal",
+      "valid": true,
+      "method_valid": true,
+      "ended": 1795364771499,
+      "score": 618.9368792183882,
+      "context_clean": true,
+      "rate_limited": false,
+      "receipt": {
+        "zero_token_429": false,
+        "merchant_429": false,
+        "merchant_429_hosts": [],
+        "lookup_429_count": 0,
+        "detail_429_count": 0,
+        "upstream_requests": 2,
+        "cerebras_429_count": 8,
+        "retry_after_until": null
+      },
+      "cooldown": 45
+    },
+    {
+      "slot": 2,
+      "number": 5151,
+      "arm": "synth-five-categories-cap",
+      "dispatch": "2026-11-23T01:26:56.582+09:00",
+      "id": "0e4205d1-c831-4a35-86ed-0859668521e7",
+      "result": "terminal",
+      "valid": true,
+      "method_valid": true,
+      "ended": 1795364992880,
+      "score": 826.2065033675245,
+      "context_clean": true,
+      "rate_limited": false,
+      "receipt": {
+        "zero_token_429": false,
+        "merchant_429": false,
+        "merchant_429_hosts": [],
+        "lookup_429_count": 0,
+        "detail_429_count": 0,
+        "upstream_requests": 2,
+        "cerebras_429_count": 19,
+        "retry_after_until": null
+      },
+      "cooldown": 45
+    }
+  ],
+  "stopped": "2026-11-23T01:30:05.299+09:00"
+}

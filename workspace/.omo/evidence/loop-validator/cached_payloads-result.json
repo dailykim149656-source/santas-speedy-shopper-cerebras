@@ -1,0 +1,83 @@
+{
+  "run_id": "4a2e1d7b-8bdd-44a6-8f25-840ff062c70b",
+  "valid": false,
+  "status": "rejected",
+  "target_met": false,
+  "reject_reasons": [
+    "final product absent from same-run fresh successful retail payload: https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+    "final product absent from same-run fresh successful retail payload: https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+    "final product absent from same-run fresh successful retail payload: https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+    "final product absent from same-run fresh successful retail payload: https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+    "final product absent from same-run fresh successful retail payload: https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+    "five independent merchant product GET verifications did not pass"
+  ],
+  "target_reasons": [
+    "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+  ],
+  "score": {
+    "mean_exact_tps": 577.6191039339055,
+    "ui_rounded_tps": 578,
+    "ui_display": "578",
+    "p90_tps": 912.1857888735144,
+    "output_tokens": 698,
+    "generation_ms": 1450.316629,
+    "call_count": 3,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)",
+    "official_patch": "~/Library/Caches/cerebras-speed-bounty/2026-11-22/official.patch",
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": "chatcmpl-7ffcb6f6-60b7-41f6-891d-a47aa0b6198b",
+      "completionMs": 292.33469,
+      "outputTokens": 129,
+      "tokensPerSecond": 441.27503307937894,
+      "stopReason": "toolUse"
+    },
+    {
+      "message_index": 3,
+      "response_id": "chatcmpl-d331aa48-6d23-40e9-9599-40d113da8ec7",
+      "completionMs": 243.371474,
+      "outputTokens": 222,
+      "tokensPerSecond": 912.1857888735144,
+      "stopReason": "toolUse"
+    },
+    {
+      "message_index": 8,
+      "response_id": "chatcmpl-a60dd3c5-2f35-463d-9ed7-65f53417ef85",
+      "completionMs": 914.610465,
+      "outputTokens": 347,
+      "tokensPerSecond": 379.39648984882325,
+      "stopReason": "stop"
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "c9b2cfb3f",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=6&stock_status=instock&_fields=name,permalink&_run=4a2e1d7b",
+      "accepted": false,
+      "reasons": [
+        "retail payload unsuccessful, cached, or truncated"
+      ],
+      "status": 200,
+      "fetched_at": "2026-11-22T02:44:29.879Z",
+      "cached": true
+    },
+    {
+      "tool_call_id": "8456ae0ea",
+      "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=6&stock_status=instock&_fields=name,permalink&_run=4a2e1d7b",
+      "accepted": false,
+      "reasons": [
+        "retail payload unsuccessful, cached, or truncated"
+      ],
+      "status": 200,
+      "fetched_at": "2026-11-22T02:44:30.615Z",
+      "cached": true
+    }
+  ],
+  "products": [],
+  "final_text": "1. [CTRL Task Pad](https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/) — A handy desk companion for tech lovers who enjoy organized to-do lists.\n2. [Wapuu Stuffed Toy](https://mercantile.wordpress.org/product/wapuu-stuffed-animal/) — A cheerful WordPress mascot for their desk or home office.\n3. [Officiel Raspberry Pi 500+ Desktop Kit](https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/) — A compact desktop setup for coding, learning, and hobby projects.\n4. [Compute Blade Starter Kit](https://raspberrypi.dk/produkt/compute-blade-starter-kit/) — An exciting foundation for experimenting with compact server and cluster builds.\n5. [Home Assistant – Raspberry Pi 5 Starter Kit](https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/) — Ideal for anyone keen to build or expand a smart home.",
+  "input_path": "workspace/.omo/evidence/loop-validator/cached_payloads-fixture.json",
+  "input_sha256": "d2255eeafa05bd4b2abcc3bc413793f4d5bd1fcb7d02fc0cf1f0da127424e6be"
+}

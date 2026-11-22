@@ -1,0 +1,26 @@
+[
+  {
+    "name": "C1",
+    "official": {
+      "meanTokensPerSecond": 717.1892514421764,
+      "p90TokensPerSecond": 1277.5506740625522,
+      "outputTokens": 605,
+      "generationMs": 1049.4514920000001,
+      "calls": 3
+    },
+    "officialDisplay": "717",
+    "exactMatch": true
+  },
+  {
+    "name": "A2",
+    "official": {
+      "meanTokensPerSecond": 577.6191039339055,
+      "p90TokensPerSecond": 912.1857888735144,
+      "outputTokens": 698,
+      "generationMs": 1450.316629,
+      "calls": 3
+    },
+    "officialDisplay": "578",
+    "exactMatch": true
+  }
+]

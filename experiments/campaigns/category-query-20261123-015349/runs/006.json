@@ -1,0 +1,28 @@
+{
+  "slot": 6,
+  "id": "73d5e665-9d6b-4285-be16-acc5a8d1ff84",
+  "valid": false,
+  "status": "provider_429",
+  "reason": "session did not terminate successfully",
+  "provider_429_observed": true,
+  "startedWall": 1795366854235,
+  "sentAt": 1795366854782,
+  "endedAt": 1795366855636,
+  "waitStatus": "error",
+  "wallSeconds": 0.854,
+  "official": null,
+  "officialDisplay": null,
+  "provider_failures": [
+    {
+      "status": 429,
+      "stage": "first"
+    }
+  ],
+  "calls": [
+    {
+      "stopReason": "error"
+    }
+  ],
+  "source_session_sha256": "8a23ef924844e2a00508b488f15e62a45b749adf49efb02733e8e95b7a5554c0",
+  "verified_query_receipts": []
+}

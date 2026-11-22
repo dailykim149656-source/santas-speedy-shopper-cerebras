@@ -1,0 +1,85 @@
+{
+  "commit": "58ba09a083f51e990907d7e58955cb68ddf883cf",
+  "artifacts": [
+    {
+      "path": ".omo/evidence/gift8-film/REPORT.md",
+      "bytes": 3031,
+      "sha256": "f60e51b7606b94a87f35b2a1339d80c16a1c164a4c807da356c413c43af3eb5d"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/offline-results.json",
+      "bytes": 826,
+      "sha256": "15a2e07b1153e6393ad898f086389af95b0d6cf5ff6a131ad0989f8d5afe16e6"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/offline-qa.log",
+      "bytes": 714,
+      "sha256": "37cc07dcc97865568fe710a3f173d23934d916a666266e2bbec62af738de5345"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/cli-help.txt",
+      "bytes": 1152,
+      "sha256": "979add43a7eafce94a8f1f67bc283ccd2de523ba2d63f5e06db57bb9b434f30e"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/cli-invalid-start.txt",
+      "bytes": 128,
+      "sha256": "6238ccb014665730f50d4e635540993c0345a8b0f5cec6af29aeba40e19aa7d8"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/dom-results.json",
+      "bytes": 518,
+      "sha256": "b08d419b388343180c09547b6d58b239cbfd647f28b11e684bc0e87e876ca673"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/dom-qa.log",
+      "bytes": 419,
+      "sha256": "92e911de2e7799e5f4b0d6522e5f18da318a4c93dddc4ef5c44801c7570f3546"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/dom-initial.json",
+      "bytes": 1980,
+      "sha256": "283b7e3c66d4e420889ffa12e3281e36a6bb2318b3a33733e1321821804f9080"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/dom-initial.png",
+      "bytes": 30730,
+      "sha256": "0e2c742f0b2c08a2a87e9743926de170830baa1c8b49ccabfd1eef1f8d0178e9"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/dom-expanded.png",
+      "bytes": 35620,
+      "sha256": "841273f27fd303cfa203b35290f7f784ff4e9cb3fca6718754a2623ab4d4586b"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/dom-scrolled.png",
+      "bytes": 39748,
+      "sha256": "087a55826be1715aa836000f4c8fa676491025678852790d94106cf9463b589a"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/media-results.json",
+      "bytes": 683,
+      "sha256": "c5bc930f3639e1e3c5ba99a09ba93909e3cd3cb71a7e0b2775c594a19e311978"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/media-qa.log",
+      "bytes": 383,
+      "sha256": "2ca58ad312d71056716d3a235bae7b1f1e8e3eb34f1c73099b9ca986bf163637"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/real-media-inspection.json",
+      "bytes": 4155,
+      "sha256": "31063084f27bc67331781e51e510dfe2b2167888a98bfa2b20f0cebadcaa531b"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/corrupt-media-inspection.json",
+      "bytes": 3169,
+      "sha256": "fe292274909f86c92f68c3faa6dde8f3c77d8973af887797f8c498e622f71b06"
+    },
+    {
+      "path": ".omo/evidence/gift8-film/syntax-results.json",
+      "bytes": 584,
+      "sha256": "69cd3c6c829f4545a0312076df5885999928d77baed99a28412f2374446d0ef8"
+    }
+  ]
+}

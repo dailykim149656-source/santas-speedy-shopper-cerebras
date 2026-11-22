@@ -1,0 +1,65 @@
+test_429_hard_early_stop_in_all_slots (reg_longgap.Allocation.test_429_hard_early_stop_in_all_slots) ... ok
+test_failure_counts_when_product_invalid_without_429 (reg_longgap.Allocation.test_failure_counts_when_product_invalid_without_429) ... ok
+test_four_and_no_more_across_restarts (reg_longgap.Allocation.test_four_and_no_more_across_restarts) ... ok
+test_hash_cutoff_predeclared_four_and_immutable_order (reg_longgap.Allocation.test_hash_cutoff_predeclared_four_and_immutable_order) ... ok
+test_only_after_ab_all_stages_and_eligible_anchor (reg_longgap.Allocation.test_only_after_ab_all_stages_and_eligible_anchor) ... ok
+test_outcome_timing_and_existing_backoff (reg_longgap.Allocation.test_outcome_timing_and_existing_backoff) ... ok
+test_pending_mismatched_digest_or_sha_never_written (reg_longgap.Allocation.test_pending_mismatched_digest_or_sha_never_written) ... ok
+test_pending_only_after_amended_outcomes_and_valid_a_and_duplicate_safe (reg_longgap.Allocation.test_pending_only_after_amended_outcomes_and_valid_a_and_duplicate_safe) ... ok
+test_proven_presend_only_preserves_slot_and_ambiguous_halts (reg_longgap.Allocation.test_proven_presend_only_preserves_slot_and_ambiguous_halts) ... ok
+test_real_supervisor_command_and_fallback_mocked (reg_longgap.Allocation.test_real_supervisor_command_and_fallback_mocked) ... {"time": "2026-11-22T14:49:47.532519+00:00", "supervisor": "started", "owner": "d5027-supervisor-dc1a5a52-6c58-4444-984f-59dcee5ac6d9", "deadline": "2100-01-01T00:07:00+00:00", "cutoff": "2100-01-01T00:00:00+00:00"}
+{"time": "2026-11-22T14:49:47.534580+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "60"]}
+{"time": "2026-11-22T14:49:47.534864+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:49:47.536645+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "90"]}
+{"time": "2026-11-22T14:49:47.536911+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:49:47.538583+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "90"]}
+{"time": "2026-11-22T14:49:47.538835+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:49:47.540543+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "60"]}
+{"time": "2026-11-22T14:49:47.540785+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:49:47.541641+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once"]}
+{"time": "2026-11-22T14:49:47.541783+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:49:47.541946+00:00", "supervisor": "stopped", "reason": "done"}
+ok
+test_reduced_ab_refuses_missing_or_inconsistent_terminal_proof (reg_longgap.Allocation.test_reduced_ab_refuses_missing_or_inconsistent_terminal_proof) ... ok
+test_reduced_ab_three_invalid_b_and_four_complete (reg_longgap.Allocation.test_reduced_ab_three_invalid_b_and_four_complete) ... ok
+test_actual_ab_snapshot_on_copy_only (reg_reduced.Reduce.test_actual_ab_snapshot_on_copy_only) ... ok
+test_b3_dispatched_before_old_controller_exit_is_reconciled (reg_reduced.Reduce.test_b3_dispatched_before_old_controller_exit_is_reconciled) ... ok
+test_cancel_unsent_a4_and_a5_keep_exposures (reg_reduced.Reduce.test_cancel_unsent_a4_and_a5_keep_exposures) ... ok
+test_missing_modified_and_bad_cap_refuse (reg_reduced.Reduce.test_missing_modified_and_bad_cap_refuse) ... ok
+test_preallocated_fifth_is_not_transmitted (reg_reduced.Reduce.test_preallocated_fifth_is_not_transmitted) ... ok
+test_three_invalid_b_never_assign_four (reg_reduced.Reduce.test_three_invalid_b_never_assign_four) ... ok
+test_valid_b3_produces_only_a4_and_no_confirmation (reg_reduced.Reduce.test_valid_b3_produces_only_a4_and_no_confirmation) ... ok
+test_actual_supervisor_wires_ab_after_cadence_without_changing_cooldown (reg_previous_ab.Allocation.test_actual_supervisor_wires_ab_after_cadence_without_changing_cooldown) ... {"time": "2026-11-22T14:49:47.601768+00:00", "supervisor": "started", "owner": "d5027-supervisor-1dd06c47-b8f6-4c0c-9d95-21365bbd785e", "deadline": "2100-01-01T00:07:00+00:00", "cutoff": "2100-01-01T00:00:00+00:00"}
+{"time": "2026-11-22T14:49:47.603163+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once"]}
+{"time": "2026-11-22T14:49:47.603429+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:49:47.605199+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-first-required"]}
+{"time": "2026-11-22T14:49:47.605441+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:49:47.606314+00:00", "supervisor": "stopped", "reason": "fixture done"}
+ok
+test_config_anchor_cadence_hash_cutoff_and_nonoptin (reg_previous_ab.Allocation.test_config_anchor_cadence_hash_cutoff_and_nonoptin) ... ok
+test_confirm_and_return_to_baseline (reg_previous_ab.Allocation.test_confirm_and_return_to_baseline) ... ok
+test_insufficient_and_detrimental_do_not_expand (reg_previous_ab.Allocation.test_insufficient_and_detrimental_do_not_expand) ... ok
+test_losses_count_and_first_gain_majority_is_strict (reg_previous_ab.Allocation.test_losses_count_and_first_gain_majority_is_strict) ... ok
+test_mixed_source_hash_on_historical_candidate_and_baseline (reg_previous_ab.Allocation.test_mixed_source_hash_on_historical_candidate_and_baseline) ... ok
+test_presend_reuse_ambiguous_dispatch_no_retry_and_cli_guard (reg_previous_ab.Allocation.test_presend_reuse_ambiguous_dispatch_no_retry_and_cli_guard) ... ok
+test_valid_b_and_a_and_extra_changes (reg_previous_ab.Wire.test_valid_b_and_a_and_extra_changes) ... ok
+test_allocated_restart_is_same_intent (reg_previous_cadence.CadenceTests.test_allocated_restart_is_same_intent) ... ok
+test_ambiguous_dispatch_never_retries (reg_previous_cadence.CadenceTests.test_ambiguous_dispatch_never_retries) ... ok
+test_balanced_eight_failure_counted_then_default (reg_previous_cadence.CadenceTests.test_balanced_eight_failure_counted_then_default) ... ok
+test_cutoff_cancels_unsent_intent (reg_previous_cadence.CadenceTests.test_cutoff_cancels_unsent_intent) ... ok
+test_cutoff_dispatch_rejected_and_config_immutable (reg_previous_cadence.CadenceTests.test_cutoff_dispatch_rejected_and_config_immutable) ... ok
+test_disabled_has_no_ledger_or_override (reg_previous_cadence.CadenceTests.test_disabled_has_no_ledger_or_override) ... ok
+test_external_cooldown_and_failed_backoff_unchanged (reg_previous_cadence.CadenceTests.test_external_cooldown_and_failed_backoff_unchanged) ... ok
+test_ineligible_prior_results_cannot_allocate (reg_previous_cadence.CadenceTests.test_ineligible_prior_results_cannot_allocate) ... ok
+test_presend_does_not_consume_assignment (reg_previous_cadence.CadenceTests.test_presend_does_not_consume_assignment) ... ok
+test_supervisor_dispatches_flag_and_records_before_report (reg_previous_cadence.CadenceTests.test_supervisor_dispatches_flag_and_records_before_report) ... {"time": "2026-11-22T14:49:47.739614+00:00", "supervisor": "started", "owner": "d5027-supervisor-023cdeaf-b934-4c99-9ec8-c940783df658", "deadline": "2100-01-01T00:07:00+00:00", "cutoff": "2100-01-01T00:00:00+00:00"}
+{"time": "2026-11-22T14:49:47.744597+00:00", "supervisor": "dispatch", "command": ["/opt/homebrew/opt/python@3.14/bin/python3.14", "-B", "-u", "$BOUNTY_TEST_REPO/tools/loop.py", "--once", "--d5027-post-success-seconds", "30"]}
+{"time": "2026-11-22T14:49:47.744731+00:00", "supervisor": "child_exit", "returncode": 0}
+{"time": "2026-11-22T14:49:47.745452+00:00", "supervisor": "stopped", "reason": "fixture complete"}
+ok
+test_terminal_method_failure_counted_before_campaign_checks (reg_previous_cadence.CadenceTests.test_terminal_method_failure_counted_before_campaign_checks) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.268s
+
+OK

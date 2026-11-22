@@ -1,0 +1,15 @@
+{
+  "run_id": "a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51",
+  "mean": 1301,
+  "video_threshold_tps": 900,
+  "urls": [
+    "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+    "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+    "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+    "https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/"
+  ],
+  "qualifying": true,
+  "retain_verified_record": false,
+  "discard_unverified": false
+}

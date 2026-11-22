@@ -1,0 +1,9 @@
+test_rejects_every_possible_send_marker (test_preflight_recovery.UnsentPreflightTests.test_rejects_every_possible_send_marker) ... ok
+test_rejects_live_child_or_uncommitted_plan (test_preflight_recovery.UnsentPreflightTests.test_rejects_live_child_or_uncommitted_plan) ... ok
+test_seals_without_score_and_supervisor_resumes (test_preflight_recovery.UnsentPreflightTests.test_seals_without_score_and_supervisor_resumes) ... ok
+test_tampered_receipt_blocks_supervisor (test_preflight_recovery.UnsentPreflightTests.test_tampered_receipt_blocks_supervisor) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.362s
+
+OK

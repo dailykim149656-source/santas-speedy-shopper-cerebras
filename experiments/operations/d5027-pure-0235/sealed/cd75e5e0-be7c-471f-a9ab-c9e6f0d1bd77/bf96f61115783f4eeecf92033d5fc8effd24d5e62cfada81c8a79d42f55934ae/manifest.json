@@ -1,0 +1,35 @@
+{
+  "id": "cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77",
+  "label": "D5027-synth-five-categories-cap",
+  "mean_exact_tps": 1354.6625976356386,
+  "method_valid": true,
+  "beats_D5027": false,
+  "complete_full_run": false,
+  "official_iteration_commit": "5039640f593b1353adc619be903a4749ef211d94",
+  "verification": {
+    "result": "pending_video",
+    "run_id": "cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77",
+    "historical": false,
+    "plan_commit": "637f9dbd5e864cd44552a6de45ef735a522497c3",
+    "samples": 2,
+    "mean": 1354.6625976356386,
+    "displayed_tps": 1355,
+    "verified_products": 5,
+    "evidence_status": "provisional_capture_required",
+    "checked_media": [],
+    "raw_digest_checked": true
+  },
+  "audited_HEAD": "706e819c090dd67e03cf5d8988214cc37091c7e3",
+  "private_raw_path": "$BOUNTY_ARCHIVE/raw-test/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77.json",
+  "private_raw_sha256": "8cdf2286dfa1328dfa5f1107964694f188b27e21a3c0c4a706a0468441399265",
+  "files": {
+    "plan.json": {
+      "bytes": 2160,
+      "sha256": "55e9b6c9e0964fe1c83f65b87fbab339dffc72c726a76a3319a1bf8780444f4a"
+    },
+    "evidence.json": {
+      "bytes": 11274,
+      "sha256": "bf96f61115783f4eeecf92033d5fc8effd24d5e62cfada81c8a79d42f55934ae"
+    }
+  }
+}

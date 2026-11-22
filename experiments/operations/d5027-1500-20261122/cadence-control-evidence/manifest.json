@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "implementation": [
+    "$OPERATIONS_ROOT/d5027-1500-20261122/supervisor.py",
+    "$OPERATIONS_ROOT/d5027-1500-20261122/cadence.py"
+  ],
+  "invocation": "python3 -B '$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/test_cadence.py'",
+  "binary_observable": "Ran 11 tests; OK; exit code 0",
+  "scenarios": [
+    {
+      "criterion": "opt-in default unchanged",
+      "test": "test_disabled_has_no_ledger_or_override",
+      "observable": "No ledger and no assignment",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    },
+    {
+      "criterion": "predeclared balanced 8 then default, all exposed failures counted",
+      "test": "test_balanced_eight_failure_counted_then_default",
+      "observable": "30,60,60,30,60,30,30,60; failure terminal=error included; ninth assignment None",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    },
+    {
+      "criterion": "proven presend excluded without exposure",
+      "test": "test_presend_does_not_consume_assignment",
+      "observable": "Same index1; two attempts; one complete exposure",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    },
+    {
+      "criterion": "restart deterministic and no duplicate sends",
+      "test": "test_allocated_restart_is_same_intent / test_ambiguous_dispatch_never_retries",
+      "observable": "Same persisted intent or RuntimeError; no automatic retry",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    },
+    {
+      "criterion": "cutoff and config immutability",
+      "test": "test_cutoff_cancels_unsent_intent / test_cutoff_dispatch_rejected_and_config_immutable",
+      "observable": "cutoff phase and zero attempts / RuntimeError",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    },
+    {
+      "criterion": "backoff and default unchanged",
+      "test": "test_external_cooldown_and_failed_backoff_unchanged",
+      "observable": "failure cooldown60,120,240,480; rate-limit60/120; presend45",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    },
+    {
+      "criterion": "eligible-success only",
+      "test": "test_ineligible_prior_results_cannot_allocate; actual D5102 check",
+      "observable": "failed/method-invalid/rate-limit cannot allocate; actual canonical D5102 eligible true",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    },
+    {
+      "criterion": "correct CLI, external cooldown, durable dispatch/result/report linkage",
+      "test": "test_supervisor_dispatches_flag_and_records_before_report",
+      "observable": "exact --once --d5027-post-success-seconds 30; cooldown argument30; ledger dispatched before mocked Popen; outcome before mocked report",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    },
+    {
+      "criterion": "method failures counted even if campaign reconciliation rejects",
+      "test": "test_terminal_method_failure_counted_before_campaign_checks",
+      "observable": "phase complete and outcome history method_valid false",
+      "artifact": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log"
+    }
+  ],
+  "artifacts": [
+    "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/test_cadence.py",
+    "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/unittest.log",
+    "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/actual-eligibility.json",
+    "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/source-checks.json",
+    "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/supervisor.diff",
+    "$OPERATIONS_ROOT/d5027-1500-20261122/cadence-control-evidence/supervisor.before.py"
+  ],
+  "scope": "No live launcher, process signal, configuration, campaign marker, or commit actions. main fixture mocks Popen, owned_stop, git, history, report and dup2; files confined to temporary fixture directory.",
+  "handoff": "Root must initialize cadence-config.json and arrange existing supervisor handoff. Already loaded supervisor has no reload hook; file edits alone do not activate cadence."
+}

@@ -1,0 +1,270 @@
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"role":"assistant"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":"I'll"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" respond"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" by repeating the list in full. Instructions say"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" zero prose, so"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" just"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" list"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" exact"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":"."},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" Make"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" sure to preserve"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" all"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":"."},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" No"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" tools"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":". I can"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":" copy"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":"."},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"reasoning":""},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"1. **Collapsible Coffee"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" D"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"ripper** — Kikkerland Design Inc —"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" $"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"11.20\n   https://kikkerland"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":".com/products/collapsible-coffee-dripper?variant"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"="},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"41753241619\n   Aromatic pour over with"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" no fuss. Easy to fold and store, fits any paper"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" filter"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":". Great for storage and on the go.\n2."},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" **Classic Cast Iron Skillets** — Lodge Cast Iron"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" —"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" $29.90\n   https://www.lodge"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"cast"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"iron.com/products/round-cast-iron-classic"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"-skillet?variant=51685752242548\n  "},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" A"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" time-tested skillet that’s loved for its great heat retention"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":","},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" incredible durability, and ability"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" to make almost any recipe you dream up. The"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" naturally seasoned cooking surface is ready to go,"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" straight"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" from the foundry. Slidey eggs and perfectly se"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"ared steaks are coming your way. Just like all Lodge Cast Iron, this skillet"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" is"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" nontoxic, naturally seasoned,"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" and made without PFAS .\n3. **Redwood National Park Durable En"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"amel Camp Mug** — Parks App"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"arel — $24.95\n   https://parks"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"app"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"arel.com/products/redwood-national-park-durable"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"-enamel"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"-camp-mug?variant=497"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"711"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"75542952\n   Walk among ancient redwoods with this California-inspired"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" enamel"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" camp mug. Under"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" the tallest trees on Earth, this 12"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"oz durable classic is your companion for exploring old"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"-growth forests and coastal"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" trails"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"."},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" From Newton B. Drury Grove"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" to"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" Prairie Creek, whether you're camping beneath canopy"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" giants"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" or"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" backpacking the Lost Coast Trail, the"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" chip-resistant enamel coating handles humid coastal conditions"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" and"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" dense forest adventures. Built tough for serious wilderness exploration."},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" Lightweight"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" and packable—an essential piece of gear for anyone"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" humbled by the majesty of thousand-year-old trees. Perfect"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" for"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" sipping hot coffee while marveling at nature's titans"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":".\n"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"4. **Refillable"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" Personalized Leather Pocket Journal**"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" — Ox & Pine — $25.00"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"\n"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"   https://oxandpine.com/products"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"/ref"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"illable-personalized-leather-pocket"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"-j"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"ournal?variant=318586"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"878689"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"79"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"\n   Refillable Personalized Leather Pocket Notebook This is"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" our"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" Classic Leather Pocket Journal in the Refill"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"able"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" version! Made from premium, full-gr"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"ain"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" leather"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":", this notebook is"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" perfectly sized to"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" carry with you in a pocket, purse"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":", or"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" bag. Customizable and ready to accompany you"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" on"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" any adventure. This leather pocket notebook is"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" handmade"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" in the USA • Thick, oil"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"-t"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"anned"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" leather! • 2 Kraft paper notebooks with 48"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" pages"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"/each of 80 lb text weight, acid free"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" paper • Approx."},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" 5\"x3.5\" • High quality, thick elastics hold the"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" notebooks inside SHIPPING"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" We"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" carefully handcraft your order in 1"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"-"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"3"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" days and ship according to the speed chosen at checkout"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":".\n"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"5. **PLG Keychain** — Portland Leather"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" —"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" $26.00\n   https://www.portlandleathergoods.com/products"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"/port"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"land-leather-goods-keychain?"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"variant=403665176494"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"90\n   Keep your keys neat and"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" organized"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":", and rep PL"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"G at the same time Ultra-sturdy and secure Antiqued"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" Brass key"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":"ring & rifle clip Fire-branded PLG and/or tree"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" logo"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{"content":" Available in two sizes"},"index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk"}
+
+data: {"id":"chatcmpl-0d9ae49b-adfc-4dcf-96f3-b3374c44241a","choices":[{"delta":{},"finish_reason":"stop","index":0}],"created":1795369692,"model":"moonshotai-kimi-k3.1-pro-trial","system_fingerprint":"fp_5a78cfaf6b44de160dbc","object":"chat.completion.chunk","usage":{"total_tokens":1520,"completion_tokens":708,"completion_tokens_details":{"reasoning_tokens":35},"prompt_tokens":812,"prompt_tokens_details":{"cached_tokens":0,"image_tokens":0}},"time_info":{"created":1795369692.0899734,"queue_time":1.7901716679999997,"prompt_time":0.05313803,"completion_time":0.645510444,"total_time":2.4929823875427246}}
+
+data: [DONE]
+

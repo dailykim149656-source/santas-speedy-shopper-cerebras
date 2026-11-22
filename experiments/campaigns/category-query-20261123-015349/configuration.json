@@ -1,0 +1,28 @@
+{
+  "runtime": {
+    "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+    "officialPatch": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+    "patchSha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+    "tree": "aec08de95dc279d3c2a5ef46c641ae31b7a0e219",
+    "runnerSha256": "c9aa492cb9659ec279e10ff9398f39ed7d5a608874200d4ab0dd7dacd48d702e",
+    "clientSha256": "db7a50a7868d54f027039b48decc5edc498c28edee243c5a9cb0464dfdb64a20",
+    "pluginSha256": "9fff04ee1eb7a1cfe3d38af5e273c7a4405238b568eef1bdf357598a6bffd9e8"
+  },
+  "deadline": "2026-11-23T02:35:00+09:00",
+  "pauseSeconds": 15.0,
+  "count": 60,
+  "providerRoute": "direct",
+  "providerMaxRetries": 0,
+  "planned_slots": 60,
+  "trial_defaults": {
+    "arm": "B",
+    "variant": "synth-category-query",
+    "prompt": "Christmas gifts: call search_category 5 times in parallel, once with each exact argument object below. Then return the one product from each result as numbered [exact name](exact product URL) links, in the order listed.\n{\"query\":\"filter\"}\n{\"query\":\"mixer\"}\n{\"query\":\"oscillator\"}\n{\"query\":\"echo\"}\n{\"query\":\"cable\"}",
+    "model": "cerebras/moonshotai-kimi-k3.1-pro-trial",
+    "thinking": "low",
+    "temperature": 0.2,
+    "max_completion_tokens": 1024,
+    "workspace_agents_md": "# Tool-first replies\n\n- Think in at most 5 words.\n- If the message gives queries to search, your first output is the search_category calls for those exact queries. Do not plan or restate the request.\n- When the results arrive, write the requested answer straight from the fetched data, with no preamble.\n"
+  },
+  "source_plan_sha256": "08f7b956ececdc8595b7ea07526ef20111a56ad7e39319c4d08250fd12e1dc7c"
+}

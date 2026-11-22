@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "enabled": true,
+  "history_start": 79,
+  "anchor_id": "fa0f817e-ee39-4e86-868e-96edc1830832",
+  "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+  "previous_relay_sha256": "788fe1f6f9b8dd32322202fa63510d97e5400a940098b9e502ff715d3a69c5fd",
+  "cutoff": "2026-11-23T02:53:00+09:00"
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "verified": true,
+  "finishSeconds": 17.056432834,
+  "demoStartSeconds": 0,
+  "score": {
+    "originalFromSeconds": 17.092710042,
+    "originalToSeconds": 22.800352459,
+    "clipFromSeconds": 17.092710042,
+    "clipToSeconds": 22.800352459,
+    "firstFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+    "lastFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+    "mean": 935
+  },
+  "links": [
+    {
+      "originalFromSeconds": 17.092710042,
+      "originalToSeconds": 22.800352459,
+      "clipFromSeconds": 17.092710042,
+      "clipToSeconds": 22.800352459,
+      "firstFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "lastFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "url": "https://aisynthesis.com/product/ai250-eurorack-bxr/"
+    },
+    {
+      "originalFromSeconds": 17.092710042,
+      "originalToSeconds": 22.800352459,
+      "clipFromSeconds": 17.092710042,
+      "clipToSeconds": 22.800352459,
+      "firstFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "lastFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "url": "https://aisynthesis.com/product/eurorack-high-power-supply/"
+    },
+    {
+      "originalFromSeconds": 17.092710042,
+      "originalToSeconds": 22.800352459,
+      "clipFromSeconds": 17.092710042,
+      "clipToSeconds": 22.800352459,
+      "firstFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "lastFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+    },
+    {
+      "originalFromSeconds": 17.092710042,
+      "originalToSeconds": 22.800352459,
+      "clipFromSeconds": 17.092710042,
+      "clipToSeconds": 22.800352459,
+      "firstFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "lastFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "url": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/"
+    },
+    {
+      "originalFromSeconds": 17.092710042,
+      "originalToSeconds": 22.800352459,
+      "clipFromSeconds": 17.092710042,
+      "clipToSeconds": 22.800352459,
+      "firstFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "lastFrameSha256": "c0eb0bcf3ee44c0604f2eeef853c06bffe7fab707e5272b7c7acb5a4aa6bbb65",
+      "url": "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/"
+    }
+  ]
+}

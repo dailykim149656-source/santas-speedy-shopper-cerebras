@@ -1,0 +1,57 @@
+[
+  {
+    "at_ms": 1795353278409,
+    "method": "POST",
+    "path": "/v1/chat/completions",
+    "relay_sha256": "1d6a3b1daf82f386b62ad0207854b741f8596408a4ec6033397c75ec51f98c14",
+    "received_sha256": "d24ea91683d440edbea9309c05d8e31c4dd2a899e6ad2bf744dd2628420235ce",
+    "nonce": "54279a8c",
+    "run_id": "54279a8c-36a9-4316-b50d-0d797873b69e",
+    "phase": "first",
+    "reasons": [],
+    "changes": [],
+    "forwarded_sha256": "d24ea91683d440edbea9309c05d8e31c4dd2a899e6ad2bf744dd2628420235ce",
+    "attempts": [
+      {
+        "status": 429,
+        "at_ms": 1795353278725,
+        "body": "{\"message\":\"We're experiencing high traffic right now! Please try again soon.\",\"type\":\"too_many_requests_error\",\"param\":\"queue\",\"code\":\"queue_exceeded\"}"
+      }
+    ],
+    "status": 200,
+    "upstream_ms": 2535.041625000071,
+    "response_sha256": "776bbf0cd0005c8c81b3c816d5c7ac19a6fd5a72da891a1da08ea80ba611995f",
+    "response_bytes": 4925,
+    "timing": {
+      "completion_time": 0.350022595,
+      "completion_tokens": 391,
+      "prompt_tokens": 2866
+    }
+  },
+  {
+    "at_ms": 1795353285069,
+    "method": "POST",
+    "path": "/v1/chat/completions",
+    "relay_sha256": "1d6a3b1daf82f386b62ad0207854b741f8596408a4ec6033397c75ec51f98c14",
+    "received_sha256": "4924589a21dbb7f9b46d221c01efdced0298477572a6d972aa4714c9ebe4d38f",
+    "nonce": "54279a8c",
+    "run_id": "54279a8c-36a9-4316-b50d-0d797873b69e",
+    "phase": "final",
+    "reasons": [],
+    "changes": [
+      "removed_tools",
+      "removed_tool_choice"
+    ],
+    "forwarded_sha256": "6b0141ff476bd2455974b338cee0217a81fb27fafab8a6423efe4811252d8c22",
+    "attempts": [],
+    "status": 200,
+    "upstream_ms": 6360.86333299987,
+    "response_sha256": "199b43ccd2b57e7fc2922b407da0223ddfcf12cdee2d8fadb74f368421cb6a3c",
+    "response_bytes": 14832,
+    "timing": {
+      "completion_time": 0.248233111,
+      "completion_tokens": 236,
+      "prompt_tokens": 5073
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "bca8114e-28fe-4d07-ae0e-4b863788dacc",
+  "sessionKey": "agent:main:shop-d5090-speed1500-p-bca8114e",
+  "manifest_sha256": "63763a533a3bb0b51168011ca4bfaf46446e2ecdb49a0e047a461a40b0f0d78e",
+  "category": "cable",
+  "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=bca8114e",
+  "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=bca8114e",
+  "status": 200,
+  "started": 1795352858729,
+  "ended": 1795352860775,
+  "body_sha256": "5d904201ce3c9d57af4aa1ab237c3b49af9d64d398f2ee1f154d15d45de3f000"
+}

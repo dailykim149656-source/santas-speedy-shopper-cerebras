@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "enabled": true,
+  "order_seconds": [
+    30,
+    60,
+    60,
+    30,
+    60,
+    30,
+    30,
+    60
+  ],
+  "history_start": 69,
+  "cutoff": "2026-11-23T02:53:00+09:00",
+  "activated_at": "2026-11-22T14:20:38.783414+00:00",
+  "anchor_id": "7d036cae-1deb-40fa-b83e-e11564bb54af"
+}

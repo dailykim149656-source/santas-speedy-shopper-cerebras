@@ -1,0 +1,162 @@
+{
+  "slot": 14,
+  "id": "90a3c04b-03ac-4941-bbc3-82e91896b7df",
+  "label": "slot-014-shopify",
+  "stage": "Cerebras 429",
+  "valid": false,
+  "model_sent": true,
+  "model_429": true,
+  "shopify_429": false,
+  "catalog_5of5": true,
+  "native_calls": 0,
+  "model_status": 429,
+  "native_reported_tps": null,
+  "startedWall": 1795369711009,
+  "sentAt": 1795369712741,
+  "endedAt": 1795369713469,
+  "wallSeconds": 0.728,
+  "official": null,
+  "officialDisplay": null,
+  "session_sha256": "6daeed825022d255aaf61b89829e47ec2061a7630122b86333b78c9790684a04",
+  "selected_products": [
+    {
+      "query": "collapsible coffee dripper",
+      "name": "Collapsible Coffee Dripper",
+      "seller": "Kikkerland Design Inc",
+      "price": 11.2,
+      "currency": "USD",
+      "url": "https://kikkerland.com/products/collapsible-coffee-dripper?variant=41753241619",
+      "description": "Aromatic pour over with no fuss. Easy to fold and store, fits any paper filter. Great for storage and on the go.",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 0,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369711615,
+        "completedMs": 1795369712633,
+        "status": 200,
+        "requestSha256": "932e6a393a07a856f21e6a0866fe354a79c5444ac7546d3e0a22d1f0d7ec74c1",
+        "bodySha256": "233fe4c8731751c1901d8387ccfe39bc1bdd9c0f77f2925be70ac81f880f9152",
+        "candidateCount": 8
+      }
+    },
+    {
+      "query": "cast iron skillet",
+      "name": "Classic Cast Iron Skillets",
+      "seller": "Lodge Cast Iron",
+      "price": 29.9,
+      "currency": "USD",
+      "url": "https://www.lodgecastiron.com/products/round-cast-iron-classic-skillet?variant=51685752242548",
+      "description": "A time-tested skillet that’s loved for its great heat retention, incredible durability, and ability to make almost any recipe you dream up. The naturally seasoned cooking surface is ready to go, straight from the foundry. Slidey eggs and perfectly seared steaks are coming your way. Just like all Lodge Cast Iron, this skillet is nontoxic, naturally seasoned, and made without PFAS .",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 1,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369711594,
+        "completedMs": 1795369712634,
+        "status": 200,
+        "requestSha256": "759bd5965bbfe193c6d0ca18c3a6e584208b62d5dc1296ce995aabb6d39a1077",
+        "bodySha256": "4463b9c39802afbeb9f852a9095ff5209fcc0949c74768ea3ad3cbea418394bf",
+        "candidateCount": 5
+      }
+    },
+    {
+      "query": "enamel camp mug",
+      "name": "Redwood National Park Durable Enamel Camp Mug",
+      "seller": "Parks Apparel",
+      "price": 24.95,
+      "currency": "USD",
+      "url": "https://parksapparel.com/products/redwood-national-park-durable-enamel-camp-mug?variant=49771175542952",
+      "description": "Walk among ancient redwoods with this California-inspired enamel camp mug. Under the tallest trees on Earth, this 12oz durable classic is your companion for exploring old-growth forests and coastal trails. From Newton B. Drury Grove to Prairie Creek, whether you're camping beneath canopy giants or backpacking the Lost Coast Trail, the chip-resistant enamel coating handles humid coastal conditions and dense forest adventures. Built tough for serious wilderness exploration. Lightweight and packable—an essential piece of gear for anyone humbled by the majesty of thousand-year-old trees. Perfect for sipping hot coffee while marveling at nature's titans.",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 2,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369711614,
+        "completedMs": 1795369712725,
+        "status": 200,
+        "requestSha256": "9d44be44f86e46ccd2ab1a362a4e928173c47fa50a7d81e833772c760f27e1ef",
+        "bodySha256": "c7a58525be81d54e628f58c7b7bb38038ede9618aa031ff5bc29e1fb890ca907",
+        "candidateCount": 10
+      }
+    },
+    {
+      "query": "leather pocket journal",
+      "name": "Refillable Personalized Leather Pocket Journal",
+      "seller": "Ox & Pine",
+      "price": 25,
+      "currency": "USD",
+      "url": "https://oxandpine.com/products/refillable-personalized-leather-pocket-journal?variant=31858687868979",
+      "description": "Refillable Personalized Leather Pocket Notebook This is our Classic Leather Pocket Journal in the Refillable version! Made from premium, full-grain leather, this notebook is perfectly sized to carry with you in a pocket, purse, or bag. Customizable and ready to accompany you on any adventure. This leather pocket notebook is handmade in the USA • Thick, oil-tanned leather! • 2 Kraft paper notebooks with 48 pages/each of 80 lb text weight, acid free paper • Approx. 5\"x3.5\" • High quality, thick elastics hold the notebooks inside SHIPPING We carefully handcraft your order in 1-3 days and ship according to the speed chosen at checkout.",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 3,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369711614,
+        "completedMs": 1795369712432,
+        "status": 200,
+        "requestSha256": "3ad7d92eb4b8bfe68583c929b185731108f726ee5ac3c7ef2170b04f77ccb277",
+        "bodySha256": "6a820c3dd7f94e8ff86125e5c08ab6d6370aef6046a6de48e142fd1ff4329495",
+        "candidateCount": 6
+      }
+    },
+    {
+      "query": "leather keychain",
+      "name": "PLG Keychain",
+      "seller": "Portland Leather",
+      "price": 26,
+      "currency": "USD",
+      "url": "https://www.portlandleathergoods.com/products/portland-leather-goods-keychain?variant=40366517649490",
+      "description": "Keep your keys neat and organized, and rep PLG at the same time Ultra-sturdy and secure Antiqued Brass keyring & rifle clip Fire-branded PLG and/or tree logo Available in two sizes",
+      "productIndex": 0,
+      "variantIndex": 0,
+      "available": true,
+      "catalog": {
+        "index": 4,
+        "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+        "startedMs": 1795369711615,
+        "completedMs": 1795369712630,
+        "status": 200,
+        "requestSha256": "e8435b4f3494fd6f0440d095ea68706fca10a7d5a93f4e2285eb7c0a5d1a5b09",
+        "bodySha256": "56a8a481d37b113998e4154ac4ca394e64190ffa90438a53588e89c5dfa5a0fb",
+        "candidateCount": 6
+      }
+    }
+  ],
+  "transport": {
+    "source_request_sha256": "50613529a4cddefb375d7e81309f67b07b25b33ecf2bbe8695eb37c4fc3f09b3",
+    "source_response_sha256": "8510d73ba7d3855b35a1ed7c2a57c574615e02b8f27d855145f12611a6b298f1",
+    "input_bytes": 3106,
+    "output_bytes": 152,
+    "received_ms": 1795369713103,
+    "sent_ms": 1795369713132,
+    "headers_ms": 1795369713354,
+    "finished_ms": 1795369713358,
+    "complete": true,
+    "status": 429,
+    "responseId": null,
+    "usage": null,
+    "time_info": null,
+    "rate_limited": true,
+    "request_settings": {
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "temperature": 0.1,
+      "reasoning_effort": "low",
+      "max_completion_tokens": 2400,
+      "stream": true
+    },
+    "system_message": "Zero prose.",
+    "final_instruction": "Repeat the list above in full.",
+    "provider_error": {}
+  },
+  "video": {
+    "status": "녹화 증빙 없음"
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "id": "897884f4-b98e-4062-9e91-b1f8c135bda1",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "60a449306bdd762e3355ff3909335b7e84376dfd2b6864e8f17a05aff3761bdf",
+  "private_raw_bytes": 20170,
+  "startedWall": 1795361280676,
+  "ended": {
+    "elapsedMs": 61706.971084,
+    "terminal": "final",
+    "time": 1795361342403
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-a029a7b0-d32a-4218-9877-7f1f07a4a3a7",
+      "timestamp": 1795361282667,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 625.509059,
+        "outputTokens": 453
+      },
+      "usage": {
+        "input": 827,
+        "output": 453,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 3328
+      },
+      "tool_inputs": [
+        {
+          "id": "a4446d77e",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=shirt&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4"
+          },
+          "args": {}
+        },
+        {
+          "id": "691e727e1",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=hoodie&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4"
+          },
+          "args": {}
+        },
+        {
+          "id": "dcc0bd6b3",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=mug&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4"
+          },
+          "args": {}
+        },
+        {
+          "id": "8aa5fe48f",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=tumbler&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4"
+          },
+          "args": {}
+        },
+        {
+          "id": "4852cdac1",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=golf&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4"
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-d160a30a-090c-4170-9e20-d1ee807ecd66",
+      "timestamp": 1795361331479,
+      "stopReason": "stop",
+      "message_index": 7,
+      "serverGeneration": {
+        "completionMs": 259.609242,
+        "outputTokens": 175
+      },
+      "usage": {
+        "input": 3136,
+        "output": 175,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 5359
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 699.1500791221611,
+    "ui_rounded_tps": 699,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "a4446d77e",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=shirt&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:28:51.396Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/"
+      ]
+    },
+    {
+      "tool_call_id": "691e727e1",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=hoodie&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:28:51.255Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/wordpress-tie-dye-hoodie/"
+      ]
+    },
+    {
+      "tool_call_id": "dcc0bd6b3",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=mug&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:28:51.228Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/"
+      ]
+    },
+    {
+      "tool_call_id": "8aa5fe48f",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=tumbler&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:28:51.185Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/wordpress-better-web-tumbler/"
+      ]
+    },
+    {
+      "tool_call_id": "4852cdac1",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?search=golf&per_page=1&stock_status=instock&_fields=name,permalink&_run=897884f4",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T15:28:51.162Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+      "catalog_name": "Flannel Shirt",
+      "source_tool_call_id": "a4446d77e",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+      "html_bytes_read": 407476,
+      "html_sha256": "a6d0331e30f8a4aaa657c7689da2cccc11d82c359871b44b6a675428a6ac9bdc",
+      "checked_at": "2026-11-22T15:29:05.191355+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Flannel Shirt – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-tie-dye-hoodie/",
+      "catalog_name": "Tie Dye Hoodie",
+      "source_tool_call_id": "691e727e1",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-tie-dye-hoodie/",
+      "html_bytes_read": 392334,
+      "html_sha256": "e05d599d937a508f4070877a07942285e67eb0445965e54b0ef2aff6a8266a44",
+      "checked_at": "2026-11-22T15:29:06.297850+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-tie-dye-hoodie/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Tie Dye Hoodie – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "catalog_name": "Gone Coding Ceramic Mug",
+      "source_tool_call_id": "dcc0bd6b3",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "html_bytes_read": 380137,
+      "html_sha256": "a014d11b576e7d6ea03fa7473882b69754272996258eb803341ebec3e541f830",
+      "checked_at": "2026-11-22T15:29:05.180150+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Gone Coding Ceramic Mug – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-better-web-tumbler/",
+      "catalog_name": "Better Web Tumbler, 12 oz",
+      "source_tool_call_id": "8aa5fe48f",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-better-web-tumbler/",
+      "html_bytes_read": 380192,
+      "html_sha256": "8fab50b5f93b45f5f06745f3638729167f98919e1f9add71ece14066ae5a5422",
+      "checked_at": "2026-11-22T15:29:06.448548+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-better-web-tumbler/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Better Web Tumbler, 12 oz – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+      "catalog_name": "W Logo Golf Ball Set",
+      "source_tool_call_id": "4852cdac1",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+      "html_bytes_read": 349120,
+      "html_sha256": "cff0dce16cedfe4f648c16a68c586e7a55f3fc6ff3863df4d47cbdbfa0af6a97",
+      "checked_at": "2026-11-22T15:29:06.067971+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "W Logo Golf Ball Set – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": false,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1354.6625976356386,
+  "final_text": "1. [Flannel Shirt](https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/)\n2. [Tie Dye Hoodie](https://mercantile.wordpress.org/product/wordpress-tie-dye-hoodie/)\n3. [Gone Coding Ceramic Mug](https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/)\n4. [Better Web Tumbler, 12 oz](https://mercantile.wordpress.org/product/wordpress-better-web-tumbler/)\n5. [W Logo Golf Ball Set](https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/)",
+  "evidence_status": "below_threshold_recorded",
+  "source_plan_commit": "225f666e8d932950f04e2224931709028c5c3b74",
+  "source_record_sha256": "bba99f4cf987a6e234e27e546c68ba039328f176520a9ee68b645419ddd9f46b"
+}

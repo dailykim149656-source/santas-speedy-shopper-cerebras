@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "id": "732e44a1-4a8f-4008-a6c4-0137d613423c",
+  "historical": false,
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "private_raw_sha256": "ff4d61ce1a404f12cc4d1b0024ad31b60515a14eee6c48aa0a6c85bd11b84832",
+  "private_raw_bytes": 20121,
+  "startedWall": 1795340496683,
+  "ended": {
+    "elapsedMs": 224175.064792,
+    "terminal": "error",
+    "time": 1795340720981
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-3c9db07e-e64c-4ab5-905e-19475cc1e4ef",
+      "timestamp": 1795340538786,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 660.417083,
+        "outputTokens": 615
+      },
+      "usage": {
+        "input": 1855,
+        "output": 615,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4518
+      },
+      "tool_inputs": [
+        {
+          "id": "abf555aac",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "9eb0b28cc",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "580a304c8",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "26d19fdb7",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "8d5592381",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=vca&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795340718981,
+      "stopReason": "error",
+      "message_index": 7,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 931.2296968550705,
+    "ui_rounded_tps": 931,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "abf555aac",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:43:09.687Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+      ]
+    },
+    {
+      "tool_call_id": "9eb0b28cc",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:43:10.013Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+      ]
+    },
+    {
+      "tool_call_id": "580a304c8",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:43:09.581Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+      ]
+    },
+    {
+      "tool_call_id": "26d19fdb7",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:43:10.142Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    },
+    {
+      "tool_call_id": "8d5592381",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=vca&per_page=1&stock_status=instock&_fields=name,permalink&_run=732e44a1",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:43:10.359Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai007-quad-vca-mixer/"
+      ]
+    }
+  ],
+  "products": [],
+  "requires_video": true,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1301.275477944986,
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "evidence_status": "validation_rejected",
+  "source_plan_commit": "3fd29804f7c0c7aa36d2fbd0d8665aac06590f96",
+  "source_record_sha256": "5ae5faf7ccbd377b9f630de9ef6cbaec0389702227ac0b4e94357fa7f8be7852"
+}

@@ -1,0 +1,14 @@
+{
+  "pass_": true,
+  "source": "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/film-first5027-5037/1236be0d-9fd2-4d3b-ab83-067ad950aeea/attempt-01",
+  "note": "Regression inspection of prior genuine recording, not a new gift8 campaign recording",
+  "checks": [
+    "actual old clip ffprobe playable",
+    "media SHA matches source bytes",
+    "actual official score and five product URL proof match canonical validation",
+    "real duration agrees with capture timeline",
+    "actual during-run first frame remains partial; no full-run claim",
+    "actual score below1700 never qualifies target",
+    "corrupt demo rejected by actual ffprobe"
+  ]
+}

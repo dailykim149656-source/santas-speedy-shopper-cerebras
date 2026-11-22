@@ -1,0 +1,112 @@
+{
+  "row": {
+    "id": "766237bd-75b8-4ba7-8dae-a07cd79d9f22",
+    "label": "D5053-gift8-prefetch",
+    "arm": "B",
+    "variant": "gift8-prefetch",
+    "valid": false,
+    "method_valid": false,
+    "score": 749.5641521562239,
+    "ui": 750,
+    "first_tps": 749.5641521562239,
+    "final_tps": null,
+    "call_count": 2,
+    "started_wall": 1795346188615,
+    "ended_wall": 1795346310163,
+    "terminal_429": true,
+    "product_urls": [],
+    "rejection": [
+      "unsuccessful or unidentified assistant call",
+      "assistant call missing valid serverGeneration",
+      "run has no successful terminal event"
+    ],
+    "audit_errors": [],
+    "reported_valid": false,
+    "sessionKey": "agent:main:shop-d5053-gift8-prefetch-766237bd",
+    "calls": [
+      {
+        "message_index": 1,
+        "response_id": "chatcmpl-0d8260f2-0c69-4307-94fb-953fa6ee621d",
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "stopReason": "toolUse",
+        "serverGeneration": {
+          "completionMs": 326.85661300000004,
+          "outputTokens": 245
+        },
+        "timed_sample": true,
+        "outputTokens": 245,
+        "completionMs": 326.85661300000004,
+        "tokensPerSecond": 749.5641521562239
+      },
+      {
+        "message_index": 7,
+        "response_id": null,
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "stopReason": "error",
+        "serverGeneration": {},
+        "timed_sample": false
+      }
+    ],
+    "score_details": {
+      "mean_exact_tps": 749.5641521562239,
+      "ui_rounded_tps": 750,
+      "ui_display": "750",
+      "call_count": 1,
+      "assistant_call_count": 2,
+      "output_tokens": 245,
+      "generation_ms": 326.85661300000004,
+      "formula": "arithmetic mean of outputTokens / (completionMs / 1000)"
+    },
+    "method_reasons": [
+      "unsuccessful or unidentified assistant call",
+      "invalid serverGeneration"
+    ],
+    "actual_generation_count": 2,
+    "expected_generation_count": 1,
+    "native_tool_call_count": 5,
+    "structure_expected": false,
+    "audit_passed": true,
+    "single_generation_success": false
+  },
+  "sources": {
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/runs/766237bd-75b8-4ba7-8dae-a07cd79d9f22/plan.json": {
+      "sha256": "35f32d68129c671797630e2b923ed4c109d54e7408c29363113f682423b4cbae",
+      "bytes": 1232
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/runs/766237bd-75b8-4ba7-8dae-a07cd79d9f22/evidence.json": {
+      "sha256": "348826a7135bafbc9d6b00dbfbccf75c227d86b5bb909aa0b27931e657418d2f",
+      "bytes": 1677
+    },
+    "$SHOPPER_WORKSPACE/speed-bounty-evidence-test/runs/766237bd-75b8-4ba7-8dae-a07cd79d9f22/gift-manifest.json": {
+      "sha256": "3e6c62cf7d6f7e870d494bfa2963df802daa08ff7e88d7352822965ad7dce6ec",
+      "bytes": 438
+    },
+    "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/runs/D5053-gift8-prefetch.json": {
+      "sha256": "ee4b6f3c083f970418fc325278a59c71be50b9866996022b4da9678827617783",
+      "bytes": 15946
+    },
+    "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/capture/766237bd-75b8-4ba7-8dae-a07cd79d9f22/validation.json": {
+      "sha256": "39c443278cc658f4bf25c9177ee6ab2e4a5588664dd1a4350bcfb5d80f2ef35e",
+      "bytes": 1582
+    },
+    "~/Library/Application Support/Cerebras Speed Bounty/2026-11-22/raw-test/766237bd-75b8-4ba7-8dae-a07cd79d9f22.json": {
+      "sha256": "ee4b6f3c083f970418fc325278a59c71be50b9866996022b4da9678827617783",
+      "bytes": 15946
+    },
+    "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/receipts/766237bd-75b8-4ba7-8dae-a07cd79d9f22/private-raw.json": {
+      "sha256": "ee4b6f3c083f970418fc325278a59c71be50b9866996022b4da9678827617783",
+      "bytes": 15946
+    },
+    "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/gateway.log": {
+      "sha256": "ba1f64cd2b019fff2b37335f324ecb19c7c95f1df711aa93f96dacb3c2a1cd3a",
+      "bytes": 726063
+    },
+    "~/Library/Caches/cerebras-speed-bounty/2026-11-22-test/mean-2000/gift8-5051/manifests/766237bd-75b8-4ba7-8dae-a07cd79d9f22.json": {
+      "sha256": "3e6c62cf7d6f7e870d494bfa2963df802daa08ff7e88d7352822965ad7dce6ec",
+      "bytes": 438
+    }
+  },
+  "pinned_commit": "999340ceb75db7071652358d0d20ee704f48188a"
+}

@@ -1,0 +1,70 @@
+{
+  "owner": "mercantile-abba-d5124",
+  "started": "2026-11-22T15:26:39.965132+00:00",
+  "phase": "completed",
+  "max_slots": 4,
+  "cadence_seconds": 60,
+  "clock": "prior terminal to next preparation; recording preparation adds to observed gap",
+  "arms": [
+    "synth-five-categories-cap",
+    "mercantile-five-categories-cap",
+    "mercantile-five-categories-cap",
+    "synth-five-categories-cap"
+  ],
+  "relay_sha256": "a0106af362e080f62f67dcf0a89d2fb187db99063c8e329a5c787f4f244ee1dd",
+  "code_sha256": {
+    "variants.py": "2dc91a2665af713b2c5f0d98d4b4a6797de8a5de341d3913302dfe6ac3f4ff01",
+    "loop.py": "00804e151a6083fb6a207a437d3aafc8852f2756eb82d4e741c69e19817a8f04",
+    "research_report.py": "58d82608e139c5d4475941edafea53db939768f576a393396ce76c41041e7bf1",
+    "validate.py": "06364ed1790776a8bb13c80501b5a09ccf47660910e4316caab07610add2259a",
+    "ledger.py": "58640ab73766c18ba5ca1f11ef3b747e6be68f45238ffe4f36ad9c02e4c54c85",
+    "run.mjs": "ff79caad8fa991b61b4ffea1c99b5cfca2c672660547ebcbbfe5e3febee2e260"
+  },
+  "slots": [
+    {
+      "slot": 1,
+      "number": 5124,
+      "arm": "synth-five-categories-cap",
+      "dispatch": "2026-11-22T15:26:39.987550+00:00",
+      "id": "aa4eef22-700f-4d00-90cd-08a47d6d7468",
+      "result": "terminal",
+      "valid": true,
+      "method_valid": true,
+      "ended": 1795361215343
+    },
+    {
+      "slot": 2,
+      "number": 5125,
+      "arm": "mercantile-five-categories-cap",
+      "dispatch": "2026-11-22T15:27:55.439319+00:00",
+      "id": "897884f4-b98e-4062-9e91-b1f8c135bda1",
+      "result": "terminal",
+      "valid": true,
+      "method_valid": true,
+      "ended": 1795361342403
+    },
+    {
+      "slot": 3,
+      "number": 5126,
+      "arm": "mercantile-five-categories-cap",
+      "dispatch": "2026-11-22T15:30:02.489669+00:00",
+      "id": "8b70bffb-c09b-47ac-aca6-f90b450158e3",
+      "result": "terminal",
+      "valid": true,
+      "method_valid": true,
+      "ended": 1795361433856
+    },
+    {
+      "slot": 4,
+      "number": 5127,
+      "arm": "synth-five-categories-cap",
+      "dispatch": "2026-11-22T15:31:33.973404+00:00",
+      "id": "c17fec7c-2d18-47c3-9a2b-8308c5759f5a",
+      "result": "terminal",
+      "valid": true,
+      "method_valid": true,
+      "ended": 1795361530589
+    }
+  ],
+  "stopped": "2026-11-22T15:32:19.737387+00:00"
+}

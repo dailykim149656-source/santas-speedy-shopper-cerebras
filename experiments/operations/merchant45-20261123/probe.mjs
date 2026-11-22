@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+const dir=path.dirname(fileURLToPath(import.meta.url));
+const approved=fs.existsSync(path.join(dir,'probe-approved-ready'));
+const st=JSON.parse(fs.readFileSync(path.join(dir,'campaign.json'),'utf8'));
+const stop=JSON.parse(fs.readFileSync(path.join(dir,'../stop-requested'),'utf8'));
+if (!approved || st.owner!==path.basename(dir) || stop.owner!==st.owner || st.phase!=='running' || st.probe_status!=='started' || st.slots.at(-1)?.result!=='terminal') throw Error('No reserved gap for diagnostics');
+const node=path.join(os.homedir(),'.nvm/versions/node/v24.20.0/bin/node');
+const result=spawnSync(node,[path.join(dir,'probe_cli.mjs'),'--send'],{stdio:'inherit'});
+process.exitCode=result.status??1;

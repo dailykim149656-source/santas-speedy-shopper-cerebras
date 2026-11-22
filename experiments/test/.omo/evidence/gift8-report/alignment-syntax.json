@@ -1,0 +1,25 @@
+[
+  {
+    "invocation": [
+      "python3",
+      "-m",
+      "py_compile",
+      "tools/gift8_report.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "invocation": [
+      "git",
+      "diff",
+      "--check",
+      "--",
+      "tools/gift8_report.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

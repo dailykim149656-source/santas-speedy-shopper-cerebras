@@ -1,0 +1,31 @@
+{
+  "raw_sha256": "2df56519d462826a0c897a8fb6e9b5ee72f541eb78fc7c88adafd9775a64c0c1",
+  "candidate": {
+    "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "catalog_name": "AI028 Voltage Controlled Matrix Mixer",
+    "source_tool_call_id": "4d91d8eaa"
+  },
+  "product": {
+    "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "catalog_name": "AI028 Voltage Controlled Matrix Mixer",
+    "source_tool_call_id": "4d91d8eaa",
+    "verified": true,
+    "reasons": [],
+    "http": 200,
+    "final_url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "html_bytes_read": 490732,
+    "html_sha256": "2eb544957891e972e6e30365ff53ab14cdd4b41f75831c0236e8b9e3b64e126c",
+    "checked_at": "2026-11-22T17:57:27.045888+00:00",
+    "canonical": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+    "merchant": "aisynthesis.com",
+    "title": "AI028 Voltage Controlled Matrix Mixer",
+    "title_matches_catalog": true,
+    "product_evidence": {
+      "matching_schema_product": true,
+      "woocommerce_product_heading": false,
+      "woocommerce_sticky_product_price_and_cart": false
+    },
+    "password_protected": false
+  },
+  "finished_at": "2026-11-22T17:57:27.066+00:00"
+}

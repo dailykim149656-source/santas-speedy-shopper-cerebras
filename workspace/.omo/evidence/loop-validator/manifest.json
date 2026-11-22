@@ -1,0 +1,89 @@
+{
+  "deliverable": "/tmp/cerebras-2k-goal/validate.py",
+  "sha256": "93c3de7485a5696b63ff0f563d8b215539502c3b599b3271526cc1a9fb084b8e",
+  "interface": "validate.py RUN.json; stdout JSON; exit 0 valid (including below target), 1 rejected, 2 malformed/error; target_met true only if valid and exact mean >2000 and rounded UI >2000",
+  "scope": "Reads saved real runs and independently GETs product URLs; no Cerebras calls or config changes",
+  "limitations": [
+    "Product existence is verified; suitability as a Christmas technology gift is not inferred.",
+    "C1 Axel Health Player Kit has a password-protected main page; its exact canonical, merchant title and WooCommerce product/price/cart evidence are verified and flagged.",
+    "Validation trusts the supplied saved transcript as the run artifact; not a cryptographic proof of transcript authenticity."
+  ],
+  "scenarios": [
+    {
+      "scenario": "C1 real saved run",
+      "invocation": "/tmp/cerebras-2k-goal/validate.py /tmp/cerebras-shop-latency.3qQpiWCM/C1.json",
+      "observable": {
+        "exit_code": 0,
+        "valid": true,
+        "products_verified": 5,
+        "status": "valid_below_target",
+        "mean_exact_tps": 717.1892514421764,
+        "ui_rounded_tps": 717
+      },
+      "artifact": "workspace/.omo/evidence/loop-validator/C1.json"
+    },
+    {
+      "scenario": "A2 real saved run",
+      "invocation": "/tmp/cerebras-2k-goal/validate.py /tmp/cerebras-shop-latency.3qQpiWCM/A2.json",
+      "observable": {
+        "exit_code": 0,
+        "valid": true,
+        "products_verified": 5,
+        "status": "valid_below_target",
+        "mean_exact_tps": 577.6191039339055,
+        "ui_rounded_tps": 578
+      },
+      "artifact": "workspace/.omo/evidence/loop-validator/A2.json"
+    },
+    {
+      "scenario": "native web_fetch layout derived from real A2; format compatibility only",
+      "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/native-layout-derived-A2.json",
+      "observable": {
+        "exit_code": 0,
+        "valid": true,
+        "products_verified": 5,
+        "status": "valid_below_target",
+        "mean_exact_tps": 577.6191039339055,
+        "ui_rounded_tps": 578
+      },
+      "artifact": "workspace/.omo/evidence/loop-validator/native-layout-result.json"
+    },
+    {
+      "scenario": "unmodified official score implementation versus validator, C1/A2",
+      "invocation": "node .omo/evidence/loop-validator/official-score-check.ts",
+      "observable": {
+        "exit_code": 0,
+        "all_exact_match": true
+      },
+      "artifact": "workspace/.omo/evidence/loop-validator/official-score-check.json"
+    },
+    {
+      "scenario": "prompt_only",
+      "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/prompt_only-fixture.json",
+      "exit_code": 1,
+      "valid": false,
+      "artifact": "workspace/.omo/evidence/loop-validator/prompt_only-result.json"
+    },
+    {
+      "scenario": "cached_payloads",
+      "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/cached_payloads-fixture.json",
+      "exit_code": 1,
+      "valid": false,
+      "artifact": "workspace/.omo/evidence/loop-validator/cached_payloads-result.json"
+    },
+    {
+      "scenario": "foreign_run",
+      "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/foreign_run-fixture.json",
+      "exit_code": 1,
+      "valid": false,
+      "artifact": "workspace/.omo/evidence/loop-validator/foreign_run-result.json"
+    },
+    {
+      "scenario": "no_successful_final",
+      "invocation": "/tmp/cerebras-2k-goal/validate.py .omo/evidence/loop-validator/no_successful_final-fixture.json",
+      "exit_code": 1,
+      "valid": false,
+      "artifact": "workspace/.omo/evidence/loop-validator/no_successful_final-result.json"
+    }
+  ]
+}

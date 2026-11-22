@@ -1,0 +1,60 @@
+{
+  "run_id": "4a2e1d7b-8bdd-44a6-8f25-840ff062c70b",
+  "valid": false,
+  "status": "rejected",
+  "target_met": false,
+  "reject_reasons": [
+    "final product absent from same-run fresh successful retail payload: https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+    "final product absent from same-run fresh successful retail payload: https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+    "final product absent from same-run fresh successful retail payload: https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+    "final product absent from same-run fresh successful retail payload: https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+    "final product absent from same-run fresh successful retail payload: https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+    "five independent merchant product GET verifications did not pass"
+  ],
+  "target_reasons": [
+    "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+  ],
+  "score": {
+    "mean_exact_tps": 577.6191039339055,
+    "ui_rounded_tps": 578,
+    "ui_display": "578",
+    "p90_tps": 912.1857888735144,
+    "output_tokens": 698,
+    "generation_ms": 1450.316629,
+    "call_count": 3,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)",
+    "official_patch": "~/Library/Caches/cerebras-speed-bounty/2026-11-22/official.patch",
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "calls": [
+    {
+      "message_index": 1,
+      "response_id": "chatcmpl-7ffcb6f6-60b7-41f6-891d-a47aa0b6198b",
+      "completionMs": 292.33469,
+      "outputTokens": 129,
+      "tokensPerSecond": 441.27503307937894,
+      "stopReason": "toolUse"
+    },
+    {
+      "message_index": 2,
+      "response_id": "chatcmpl-d331aa48-6d23-40e9-9599-40d113da8ec7",
+      "completionMs": 243.371474,
+      "outputTokens": 222,
+      "tokensPerSecond": 912.1857888735144,
+      "stopReason": "toolUse"
+    },
+    {
+      "message_index": 5,
+      "response_id": "chatcmpl-a60dd3c5-2f35-463d-9ed7-65f53417ef85",
+      "completionMs": 914.610465,
+      "outputTokens": 347,
+      "tokensPerSecond": 379.39648984882325,
+      "stopReason": "stop"
+    }
+  ],
+  "retail_sources": [],
+  "products": [],
+  "final_text": "1. [CTRL Task Pad](https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/) — A handy desk companion for tech lovers who enjoy organized to-do lists.\n2. [Wapuu Stuffed Toy](https://mercantile.wordpress.org/product/wapuu-stuffed-animal/) — A cheerful WordPress mascot for their desk or home office.\n3. [Officiel Raspberry Pi 500+ Desktop Kit](https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/) — A compact desktop setup for coding, learning, and hobby projects.\n4. [Compute Blade Starter Kit](https://raspberrypi.dk/produkt/compute-blade-starter-kit/) — An exciting foundation for experimenting with compact server and cluster builds.\n5. [Home Assistant – Raspberry Pi 5 Starter Kit](https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/) — Ideal for anyone keen to build or expand a smart home.",
+  "input_path": "workspace/.omo/evidence/loop-validator/prompt_only-fixture.json",
+  "input_sha256": "896cab6e52809729fa3ef10e4476f33c70ae4147bfbe0f955ce8731451538b80"
+}

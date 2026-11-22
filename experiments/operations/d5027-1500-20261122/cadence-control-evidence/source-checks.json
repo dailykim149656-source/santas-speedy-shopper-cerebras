@@ -1,0 +1,12 @@
+[
+  {
+    "path": "$OPERATIONS_ROOT/d5027-1500-20261122/supervisor.py",
+    "sha256": "d22e67eee4690a4a24fc686ed424cce310fa42948879c5703105c2d9129ec9cb",
+    "ast_parse": "PASS"
+  },
+  {
+    "path": "$OPERATIONS_ROOT/d5027-1500-20261122/cadence.py",
+    "sha256": "7f961df4906079d9b9fb66e37b7fb71faa820a1afe4fdb1e7eaf05789b00f610",
+    "ast_parse": "PASS"
+  }
+]

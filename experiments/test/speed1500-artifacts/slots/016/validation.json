@@ -1,0 +1,34 @@
+{
+  "run_id": "8205f87a-71eb-4fcb-aa13-217b81a723b4",
+  "valid": false,
+  "status": "rejected",
+  "target_met": false,
+  "reject_reasons": [
+    "run has no successful final terminal event",
+    "run has no successful final assistant text",
+    "assistant call missing response identity or has unsuccessful stop",
+    "assistant call missing valid serverGeneration",
+    "final must contain exactly five distinct product links",
+    "five independent merchant product GET verifications did not pass"
+  ],
+  "target_reasons": [
+    "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+  ],
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "ui_display": null,
+    "p90_tps": null,
+    "output_tokens": 0,
+    "generation_ms": 0,
+    "call_count": 0,
+    "formula": "arithmetic mean of outputTokens / (completionMs / 1000)",
+    "official_patch": "~/Library/Caches/cerebras-speed-bounty/2026-11-22/official.patch",
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "calls": [],
+  "retail_sources": [],
+  "products": [],
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "input_sha256": "c9b252f8eabd1ef2ace2d3a0779ce58094ee1108b6ad9d22a23f2910f9c5fb80"
+}

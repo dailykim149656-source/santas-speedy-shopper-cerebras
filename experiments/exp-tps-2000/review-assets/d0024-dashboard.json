@@ -1,0 +1,71 @@
+{
+  "id": "f627023f-15a2-4c82-b0bc-0bc584ad5964",
+  "capturedAt": "2026-11-22T03:57:02.464Z",
+  "sha256": "3dac474c6118ea5e2e91b46364d81f21a20c205fa5efebbb5d52711fd74f70c9",
+  "score": "827 tok/s mean · 846 p90 (server)",
+  "links": [
+    {
+      "text": "AI250 Eurorack BXR",
+      "href": "https://aisynthesis.com/product/ai250-eurorack-bxr/",
+      "box": {
+        "x": 330,
+        "y": 323,
+        "w": 129,
+        "h": 18
+      }
+    },
+    {
+      "text": "Eurorack High Power Supply",
+      "href": "https://aisynthesis.com/product/eurorack-high-power-supply/",
+      "box": {
+        "x": 330,
+        "y": 350,
+        "w": 182,
+        "h": 18
+      }
+    },
+    {
+      "text": "AI024 Eurorack X Filter",
+      "href": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "box": {
+        "x": 330,
+        "y": 377,
+        "w": 148,
+        "h": 18
+      }
+    },
+    {
+      "text": "AI012 Eurorack Wave Animator",
+      "href": "https://aisynthesis.com/product/ai012-eurorack-wave-animator/",
+      "box": {
+        "x": 330,
+        "y": 403,
+        "w": 200,
+        "h": 18
+      }
+    },
+    {
+      "text": "AI106 West Coast Eurorack Mixer",
+      "href": "https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/",
+      "box": {
+        "x": 330,
+        "y": 430,
+        "w": 215,
+        "h": 18
+      }
+    }
+  ],
+  "viewport": {
+    "width": 1280,
+    "height": 850
+  },
+  "clip": {
+    "x": 195,
+    "y": 320,
+    "width": 873,
+    "height": 515,
+    "scale": 1
+  },
+  "provenance": "Post-run unedited Chromium capture of the genuine existing local OpenClaw chat, using native sidebar toggle, scroll, and native screenshot capture region.",
+  "during_original_generation": false
+}

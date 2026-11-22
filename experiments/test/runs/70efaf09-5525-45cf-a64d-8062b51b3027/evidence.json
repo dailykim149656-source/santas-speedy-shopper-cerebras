@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "id": "70efaf09-5525-45cf-a64d-8062b51b3027",
+  "historical": false,
+  "plan_commit": "f8f53e6c088a7a0b4c0e48556d6ef46e7072168f",
+  "private_raw_sha256": "c22c24eb97cef8cb02838eb7f202e4ce71f0826d56581aa7dbe1ee2b036f0567",
+  "private_raw_bytes": 16560,
+  "startedWall": 1795319924237,
+  "ended": {
+    "elapsedMs": 8549.025833000002,
+    "terminal": "final",
+    "time": 1795319932817
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-44c64545-f772-41ed-83f6-e984c8e8bf2a",
+      "timestamp": 1795319926620,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 240.798726,
+        "outputTokens": 167
+      },
+      "usage": {
+        "input": 611,
+        "output": 167,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 2826
+      },
+      "tool_inputs": [
+        {
+          "id": "094b90c59",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=70efaf09",
+            "extractMode": "text",
+            "maxChars": 30000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-e805cf41-dee8-44bb-8f00-953e29a3430e",
+      "timestamp": 1795319928281,
+      "stopReason": "stop",
+      "message_index": 3,
+      "serverGeneration": {
+        "completionMs": 1415.873278,
+        "outputTokens": 576
+      },
+      "usage": {
+        "input": 2368,
+        "output": 576,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4992
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 550.1706660494715,
+    "ui_rounded_tps": 550,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "094b90c59",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=70efaf09",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:58:48.213Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+        "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+        "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+        "https://mercantile.wordpress.org/product/wapuu-keychain/",
+        "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+      "catalog_name": "Flannel Shirt",
+      "catalog_price": {
+        "minor_units": 64700,
+        "currency": "KRW",
+        "decimals": 0
+      },
+      "source_tool_call_id": "094b90c59",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+      "html_bytes_read": 407456,
+      "html_sha256": "15572c82e2ff642003664c8296367acf16904fc8bd292f17f1ea7cc236a5a59f",
+      "checked_at": "2026-11-22T03:58:54.269878+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Flannel Shirt – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "catalog_name": "CTRL Task Pad",
+      "catalog_price": {
+        "minor_units": 16200,
+        "currency": "KRW",
+        "decimals": 0
+      },
+      "source_tool_call_id": "094b90c59",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "html_bytes_read": 316438,
+      "html_sha256": "8ba29f6e69181df7627c3e6f8be909bafddd1084c5e387c4b8c3d5e28786c79f",
+      "checked_at": "2026-11-22T03:58:54.250646+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "CTRL Task Pad – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "catalog_name": "Wapuu Stuffed Toy",
+      "catalog_price": {
+        "minor_units": 16200,
+        "currency": "KRW",
+        "decimals": 0
+      },
+      "source_tool_call_id": "094b90c59",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "html_bytes_read": 410426,
+      "html_sha256": "146b80d8c1fd2cb6f3da5deb8398f1ae226a45a3230f2624d75760d39aaccc77",
+      "checked_at": "2026-11-22T03:58:54.306740+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Wapuu Stuffed Toy – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wapuu-keychain/",
+      "catalog_name": "Wapuu Stuffed Toy Keychain",
+      "catalog_price": {
+        "minor_units": 10800,
+        "currency": "KRW",
+        "decimals": 0
+      },
+      "source_tool_call_id": "094b90c59",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wapuu-keychain/",
+      "html_bytes_read": 410517,
+      "html_sha256": "163c86e0f79c6cc8559411e5688e7c4931902cacbafeddb5ad372fb7ff77a7a8",
+      "checked_at": "2026-11-22T03:58:55.067593+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wapuu-keychain/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Wapuu Stuffed Toy Keychain – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "catalog_name": "Gone Coding Ceramic Mug",
+      "catalog_price": {
+        "minor_units": 16200,
+        "currency": "KRW",
+        "decimals": 0
+      },
+      "source_tool_call_id": "094b90c59",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "html_bytes_read": 380177,
+      "html_sha256": "4ef40f82d3e5cc6e9356efd8a3d268450bd41b5bbea93d54e9d1f111b70d3075",
+      "checked_at": "2026-11-22T03:58:54.317507+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Gone Coding Ceramic Mug – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": false,
+  "final_text": "| Gift | Price |\n|---|---|\n| [Flannel Shirt](https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/) | ₩64,700 KRW |\n| [CTRL Task Pad](https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/) | ₩16,200 KRW |\n| [Wapuu Stuffed Toy](https://mercantile.wordpress.org/product/wapuu-stuffed-animal/) | ₩16,200 KRW |\n| [Wapuu Stuffed Toy Keychain](https://mercantile.wordpress.org/product/wapuu-keychain/) | ₩10,800 KRW |\n| [Gone Coding Ceramic Mug](https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/) | ₩16,200 KRW |",
+  "evidence_status": "below_threshold_recorded",
+  "source_plan_commit": "155356141842ea53bbdec7b97e1eefa8d206a057",
+  "source_record_sha256": "3ae111252a3f0ccfc668efd6b1af96b20393cc87441c00ce6fdc3a74655d627c"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "985017fb-afc8-40c7-887a-480ba6c25206",
+  "sessionKey": "agent:main:shop-d5056-gift8-tool-985017fb",
+  "arm": "tool",
+  "product_id": 20209,
+  "tool_call_id": "b434d47ce",
+  "receipt_file": "fetch-20209.json",
+  "card_sha256": "273e542d3f32c7cf947be8ce381f933f4a0a6d066a47295a5bf2a31d35ce5f9f",
+  "timestamp_ms": 1795347194684
+}

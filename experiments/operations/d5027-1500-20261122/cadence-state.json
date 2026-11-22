@@ -1,0 +1,736 @@
+{
+  "version": 1,
+  "config_sha256": "254678bd280e5e9af5964185ac60d5fb14b8fb3c9a02b39fe53f324104a4a5ce",
+  "config": {
+    "version": 1,
+    "enabled": true,
+    "order_seconds": [
+      30,
+      60,
+      60,
+      30,
+      60,
+      30,
+      30,
+      60
+    ],
+    "history_start": 69,
+    "cutoff": "2026-11-23T02:53:00+09:00",
+    "activated_at": "2026-11-22T14:20:38.783414+00:00",
+    "anchor_id": "7d036cae-1deb-40fa-b83e-e11564bb54af"
+  },
+  "assignments": [
+    {
+      "index": 1,
+      "previous_uuid": "7757e7c5-96d3-4a37-8ee0-e2e08767e3b0",
+      "requested_seconds": 30,
+      "history_cursor": 71,
+      "allocated_at": "2026-11-22T14:28:42.092375+00:00",
+      "phase": "complete",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:29:01.318747+00:00",
+          "history_cursor": 71,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "30"
+          ],
+          "outcome": {
+            "run_id": "f039d055-caa3-4ed7-bcc8-e571d4dea5fb",
+            "terminal": "final",
+            "history_index": 71,
+            "history_row": {
+              "id": "f039d055-caa3-4ed7-bcc8-e571d4dea5fb",
+              "label": "D5108-synth-five-categories-cap",
+              "arm": "synth-five-categories-cap|0.2|low",
+              "score": 1063.8986228880685,
+              "ui": 1064,
+              "valid": true,
+              "method_valid": true,
+              "call_count": 2,
+              "p90": 1100.6952674403954,
+              "goal": false,
+              "recorded_video": false,
+              "evidence_status": "video_superseded",
+              "commit": "8b9328d8ee57d3fb5d37d049d41bc51f2a8c7eeb",
+              "first_prompt_tokens": 2856,
+              "errors_before_first_call": 0,
+              "context_clean": true,
+              "rate_limited": false,
+              "relay_phases": [
+                "passthrough",
+                "passthrough"
+              ]
+            },
+            "evidence": "runs/f039d055-caa3-4ed7-bcc8-e571d4dea5fb/evidence.json",
+            "commit": "8b9328d8ee57d3fb5d37d049d41bc51f2a8c7eeb",
+            "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+            "recorded_at": "2026-11-22T14:29:33.719903+00:00"
+          }
+        }
+      ],
+      "outcome": {
+        "run_id": "f039d055-caa3-4ed7-bcc8-e571d4dea5fb",
+        "terminal": "final",
+        "history_index": 71,
+        "history_row": {
+          "id": "f039d055-caa3-4ed7-bcc8-e571d4dea5fb",
+          "label": "D5108-synth-five-categories-cap",
+          "arm": "synth-five-categories-cap|0.2|low",
+          "score": 1063.8986228880685,
+          "ui": 1064,
+          "valid": true,
+          "method_valid": true,
+          "call_count": 2,
+          "p90": 1100.6952674403954,
+          "goal": false,
+          "recorded_video": false,
+          "evidence_status": "video_superseded",
+          "commit": "8b9328d8ee57d3fb5d37d049d41bc51f2a8c7eeb",
+          "first_prompt_tokens": 2856,
+          "errors_before_first_call": 0,
+          "context_clean": true,
+          "rate_limited": false,
+          "relay_phases": [
+            "passthrough",
+            "passthrough"
+          ]
+        },
+        "evidence": "runs/f039d055-caa3-4ed7-bcc8-e571d4dea5fb/evidence.json",
+        "commit": "8b9328d8ee57d3fb5d37d049d41bc51f2a8c7eeb",
+        "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+        "recorded_at": "2026-11-22T14:29:33.719903+00:00"
+      }
+    },
+    {
+      "index": 2,
+      "previous_uuid": "f039d055-caa3-4ed7-bcc8-e571d4dea5fb",
+      "requested_seconds": 60,
+      "history_cursor": 72,
+      "allocated_at": "2026-11-22T14:29:34.404045+00:00",
+      "phase": "complete",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:30:14.033785+00:00",
+          "history_cursor": 72,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "60"
+          ],
+          "outcome": {
+            "run_id": "2c3c5f06-c296-4e4f-94c0-9fbc3f121855",
+            "terminal": "final",
+            "history_index": 72,
+            "history_row": {
+              "id": "2c3c5f06-c296-4e4f-94c0-9fbc3f121855",
+              "label": "D5109-synth-five-categories-cap",
+              "arm": "synth-five-categories-cap|0.2|low",
+              "score": 1203.7091025281043,
+              "ui": 1204,
+              "valid": true,
+              "method_valid": true,
+              "call_count": 2,
+              "p90": 1258.528928629331,
+              "goal": false,
+              "recorded_video": false,
+              "evidence_status": "video_superseded",
+              "commit": "a16a4516d59e0ef7697a7925d372de4978650b56",
+              "first_prompt_tokens": 2880,
+              "errors_before_first_call": 0,
+              "context_clean": true,
+              "rate_limited": false,
+              "relay_phases": [
+                "passthrough",
+                "passthrough"
+              ]
+            },
+            "evidence": "runs/2c3c5f06-c296-4e4f-94c0-9fbc3f121855/evidence.json",
+            "commit": "a16a4516d59e0ef7697a7925d372de4978650b56",
+            "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+            "recorded_at": "2026-11-22T14:30:53.657046+00:00"
+          }
+        }
+      ],
+      "outcome": {
+        "run_id": "2c3c5f06-c296-4e4f-94c0-9fbc3f121855",
+        "terminal": "final",
+        "history_index": 72,
+        "history_row": {
+          "id": "2c3c5f06-c296-4e4f-94c0-9fbc3f121855",
+          "label": "D5109-synth-five-categories-cap",
+          "arm": "synth-five-categories-cap|0.2|low",
+          "score": 1203.7091025281043,
+          "ui": 1204,
+          "valid": true,
+          "method_valid": true,
+          "call_count": 2,
+          "p90": 1258.528928629331,
+          "goal": false,
+          "recorded_video": false,
+          "evidence_status": "video_superseded",
+          "commit": "a16a4516d59e0ef7697a7925d372de4978650b56",
+          "first_prompt_tokens": 2880,
+          "errors_before_first_call": 0,
+          "context_clean": true,
+          "rate_limited": false,
+          "relay_phases": [
+            "passthrough",
+            "passthrough"
+          ]
+        },
+        "evidence": "runs/2c3c5f06-c296-4e4f-94c0-9fbc3f121855/evidence.json",
+        "commit": "a16a4516d59e0ef7697a7925d372de4978650b56",
+        "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+        "recorded_at": "2026-11-22T14:30:53.657046+00:00"
+      }
+    },
+    {
+      "index": 3,
+      "previous_uuid": "2c3c5f06-c296-4e4f-94c0-9fbc3f121855",
+      "requested_seconds": 60,
+      "history_cursor": 73,
+      "allocated_at": "2026-11-22T14:30:54.161173+00:00",
+      "phase": "complete",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:31:33.416922+00:00",
+          "history_cursor": 73,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "60"
+          ],
+          "outcome": {
+            "run_id": "ca2abd04-4d26-4981-a745-93ad9e378e70",
+            "terminal": "final",
+            "history_index": 73,
+            "history_row": {
+              "id": "ca2abd04-4d26-4981-a745-93ad9e378e70",
+              "label": "D5110-synth-five-categories-cap",
+              "arm": "synth-five-categories-cap|0.2|low",
+              "score": 885.6296299701402,
+              "ui": 886,
+              "valid": true,
+              "method_valid": true,
+              "call_count": 2,
+              "p90": 1113.066397749825,
+              "goal": false,
+              "recorded_video": false,
+              "evidence_status": "below_threshold_recorded",
+              "commit": "824bfc4d96128dd4eabad79eb56f2d08ac59233b",
+              "first_prompt_tokens": 2861,
+              "errors_before_first_call": 0,
+              "context_clean": true,
+              "rate_limited": false,
+              "relay_phases": [
+                "passthrough",
+                "passthrough"
+              ]
+            },
+            "evidence": "runs/ca2abd04-4d26-4981-a745-93ad9e378e70/evidence.json",
+            "commit": "824bfc4d96128dd4eabad79eb56f2d08ac59233b",
+            "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+            "recorded_at": "2026-11-22T14:32:11.019065+00:00"
+          }
+        }
+      ],
+      "outcome": {
+        "run_id": "ca2abd04-4d26-4981-a745-93ad9e378e70",
+        "terminal": "final",
+        "history_index": 73,
+        "history_row": {
+          "id": "ca2abd04-4d26-4981-a745-93ad9e378e70",
+          "label": "D5110-synth-five-categories-cap",
+          "arm": "synth-five-categories-cap|0.2|low",
+          "score": 885.6296299701402,
+          "ui": 886,
+          "valid": true,
+          "method_valid": true,
+          "call_count": 2,
+          "p90": 1113.066397749825,
+          "goal": false,
+          "recorded_video": false,
+          "evidence_status": "below_threshold_recorded",
+          "commit": "824bfc4d96128dd4eabad79eb56f2d08ac59233b",
+          "first_prompt_tokens": 2861,
+          "errors_before_first_call": 0,
+          "context_clean": true,
+          "rate_limited": false,
+          "relay_phases": [
+            "passthrough",
+            "passthrough"
+          ]
+        },
+        "evidence": "runs/ca2abd04-4d26-4981-a745-93ad9e378e70/evidence.json",
+        "commit": "824bfc4d96128dd4eabad79eb56f2d08ac59233b",
+        "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+        "recorded_at": "2026-11-22T14:32:11.019065+00:00"
+      }
+    },
+    {
+      "index": 4,
+      "previous_uuid": "ca2abd04-4d26-4981-a745-93ad9e378e70",
+      "requested_seconds": 30,
+      "history_cursor": 74,
+      "allocated_at": "2026-11-22T14:32:11.759926+00:00",
+      "phase": "complete",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:32:29.772101+00:00",
+          "history_cursor": 74,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "30"
+          ],
+          "outcome": {
+            "run_id": "e0b4904a-4043-43aa-9f3e-8632c591801a",
+            "terminal": "final",
+            "history_index": 74,
+            "history_row": {
+              "id": "e0b4904a-4043-43aa-9f3e-8632c591801a",
+              "label": "D5111-synth-five-categories-cap",
+              "arm": "synth-five-categories-cap|0.2|low",
+              "score": 808.8453600433978,
+              "ui": 809,
+              "valid": true,
+              "method_valid": true,
+              "call_count": 2,
+              "p90": 864.6338717118807,
+              "goal": false,
+              "recorded_video": false,
+              "evidence_status": "below_threshold_recorded",
+              "commit": "2022584d896df46f2bfabcf73e8694cadf3b0f07",
+              "first_prompt_tokens": 2868,
+              "errors_before_first_call": 0,
+              "context_clean": true,
+              "rate_limited": false,
+              "relay_phases": [
+                "passthrough",
+                "passthrough"
+              ]
+            },
+            "evidence": "runs/e0b4904a-4043-43aa-9f3e-8632c591801a/evidence.json",
+            "commit": "2022584d896df46f2bfabcf73e8694cadf3b0f07",
+            "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+            "recorded_at": "2026-11-22T14:33:29.024059+00:00"
+          }
+        }
+      ],
+      "outcome": {
+        "run_id": "e0b4904a-4043-43aa-9f3e-8632c591801a",
+        "terminal": "final",
+        "history_index": 74,
+        "history_row": {
+          "id": "e0b4904a-4043-43aa-9f3e-8632c591801a",
+          "label": "D5111-synth-five-categories-cap",
+          "arm": "synth-five-categories-cap|0.2|low",
+          "score": 808.8453600433978,
+          "ui": 809,
+          "valid": true,
+          "method_valid": true,
+          "call_count": 2,
+          "p90": 864.6338717118807,
+          "goal": false,
+          "recorded_video": false,
+          "evidence_status": "below_threshold_recorded",
+          "commit": "2022584d896df46f2bfabcf73e8694cadf3b0f07",
+          "first_prompt_tokens": 2868,
+          "errors_before_first_call": 0,
+          "context_clean": true,
+          "rate_limited": false,
+          "relay_phases": [
+            "passthrough",
+            "passthrough"
+          ]
+        },
+        "evidence": "runs/e0b4904a-4043-43aa-9f3e-8632c591801a/evidence.json",
+        "commit": "2022584d896df46f2bfabcf73e8694cadf3b0f07",
+        "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+        "recorded_at": "2026-11-22T14:33:29.024059+00:00"
+      }
+    },
+    {
+      "index": 5,
+      "previous_uuid": "e0b4904a-4043-43aa-9f3e-8632c591801a",
+      "requested_seconds": 60,
+      "history_cursor": 75,
+      "allocated_at": "2026-11-22T14:33:29.483106+00:00",
+      "phase": "complete",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:34:17.116236+00:00",
+          "history_cursor": 75,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "60"
+          ],
+          "outcome": {
+            "run_id": "4b9ea9e9-b006-40e2-9d8d-7fecfb54f957",
+            "terminal": "final",
+            "history_index": 75,
+            "history_row": {
+              "id": "4b9ea9e9-b006-40e2-9d8d-7fecfb54f957",
+              "label": "D5112-synth-five-categories-cap",
+              "arm": "synth-five-categories-cap|0.2|low",
+              "score": 1219.4792417065432,
+              "ui": 1219,
+              "valid": true,
+              "method_valid": true,
+              "call_count": 2,
+              "p90": 1463.7459982116297,
+              "goal": false,
+              "recorded_video": false,
+              "evidence_status": "video_superseded",
+              "commit": "17045a18643c33b88a8f90582aec0e4539b54494",
+              "first_prompt_tokens": 2880,
+              "errors_before_first_call": 0,
+              "context_clean": true,
+              "rate_limited": false,
+              "relay_phases": [
+                "passthrough",
+                "passthrough"
+              ]
+            },
+            "evidence": "runs/4b9ea9e9-b006-40e2-9d8d-7fecfb54f957/evidence.json",
+            "commit": "17045a18643c33b88a8f90582aec0e4539b54494",
+            "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+            "recorded_at": "2026-11-22T14:35:28.578862+00:00"
+          }
+        }
+      ],
+      "outcome": {
+        "run_id": "4b9ea9e9-b006-40e2-9d8d-7fecfb54f957",
+        "terminal": "final",
+        "history_index": 75,
+        "history_row": {
+          "id": "4b9ea9e9-b006-40e2-9d8d-7fecfb54f957",
+          "label": "D5112-synth-five-categories-cap",
+          "arm": "synth-five-categories-cap|0.2|low",
+          "score": 1219.4792417065432,
+          "ui": 1219,
+          "valid": true,
+          "method_valid": true,
+          "call_count": 2,
+          "p90": 1463.7459982116297,
+          "goal": false,
+          "recorded_video": false,
+          "evidence_status": "video_superseded",
+          "commit": "17045a18643c33b88a8f90582aec0e4539b54494",
+          "first_prompt_tokens": 2880,
+          "errors_before_first_call": 0,
+          "context_clean": true,
+          "rate_limited": false,
+          "relay_phases": [
+            "passthrough",
+            "passthrough"
+          ]
+        },
+        "evidence": "runs/4b9ea9e9-b006-40e2-9d8d-7fecfb54f957/evidence.json",
+        "commit": "17045a18643c33b88a8f90582aec0e4539b54494",
+        "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+        "recorded_at": "2026-11-22T14:35:28.578862+00:00"
+      }
+    },
+    {
+      "index": 6,
+      "previous_uuid": "4b9ea9e9-b006-40e2-9d8d-7fecfb54f957",
+      "requested_seconds": 30,
+      "history_cursor": 76,
+      "allocated_at": "2026-11-22T14:35:29.146671+00:00",
+      "phase": "complete",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:35:30.632875+00:00",
+          "history_cursor": 76,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "30"
+          ],
+          "outcome": {
+            "run_id": "e86b52f5-5f72-41df-acc8-ecfbbe7eedbc",
+            "terminal": "final",
+            "history_index": 76,
+            "history_row": {
+              "id": "e86b52f5-5f72-41df-acc8-ecfbbe7eedbc",
+              "label": "D5113-synth-five-categories-cap",
+              "arm": "synth-five-categories-cap|0.2|low",
+              "score": 655.6780762544831,
+              "ui": 656,
+              "valid": true,
+              "method_valid": true,
+              "call_count": 2,
+              "p90": 656.083036638625,
+              "goal": false,
+              "recorded_video": false,
+              "evidence_status": "below_threshold_recorded",
+              "commit": "79230b3595cabae2180249329988f8e58dd63b8e",
+              "first_prompt_tokens": 2868,
+              "errors_before_first_call": 0,
+              "context_clean": true,
+              "rate_limited": false,
+              "relay_phases": [
+                "passthrough",
+                "passthrough"
+              ]
+            },
+            "evidence": "runs/e86b52f5-5f72-41df-acc8-ecfbbe7eedbc/evidence.json",
+            "commit": "79230b3595cabae2180249329988f8e58dd63b8e",
+            "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+            "recorded_at": "2026-11-22T14:36:04.016241+00:00"
+          }
+        }
+      ],
+      "outcome": {
+        "run_id": "e86b52f5-5f72-41df-acc8-ecfbbe7eedbc",
+        "terminal": "final",
+        "history_index": 76,
+        "history_row": {
+          "id": "e86b52f5-5f72-41df-acc8-ecfbbe7eedbc",
+          "label": "D5113-synth-five-categories-cap",
+          "arm": "synth-five-categories-cap|0.2|low",
+          "score": 655.6780762544831,
+          "ui": 656,
+          "valid": true,
+          "method_valid": true,
+          "call_count": 2,
+          "p90": 656.083036638625,
+          "goal": false,
+          "recorded_video": false,
+          "evidence_status": "below_threshold_recorded",
+          "commit": "79230b3595cabae2180249329988f8e58dd63b8e",
+          "first_prompt_tokens": 2868,
+          "errors_before_first_call": 0,
+          "context_clean": true,
+          "rate_limited": false,
+          "relay_phases": [
+            "passthrough",
+            "passthrough"
+          ]
+        },
+        "evidence": "runs/e86b52f5-5f72-41df-acc8-ecfbbe7eedbc/evidence.json",
+        "commit": "79230b3595cabae2180249329988f8e58dd63b8e",
+        "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+        "recorded_at": "2026-11-22T14:36:04.016241+00:00"
+      }
+    },
+    {
+      "index": 7,
+      "previous_uuid": "e86b52f5-5f72-41df-acc8-ecfbbe7eedbc",
+      "requested_seconds": 30,
+      "history_cursor": 77,
+      "allocated_at": "2026-11-22T14:36:04.581626+00:00",
+      "phase": "complete",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:36:21.199141+00:00",
+          "history_cursor": 77,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "30"
+          ],
+          "outcome": {
+            "run_id": "ce1753ca-0ccf-4701-8aa8-c903c3c815a9",
+            "terminal": "final",
+            "history_index": 77,
+            "history_row": {
+              "id": "ce1753ca-0ccf-4701-8aa8-c903c3c815a9",
+              "label": "D5114-synth-five-categories-cap",
+              "arm": "synth-five-categories-cap|0.2|low",
+              "score": 806.1352780742719,
+              "ui": 806,
+              "valid": true,
+              "method_valid": true,
+              "call_count": 2,
+              "p90": 843.660781100002,
+              "goal": false,
+              "recorded_video": false,
+              "evidence_status": "below_threshold_recorded",
+              "commit": "855307b55bab2051f790e65e3535e4944aba0621",
+              "first_prompt_tokens": 2861,
+              "errors_before_first_call": 0,
+              "context_clean": true,
+              "rate_limited": false,
+              "relay_phases": [
+                "passthrough",
+                "passthrough"
+              ]
+            },
+            "evidence": "runs/ce1753ca-0ccf-4701-8aa8-c903c3c815a9/evidence.json",
+            "commit": "855307b55bab2051f790e65e3535e4944aba0621",
+            "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+            "recorded_at": "2026-11-22T14:36:48.988974+00:00"
+          }
+        }
+      ],
+      "outcome": {
+        "run_id": "ce1753ca-0ccf-4701-8aa8-c903c3c815a9",
+        "terminal": "final",
+        "history_index": 77,
+        "history_row": {
+          "id": "ce1753ca-0ccf-4701-8aa8-c903c3c815a9",
+          "label": "D5114-synth-five-categories-cap",
+          "arm": "synth-five-categories-cap|0.2|low",
+          "score": 806.1352780742719,
+          "ui": 806,
+          "valid": true,
+          "method_valid": true,
+          "call_count": 2,
+          "p90": 843.660781100002,
+          "goal": false,
+          "recorded_video": false,
+          "evidence_status": "below_threshold_recorded",
+          "commit": "855307b55bab2051f790e65e3535e4944aba0621",
+          "first_prompt_tokens": 2861,
+          "errors_before_first_call": 0,
+          "context_clean": true,
+          "rate_limited": false,
+          "relay_phases": [
+            "passthrough",
+            "passthrough"
+          ]
+        },
+        "evidence": "runs/ce1753ca-0ccf-4701-8aa8-c903c3c815a9/evidence.json",
+        "commit": "855307b55bab2051f790e65e3535e4944aba0621",
+        "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+        "recorded_at": "2026-11-22T14:36:48.988974+00:00"
+      }
+    },
+    {
+      "index": 8,
+      "previous_uuid": "ce1753ca-0ccf-4701-8aa8-c903c3c815a9",
+      "requested_seconds": 60,
+      "history_cursor": 78,
+      "allocated_at": "2026-11-22T14:36:49.624263+00:00",
+      "phase": "complete",
+      "attempts": [
+        {
+          "phase": "terminal",
+          "dispatched_at": "2026-11-22T14:37:37.645644+00:00",
+          "history_cursor": 78,
+          "sealed_before": [],
+          "command": [
+            "/opt/homebrew/opt/python@3.14/bin/python3.14",
+            "-B",
+            "-u",
+            "$BOUNTY_TEST_REPO/tools/loop.py",
+            "--once",
+            "--d5027-post-success-seconds",
+            "60"
+          ],
+          "outcome": {
+            "run_id": "fa0f817e-ee39-4e86-868e-96edc1830832",
+            "terminal": "final",
+            "history_index": 78,
+            "history_row": {
+              "id": "fa0f817e-ee39-4e86-868e-96edc1830832",
+              "label": "D5115-synth-five-categories-cap",
+              "arm": "synth-five-categories-cap|0.2|low",
+              "score": 844.0175026663758,
+              "ui": 844,
+              "valid": true,
+              "method_valid": true,
+              "call_count": 2,
+              "p90": 1043.6630282967865,
+              "goal": false,
+              "recorded_video": false,
+              "evidence_status": "below_threshold_recorded",
+              "commit": "487e9b5d2cd8e14a81cb84b19aada1d9166750a7",
+              "first_prompt_tokens": 2868,
+              "errors_before_first_call": 0,
+              "context_clean": true,
+              "rate_limited": false,
+              "relay_phases": [
+                "passthrough",
+                "passthrough"
+              ]
+            },
+            "evidence": "runs/fa0f817e-ee39-4e86-868e-96edc1830832/evidence.json",
+            "commit": "487e9b5d2cd8e14a81cb84b19aada1d9166750a7",
+            "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+            "recorded_at": "2026-11-22T14:38:30.269386+00:00"
+          }
+        }
+      ],
+      "outcome": {
+        "run_id": "fa0f817e-ee39-4e86-868e-96edc1830832",
+        "terminal": "final",
+        "history_index": 78,
+        "history_row": {
+          "id": "fa0f817e-ee39-4e86-868e-96edc1830832",
+          "label": "D5115-synth-five-categories-cap",
+          "arm": "synth-five-categories-cap|0.2|low",
+          "score": 844.0175026663758,
+          "ui": 844,
+          "valid": true,
+          "method_valid": true,
+          "call_count": 2,
+          "p90": 1043.6630282967865,
+          "goal": false,
+          "recorded_video": false,
+          "evidence_status": "below_threshold_recorded",
+          "commit": "487e9b5d2cd8e14a81cb84b19aada1d9166750a7",
+          "first_prompt_tokens": 2868,
+          "errors_before_first_call": 0,
+          "context_clean": true,
+          "rate_limited": false,
+          "relay_phases": [
+            "passthrough",
+            "passthrough"
+          ]
+        },
+        "evidence": "runs/fa0f817e-ee39-4e86-868e-96edc1830832/evidence.json",
+        "commit": "487e9b5d2cd8e14a81cb84b19aada1d9166750a7",
+        "report": "$OPERATIONS_ROOT/d5027-1500-20261122/trials.json",
+        "recorded_at": "2026-11-22T14:38:30.269386+00:00"
+      }
+    }
+  ]
+}

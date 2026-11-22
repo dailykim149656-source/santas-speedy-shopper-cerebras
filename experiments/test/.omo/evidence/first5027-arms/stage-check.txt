@@ -1,0 +1,2 @@
+git apply --cached --check .omo/evidence/first5027-arms/variants-only.patch
+exit=0

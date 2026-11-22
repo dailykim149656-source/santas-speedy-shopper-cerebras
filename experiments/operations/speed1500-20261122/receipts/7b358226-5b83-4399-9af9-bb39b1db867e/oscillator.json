@@ -1,0 +1,12 @@
+{
+  "id": "7b358226-5b83-4399-9af9-bb39b1db867e",
+  "sessionKey": "agent:main:shop-d5092-speed1500-p-7b358226",
+  "manifest_sha256": "b05ba4ef16db04e731d7775776992622860dc71f16148c17ecfbbfdfee3e313c",
+  "category": "oscillator",
+  "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+  "final_url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=7b358226",
+  "status": 200,
+  "started": 1795353058583,
+  "ended": 1795353060989,
+  "body_sha256": "dffeea58fc411b7a4d45ddbd7f838f77b2fc7ce2ac6f70065cb7589a3a6140f6"
+}

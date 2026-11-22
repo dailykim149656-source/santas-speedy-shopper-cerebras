@@ -1,0 +1,6 @@
+[
+  {
+    "name": "AI011 Analog Voltage Controlled Oscillator",
+    "permalink": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+  }
+]

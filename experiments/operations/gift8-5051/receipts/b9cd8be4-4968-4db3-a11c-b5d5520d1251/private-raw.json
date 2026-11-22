@@ -1,0 +1,563 @@
+{
+  "id": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+  "sessionKey": "agent:main:shop-d5055-gift8-prefetch-b9cd8be4",
+  "label": "D5055-gift8-prefetch",
+  "prompt": "Christmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=b9cd8be4",
+  "capturePolicy": "score-first",
+  "variant": "gift8-prefetch",
+  "thinking": "low",
+  "experiment": "gift8-v1 prefetch; manifest-sha256=6e7df4f57495d8b66bafa8df79059fce577b7d9e3339dcbf30c70d4f983b732a",
+  "temperature": 0.2,
+  "top_p": null,
+  "max_completion_tokens": 1024,
+  "video_threshold_tps": 1700,
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "49af8c6b5074edbcad0a8c0c069c4ece1938b46fc68c5ec394bfbdc4b8922339",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "startedWall": 1795347112335,
+  "ackMs": 148.70220900000004,
+  "ended": {
+    "elapsedMs": 10764.537334,
+    "time": 1795347123141,
+    "terminal": "final",
+    "from": "chat event"
+  },
+  "history": {
+    "sessionKey": "agent:main:shop-d5055-gift8-prefetch-b9cd8be4",
+    "sessionId": "49e39f1f-653b-42cf-982f-26f6752361ef",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Christmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=b9cd8be4",
+        "timestamp": 1795347112381,
+        "idempotencyKey": "b9cd8be4-4968-4db3-a11c-b5d5520d1251:user",
+        "__openclaw": {
+          "senderIsOwner": true,
+          "transport": {
+            "clients": [
+              {
+                "id": "cli",
+                "mode": "cli"
+              }
+            ]
+          },
+          "modelPromptProjection": {
+            "version": 1,
+            "text": "Current merchant cards: {\"gifts\":[{\"id\":21951,\"name\":\"AI024 Eurorack X Filter\",\"url\":\"https://aisynthesis.com/product/ai024-eurorack-x-filter/\",\"price_minor\":1500,\"price_range_minor\":[1500,14000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":23345,\"name\":\"AI028 Voltage Controlled Matrix Mixer\",\"url\":\"https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/\",\"price_minor\":2000,\"price_range_minor\":[2000,32900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"presoldered-pcb\",\"smd-pre-soldered-pcb-and-black-panel\",\"smd-pre-soldered-pcb-and-silver-panel\",\"smd-presoldered-kit-black\",\"smd-presoldered-kit-silver\"]},{\"id\":11125,\"name\":\"AI011 Analog Voltage Controlled Oscillator\",\"url\":\"https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/\",\"price_minor\":1500,\"price_range_minor\":[1500,15000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":11141,\"name\":\"AI016 Eurorack Tape Echo Interface\",\"url\":\"https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/\",\"price_minor\":1500,\"price_range_minor\":[1500,9900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":20209,\"name\":\"Eurorack Modular Patch Cable 4.9ft\",\"url\":\"https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/\",\"price_minor\":450,\"price_range_minor\":null,\"currency\":\"USD\",\"stock\":true,\"options\":[]}]}\n\nChristmas gifts. Requested product IDs in order: 21951, 23345, 11125, 11141, 20209.\nUse the current live gift data if provided. Otherwise call gift_lookup for each requested ID in parallel, then use the returned live cards. Return only one JSON object {\"gifts\":[the five complete returned cards in the requested order]}. Copy every card field and value exactly.\n_run=b9cd8be4"
+          },
+          "id": "b3359968-09d5-41a1-8b67-fe4ef96827f2",
+          "idempotencyKey": "b9cd8be4-4968-4db3-a11c-b5d5520d1251:user",
+          "recordTimestampMs": 1795347113928,
+          "transcriptPosition": {
+            "source": "1G8yPR3G056pU1c7ZiIJRbFVJA6TU0J2BWoZX6jji9c",
+            "rawSeq": 1
+          },
+          "seq": 1
+        }
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "I need respond only JSON object gifts five complete returned cards requested order. Should call gift_lookup each in parallel. No live data provided. Do tool calls."
+          },
+          {
+            "type": "toolCall",
+            "id": "df22de44d",
+            "name": "gift_lookup",
+            "arguments": {
+              "id": 21951
+            }
+          },
+          {
+            "type": "toolCall",
+            "id": "2383e08f8",
+            "name": "gift_lookup",
+            "arguments": {
+              "id": 23345
+            }
+          },
+          {
+            "type": "toolCall",
+            "id": "9d7b374d4",
+            "name": "gift_lookup",
+            "arguments": {
+              "id": 11125
+            }
+          },
+          {
+            "type": "toolCall",
+            "id": "d5edf3744",
+            "name": "gift_lookup",
+            "arguments": {
+              "id": 11141
+            }
+          },
+          {
+            "type": "toolCall",
+            "id": "b04549e7c",
+            "name": "gift_lookup",
+            "arguments": {
+              "id": 20209
+            }
+          }
+        ],
+        "api": "openai-completions",
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "usage": {
+          "input": 655,
+          "output": 205,
+          "totalTokens": 2908,
+          "cacheRead": 2048,
+          "cacheWrite": 0,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "total": 0
+          }
+        },
+        "stopReason": "toolUse",
+        "timestamp": 1795347120351,
+        "responseId": "chatcmpl-98a00b65-cc67-42c4-856c-a5046873869c",
+        "openclawDelivery": {
+          "textPhaseRequiresTerminal": true
+        },
+        "serverGeneration": {
+          "completionMs": 299.92956100000004,
+          "outputTokens": 205
+        },
+        "__openclaw": {
+          "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+          "id": "3de66f31-fbef-45e9-8a7d-770a62da5475",
+          "recordTimestampMs": 1795347121120,
+          "transcriptPosition": {
+            "source": "1G8yPR3G056pU1c7ZiIJRbFVJA6TU0J2BWoZX6jji9c",
+            "rawSeq": 5
+          },
+          "seq": 3
+        }
+      },
+      {
+        "role": "toolResult",
+        "toolCallId": "df22de44d",
+        "toolName": "gift_lookup",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"id\":21951,\"name\":\"AI024 Eurorack X Filter\",\"url\":\"https://aisynthesis.com/product/ai024-eurorack-x-filter/\",\"price_minor\":1500,\"price_range_minor\":[1500,14000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]}"
+          }
+        ],
+        "isError": false,
+        "timestamp": 1795347121206,
+        "__openclaw": {
+          "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+          "id": "002e4501-ce2e-4a97-9314-cd2af58da32d",
+          "recordTimestampMs": 1795347121206,
+          "transcriptPosition": {
+            "source": "1G8yPR3G056pU1c7ZiIJRbFVJA6TU0J2BWoZX6jji9c",
+            "rawSeq": 6
+          },
+          "seq": 4
+        }
+      },
+      {
+        "role": "toolResult",
+        "toolCallId": "2383e08f8",
+        "toolName": "gift_lookup",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"id\":23345,\"name\":\"AI028 Voltage Controlled Matrix Mixer\",\"url\":\"https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/\",\"price_minor\":2000,\"price_range_minor\":[2000,32900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"presoldered-pcb\",\"smd-pre-soldered-pcb-and-black-panel\",\"smd-pre-soldered-pcb-and-silver-panel\",\"smd-presoldered-kit-black\",\"smd-presoldered-kit-silver\"]}"
+          }
+        ],
+        "isError": false,
+        "timestamp": 1795347121566,
+        "__openclaw": {
+          "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+          "id": "e71c8d24-a572-4d2f-b0a0-07f69c8b65e5",
+          "recordTimestampMs": 1795347121568,
+          "transcriptPosition": {
+            "source": "1G8yPR3G056pU1c7ZiIJRbFVJA6TU0J2BWoZX6jji9c",
+            "rawSeq": 7
+          },
+          "seq": 5
+        }
+      },
+      {
+        "role": "toolResult",
+        "toolCallId": "9d7b374d4",
+        "toolName": "gift_lookup",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"id\":11125,\"name\":\"AI011 Analog Voltage Controlled Oscillator\",\"url\":\"https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/\",\"price_minor\":1500,\"price_range_minor\":[1500,15000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]}"
+          }
+        ],
+        "isError": false,
+        "timestamp": 1795347121583,
+        "__openclaw": {
+          "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+          "id": "b4be239f-5168-4af0-a5bf-512f1320d36f",
+          "recordTimestampMs": 1795347121584,
+          "transcriptPosition": {
+            "source": "1G8yPR3G056pU1c7ZiIJRbFVJA6TU0J2BWoZX6jji9c",
+            "rawSeq": 8
+          },
+          "seq": 6
+        }
+      },
+      {
+        "role": "toolResult",
+        "toolCallId": "d5edf3744",
+        "toolName": "gift_lookup",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"id\":11141,\"name\":\"AI016 Eurorack Tape Echo Interface\",\"url\":\"https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/\",\"price_minor\":1500,\"price_range_minor\":[1500,9900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]}"
+          }
+        ],
+        "isError": false,
+        "timestamp": 1795347121596,
+        "__openclaw": {
+          "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+          "id": "b9502337-8b99-4464-bd7a-d7d4c4ff70fd",
+          "recordTimestampMs": 1795347121597,
+          "transcriptPosition": {
+            "source": "1G8yPR3G056pU1c7ZiIJRbFVJA6TU0J2BWoZX6jji9c",
+            "rawSeq": 9
+          },
+          "seq": 7
+        }
+      },
+      {
+        "role": "toolResult",
+        "toolCallId": "b04549e7c",
+        "toolName": "gift_lookup",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"id\":20209,\"name\":\"Eurorack Modular Patch Cable 4.9ft\",\"url\":\"https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/\",\"price_minor\":450,\"price_range_minor\":null,\"currency\":\"USD\",\"stock\":true,\"options\":[]}"
+          }
+        ],
+        "isError": false,
+        "timestamp": 1795347121612,
+        "__openclaw": {
+          "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+          "id": "72c77476-82b6-4b9f-8352-1e5dce084a26",
+          "recordTimestampMs": 1795347121612,
+          "transcriptPosition": {
+            "source": "1G8yPR3G056pU1c7ZiIJRbFVJA6TU0J2BWoZX6jji9c",
+            "rawSeq": 10
+          },
+          "seq": 8
+        }
+      },
+      {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "thinking",
+            "thinking": "I need respond only JSON object gifts five complete returned cards exact. Make sure no markdown. I have all. Copy exact."
+          },
+          {
+            "type": "text",
+            "text": "{\"gifts\":[{\"id\":21951,\"name\":\"AI024 Eurorack X Filter\",\"url\":\"https://aisynthesis.com/product/ai024-eurorack-x-filter/\",\"price_minor\":1500,\"price_range_minor\":[1500,14000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":23345,\"name\":\"AI028 Voltage Controlled Matrix Mixer\",\"url\":\"https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/\",\"price_minor\":2000,\"price_range_minor\":[2000,32900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"presoldered-pcb\",\"smd-pre-soldered-pcb-and-black-panel\",\"smd-pre-soldered-pcb-and-silver-panel\",\"smd-presoldered-kit-black\",\"smd-presoldered-kit-silver\"]},{\"id\":11125,\"name\":\"AI011 Analog Voltage Controlled Oscillator\",\"url\":\"https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/\",\"price_minor\":1500,\"price_range_minor\":[1500,15000],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":11141,\"name\":\"AI016 Eurorack Tape Echo Interface\",\"url\":\"https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/\",\"price_minor\":1500,\"price_range_minor\":[1500,9900],\"currency\":\"USD\",\"stock\":true,\"options\":[\"aluminum-panel\",\"black-panel\",\"built-and-tested-aluminum\",\"built-and-tested-black\",\"full-kit-aluminum\",\"full-kit-black\",\"pcb\",\"pcb-and-black-panel\",\"pcb-and-panel-aluminum\"]},{\"id\":20209,\"name\":\"Eurorack Modular Patch Cable 4.9ft\",\"url\":\"https://aisynthesis.com/product/eurorack-modular-patch-cable-4-9ft/\",\"price_minor\":450,\"price_range_minor\":null,\"currency\":\"USD\",\"stock\":true,\"options\":[]}]}"
+          }
+        ],
+        "api": "openai-completions",
+        "provider": "cerebras",
+        "model": "moonshotai-kimi-k3.1-pro-trial",
+        "usage": {
+          "input": 1457,
+          "output": 556,
+          "totalTokens": 4061,
+          "cacheRead": 2048,
+          "cacheWrite": 0,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "total": 0
+          }
+        },
+        "stopReason": "stop",
+        "timestamp": 1795347121632,
+        "responseId": "chatcmpl-fb3ec386-6602-4a00-8948-9677369c9e74",
+        "openclawDelivery": {
+          "textPhaseRequiresTerminal": true
+        },
+        "serverGeneration": {
+          "completionMs": 634.913194,
+          "outputTokens": 556
+        },
+        "__openclaw": {
+          "runId": "b9cd8be4-4968-4db3-a11c-b5d5520d1251",
+          "id": "66478b55-b8fd-4a8a-bff5-c8b97f0572b7",
+          "recordTimestampMs": 1795347122947,
+          "transcriptPosition": {
+            "source": "1G8yPR3G056pU1c7ZiIJRbFVJA6TU0J2BWoZX6jji9c",
+            "rawSeq": 12
+          },
+          "seq": 9
+        }
+      }
+    ],
+    "activity": [
+      {
+        "messageId": "3de66f31-fbef-45e9-8a7d-770a62da5475",
+        "items": [
+          {
+            "itemId": "tool:df22de44d",
+            "toolCallId": "df22de44d",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          },
+          {
+            "itemId": "tool:2383e08f8",
+            "toolCallId": "2383e08f8",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          },
+          {
+            "itemId": "tool:9d7b374d4",
+            "toolCallId": "9d7b374d4",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          },
+          {
+            "itemId": "tool:d5edf3744",
+            "toolCallId": "d5edf3744",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          },
+          {
+            "itemId": "tool:b04549e7c",
+            "toolCallId": "b04549e7c",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          }
+        ]
+      },
+      {
+        "messageId": "002e4501-ce2e-4a97-9314-cd2af58da32d",
+        "items": [
+          {
+            "itemId": "tool:df22de44d",
+            "toolCallId": "df22de44d",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          }
+        ]
+      },
+      {
+        "messageId": "e71c8d24-a572-4d2f-b0a0-07f69c8b65e5",
+        "items": [
+          {
+            "itemId": "tool:2383e08f8",
+            "toolCallId": "2383e08f8",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          }
+        ]
+      },
+      {
+        "messageId": "b4be239f-5168-4af0-a5bf-512f1320d36f",
+        "items": [
+          {
+            "itemId": "tool:9d7b374d4",
+            "toolCallId": "9d7b374d4",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          }
+        ]
+      },
+      {
+        "messageId": "b9502337-8b99-4464-bd7a-d7d4c4ff70fd",
+        "items": [
+          {
+            "itemId": "tool:d5edf3744",
+            "toolCallId": "d5edf3744",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          }
+        ]
+      },
+      {
+        "messageId": "72c77476-82b6-4b9f-8352-1e5dce084a26",
+        "items": [
+          {
+            "itemId": "tool:b04549e7c",
+            "toolCallId": "b04549e7c",
+            "name": "gift_lookup",
+            "kind": "tool",
+            "phase": "end",
+            "title": "Gift Lookup",
+            "status": "completed",
+            "commandBearing": false
+          }
+        ]
+      }
+    ],
+    "hasMore": false,
+    "totalMessages": 9,
+    "pendingInputs": {
+      "items": [],
+      "total": 0,
+      "queuedCount": 0
+    },
+    "deltaCursor": "eyJhZ2VudElkIjoibWFpbiIsImdlbmVyYXRpb24iOiI0MGVlYWM2OWM1ZGU0NWEyOTdmYzcyNTVkN2FhZDA0OSIsImxhc3RTZXEiOjEyLCJzZXNzaW9uSWQiOiI0OWUzOWYxZi02NTNiLTQyY2YtOTgyZi0yNmY2NzUyMzYxZWYiLCJ2ZXJzaW9uIjoxfQ",
+    "defaults": {
+      "modelProvider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "contextTokens": null,
+      "agentRuntime": {
+        "id": "auto",
+        "cloudPlacementSupported": false,
+        "devicePlacementSupported": false,
+        "source": "implicit"
+      },
+      "thinkingDefault": "low",
+      "modelSelectionTarget": "session"
+    },
+    "sessionInfo": {
+      "key": "agent:main:shop-d5055-gift8-prefetch-b9cd8be4",
+      "sessionModelRevision": "z6j2MJR0SyjgzA0W9yDDTinGpMqbb0MYjsEAVxDLp1o",
+      "visibility": "shared",
+      "permissionModePending": false,
+      "spawnDepth": 0,
+      "createdVia": "operator",
+      "participants": [
+        {
+          "identity": {
+            "type": "observation",
+            "pluginId": null,
+            "accountId": null,
+            "senderKind": "unknown",
+            "id": "cli"
+          }
+        }
+      ],
+      "expandedParticipants": [
+        {
+          "identity": {
+            "type": "observation",
+            "pluginId": null,
+            "accountId": null,
+            "senderKind": "unknown",
+            "id": "cli"
+          }
+        }
+      ],
+      "participantCount": 1,
+      "createdAt": 1795347112022,
+      "kind": "direct",
+      "label": "Santa D5055-gift8-prefetch",
+      "classification": "direct",
+      "agentId": "main",
+      "isMain": false,
+      "isDock": false,
+      "isBackground": false,
+      "displayName": "Santa D5055-gift8-prefetch",
+      "chatType": "direct",
+      "updatedAt": 1795347120376,
+      "archived": false,
+      "pinned": false,
+      "unread": false,
+      "lastReadAt": 1795347114275,
+      "lastInteractionAt": 1795347112626,
+      "sessionId": "49e39f1f-653b-42cf-982f-26f6752361ef",
+      "lifecycleRevision": "156229eb-5c18-4a3e-914e-26494cff90a8",
+      "systemSent": true,
+      "abortedLastRun": false,
+      "thinkingDefault": "low",
+      "effectiveFastMode": false,
+      "effectiveFastModeSource": "default",
+      "fastAutoOnSeconds": 60,
+      "totalTokensFresh": false,
+      "status": "running",
+      "startedAt": 1795347120292,
+      "parentSessionKey": "agent:main:main",
+      "effectiveResponseUsage": "off",
+      "effectiveQueueMode": "steer",
+      "modelProvider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "modelOverrideSource": null,
+      "runtimeSelectionLocked": false,
+      "agentRuntime": {
+        "id": "openclaw",
+        "cloudPlacementSupported": true,
+        "cloudPlacementExecutionMode": "worker-turn",
+        "devicePlacement": {
+          "requiredNodeCommands": [],
+          "consumesWorkerSlot": true
+        },
+        "devicePlacementSupported": true,
+        "source": "implicit"
+      },
+      "contextTokens": 128000,
+      "snapshotAt": 1795347123137,
+      "placement": {
+        "state": "local",
+        "generation": 0,
+        "createdAtMs": 1795347114211,
+        "updatedAtMs": 1795347123069,
+        "stateChangedAtMs": 1795347114211
+      },
+      "activitySummary": {
+        "state": "unavailable",
+        "canEnsure": true
+      },
+      "hasBoard": false,
+      "childOwnerSessionKeys": [
+        "agent:main:main"
+      ],
+      "sharingRole": "admin",
+      "sendDisabledReason": null,
+      "hasActiveRun": true,
+      "activeLeafEntryId": "66478b55-b8fd-4a8a-bff5-c8b97f0572b7"
+    },
+    "thinkingLevel": "low"
+  }
+}
