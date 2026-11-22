@@ -5,6 +5,7 @@ From the repository root: python3 tools/research_report.py > RESEARCH.md
 Only committed-evidence formats under runs/ are needed. No provider calls.
 """
 import argparse
+import html
 import json
 import math
 from pathlib import Path
@@ -123,6 +124,65 @@ def format_count(group, variant):
     texts = [e['final_text'] for _,e in group if e and isinstance(e.get('final_text'),str) and e['final_text'].strip()]
     return f'{sum(expected_format(text,variant) for text in texts)}/{len(texts)}' if texts else '미측정'
 
+def correct_subtotals(record):
+    """Return the number of correct running USD subtotals, or None when merchant prices are unavailable."""
+    prices = {}
+    for product in record.get('products',[]):
+        price = product.get('catalog_price') or {}
+        if (price.get('currency') != 'USD' or type(price.get('decimals')) is not int or price['decimals'] != 2
+                or type(price.get('minor_units')) is not int or price['minor_units'] < 0):
+            return None
+        prices[product['url']] = price['minor_units']
+    if len(prices) != 5:
+        return None
+    text = record['final_text']
+    urls, misleading = answer_links(text)
+    if misleading or len(urls) != 5 or set(urls) != set(prices) or '\x1e' in text or '\x1f' in text:
+        return 0
+
+    # Replace links with numbered markers so a subtotal stays attached to its own gift.
+    markers = {url:f'\x1e{i}\x1f' for i,url in enumerate(urls)}
+    def mark(match):
+        if match[1] or match[2]:
+            return ' '
+        return markers.get(html.unescape(match[4] or match[5]),' ')
+    masked = MARKDOWN_TOKEN.sub(mark,text)
+    for url in urls:
+        masked = masked.replace(url,markers[url])
+    expected = []
+    total = 0
+    for url in urls:
+        total += prices[url]
+        expected.append(total)
+    correct = 0
+    for paragraph in re.split(r'\n[ \t]*\n',masked):
+        for row in re.split(r'\n(?=[^\n]*\x1e)',paragraph):
+            fields = re.split(r'\x1e([0-4])\x1f',row)
+            for idx, after in zip(fields[1::2],fields[2::2]):
+                prefix = re.search(r'\bSubtotal\s*:?\s+([A-Za-z]{3})\s+',after,re.I)
+                if not prefix or prefix[1].upper() != 'USD':
+                    continue
+                amount = re.match(r'([+-]?\d[\d,.]*)(\w*)',after[prefix.end():])
+                if not amount or amount[2]:
+                    continue
+                value = amount[1].rstrip(',.')
+                if len(value) <= 30 and re.fullmatch(r'(?:\d+|\d{1,3}(?:,\d{3})+)\.\d{2}',value):
+                    cents = int(value.replace(',','').replace('.',''))
+                    if cents == expected[int(idx)]:
+                        correct += 1
+    return correct
+
+
+def subtotal_report(group):
+    recorded = [e for _,e in group if e is not None]
+    answered = [e for e in recorded if isinstance(e.get('final_text'),str) and e['final_text'].strip()]
+    counts = [correct_subtotals(e) for e in answered]
+    scored = [n for n in counts if n is not None]
+    label = f'**{scored.count(5)}/{len(scored)}건**' if scored else '**미측정**'
+    checks = f'개별 누적 금액은 {sum(scored)}/{5*len(scored)}개가 일치했다. ' if scored else ''
+    return (f'가격 계산에서 다섯 누적 합계가 모두 맞은 실행은 {label}으로 집계했다. {checks}'
+            f'오답 {len(scored)-scored.count(5)}건, 판매처 가격 근거 부족 {len(answered)-len(scored)}건, 최종 답변 없음 {len(recorded)-len(answered)}건이다. '
+            '공식 쇼핑 검증과 별도로 제출된 선물 순서대로 판매처 가격을 센트 단위로 더하고, 각 링크 다음의 첫 Subtotal USD 금액을 대조한다.')
 
 
 def render(repo):
@@ -131,7 +191,7 @@ def render(repo):
         '# 실시간 선물 쇼핑 TPS 실험', '',
         '같은 Cerebras Kimi K3.1 Pro로 실제 판매처에서 선물 다섯 개를 고른 요청을 비교했다. '
         '각 조건의 속도와 토큰 통계에는 쇼핑 검증을 통과한 실행만 포함한다.', '',
-        '| 실험 | 조건 | 유효/실행 확인 | 계획만 | 공식 평균 TPS 중앙값 / 최고 | 도구 / 최종 호출 TPS 중앙값 | 입력 / 캐시 읽기 / 캐시 쓰기 / 출력 토큰 합계 | 기록 |',
+        '| 실험 | 조건 | 유효/실행 확인 | 계획만 | 공식 평균 TPS 중앙값 / 최고 | 도구 / 최종 호출 TPS 중앙값 | 미캐시 입력 / 캐시 읽기 / 캐시 쓰기 / 출력 토큰 합계 | 기록 |',
         '|---|---|---:|---:|---:|---:|---:|---|',
     ]
     cache_hits = cache_known = measured_calls = 0
@@ -165,19 +225,20 @@ def render(repo):
     lines += ['', f'요청한 형식에 맞은 최종 응답은 표 **{table}**, 문장 **{prose}**로 집계했다. '
               '분모는 최종 답변이 남은 해당 형식의 실행 수다. 표는 Gift·Price 두 열과 서로 다른 상품 링크가 하나씩 든 다섯 행, '
               '문장은 목록·표 표식 없이 상품 링크가 하나씩 든 다섯 문장 또는 줄을 확인한다.',
+              '', subtotal_report(groups['research-price-total']),
               '', '온도는 0.2이며 추론 수준 비교군을 제외한 행은 모두 low 설정이다. '
               '실행 확인 수는 결과가 남은 요청 수이며 검증 실패도 포함한다. 계획만 남은 요청은 전송 여부를 알 수 없다. '
               '표의 대시는 미측정이고 0은 관측값이다. 반복해서 표시한 기준 행은 같은 실행을 참조한다.', '',
               '공식 평균은 한 실행에서 각 모델 호출의 서버 출력 토큰 수를 생성 시간으로 나눈 값의 산술평균이다. '
               '도구·최종 열은 각각 도구를 요청한 호출과 최종 답변 호출의 중앙값이다. '
-              '입력·캐시는 사용량이 기록된 호출의 합계이고 출력은 서버 생성 토큰 합계다. 기록 링크는 조건별 최고 유효 실행과 최근 결과를 가리킨다.',
+              '미캐시 입력은 사용량의 input, 캐시 읽기·쓰기는 각각 cacheRead·cacheWrite를 합산했다. 출력은 서버 생성 토큰 합계다. 기록 링크는 조건별 최고 유효 실행과 최근 결과를 가리킨다.',
               '', '## 캐시와 프리필', '']
     if cache_known:
         lines.append(f'표의 중복 조건을 한 번씩 집계한 결과, 유효 호출 {measured_calls}개 중 {cache_known}개에 입력·캐시 사용량이 남았다. '
                      f'그중 {cache_hits}개에서 캐시 읽기가 기록됐다.')
     else:
         lines.append('표의 유효 실행에는 아직 입력·캐시 사용량을 함께 기록한 호출이 없다.')
-    lines += ['', '프리필 시간과 첫 토큰 지연은 이 기록의 측정 항목에서 빠져 있다. '
+    lines += ['', '프리필 소요 시간과 첫 토큰까지의 지연(TTFT)은 측정되지 않았다. '
               '캐시 읽기가 입력 처리 시간을 줄였는지는 이 표로 추정할 수 없다. '
               '각 비교에 충분한 대조·실험 반복 쌍이 쌓이기 전에는 관측된 TPS 차이의 원인을 특정할 수 없다.']
     return '\n'.join(lines)+'\n'
