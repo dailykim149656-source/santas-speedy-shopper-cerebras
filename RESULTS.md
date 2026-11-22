@@ -4,12 +4,13 @@ Public commits are created at export time; use source plan mappings for original
 
 | Run | Displayed TPS | Verification | Media |
 | --- | ---: | --- | --- |
+| [D0062-synth-first-five](runs/9e52f8c0-dcae-4acc-bba1-5139caf0d13a/evidence.json) | 1049 | pending_video | media withheld pending review |
 | [D0061-synth-first-five-six](runs/42ce71ce-a705-4d6a-ace5-9346c958a3f2/evidence.json) | 738 | below_target | — |
 | [D0060-synth-first-five](runs/1fff9c7b-ec8c-45af-9295-32fd9c2b60f1/evidence.json) | 602 | rejected | — |
 | [D0059-synth-first-five](runs/6d264092-8437-4a39-959c-ef80c9e70eeb/evidence.json) | 641 | below_target | — |
 | [D0058-synth-links-temp-one](runs/9fe67598-bae9-4a31-90e4-6fa7786e43de/evidence.json) | 694 | below_target | — |
 | [D0057-synth-first-five](runs/40fd2fa7-57b9-4af1-9c1f-9af7a6cfbf26/evidence.json) | 791 | below_target | — |
-| [D0056-synth-first-five](runs/561ce393-5ab5-4fe7-9515-b7d60c3cd2d3/evidence.json) | 919 | pending_video | media withheld pending review |
+| [D0056-synth-first-five](runs/561ce393-5ab5-4fe7-9515-b7d60c3cd2d3/evidence.json) | 919 | video_superseded | hash retained after video deletion |
 | [D0055-synth-links-no-workspace](runs/df246b66-1882-4021-baf2-9da4e3a74b4e/evidence.json) | 612 | below_target | — |
 | [D0054-synth-first-five](runs/eb9dc7e4-9416-4b58-8355-3b088387cb6a/evidence.json) | — | rejected | — |
 | [D0053-synth-first-five](runs/644885b4-c3ae-467f-8147-0b4b4dce21c1/evidence.json) | 561 | rejected | — |
