@@ -4,6 +4,7 @@ Public commits are created at export time; use source plan mappings for original
 
 | Run | Displayed TPS | Verification | Media |
 | --- | ---: | --- | --- |
+| [D0019-source-order-top-p-045](runs/d09a8077-4d3e-4c18-bb20-24b9ee70fadd/evidence.json) | 544 | below_target | — |
 | [D0018-source-order-top-p-080](runs/2e5cce1a-a768-4b35-be62-ab67a309d06e/evidence.json) | 479 | below_target | — |
 | [D0017-wordpress-links](runs/a3ef0440-762c-4d8a-a557-aa845c62ce22/evidence.json) | 588 | below_target | — |
 | [D0016-source-order-compact](runs/6c9f5832-3022-472e-b5d6-78c22af41b84/evidence.json) | 541 | below_target | — |
