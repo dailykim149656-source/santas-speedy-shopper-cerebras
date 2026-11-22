@@ -10,7 +10,7 @@ Public commits are created at export time; use source plan mappings for original
 | [D0007-visible-receipt](runs/34bb53b4-bbc6-491d-a039-c801d4671d30/evidence.json) | 741 | rejected | not required / not published |
 | [A2](runs/4a2e1d7b-8bdd-44a6-8f25-840ff062c70b/evidence.json) | 578 | below_target | not required / not published |
 | [D0006-hardware-links](runs/4b58fd09-490a-47ca-8e9b-d8615111bb14/evidence.json) | 521 | rejected | not required / not published |
-| [D0012-price-cards](runs/64348773-2f18-4418-bd83-24b67f6c5e49/plan.json) | — | pending_plan | not required / not published |
+| [D0012-price-cards](runs/64348773-2f18-4418-bd83-24b67f6c5e49/evidence.json) | 571 | below_target | not required / not published |
 | [C1](runs/694ee975-2931-4496-af62-38fc6650d6a6/evidence.json) | 717 | below_target | not required / not published |
 | [D0008-paired-links-small](runs/698fe425-c02b-471a-a535-6c6520bc81e0/evidence.json) | 569 | below_target | not required / not published |
 | [B1](runs/6ab17693-d985-4325-a590-7ad94a9f57f3/evidence.json) | 679 | below_target | not required / not published |
