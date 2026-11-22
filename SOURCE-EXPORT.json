@@ -1140,6 +1140,26 @@
       "source_kind": "previously published reviewed post-run recording",
       "public_commit": "4d19e2aad036b49cc09c8cbb508bb870fccb0c8a",
       "source_sha256": "58f8786ba35f6bd68405df95a3c83b44b5724598e02fd73f516e248d076c8d5f"
+    },
+    "runs/e59bc099-20c7-41db-b7d7-7980567ac196/original.mp4": {
+      "source_kind": "run recording recovered from artifact cache, byte-matched to the original evidence",
+      "source_sha256": "a9535783bc054ddbc6059ce4bbd9d27174ce3045a06153c31bf864c6752ecc45"
+    },
+    "runs/e59bc099-20c7-41db-b7d7-7980567ac196/demo.mp4": {
+      "source_kind": "run recording recovered from artifact cache, byte-matched to the original evidence",
+      "source_sha256": "3b929f42a321bedadd3d8fc2f97ecbdf03112efc615eaf9be5a93d1cd52dfe3d"
+    },
+    "runs/465ba4e8-bfe2-4722-b473-7d0ee418ffb4/original.mp4": {
+      "source_kind": "run recording recovered from artifact cache, byte-matched to the original evidence",
+      "source_sha256": "0cb58974236d7f2d42055298222e223cb058999af171da129dde9c8aeb685dae"
+    },
+    "runs/465ba4e8-bfe2-4722-b473-7d0ee418ffb4/demo.mp4": {
+      "source_kind": "run recording recovered from artifact cache, byte-matched to the original evidence",
+      "source_sha256": "efa15ec8becadfb97fe83fe0ab8cb9a231a61b3ad586db18cd70cf24c1b3cdeb"
+    },
+    "runs/2fe4b0df-f98c-474f-9bb9-00ea69c7bab0/original.mp4": {
+      "source_kind": "run recording recovered from artifact cache, byte-matched to the original evidence",
+      "source_sha256": "3acf728fa0ecf16d76c315492f4bf92dfb243518312f1911e43480ed872ba793"
     }
   },
   "export_scope": "Source tree and working changes, run evidence, first-level QA reports and scripts per check, and referenced presentation clips. Generated fixtures, runtime state, caches, AppleDouble sidecars, internal bundles and private gateway traces stay local. Portable path substitutions apply to local reports. source_files values are SHA-256 of bytes before path substitution or plan mapping."
