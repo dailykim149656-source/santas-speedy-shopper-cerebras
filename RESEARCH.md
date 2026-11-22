@@ -15,7 +15,7 @@
 | AI Synthesis 작업공간 파일 | 기본 주입 | 3/6 | 0 | 826.7 / 845.9 | 845.6 / 639.9 | 9,063 / 12,288 / 0 / 1,245 | [7d4ff600](runs/7d4ff600-5be0-43be-a78a-d2ffdd36370d/evidence.json) · [fe3f0a6d](runs/fe3f0a6d-44cc-4443-9dc9-4c62e6382bb6/evidence.json) |
 | AI Synthesis 작업공간 파일 | 작업공간 파일 주입 끔 | 0/0 | 0 | — | — | — | — |
 | AI Synthesis 상품 선택 | 선택 기준 자유 | 3/6 | 0 | 826.7 / 845.9 | 845.6 / 639.9 | 9,063 / 12,288 / 0 / 1,245 | [7d4ff600](runs/7d4ff600-5be0-43be-a78a-d2ffdd36370d/evidence.json) · [fe3f0a6d](runs/fe3f0a6d-44cc-4443-9dc9-4c62e6382bb6/evidence.json) |
-| AI Synthesis 상품 선택 | 카탈로그 앞 5개 | 3/3 | 0 | 743.5 / 857.1 | 596.7 / 847.5 | 8,724 / 13,312 / 0 / 1,038 | [e7c9e231](runs/e7c9e231-6cdc-42d4-aa8f-f8fb809834f2/evidence.json) · [32d0c9ee](runs/32d0c9ee-14ff-4846-8a5f-1fbd2b278370/evidence.json) |
+| AI Synthesis 상품 선택 | 카탈로그 앞 5개 | 3/4 | 0 | 743.5 / 857.1 | 596.7 / 847.5 | 8,724 / 13,312 / 0 / 1,038 | [e7c9e231](runs/e7c9e231-6cdc-42d4-aa8f-f8fb809834f2/evidence.json) · [644885b4](runs/644885b4-c3ae-467f-8147-0b4b4dce21c1/evidence.json) |
 | AI Synthesis 샘플링 | 온도 0.2 | 3/6 | 0 | 826.7 / 845.9 | 845.6 / 639.9 | 9,063 / 12,288 / 0 / 1,245 | [7d4ff600](runs/7d4ff600-5be0-43be-a78a-d2ffdd36370d/evidence.json) · [fe3f0a6d](runs/fe3f0a6d-44cc-4443-9dc9-4c62e6382bb6/evidence.json) |
 | AI Synthesis 샘플링 | 온도 0.0 | 1/1 | 0 | 604.3 / 604.3 | 787.9 / 420.7 | 2,449 / 5,120 / 0 / 470 | [b93472cf](runs/b93472cf-4269-41b3-8a6e-d904e505325b/evidence.json) |
 | 판매처 2곳 | WordPress + RaspberryPi.dk | 7/7 | 0 | 683.7 / 789.4 | 933.9 / 462.7 | 21,253 / 30,720 / 0 / 4,771 | [32feb76b](runs/32feb76b-7050-4ea9-b567-988eacadb832/evidence.json) · [efb2dfa6](runs/efb2dfa6-a5ae-40cf-a992-2d80aa573f5c/evidence.json) |
