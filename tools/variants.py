@@ -109,6 +109,7 @@ FIRST_FIVE_VARIANTS = ('synth-first-five', 'synth-first-five-six', 'synth-first-
 # controls with these treatments to limit, but not eliminate, time confounding.
 PRIORITY_CONTROL = ('synth-first-five', .2, 'low')
 DIRECT_FETCH_ARM = ('synth-first-five-direct-fetch', .2, 'low')
+DIRECT_FETCH_VALID, DIRECT_FETCH_MAX_ATTEMPTS = 3, 5
 PRIORITY_ARMS = (('synth-first-five-agents-direct', .2, 'low'), ('synth-first-five-short', .2, 'low'),
                  ('synth-first-five-short-direct', .2, 'low'))
 PRIORITY_VALID, PRIORITY_MAX_ATTEMPTS = 5, 8
@@ -185,11 +186,12 @@ def choose(results):
         if r['arm'] in counts:
             adopted = r.get('valid') and r.get('method_valid') is not False
             counts[r['arm']].append(r.get('score') if adopted else None)
-    # Finish the already-planned single-variable comparison before the newer
-    # treatments. A pre-send failure adds no history row and retries this arm.
+    # Recheck the promising first-call result against adjacent control runs.
+    # A pre-send failure adds no history row and retries this arm.
     direct_attempts = counts[arm_key(DIRECT_FETCH_ARM)]
-    if len(direct_attempts) < 3 and not any(score is not None for score in direct_attempts):
-        return DIRECT_FETCH_ARM
+    if (len(direct_attempts) < DIRECT_FETCH_MAX_ATTEMPTS
+            and sum(score is not None for score in direct_attempts) < DIRECT_FETCH_VALID):
+        return PRIORITY_CONTROL if index % 2 else DIRECT_FETCH_ARM
     pending = priority_pending(counts)
     if pending:
         if index % 2:
