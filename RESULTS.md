@@ -4,6 +4,7 @@ Public commits are created at export time; use source plan mappings for original
 
 | Run | Displayed TPS | Verification | Media |
 | --- | ---: | --- | --- |
+| [D0014-recipient-guide](runs/167aaf78-f0ae-46cc-81e8-f03533c1229f/evidence.json) | 555 | below_target | not required / not published |
 | [D0001-native-links](runs/1c80bfa3-26ab-4b14-a000-dce76ef510c5/evidence.json) | 671 | below_target | not required / not published |
 | [D0010-kit-comparison](runs/23db4545-9646-4616-8732-7c72b1f3e3bb/evidence.json) | 478 | rejected | not required / not published |
 | [D0004-paired-links](runs/24a7ab2a-edd0-4deb-80d2-863b115f5647/evidence.json) | 664 | below_target | not required / not published |
@@ -19,5 +20,6 @@ Public commits are created at export time; use source plan mappings for original
 | [D0005-paired-links](runs/d0a7c1a0-1753-4a3d-91bd-d1ddd0293e87/evidence.json) | 605 | below_target | not required / not published |
 | [A1](runs/e12296bd-7243-48e2-98f5-380094a66777/evidence.json) | 559 | below_target | not required / not published |
 | [B2](runs/f35fa4e8-9f42-41a6-a543-2572167144d2/evidence.json) | 636 | below_target | not required / not published |
+| [D0013-source-order](runs/fc63223b-d2dd-4945-a67e-3a6c194b51b4/evidence.json) | 746 | below_target | not required / not published |
 
 Run `python3 tools/verify_run.py RUN_UUID` in this clone. A threshold result without reviewed media is pending, not a public verified winner.
