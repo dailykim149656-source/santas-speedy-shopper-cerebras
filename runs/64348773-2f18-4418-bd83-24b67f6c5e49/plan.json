@@ -1,0 +1,16 @@
+{
+  "id": "64348773-2f18-4418-bd83-24b67f6c5e49",
+  "label": "D0012-price-cards",
+  "sessionKey": "agent:main:shop-d0012-price-cards-64348773",
+  "variant": "price-cards",
+  "thinking": "low",
+  "temperature": 0.2,
+  "prompt": "Prepare five Christmas gift cards for a maker meetup using both live stock lists. Use web_fetch on the catalog URLs below and choose five different ideas. Each card shows the merchant name, exact product title, listed price in the original currency, and the full unshortened product-page URL. Put each URL on its own line so attendees can read it in a screen recording.\nhttps://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=64348773\nhttps://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=64348773",
+  "experiment": "price-cards|0.2|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "10e4dfadbdf3068aa24265588dd34780133e12db34c7186ed22de851775efbb9",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "source_plan_commit": "f8afc26180c6486759546fe6682dc7cdcdb9d6eb",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
