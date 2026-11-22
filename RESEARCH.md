@@ -19,7 +19,11 @@
 | AI Synthesis 후보 개수 | 첫 5개 · 후보 8개 | 10/13 | 0 | 812.7 / 1,049.4 | 616.8 / 869.3 | 26,754 / 44,032 / 0 / 3,428 | [9e52f8c0](runs/9e52f8c0-dcae-4acc-bba1-5139caf0d13a/evidence.json) · [a2a07285](runs/a2a07285-0cd9-451f-82e4-9e98d63ffdd6/evidence.json) |
 | AI Synthesis 후보 개수 | 첫 5개 · 후보 6개 | 1/1 | 0 | 737.6 / 737.6 | 718.1 / 757.1 | 2,208 / 4,096 / 0 / 321 | [42ce71ce](runs/42ce71ce-a705-4d6a-ace5-9346c958a3f2/evidence.json) |
 | AI Synthesis 도구 호출 지시 | 기준 | 10/13 | 0 | 812.7 / 1,049.4 | 616.8 / 869.3 | 26,754 / 44,032 / 0 / 3,428 | [9e52f8c0](runs/9e52f8c0-dcae-4acc-bba1-5139caf0d13a/evidence.json) · [a2a07285](runs/a2a07285-0cd9-451f-82e4-9e98d63ffdd6/evidence.json) |
-| AI Synthesis 도구 호출 지시 | 도구 인자 명시 | 0/0 | 0 | — | — | — | — |
+| AI Synthesis 도구 호출 지시 | 도구 인자 명시 | 0/1 | 1 | — | — | — | [a0ed98ba](runs/a0ed98ba-2594-47e0-a081-8ce21873afdf/evidence.json) · [계획](runs/07672f18-fe37-4972-8cf6-99a58c265d6c/plan.json) |
+| AI Synthesis 추론 억제 | 기준 | 10/13 | 0 | 812.7 / 1,049.4 | 616.8 / 869.3 | 26,754 / 44,032 / 0 / 3,428 | [9e52f8c0](runs/9e52f8c0-dcae-4acc-bba1-5139caf0d13a/evidence.json) · [a2a07285](runs/a2a07285-0cd9-451f-82e4-9e98d63ffdd6/evidence.json) |
+| AI Synthesis 추론 억제 | AGENTS.md 즉시 호출 | 0/0 | 0 | — | — | — | — |
+| AI Synthesis 추론 억제 | 짧은 요청 | 0/0 | 0 | — | — | — | — |
+| AI Synthesis 추론 억제 | 짧은 요청 + AGENTS.md | 0/0 | 0 | — | — | — | — |
 | AI Synthesis 샘플링 | 온도 0.2 | 3/6 | 0 | 826.7 / 845.9 | 845.6 / 639.9 | 9,063 / 12,288 / 0 / 1,245 | [7d4ff600](runs/7d4ff600-5be0-43be-a78a-d2ffdd36370d/evidence.json) · [fe3f0a6d](runs/fe3f0a6d-44cc-4443-9dc9-4c62e6382bb6/evidence.json) |
 | AI Synthesis 샘플링 | 온도 0.0 | 1/1 | 0 | 604.3 / 604.3 | 787.9 / 420.7 | 2,449 / 5,120 / 0 / 470 | [b93472cf](runs/b93472cf-4269-41b3-8a6e-d904e505325b/evidence.json) |
 | AI Synthesis 샘플링 | 온도 1.0 | 1/1 | 0 | 693.5 / 693.5 | 777.8 / 609.2 | 2,036 / 4,096 / 0 / 301 | [9fe67598](runs/9fe67598-bae9-4a31-90e4-6fa7786e43de/evidence.json) |
@@ -63,6 +67,9 @@
 - AI Synthesis · 카탈로그 앞 5개 / 선택 기준 자유 · -1.7% (반복 관측, 유효 10/3회)
 - AI Synthesis · 첫 5개 · 후보 6개 / 8개 · -9.2% (초기 관측, 유효 1/10회)
 - AI Synthesis · 도구 인자 명시 / 기준 지시 · 비교 대기 (유효 0/10회)
+- AI Synthesis · AGENTS.md 즉시 호출 / 기준 · 비교 대기 (유효 0/10회)
+- AI Synthesis · 짧은 요청 / 기준 · 비교 대기 (유효 0/10회)
+- AI Synthesis · 짧은 요청 + AGENTS.md / 기준 · 비교 대기 (유효 0/10회)
 - 답변 형식 · 표 / 문장 · +7.8% (초기 관측, 유효 1/1회)
 - 가격 계산 · 소계 포함 / 가격만 · 비교 대기 (유효 0/1회)
 - 카탈로그 · 판매처별 상품 4개 / 8개 · -0.8% (초기 관측, 유효 1/2회)
