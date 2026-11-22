@@ -15,8 +15,8 @@
 | AI Synthesis 작업공간 파일 | 기본 주입 | 3/6 | 0 | 826.7 / 845.9 | 845.6 / 639.9 | 9,063 / 12,288 / 0 / 1,245 | [7d4ff600](runs/7d4ff600-5be0-43be-a78a-d2ffdd36370d/evidence.json) · [fe3f0a6d](runs/fe3f0a6d-44cc-4443-9dc9-4c62e6382bb6/evidence.json) |
 | AI Synthesis 작업공간 파일 | 작업공간 파일 주입 끔 | 1/1 | 0 | 612.1 / 612.1 | 434.2 / 790.0 | 3,668 / 4,096 / 0 / 409 | [df246b66](runs/df246b66-1882-4021-baf2-9da4e3a74b4e/evidence.json) |
 | AI Synthesis 상품 선택 | 선택 기준 자유 | 3/6 | 0 | 826.7 / 845.9 | 845.6 / 639.9 | 9,063 / 12,288 / 0 / 1,245 | [7d4ff600](runs/7d4ff600-5be0-43be-a78a-d2ffdd36370d/evidence.json) · [fe3f0a6d](runs/fe3f0a6d-44cc-4443-9dc9-4c62e6382bb6/evidence.json) |
-| AI Synthesis 상품 선택 | 카탈로그 앞 5개 | 6/8 | 0 | 767.2 / 919.3 | 618.2 / 860.0 | 16,893 / 25,600 / 0 / 2,075 | [561ce393](runs/561ce393-5ab5-4fe7-9515-b7d60c3cd2d3/evidence.json) · [6d264092](runs/6d264092-8437-4a39-959c-ef80c9e70eeb/evidence.json) |
-| AI Synthesis 후보 개수 | 첫 5개 · 후보 8개 | 6/8 | 0 | 767.2 / 919.3 | 618.2 / 860.0 | 16,893 / 25,600 / 0 / 2,075 | [561ce393](runs/561ce393-5ab5-4fe7-9515-b7d60c3cd2d3/evidence.json) · [6d264092](runs/6d264092-8437-4a39-959c-ef80c9e70eeb/evidence.json) |
+| AI Synthesis 상품 선택 | 카탈로그 앞 5개 | 6/9 | 0 | 767.2 / 919.3 | 618.2 / 860.0 | 16,893 / 25,600 / 0 / 2,075 | [561ce393](runs/561ce393-5ab5-4fe7-9515-b7d60c3cd2d3/evidence.json) · [1fff9c7b](runs/1fff9c7b-ec8c-45af-9295-32fd9c2b60f1/evidence.json) |
+| AI Synthesis 후보 개수 | 첫 5개 · 후보 8개 | 6/9 | 0 | 767.2 / 919.3 | 618.2 / 860.0 | 16,893 / 25,600 / 0 / 2,075 | [561ce393](runs/561ce393-5ab5-4fe7-9515-b7d60c3cd2d3/evidence.json) · [1fff9c7b](runs/1fff9c7b-ec8c-45af-9295-32fd9c2b60f1/evidence.json) |
 | AI Synthesis 후보 개수 | 첫 5개 · 후보 6개 | 0/0 | 0 | — | — | — | — |
 | AI Synthesis 샘플링 | 온도 0.2 | 3/6 | 0 | 826.7 / 845.9 | 845.6 / 639.9 | 9,063 / 12,288 / 0 / 1,245 | [7d4ff600](runs/7d4ff600-5be0-43be-a78a-d2ffdd36370d/evidence.json) · [fe3f0a6d](runs/fe3f0a6d-44cc-4443-9dc9-4c62e6382bb6/evidence.json) |
 | AI Synthesis 샘플링 | 온도 0.0 | 1/1 | 0 | 604.3 / 604.3 | 787.9 / 420.7 | 2,449 / 5,120 / 0 / 470 | [b93472cf](runs/b93472cf-4269-41b3-8a6e-d904e505325b/evidence.json) |
