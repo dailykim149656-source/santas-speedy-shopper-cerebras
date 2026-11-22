@@ -1,0 +1,19 @@
+{
+  "id": "b93472cf-4269-41b3-8a6e-d904e505325b",
+  "label": "D0033-synth-links-temp-zero",
+  "sessionKey": "agent:main:shop-d0033-synth-links-temp-zero-b93472cf",
+  "variant": "synth-links-temp-zero",
+  "thinking": "low",
+  "temperature": 0.0,
+  "top_p": null,
+  "max_completion_tokens": null,
+  "video_threshold_tps": 1000,
+  "prompt": "Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.\nhttps://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=b93472cf",
+  "experiment": "synth-links-temp-zero|0|low",
+  "official_commit": "e40e9f7b7ec41ad3fa68181ad297db119e755171",
+  "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0",
+  "benchmark_sha256": "9b5304067ba87fc2bd245f89246871cc1857e8ac3d48e05fab19446017763af8",
+  "organizer_reproduction_request": "https://discord.com/channels/1085960591052644463/1573839018964029450/1573896905308774414",
+  "source_plan_commit": "d8499ce4c3d32258937210122642cdb7c3844712",
+  "publication_timing": "Public plan commit created at export time; use the source plan mapping for original chronology."
+}
