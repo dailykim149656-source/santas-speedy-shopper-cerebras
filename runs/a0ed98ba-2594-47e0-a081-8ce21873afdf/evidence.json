@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "a0ed98ba-2594-47e0-a081-8ce21873afdf",
+  "historical": false,
+  "private_raw_sha256": "4fbd2b4386817dc357dce42e8200b09e5d983d4bc5db0c516a9dca5777c58137",
+  "private_raw_bytes": 9543,
+  "startedWall": 1795328275816,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1049.4387840573918,
+  "requires_video": false,
+  "final_text": "",
+  "evidence_status": "validation_rejected",
+  "ended": {
+    "elapsedMs": 411274.311084,
+    "terminal": "aborted",
+    "time": 1795328687181
+  },
+  "score": {
+    "mean_exact_tps": 539.3764066670545,
+    "ui_rounded_tps": 539,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-a15e8fa1-d6d6-4388-a3de-0e959bf48985",
+      "timestamp": 1795328656222,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "timed_sample": true,
+      "usage": {
+        "input": 3826,
+        "output": 190,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 6064
+      },
+      "serverGeneration": {
+        "completionMs": 352.258641,
+        "outputTokens": 190
+      },
+      "tool_inputs": [
+        {
+          "id": "1962cedec",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=a0ed98ba"
+          },
+          "args": {}
+        }
+      ]
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "1962cedec",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=eurorack&per_page=8&stock_status=instock&_fields=name,permalink&_run=a0ed98ba",
+      "accepted": false,
+      "reasons": [
+        "unsuccessful or out-of-order retail tool result"
+      ]
+    }
+  ],
+  "products": [],
+  "plan_commit": "8177adbf6943388efe967869fe12bc1c5c54f928",
+  "source_plan_commit": "069d3e2aa880f06e129cdb1dac0b84d4c0553cf8",
+  "source_result_commit": "c0d646ce044cd2dc1622d2052896106422349c9c",
+  "publication_timing": "Public result commit created at export time; use source mappings for original chronology."
+}
