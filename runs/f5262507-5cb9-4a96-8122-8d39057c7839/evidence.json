@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "f5262507-5cb9-4a96-8122-8d39057c7839",
+  "historical": false,
+  "private_raw_sha256": "237a95302cd30275aec99f2158109009ee4f05ce179e458b9e883f204bc9f2d1",
+  "private_raw_bytes": 5219,
+  "startedWall": 1795320669124,
+  "requires_video": false,
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "evidence_status": "unscored_failed_run",
+  "ended": {
+    "elapsedMs": 143545.62241699998,
+    "terminal": "error",
+    "time": 1795320812716
+  },
+  "score": {
+    "mean_exact_tps": null,
+    "ui_rounded_tps": null,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795320812032,
+      "stopReason": "error",
+      "message_index": 1,
+      "timed_sample": false,
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "serverGeneration": {},
+      "tool_inputs": []
+    }
+  ],
+  "retail_sources": [],
+  "products": [],
+  "plan_commit": "5a23e96893a79ab8b0f1b2f284aaa626485ea470",
+  "source_plan_commit": "a8e613802ba745ba26f730780759ebd3d8a37ce8",
+  "source_result_commit": "903465ef867466269e23f4b79b231c7001942781",
+  "publication_timing": "Public result commit created at export time; use source mappings for original chronology."
+}
