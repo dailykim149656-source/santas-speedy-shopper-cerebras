@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "id": "ad73a718-76b4-4d9e-8113-082f766e4e94",
+  "historical": false,
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "private_raw_sha256": "0723a601a9241fbf772a9f6d7ac691d6b444c54b47493f7d51f03da02b24fc56",
+  "private_raw_bytes": 19343,
+  "startedWall": 1795339409903,
+  "ended": {
+    "elapsedMs": 430003.65375,
+    "terminal": "aborted",
+    "time": 1795339862170
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-2d19a531-ed13-4391-a851-52044cac19b7",
+      "timestamp": 1795339630023,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 770.077136,
+        "outputTokens": 619
+      },
+      "usage": {
+        "input": 5861,
+        "output": 619,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 8528
+      },
+      "tool_inputs": [
+        {
+          "id": "9d69bb959",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "a96f295ea",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "da81c43cc",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "3278e9083",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "7b215812a",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 803.8155803654453,
+    "ui_rounded_tps": 804,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "9d69bb959",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+      "accepted": false,
+      "reasons": [
+        "unsuccessful or out-of-order retail tool result"
+      ]
+    },
+    {
+      "tool_call_id": "a96f295ea",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+      "accepted": false,
+      "reasons": [
+        "unsuccessful or out-of-order retail tool result"
+      ]
+    },
+    {
+      "tool_call_id": "da81c43cc",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+      "accepted": false,
+      "reasons": [
+        "unsuccessful or out-of-order retail tool result"
+      ]
+    },
+    {
+      "tool_call_id": "3278e9083",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+      "accepted": false,
+      "reasons": [
+        "unsuccessful or out-of-order retail tool result"
+      ]
+    },
+    {
+      "tool_call_id": "7b215812a",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=cable&per_page=1&stock_status=instock&_fields=name,permalink&_run=ad73a718",
+      "accepted": false,
+      "reasons": [
+        "unsuccessful or out-of-order retail tool result"
+      ]
+    }
+  ],
+  "products": [],
+  "requires_video": false,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1301.275477944986,
+  "final_text": "",
+  "evidence_status": "validation_rejected",
+  "source_plan_commit": "e1fee09709be0020a5dc0e105567aeb7b44fbd2b",
+  "source_record_sha256": "1be253157273d876311f4d813f964d635cbfb022d1653d29e34cc60d2852bb0c"
+}

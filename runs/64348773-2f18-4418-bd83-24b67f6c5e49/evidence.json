@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "id": "64348773-2f18-4418-bd83-24b67f6c5e49",
+  "historical": false,
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "private_raw_sha256": "ce1e2866f0ec73aee51db02227110cffa8231b352e9dadce8be6998a0a0f2a44",
+  "private_raw_bytes": 23975,
+  "startedWall": 1795318360841,
+  "ended": {
+    "elapsedMs": 107909.569458,
+    "terminal": "final",
+    "time": 1795318468777
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-2102350b-e7d3-4a50-984b-468e678ed1bf",
+      "timestamp": 1795318407830,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 396.03945,
+        "outputTokens": 278
+      },
+      "usage": {
+        "input": 2035,
+        "output": 278,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4361
+      },
+      "tool_inputs": [
+        {
+          "id": "d8e7e5bd5",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=64348773",
+            "extractMode": "text",
+            "maxChars": 30000
+          },
+          "args": {}
+        },
+        {
+          "id": "cb48c4f61",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=64348773",
+            "extractMode": "text",
+            "maxChars": 30000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-44f608d8-2f77-4552-8093-e4c00cfeb566",
+      "timestamp": 1795318452839,
+      "stopReason": "stop",
+      "message_index": 4,
+      "serverGeneration": {
+        "completionMs": 1077.6516000000001,
+        "outputTokens": 474
+      },
+      "usage": {
+        "input": 5032,
+        "output": 474,
+        "cacheRead": 3072,
+        "cacheWrite": 0,
+        "totalTokens": 8578
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 570.8977904793085,
+    "ui_rounded_tps": 571,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "d8e7e5bd5",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=64348773",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:33:40.845Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+        "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+        "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+        "https://mercantile.wordpress.org/product/wapuu-keychain/",
+        "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/"
+      ]
+    },
+    {
+      "tool_call_id": "cb48c4f61",
+      "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=64348773",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T03:33:41.427Z",
+      "cached": false,
+      "products": [
+        "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+        "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+        "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+        "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+        "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+        "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+        "https://raspberrypi.dk/produkt/raspberry-pi-5-starter-kit/",
+        "https://raspberrypi.dk/produkt/raspberry-pi-5-desktop-kit/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "catalog_name": "Officiel Raspberry Pi 500+ Desktop Kit",
+      "source_tool_call_id": "cb48c4f61",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "html_bytes_read": 303939,
+      "html_sha256": "fe2ed73800b9fba2f3e14af41829df757f6b414d462abc67d115d0ed06fe2d27",
+      "checked_at": "2026-11-22T03:34:34.188354+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Officiel Raspberry Pi 500+ Desktop Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "catalog_name": "Waveshare CM5 PoE Mini-Computer Kit",
+      "source_tool_call_id": "cb48c4f61",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "html_bytes_read": 311823,
+      "html_sha256": "7f4e9babe86b4926d82bab89930cf9464a92b72f30589d975fe3219406beac0e",
+      "checked_at": "2026-11-22T03:34:34.543088+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Waveshare CM5 PoE Mini-Computer Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+      "catalog_name": "Officiel Raspberry Pi 500 Desktop Kit",
+      "source_tool_call_id": "cb48c4f61",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+      "html_bytes_read": 311034,
+      "html_sha256": "cd49e5b93387cc7b3e01d59ca871a1953ee114b48f6d34697b96c261d1e8cee0",
+      "checked_at": "2026-11-22T03:34:34.415809+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Officiel Raspberry Pi 500 Desktop Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "catalog_name": "Gone Coding Ceramic Mug",
+      "source_tool_call_id": "d8e7e5bd5",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "html_bytes_read": 380151,
+      "html_sha256": "16371e2863a321c8c83da211558a5259520e4f33eadbb096a4bdb1d165c26701",
+      "checked_at": "2026-11-22T03:34:33.577108+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "Gone Coding Ceramic Mug – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "catalog_name": "CTRL Task Pad",
+      "source_tool_call_id": "d8e7e5bd5",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "html_bytes_read": 316418,
+      "html_sha256": "53cb06d94762f274fcb92a2361e5f53af73905482eb980621fa689ca0cf97c74",
+      "checked_at": "2026-11-22T03:34:32.693122+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "CTRL Task Pad – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": false,
+  "final_text": "## 🎄 Christmas Gift Card 1\n**Merchant:** RaspberryPi.dk  \n**Product:** Officiel Raspberry Pi 500+ Desktop Kit  \n**Listed price:** 2.499,00 kr. DKK  \nhttps://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/\n\n## 🎄 Christmas Gift Card 2\n**Merchant:** RaspberryPi.dk  \n**Product:** Waveshare CM5 PoE Mini-Computer Kit  \n**Listed price:** 399,00 kr. DKK  \nhttps://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/\n\n## 🎄 Christmas Gift Card 3\n**Merchant:** RaspberryPi.dk  \n**Product:** Officiel Raspberry Pi 500 Desktop Kit  \n**Listed price:** 1.649,00 kr. DKK  \nhttps://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/\n\n## 🎄 Christmas Gift Card 4\n**Merchant:** WordPress Mercantile  \n**Product:** Gone Coding Ceramic Mug  \n**Listed price:** ₩16,200 KRW  \nhttps://mercantile.wordpress.org/product/wordpress-gone-coding-mug/\n\n## 🎄 Christmas Gift Card 5\n**Merchant:** WordPress Mercantile  \n**Product:** CTRL Task Pad  \n**Listed price:** ₩16,200 KRW  \nhttps://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+  "evidence_status": "below_threshold_recorded",
+  "source_plan_commit": "f8afc26180c6486759546fe6682dc7cdcdb9d6eb",
+  "source_record_sha256": "ffab170cbae2ec9f2163034a6388a60aea6de057a1ca14dd42798b477d169b02"
+}

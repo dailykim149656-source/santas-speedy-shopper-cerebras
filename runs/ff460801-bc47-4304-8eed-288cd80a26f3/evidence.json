@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "id": "ff460801-bc47-4304-8eed-288cd80a26f3",
+  "historical": false,
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "private_raw_sha256": "c65ab6e1ed206df3983a4c959a330503f82454b371c10cfb2629418f88b5914d",
+  "private_raw_bytes": 20817,
+  "startedWall": 1795340000140,
+  "ended": {
+    "elapsedMs": 188282.255708,
+    "terminal": "final",
+    "time": 1795340188478
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-9dabc515-15f6-4a85-89d5-f8d6efab99bc",
+      "timestamp": 1795340057729,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 781.6323,
+        "outputTokens": 583
+      },
+      "usage": {
+        "input": 2328,
+        "output": 583,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 4959
+      },
+      "tool_inputs": [
+        {
+          "id": "bf94fe7e4",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "68f60dc22",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "4277d7335",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "e91bd3bea",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        },
+        {
+          "id": "9da0fbf63",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=vca&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+            "extractMode": "text",
+            "maxChars": 4000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-a0257a42-63a5-4da8-8bc5-75bf60db45a6",
+      "timestamp": 1795340153548,
+      "stopReason": "stop",
+      "message_index": 7,
+      "serverGeneration": {
+        "completionMs": 217.14632,
+        "outputTokens": 234
+      },
+      "usage": {
+        "input": 5370,
+        "output": 234,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 7652
+      },
+      "tool_inputs": [],
+      "timed_sample": true
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 911.7447021862286,
+    "ui_rounded_tps": 912,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "bf94fe7e4",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=filter&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:34:27.918Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+      ]
+    },
+    {
+      "tool_call_id": "68f60dc22",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=mixer&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:34:27.911Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+      ]
+    },
+    {
+      "tool_call_id": "4277d7335",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=oscillator&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:34:27.823Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+      ]
+    },
+    {
+      "tool_call_id": "e91bd3bea",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=echo&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:34:27.939Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+      ]
+    },
+    {
+      "tool_call_id": "9da0fbf63",
+      "url": "https://aisynthesis.com/wp-json/wc/store/v1/products?search=vca&per_page=1&stock_status=instock&_fields=name,permalink&_run=ff460801",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T09:34:27.898Z",
+      "cached": false,
+      "products": [
+        "https://aisynthesis.com/product/ai007-quad-vca-mixer/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "catalog_name": "AI024 Eurorack X Filter",
+      "source_tool_call_id": "bf94fe7e4",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "html_bytes_read": 477282,
+      "html_sha256": "0ec1db5c74c1a635f9fcfc7d30ec08e5d8e19b5a17a5ed735945f799c39df008",
+      "checked_at": "2026-11-22T09:36:34.031495+00:00",
+      "canonical": "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+      "merchant": "aisynthesis.com",
+      "title": "AI024 Eurorack X Filter",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "catalog_name": "AI028 Voltage Controlled Matrix Mixer",
+      "source_tool_call_id": "68f60dc22",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "html_bytes_read": 490732,
+      "html_sha256": "2eb544957891e972e6e30365ff53ab14cdd4b41f75831c0236e8b9e3b64e126c",
+      "checked_at": "2026-11-22T09:36:33.702554+00:00",
+      "canonical": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+      "merchant": "aisynthesis.com",
+      "title": "AI028 Voltage Controlled Matrix Mixer",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "catalog_name": "AI011 Analog Voltage Controlled Oscillator",
+      "source_tool_call_id": "4277d7335",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "html_bytes_read": 509184,
+      "html_sha256": "55c8390d87b0e5e3e24102515341e6822afc9ee35bb60a8b00adb06d17245d0d",
+      "checked_at": "2026-11-22T09:36:34.243732+00:00",
+      "canonical": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+      "merchant": "aisynthesis.com",
+      "title": "AI011 Analog Voltage Controlled Oscillator",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "catalog_name": "AI016 Eurorack Tape Echo Interface",
+      "source_tool_call_id": "e91bd3bea",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "html_bytes_read": 515260,
+      "html_sha256": "72065abd56b8da1410a0f317ba8ecfe42a07aa2bccc3d7383f58818502bda877",
+      "checked_at": "2026-11-22T09:36:34.289467+00:00",
+      "canonical": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+      "merchant": "aisynthesis.com",
+      "title": "AI016 Eurorack Tape Echo Interface",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://aisynthesis.com/product/ai007-quad-vca-mixer/",
+      "catalog_name": "AI007 Quad VCA Mixer",
+      "source_tool_call_id": "9da0fbf63",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://aisynthesis.com/product/ai007-quad-vca-mixer/",
+      "html_bytes_read": 488701,
+      "html_sha256": "fa95986986c49f92dfbbba03f81d724d0794c9f2c45806ba9a6bf27044c01417",
+      "checked_at": "2026-11-22T09:36:33.764437+00:00",
+      "canonical": "https://aisynthesis.com/product/ai007-quad-vca-mixer/",
+      "merchant": "aisynthesis.com",
+      "title": "AI007 Quad VCA Mixer",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "requires_video": true,
+  "video_threshold_tps": 900,
+  "prior_verified_mean_tps": 1301.275477944986,
+  "final_text": "1. [AI024 Eurorack X Filter](https://aisynthesis.com/product/ai024-eurorack-x-filter/)\n2. [AI028 Voltage Controlled Matrix Mixer](https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/)\n3. [AI011 Analog Voltage Controlled Oscillator](https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/)\n4. [AI016 Eurorack Tape Echo Interface](https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/)\n5. [AI007 Quad VCA Mixer](https://aisynthesis.com/product/ai007-quad-vca-mixer/)",
+  "media": {
+    "original.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "200.800000"
+        }
+      },
+      "sha256": "457391e05eee81bbf686290a00e50804dd100f409f6a91120e94c74c712ca05e",
+      "bytes": 2751384
+    },
+    "demo.mp4": {
+      "ffprobe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1600,
+            "height": 1200,
+            "side_data_list": [
+              {}
+            ]
+          }
+        ],
+        "format": {
+          "duration": "55.000000"
+        }
+      },
+      "sha256": "b0c56decb741f644a54dfe99d67e74c45aae0059a6a21927c84c1df8125fc05c",
+      "bytes": 810786
+    },
+    "final.png": {
+      "sha256": "08633628ab2ebe00a05a29691df82d9c42260a482a1712437d146ea230893341",
+      "bytes": 237796
+    },
+    "attestation": {
+      "run_id": "ff460801-bc47-4304-8eed-288cd80a26f3",
+      "full_run": true,
+      "authless": true,
+      "rehearsal": false,
+      "qualifying": true,
+      "final_ui_tps": 912,
+      "readyAt": "2026-11-22T09:33:19.744Z",
+      "capture_ready": {
+        "readyAt": "2026-11-22T09:33:19.744Z",
+        "sessionKey": "agent:main:shop-d6005-exp2k-call0-zero-think-ff460801",
+        "capture": "owned-local-viewport",
+        "before_send": true,
+        "blank_initial_score": true
+      },
+      "verified_product_urls_seen": [
+        "https://aisynthesis.com/product/ai024-eurorack-x-filter/",
+        "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/",
+        "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/",
+        "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/",
+        "https://aisynthesis.com/product/ai007-quad-vca-mixer/"
+      ]
+    },
+    "viewport-evidence.json": {
+      "sha256": "2b0e6d0a480d4b3216290e2d2f0a30738e34cd4341fb9d16562bcb71d736d35f",
+      "bytes": 2700,
+      "proof": {
+        "schema_version": 1,
+        "verified": true,
+        "finishSeconds": 195.012498,
+        "demoStartSeconds": 145.794825583,
+        "score": {
+          "originalFromSeconds": 195.048707708,
+          "originalToSeconds": 200.754825583,
+          "clipFromSeconds": 49.253882125000004,
+          "clipToSeconds": 54.96,
+          "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+          "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+          "mean": 912
+        },
+        "links": [
+          {
+            "originalFromSeconds": 195.048707708,
+            "originalToSeconds": 200.754825583,
+            "clipFromSeconds": 49.253882125000004,
+            "clipToSeconds": 54.96,
+            "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "url": "https://aisynthesis.com/product/ai024-eurorack-x-filter/"
+          },
+          {
+            "originalFromSeconds": 195.048707708,
+            "originalToSeconds": 200.754825583,
+            "clipFromSeconds": 49.253882125000004,
+            "clipToSeconds": 54.96,
+            "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "url": "https://aisynthesis.com/product/ai028-voltage-controlled-matrix-mixer/"
+          },
+          {
+            "originalFromSeconds": 195.048707708,
+            "originalToSeconds": 200.754825583,
+            "clipFromSeconds": 49.253882125000004,
+            "clipToSeconds": 54.96,
+            "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "url": "https://aisynthesis.com/product/ai011-voltage-controlled-oscillator/"
+          },
+          {
+            "originalFromSeconds": 195.048707708,
+            "originalToSeconds": 200.754825583,
+            "clipFromSeconds": 49.253882125000004,
+            "clipToSeconds": 54.96,
+            "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "url": "https://aisynthesis.com/product/ai016-eurorack-tape-echo-interface/"
+          },
+          {
+            "originalFromSeconds": 195.048707708,
+            "originalToSeconds": 200.754825583,
+            "clipFromSeconds": 49.253882125000004,
+            "clipToSeconds": 54.96,
+            "firstFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "lastFrameSha256": "d5232d34d0d7ead31c2cfbdc57e18c6e791b8ae69da7ace93c6b842693261b29",
+            "url": "https://aisynthesis.com/product/ai007-quad-vca-mixer/"
+          }
+        ]
+      }
+    }
+  },
+  "evidence_status": "video_superseded",
+  "video_superseded_by": "a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51",
+  "source_plan_commit": "cfb229a6f493413ebf59e5c76ec383b564ce3826",
+  "source_record_sha256": "305880dbe6bfebca5ee7ae3c4c4e8432745d507d1bf6236e0c0d0f94a6d31fc8"
+}

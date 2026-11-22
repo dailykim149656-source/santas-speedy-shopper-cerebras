@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "aborted_before_send",
+  "id": "aea942a5-fc5a-4be7-a9a1-ea5e1d3601a0",
+  "label": "D5021-synth-five-categories-cap-4000",
+  "sessionKey": "agent:main:shop-d5021-synth-five-categories-cap-4000-aea942a5",
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "runner_sha256": "9db37218c1929aa564a4b23f68684dc033169e8281a64c091dfea3e666c645f7",
+  "private_sources_sha256": {
+    "run.json": "800d4a5cfb6739f97bbcf021a4e1836832cb3688df7cbf750f7a3ea55a423403",
+    "run.log": "ab79f13f0b829eadf884ee2f6e9c05b26c9bf3fa2f1f9cd6569921474e302802",
+    "video.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cause_class": "RuntimeError",
+  "sealed_at": "2026-11-22T07:59:40.741616+00:00",
+  "source_plan_commit": "24ae542213308838860ada0c2d6fe05d07ce1c45",
+  "source_record_sha256": "63edd09a5a169cfa67b5697841a979cd4d3c1f7df34a0eba76b9f2d3eda189d3"
+}

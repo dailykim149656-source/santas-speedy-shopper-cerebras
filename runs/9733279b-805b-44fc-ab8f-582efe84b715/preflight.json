@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "aborted_before_send",
+  "id": "9733279b-805b-44fc-ab8f-582efe84b715",
+  "label": "D0073-synth-first-five",
+  "sessionKey": "agent:main:shop-d0073-synth-first-five-9733279b",
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "runner_sha256": "139ba338cd1d8809e02471263b983b23387a235e94e9eea06e39041e20fe32b1",
+  "private_sources_sha256": {
+    "run.json": "e98771b84e82de5f77a1e8382fe9dfb0cf15365d04c0d7a2c92a657fa972fc58",
+    "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "video.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "error.json": "2b07ab059487b66371ec232a6383143e1b694cd4d5948bb24e2f6eed73ffb7f8"
+  },
+  "cause_class": "RuntimeError",
+  "sealed_at": "2026-11-22T06:47:20.570389+00:00",
+  "source_plan_commit": "ec4fde5f112e0a29d6f22039db70c1d176cc63a2",
+  "source_record_sha256": "47297b26a20eb5b9f29045a5eadff07b95bf930d1a56e08e110e085123d774ac"
+}

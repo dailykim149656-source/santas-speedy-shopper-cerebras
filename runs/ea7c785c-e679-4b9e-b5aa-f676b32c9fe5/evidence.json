@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "id": "ea7c785c-e679-4b9e-b5aa-f676b32c9fe5",
+  "historical": false,
+  "plan_commit": "690381e0c0907fffdead6e492ae542bbb8530c7f",
+  "private_raw_sha256": "16582e312739c8f6d460073996ea9c8d587bb373e68854c3f030a77a15c1db97",
+  "private_raw_bytes": 25291,
+  "startedWall": 1795320104363,
+  "ended": {
+    "elapsedMs": 211350.288791,
+    "terminal": "error",
+    "time": 1795320315758
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-c9bf658e-015f-4eb4-978f-09fca9377d5a",
+      "timestamp": 1795320107351,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "serverGeneration": {
+        "completionMs": 356.683791,
+        "outputTokens": 235
+      },
+      "usage": {
+        "input": 727,
+        "output": 235,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 3010
+      },
+      "tool_inputs": [
+        {
+          "id": "9942e48a0",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=ea7c785c",
+            "extractMode": "text",
+            "maxChars": 20000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-82e833a7-ef8f-4820-9d67-bf8b9e010f68",
+      "timestamp": 1795320182149,
+      "stopReason": "toolUse",
+      "message_index": 3,
+      "serverGeneration": {
+        "completionMs": 1412.2858760000001,
+        "outputTokens": 540
+      },
+      "usage": {
+        "input": 2853,
+        "output": 540,
+        "cacheRead": 2048,
+        "cacheWrite": 0,
+        "totalTokens": 5441
+      },
+      "tool_inputs": [
+        {
+          "id": "b188d2800",
+          "name": "web_fetch",
+          "arguments": {
+            "url": "https://open.er-api.com/v6/latest/KRW",
+            "extractMode": "text",
+            "maxChars": 12000
+          },
+          "args": {}
+        }
+      ],
+      "timed_sample": true
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "timestamp": 1795320315146,
+      "stopReason": "error",
+      "message_index": 5,
+      "serverGeneration": {},
+      "usage": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "totalTokens": 0
+      },
+      "tool_inputs": [],
+      "timed_sample": false
+    }
+  ],
+  "score": {
+    "mean_exact_tps": 520.602859798871,
+    "ui_rounded_tps": 521,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": false,
+    "status": "rejected",
+    "target_met": false,
+    "reject_reasons": [
+      "run has no successful final terminal event",
+      "run has no successful final assistant text",
+      "assistant call missing response identity or has unsuccessful stop",
+      "assistant call missing valid serverGeneration",
+      "final must contain exactly five distinct product links",
+      "five independent merchant product GET verifications did not pass"
+    ],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "retail_sources": [
+    {
+      "tool_call_id": "9942e48a0",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=8&stock_status=instock&_fields=name,permalink,prices&_run=ea7c785c",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T04:02:13.558Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+        "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+        "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/",
+        "https://mercantile.wordpress.org/product/wapuu-keychain/",
+        "https://mercantile.wordpress.org/product/wordpress-gone-coding-mug/"
+      ]
+    },
+    {
+      "tool_call_id": "b188d2800",
+      "url": "https://open.er-api.com/v6/latest/KRW",
+      "accepted": false,
+      "reasons": [
+        "retail payload URL does not match allowed tool request"
+      ],
+      "status": 200,
+      "fetched_at": "2026-11-22T04:03:47.695Z",
+      "cached": false
+    }
+  ],
+  "products": [],
+  "requires_video": false,
+  "final_text": "⚠️ The AI service needs a short break. Please try again in a few minutes.",
+  "evidence_status": "validation_rejected",
+  "source_plan_commit": "e0ede402198c155aaaed7084272bc86b30a35370",
+  "source_record_sha256": "c4e46c9a28508a4495452cf59f26f67221b016974527c6b7f171befa844d169d"
+}
