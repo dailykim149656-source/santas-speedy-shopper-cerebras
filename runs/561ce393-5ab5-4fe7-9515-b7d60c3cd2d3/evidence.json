@@ -9,7 +9,8 @@
   "prior_verified_mean_tps": 857.0772876781965,
   "requires_video": true,
   "final_text": "1. [AI250 Eurorack BXR](https://aisynthesis.com/product/ai250-eurorack-bxr/)\n2. [Eurorack High Power Supply](https://aisynthesis.com/product/eurorack-high-power-supply/)\n3. [AI024 Eurorack X Filter](https://aisynthesis.com/product/ai024-eurorack-x-filter/)\n4. [AI012 Eurorack Wave Animator](https://aisynthesis.com/product/ai012-eurorack-wave-animator/)\n5. [AI106 West Coast Eurorack Mixer](https://aisynthesis.com/product/ai106-west-coast-eurorack-mixer/)",
-  "evidence_status": "provisional_capture_required",
+  "evidence_status": "video_superseded",
+  "video_superseded_by": "9e52f8c0-dcae-4acc-bba1-5139caf0d13a",
   "ended": {
     "elapsedMs": 98379.59233300001,
     "terminal": "final",
@@ -216,7 +217,6 @@
     }
   ],
   "media": {},
-  "media_error": "media withheld pending review",
   "media_withheld": [
     {
       "name": "original.mp4",
@@ -241,6 +241,6 @@
   ],
   "plan_commit": "0331ee3175df982c61fcd2fe0ab18857e8dc9b76",
   "source_plan_commit": "4d312230127ce385cbb7b09af48cd77e22025c5a",
-  "source_result_commit": "66275f2cc6f0c99a3bf97df8098033bd3be3327f",
+  "source_result_commit": "b29732747feebda7c60331d1ac5f338d0ea2d466",
   "publication_timing": "Public result commit created at export time; use source mappings for original chronology."
 }
