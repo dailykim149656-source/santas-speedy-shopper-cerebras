@@ -152,7 +152,11 @@ def verify(repo, ident, plan, raw):
         check_products(run,fetches)
     target = bool(valid and ui is not None and mean > 2000 and ui > 2000)
     require(run['validation']['target_met'] is target,'target claim differs from measurements')
-    threshold = ui is not None and ui >= 1700
+    # Earlier records used the original threshold without an explicit field.
+    video_threshold = run.get('video_threshold_tps',1700)
+    require(type(video_threshold) is int and video_threshold > 0,'invalid recorded video threshold')
+    require(plan.get('video_threshold_tps',video_threshold) == video_threshold,'video threshold differs from the committed plan')
+    threshold = ui is not None and ui >= video_threshold
     require(run['requires_video'] is threshold,'video threshold mismatch')
     media = run.get('media',{})
     for asset in MEDIA:
