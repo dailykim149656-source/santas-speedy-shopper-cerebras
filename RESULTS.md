@@ -4,6 +4,7 @@ Public commits are created at export time; use source plan mappings for original
 
 | Run | Displayed TPS | Verification | Media |
 | --- | ---: | --- | --- |
+| [D0071-synth-first-five-direct-fetch](runs/7bd1e221-bcdc-4606-9826-28d82d564faa/evidence.json) | 561 | below_target | — |
 | [D0070-synth-first-five](runs/4799b3be-cd06-4ace-845d-fce9880aa269/evidence.json) | 734 | below_target | — |
 | [D0069-synth-first-five-direct-fetch](runs/0b200914-fc24-4535-a570-e3ace6593ac4/evidence.json) | 858 | below_target | — |
 | [D0068-synth-first-five-direct-fetch](runs/a0ed98ba-2594-47e0-a081-8ce21873afdf/evidence.json) | 539 | rejected | — |
