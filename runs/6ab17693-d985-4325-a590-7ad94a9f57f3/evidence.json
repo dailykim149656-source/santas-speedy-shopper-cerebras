@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "id": "6ab17693-d985-4325-a590-7ad94a9f57f3",
+  "historical": true,
+  "private_raw_sha256": "ca487e8d62e73e277284c5a074c487bf9094efac397f739e428b835b795abea3",
+  "private_raw_bytes": 26363,
+  "startedWall": 1795315321587,
+  "requires_video": false,
+  "final_text": "1. [CTRL Task Pad](https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/)\n2. [Officiel Raspberry Pi 500+ Desktop Kit](https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/)\n3. [Waveshare CM5 PoE Mini-Computer Kit](https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/)\n4. [Compute Blade Starter Kit](https://raspberrypi.dk/produkt/compute-blade-starter-kit/)\n5. [Home Assistant – Raspberry Pi 5 Starter Kit](https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/)",
+  "evidence_status": "below_threshold_recorded",
+  "ended": {
+    "elapsedMs": 9166.826583000002,
+    "terminal": "final",
+    "time": 1795315330754
+  },
+  "score": {
+    "mean_exact_tps": 679.4057958885588,
+    "ui_rounded_tps": 679,
+    "official_patch_sha256": "c964a28808c8d9e33aaaa2897dea951e595dd35c2d4047484eb6e5e97059c9c0"
+  },
+  "validation": {
+    "valid": true,
+    "status": "valid_below_target",
+    "target_met": false,
+    "reject_reasons": [],
+    "target_reasons": [
+      "exact mean and rounded UI must both be strictly greater than 2000 TPS"
+    ]
+  },
+  "calls": [
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-196d6c7b-4be5-43d8-9649-88e0a2403b91",
+      "timestamp": 1795315322348,
+      "stopReason": "toolUse",
+      "message_index": 1,
+      "timed_sample": true,
+      "serverGeneration": {
+        "completionMs": 322.07718600000004,
+        "outputTokens": 225
+      },
+      "tool_inputs": [
+        {
+          "id": "49a5e7e49",
+          "name": "tool_call",
+          "arguments": {
+            "id": "web_fetch"
+          },
+          "args": {
+            "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=6&stock_status=instock&_fields=name,permalink&_run=6ab17693"
+          }
+        },
+        {
+          "id": "935017ed2",
+          "name": "tool_call",
+          "arguments": {
+            "id": "web_fetch"
+          },
+          "args": {
+            "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=6&stock_status=instock&_fields=name,permalink&_run=6ab17693"
+          }
+        }
+      ]
+    },
+    {
+      "provider": "cerebras",
+      "model": "moonshotai-kimi-k3.1-pro-trial",
+      "responseId": "chatcmpl-962534f8-8b42-4232-9cb3-e9ed75d8c3e9",
+      "timestamp": 1795315326796,
+      "stopReason": "stop",
+      "message_index": 6,
+      "timed_sample": true,
+      "serverGeneration": {
+        "completionMs": 325.648392,
+        "outputTokens": 215
+      },
+      "tool_inputs": []
+    }
+  ],
+  "retail_sources": [
+    {
+      "tool_call_id": "49a5e7e49",
+      "url": "https://mercantile.wordpress.org/wp-json/wc/store/v1/products?per_page=6&stock_status=instock&_fields=name,permalink&_run=6ab17693",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T02:42:06.021Z",
+      "cached": false,
+      "products": [
+        "https://mercantile.wordpress.org/product/blue-wordpress-flannel-button-down/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-kid-tote/",
+        "https://mercantile.wordpress.org/product/wabuu-halloween-tote/",
+        "https://mercantile.wordpress.org/product/wordpress-golf-ball-set-2-pack/",
+        "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+        "https://mercantile.wordpress.org/product/wapuu-stuffed-animal/"
+      ]
+    },
+    {
+      "tool_call_id": "935017ed2",
+      "url": "https://raspberrypi.dk/wp-json/wc/store/v1/products?search=kit&per_page=6&stock_status=instock&_fields=name,permalink&_run=6ab17693",
+      "accepted": true,
+      "reasons": [],
+      "status": 200,
+      "fetched_at": "2026-11-22T02:42:06.711Z",
+      "cached": false,
+      "products": [
+        "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+        "https://raspberrypi.dk/produkt/axel-health-player-kit/",
+        "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+        "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+        "https://raspberrypi.dk/produkt/officiel-raspberry-pi-500-kit/",
+        "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "catalog_name": "CTRL Task Pad",
+      "source_tool_call_id": "49a5e7e49",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "html_bytes_read": 316418,
+      "html_sha256": "53cb06d94762f274fcb92a2361e5f53af73905482eb980621fa689ca0cf97c74",
+      "checked_at": "2026-11-22T03:20:29.370356+00:00",
+      "canonical": "https://mercantile.wordpress.org/product/wordpress-ctrl-task-pad/",
+      "merchant": "mercantile.wordpress.org",
+      "title": "CTRL Task Pad – Mercantile: Official WordPress Merch",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": false,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "catalog_name": "Officiel Raspberry Pi 500+ Desktop Kit",
+      "source_tool_call_id": "935017ed2",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "html_bytes_read": 303721,
+      "html_sha256": "f1ea55545b4dbc26be355bba55124f9e49510481cb9b2affe8b42ea98f4d37f8",
+      "checked_at": "2026-11-22T03:20:30.922386+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/raspberry-pi-500-plus-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Officiel Raspberry Pi 500+ Desktop Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "catalog_name": "Waveshare CM5 PoE Mini-Computer Kit",
+      "source_tool_call_id": "935017ed2",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "html_bytes_read": 312114,
+      "html_sha256": "04baab697f435dcd8c8d7f8c45edf63ae1442ab501e09aa696e7483cd9e7477c",
+      "checked_at": "2026-11-22T03:20:30.827927+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/waveshare-cm5-poe-mini-computer-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Waveshare CM5 PoE Mini-Computer Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "catalog_name": "Compute Blade Starter Kit",
+      "source_tool_call_id": "935017ed2",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "html_bytes_read": 325560,
+      "html_sha256": "3674ca211a28168dbfe3f575a8af974a6b1c55cebf212abfe14ab4f0cdd0e21d",
+      "checked_at": "2026-11-22T03:20:30.734323+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/compute-blade-starter-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Compute Blade Starter Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": true,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": true
+      }
+    },
+    {
+      "url": "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+      "catalog_name": "Home Assistant – Raspberry Pi 5 Starter Kit",
+      "source_tool_call_id": "935017ed2",
+      "verified": true,
+      "reasons": [],
+      "http": 200,
+      "final_url": "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+      "html_bytes_read": 772522,
+      "html_sha256": "b4ab67ac80f693d815fbfdcfc145ec2bc53e723bd266d55c3f28b9a2d4ec47bc",
+      "checked_at": "2026-11-22T03:20:31.487365+00:00",
+      "canonical": "https://raspberrypi.dk/produkt/home-assistant-raspberry-pi-5-starter-kit/",
+      "merchant": "raspberrypi.dk",
+      "title": "Home Assistant - Raspberry Pi 5 Starter Kit • RaspberryPi.dk",
+      "title_matches_catalog": true,
+      "password_protected": false,
+      "product_evidence": {
+        "matching_schema_product": false,
+        "woocommerce_product_heading": true,
+        "woocommerce_sticky_product_price_and_cart": false
+      }
+    }
+  ],
+  "plan_commit": "722d6a18bc8c0b679b8d7ca982316add9a4cbcfc",
+  "source_plan_commit": "63e3a5fdc7105a1a0b1e5d6421f9677551006418",
+  "source_result_commit": "46dee9a593058fd82305f6ec396f6931743c3c60",
+  "publication_timing": "Public result commit created at export time; use source mappings for original chronology."
+}
