@@ -2,7 +2,24 @@
 
 This benchmark asks Cerebras Kimi K3.1 Pro, through OpenClaw, to choose five Christmas gifts from live retail catalogs and link to their product pages. The official OpenClaw patch reports the mean server-side decoding speed in tokens per second. Each row in the [run index](RESULTS.md) links to the request and its evidence.
 
-## Verify a recorded run offline
+## Fastest measured run — 1,355 mean tok/s
+
+D5027 completed five live AI Synthesis catalog searches through Cerebras Kimi K3.1 Pro. The official patch displayed **1,355 mean tok/s**. Its two calls averaged 1,354.662598 tok/s. The **9.52-second video** shows the five linked products and the speed in the completed session. Recording began 29 minutes 17.851 seconds after generation ended. [D5027 video](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/demo.mp4) · [Timings and five product links](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/evidence.json) · [Exact prompt and settings](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/plan.json)
+
+D5009 is the fastest run recorded from before sending the prompt through the final answer. Its **22.64-second video** shows the shopping task and **1,301 mean tok/s** (1,301.275478 exact). [D5009 video](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/demo.mp4) · [D5009 timings and media checks](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json)
+
+Verify the record from a full Git clone with Python 3.10+ and Git. The first command checks D5027’s two calls, five product pages as recorded, and the clip’s digest. Its `pending_video` status refers to the missing start-to-finish capture. The last command checks D5009’s complete recording.
+
+```sh
+run_id=cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77
+python3 tools/verify_run.py "$run_id"
+python3 tools/replay_run.py "$run_id" --dry-run
+python3 tools/verify_run.py a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51
+```
+
+For a live replay, start the officially patched gateway with access to `cerebras/moonshotai-kimi-k3.1-pro-trial`. Use temperature 0.2, low thinking, a 1,024-token completion limit, the plan’s exact workspace `AGENTS.md`, and direct access to `web_fetch` with tool search disabled. Then run `python3 tools/replay_run.py "$run_id"` in the same shell. The prompt fixes five search terms (filter, mixer, oscillator, echo and cable). Each product name and URL comes from the current retailer response. [Gateway setup](https://github.com/wkasekende/openclaw-speed-patch/blob/e40e9f7b7ec41ad3fa68181ad297db119e755171/README.md#setup)
+
+## Verify earlier recorded runs offline
 
 Clone this repository and run the following from its root with Python 3.10 or newer and Git. The example is run C1, which displayed **717 tok/s**. It contains three timed model calls and five independently checked product pages.
 

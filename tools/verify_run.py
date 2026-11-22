@@ -238,7 +238,7 @@ def main():
             name = path.relative_to(repo).as_posix()
             initial = git(repo,'log','-1','--diff-filter=A','--format=%H','--',name).stdout.decode().strip()
             require(initial and git(repo,'show',initial+':'+name).stdout == path.read_bytes(),'prompt differs from initial plan')
-            pattern = re.compile(r'([?&]_run=)([a-fA-F0-9]{8})(?=[&#\s]|$)')
+            pattern = re.compile(r'([?&]_run=)([a-fA-F0-9]{8})(?=[&#"\s]|$)')
             existing = {match[2].lower() for match in pattern.finditer(plan['prompt'])}
             require(existing,'no recorded eight-digit _run query value to refresh')
             nonce = secrets.token_hex(4)
