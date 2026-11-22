@@ -7,17 +7,24 @@ The speed target is strictly >2000 for both exact mean and rounded UI.
 """
 
 import concurrent.futures
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 import hashlib
 import html
 from html.parser import HTMLParser
+from http.client import IncompleteRead
 import json
 import math
 from pathlib import Path
 import re
+import socket
 import sys
-from datetime import datetime, timezone
+from time import sleep
+from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
+
+from scoring import call_rate, mean_rate, round_rate
 
 
 MERCHANTS = {
@@ -161,21 +168,63 @@ class RetailRedirect(HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
+def product_retry_delay(error):
+    if isinstance(error, HTTPError):
+        if error.code not in (502, 503, 504):
+            return None
+        retry_after = error.headers.get('Retry-After') if error.headers is not None else None
+        if retry_after is None:
+            return 1
+        value = retry_after.strip()
+        try:
+            if value.isascii() and value.isdigit():
+                delay = int(value)
+            else:
+                retry_at = parsedate_to_datetime(value)
+                if retry_at.tzinfo is None:
+                    return None
+                delay = max(0, (retry_at - datetime.now(timezone.utc)).total_seconds())
+        except (ValueError, TypeError, OverflowError):
+            return None
+        # Leave room for both connection attempts within the validator deadline.
+        return delay if delay <= 10 else None
+    reason = error.reason if isinstance(error, URLError) else error
+    if (isinstance(reason, (ConnectionError, TimeoutError, IncompleteRead))
+            or isinstance(reason, socket.gaierror) and reason.errno == socket.EAI_AGAIN):
+        return 1
+    return None
+
+
+def read_product_page(request):
+    opener = build_opener(RetailRedirect())
+    for attempt in range(2):
+        try:
+            with opener.open(request, timeout=25) as response:
+                return (response.read(4_000_001), response.status, response.geturl(),
+                        response.headers.get_content_charset() or 'utf-8')
+        except (URLError, ConnectionError, TimeoutError, socket.gaierror, IncompleteRead) as error:
+            delay = product_retry_delay(error) if attempt == 0 else None
+            if delay is None:
+                raise
+            if isinstance(error, HTTPError):
+                error.close()
+            sleep(delay)
+
+
 def verify_product(item):
     result = dict(item, verified=False, reasons=[])
     url, name = item["url"], item["catalog_name"]
     try:
         request = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "text/html",
                                         "Cache-Control": "no-cache"}, method="GET")
-        with build_opener(RetailRedirect()).open(request, timeout=25) as response:
-            body = response.read(4_000_001)
-            result.update(http=response.status, final_url=response.geturl(),
-                          html_bytes_read=len(body), html_sha256=hashlib.sha256(body).hexdigest(),
-                          checked_at=datetime.now(timezone.utc).isoformat())
-            if len(body) > 4_000_000 or response.status != 200:
-                raise ValueError("unexpected response status or oversized HTML")
-            page = Page()
-            page.feed(body.decode(response.headers.get_content_charset() or "utf-8", "replace"))
+        body, status, final_url, charset = read_product_page(request)
+        result.update(http=status, final_url=final_url,
+                      html_bytes_read=len(body), html_sha256=hashlib.sha256(body).hexdigest(),
+                      checked_at=datetime.now(timezone.utc).isoformat())
+        if len(body) > 4_000_000 or status != 200:
+            raise ValueError("unexpected response status or oversized HTML")
+        page = Page()
+        page.feed(body.decode(charset, "replace"))
         canonical = urljoin(result["final_url"], page.canonical) if page.canonical else None
         titles = [page.meta.get("og:title", "")] + page.titles
         schema_products = [s for s in page.schemas if "Product" in
@@ -241,7 +290,7 @@ def validate(data):
         else:
             calls.append({"message_index": index, "response_id": message.get("responseId"),
                           "completionMs": ms, "outputTokens": tokens,
-                          "tokensPerSecond": tokens / (ms / 1000), "stopReason": message.get("stopReason")})
+                          "tokensPerSecond": call_rate(tokens, ms), "stopReason": message.get("stopReason")})
         for part in message.get("content", []) if isinstance(message.get("content"), list) else []:
             if part.get("type") == "toolCall":
                 args = part.get("arguments", {})
@@ -322,8 +371,8 @@ def validate(data):
     if len(products) != 5 or not all(p["verified"] for p in products):
         reasons.append("five independent merchant product GET verifications did not pass")
     rates = [c["tokensPerSecond"] for c in calls]
-    mean = sum(rates) / len(rates) if rates else None
-    rounded = math.floor(mean + 0.5) if mean is not None else None
+    mean = mean_rate(rates) if rates else None
+    rounded = round_rate(mean) if mean is not None else None
     target = mean is not None and mean > 2000 and rounded > 2000
     valid = not reasons
     return {"run_id": run_id, "valid": valid, "status": "passed" if valid and target else "valid_below_target" if valid else "rejected",

@@ -17,6 +17,7 @@ import subprocess
 import sys
 
 sys.dont_write_bytecode = True
+from scoring import call_rate, mean_rate, round_rate
 from validate import MODEL, answer_links, finite, identity, merchant
 
 VIEWPORT = 'viewport-evidence.json'
@@ -59,7 +60,7 @@ def samples(calls, valid):
         timed = finite(ms) and ms > 0 and finite(tokens) and tokens >= 1
         require(call['timed_sample'] is timed, 'incorrect timing inclusion flag')
         if timed:
-            rates.append(tokens * 1000 / ms)
+            rates.append(call_rate(tokens, ms))
         if valid:
             require(timed and call.get('provider') == 'cerebras' and call.get('model') == MODEL
                     and call.get('responseId') and call.get('stopReason') in ('stop','toolUse'),
@@ -137,8 +138,8 @@ def verify(repo, ident, plan, raw):
     valid = run['validation']['valid']
     require(isinstance(valid,bool), 'invalid validation flag')
     rates, fetches = samples(run['calls'],valid)
-    mean = sum(rates) / len(rates) if rates else None
-    ui = math.floor(mean + 0.5) if mean is not None else None
+    mean = mean_rate(rates) if rates else None
+    ui = round_rate(mean) if mean is not None else None
     recorded = run['score']
     require((mean is None and recorded['mean_exact_tps'] is None) or (mean is not None and
             math.isclose(mean,recorded['mean_exact_tps'],rel_tol=1e-12)), 'recorded mean differs from provider timings')

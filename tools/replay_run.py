@@ -6,7 +6,6 @@ Omit --dry-run to send one real request with the selected gateway profile.
 """
 import argparse
 import json
-import math
 import os
 from pathlib import Path
 import re
@@ -18,6 +17,7 @@ from urllib.parse import quote
 import uuid
 
 sys.dont_write_bytecode = True
+from scoring import call_rate, mean_rate, round_rate
 from validate import MODEL, answer_links, finite, merchant
 
 TOOLS = Path(__file__).resolve().parent
@@ -70,7 +70,7 @@ def outcome(history, run_id):
         timing = message.get('serverGeneration') or {}
         tokens, ms = timing.get('outputTokens'), timing.get('completionMs')
         if finite(tokens) and tokens >= 1 and finite(ms) and ms > 0:
-            rates.append(tokens * 1000 / ms)
+            rates.append(call_rate(tokens, ms))
     if not rates:
         raise ValueError('No serverGeneration samples; verify the official patch and model configuration.')
     content = final.get('content')
@@ -82,7 +82,7 @@ def outcome(history, run_id):
         raise ValueError('No displayable final shopping answer.')
     links, misleading = answer_links(answer)
     five = len(links) == len(set(links)) == 5 and not misleading and all(merchant(url,product=True) for url in links)
-    mean = sum(rates)/len(rates)
+    mean = mean_rate(rates)
     return mean, len(rates), answer, five, len(messages) == len(rates)
 
 
@@ -140,7 +140,7 @@ def main():
             saved = outcome(history,ident)
             if saved:
                 mean, count, answer, five, complete = saved
-                shown = f'{mean:.1f}' if mean < 100 else f'{math.floor(mean+0.5):,}'
+                shown = f'{mean:.1f}' if mean < 100 else f'{round_rate(mean):,}'
                 print(f'Official server mean: {shown} tok/s ({mean:.6f} exact, {count} timed calls)')
                 print(answer)
                 if not five or not complete:
