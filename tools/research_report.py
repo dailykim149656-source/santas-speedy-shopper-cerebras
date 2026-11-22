@@ -18,6 +18,7 @@ from validate import MARKDOWN_TOKEN, answer_links, merchant
 
 COMPARISONS = (
     ('판매처 1곳', (('WordPress','wordpress-links'),('AI Synthesis','synth-links'))),
+    ('빠른 판매처 최적화', (('상품 8개 · 링크','synth-links'),('상품 6개 · 링크','synth-links-six'),('상품 8개 · 표','synth-table'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
     ('답변 형식', (('표','research-table'),('문장','research-prose'))),
     ('가격 계산', (('문장','research-prose'),('가격 합계','research-price-total'))),
@@ -103,13 +104,16 @@ def expected_format(text, variant):
     if misleading or len(set(urls)) != 5 or len(urls) != 5 or not all(merchant(url,product=True) for url in urls):
         return False
     lines = [line.strip() for line in text.splitlines() if line.strip()]
-    if variant == 'research-table':
+    if variant in ('research-table','synth-table'):
         if len(lines) != 7:
             return False
+        if variant == 'synth-table' and not all('|' in line for line in lines):
+            return False
         rows = [[c.strip() for c in re.split(r'(?<!\\)\|',line.strip('|'))] for line in lines]
-        return (all(len(row) == 2 for row in rows) and [c.strip('*_').casefold() for c in rows[0]] == ['gift','price']
+        columns = ['gift'] if variant == 'synth-table' else ['gift','price']
+        return (all(len(row) == len(columns) for row in rows) and [c.strip('*_').casefold() for c in rows[0]] == columns
                 and all(re.fullmatch(r':?-{3,}:?',c) for c in rows[1])
-                and all(len(answer_links(gift)[0]) == 1 and bool(price) for gift,price in rows[2:]))
+                and all(len(answer_links(row[0])[0]) == 1 and all(row[1:]) for row in rows[2:]))
     if any(re.match(r'^(?:[-+*]\s|\d+[.)]\s|[|>#`]|~{3})',line) or '|' in line for line in lines):
         return False
     # Temporarily mask URLs and Markdown links to avoid treating dots in domains or product names as sentence boundaries.
@@ -189,6 +193,8 @@ def comparison_notes(groups):
     checks = (
         ('판매처 1곳 · AI Synthesis / WordPress', 'synth-links', 'wordpress-links'),
         ('판매처 2곳 · AI Synthesis / RaspberryPi.dk 교체', 'source-order-synth', 'source-order'),
+        ('AI Synthesis · 상품 6개 / 8개', 'synth-links-six', 'synth-links'),
+        ('AI Synthesis · 표 / 링크 목록', 'synth-table', 'synth-links'),
         ('답변 형식 · 표 / 문장', 'research-table', 'research-prose'),
         ('가격 계산 · 소계 포함 / 가격만', 'research-price-total', 'research-prose'),
         ('카탈로그 · 판매처별 상품 4개 / 8개', 'paired-links-small', 'paired-links'),
@@ -198,7 +204,7 @@ def comparison_notes(groups):
     )
     def observations(variant):
         results = [record for _,record in groups[variant] if record and record['validation']['valid']]
-        if variant in ('research-table','research-prose'):
+        if variant in ('research-table','research-prose','synth-table'):
             results = [r for r in results if expected_format(r['final_text'],variant)]
         if variant == 'research-price-total':
             results = [r for r in results if correct_subtotals(r) == 5]

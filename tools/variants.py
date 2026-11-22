@@ -36,6 +36,11 @@ VARIANTS['source-order-compact'] = (8, False, 'both', False,
 VARIANTS['wordpress-links'] = (8, False, 'wordpress', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.')
 VARIANTS['synth-links'] = (8, False, 'synth', False, VARIANTS['wordpress-links'][-1])
+VARIANTS['synth-links-six'] = (6, *VARIANTS['synth-links'][1:])
+VARIANTS['synth-table'] = (8, False, 'synth', False,
+    'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. '
+    'Return a one-column Markdown table named Gift with five [exact product name](exact product page) links, '
+    'keeping the items in their catalog order.')
 VARIANTS['source-order-synth'] = (8, False, 'wordpress-synth', False, VARIANTS['source-order'][-1])
 PRICE_TASK = ('Use web_fetch to open the live catalog. Choose five distinct in-stock Christmas gifts for a software '
               'club in catalog order. Give the exact product title linked to its exact product page and the listed price '
@@ -64,9 +69,9 @@ ARMS += [(name, 0.2, 'low') for name in TOP_P_BY_VARIANT]
 ARMS += [(name, 0.2, 'low') for name in MAX_TOKENS_BY_VARIANT]
 RESEARCH_ARMS = (
     ('synth-links', .2, 'low'), ('wordpress-links', .2, 'low'),
+    ('synth-links-six', .2, 'low'), ('synth-table', .2, 'low'),
     ('source-order-synth', .2, 'low'), ('source-order', .2, 'low'),
     ('research-table', .2, 'low'), ('research-prose', .2, 'low'),
-    ('research-price-total', .2, 'low'),
     ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
     ('research-reasoning-max', .2, 'max'),
     ('source-order-max-2048', .2, 'low'), ('research-cap-4096', .2, 'low'),
@@ -113,9 +118,9 @@ def choose(results):
         if r['arm'] in counts:
             adopted = r.get('valid') and r.get('method_valid') is not False
             counts[r['arm']].append(r.get('score') if adopted else None)
-    # Replicate a new leader once, then reuse the strongest treatment every third trial.
+    # Reserve one slot in three for comparison; spend the others on the measured leader.
     best = preferred_arm(counts)
-    if best is not None and (index % 3 == 0 or len(counts[arm_key(best)]) == 1):
+    if best is not None and (index % 3 != 0 or len(counts[arm_key(best)]) == 1):
         return best
     # Rotate the treatment order between passes to reduce time-of-day confounding.
     for repetitions in range(5):
