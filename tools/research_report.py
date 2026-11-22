@@ -23,7 +23,7 @@ COMPARISONS = (
     ('AI Synthesis 지시 길이', (('기준','synth-links'),('짧은 지시','synth-links-brief'))),
     ('AI Synthesis 작업공간 파일', (('기본 주입','synth-links'),('작업공간 파일 주입 끔','synth-links-no-workspace'))),
     ('AI Synthesis 상품 선택', (('선택 기준 자유','synth-links'),('카탈로그 앞 5개','synth-first-five'))),
-    ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'))),
+    ('AI Synthesis 샘플링', (('온도 0.2','synth-links'),('온도 0.0','synth-links-temp-zero'),('온도 1.0','synth-links-temp-one'))),
     ('판매처 2곳', (('WordPress + RaspberryPi.dk','source-order'),('WordPress + AI Synthesis','source-order-synth'))),
     ('답변 형식', (('표','research-table'),('문장','research-prose'))),
     ('가격 계산', (('문장','research-prose'),('가격 합계','research-price-total'))),
@@ -34,6 +34,7 @@ COMPARISONS = (
 )
 RUN_ID = re.compile(r'[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}')
 FORMAT_VARIANTS = ('research-table','research-prose','synth-table','synth-autolinks')
+TEMPERATURE_OVERRIDES = {'synth-links-temp-zero':0.0, 'synth-links-temp-one':1.0}
 
 
 def number(value):
@@ -47,7 +48,7 @@ def load_runs(repo):
         variant = plan.get('variant')
         if variant not in groups:
             continue
-        temperature = 0.0 if variant == 'synth-links-temp-zero' else 0.2
+        temperature = TEMPERATURE_OVERRIDES.get(variant,0.2)
         if plan.get('temperature') != temperature:
             continue
         if variant != 'research-reasoning-max' and plan.get('thinking') != 'low':
@@ -217,6 +218,7 @@ def comparison_notes(groups):
         ('판매처 2곳 · AI Synthesis / RaspberryPi.dk 교체', 'source-order-synth', 'source-order'),
         ('AI Synthesis · 상품 6개 / 8개', 'synth-links-six', 'synth-links'),
         ('AI Synthesis · 온도 0.0 / 0.2', 'synth-links-temp-zero', 'synth-links'),
+        ('AI Synthesis · 온도 1.0 / 0.2', 'synth-links-temp-one', 'synth-links'),
         ('AI Synthesis · 짧은 지시 / 기준 지시', 'synth-links-brief', 'synth-links'),
         ('AI Synthesis · 작업공간 파일 주입 끔 / 기본 주입', 'synth-links-no-workspace', 'synth-links'),
         ('AI Synthesis · 표 / 링크 목록', 'synth-table', 'synth-links'),

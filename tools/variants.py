@@ -37,6 +37,7 @@ VARIANTS['wordpress-links'] = (8, False, 'wordpress', False,
     'Fetch the live retailer catalog with web_fetch. Pick five distinct Christmas gifts for a software club. Return just five numbered [exact product name](exact product page) links, keeping the items in their catalog order.')
 VARIANTS['synth-links'] = (8, False, 'synth', False, VARIANTS['wordpress-links'][-1])
 VARIANTS['synth-links-temp-zero'] = VARIANTS['synth-links']
+VARIANTS['synth-links-temp-one'] = VARIANTS['synth-links']
 VARIANTS['synth-links-six'] = (6, *VARIANTS['synth-links'][1:])
 VARIANTS['synth-first-five'] = (*VARIANTS['synth-links'][:-1], VARIANTS['synth-links'][-1].replace(
     'Pick five distinct Christmas gifts for a software club.',
@@ -85,6 +86,7 @@ RESEARCH_ARMS = (
     ('synth-links-six', .2, 'low'), ('synth-links-temp-zero', 0.0, 'low'),
     ('synth-table', .2, 'low'), ('synth-autolinks', .2, 'low'), ('synth-first-five', .2, 'low'),
     ('synth-links-brief', .2, 'low'), ('synth-links-no-workspace', .2, 'low'),
+    ('synth-links-temp-one', 1.0, 'low'),
     ('source-order-synth', .2, 'low'), ('source-order', .2, 'low'),
     ('research-table', .2, 'low'), ('research-prose', .2, 'low'),
     ('paired-links-small', .2, 'low'), ('paired-links', .2, 'low'),
