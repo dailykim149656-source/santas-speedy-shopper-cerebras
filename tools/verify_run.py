@@ -17,7 +17,7 @@ import subprocess
 import sys
 
 sys.dont_write_bytecode = True
-from scoring import call_rate, mean_rate, round_rate
+from scoring import call_rate, mean_rate, recording_required, round_rate
 from validate import MODEL, answer_links, finite, identity, merchant
 
 VIEWPORT = 'viewport-evidence.json'
@@ -157,7 +157,11 @@ def verify(repo, ident, plan, raw):
     video_threshold = run.get('video_threshold_tps',1700)
     require(type(video_threshold) is int and video_threshold > 0,'invalid recorded video threshold')
     require(plan.get('video_threshold_tps',video_threshold) == video_threshold,'video threshold differs from the committed plan')
-    threshold = ui is not None and ui >= video_threshold
+    prior = plan.get('prior_verified_mean_tps')
+    require(prior is None or (finite(prior) and prior >= 0),'invalid prior verified record')
+    require(('prior_verified_mean_tps' in plan) == ('prior_verified_mean_tps' in run)
+            and run.get('prior_verified_mean_tps') == prior,'prior verified record differs from the committed plan')
+    threshold = recording_required(mean, ui, valid, video_threshold, plan)
     require(run['requires_video'] is threshold,'video threshold mismatch')
     state = run['evidence_status']
     superseded = state == 'video_superseded'
