@@ -4,6 +4,14 @@
 
 | 실행 | 요청 | 공식 평균 (tok/s) | 상품 검증 | 영상 |
 |---|---|---:|---|---|
+| [D5170-synth-five-categories-cap](runs/c7280fe0-f540-4797-b865-1e415ea7bc62/evidence.json) | [요청문](runs/c7280fe0-f540-4797-b865-1e415ea7bc62/plan.json) | 1202 | 5/5 | 해시 보존 · [보관 중인 최고 기록](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json) |
+| [D5169-synth-five-categories-cap](runs/05d00f2c-5aa6-4f5b-a916-223ff9beb723/evidence.json) | [요청문](runs/05d00f2c-5aa6-4f5b-a916-223ff9beb723/plan.json) | 785 | 5/5 | 기준 미만 |
+| [D5168-synth-five-categories-cap](runs/fa7bd708-adc3-4742-8e3e-3c33552a1339/evidence.json) | [요청문](runs/fa7bd708-adc3-4742-8e3e-3c33552a1339/plan.json) | 741 | 5/5 | 기준 미만 |
+| [D5167-synth-five-categories-cap](runs/a09843f1-c468-4bbe-b293-508b3274ecd2/evidence.json) | [요청문](runs/a09843f1-c468-4bbe-b293-508b3274ecd2/plan.json) | 853 | 5/5 | 기준 미만 |
+| [D5166-synth-five-categories-cap](runs/a21eee0b-4133-4b2a-bc1f-4f3b894029d4/evidence.json) | [요청문](runs/a21eee0b-4133-4b2a-bc1f-4f3b894029d4/plan.json) | 892 | 5/5 | 기준 미만 |
+| [D5165-synth-five-categories-cap](runs/83038581-b2bd-436c-8150-fea6d6d622d3/evidence.json) | [요청문](runs/83038581-b2bd-436c-8150-fea6d6d622d3/plan.json) | 741 | 5/5 | 기준 미만 |
+| [D5164-synth-five-categories-cap](runs/7aa357fd-8f8b-4e90-96b7-d970e37e29f0/evidence.json) | [요청문](runs/7aa357fd-8f8b-4e90-96b7-d970e37e29f0/plan.json) | 884 | 5/5 | 기준 미만 |
+| [D5163-synth-five-categories-cap](runs/04849a51-a39b-495e-b3e5-dd4ea8e1d0ed/evidence.json) | [요청문](runs/04849a51-a39b-495e-b3e5-dd4ea8e1d0ed/plan.json) | 824 | 5/5 | 기준 미만 |
 | [D5162-synth-five-categories-cap](runs/114977b3-56e0-4027-bfa9-face198289c4/evidence.json) | [요청문](runs/114977b3-56e0-4027-bfa9-face198289c4/plan.json) | 986 | 5/5 | 해시 보존 · [보관 중인 최고 기록](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json) |
 | [D5161-synth-five-categories-cap](runs/d47df176-e143-4fa7-b8fa-206bd74a3fcd/evidence.json) | [요청문](runs/d47df176-e143-4fa7-b8fa-206bd74a3fcd/plan.json) | 964 | 5/5 | 해시 보존 · [보관 중인 최고 기록](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json) |
 | [D5160-synth-five-categories-cap](runs/1156061f-7ee2-4317-b522-d1ea99cbaa70/evidence.json) | [요청문](runs/1156061f-7ee2-4317-b522-d1ea99cbaa70/plan.json) | 823 | 5/5 | 기준 미만 |
