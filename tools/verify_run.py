@@ -19,7 +19,8 @@ import sys
 sys.dont_write_bytecode = True
 from validate import MODEL, answer_links, finite, identity, merchant
 
-MEDIA = ('original.mp4', 'demo.mp4', 'final.png')
+VIEWPORT = 'viewport-evidence.json'
+MEDIA = ('original.mp4', 'demo.mp4', 'final.png', VIEWPORT)
 SHA256 = re.compile('[a-f0-9]{64}')
 
 
@@ -92,6 +93,30 @@ def check_products(run, fetches):
                 and identity(product[k]) == identity(url) for k in ('canonical','final_url')), 'product page check differs from catalog')
 
 
+def check_viewport(directory, media, ui, urls):
+    path = directory/VIEWPORT
+    require(path.stat().st_size <= 32768, 'viewport proof exceeds size limit')
+    proof = json.loads(path.read_bytes())
+    require(proof == media[VIEWPORT]['proof'] and proof.get('schema_version') == 1
+            and proof.get('verified') is True, 'viewport proof differs from its manifest')
+    original = float(media['original.mp4']['ffprobe']['format']['duration'])
+    demo = float(media['demo.mp4']['ffprobe']['format']['duration'])
+    finish, start = proof['finishSeconds'], proof['demoStartSeconds']
+    require(finite(original) and original > 0 and finite(demo) and 0 < demo <= 55
+            and all(finite(t) and 0 <= t <= original for t in (finish,start)), 'invalid viewport or clip duration')
+    score, links = proof['score'], proof['links']
+    require(score['mean'] == ui and len(links) == len(urls) == 5 and {entry['url'] for entry in links} == urls,
+            'viewport evidence differs from displayed mean or five verified product links')
+    for item, minimum in [(score,4)] + [(entry,1) for entry in links]:
+        first, last, clip_first, clip_last = (item[key] for key in (
+            'originalFromSeconds','originalToSeconds','clipFromSeconds','clipToSeconds'))
+        require(all(finite(t) and t >= 0 for t in (first,last,clip_first,clip_last))
+                and first >= finish and last <= original+0.05 and clip_last <= demo
+                and clip_last-clip_first >= minimum-1e-6 and abs(first-start-clip_first) <= 1e-6
+                and abs(last-start-clip_last) <= 1e-6, 'viewport interval fails clip bounds or visible hold')
+        require(all(isinstance(item[k],str) and SHA256.fullmatch(item[k]) for k in ('firstFrameSha256','lastFrameSha256')),
+                'invalid captured-frame digest')
+
 def verify(repo, ident, plan, raw):
     directory = repo/'runs'/ident
     evidence = directory/'evidence.json'
@@ -136,6 +161,8 @@ def verify(repo, ident, plan, raw):
             committed(repo,path)
             require(path.stat().st_size == media[asset]['bytes'] and digest(path) == media[asset]['sha256'], 'media digest mismatch: '+asset)
     require(set(media).issubset((*MEDIA,'attestation')),'unrecognized archived media')
+    if VIEWPORT in media:
+        check_viewport(directory,media,ui,{p['url'] for p in run['products'] if p.get('verified')})
     state = run['evidence_status']
     allowed = ({'complete','provisional_video_retained','provisional_capture_required','validation_rejected'} if threshold else
                {'unscored_failed_run'} if ui is None else {'below_threshold_recorded'} if valid else {'validation_rejected'})
@@ -153,7 +180,8 @@ def verify(repo, ident, plan, raw):
         ready = attestation['capture_ready']
         require(valid and all(asset in media for asset in MEDIA) and attestation['run_id'] == ident and attestation['full_run'] is True
                 and attestation['authless'] is True and attestation['rehearsal'] is False and attestation['final_ui_tps'] == ui
-                and ready['sessionKey'] == plan['sessionKey'] and ready['blank_initial_score'] is True
+                and attestation.get('qualifying') is True and attestation.get('provisional') is not True
+                and ready['capture'] == 'owned-local-viewport' and ready['sessionKey'] == plan['sessionKey'] and ready['blank_initial_score'] is True
                 and ready['before_send'] is True and ready['readyAt'] == attestation['readyAt']
                 and datetime.fromisoformat(ready['readyAt'].replace('Z','+00:00')).timestamp()*1000 <= run['startedWall']
                 and sorted(attestation['verified_product_urls_seen']) == sorted(p['url'] for p in run['products']),
