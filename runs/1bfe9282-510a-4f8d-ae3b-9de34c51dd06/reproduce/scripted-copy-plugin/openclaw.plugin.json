@@ -1,0 +1,36 @@
+{
+  "id": "scripted-copy",
+  "name": "Scripted Copy Shopper",
+  "description": "Live Shopify catalog search with copy-friendly request shaping for Kimi on Cerebras.",
+  "activation": { "onStartup": true },
+  "providers": ["cerebras"],
+  "providerEndpoints": [{ "endpointClass": "cerebras-native", "hosts": ["api.cerebras.ai"] }],
+  "providerRequest": { "providers": { "cerebras": { "family": "cerebras" } } },
+  "contracts": { "tools": ["search_catalog"] },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "copies": { "type": "integer", "minimum": 1, "maximum": 8 },
+      "liveResultCopies": { "type": "integer", "minimum": 1, "maximum": 8 },
+      "fewShot": { "type": "boolean" },
+      "fewShotTurns": { "type": "integer", "minimum": 1, "maximum": 3 },
+      "scripted": { "type": "boolean" },
+      "thoughtCall": { "type": "string" },
+      "thoughtAnswer": { "type": "string" },
+      "includePrice": { "type": "boolean" },
+      "includeBlurb": { "type": "boolean" },
+      "slimSystemPrompt": { "type": "boolean" },
+      "stripFinalTools": { "type": "boolean" },
+      "call1RepeatPrompt": { "type": "integer", "minimum": 1, "maximum": 4 },
+      "richToolArgs": { "type": "boolean" },
+      "maxCompletionTokens": { "type": "integer", "minimum": 64 },
+      "queueRetryAttempts": { "type": "integer", "minimum": 1 },
+      "queueRetryDelayMs": { "type": "integer", "minimum": 100 },
+      "queueStallMs": { "type": "integer", "minimum": 0 },
+      "shapeLog": { "type": "string" },
+      "payloadLog": { "type": "string" }
+    }
+  },
+  "toolMetadata": { "search_catalog": { "profiles": ["minimal"] } }
+}

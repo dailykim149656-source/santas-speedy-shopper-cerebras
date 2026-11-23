@@ -4,6 +4,7 @@ Public commits are created at export time; use source plan mappings for original
 
 | Run | Displayed TPS | Verification | Media |
 | --- | ---: | --- | --- |
+| [Scripted-copy Shopify run](runs/1bfe9282-510a-4f8d-ae3b-9de34c51dd06/evidence.json) | **1623** | Five product checks passed · exact live catalog receipt · complete recording | [12.68 s live-run clip](runs/1bfe9282-510a-4f8d-ae3b-9de34c51dd06/demo.mp4) |
 | [D5027-synth-five-categories-cap](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/evidence.json) | **1355** | Five product checks passed · full-run video pending | [9.52 s post-run clip](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/demo.mp4) |
 | [D5009-synth-five-categories-cap](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json) | **1301** | Five product checks passed · complete recording | [22.64 s live-run clip](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/demo.mp4) |
 | [D0071-synth-first-five-direct-fetch](runs/7bd1e221-bcdc-4606-9826-28d82d564faa/evidence.json) | 561 | below_target | — |

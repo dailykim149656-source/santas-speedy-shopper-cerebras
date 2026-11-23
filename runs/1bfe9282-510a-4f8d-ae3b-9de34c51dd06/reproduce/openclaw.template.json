@@ -1,0 +1,124 @@
+{
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "cerebras": {
+        "baseUrl": "https://api.cerebras.ai/v1",
+        "api": "openai-completions",
+        "apiKey": "${CEREBRAS_API_KEY}",
+        "models": [
+          {
+            "id": "moonshotai-kimi-k3.1-pro-trial",
+            "name": "Kimi K3.1 Pro (Cerebras)",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "compat": {
+              "supportsTools": true,
+              "supportsStrictMode": false,
+              "supportsReasoningEffort": true,
+              "supportedReasoningEfforts": [
+                "low",
+                "high",
+                "max"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "cerebras/moonshotai-kimi-k3.1-pro-trial"
+      },
+      "workspace": "@WORKSPACE@",
+      "skipBootstrap": true,
+      "skills": [],
+      "timeoutSeconds": 180,
+      "thinkingDefault": "low",
+      "models": {
+        "cerebras/moonshotai-kimi-k3.1-pro-trial": {
+          "params": {
+            "temperature": 0
+          }
+        }
+      },
+      "heartbeat": {
+        "every": "0m"
+      }
+    }
+  },
+  "plugins": {
+    "enabled": true,
+    "allow": [
+      "scripted-copy"
+    ],
+    "load": {
+      "paths": [
+        "@PLUGIN_PATH@"
+      ]
+    },
+    "entries": {
+      "scripted-copy": {
+        "enabled": true,
+        "config": {
+          "copies": 3,
+          "fewShot": true,
+          "fewShotTurns": 1,
+          "scripted": true,
+          "includePrice": true,
+          "includeBlurb": false,
+          "slimSystemPrompt": false,
+          "stripFinalTools": false,
+          "call1RepeatPrompt": 1,
+          "richToolArgs": false,
+          "maxCompletionTokens": 512,
+          "queueRetryAttempts": 120,
+          "queueRetryDelayMs": 1000,
+          "queueStallMs": 8000,
+          "shapeLog": "@SHAPE_LOG@",
+          "liveResultCopies": 3
+        }
+      }
+    }
+  },
+  "tools": {
+    "profile": "minimal",
+    "allow": [
+      "search_catalog"
+    ],
+    "codeMode": {
+      "enabled": false
+    },
+    "toolSearch": false
+  },
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback",
+    "port": 19883,
+    "auth": {
+      "mode": "token",
+      "token": "${OPENCLAW_GATEWAY_TOKEN}"
+    },
+    "controlUi": {
+      "enabled": true
+    }
+  },
+  "meta": {
+    "migrations": {
+      "modelPolicyAllowlist": true,
+      "utilityModelSeparation": true
+    },
+    "lastTouchedVersion": "2026.10.9"
+  }
+}

@@ -6,11 +6,19 @@ This benchmark asks Cerebras Kimi K3.1 Pro, through OpenClaw, to choose five Chr
 
 The [experiment archive](experiments/README.md) includes the final Shopify and category-query trials, source code, verification records, and project reports.
 
-## Fastest measured run — 1,355 mean tok/s · 1,674 p90
+## Fastest measured run — 1,623 mean tok/s · 1,694 p90
+
+On November 23, OpenClaw with Kimi K3.1 Pro on Cerebras returned five products from five stores. The first model call sent five configured gift queries in a single `search_catalog` call. The tool searched Shopify Global Catalog live, and Kimi used the results to write the final five links. The plugin provides one example conversation and puts three copies of this run's catalog result in the prompt to the final call.
+
+The official patch displayed **1,623 mean tok/s · 1,694 p90**. The exact mean was **1,623.271854 tok/s**, from **1,552.210421** on the tool call and **1,694.333287** on the final answer. Five product pages opened successfully in a browser. The **12.68-second** video shows the run from before submission through the completed speed display and linked products.
+
+[Live recording](runs/1bfe9282-510a-4f8d-ae3b-9de34c51dd06/demo.mp4) · [Timings and product checks](runs/1bfe9282-510a-4f8d-ae3b-9de34c51dd06/evidence.json) · [Shopify query receipt](runs/1bfe9282-510a-4f8d-ae3b-9de34c51dd06/receipt.json) · [Exact settings and reproduction](runs/1bfe9282-510a-4f8d-ae3b-9de34c51dd06/reproduce/README.md)
+
+## Earlier measured runs — 1,355 and 1,301 mean tok/s
 
 D5027 completed five live AI Synthesis catalog searches through Cerebras Kimi K3.1 Pro. The official patch displayed **1,355 mean tok/s · 1,674 p90**. Its two calls averaged 1,354.662598 tok/s. The **9.52-second video** shows the five linked products and the speed in the completed session. Recording began 29 minutes 17.851 seconds after generation ended. [D5027 video](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/demo.mp4) · [Timings and five product links](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/evidence.json) · [Exact prompt and settings](runs/cd75e5e0-be7c-471f-a9ab-c9e6f0d1bd77/plan.json)
 
-D5009 is the fastest run recorded from before sending the prompt through the final answer. Its **22.64-second video** shows the shopping task and **1,301 mean tok/s** (1,301.275478 exact). [D5009 video](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/demo.mp4) · [D5009 timings and media checks](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json)
+D5009 was recorded from before sending the prompt through the final answer. Its **22.64-second video** shows the shopping task and **1,301 mean tok/s** (1,301.275478 exact). [D5009 video](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/demo.mp4) · [D5009 timings and media checks](runs/a9530b69-3aed-4ea9-8fd9-9ee1fcb36b51/evidence.json)
 
 Verify the record from a full Git clone with Python 3.10+ and Git. The first command checks D5027’s two calls, five product pages as recorded, and the clip’s digest. Its `pending_video` status refers to the missing start-to-finish capture. The last command checks D5009’s complete recording.
 

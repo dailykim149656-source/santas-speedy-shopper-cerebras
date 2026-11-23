@@ -1,0 +1,46 @@
+{
+  "queries": [
+    "knit beanie",
+    "jigsaw puzzle",
+    "coffee mug",
+    "hot sauce",
+    "cat toy"
+  ],
+  "example": [
+    {
+      "name": "New Era Cap Black Waffle Knit Beanie",
+      "store": "New Era Cap",
+      "price": "$24.99",
+      "url": "https://warehouse.neweracap.com/products/new-era-cap-black-waffle-knit-beanie",
+      "blurb": "Ribbed cuff black waffle knit winter beanie for everyday warmth."
+    },
+    {
+      "name": "National Parks of America 1000 Piece Jigsaw Puzzle",
+      "store": "MasterPieces Puzzle Company INC",
+      "price": "$19.99",
+      "url": "https://www.masterpiecesinc.com/products/national-parks-of-america-1000",
+      "blurb": "Illustrated 1000 piece family puzzle featuring US national parks."
+    },
+    {
+      "name": "Carter Slide Mug",
+      "store": "Fellow",
+      "price": "$32.00",
+      "url": "https://fellowproducts.com/products/carter-slide-mug",
+      "blurb": "Ceramic-lined travel mug with smooth slide lid for hot drinks."
+    },
+    {
+      "name": "Black Rose Hot Sauce",
+      "store": "Pepper Palace",
+      "price": "$12.95",
+      "url": "https://pepperpalace.com/products/black-rose",
+      "blurb": "Small-batch smoky chili hot sauce crafted for holiday spice lovers."
+    },
+    {
+      "name": "SPEEDY TAIL 2.0",
+      "store": "Teazys",
+      "price": "$25.99",
+      "url": "https://teazys.com/products/speedy-tail",
+      "blurb": "Rechargeable motorized rolling ball cat toy with replaceable tail."
+    }
+  ]
+}

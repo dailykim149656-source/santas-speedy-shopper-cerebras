@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "runId": "1bfe9282-510a-4f8d-ae3b-9de34c51dd06",
+  "label": "hunt-hunt-best-001",
+  "provider": "cerebras",
+  "model": "moonshotai-kimi-k3.1-pro-trial",
+  "sentAtUtc": "2026-11-22T20:38:37.732Z",
+  "endedAtUtc": "2026-11-22T20:38:44.016Z",
+  "official": {
+    "meanTokensPerSecond": 1623.2718539492994,
+    "p90TokensPerSecond": 1694.333286528573,
+    "outputTokens": 316,
+    "generationMs": 190.82723,
+    "calls": 2,
+    "displayedMeanTokensPerSecond": 1623
+  },
+  "calls": [
+    {
+      "number": 1,
+      "purpose": "search_tool_call",
+      "stopReason": "toolUse",
+      "outputTokens": 80,
+      "completionMs": 51.539404,
+      "tokensPerSecond": 1552.210421370026
+    },
+    {
+      "number": 2,
+      "purpose": "final_answer",
+      "stopReason": "stop",
+      "outputTokens": 236,
+      "completionMs": 139.287826,
+      "tokensPerSecond": 1694.333286528573
+    }
+  ],
+  "catalogTool": {
+    "name": "search_catalog",
+    "toolCallId": "e241bff78",
+    "receiptFile": "receipt.json"
+  },
+  "products": [
+    {
+      "name": "Carhartt Tonal Patch Knit Beanie",
+      "store": "Work World",
+      "price": "$27.99",
+      "url": "https://www.workworld.com/products/carhartt-knit-beanie",
+      "browserCheck": {
+        "httpStatus": 200,
+        "checkedAtUtc": "2026-11-22T20:41:45.409Z",
+        "productPage": true,
+        "verified": true
+      }
+    },
+    {
+      "name": "Ocean Breeze (2263pz) - 1000 Piece Jigsaw Puzzle",
+      "store": "White Mountain Puzzles",
+      "price": "$21.99",
+      "url": "https://www.whitemountainpuzzles.com/products/ocean-breeze-2263pz-1000-piece-jigsaw-puzzle",
+      "browserCheck": {
+        "httpStatus": 200,
+        "checkedAtUtc": "2026-11-22T20:41:50.363Z",
+        "productPage": true,
+        "verified": true
+      }
+    },
+    {
+      "name": "Artisan Coffee Mug - Cup Of Cozy",
+      "store": "Natural Life",
+      "price": "$19.00",
+      "url": "https://www.naturallife.com/products/artisan-coffee-mug-cup-of-cozy",
+      "browserCheck": {
+        "httpStatus": 200,
+        "checkedAtUtc": "2026-11-22T20:41:55.391Z",
+        "productPage": true,
+        "verified": true
+      }
+    },
+    {
+      "name": "Ghost Berry Hot Sauce Ghost Peppers & Black Berries",
+      "store": "Fresco Sauce",
+      "price": "$8.00",
+      "url": "https://frescosauce.com/products/ghost-berry-hot-sauce",
+      "browserCheck": {
+        "httpStatus": 200,
+        "checkedAtUtc": "2026-11-22T20:42:00.497Z",
+        "productPage": true,
+        "verified": true
+      }
+    },
+    {
+      "name": "Whiska Ball (Special Edition)",
+      "store": "Whiskertons®",
+      "price": "$34.99",
+      "url": "https://whiskertons.com/products/whiska-ball",
+      "browserCheck": {
+        "httpStatus": 200,
+        "checkedAtUtc": "2026-11-22T20:42:03.176Z",
+        "productPage": true,
+        "verified": true
+      }
+    }
+  ],
+  "validation": {
+    "sameToolCallIdInRequestResultAndReceipt": true,
+    "exactReceiptText": true,
+    "exampleUrlsExcluded": true,
+    "uniqueProductLinks": 5,
+    "browserVerifiedProductPages": 5
+  },
+  "video": {
+    "file": "demo.mp4",
+    "sha256": "4040cd2574a7416b907cae6f4a5f24d9d87ef68ee80166ec1356a473aa05b261",
+    "durationSeconds": 12.68,
+    "fullRunCapturedLive": true,
+    "qualifying": true,
+    "verified": true,
+    "scoreVisible": true,
+    "verifiedProductLinksVisible": 5
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "runId": "1bfe9282-510a-4f8d-ae3b-9de34c51dd06",
+  "toolCallId": "e241bff78",
+  "toolName": "search_catalog",
+  "endpoint": "https://catalog.shopify.com/api/ucp/mcp",
+  "startedAtUtc": "2026-11-22T20:38:41.882Z",
+  "completedAtUtc": "2026-11-22T20:38:43.003Z",
+  "queries": [
+    {
+      "query": "knit beanie",
+      "httpStatus": 200,
+      "responseMs": 1088,
+      "responseSha256": "1c5c9e3daa4768b0b4e6247e0c5415d2a499098466f7ff71a2914092bfca848e",
+      "resultCount": 8,
+      "selectedResultIndex": 0,
+      "selectedProductUrl": "https://www.workworld.com/products/carhartt-knit-beanie",
+      "priceMinorUnits": 2799,
+      "currency": "USD"
+    },
+    {
+      "query": "jigsaw puzzle",
+      "httpStatus": 200,
+      "responseMs": 989,
+      "responseSha256": "a850d4deb5b611a0a1da1cfb1b6d085075d2d7eefa741cfc6f09aa52b1035a08",
+      "resultCount": 8,
+      "selectedResultIndex": 0,
+      "selectedProductUrl": "https://www.whitemountainpuzzles.com/products/ocean-breeze-2263pz-1000-piece-jigsaw-puzzle",
+      "priceMinorUnits": 2199,
+      "currency": "USD"
+    },
+    {
+      "query": "coffee mug",
+      "httpStatus": 200,
+      "responseMs": 854,
+      "responseSha256": "3a986f13b58851816fafc12f710ec6c414ec7282ab3b25e8c65ea57ade305106",
+      "resultCount": 8,
+      "selectedResultIndex": 0,
+      "selectedProductUrl": "https://www.naturallife.com/products/artisan-coffee-mug-cup-of-cozy",
+      "priceMinorUnits": 1900,
+      "currency": "USD"
+    },
+    {
+      "query": "hot sauce",
+      "httpStatus": 200,
+      "responseMs": 982,
+      "responseSha256": "0fbd342fec748295093b071704c1ff1641ad3f6a84ba735e2ec90144ede7e1fe",
+      "resultCount": 8,
+      "selectedResultIndex": 0,
+      "selectedProductUrl": "https://frescosauce.com/products/ghost-berry-hot-sauce",
+      "priceMinorUnits": 800,
+      "currency": "USD"
+    },
+    {
+      "query": "cat toy",
+      "httpStatus": 200,
+      "responseMs": 1118,
+      "responseSha256": "8b40a665bb142e6eb52b3fd2c2e15eb0fe213b0f1944ef8c2b5b421450171986",
+      "resultCount": 8,
+      "selectedResultIndex": 0,
+      "selectedProductUrl": "https://whiskertons.com/products/whiska-ball",
+      "priceMinorUnits": 3499,
+      "currency": "USD"
+    }
+  ]
+}
